@@ -164,6 +164,34 @@ function details(it) {
 }
 const expRow = (head, body) => `<div class=row onclick="this.classList.toggle('open')">${head}</div><div class=exp><div>${body}</div></div>`;
 
+// ---------- Best of bevakningen: transparent poäng 0–100 ----------
+const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
+function dealScore(it) {
+  const [b] = bench(it), parts = [], why = [];
+  const ok = offersOf(it).filter(o => o.stock_status === "in_stock" && o.eng && o.L).sort((x, y) => x.L - y.L), best = ok[0];
+  let sc = 0;
+  if (best && b) { const p = clamp(20 + best.d, 0, 40); sc += p; parts.push(`erbjudande ${fmt(p)}`);
+    why.push(best.d >= 0 ? `${esc(best.source)} ${fmt(best.d)} % under trend` : `billigast i lager ${fmt(-best.d)} % över trend`); }
+  const au = auctions().filter(a => a.live && a.item_id === it.id && a.d != null).sort((x, y) => y.d - x.d)[0];
+  if (au) { const hrs = (new Date(au.ends_at) - Date.now()) / 36e5, p = clamp(au.d * 1.5, 0, 30) + (au.d > 0 && hrs < 72 ? 5 : 0); sc += p; parts.push(`auktion ${fmt(p)}`);
+    if (au.d > 0) why.push(`Auktion slutar om ${countdown(au.ends_at)}, bud+avgifter ${fmt(au.d)} % under trend`); }
+  const {pts} = series(it), end = dnum(P.last_updated), old = pts.filter(q => q[0] <= end - 30).pop() || pts[0], last = pts[pts.length - 1];
+  if (old && last && old[0] !== last[0]) { const ch = (last[1] - old[1]) / old[1] * 100, p = clamp(-ch, 0, 20); sc += p; parts.push(`trend ${fmt(p)}`);
+    if (ch < -2) why.push(`Pris fallit ${fmt(-ch)} % på ${fmt(last[0] - old[0])} d`); }
+  const n = new Set(ok.map(o => o.source)).size, p4 = clamp(n * 3, 0, 10); sc += p4; if (n) parts.push(`källor ${p4}`);
+  if (!best && !au) why.unshift("Bevaka – inget verifierat i lager");
+  return {it, sc: Math.round(sc), best, au, b, parts, why};
+}
+function bestOf() {
+  const L = P.items.filter(i => i.status === "watchlist").map(dealScore).sort((a, b) => b.sc - a.sc || (b.best ? 1 : 0) - (a.best ? 1 : 0)).slice(0, 6);
+  const info = `<details class=info><summary>${ic("spark", 14)} Hur räknas poängen?</summary><div class="xs mut">0–100, bara från verklig data i data.json:<br>• <b>Erbjudande (0–40)</b>: billigaste verifierade engelska i-lager-erbjudandet (landat SEK) vs Cardmarket-trend: 20 + % under trend.<br>• <b>Auktion (0–35)</b>: aktiv auktion där bud + avgifter är under trend: 1,5 × %, +5 om < 3 dygn kvar.<br>• <b>Trend (0–20)</b>: fall i trendpris senaste 30 d (1 p per %).<br>• <b>Källor (0–10)</b>: 3 p per butik med verifierat lager.<br>Cardmarket räknas som i lager men priset är inte live-kontrollerat.</div></details>`;
+  return `<div class=sec><h2>Best of bevakningen</h2>${info}</div><div class=strip>${L.map(x => { const o = x.best, a = x.au, link = o ? o.url : a ? a.url : x.it.cardmarket_url || "#bevakning";
+    const price = o ? kr(o.L) : a ? kr(a.per) : "–", where = o ? esc(o.source) : a ? esc(a.platform) + " (auktion)" : "Inget i lager";
+    const d = o ? o.d : a ? a.d : null;
+    return `<a class=hc href="${esc(link)}" ${link.startsWith("#") ? "" : "target=_blank rel=noopener"}><div class=im>${img(x.it)}<span class="chip ${x.sc >= 40 ? "c-g" : x.sc >= 20 ? "c-a" : "c-n"}" style="position:absolute;top:8px;left:8px" title="${esc(x.parts.join(" + "))}">${x.sc} p</span>${d != null ? `<span class=tl>${d >= 0 ? "−" : "+"}${fmt(Math.abs(d))} % vs trend</span>` : ""}</div>
+      <div class=bd><div class=t>${esc(short(x.it.name))}</div><div class="xs mut">${where}${x.b ? ` · trend ${kr(x.b)}` : ""}</div><div class=p>${price}</div><div class="xs ${o || a ? "" : "mut"}" style="color:${o && o.d >= 0 ? "var(--g)" : ""}">${x.why.slice(0, 2).join(" · ")}</div></div></a>`; }).join("")}</div>`;
+}
+
 // ---------- vyer ----------
 function vOverview() {
   const t = totals(), pts = portfolioSeries(), w = winStart(), shown = pts.filter(p => p[0] >= w);
@@ -182,6 +210,7 @@ function vOverview() {
   <section class=hero><div class=lbl>Portföljvärde</div><div class=val>${kr(t.mid)}</div>
     <span class="chip ${t.unreal >= 0 ? "c-g" : "c-r"}">${t.unreal >= 0 ? "▲" : "▼"} ${kr(Math.abs(t.unreal))} · ${pctTxt(t.unreal / t.cost * 100)}</span> <span class="sm mut">${eur(t.mid)} · orealiserat</span>
     <div class=kpis><div class=kpi><span>Investerat</span><b>${kr(t.cost)}</b></div><div class=kpi><span>Realiserat</span><b class="${t.realised > 0 ? "g" : ""}">${kr(t.realised)}</b></div><div class=kpi><span>Spann</span><b>${fmt(t.lo)}–${fmt(t.hi)}</b></div></div></section>
+  ${bestOf()}
   <div class="card chartcard"><div class=top style="margin-bottom:8px"><div class=legend><span><i style="background:#8b7cf6"></i>Marknadsvärde</span><span><i style="background:#8a96ab"></i>Investerat</span></div>
     <div class=seg>${["7d", "30d", "all"].map(r => `<button class="${RANGE === r ? "on" : ""}" onclick="RANGE='${r}';route()">${r === "all" ? "Allt" : r.replace("d", " d")}</button>`).join("")}</div></div>
     <div class=pchart>${lineChart([{color: "#8b7cf6", fill: true, pts: shown.map(p => [...p])}], {cost: t.cost})}</div>
