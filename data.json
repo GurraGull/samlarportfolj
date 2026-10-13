@@ -316,7 +316,13 @@
           "language": "okänt",
           "notes": "Auktion (ledande bud), slutade 24 sep. Historik."
         }
-      ]
+      ],
+      "image": {
+        "src": "images/pkm-30c-etb.webp",
+        "credit": "Produktbild via återförsäljare (© Pokémon / Wizards of the Coast)",
+        "source_url": "https://dragonslair.se/products/pokemon-tcg-30th-celebration-elite-trainer-box",
+        "downloaded": "2026-10-13"
+      }
     },
     {
       "id": "mtg-hobbit-cbb",
@@ -505,7 +511,13 @@
           "language": "engelska",
           "notes": ""
         }
-      ]
+      ],
+      "image": {
+        "src": "images/mtg-hobbit-cbb.webp",
+        "credit": "Produktbild via återförsäljare (© Pokémon / Wizards of the Coast)",
+        "source_url": "https://manatorsk.com/products/magic-the-gathering-collector-booster-display-box-the-hobbit",
+        "downloaded": "2026-10-13"
+      }
     },
     {
       "id": "mtg-ltr-se-cbb",
@@ -542,7 +554,13 @@
         }
       ],
       "community": [],
-      "offers": []
+      "offers": [],
+      "image": {
+        "src": "images/mtg-ltr-se-cbb.webp",
+        "credit": "Produktbild via återförsäljare (© Pokémon / Wizards of the Coast)",
+        "source_url": "https://forgeandfiregaming.com/special-deals/lord-of-the-rings-special-release-collector-booster-box/",
+        "downloaded": "2026-10-13"
+      }
     },
     {
       "id": "mtg-fin-cbb",
@@ -603,7 +621,13 @@
           "takeaway": "Bara ~10 % dipp vid release → tunn allokering."
         }
       ],
-      "offers": []
+      "offers": [],
+      "image": {
+        "src": "images/mtg-fin-cbb.webp",
+        "credit": "Produktbild via återförsäljare (© Pokémon / Wizards of the Coast)",
+        "source_url": "https://facetofacegames.com/en-us/products/final-fantasy-collector-booster-box",
+        "downloaded": "2026-10-13"
+      }
     },
     {
       "id": "mtg-mh3-cbb",
@@ -640,7 +664,13 @@
         }
       ],
       "community": [],
-      "offers": []
+      "offers": [],
+      "image": {
+        "src": "images/mtg-mh3-cbb.webp",
+        "credit": "Produktbild via återförsäljare (© Pokémon / Wizards of the Coast)",
+        "source_url": "https://cardshoplive.com/products/modern-horizons-3-collector-booster-display",
+        "downloaded": "2026-10-13"
+      }
     }
   ],
   "rate_sources": {

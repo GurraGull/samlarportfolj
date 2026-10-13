@@ -47,7 +47,7 @@ elif a[0] == "publish":
     # Commit + push data.json (och ev. ändrade filer). Kräver remote 'origin' och GITHUB_TOKEN i env.
     msg = a[1] if len(a) > 1 else f"Prisuppdatering {dt.date.today()}"
     g = lambda *c: subprocess.run(["git", "-C", str(D), *c], check=True)
-    g("add", "data.json", "index.html", "app.js", "style.css", "README.md", "update.py")
+    g("add", "data.json", "index.html", "app.js", "style.css", "README.md", "update.py", "images")
     if subprocess.run(["git", "-C", str(D), "diff", "--cached", "--quiet"]).returncode: g("commit", "-m", msg)
     g("-c", "credential.helper=!f() { echo username=x-access-token; echo password=$GITHUB_TOKEN; }; f", "push", "origin", "main")
 elif a[0] == "build":

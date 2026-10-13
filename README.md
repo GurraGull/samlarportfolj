@@ -36,3 +36,9 @@ Steg:
 3. Bukowskis: `https://www.bukowskis.com/sv/search?q=pokemon` (och magic). Hittills inga TCG-objekt.
 4. Lägg in i `auctions` i portfolio.json (item_id om objektet spåras, annars null; platform måste matcha en nyckel i `auction_fees`; price_kind = bud|utrop|lägsta nästa bud; ends_at ISO lokal tid). Ta inte bort avslutade – de blir historik och döljs i "På auktion nu".
 5. Fasta annonser (Blocket m.fl.) som är intressanta men inte spåras: `market_watch`.
+
+## Design & bilder
+- Sajten: hero (portföljvärde) → "Att titta på nu" (deals + auktioner som slutar snart, med nedräkning) → "Mina samlarobjekt" → "Bevakning" → "Detaljer" (hopfällbara tabeller). Mobil först.
+- Produktbilder ligger lokalt i `images/<id>.webp` (max 600 px, nedladdade – ingen hotlinking). Varje item i `data.json` har `image: {src, credit, source_url, downloaded}`. Saknas bild visas `images/placeholder.svg`.
+- Nytt objekt: ladda ner bild (t.ex. og:image från butikssidan), konvertera med Pillow till webp, lägg till `image`-fältet.
+- Förhandsgranska: `python3 -m http.server 8765` + headless Chrome i 390 px och 1280 px (`preview-mobile.png`, `preview-desktop.png`).
