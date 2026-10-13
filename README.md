@@ -75,3 +75,12 @@ Uppdatera även `status`/`quantity` på objektet när innehavet ändras.
 **Portföljgraf & största rörelser:** byggs i webbläsaren från trend-snapshots (Cardmarket när det finns ≥2 datum, annars den trendkälla med flest datum) × innehav från transaktionsloggen. 7 d / 30 d / Allt räknas mot `last_updated`. Fler dagliga/regelbundna Cardmarket-trendpunkter ger en tätare graf – lägg därför alltid till en Cardmarket-trend-snapshot per objekt i rutinen.
 
 **Design:** appen har flikar (Översikt, Deals, Auktioner, Samling, Bevakning) via `#hash`, bottenflikar på mobil och sidomeny på desktop. Ikoner är inline-SVG; inga externa resurser eller typsnitt (systemtypsnitt).
+
+## Lagerkontroll (obligatorisk före deal-rapport, mån & tors)
+`python3 update.py stock` (= `stockcheck.py`) hämtar varje erbjudandes produktsida och sätter `stock_status` (in_stock / out_of_stock / preorder / unknown), `stock_checked_at`, `stock_evidence`, `http_status`, `dead_link` (404/410). Ordning: Shopify `/products/<handle>.js` → schema.org `availability` → synlig text (Slut i lager, Ej i lager, Bevaka, Notify me, Sold out …). Sök-/listsidor (Tradera-sök, Pokejakt) = unknown. Cardmarket blockerar bottar → markeras in_stock (marknadsplats, annonser är i lager) men priset är inte live-kontrollerat. Auktioner får `auction_status` active/ended.
+Sajten räknar **bara** `in_stock` + engelska som deal, och bara aktiva auktioner i "Att titta på nu". Slut i lager / ej engelska visas utfällbart och gråat; unknown får en varningsbadge. Rapportera aldrig en deal eller utlöst bevakning utan att `stock` körts samma dag.
+Ordning i rutinen: lägg in priser/erbjudanden → `update.py stock` → `update.py check` → rapportera → `update.py publish`.
+
+## Språkfilter & MTG-bevakning
+Globalt språkfilter: engelska (`language_filter` i data.json). Erbjudanden med annat språk (t.ex. tyska) räknas aldrig som deals. Cardmarket-länkar har `language=1`.
+MTG Collector-boxar: riktmärke = Cardmarkets officiella prisguide (`https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json`, produktlista `.../productList/products_nonsingles_1.json`, kategori "Magic Display"). Slå upp `cardmarket_id` per objekt och lägg till trend som snapshot. Prisguiden är inte språkfiltrerad; ignorera `low` (ofta fel språk). Nya köpbara erbjudanden: skanna Shopify-butikernas `/products.json` (dragonslair.se, nordic-legends.com, cardcosmos.de, paperdealer.eu, manatorsk.com) efter "Collector Booster Box/Display" med `available: true` och engelsk titel.

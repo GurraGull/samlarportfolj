@@ -13,6 +13,9 @@ const TYPES = {trend: "trend", listing: "annons", sold: "såld", bid: "bud"};
 const COL = {trend: "#8b7cf6", listing: "#3ec7f5", sold: "#22c55e", bid: "#f5b93a"};
 const dnum = s => new Date(s.slice(0, 10) + "T00:00:00Z").getTime() / 864e5;
 const iso = d => new Date(d * 864e5).toISOString().slice(0, 10);
+const NONEN = /tysk|german|japan|fransk|ital|span|kines|korean/i;
+const ago = t => { if (!t) return ""; const m = (Date.now() - new Date(t).getTime()) / 6e4; return m < 60 ? Math.max(1, Math.round(m)) + " min sedan" : m < 1440 ? Math.round(m / 60) + " h sedan" : Math.round(m / 1440) + " d sedan"; };
+const stockBadge = o => o.stock_status === "in_stock" ? `<span class="chip c-g" title="${esc(o.stock_evidence || "")}">I lager ✓ kontrollerat ${ago(o.stock_checked_at)}</span>` : o.stock_status === "preorder" ? `<span class="chip c-acc">Förbeställning</span>` : o.stock_status === "out_of_stock" ? `<span class="chip c-n">${o.dead_link ? "Död länk" : "Slut i lager"}</span>` : `<span class="chip c-a" title="${esc(o.stock_evidence || "")}">⚠ Lager ej verifierat</span>`;
 const PH = "images/placeholder.svg";
 const img = (it, alt) => `<img src="${esc(it?.image?.src || PH)}" alt="${esc(alt || it?.name || "")}" loading="lazy" onerror="this.onerror=null;this.src='${PH}'">`;
 const short = n => n.replace(/^MTG /, "").replace(/^Pokémon TCG: /, "");
@@ -41,7 +44,7 @@ const bench = it => { const t = it.snapshots.filter(s => s.type === "trend" && s
 function series(it) {
   const by = {};
   for (const s of it.snapshots) if (s.type === "trend" && !s.approx && sek(s.price, s.currency)) {
-    const k = s.source.toLowerCase().includes("cardmarket") ? "Cardmarket" : s.source.split(" ")[0];
+    const sl = s.source.toLowerCase(), k = sl.includes("prisguide") ? "Cardmarket prisguide" : sl.includes("cardmarket") ? "Cardmarket" : s.source.split(" ")[0];
     (by[k] ||= []).push([dnum(s.date), sek(s.price, s.currency)]);
   }
   const nd = k => new Set(by[k].map(x => x[0])).size + (k === "Cardmarket" && new Set(by[k].map(x => x[0])).size > 1 ? 100 : 0);
@@ -88,17 +91,18 @@ function offersOf(it) {
     if (o.shipping == null) risk.push("frakt okänd"); if (o.in_stock == null) risk.push("lager okänt"); if (o.in_stock === false) risk.push("ej i lager");
     if (o.origin === "non-EU") risk.push("icke-EU: moms/tull"); if (["okänt", "alla språk"].includes(o.language)) risk.push("språk okänt");
     if (!o.seller_rating) risk.push("säljbetyg saknas"); if (["tradera", "ebay", "cardmarket", "aukro"].some(k => o.source.toLowerCase().includes(k))) risk.push("kolla försegling");
-    return {...o, item: it, L, d, risk, current: o.date === latest, deal: d != null && d >= DS.threshold_pct && o.date === latest && o.in_stock !== false}; })
+    if (o.stock_status === "unknown") risk.unshift("lager ej verifierat");
+    return {...o, item: it, L, d, risk, current: o.date === latest, eng: !NONEN.test(o.language || ""), deal: d != null && d >= DS.threshold_pct && o.stock_status === "in_stock" && !NONEN.test(o.language || "")}; })
     .sort((a, c) => c.date.localeCompare(a.date) || (c.d ?? -999) - (a.d ?? -999));
 }
 function aucLanded(a) { const f = AF[a.platform] || {premium_pct: 0, fixed: 0, currency: "SEK"}; let v = sek(a.price, a.currency); if (v == null) return null;
   v = v * (1 + f.premium_pct / 100) + sek(f.fixed, f.currency) + (a.shipping ? sek(a.shipping, a.currency) : 0); if (a.platform.endsWith("UK")) v *= 1 + DS.import_vat_pct / 100; return v; }
 function auctions() { return (P.auctions || []).map(a => { const it = a.item_id ? ITEMS[a.item_id] : null, L = aucLanded(a), q = a.qty || 1, per = L ? L / q : null, b = it ? bench(it)[0] : null;
-  return {...a, it, L, per, d: b && per ? (b - per) / b * 100 : null, live: new Date(a.ends_at).getTime() > Date.now()}; }).sort((a, b) => a.ends_at.localeCompare(b.ends_at)); }
+  return {...a, it, L, per, d: b && per ? (b - per) / b * 100 : null, live: a.auction_status !== "ended" && new Date(a.ends_at).getTime() > Date.now()}; }).sort((a, b) => a.ends_at.localeCompare(b.ends_at)); }
 function countdown(t) { const ms = new Date(t).getTime() - Date.now(); if (ms <= 0) return "avslutad"; const h = Math.floor(ms / 36e5), d = Math.floor(h / 24);
   return d >= 1 ? `${d} d ${h % 24} h` : h >= 1 ? `${h} h ${Math.floor(ms / 6e4) % 60} min` : `${Math.floor(ms / 6e4)} min`; }
 function alertState(it) {
-  return (it.alerts || []).map(a => { const offers = offersOf(it).filter(o => o.current && o.in_stock !== false && o.L);
+  return (it.alerts || []).map(a => { const offers = offersOf(it).filter(o => o.stock_status === "in_stock" && o.eng && o.L);
     const best = offers.length ? Math.min(...offers.map(o => o.L)) : null, cur = a.basis === "offer" ? best : val(it, "mid");
     const hit = cur != null && (a.type === "below" ? cur <= a.sek : cur >= a.sek);
     return {...a, cur, hit}; });
@@ -136,12 +140,18 @@ function spark(it) { const p = series(it).pts; if (new Set(p.map(x => x[0])).siz
 const sources = it => { const G = [["Cardmarket", ["cardmarket", "packquant"]], ["TCGplayer", ["tcgplayer"]], ["Tradera", ["tradera"]], ["Svenska butiker", ["pokejakt", "dragon", "hobbykort", "kortarkivet", "manatorsk"]], ["eBay", ["ebay"]], ["Aukro", ["aukro"]], ["Övriga EU", ["butiker eu", "pokeschnapp"]]];
   return `<div class=src>${G.map(([g, k]) => { const ss = it.snapshots.filter(s => k.some(x => s.source.toLowerCase().includes(x))).sort((a, b) => b.date.localeCompare(a.date)).slice(0, 3);
     return ss.length ? `<div><b>${g}</b>${ss.map(s => `<div><a href="${esc(s.url)}" target=_blank rel=noopener>${money(s.price, s.currency)}</a> <span class=mut>${TYPES[s.type]} · ${s.date}${s.approx ? "~" : ""}</span></div>`).join("")}</div>` : ""; }).join("")}</div>`; };
+function offerRow(o, withItem) {
+  return `<a class="row${o.stock_status === "out_of_stock" || !o.eng ? " oos" : ""}" href="${esc(o.url)}" target=_blank rel=noopener style="grid-template-columns:${withItem ? "52px " : ""}1fr auto">
+    ${withItem ? `<div class=th>${img(o.item)}</div>` : ""}<div><div class=nm>${o.deal ? '<span class="chip c-g">DEAL</span> ' : ""}${esc(o.source)}${withItem ? ` <span class=mut>· ${esc(short(o.item.name))}</span>` : ""}</div>
+    <div class=meta>${stockBadge(o)}${o.eng ? "" : '<span class="chip c-r">ej engelska</span>'}${o.origin} · ${o.date} · ${esc(o.language)}</div><div class="meta xs">${esc(o.risk.join(" · "))}</div></div>
+    <div class=rt><b>${kr(o.L)}</b><span class="xs mut">${o.currency !== "SEK" ? fmt(o.price, 2) + " " + o.currency : "landat"}</span><br>${chip(o.d)}</div></a>`;
+}
 function offerRows(list, withItem) {
   if (!list.length) return '<div class=empty>Inga sparade erbjudanden.</div>';
-  return `<div class=list>${list.map(o => `<a class=row href="${esc(o.url)}" target=_blank rel=noopener style="grid-template-columns:${withItem ? "52px " : ""}1fr auto">
-    ${withItem ? `<div class=th>${img(o.item)}</div>` : ""}<div><div class=nm>${o.deal ? '<span class="chip c-g">DEAL</span> ' : ""}${esc(o.source)}${withItem ? ` <span class=mut>· ${esc(short(o.item.name))}</span>` : ""}</div>
-    <div class=meta>${o.origin} · ${o.date} · ${esc(o.language)}${o.in_stock === false ? ' · <span class=r>ej i lager</span>' : ""}</div><div class="meta xs">${esc(o.risk.join(" · "))}</div></div>
-    <div class=rt><b>${kr(o.L)}</b><span class="xs mut">${o.currency !== "SEK" ? fmt(o.price, 2) + " " + o.currency : "landat"}</span><br>${chip(o.d)}</div></a>`).join("")}</div>`;
+  const ok = list.filter(o => o.stock_status !== "out_of_stock" && o.eng).sort((a, b) => (a.stock_status === "in_stock" ? 0 : 1) - (b.stock_status === "in_stock" ? 0 : 1) || (a.L ?? 1e9) - (b.L ?? 1e9));
+  const gone = list.filter(o => o.stock_status === "out_of_stock" || !o.eng);
+  return `${ok.length ? `<div class=list>${ok.map(o => offerRow(o, withItem)).join("")}</div>` : '<div class="card empty">Inga verifierade köpbara erbjudanden.</div>'}
+  ${gone.length ? `<div class="list" style="margin-top:8px">${expRow(`<div style="grid-column:1/-1;display:flex;justify-content:space-between;align-items:center"><span class="sm mut">Slut i lager / ej engelska (${gone.length})</span><span class=chev>${ic("chev", 16)}</span></div>`, `<div class=oosl>${gone.map(o => offerRow(o, withItem)).join("")}</div>`)}</div>` : ""}`;
 }
 const community = it => (it.community || []).length ? it.community.map(c => `<div class=sm style="margin-bottom:8px"><a href="${esc(c.url)}" target=_blank rel=noopener>${esc(c.label)}</a><br><span class=mut>${esc(c.takeaway)}</span></div>`).join("") : '<div class="sm mut">Inga trådar sparade.</div>';
 function details(it) {
@@ -149,7 +159,7 @@ function details(it) {
   return `<div class=in><p class=sm>${esc(it.notes)}</p><h4>Prishistorik (SEK)</h4><div class=pchart>${itemChart(it)}</div>
     ${(it.alerts || []).length ? `<h4>Prisbevakning</h4>${alertState(it).map(a => `<div class=sm style="margin-bottom:6px"><span class="chip ${a.hit ? "c-a" : "c-n"}">${ic("bell", 12)} ${a.type === "below" ? "under" : "över"} ${kr(a.sek)}</span> <span class=mut>nu ${kr(a.cur)} (${a.basis === "offer" ? "bästa landade erbjudande" : "mittvärde"}) · ${esc(a.note || "")}</span></div>`).join("")}` : ""}
     <h4>Källor</h4>${sources(it)}<h4>Erbjudanden${b ? ` · riktmärke ${kr(b)} (Cardmarket-trend ${bs.date})` : ""}</h4>${offerRows(offersOf(it), false)}
-    <h4>Forum &amp; community</h4>${community(it)}${it.msrp ? `<p class="sm mut">MSRP <a href="${esc(it.msrp.url)}" target=_blank rel=noopener>${money(it.msrp.price, it.msrp.currency)}</a></p>` : ""}
+    ${it.cardmarket_url ? `<p class=sm><a href="${esc(it.cardmarket_url)}" target=_blank rel=noopener>${ic("ext", 13)} Cardmarket – engelska annonser (alltid i lager)</a></p>` : ""}<h4>Forum &amp; community</h4>${community(it)}${it.msrp ? `<p class="sm mut">MSRP <a href="${esc(it.msrp.url)}" target=_blank rel=noopener>${money(it.msrp.price, it.msrp.currency)}</a></p>` : ""}
     ${it.image ? `<p class="xs mut">Bild: <a href="${esc(it.image.source_url)}" target=_blank rel=noopener>${esc(it.image.credit)}</a></p>` : ""}</div>`;
 }
 const expRow = (head, body) => `<div class=row onclick="this.classList.toggle('open')">${head}</div><div class=exp><div>${body}</div></div>`;

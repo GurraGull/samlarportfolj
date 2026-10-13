@@ -226,11 +226,16 @@
           "currency": "SEK",
           "shipping": null,
           "origin": "SE",
-          "in_stock": null,
+          "in_stock": false,
           "url": "https://dragonslair.se/products/pokemon-tcg-30th-celebration-elite-trainer-box",
           "seller_rating": null,
           "language": "okänt",
-          "notes": "Max 1/kund. Lagerstatus syntes inte i sökutdraget."
+          "notes": "Max 1/kund. Lagerstatus syntes inte i sökutdraget.",
+          "stock_status": "out_of_stock",
+          "http_status": 200,
+          "stock_checked_at": "2026-10-13T23:06+02:00",
+          "stock_evidence": "Shopify .js available=False, pris 995",
+          "checked_price": 995.0
         },
         {
           "date": "2026-10-13",
@@ -241,10 +246,14 @@
           "shipping": null,
           "origin": "EU",
           "in_stock": true,
-          "url": "http://www.cardmarket.com/en/Pokemon/Products/Elite-Trainer-Boxes/30th-Celebration-Elite-Trainer-Box",
+          "url": "http://www.cardmarket.com/en/Pokemon/Products/Elite-Trainer-Boxes/30th-Celebration-Elite-Trainer-Box?language=1",
           "seller_rating": null,
           "language": "alla språk",
-          "notes": "Lägsta pris oavsett språk; kan vara IT/ES."
+          "notes": "Lägsta pris oavsett språk; kan vara IT/ES.",
+          "stock_status": "in_stock",
+          "http_status": null,
+          "stock_checked_at": "2026-10-13T23:06+02:00",
+          "stock_evidence": "Cardmarket-marknadsplats: listade annonser är i lager per definition (sidan blockerar bottar, priset ej live-kontrollerat)"
         },
         {
           "date": "2026-10-13",
@@ -258,7 +267,12 @@
           "url": "https://blindbox.se/products/pokemon-30th-anniversary-elite-trainer-box",
           "seller_rating": null,
           "language": "engelska",
-          "notes": "9 kvar i lager."
+          "notes": "9 kvar i lager.",
+          "stock_status": "in_stock",
+          "http_status": 200,
+          "stock_checked_at": "2026-10-13T23:06+02:00",
+          "stock_evidence": "Shopify .js available=True, pris 1999",
+          "checked_price": 1999.0
         },
         {
           "date": "2026-10-13",
@@ -268,11 +282,15 @@
           "currency": "GBP",
           "shipping": 3.92,
           "origin": "non-EU",
-          "in_stock": true,
+          "in_stock": null,
           "url": "https://www.ebay.co.uk/itm/188939963703",
           "seller_rating": null,
           "language": "okänt",
-          "notes": "Frakt gäller inom UK; leverans till Sverige ej bekräftad. Best Offer."
+          "notes": "Frakt gäller inom UK; leverans till Sverige ej bekräftad. Best Offer.",
+          "stock_status": "unknown",
+          "http_status": 403,
+          "stock_checked_at": "2026-10-13T23:06+02:00",
+          "stock_evidence": "Kunde inte läsa sidan (HTTP 403)"
         },
         {
           "date": "2026-10-13",
@@ -282,11 +300,15 @@
           "currency": "SEK",
           "shipping": null,
           "origin": "SE",
-          "in_stock": true,
+          "in_stock": null,
           "url": "https://www.tradera.com/search?q=30th%20celebration%20elite%20trainer%20box",
           "seller_rating": null,
           "language": "okänt",
-          "notes": ""
+          "notes": "",
+          "stock_status": "unknown",
+          "http_status": 200,
+          "stock_checked_at": "2026-10-13T23:06+02:00",
+          "stock_evidence": "Sök-/listsida – inte en specifik produkt, kan inte verifieras"
         },
         {
           "date": "2026-10-13",
@@ -296,11 +318,15 @@
           "currency": "SEK",
           "shipping": null,
           "origin": "SE",
-          "in_stock": true,
+          "in_stock": null,
           "url": "https://pokejakt.se/set/30th-celebration",
           "seller_rating": null,
           "language": "okänt",
-          "notes": ""
+          "notes": "",
+          "stock_status": "unknown",
+          "http_status": 200,
+          "stock_checked_at": "2026-10-13T23:06+02:00",
+          "stock_evidence": "Sök-/listsida – inte en specifik produkt, kan inte verifieras"
         },
         {
           "date": "2026-09-20",
@@ -314,7 +340,11 @@
           "url": "https://www.tradera.com/item/1001341/751394586/pok%C3%A9mon-30th-celebration-elite-trainer-box-etb-sealed",
           "seller_rating": "verifierad",
           "language": "okänt",
-          "notes": "Auktion (ledande bud), slutade 24 sep. Historik."
+          "notes": "Auktion (ledande bud), slutade 24 sep. Historik.",
+          "stock_status": "out_of_stock",
+          "http_status": 200,
+          "stock_checked_at": "2026-10-13T23:06+02:00",
+          "stock_evidence": "schema.org availability=OutOfStock"
         }
       ],
       "image": {
@@ -421,6 +451,15 @@
           "type": "listing",
           "url": "https://dragonslair.se/products/magic-the-gathering-the-hobbit-collector-booster-display",
           "note": "lagerstatus oklar"
+        },
+        {
+          "date": "2026-10-12",
+          "source": "Cardmarket prisguide",
+          "price": 605.23,
+          "currency": "EUR",
+          "type": "trend",
+          "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
+          "note": "Officiell Cardmarket-prisguide (idProduct 885552), ej språkfiltrerad"
         }
       ],
       "community": [
@@ -449,11 +488,16 @@
           "currency": "EUR",
           "shipping": null,
           "origin": "EU",
-          "in_stock": true,
+          "in_stock": false,
           "url": "https://www.paperdealer.eu/products/mtg-the-hobbit-collector-booster-display-12-packs-english-sealed",
           "seller_rating": null,
           "language": "engelska",
-          "notes": "Påstår WPN-auktoriserad; lagerstatus ej explicit."
+          "notes": "Påstår WPN-auktoriserad; lagerstatus ej explicit.",
+          "stock_status": "out_of_stock",
+          "http_status": 200,
+          "stock_checked_at": "2026-10-13T23:06+02:00",
+          "stock_evidence": "Shopify .js available=False, pris 599.99",
+          "checked_price": 599.99
         },
         {
           "date": "2026-10-13",
@@ -463,11 +507,16 @@
           "currency": "EUR",
           "shipping": null,
           "origin": "EU",
-          "in_stock": true,
+          "in_stock": false,
           "url": "https://nordic-legends.com/products/the-hobbit-collector-booster-box-885552",
           "seller_rating": null,
           "language": "okänt",
-          "notes": "2 kvar."
+          "notes": "2 kvar.",
+          "stock_status": "out_of_stock",
+          "http_status": 200,
+          "stock_checked_at": "2026-10-13T23:06+02:00",
+          "stock_evidence": "Shopify .js available=False, pris 549.95",
+          "checked_price": 549.95
         },
         {
           "date": "2026-10-13",
@@ -480,8 +529,13 @@
           "in_stock": true,
           "url": "https://cardcosmos.de/en/products/magic-the-gathering-the-hobbit-collector-booster-display-german",
           "seller_rating": null,
-          "language": "tyska",
-          "notes": "Tysk utgåva; frakt €4,99 gäller DE."
+          "language": "Tyska",
+          "notes": "Tysk utgåva; frakt €4,99 gäller DE.",
+          "stock_status": "in_stock",
+          "http_status": 200,
+          "stock_checked_at": "2026-10-13T23:06+02:00",
+          "stock_evidence": "Shopify .js available=True, pris 749.9",
+          "checked_price": 749.9
         },
         {
           "date": "2026-10-13",
@@ -495,7 +549,11 @@
           "url": "https://misstepgames.com/products/the-hobbit-collector-booster-display",
           "seller_rating": null,
           "language": "engelska",
-          "notes": "'Mejla mig när tillgänglig' – ej i lager."
+          "notes": "'Mejla mig när tillgänglig' – ej i lager.",
+          "stock_status": "out_of_stock",
+          "http_status": 200,
+          "stock_checked_at": "2026-10-13T23:06+02:00",
+          "stock_evidence": "text: '…e hobbit prerelease pack price tba view sold out the hobbit play booster display 167.99€…'"
         },
         {
           "date": "2026-10-13",
@@ -509,7 +567,12 @@
           "url": "https://mayener-fantasyland.de/Magic-the-Gathering-The-Hobbit-Collector-Display-12-Booster-EN",
           "seller_rating": null,
           "language": "engelska",
-          "notes": "'Benachrichtigen' – ej i lager. UVP €599,88."
+          "notes": "'Benachrichtigen' – ej i lager. UVP €599,88.",
+          "stock_status": "out_of_stock",
+          "dead_link": true,
+          "http_status": 404,
+          "stock_checked_at": "2026-10-13T23:06+02:00",
+          "stock_evidence": "HTTP 404 – död länk"
         },
         {
           "date": "2026-10-13",
@@ -519,11 +582,16 @@
           "currency": "SEK",
           "shipping": null,
           "origin": "SE",
-          "in_stock": null,
+          "in_stock": false,
           "url": "https://dragonslair.se/products/magic-the-gathering-the-hobbit-collector-booster-display",
           "seller_rating": null,
           "language": "engelska",
-          "notes": ""
+          "notes": "",
+          "stock_status": "out_of_stock",
+          "http_status": 200,
+          "stock_checked_at": "2026-10-13T23:06+02:00",
+          "stock_evidence": "Shopify .js available=False, pris 6499",
+          "checked_price": 6499.0
         }
       ],
       "image": {
@@ -539,7 +607,9 @@
           "basis": "offer",
           "note": "Exempel: köpsignal om landat pris ≤ 5 500 kr – justera"
         }
-      ]
+      ],
+      "cardmarket_id": 885552,
+      "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products/Search?searchString=The%20Hobbit%20Collector%20Booster%20Box&idCategory=7&language=1"
     },
     {
       "id": "mtg-ltr-se-cbb",
@@ -556,7 +626,7 @@
           "basis": "Cardmarket trend"
         }
       },
-      "notes": "Ur tryck. 30-dagarssnitt €2 735,16.",
+      "notes": "Ur tryck. 30-dagarssnitt €2 735,16. OBS: Cardmarkets prisguide 12 okt anger trend €5650.16 för 'LotR Special Edition Collector Booster Box' (id 732335) – kraftigt över tidigare €2 866,77; oklart om samma produkt/variant, verifiera.",
       "snapshots": [
         {
           "date": "2026-10-13",
@@ -573,6 +643,15 @@
           "currency": "EUR",
           "type": "listing",
           "url": "https://www.cardmarket.com/en/Magic/Products/Booster-Boxes/The-Lord-of-the-Rings-Tales-of-Middle-earth-Special-Edition-Collector-Booster-Box"
+        },
+        {
+          "date": "2026-10-12",
+          "source": "Cardmarket prisguide",
+          "price": 5650.16,
+          "currency": "EUR",
+          "type": "trend",
+          "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
+          "note": "Officiell Cardmarket-prisguide (idProduct 732335), ej språkfiltrerad"
         }
       ],
       "community": [],
@@ -583,7 +662,9 @@
         "source_url": "https://forgeandfiregaming.com/special-deals/lord-of-the-rings-special-release-collector-booster-box/",
         "downloaded": "2026-10-13"
       },
-      "alerts": []
+      "alerts": [],
+      "cardmarket_id": 732335,
+      "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products/Search?searchString=The%20Lord%20of%20the%20Rings%3A%20Tales%20of%20Middle-earth%20Special%20Edition%20Collector%20Booster%20Box&idCategory=7&language=1"
     },
     {
       "id": "mtg-fin-cbb",
@@ -635,6 +716,15 @@
           "currency": "USD",
           "type": "trend",
           "url": "https://mythichub.com/products/final-fantasy-collector-booster-box"
+        },
+        {
+          "date": "2026-10-12",
+          "source": "Cardmarket prisguide",
+          "price": 1123,
+          "currency": "EUR",
+          "type": "trend",
+          "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
+          "note": "Officiell Cardmarket-prisguide (idProduct 812573), ej språkfiltrerad"
         }
       ],
       "community": [
@@ -651,7 +741,9 @@
         "source_url": "https://facetofacegames.com/en-us/products/final-fantasy-collector-booster-box",
         "downloaded": "2026-10-13"
       },
-      "alerts": []
+      "alerts": [],
+      "cardmarket_id": 812573,
+      "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products/Search?searchString=Magic%3A%20The%20Gathering%20-%20FINAL%20FANTASY%20Collector%20Booster%20Box&idCategory=7&language=1"
     },
     {
       "id": "mtg-mh3-cbb",
@@ -685,6 +777,15 @@
           "currency": "USD",
           "type": "trend",
           "url": "https://mythichub.com/products/modern-horizons-3-collector-booster-box"
+        },
+        {
+          "date": "2026-10-12",
+          "source": "Cardmarket prisguide",
+          "price": 724.56,
+          "currency": "EUR",
+          "type": "trend",
+          "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
+          "note": "Officiell Cardmarket-prisguide (idProduct 758483), ej språkfiltrerad"
         }
       ],
       "community": [],
@@ -695,7 +796,784 @@
         "source_url": "https://cardshoplive.com/products/modern-horizons-3-collector-booster-display",
         "downloaded": "2026-10-13"
       },
+      "alerts": [],
+      "cardmarket_id": 758483,
+      "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products/Search?searchString=Modern%20Horizons%203%20Collector%20Booster%20Box&idCategory=7&language=1"
+    },
+    {
+      "id": "mtg-duskmourn-house-of-horror-cbb",
+      "name": "MTG Duskmourn: House of Horror Collector Booster Box",
+      "category": "Magic: The Gathering",
+      "language": "Engelska",
+      "quantity": 1,
+      "purchase_price_sek": null,
+      "status": "watchlist",
+      "cardmarket_id": 776442,
+      "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products/Search?searchString=Duskmourn%3A%20House%20of%20Horror%20Collector%20Booster%20Box&idCategory=7&language=1",
+      "valuation": {
+        "mid": {
+          "price": 555.19,
+          "currency": "EUR",
+          "basis": "Cardmarket-trend (prisguide 2026-10-12)"
+        }
+      },
+      "notes": "Cardmarket prisguide 2026-10-12: trend €555.19. Produkt tillagd på Cardmarket 2024-07-02. Prisguiden är ej språkfiltrerad; 'lägsta' (€474) utelämnas då den ofta är fel språk/fel produkt.",
+      "snapshots": [
+        {
+          "date": "2026-10-12",
+          "source": "Cardmarket prisguide",
+          "price": 555.19,
+          "currency": "EUR",
+          "type": "trend",
+          "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
+          "note": "idProduct 776442"
+        }
+      ],
+      "community": [],
+      "offers": [],
+      "alerts": [],
+      "image": {
+        "src": "images/mtg-duskmourn-house-of-horror-cbb.webp",
+        "credit": "Produktbild via återförsäljare (© Wizards of the Coast)",
+        "source_url": "https://dragonslair.se/products/duskmourn-house-of-horror-collector-booster-display-magic-the-gathering",
+        "downloaded": "2026-10-13"
+      }
+    },
+    {
+      "id": "mtg-bloomburrow-cbb",
+      "name": "MTG Bloomburrow Collector Booster Box",
+      "category": "Magic: The Gathering",
+      "language": "Engelska",
+      "quantity": 1,
+      "purchase_price_sek": null,
+      "status": "watchlist",
+      "cardmarket_id": 774110,
+      "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products/Search?searchString=Bloomburrow%20Collector%20Booster%20Box&idCategory=7&language=1",
+      "valuation": {
+        "mid": {
+          "price": 883.55,
+          "currency": "EUR",
+          "basis": "Cardmarket-trend (prisguide 2026-10-12)"
+        }
+      },
+      "notes": "Cardmarket prisguide 2026-10-12: trend €883.55. Produkt tillagd på Cardmarket 2024-06-10. Prisguiden är ej språkfiltrerad; 'lägsta' (€950) utelämnas då den ofta är fel språk/fel produkt.",
+      "snapshots": [
+        {
+          "date": "2026-10-12",
+          "source": "Cardmarket prisguide",
+          "price": 883.55,
+          "currency": "EUR",
+          "type": "trend",
+          "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
+          "note": "idProduct 774110"
+        }
+      ],
+      "community": [],
+      "offers": [
+        {
+          "date": "2026-10-13",
+          "source": "Card Cosmos (DE)",
+          "seller": "cardcosmos.de",
+          "price": 1199.99,
+          "currency": "EUR",
+          "shipping": null,
+          "origin": "EU",
+          "in_stock": true,
+          "url": "https://cardcosmos.de/products/magic-the-gathering-bloomburrow-collector-booster-box-englisch",
+          "seller_rating": null,
+          "language": "Engelska",
+          "notes": "Magic: The Gathering - Bloomburrow Collectors Booster Box - EN",
+          "stock_status": "in_stock",
+          "http_status": 200,
+          "stock_checked_at": "2026-10-13T23:06+02:00",
+          "stock_evidence": "Shopify .js available=True, pris 1199.99",
+          "checked_price": 1199.99
+        }
+      ],
+      "alerts": [],
+      "image": {
+        "src": "images/mtg-bloomburrow-cbb.webp",
+        "credit": "Produktbild via återförsäljare (© Wizards of the Coast)",
+        "source_url": "https://cardcosmos.de/products/magic-the-gathering-bloomburrow-collector-booster-box-englisch",
+        "downloaded": "2026-10-13"
+      }
+    },
+    {
+      "id": "mtg-outlaws-of-thunder-junction-cbb",
+      "name": "MTG Outlaws of Thunder Junction Collector Booster Box",
+      "category": "Magic: The Gathering",
+      "language": "Engelska",
+      "quantity": 1,
+      "purchase_price_sek": null,
+      "status": "watchlist",
+      "cardmarket_id": 758326,
+      "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products/Search?searchString=Outlaws%20of%20Thunder%20Junction%20Collector%20Booster%20Box&idCategory=7&language=1",
+      "valuation": {
+        "mid": {
+          "price": 369.34,
+          "currency": "EUR",
+          "basis": "Cardmarket-trend (prisguide 2026-10-12)"
+        }
+      },
+      "notes": "Cardmarket prisguide 2026-10-12: trend €369.34. Produkt tillagd på Cardmarket 2024-02-24. Prisguiden är ej språkfiltrerad; 'lägsta' (€144) utelämnas då den ofta är fel språk/fel produkt.",
+      "snapshots": [
+        {
+          "date": "2026-10-12",
+          "source": "Cardmarket prisguide",
+          "price": 369.34,
+          "currency": "EUR",
+          "type": "trend",
+          "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
+          "note": "idProduct 758326"
+        }
+      ],
+      "community": [],
+      "offers": [],
+      "alerts": [],
+      "image": {
+        "src": "images/mtg-outlaws-of-thunder-junction-cbb.webp",
+        "credit": "Produktbild via återförsäljare (© Wizards of the Coast)",
+        "source_url": "https://cardcosmos.de/products/magic-the-gathering-outlaws-of-thunder-junction-collector-booster-box-englisch",
+        "downloaded": "2026-10-13"
+      }
+    },
+    {
+      "id": "mtg-murders-at-karlov-manor-cbb",
+      "name": "MTG Murders at Karlov Manor Collector Booster Box",
+      "category": "Magic: The Gathering",
+      "language": "Engelska",
+      "quantity": 1,
+      "purchase_price_sek": null,
+      "status": "watchlist",
+      "cardmarket_id": 748052,
+      "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products/Search?searchString=Murders%20at%20Karlov%20Manor%20Collector%20Booster%20Box&idCategory=7&language=1",
+      "valuation": {
+        "mid": {
+          "price": 351.8,
+          "currency": "EUR",
+          "basis": "Cardmarket-trend (prisguide 2026-10-12)"
+        }
+      },
+      "notes": "Cardmarket prisguide 2026-10-12: trend €351.80. Produkt tillagd på Cardmarket 2023-12-06. Prisguiden är ej språkfiltrerad; 'lägsta' (€122) utelämnas då den ofta är fel språk/fel produkt.",
+      "snapshots": [
+        {
+          "date": "2026-10-12",
+          "source": "Cardmarket prisguide",
+          "price": 351.8,
+          "currency": "EUR",
+          "type": "trend",
+          "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
+          "note": "idProduct 748052"
+        }
+      ],
+      "community": [],
+      "offers": [],
+      "alerts": [],
+      "image": {
+        "src": "images/mtg-murders-at-karlov-manor-cbb.webp",
+        "credit": "Produktbild via återförsäljare (© Wizards of the Coast)",
+        "source_url": "https://dragonslair.se/products/murders-at-karlov-manor-collectors-booster-display-magic-the-gathering",
+        "downloaded": "2026-10-13"
+      }
+    },
+    {
+      "id": "mtg-the-lost-caverns-of-ixalan-cbb",
+      "name": "MTG The Lost Caverns of Ixalan Collector Booster Box",
+      "category": "Magic: The Gathering",
+      "language": "Engelska",
+      "quantity": 1,
+      "purchase_price_sek": null,
+      "status": "watchlist",
+      "cardmarket_id": 734175,
+      "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products/Search?searchString=The%20Lost%20Caverns%20of%20Ixalan%20Collector%20Booster%20Box&idCategory=7&language=1",
+      "valuation": {
+        "mid": {
+          "price": 835.92,
+          "currency": "EUR",
+          "basis": "Cardmarket-trend (prisguide 2026-10-12)"
+        }
+      },
+      "notes": "Cardmarket prisguide 2026-10-12: trend €835.92. Produkt tillagd på Cardmarket 2023-09-23. Prisguiden är ej språkfiltrerad; 'lägsta' (€649.9) utelämnas då den ofta är fel språk/fel produkt.",
+      "snapshots": [
+        {
+          "date": "2026-10-12",
+          "source": "Cardmarket prisguide",
+          "price": 835.92,
+          "currency": "EUR",
+          "type": "trend",
+          "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
+          "note": "idProduct 734175"
+        }
+      ],
+      "community": [],
+      "offers": [],
+      "alerts": [],
+      "image": {
+        "src": "images/mtg-the-lost-caverns-of-ixalan-cbb.webp",
+        "credit": "Produktbild via återförsäljare (© Wizards of the Coast)",
+        "source_url": "https://dragonslair.se/products/magic-the-gathering-the-lost-caverns-of-ixalan-collectors-booster-dis-magic-the-gathering",
+        "downloaded": "2026-10-13"
+      }
+    },
+    {
+      "id": "mtg-wilds-of-eldraine-cbb",
+      "name": "MTG Wilds of Eldraine Collector Booster Box",
+      "category": "Magic: The Gathering",
+      "language": "Engelska",
+      "quantity": 1,
+      "purchase_price_sek": null,
+      "status": "watchlist",
+      "cardmarket_id": 719684,
+      "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products/Search?searchString=Wilds%20of%20Eldraine%20Collector%20Booster%20Box&idCategory=7&language=1",
+      "valuation": {
+        "mid": {
+          "price": 718.35,
+          "currency": "EUR",
+          "basis": "Cardmarket-trend (prisguide 2026-10-12)"
+        }
+      },
+      "notes": "Cardmarket prisguide 2026-10-12: trend €718.35. Produkt tillagd på Cardmarket 2023-06-21. Prisguiden är ej språkfiltrerad; 'lägsta' (€479.9) utelämnas då den ofta är fel språk/fel produkt.",
+      "snapshots": [
+        {
+          "date": "2026-10-12",
+          "source": "Cardmarket prisguide",
+          "price": 718.35,
+          "currency": "EUR",
+          "type": "trend",
+          "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
+          "note": "idProduct 719684"
+        }
+      ],
+      "community": [],
+      "offers": [],
+      "alerts": [],
+      "image": {
+        "src": "images/mtg-wilds-of-eldraine-cbb.webp",
+        "credit": "Produktbild via återförsäljare (© Wizards of the Coast)",
+        "source_url": "https://dragonslair.se/products/magic-the-gathering-wilds-of-eldraine-collectors-booster-display-magic-the-gathering",
+        "downloaded": "2026-10-13"
+      }
+    },
+    {
+      "id": "mtg-march-of-the-machine-cbb",
+      "name": "MTG March of the Machine Collector Booster Box",
+      "category": "Magic: The Gathering",
+      "language": "Engelska",
+      "quantity": 1,
+      "purchase_price_sek": null,
+      "status": "watchlist",
+      "cardmarket_id": 696391,
+      "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products/Search?searchString=March%20of%20the%20Machine%20Collector%20Booster%20Box&idCategory=7&language=1",
+      "valuation": {
+        "mid": {
+          "price": 808.42,
+          "currency": "EUR",
+          "basis": "Cardmarket-trend (prisguide 2026-10-12)"
+        }
+      },
+      "notes": "Cardmarket prisguide 2026-10-12: trend €808.42. Produkt tillagd på Cardmarket 2023-02-10. Prisguiden är ej språkfiltrerad; 'lägsta' (€500) utelämnas då den ofta är fel språk/fel produkt.",
+      "snapshots": [
+        {
+          "date": "2026-10-12",
+          "source": "Cardmarket prisguide",
+          "price": 808.42,
+          "currency": "EUR",
+          "type": "trend",
+          "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
+          "note": "idProduct 696391"
+        }
+      ],
+      "community": [],
+      "offers": [],
       "alerts": []
+    },
+    {
+      "id": "mtg-dominaria-united-cbb",
+      "name": "MTG Dominaria United Collector Booster Box",
+      "category": "Magic: The Gathering",
+      "language": "Engelska",
+      "quantity": 1,
+      "purchase_price_sek": null,
+      "status": "watchlist",
+      "cardmarket_id": 657414,
+      "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products/Search?searchString=Dominaria%20United%20Collector%20Booster%20Box&idCategory=7&language=1",
+      "valuation": {
+        "mid": {
+          "price": 277.44,
+          "currency": "EUR",
+          "basis": "Cardmarket-trend (prisguide 2026-10-12)"
+        }
+      },
+      "notes": "Cardmarket prisguide 2026-10-12: trend €277.44. Produkt tillagd på Cardmarket 2022-05-13. Prisguiden är ej språkfiltrerad; 'lägsta' (€122) utelämnas då den ofta är fel språk/fel produkt.",
+      "snapshots": [
+        {
+          "date": "2026-10-12",
+          "source": "Cardmarket prisguide",
+          "price": 277.44,
+          "currency": "EUR",
+          "type": "trend",
+          "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
+          "note": "idProduct 657414"
+        }
+      ],
+      "community": [],
+      "offers": [],
+      "alerts": [],
+      "image": {
+        "src": "images/mtg-dominaria-united-cbb.webp",
+        "credit": "Produktbild via återförsäljare (© Wizards of the Coast)",
+        "source_url": "https://dragonslair.se/products/dominaria-united-collectors-booster-display-magic-the-gathering",
+        "downloaded": "2026-10-13"
+      }
+    },
+    {
+      "id": "mtg-the-brothers-war-cbb",
+      "name": "MTG The Brothers' War Collector Booster Box",
+      "category": "Magic: The Gathering",
+      "language": "Engelska",
+      "quantity": 1,
+      "purchase_price_sek": null,
+      "status": "watchlist",
+      "cardmarket_id": 677805,
+      "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products/Search?searchString=The%20Brothers%27%20War%20Collector%20Booster%20Box&idCategory=7&language=1",
+      "valuation": {
+        "mid": {
+          "price": 622.49,
+          "currency": "EUR",
+          "basis": "Cardmarket-trend (prisguide 2026-10-12)"
+        }
+      },
+      "notes": "Cardmarket prisguide 2026-10-12: trend €622.49. Produkt tillagd på Cardmarket 2022-09-29. Prisguiden är ej språkfiltrerad; 'lägsta' (€448) utelämnas då den ofta är fel språk/fel produkt.",
+      "snapshots": [
+        {
+          "date": "2026-10-12",
+          "source": "Cardmarket prisguide",
+          "price": 622.49,
+          "currency": "EUR",
+          "type": "trend",
+          "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
+          "note": "idProduct 677805"
+        }
+      ],
+      "community": [],
+      "offers": [],
+      "alerts": [],
+      "image": {
+        "src": "images/mtg-the-brothers-war-cbb.webp",
+        "credit": "Produktbild via återförsäljare (© Wizards of the Coast)",
+        "source_url": "https://dragonslair.se/products/the-brothers-war-collectors-booster-display-magic-the-gathering",
+        "downloaded": "2026-10-13"
+      }
+    },
+    {
+      "id": "mtg-phyrexia-all-will-be-one-cbb",
+      "name": "MTG Phyrexia: All Will Be One Collector Booster Box",
+      "category": "Magic: The Gathering",
+      "language": "Engelska",
+      "quantity": 1,
+      "purchase_price_sek": null,
+      "status": "watchlist",
+      "cardmarket_id": 683494,
+      "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products/Search?searchString=Phyrexia%3A%20All%20Will%20Be%20One%20Collector%20Booster%20Box&idCategory=7&language=1",
+      "valuation": {
+        "mid": {
+          "price": 699.1,
+          "currency": "EUR",
+          "basis": "Cardmarket-trend (prisguide 2026-10-12)"
+        }
+      },
+      "notes": "Cardmarket prisguide 2026-10-12: trend €699.10. Produkt tillagd på Cardmarket 2022-11-04. Prisguiden är ej språkfiltrerad; 'lägsta' (€144) utelämnas då den ofta är fel språk/fel produkt.",
+      "snapshots": [
+        {
+          "date": "2026-10-12",
+          "source": "Cardmarket prisguide",
+          "price": 699.1,
+          "currency": "EUR",
+          "type": "trend",
+          "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
+          "note": "idProduct 683494"
+        }
+      ],
+      "community": [],
+      "offers": [],
+      "alerts": [],
+      "image": {
+        "src": "images/mtg-phyrexia-all-will-be-one-cbb.webp",
+        "credit": "Produktbild via återförsäljare (© Wizards of the Coast)",
+        "source_url": "https://cardcosmos.de/products/magic-the-gathering-phyrexia-all-will-be-one-collector-booster-box-japanisch",
+        "downloaded": "2026-10-13"
+      }
+    },
+    {
+      "id": "mtg-dominaria-remastered-cbb",
+      "name": "MTG Dominaria Remastered Collector Booster Box",
+      "category": "Magic: The Gathering",
+      "language": "Engelska",
+      "quantity": 1,
+      "purchase_price_sek": null,
+      "status": "watchlist",
+      "cardmarket_id": 681210,
+      "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products/Search?searchString=Dominaria%20Remastered%20Collector%20Booster%20Box&idCategory=7&language=1",
+      "valuation": {
+        "mid": {
+          "price": 531.96,
+          "currency": "EUR",
+          "basis": "Cardmarket-trend (prisguide 2026-10-12)"
+        }
+      },
+      "notes": "Cardmarket prisguide 2026-10-12: trend €531.96. Produkt tillagd på Cardmarket 2022-10-25. Prisguiden är ej språkfiltrerad; 'lägsta' (€374.99) utelämnas då den ofta är fel språk/fel produkt.",
+      "snapshots": [
+        {
+          "date": "2026-10-12",
+          "source": "Cardmarket prisguide",
+          "price": 531.96,
+          "currency": "EUR",
+          "type": "trend",
+          "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
+          "note": "idProduct 681210"
+        }
+      ],
+      "community": [],
+      "offers": [],
+      "alerts": [],
+      "image": {
+        "src": "images/mtg-dominaria-remastered-cbb.webp",
+        "credit": "Produktbild via återförsäljare (© Wizards of the Coast)",
+        "source_url": "https://cardcosmos.de/products/magic-the-gathering-dominaria-remastered-collector-booster-box-japanisch",
+        "downloaded": "2026-10-13"
+      }
+    },
+    {
+      "id": "mtg-double-masters-2022-cbb",
+      "name": "MTG Double Masters 2022 Collector Booster Box",
+      "category": "Magic: The Gathering",
+      "language": "Engelska",
+      "quantity": 1,
+      "purchase_price_sek": null,
+      "status": "watchlist",
+      "cardmarket_id": 657282,
+      "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products/Search?searchString=Double%20Masters%202022%20Collector%20Booster%20Box&idCategory=7&language=1",
+      "valuation": {
+        "mid": {
+          "price": 404.29,
+          "currency": "EUR",
+          "basis": "Cardmarket-trend (prisguide 2026-10-12)"
+        }
+      },
+      "notes": "Cardmarket prisguide 2026-10-12: trend €404.29. Produkt tillagd på Cardmarket 2022-05-13. Prisguiden är ej språkfiltrerad; 'lägsta' (€122) utelämnas då den ofta är fel språk/fel produkt.",
+      "snapshots": [
+        {
+          "date": "2026-10-12",
+          "source": "Cardmarket prisguide",
+          "price": 404.29,
+          "currency": "EUR",
+          "type": "trend",
+          "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
+          "note": "idProduct 657282"
+        }
+      ],
+      "community": [],
+      "offers": [
+        {
+          "date": "2026-10-13",
+          "source": "Card Cosmos (DE)",
+          "seller": "cardcosmos.de",
+          "price": 524.9,
+          "currency": "EUR",
+          "shipping": null,
+          "origin": "EU",
+          "in_stock": true,
+          "url": "https://cardcosmos.de/products/magic-the-gathering-double-masters-2022-collector-booster-box-englisch",
+          "seller_rating": null,
+          "language": "Engelska",
+          "notes": "Magic: The Gathering - Double Masters 2022 Collector Booster Box - EN",
+          "stock_status": "in_stock",
+          "http_status": 200,
+          "stock_checked_at": "2026-10-13T23:06+02:00",
+          "stock_evidence": "Shopify .js available=True, pris 524.9",
+          "checked_price": 524.9
+        }
+      ],
+      "alerts": [],
+      "image": {
+        "src": "images/mtg-double-masters-2022-cbb.webp",
+        "credit": "Produktbild via återförsäljare (© Wizards of the Coast)",
+        "source_url": "https://cardcosmos.de/products/magic-the-gathering-double-masters-2022-collector-booster-box-englisch",
+        "downloaded": "2026-10-13"
+      }
+    },
+    {
+      "id": "mtg-commander-masters-cbb",
+      "name": "MTG Commander Masters Collector Booster Box",
+      "category": "Magic: The Gathering",
+      "language": "Engelska",
+      "quantity": 1,
+      "purchase_price_sek": null,
+      "status": "watchlist",
+      "cardmarket_id": 698962,
+      "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products/Search?searchString=Commander%20Masters%20Collector%20Booster%20Box&idCategory=7&language=1",
+      "valuation": {
+        "mid": {
+          "price": 545.43,
+          "currency": "EUR",
+          "basis": "Cardmarket-trend (prisguide 2026-10-12)"
+        }
+      },
+      "notes": "Cardmarket prisguide 2026-10-12: trend €545.43. Produkt tillagd på Cardmarket 2023-02-22. Prisguiden är ej språkfiltrerad; 'lägsta' (€288) utelämnas då den ofta är fel språk/fel produkt.",
+      "snapshots": [
+        {
+          "date": "2026-10-12",
+          "source": "Cardmarket prisguide",
+          "price": 545.43,
+          "currency": "EUR",
+          "type": "trend",
+          "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
+          "note": "idProduct 698962"
+        }
+      ],
+      "community": [],
+      "offers": [],
+      "alerts": [],
+      "image": {
+        "src": "images/mtg-commander-masters-cbb.webp",
+        "credit": "Produktbild via återförsäljare (© Wizards of the Coast)",
+        "source_url": "https://dragonslair.se/products/commander-masters-collector-booster-display-4-boosters-magic-the-gathering",
+        "downloaded": "2026-10-13"
+      }
+    },
+    {
+      "id": "mtg-innistrad-remastered-cbb",
+      "name": "MTG Innistrad Remastered Collector Booster Box",
+      "category": "Magic: The Gathering",
+      "language": "Engelska",
+      "quantity": 1,
+      "purchase_price_sek": null,
+      "status": "watchlist",
+      "cardmarket_id": 795092,
+      "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products/Search?searchString=Innistrad%20Remastered%20Collector%20Booster%20Box&idCategory=7&language=1",
+      "valuation": {
+        "mid": {
+          "price": 400.99,
+          "currency": "EUR",
+          "basis": "Cardmarket-trend (prisguide 2026-10-12)"
+        }
+      },
+      "notes": "Cardmarket prisguide 2026-10-12: trend €400.99. Produkt tillagd på Cardmarket 2024-10-28. Prisguiden är ej språkfiltrerad; 'lägsta' (€144) utelämnas då den ofta är fel språk/fel produkt.",
+      "snapshots": [
+        {
+          "date": "2026-10-12",
+          "source": "Cardmarket prisguide",
+          "price": 400.99,
+          "currency": "EUR",
+          "type": "trend",
+          "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
+          "note": "idProduct 795092"
+        }
+      ],
+      "community": [],
+      "offers": [],
+      "alerts": [],
+      "image": {
+        "src": "images/mtg-innistrad-remastered-cbb.webp",
+        "credit": "Produktbild via återförsäljare (© Wizards of the Coast)",
+        "source_url": "https://dragonslair.se/products/innistrad-remastered-collector-booster-display-magic-the-gathering",
+        "downloaded": "2026-10-13"
+      }
+    },
+    {
+      "id": "mtg-aetherdrift-cbb",
+      "name": "MTG Aetherdrift Collector Booster Box",
+      "category": "Magic: The Gathering",
+      "language": "Engelska",
+      "quantity": 1,
+      "purchase_price_sek": null,
+      "status": "watchlist",
+      "cardmarket_id": 803869,
+      "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products/Search?searchString=Aetherdrift%20Collector%20Booster%20Box&idCategory=7&language=1",
+      "valuation": {
+        "mid": {
+          "price": 245.49,
+          "currency": "EUR",
+          "basis": "Cardmarket-trend (prisguide 2026-10-12)"
+        }
+      },
+      "notes": "Cardmarket prisguide 2026-10-12: trend €245.49. Produkt tillagd på Cardmarket 2024-12-11. Prisguiden är ej språkfiltrerad; 'lägsta' (€122) utelämnas då den ofta är fel språk/fel produkt.",
+      "snapshots": [
+        {
+          "date": "2026-10-12",
+          "source": "Cardmarket prisguide",
+          "price": 245.49,
+          "currency": "EUR",
+          "type": "trend",
+          "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
+          "note": "idProduct 803869"
+        }
+      ],
+      "community": [],
+      "offers": [],
+      "alerts": [],
+      "image": {
+        "src": "images/mtg-aetherdrift-cbb.webp",
+        "credit": "Produktbild via återförsäljare (© Wizards of the Coast)",
+        "source_url": "https://dragonslair.se/products/aetherdrift-collector-booster-display-magic-the-gathering",
+        "downloaded": "2026-10-13"
+      }
+    },
+    {
+      "id": "mtg-tarkir-dragonstorm-cbb",
+      "name": "MTG Tarkir: Dragonstorm Collector Booster Box",
+      "category": "Magic: The Gathering",
+      "language": "Engelska",
+      "quantity": 1,
+      "purchase_price_sek": null,
+      "status": "watchlist",
+      "cardmarket_id": 813080,
+      "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products/Search?searchString=Tarkir%3A%20Dragonstorm%20Collector%20Booster%20Box&idCategory=7&language=1",
+      "valuation": {
+        "mid": {
+          "price": 478.14,
+          "currency": "EUR",
+          "basis": "Cardmarket-trend (prisguide 2026-10-12)"
+        }
+      },
+      "notes": "Cardmarket prisguide 2026-10-12: trend €478.14. Produkt tillagd på Cardmarket 2025-02-24. Prisguiden är ej språkfiltrerad; 'lägsta' (€399.99) utelämnas då den ofta är fel språk/fel produkt.",
+      "snapshots": [
+        {
+          "date": "2026-10-12",
+          "source": "Cardmarket prisguide",
+          "price": 478.14,
+          "currency": "EUR",
+          "type": "trend",
+          "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
+          "note": "idProduct 813080"
+        }
+      ],
+      "community": [],
+      "offers": [],
+      "alerts": [],
+      "image": {
+        "src": "images/mtg-tarkir-dragonstorm-cbb.webp",
+        "credit": "Produktbild via återförsäljare (© Wizards of the Coast)",
+        "source_url": "https://dragonslair.se/products/tarkir-dragonstorm-collector-booster-display-magic-the-gathering",
+        "downloaded": "2026-10-13"
+      }
+    },
+    {
+      "id": "mtg-edge-of-eternities-cbb",
+      "name": "MTG Edge of Eternities Collector Booster Box",
+      "category": "Magic: The Gathering",
+      "language": "Engelska",
+      "quantity": 1,
+      "purchase_price_sek": null,
+      "status": "watchlist",
+      "cardmarket_id": 813293,
+      "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products/Search?searchString=Edge%20of%20Eternities%20Collector%20Booster%20Box&idCategory=7&language=1",
+      "valuation": {
+        "mid": {
+          "price": 692.06,
+          "currency": "EUR",
+          "basis": "Cardmarket-trend (prisguide 2026-10-12)"
+        }
+      },
+      "notes": "Cardmarket prisguide 2026-10-12: trend €692.06. Produkt tillagd på Cardmarket 2025-02-24. Prisguiden är ej språkfiltrerad; 'lägsta' (€499.9) utelämnas då den ofta är fel språk/fel produkt.",
+      "snapshots": [
+        {
+          "date": "2026-10-12",
+          "source": "Cardmarket prisguide",
+          "price": 692.06,
+          "currency": "EUR",
+          "type": "trend",
+          "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
+          "note": "idProduct 813293"
+        }
+      ],
+      "community": [],
+      "offers": [],
+      "alerts": [],
+      "image": {
+        "src": "images/mtg-edge-of-eternities-cbb.webp",
+        "credit": "Produktbild via återförsäljare (© Wizards of the Coast)",
+        "source_url": "https://dragonslair.se/products/edge-of-eternities-collector-booster-display-magic-the-gathering",
+        "downloaded": "2026-10-13"
+      }
+    },
+    {
+      "id": "mtg-marvel-s-spider-man-cbb",
+      "name": "MTG Marvel's Spider-Man Collector Booster Box",
+      "category": "Magic: The Gathering",
+      "language": "Engelska",
+      "quantity": 1,
+      "purchase_price_sek": null,
+      "status": "watchlist",
+      "cardmarket_id": 814380,
+      "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products/Search?searchString=Magic%3A%20The%20Gathering%20%7C%20Marvel%27s%20Spider-Man%20Collector%20Booster%20Box&idCategory=7&language=1",
+      "valuation": {
+        "mid": {
+          "price": 342.51,
+          "currency": "EUR",
+          "basis": "Cardmarket-trend (prisguide 2026-10-12)"
+        }
+      },
+      "notes": "Cardmarket prisguide 2026-10-12: trend €342.51. Produkt tillagd på Cardmarket 2025-03-03. Prisguiden är ej språkfiltrerad; 'lägsta' (€158) utelämnas då den ofta är fel språk/fel produkt.",
+      "snapshots": [
+        {
+          "date": "2026-10-12",
+          "source": "Cardmarket prisguide",
+          "price": 342.51,
+          "currency": "EUR",
+          "type": "trend",
+          "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
+          "note": "idProduct 814380"
+        }
+      ],
+      "community": [],
+      "offers": [],
+      "alerts": [],
+      "image": {
+        "src": "images/mtg-marvel-s-spider-man-cbb.webp",
+        "credit": "Produktbild via återförsäljare (© Wizards of the Coast)",
+        "source_url": "https://dragonslair.se/products/marvels-spider-man-collector-booster-display-magic-the-gathering",
+        "downloaded": "2026-10-13"
+      }
+    },
+    {
+      "id": "mtg-avatar-the-last-airbender-cbb",
+      "name": "MTG Avatar: The Last Airbender Collector Booster Box",
+      "category": "Magic: The Gathering",
+      "language": "Engelska",
+      "quantity": 1,
+      "purchase_price_sek": null,
+      "status": "watchlist",
+      "cardmarket_id": 842564,
+      "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products/Search?searchString=Magic%3A%20The%20Gathering%20%7C%20Avatar%3A%20The%20Last%20Airbender%20Collector%20Booster%20Box&idCategory=7&language=1",
+      "valuation": {
+        "mid": {
+          "price": 376.25,
+          "currency": "EUR",
+          "basis": "Cardmarket-trend (prisguide 2026-10-12)"
+        }
+      },
+      "notes": "Cardmarket prisguide 2026-10-12: trend €376.25. Produkt tillagd på Cardmarket 2025-08-13. Prisguiden är ej språkfiltrerad; 'lägsta' (€349.95) utelämnas då den ofta är fel språk/fel produkt.",
+      "snapshots": [
+        {
+          "date": "2026-10-12",
+          "source": "Cardmarket prisguide",
+          "price": 376.25,
+          "currency": "EUR",
+          "type": "trend",
+          "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
+          "note": "idProduct 842564"
+        }
+      ],
+      "community": [],
+      "offers": [],
+      "alerts": [],
+      "image": {
+        "src": "images/mtg-avatar-the-last-airbender-cbb.webp",
+        "credit": "Produktbild via återförsäljare (© Wizards of the Coast)",
+        "source_url": "https://dragonslair.se/products/magic-the-gathering-avatar-the-last-airbender-collector-booster-displ-magic-the-gathering",
+        "downloaded": "2026-10-13"
+      }
     }
   ],
   "rate_sources": {
@@ -754,7 +1632,11 @@
       "estimate": null,
       "shipping": null,
       "date_seen": "2026-10-13",
-      "notes": ""
+      "notes": "",
+      "auction_status": "active",
+      "http_status": 200,
+      "stock_checked_at": "2026-10-13T23:06+02:00",
+      "stock_evidence": "sluttid 2026-10-14T17:04 i framtiden, HTTP 200"
     },
     {
       "item_id": "pkm-30c-etb",
@@ -769,7 +1651,11 @@
       "estimate": null,
       "shipping": null,
       "date_seen": "2026-10-13",
-      "notes": ""
+      "notes": "",
+      "auction_status": "active",
+      "http_status": 200,
+      "stock_checked_at": "2026-10-13T23:06+02:00",
+      "stock_evidence": "sluttid 2026-10-15T10:30 i framtiden, HTTP 200"
     },
     {
       "item_id": "pkm-30c-etb",
@@ -784,7 +1670,11 @@
       "estimate": null,
       "shipping": null,
       "date_seen": "2026-10-13",
-      "notes": ""
+      "notes": "",
+      "auction_status": "active",
+      "http_status": 200,
+      "stock_checked_at": "2026-10-13T23:06+02:00",
+      "stock_evidence": "sluttid 2026-10-15T10:36 i framtiden, HTTP 200"
     },
     {
       "item_id": "pkm-30c-etb",
@@ -799,7 +1689,11 @@
       "estimate": null,
       "shipping": null,
       "date_seen": "2026-10-13",
-      "notes": "Köp nu 1 889 kr"
+      "notes": "Köp nu 1 889 kr",
+      "auction_status": "active",
+      "http_status": 200,
+      "stock_checked_at": "2026-10-13T23:06+02:00",
+      "stock_evidence": "sluttid 2026-10-15T18:21 i framtiden, HTTP 200"
     },
     {
       "item_id": "pkm-30c-etb",
@@ -814,7 +1708,11 @@
       "estimate": null,
       "shipping": null,
       "date_seen": "2026-10-13",
-      "notes": ""
+      "notes": "",
+      "auction_status": "active",
+      "http_status": 200,
+      "stock_checked_at": "2026-10-13T23:06+02:00",
+      "stock_evidence": "sluttid 2026-10-16T17:15 i framtiden, HTTP 200"
     },
     {
       "item_id": "pkm-30c-etb",
@@ -829,7 +1727,11 @@
       "estimate": null,
       "shipping": null,
       "date_seen": "2026-10-13",
-      "notes": ""
+      "notes": "",
+      "auction_status": "active",
+      "http_status": 200,
+      "stock_checked_at": "2026-10-13T23:06+02:00",
+      "stock_evidence": "sluttid 2026-10-17T16:58 i framtiden, HTTP 200"
     },
     {
       "item_id": "pkm-30c-etb",
@@ -844,7 +1746,11 @@
       "estimate": null,
       "shipping": null,
       "date_seen": "2026-10-13",
-      "notes": ""
+      "notes": "",
+      "auction_status": "active",
+      "http_status": 200,
+      "stock_checked_at": "2026-10-13T23:06+02:00",
+      "stock_evidence": "sluttid 2026-10-17T16:59 i framtiden, HTTP 200"
     },
     {
       "item_id": "pkm-30c-etb",
@@ -859,7 +1765,11 @@
       "estimate": null,
       "shipping": null,
       "date_seen": "2026-10-13",
-      "notes": ""
+      "notes": "",
+      "auction_status": "active",
+      "http_status": 200,
+      "stock_checked_at": "2026-10-13T23:06+02:00",
+      "stock_evidence": "sluttid 2026-10-17T20:02 i framtiden, HTTP 200"
     },
     {
       "item_id": "pkm-30c-etb",
@@ -874,7 +1784,11 @@
       "estimate": null,
       "shipping": null,
       "date_seen": "2026-10-13",
-      "notes": ""
+      "notes": "",
+      "auction_status": "active",
+      "http_status": 200,
+      "stock_checked_at": "2026-10-13T23:06+02:00",
+      "stock_evidence": "sluttid 2026-10-18T19:00 i framtiden, HTTP 200"
     },
     {
       "item_id": "pkm-30c-etb",
@@ -889,7 +1803,11 @@
       "estimate": null,
       "shipping": null,
       "date_seen": "2026-10-13",
-      "notes": ""
+      "notes": "",
+      "auction_status": "active",
+      "http_status": 200,
+      "stock_checked_at": "2026-10-13T23:06+02:00",
+      "stock_evidence": "sluttid 2026-10-19T18:48 i framtiden, HTTP 200"
     },
     {
       "item_id": "pkm-30c-etb",
@@ -904,7 +1822,11 @@
       "estimate": null,
       "shipping": null,
       "date_seen": "2026-10-13",
-      "notes": ""
+      "notes": "",
+      "auction_status": "active",
+      "http_status": 200,
+      "stock_checked_at": "2026-10-13T23:06+02:00",
+      "stock_evidence": "sluttid 2026-10-20T18:07 i framtiden, HTTP 200"
     },
     {
       "item_id": null,
@@ -964,7 +1886,11 @@
         "value_note": "Inga dyrgripar eller graderade kort syns. Mest moderna vanliga/holo-kort. Värdet av bulk kan inte uppskattas tillförlitligt utan prisdata per kort.",
         "value_range": null,
         "verdict": "Ingen 'gömt och glömt'. Värderingen ($331) verkar optimistisk för innehållet; bjud bara för nöjes skull."
-      }
+      },
+      "auction_status": "active",
+      "http_status": 200,
+      "stock_checked_at": "2026-10-13T23:06+02:00",
+      "stock_evidence": "sluttid 2026-10-18T20:06 i framtiden, HTTP 200"
     },
     {
       "item_id": null,
@@ -1022,7 +1948,11 @@
         "value_note": "Identifierade 'bästa' kort ligger runt $3–5 styck. Ingen vintage, inga graderingar.",
         "value_range": null,
         "verdict": "Ingen dold dyrgrip. Bulk-lot; landat pris vid minsta bud ≈ 417 kr – rimligt bara om man vill ha bulk."
-      }
+      },
+      "auction_status": "active",
+      "http_status": 200,
+      "stock_checked_at": "2026-10-13T23:06+02:00",
+      "stock_evidence": "sluttid 2026-10-16T19:33 i framtiden, HTTP 200"
     },
     {
       "item_id": null,
@@ -1073,7 +2003,11 @@
         "value_note": "Inga SIR/SAR, ingen vintage, inga graderingar synliga.",
         "value_range": null,
         "verdict": "Ingen dold dyrgrip. Bulk-lot."
-      }
+      },
+      "auction_status": "active",
+      "http_status": 200,
+      "stock_checked_at": "2026-10-13T23:06+02:00",
+      "stock_evidence": "sluttid 2026-10-16T22:29 i framtiden, HTTP 200"
     },
     {
       "item_id": "pkm-30c-etb",
@@ -1088,7 +2022,11 @@
       "estimate": null,
       "shipping": 59,
       "date_seen": "2026-10-13",
-      "notes": "Avslutad (historik). Säljare mimsko11, verifierad, 50 omdömen. Paket – ej direkt jämförbart."
+      "notes": "Avslutad (historik). Säljare mimsko11, verifierad, 50 omdömen. Paket – ej direkt jämförbart.",
+      "auction_status": "ended",
+      "http_status": 200,
+      "stock_checked_at": "2026-10-13T23:06+02:00",
+      "stock_evidence": "sluttid passerad/sidan säger avslutad"
     }
   ],
   "market_watch": [
@@ -1132,5 +2070,10 @@
       "platform": "okänd",
       "note": "Köpdatum okänt"
     }
-  ]
+  ],
+  "language_filter": {
+    "language": "Engelska",
+    "cardmarket_param": "language=1",
+    "note": "Endast engelska erbjudanden räknas. Cardmarkets prisguide (trend) är inte språkfiltrerad – för MTG Collector-boxar är engelska dominerande men kontrollera EN-filtret via länken."
+  }
 }

@@ -11,6 +11,7 @@
   python3 update.py check                     -> kontrollerar alla prisbevakningar (körs mån & tors)
   python3 update.py tx buy|sell ID DATE|- PRICE_SEK FEES_SEK PLATFORM [QTY] ["notering"]
   python3 update.py txs                       -> visar transaktionslogg + realiserat/orealiserat
+  python3 update.py stock [--dry]            -> lagerkontroll av alla länkar (stockcheck.py), flaggar döda länkar
   python3 update.py publish ["meddelande"]  -> git commit + push (sajten läser data.json)
   python3 update.py build                     -> sätter last_updated=idag och bygger HTML
 Inga priser hämtas automatiskt: agenten/användaren söker fram dem och matar in här."""
@@ -90,11 +91,13 @@ elif a[0] == "txs":
     items = {i["id"]: i for i in p["items"]}
     unreal = sum(items[k]["valuation"]["mid"]["price"] * R[items[k]["valuation"]["mid"]["currency"]] * q - c for k, (q, c) in h.items() if q > 0)
     print(f"Realiserat: {real:.0f} kr  Orealiserat (mittvärde): {unreal:.0f} kr")
+elif a[0] == "stock":
+    subprocess.run([sys.executable, str(D/"stockcheck.py"), *a[1:]], check=True)
 elif a[0] == "publish":
     # Commit + push data.json (och ev. ändrade filer). Kräver remote 'origin' och GITHUB_TOKEN i env.
     msg = a[1] if len(a) > 1 else f"Prisuppdatering {dt.date.today()}"
     g = lambda *c: subprocess.run(["git", "-C", str(D), *c], check=True)
-    g("add", "data.json", "index.html", "app.js", "style.css", "README.md", "update.py", "images")
+    g("add", "data.json", "index.html", "app.js", "style.css", "README.md", "update.py", "stockcheck.py", "images")
     if subprocess.run(["git", "-C", str(D), "diff", "--cached", "--quiet"]).returncode: g("commit", "-m", msg)
     g("-c", "credential.helper=!f() { echo username=x-access-token; echo password=$GITHUB_TOKEN; }; f", "push", "origin", "main")
 elif a[0] == "build":

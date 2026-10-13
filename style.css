@@ -79,3 +79,5 @@ main{flex:1;min-width:0;max-width:1120px;margin:0 auto;padding:calc(14px + env(s
 .hc .im .chip{background:rgba(7,9,15,.85);backdrop-filter:blur(6px)}.hc .im .c-g{color:#4ade80}.hc .im .c-r{color:#fb7185}
 .strip{margin-right:-16px}@media(min-width:960px){.strip{margin:0;padding:2px 0 10px}}
 .legend span{white-space:nowrap}.chartcard .top{flex-wrap:wrap;row-gap:8px}
+.row.oos{opacity:.5}.row.oos b{text-decoration:line-through}.oosl .row{border-top:1px solid var(--line)}
+.row>div{min-width:0}.row .meta .chip{white-space:normal}
