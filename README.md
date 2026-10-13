@@ -50,3 +50,28 @@ För varje ny lot (Auctionet, Tradera, Bukowskis) med blandade kort/samlarobjekt
 3. Slå upp pris för identifierade kort av värde (Cardmarket/TCGplayer/PriceCharting) – källa + datum. Var ärlig om osäkerhet (suddigt, edition ej bekräftad). Hitta aldrig på priser.
 4. Lägg in `lot_analysis` i auktionsposten i `data.json`: `images`, `identified[] {what, notes, price?, url?}`, `flags[]`, `gems[]` (dyrgripar; markera "gömt och glömt" om titeln/beskrivningen inte nämner dem), `value_range` (null om ej tillförlitligt), `value_note`, `verdict`, `analyzed`.
 5. Lotter med `gems` lyfts först i "Att titta på nu".
+
+## Prisbevakningar, transaktioner och portföljgraf (okt 2026)
+
+**Prisbevakningar** (`items[].alerts`): `{"type": "below"|"above", "sek": 1100, "basis": "offer"|"value", "note": "..."}`.
+`basis=offer` jämför med bästa *landade* pris bland senaste sökdatumets erbjudanden i lager; `basis=value` jämför med mittvärdet.
+Utlösta bevakningar visas som gula badges på korten och som banner på Översikt. De tre befintliga är **exempel** – justera.
+```
+python3 update.py alert pkm-30c-etb below 1100 offer "köp en till"
+python3 update.py alert-rm pkm-30c-etb 0
+python3 update.py check
+```
+**Mån & tors-rutinen:** efter att snapshots/erbjudanden/auktioner lagts in, kör `python3 update.py check` och rapportera varje `UTLÖST` rad till Gustaf (objekt, gräns, nuvarande pris, länk till erbjudandet).
+
+**Transaktionslogg** (`transactions`): `{date|null, type buy|sell, item_id, qty, price_sek, fees_sek, platform, note}`.
+Investerat/realiserat/orealiserat beräknas från loggen (snittkostnad). Orealiserat = mittvärde − kvarvarande kostnad.
+```
+python3 update.py tx buy pkm-30c-etb - 999 0 okänd 1 "Köpdatum okänt"
+python3 update.py tx sell pkm-30c-etb 2026-11-02 1500 75 Tradera
+python3 update.py txs
+```
+Uppdatera även `status`/`quantity` på objektet när innehavet ändras.
+
+**Portföljgraf & största rörelser:** byggs i webbläsaren från trend-snapshots (Cardmarket när det finns ≥2 datum, annars den trendkälla med flest datum) × innehav från transaktionsloggen. 7 d / 30 d / Allt räknas mot `last_updated`. Fler dagliga/regelbundna Cardmarket-trendpunkter ger en tätare graf – lägg därför alltid till en Cardmarket-trend-snapshot per objekt i rutinen.
+
+**Design:** appen har flikar (Översikt, Deals, Auktioner, Samling, Bevakning) via `#hash`, bottenflikar på mobil och sidomeny på desktop. Ikoner är inline-SVG; inga externa resurser eller typsnitt (systemtypsnitt).

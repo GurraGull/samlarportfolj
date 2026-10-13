@@ -322,7 +322,21 @@
         "credit": "Produktbild via återförsäljare (© Pokémon / Wizards of the Coast)",
         "source_url": "https://dragonslair.se/products/pokemon-tcg-30th-celebration-elite-trainer-box",
         "downloaded": "2026-10-13"
-      }
+      },
+      "alerts": [
+        {
+          "type": "above",
+          "sek": 1800,
+          "basis": "value",
+          "note": "Exempel: säljsignal om mittvärdet når 1 800 kr – justera"
+        },
+        {
+          "type": "below",
+          "sek": 1100,
+          "basis": "offer",
+          "note": "Exempel: köp en till om landat pris ≤ 1 100 kr – justera"
+        }
+      ]
     },
     {
       "id": "mtg-hobbit-cbb",
@@ -517,7 +531,15 @@
         "credit": "Produktbild via återförsäljare (© Pokémon / Wizards of the Coast)",
         "source_url": "https://manatorsk.com/products/magic-the-gathering-collector-booster-display-box-the-hobbit",
         "downloaded": "2026-10-13"
-      }
+      },
+      "alerts": [
+        {
+          "type": "below",
+          "sek": 5500,
+          "basis": "offer",
+          "note": "Exempel: köpsignal om landat pris ≤ 5 500 kr – justera"
+        }
+      ]
     },
     {
       "id": "mtg-ltr-se-cbb",
@@ -560,7 +582,8 @@
         "credit": "Produktbild via återförsäljare (© Pokémon / Wizards of the Coast)",
         "source_url": "https://forgeandfiregaming.com/special-deals/lord-of-the-rings-special-release-collector-booster-box/",
         "downloaded": "2026-10-13"
-      }
+      },
+      "alerts": []
     },
     {
       "id": "mtg-fin-cbb",
@@ -627,7 +650,8 @@
         "credit": "Produktbild via återförsäljare (© Pokémon / Wizards of the Coast)",
         "source_url": "https://facetofacegames.com/en-us/products/final-fantasy-collector-booster-box",
         "downloaded": "2026-10-13"
-      }
+      },
+      "alerts": []
     },
     {
       "id": "mtg-mh3-cbb",
@@ -670,7 +694,8 @@
         "credit": "Produktbild via återförsäljare (© Pokémon / Wizards of the Coast)",
         "source_url": "https://cardshoplive.com/products/modern-horizons-3-collector-booster-display",
         "downloaded": "2026-10-13"
-      }
+      },
+      "alerts": []
     }
   ],
   "rate_sources": {
@@ -1093,6 +1118,19 @@
       "url": "https://www.bukowskis.com/sv/search?q=pokemon",
       "date_seen": "2026-10-13",
       "notes": "Sökning på 'pokemon' gav inga träffar; nästa stora auktion är Important Winter Sale 3–11 dec (konst/design)."
+    }
+  ],
+  "transactions": [
+    {
+      "id": "t1",
+      "item_id": "pkm-30c-etb",
+      "type": "buy",
+      "date": null,
+      "qty": 1,
+      "price_sek": 999,
+      "fees_sek": 0,
+      "platform": "okänd",
+      "note": "Köpdatum okänt"
     }
   ]
 }
