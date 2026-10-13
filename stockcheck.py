@@ -7,10 +7,11 @@ Ordning: Shopify /products/<handle>.js ('available' per variant) -> schema.org J
 Söksidor/listsidor (Tradera-sök, Pokejakt-set) kan inte verifieras per produkt -> unknown.
 Cardmarket blockerar bottar (403) -> 'unknown' om inte sidan går att läsa; Cardmarket-annonser är per definition i lager när de listas.
 404/410 -> dead_link (räknas som out_of_stock)."""
-import json, re, sys, html, pathlib, datetime as dt, urllib.request, urllib.error
+import json, re, sys, html, pathlib, datetime as dt, urllib.request, urllib.error, urllib.parse, time
 D = pathlib.Path(__file__).parent; F = D / "data.json"
 UA = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126 Safari/537.36", "Accept-Language": "sv-SE,sv;q=0.9,en;q=0.8"}
 def get(url, t=10):
+    url = urllib.parse.quote(url, safe=":/?&=%#+,;@!$'()*~")
     try:
         r = urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=t)
         return r.status, r.read().decode("utf-8", "replace"), r.geturl()

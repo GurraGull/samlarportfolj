@@ -82,7 +82,7 @@ function portfolioSeries() {
   const end = dnum(P.last_updated); if (pts.length && pts[pts.length - 1][0] < end) pts.push([end, totals().mid]);
   return pts;
 }
-const landed = o => { const r = R[o.currency]; if (r == null) return null; let b = (o.price + (o.shipping || 0)) * r;
+const landed = o => { const r = R[o.currency]; if (r == null) return null; let b = (o.price * (1 + (o.fee_pct || 0) / 100) + (o.shipping || 0)) * r;
   if (o.origin === "non-EU") b = b * (1 + DS.customs_pct / 100) * (1 + DS.import_vat_pct / 100) + DS.non_eu_handling_fee_sek; return b; };
 function offersOf(it) {
   const [b] = bench(it), offers = it.offers || []; if (!offers.length) return [];
@@ -164,32 +164,25 @@ function details(it) {
 }
 const expRow = (head, body) => `<div class=row onclick="this.classList.toggle('open')">${head}</div><div class=exp><div>${body}</div></div>`;
 
-// ---------- Best of bevakningen: transparent poäng 0–100 ----------
-const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
-function dealScore(it) {
-  const [b] = bench(it), parts = [], why = [];
-  const ok = offersOf(it).filter(o => o.stock_status === "in_stock" && o.eng && o.L).sort((x, y) => x.L - y.L), best = ok[0];
-  let sc = 0;
-  if (best && b) { const p = clamp(20 + best.d, 0, 40); sc += p; parts.push(`erbjudande ${fmt(p)}`);
-    why.push(best.d >= 0 ? `${esc(best.source)} ${fmt(best.d)} % under trend` : `billigast i lager ${fmt(-best.d)} % över trend`); }
-  const au = auctions().filter(a => a.live && a.item_id === it.id && a.d != null).sort((x, y) => y.d - x.d)[0];
-  if (au) { const hrs = (new Date(au.ends_at) - Date.now()) / 36e5, p = clamp(au.d * 1.5, 0, 30) + (au.d > 0 && hrs < 72 ? 5 : 0); sc += p; parts.push(`auktion ${fmt(p)}`);
-    if (au.d > 0) why.push(`Auktion slutar om ${countdown(au.ends_at)}, bud+avgifter ${fmt(au.d)} % under trend`); }
-  const {pts} = series(it), end = dnum(P.last_updated), old = pts.filter(q => q[0] <= end - 30).pop() || pts[0], last = pts[pts.length - 1];
-  if (old && last && old[0] !== last[0]) { const ch = (last[1] - old[1]) / old[1] * 100, p = clamp(-ch, 0, 20); sc += p; parts.push(`trend ${fmt(p)}`);
-    if (ch < -2) why.push(`Pris fallit ${fmt(-ch)} % på ${fmt(last[0] - old[0])} d`); }
-  const n = new Set(ok.map(o => o.source)).size, p4 = clamp(n * 3, 0, 10); sc += p4; if (n) parts.push(`källor ${p4}`);
-  if (!best && !au) why.unshift("Bevaka – inget verifierat i lager");
-  return {it, sc: Math.round(sc), best, au, b, parts, why};
+// ---------- Bästa deals: ranking av enskilda köpbara erbjudanden ----------
+const riseFor = h => h > 72 ? 15 : h > 24 ? 10 : h > 6 ? 5 : 2; // antagen budhöjning till slut (%)
+function dealCands() {
+  const c = [];
+  for (const it of P.items) { const [b] = bench(it); if (!b) continue;
+    for (const o of offersOf(it)) if (o.stock_status === "in_stock" && o.eng && o.L && o.d != null)
+      c.push({it, kind: "offer", where: o.source, price: o.currency === "SEK" ? kr(o.price) : `${fmt(o.price, 2)} ${o.currency}`, L: o.L, d: o.d, score: o.d, url: o.url, b,
+        why: (o.source.includes("Cardmarket") ? "Cardmarket billigaste (ej live-kontr.)" : "I lager ✓ kontrollerat " + ago(o.stock_checked_at)) + (o.fee_pct ? ` · inkl. ${o.fee_pct} % köparskydd` : "") + (o.shipping == null ? " · frakt okänd" : "")}); }
+  for (const a of auctions()) if (a.live && a.it && a.d != null && (a.qty || 1) === 1) { const h = (new Date(a.ends_at) - Date.now()) / 36e5, r = riseFor(h);
+    c.push({it: a.it, kind: "auction", where: a.platform + " auktion", price: `${a.price_kind} ${kr(a.price)}`, L: a.per, d: a.d, score: a.d - r, url: a.url, b: bench(a.it)[0], ends: a.ends_at,
+      why: `Slutar om ${countdown(a.ends_at)} · ${a.bids ? a.bids + " bud" : "inga bud"} · justerat −${r} % för väntad budhöjning`}); }
+  return c.sort((x, y) => y.score - x.score);
 }
 function bestOf() {
-  const L = P.items.filter(i => i.status === "watchlist").map(dealScore).sort((a, b) => b.sc - a.sc || (b.best ? 1 : 0) - (a.best ? 1 : 0)).slice(0, 6);
-  const info = `<details class=info><summary>${ic("spark", 14)} Hur räknas poängen?</summary><div class="xs mut">0–100, bara från verklig data i data.json:<br>• <b>Erbjudande (0–40)</b>: billigaste verifierade engelska i-lager-erbjudandet (landat SEK) vs Cardmarket-trend: 20 + % under trend.<br>• <b>Auktion (0–35)</b>: aktiv auktion där bud + avgifter är under trend: 1,5 × %, +5 om < 3 dygn kvar.<br>• <b>Trend (0–20)</b>: fall i trendpris senaste 30 d (1 p per %).<br>• <b>Källor (0–10)</b>: 3 p per butik med verifierat lager.<br>Cardmarket räknas som i lager men priset är inte live-kontrollerat.</div></details>`;
-  return `<div class=sec><h2>Best of bevakningen</h2>${info}</div><div class=strip>${L.map(x => { const o = x.best, a = x.au, link = o ? o.url : a ? a.url : x.it.cardmarket_url || "#bevakning";
-    const price = o ? kr(o.L) : a ? kr(a.per) : "–", where = o ? esc(o.source) : a ? esc(a.platform) + " (auktion)" : "Inget i lager";
-    const d = o ? o.d : a ? a.d : null;
-    return `<a class=hc href="${esc(link)}" ${link.startsWith("#") ? "" : "target=_blank rel=noopener"}><div class=im>${img(x.it)}<span class="chip ${x.sc >= 40 ? "c-g" : x.sc >= 20 ? "c-a" : "c-n"}" style="position:absolute;top:8px;left:8px" title="${esc(x.parts.join(" + "))}">${x.sc} p</span>${d != null ? `<span class=tl>${d >= 0 ? "−" : "+"}${fmt(Math.abs(d))} % vs trend</span>` : ""}</div>
-      <div class=bd><div class=t>${esc(short(x.it.name))}</div><div class="xs mut">${where}${x.b ? ` · trend ${kr(x.b)}` : ""}</div><div class=p>${price}</div><div class="xs ${o || a ? "" : "mut"}" style="color:${o && o.d >= 0 ? "var(--g)" : ""}">${x.why.slice(0, 2).join(" · ")}</div></div></a>`; }).join("")}</div>`;
+  const all = dealCands(), top = all.slice(0, 6), any = top.length && top[0].score > 0;
+  const info = `<details class=info><summary>${ic("spark", 14)} Hur rankas?</summary><div class="xs mut">Varje köpbart erbjudande rankas för sig, över alla bevakade objekt, efter <b>rabatt mot Cardmarket-trend</b> i landat SEK (pris + köparavgift/köparskydd + frakt + ev. importmoms).<br>• Butiker: bara verifierat i lager (lagerkoll) och engelska.<br>• Tradera Köp nu: +5 % köparskydd.<br>• Auktioner: nuvarande bud + avgifter, minus antagen budhöjning till slut: 15 % (> 3 d kvar), 10 % (1–3 d), 5 % (6–24 h), 2 % (< 6 h).<br>• Cardmarket: billigaste annons, inte live-kontrollerad.<br>Inga poäng för att bara finnas i lager. Okänd frakt räknas som 0.</div></details>`;
+  return `<div class=sec><h2>${any ? "Bästa deals just nu" : "Närmast en deal"}</h2>${info}</div>${any ? "" : `<p class="sm mut" style="margin:-4px 0 10px">Inget köpbart ligger under trend just nu (${all.length} erbjudanden/auktioner jämförda). Här är de som ligger närmast.</p>`}
+  <div class=strip>${top.map(x => `<a class=hc href="${esc(x.url)}" target=_blank rel=noopener><div class=im>${img(x.it)}<span class="chip ${x.score > 0 ? "c-g" : x.score > -10 ? "c-a" : "c-r"}" style="position:absolute;top:8px;left:8px">${x.d >= 0 ? "−" + fmt(x.d) + " % under" : "+" + fmt(-x.d) + " % över"} trend</span>${x.ends ? `<span class=tl>${ic("clock", 12)} ${countdown(x.ends)}</span>` : ""}</div>
+    <div class=bd><div class=t>${esc(short(x.it.name))}</div><div class="xs mut">${esc(x.where)} · ${x.price}</div><div class=p>${kr(x.L)}</div><div class="xs mut">landat · trend ${kr(x.b)}</div><div class="xs" style="margin-top:4px;color:var(--mut)">${esc(x.why)}</div></div></a>`).join("")}</div>`;
 }
 
 // ---------- vyer ----------
@@ -201,7 +194,7 @@ function vOverview() {
   const live = auctions().filter(a => a.live), gems = live.filter(a => a.lot_analysis?.gems?.length);
   const soon = [...gems, ...live.filter(a => !a.lot_analysis?.gems?.length)].slice(0, 6);
   const fired = P.items.flatMap(it => alertState(it).filter(a => a.hit).map(a => ({...a, it})));
-  const movers = P.items.map(it => ({it, m: move(it)})).filter(x => x.m).sort((a, b) => Math.abs(b.m.d) - Math.abs(a.m.d)).slice(0, 5);
+  const movers = P.items.map(it => ({it, m: move(it)})).filter(x => x.m && x.m.d > 0).sort((a, b) => b.m.d - a.m.d).slice(0, 4);
   const strip = [...deals.map(o => `<a class=hc href="${esc(o.url)}" target=_blank rel=noopener><div class=im>${img(o.item)}${chip(o.d) ? `<span class="chip c-g" style="position:absolute;top:8px;left:8px">−${fmt(o.d)} %</span>` : ""}<span class=tl>${ic("tag", 12)} Deal</span></div>
       <div class=bd><div class=t>${esc(short(o.item.name))}</div><div class="xs mut">${esc(o.source)} · ${esc(o.origin)}</div><div class=p>${kr(o.L)}</div><div class="xs mut">trend ${kr(bench(o.item)[0])}</div></div></a>`),
     ...soon.map(a => `<a class=hc href="${esc(a.url)}" target=_blank rel=noopener><div class=im>${a.lot_analysis ? `<img class=cover src="${esc(a.lot_analysis.images[0])}" alt="">` : img(a.it, a.title)}${a.lot_analysis?.gems?.length ? `<span class="chip c-g" style="position:absolute;top:8px;left:8px">${ic("gem", 12)} Gömt och glömt</span>` : a.d != null ? `<span class="chip ${a.d >= 0 ? "c-g" : "c-r"}" style="position:absolute;top:8px;left:8px">${a.d >= 0 ? "−" : "+"}${fmt(Math.abs(a.d))} %</span>` : ""}<span class=tl>${ic("clock", 12)} ${countdown(a.ends_at)}</span></div>
@@ -217,7 +210,7 @@ function vOverview() {
     <div class="xs mut" style="padding:4px 2px 6px">${ch != null ? `Förändring ${RANGE === "all" ? "sedan första mätpunkt" : "senaste " + RANGE.replace("d", " dagarna")}: <b class="${ch >= 0 ? "g" : "r"}">${ch >= 0 ? "+" : "−"}${kr(Math.abs(ch))}</b>. ` : ""}Byggd från Cardmarket-trend i dina snapshots.</div></div>
   ${fired.length ? `<div class=banner>${ic("bell")}<div><b>${fired.length} prisbevakning${fired.length > 1 ? "ar" : ""} utlöst${fired.length > 1 ? "a" : ""}</b><br>${fired.map(a => `${esc(short(a.it.name))}: ${a.type === "below" ? "≤" : "≥"} ${kr(a.sek)} (nu ${kr(a.cur)})`).join("<br>")}</div></div>` : ""}
   <div class=sec><h2>Att titta på nu</h2><span>${deals.length} deal · ${live.length} auktioner</span></div>${strip.length ? `<div class=strip>${strip.join("")}</div>` : '<div class="card empty">Inget att lyfta fram just nu.</div>'}
-  <div class=two><div><div class=sec><h2>Största rörelser</h2><span>${RANGE === "all" ? "allt" : RANGE.replace("d", " d")}</span></div>
+  <div class=two><div><div class=sec><h2 style="font-size:15px">Stiger mest</h2><span>${RANGE === "all" ? "allt" : RANGE.replace("d", " d")}</span></div>
     ${movers.length ? `<div class=list>${movers.map(({it, m}) => `<a class=row href="#${it.status === "owned" ? "samling" : "bevakning"}"><div class=th>${img(it)}</div><div><div class=nm>${esc(short(it.name))}</div><div class=meta>${esc(m.src)} · ${iso(m.from[0])} → ${iso(m.to[0])}</div></div><div class=rt><b>${kr(m.to[1])}</b>${chip(m.d)}</div></a>`).join("")}</div>` : '<div class="card empty">Inga rörelser i perioden.</div>'}</div>
   <div><div class=sec><h2>Dina styrkor</h2></div><div class="card" style="padding:14px 16px;font-size:13.5px;line-height:1.7">${ic("se", 16)} Svenska källor: Tradera, Auctionet, svenska butiker<br>${ic("swap", 16)} Landat pris i SEK inkl. moms, frakt &amp; provision<br>${ic("gem", 16)} Bildanalys av auktionslotter</div></div></div>
   ${foot()}`;
