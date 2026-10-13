@@ -42,3 +42,11 @@ Steg:
 - Produktbilder ligger lokalt i `images/<id>.webp` (max 600 px, nedladdade – ingen hotlinking). Varje item i `data.json` har `image: {src, credit, source_url, downloaded}`. Saknas bild visas `images/placeholder.svg`.
 - Nytt objekt: ladda ner bild (t.ex. og:image från butikssidan), konvertera med Pillow till webp, lägg till `image`-fältet.
 - Förhandsgranska: `python3 -m http.server 8765` + headless Chrome i 390 px och 1280 px (`preview-mobile.png`, `preview-desktop.png`).
+
+## Bildanalys av auktionslotter (mån & tors)
+För varje ny lot (Auctionet, Tradera, Bukowskis) med blandade kort/samlarobjekt:
+1. Hämta alla lotbilder (Auctionet: `curl` föremålssidan, plocka `https://images.auctionet.com/thumbs/large_item_<id>_*.jpg`), spara som webp (max 900 px) i `images/lots/<plattform>-<id>-<n>.webp`.
+2. Titta på varje bild (Read-verktyget) och notera: kortnamn, set/nummer, holo/1st edition/shadowless, språk, graderingar (PSA/BGS/CGC + betyg), förseglade produkter, skick (bucklor, kantslitage, öppnad plast).
+3. Slå upp pris för identifierade kort av värde (Cardmarket/TCGplayer/PriceCharting) – källa + datum. Var ärlig om osäkerhet (suddigt, edition ej bekräftad). Hitta aldrig på priser.
+4. Lägg in `lot_analysis` i auktionsposten i `data.json`: `images`, `identified[] {what, notes, price?, url?}`, `flags[]`, `gems[]` (dyrgripar; markera "gömt och glömt" om titeln/beskrivningen inte nämner dem), `value_range` (null om ej tillförlitligt), `value_note`, `verdict`, `analyzed`.
+5. Lotter med `gems` lyfts först i "Att titta på nu".

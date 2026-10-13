@@ -93,11 +93,12 @@ function hero() {
 }
 function focus() {
   const deals = P.items.flatMap(offersOf).filter(o => o.deal).sort((a, b) => b.d - a.d);
-  const soon = auctions().filter(a => a.live).slice(0, 8);
+  const liveA = auctions().filter(a => a.live);
+  const soon = [...liveA.filter(a => a.lot_analysis?.gems?.length), ...liveA.filter(a => !a.lot_analysis?.gems?.length)].slice(0, 8);
   const cards = [
     ...deals.map(o => `<a class=hcard href="${esc(o.url)}" target=_blank rel=noopener><div class=img>${img(o.item)}${dBadge(o.d)}<span class=tag>DEAL</span></div>
       <div class=body><div class=t>${esc(o.item.name)}</div><div class="muted small">${esc(o.source)} · ${esc(o.risk.slice(0, 2).join(", "))}</div><div class=p>${kr(o.L)}</div><div class="muted small">vs trend ${kr(bench(o.item)[0])}</div></div></a>`),
-    ...soon.map(a => `<a class=hcard href="${esc(a.url)}" target=_blank rel=noopener><div class=img>${img(a.it, a.title)}${a.d != null ? dBadge(a.d) : ""}<span class=tag>⏱ ${countdown(a.ends_at)}</span></div>
+    ...soon.map(a => `<a class=hcard href="${esc(a.url)}" target=_blank rel=noopener><div class=img>${a.lot_analysis ? `<img src="${esc(a.lot_analysis.images[0])}" alt="" loading=lazy style="max-width:100%;max-height:100%;object-fit:cover">` : img(a.it, a.title)}${a.d != null ? dBadge(a.d) : ""}${a.lot_analysis?.gems?.length ? '<span class="badge b-g">💎 Gömt och glömt</span>' : ""}<span class=tag>⏱ ${countdown(a.ends_at)}</span></div>
       <div class=body><div class=t>${esc(a.title)}${(a.qty || 1) > 1 ? " ×" + a.qty : ""}</div><div class="muted small">${esc(a.platform)} · ${esc(a.price_kind)} ${money(a.price, a.currency)}</div>
       <div class=p>${kr(a.per)}${(a.qty || 1) > 1 ? "<span class='muted small'> /st</span>" : ""}</div><div class="muted small">inkl. avgifter${a.estimate ? " · värdering " + money(a.estimate, a.currency) : ""}</div></div></a>`)];
   return `<h2 id=fokus>Att titta på nu</h2><p class=sub>${deals.length} deal${deals.length === 1 ? "" : "s"} · ${soon.length} auktioner som slutar snart. Pris = landat inkl. avgifter; badge = mot Cardmarket-trend.</p>
@@ -152,9 +153,24 @@ function more() {
     <details class=panel><summary>Övrigt att bevaka (${(P.market_watch || []).length})</summary><div class=inner><ul style="padding-left:18px">${mw}</ul></div></details>
     <p class=foot>Valutakurser: ${rates} (ECB-referens). Värden är uppskattningar från annonser/trender, inte bekräftade försäljningar; avgifter och frakt ej avdragna i portföljvärdet. Produktbilder tillhör respektive rättighetsinnehavare.</p>`;
 }
+
+function lots() {
+  const L = auctions().filter(a => a.lot_analysis && a.live);
+  if (!L.length) return "";
+  return `<h2 id=lotter>Auktionslotter – bildanalys</h2><p class=sub>Alla lotbilder granskade manuellt. 💎 = dyrgrip, "gömt och glömt" = värdefullt som inte nämns i beskrivningen.</p><div class=grid>${L.map(a => { const x = a.lot_analysis;
+    return `<article class=mine><div class=top><div class=thumb style="background:#000"><img src="${esc(x.images[0])}" alt="" loading=lazy style="max-width:100%;max-height:100%;object-fit:cover"></div><div>
+      <h3>${esc(a.title)}</h3><div class="muted small">${esc(a.platform)} · ${countdown(a.ends_at)} · slutar ${a.ends_at.replace("T", " ")}</div>
+      <div class=v style="font-size:20px">${kr(a.L)} <span class="muted small">landat vid ${esc(a.price_kind)} ${money(a.price, a.currency)}</span></div>
+      ${a.estimate ? `<div class="muted small">Husets värdering ${money(a.estimate, a.currency)}</div>` : ""}
+      <div style="margin-top:6px">${x.gems.length ? x.gems.map(g => `<span class="badge b-g">💎 ${esc(g)}</span>`).join(" ") : '<span class="badge b-n">Inga dyrgripar hittade</span>'} ${x.flags.map(g => `<span class="badge b-a">${esc(g)}</span>`).join(" ")}</div></div></div>
+      <div class=inner><p class=small><b>Bedömning:</b> ${esc(x.verdict)}</p><p class="muted small">${esc(x.value_note)}${x.value_range ? " Uppskattat värde: " + esc(x.value_range) : ""}</p></div>
+      <details class=more><summary>Hittat i bilderna (${x.identified.length})</summary><div class=inner><ul style="padding-left:18px;margin:0">${x.identified.map(i => `<li class=small style="margin-bottom:6px"><b>${esc(i.what)}</b><br><span class=muted>${esc(i.notes || "")}</span>${i.price ? `<br>${i.url ? `<a href="${esc(i.url)}" target=_blank rel=noopener>${esc(i.price)}</a>` : esc(i.price)}` : ""}</li>`).join("")}</ul>
+      <div class=src style="margin-top:10px">${x.images.map(u => `<a href="${esc(u)}" target=_blank><img src="${esc(u)}" loading=lazy style="width:100%;border-radius:8px"></a>`).join("")}</div>
+      <p class="muted small">Analyserad ${esc(x.analyzed)} · <a href="${esc(a.url)}" target=_blank rel=noopener>Öppna auktionen</a></p></div></details></article>`; }).join("")}</div>`;
+}
 function render() {
   R = {SEK: 1, ...P.rates}; DS = P.deal_settings; AF = P.auction_fees || {}; ITEMS = Object.fromEntries(P.items.map(i => [i.id, i]));
-  document.getElementById("app").innerHTML = hero() + focus() + mine() + watch() + more();
+  document.getElementById("app").innerHTML = hero() + focus() + mine() + lots() + watch() + more();
 }
 fetch("data.json?v=" + Date.now(), {cache: "no-store"}).then(r => { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
   .then(d => { P = d; render(); }).catch(e => { document.getElementById("app").innerHTML = `<p class="r pad">Kunde inte ladda data.json (${esc(e.message)}).</p>`; });

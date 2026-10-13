@@ -894,7 +894,52 @@
       "estimate": 331,
       "shipping": null,
       "date_seen": "2026-10-13",
-      "notes": "Brittiskt hus (originalvaluta GBP, visat i USD). Bevakningspris ej uppnått. Blandat lot, ingen benchmark."
+      "notes": "Brittiskt hus (originalvaluta GBP, visat i USD). Bevakningspris ej uppnått. Blandat lot, ingen benchmark.",
+      "lot_analysis": {
+        "images": [
+          "images/lots/auctionet-5420827-1.webp",
+          "images/lots/auctionet-5420827-2.webp",
+          "images/lots/auctionet-5420827-3.webp",
+          "images/lots/auctionet-5420827-4.webp",
+          "images/lots/auctionet-5420827-5.webp"
+        ],
+        "analyzed": "2026-10-13",
+        "identified": [
+          {
+            "what": "~10 Pikachu ur 30th Celebration (engelska, toploaders)",
+            "notes": "vanliga/holo-varianter, ej SIR"
+          },
+          {
+            "what": "Espeon ex och Sylveon ex (30th Celebration, engelska)",
+            "notes": "vanliga ex-versioner (ej illustration rare)"
+          },
+          {
+            "what": "Raichu GX (engelska)",
+            "notes": "set/nummer ej läsbart"
+          },
+          {
+            "what": "Ho-Oh, Reshiram, Zapdos, Lycanroc, Lucario, Seismitoad, Vulpix m.fl. (30th Celebration)",
+            "notes": "holo/vanliga"
+          },
+          {
+            "what": "7 Basic Energy med 30-årslogga + 1 japansk 'Bubble Water Energy'",
+            "notes": "energi – lågt värde"
+          },
+          {
+            "what": "Kinesiska Pokémon-kort (S-Chinese) och några kinesiska 'fan/knockoff'-kort (t.ex. 甲贺忍蛙)",
+            "notes": "knockoffs troligen inofficiella – inget värde"
+          },
+          {
+            "what": "Förseglade promo-förpackningar (små kinesiska)",
+            "notes": "innehåll oklart"
+          }
+        ],
+        "flags": [],
+        "gems": [],
+        "value_note": "Inga dyrgripar eller graderade kort syns. Mest moderna vanliga/holo-kort. Värdet av bulk kan inte uppskattas tillförlitligt utan prisdata per kort.",
+        "value_range": null,
+        "verdict": "Ingen 'gömt och glömt'. Värderingen ($331) verkar optimistisk för innehållet; bjud bara för nöjes skull."
+      }
     },
     {
       "item_id": null,
@@ -909,7 +954,50 @@
       "estimate": 133,
       "shipping": null,
       "date_seen": "2026-10-13",
-      "notes": "Brittiskt hus. Bevakningspris ej uppnått."
+      "notes": "Brittiskt hus. Bevakningspris ej uppnått.",
+      "lot_analysis": {
+        "images": [
+          "images/lots/auctionet-5402927-4.webp",
+          "images/lots/auctionet-5402927-1.webp",
+          "images/lots/auctionet-5402927-2.webp",
+          "images/lots/auctionet-5402927-3.webp",
+          "images/lots/auctionet-5402927-5.webp",
+          "images/lots/auctionet-5402927-6.webp",
+          "images/lots/auctionet-5402927-7.webp",
+          "images/lots/auctionet-5402927-8.webp",
+          "images/lots/auctionet-5402927-9.webp"
+        ],
+        "analyzed": "2026-10-13",
+        "identified": [
+          {
+            "what": "Mega Diancie ex (japansk, M2a) – 'Garland Ray'-variant",
+            "notes": "ser ut som Mega Attack Rare 227/193 (attacknamn som stor grafik), inte SAR 238/193 – nummer ej läsbart",
+            "price": "MA ≈ $4–5 NM (cardprices.io); SAR ≈ $30",
+            "url": "https://cardprices.io/pokemonjapan/card-info/Mega%20Diancie%20ex"
+          },
+          {
+            "what": "Toxtricity ex promo 243/SV-P 'Illustration Contest 2024' (japansk)",
+            "notes": "stämpel synlig",
+            "price": "≈ $3,47 okgraderat (PriceCharting, eBay-försäljning 2026-09-10)",
+            "url": "https://www.pricecharting.com/es/game/pokemon-japanese-promo/toxtricity-ex-243sv-p"
+          },
+          {
+            "what": "Mamoswine ex, Oricorio ex, Reshiram ex, Melmetal-liknande ex, Rotom ex m.fl.",
+            "notes": "vanliga ex/V-holo, blandat EN/JP"
+          },
+          {
+            "what": "Stor mängd japanska, kinesiska och koreanska commons/uncommons, reverse holos",
+            "notes": "bulk"
+          }
+        ],
+        "flags": [
+          "blandade språk"
+        ],
+        "gems": [],
+        "value_note": "Identifierade 'bästa' kort ligger runt $3–5 styck. Ingen vintage, inga graderingar.",
+        "value_range": null,
+        "verdict": "Ingen dold dyrgrip. Bulk-lot; landat pris vid minsta bud ≈ 417 kr – rimligt bara om man vill ha bulk."
+      }
     },
     {
       "item_id": null,
@@ -924,7 +1012,43 @@
       "estimate": 133,
       "shipping": null,
       "date_seen": "2026-10-13",
-      "notes": "Brittiskt hus. Bevakningspris ej uppnått."
+      "notes": "Brittiskt hus. Bevakningspris ej uppnått.",
+      "lot_analysis": {
+        "images": [
+          "images/lots/auctionet-5403007-4.webp",
+          "images/lots/auctionet-5403007-1.webp",
+          "images/lots/auctionet-5403007-2.webp",
+          "images/lots/auctionet-5403007-3.webp",
+          "images/lots/auctionet-5403007-5.webp",
+          "images/lots/auctionet-5403007-6.webp"
+        ],
+        "analyzed": "2026-10-13",
+        "identified": [
+          {
+            "what": "Regirock ex, Melmetal ex, Hop's Pincurchin ex, Morpeko ex (JP), Electivire? ex (CN) m.fl.",
+            "notes": "vanliga ex-holo, blandat språk"
+          },
+          {
+            "what": "Charmeleon (engelska), Prime Catcher (ACE SPEC, engelska)",
+            "notes": "låga värden"
+          },
+          {
+            "what": "Japanskt 'Squirtle'-kort (ゼニゼニ) – troligen leksaks-/minnesspelskort, ej TCG",
+            "notes": "osäker"
+          },
+          {
+            "what": "Stor bunt kinesiska/japanska commons, reverse holo",
+            "notes": "bulk"
+          }
+        ],
+        "flags": [
+          "blandade språk"
+        ],
+        "gems": [],
+        "value_note": "Inga SIR/SAR, ingen vintage, inga graderingar synliga.",
+        "value_range": null,
+        "verdict": "Ingen dold dyrgrip. Bulk-lot."
+      }
     },
     {
       "item_id": "pkm-30c-etb",
