@@ -137,30 +137,45 @@ function spark(it) { const p = series(it).pts; if (new Set(p.map(x => x[0])).siz
   return `<svg width=${w} height=${h} viewBox="0 0 ${w} ${h}" style="display:block;margin-left:auto"><polyline fill=none stroke="${c}" stroke-width=1.8 points="${p.map(q => (2 + (q[0] - x0) / (x1 - x0) * (w - 4)) + "," + (h - 2 - (q[1] - y0) / Math.max(y1 - y0, 1) * (h - 4))).join(" ")}"/></svg>`; }
 
 // ---------- delkomponenter ----------
-const sources = it => { const G = [["Cardmarket", ["cardmarket", "packquant"]], ["TCGplayer", ["tcgplayer"]], ["Tradera", ["tradera"]], ["Svenska butiker", ["pokejakt", "dragon", "hobbykort", "kortarkivet", "manatorsk"]], ["eBay", ["ebay"]], ["Aukro", ["aukro"]], ["Övriga EU", ["butiker eu", "pokeschnapp"]]];
-  return `<div class=src>${G.map(([g, k]) => { const ss = it.snapshots.filter(s => k.some(x => s.source.toLowerCase().includes(x))).sort((a, b) => b.date.localeCompare(a.date)).slice(0, 3);
+const sources = (it, full) => { const G = [["Cardmarket", ["cardmarket", "packquant"]], ["TCGplayer", ["tcgplayer"]], ["Tradera", ["tradera"]], ["Svenska butiker", ["pokejakt", "dragon", "hobbykort", "kortarkivet", "manatorsk"]], ["eBay", ["ebay"]], ["Aukro", ["aukro"]], ["Övriga EU", ["butiker eu", "pokeschnapp"]]];
+  return `<div class=src>${G.map(([g, k]) => { const ss = it.snapshots.filter(s => k.some(x => s.source.toLowerCase().includes(x))).sort((a, b) => b.date.localeCompare(a.date)).slice(0, full ? 99 : 3);
     return ss.length ? `<div><b>${g}</b>${ss.map(s => `<div><a href="${esc(s.url)}" target=_blank rel=noopener>${money(s.price, s.currency)}</a> <span class=mut>${TYPES[s.type]} · ${s.date}${s.approx ? "~" : ""}</span></div>`).join("")}</div>` : ""; }).join("")}</div>`; };
 function offerRow(o, withItem) {
-  return `<a class="row${o.stock_status === "out_of_stock" || !o.eng ? " oos" : ""}" href="${esc(o.url)}" target=_blank rel=noopener style="grid-template-columns:${withItem ? "52px " : ""}1fr auto">
+  return `<a class="row${o.stock_status === "out_of_stock" || !o.eng ? " oos" : ""}" title="${esc(o.risk.join(" · "))}" href="${esc(o.url)}" target=_blank rel=noopener style="grid-template-columns:${withItem ? "52px " : ""}1fr auto">
     ${withItem ? `<div class=th>${img(o.item)}</div>` : ""}<div><div class=nm>${o.deal ? '<span class="chip c-g">DEAL</span> ' : ""}${esc(o.source)}${withItem ? ` <span class=mut>· ${esc(short(o.item.name))}</span>` : ""}</div>
-    <div class=meta>${stockBadge(o)}${o.eng ? "" : '<span class="chip c-r">ej engelska</span>'}${o.origin} · ${o.date} · ${esc(o.language)}</div><div class="meta xs">${esc(o.risk.join(" · "))}</div></div>
+    <div class=meta>${stockBadge(o)}${o.eng ? "" : '<span class="chip c-r">ej engelska</span>'}${o.origin} · ${o.date} · ${esc(o.language)}</div></div>
     <div class=rt><b>${kr(o.L)}</b><span class="xs mut">${o.currency !== "SEK" ? fmt(o.price, 2) + " " + o.currency : "landat"}</span><br>${chip(o.d)}</div></a>`;
 }
-function offerRows(list, withItem) {
-  if (!list.length) return '<div class=empty>Inga sparade erbjudanden.</div>';
-  const ok = list.filter(o => o.stock_status !== "out_of_stock" && o.eng).sort((a, b) => (a.stock_status === "in_stock" ? 0 : 1) - (b.stock_status === "in_stock" ? 0 : 1) || (a.L ?? 1e9) - (b.L ?? 1e9));
+const LIM = 5;
+const itemHref = it => `#item/${it.id}`;
+const more = (n, href, what = "erbjudanden") => n > LIM ? `<a class=more href="${href}">Visa alla ${n} ${what} ${ic("chev", 14)}</a>` : "";
+const byDeal = (a, b) => (b.d ?? -1e9) - (a.d ?? -1e9) || (a.L ?? 1e9) - (b.L ?? 1e9);
+function offerRows(list, withItem, full) {
+  if (!list.length) return '<div class="empty sm">Inga sparade erbjudanden.</div>';
+  const ok = list.filter(o => o.stock_status !== "out_of_stock" && o.eng).sort((a, b) => (a.stock_status === "in_stock" ? 0 : 1) - (b.stock_status === "in_stock" ? 0 : 1) || byDeal(a, b));
   const gone = list.filter(o => o.stock_status === "out_of_stock" || !o.eng);
-  return `${ok.length ? `<div class=list>${ok.map(o => offerRow(o, withItem)).join("")}</div>` : '<div class="card empty">Inga verifierade köpbara erbjudanden.</div>'}
-  ${gone.length ? `<div class="list" style="margin-top:8px">${expRow(`<div style="grid-column:1/-1;display:flex;justify-content:space-between;align-items:center"><span class="sm mut">Slut i lager / ej engelska (${gone.length})</span><span class=chev>${ic("chev", 16)}</span></div>`, `<div class=oosl>${gone.map(o => offerRow(o, withItem)).join("")}</div>`)}</div>` : ""}`;
+  const shown = full ? ok : ok.slice(0, LIM), it = list[0].item;
+  return `${ok.length ? `<div class=list>${shown.map(o => offerRow(o, withItem)).join("")}</div>` : '<div class="card empty sm">Inga verifierade köpbara erbjudanden.</div>'}
+  ${full ? (gone.length ? `<div class="list" style="margin-top:8px">${expRow(`<div style="grid-column:1/-1;display:flex;justify-content:space-between;align-items:center"><span class="sm mut">Slut i lager / ej engelska (${gone.length})</span><span class=chev>${ic("chev", 16)}</span></div>`, `<div class=oosl>${gone.map(o => offerRow(o, withItem)).join("")}</div>`)}</div>` : "")
+    : more(list.length, itemHref(it))}`;
 }
-const community = it => (it.community || []).length ? it.community.map(c => `<div class=sm style="margin-bottom:8px"><a href="${esc(c.url)}" target=_blank rel=noopener>${esc(c.label)}</a><br><span class=mut>${esc(c.takeaway)}</span></div>`).join("") : '<div class="sm mut">Inga trådar sparade.</div>';
-function details(it) {
-  const [b, bs] = bench(it);
-  return `<div class=in><p class=sm>${esc(it.notes)}</p><h4>Prishistorik (SEK)</h4><div class=pchart>${itemChart(it)}</div>
-    ${(it.alerts || []).length ? `<h4>Prisbevakning</h4>${alertState(it).map(a => `<div class=sm style="margin-bottom:6px"><span class="chip ${a.hit ? "c-a" : "c-n"}">${ic("bell", 12)} ${a.type === "below" ? "under" : "över"} ${kr(a.sek)}</span> <span class=mut>nu ${kr(a.cur)} (${a.basis === "offer" ? "bästa landade erbjudande" : "mittvärde"}) · ${esc(a.note || "")}</span></div>`).join("")}` : ""}
-    <h4>Källor</h4>${sources(it)}<h4>Erbjudanden${b ? ` · riktmärke ${kr(b)} (Cardmarket-trend ${bs.date})` : ""}</h4>${offerRows(offersOf(it), false)}
-    ${it.cardmarket_url ? `<p class=sm><a href="${esc(it.cardmarket_url)}" target=_blank rel=noopener>${ic("ext", 13)} Cardmarket – engelska annonser (alltid i lager)</a></p>` : ""}<h4>Forum &amp; community</h4>${community(it)}${it.msrp ? `<p class="sm mut">MSRP <a href="${esc(it.msrp.url)}" target=_blank rel=noopener>${money(it.msrp.price, it.msrp.currency)}</a></p>` : ""}
-    ${it.image ? `<p class="xs mut">Bild: <a href="${esc(it.image.source_url)}" target=_blank rel=noopener>${esc(it.image.credit)}</a></p>` : ""}</div>`;
+function aucRow(a) {
+  return `<a class=row href="${esc(a.url)}" target=_blank rel=noopener><div class=th>${a.lot_analysis ? `<img class=cover src="${esc(a.lot_analysis.images[0])}" alt="">` : img(a.it, a.title)}</div>
+    <div><div class=nm>${esc(a.title)}${(a.qty || 1) > 1 ? " ×" + a.qty : ""}</div><div class=meta><span class="chip c-n">${ic("clock", 12)} ${countdown(a.ends_at)}</span>${esc(a.platform)} · ${esc(a.price_kind)} ${a.currency === "SEK" ? kr(a.price) : fmt(a.price) + " " + a.currency}${a.bids ? ` · ${a.bids} bud` : ""}</div></div>
+    <div class=rt><b>${kr(a.per)}</b>${a.d != null ? vs(a.d) : a.lot_analysis ? `<span class="chip ${a.lot_analysis.gems.length ? "c-g" : "c-n"}">${a.lot_analysis.gems.length ? "💎" : "analyserad"}</span>` : ""}</div></a>`;
+}
+const aucRows = (list, full, href) => list.length ? `<div class=list>${(full ? list : list.slice(0, LIM)).map(aucRow).join("")}</div>${full ? "" : more(list.length, href, "auktioner")}` : '<div class="empty sm">Inga pågående auktioner.</div>';
+const community = (it, full) => (it.community || []).length ? (full ? it.community : it.community.slice(0, LIM)).map(c => `<div class=sm style="margin-bottom:8px"><a href="${esc(c.url)}" target=_blank rel=noopener>${esc(c.label)}</a><br><span class=mut>${esc(c.takeaway)}</span></div>`).join("") : '<div class="sm mut">Inga trådar sparade.</div>';
+function details(it, full) {
+  const [b, bs] = bench(it), aucs = auctions().filter(a => a.live && a.item_id === it.id).sort(byDeal);
+  const src = sources(it, full);
+  return `<div class=in>${full ? `<p class="sm mut">${esc(it.notes)}</p>` : ""}<h4>Prishistorik (SEK)</h4><div class=pchart>${itemChart(it)}</div>
+    ${(it.alerts || []).length ? `<h4>Prisbevakning</h4>${alertState(it).map(a => `<div class=sm style="margin-bottom:6px"><span class="chip ${a.hit ? "c-a" : "c-n"}">${ic("bell", 12)} ${a.type === "below" ? "under" : "över"} ${kr(a.sek)}</span> <span class=mut>nu ${kr(a.cur)}</span></div>`).join("")}` : ""}
+    <h4>Bästa erbjudanden${b ? ` · trend ${kr(b)}` : ""}</h4>${offerRows(offersOf(it), false, full)}
+    ${aucs.length ? `<h4>Auktioner</h4>${aucRows(aucs, full, itemHref(it))}` : ""}
+    ${it.cardmarket_url ? `<p class=sm><a href="${esc(it.cardmarket_url)}" target=_blank rel=noopener>${ic("ext", 13)} Cardmarket – engelska annonser</a></p>` : ""}
+    ${full ? `<h4>Källor</h4>${src}<h4>Forum &amp; community</h4>${community(it, true)}${it.msrp ? `<p class="sm mut">MSRP <a href="${esc(it.msrp.url)}" target=_blank rel=noopener>${money(it.msrp.price, it.msrp.currency)}</a></p>` : ""}
+    ${it.image ? `<p class="xs mut">Bild: <a href="${esc(it.image.source_url)}" target=_blank rel=noopener>${esc(it.image.credit)}</a></p>` : ""}` : `<a class=more href="${itemHref(it)}">Öppna objektsidan ${ic("chev", 14)}</a>`}</div>`;
 }
 const expRow = (head, body) => `<div class=row onclick="this.classList.toggle('open')">${head}</div><div class=exp><div>${body}</div></div>`;
 
@@ -178,7 +193,7 @@ function dealCands() {
   return c.sort((x, y) => y.score - x.score);
 }
 function bestOf() {
-  const all = dealCands(), top = all.slice(0, 6), any = top.length && top[0].score > 0;
+  const all = dealCands(), cnt = {}, top = all.filter(x => (cnt[x.it.id] = (cnt[x.it.id] || 0) + 1) <= 2).slice(0, 6), any = top.length && top[0].score > 0;
   const info = `<details class=info><summary>${ic("spark", 14)} Hur rankas?</summary><div class="xs mut">Varje köpbart erbjudande rankas för sig, över alla bevakade objekt, efter <b>rabatt mot Cardmarket-trend</b> i landat SEK (pris + köparavgift/köparskydd + frakt + ev. importmoms).<br>• Butiker: bara verifierat i lager (lagerkoll) och engelska.<br>• Tradera Köp nu: +5 % köparskydd.<br>• Auktioner: nuvarande bud + avgifter, minus antagen budhöjning till slut: 15 % (> 3 d kvar), 10 % (1–3 d), 5 % (6–24 h), 2 % (< 6 h).<br>• Cardmarket: billigaste annons, inte live-kontrollerad.<br>Inga poäng för att bara finnas i lager. Okänd frakt räknas som 0.</div></details>`;
   return `<div class=sec><h2>${any ? "Bästa deals just nu" : "Närmast en deal"}</h2>${info}</div>${any ? "" : `<p class="sm mut" style="margin:-4px 0 10px">Inget köpbart ligger under trend just nu (${all.length} erbjudanden/auktioner jämförda). Här är de som ligger närmast.</p>`}
   <div class=strip>${top.map(x => `<a class=hc href="${esc(x.url)}" target=_blank rel=noopener><div class=im>${img(x.it)}<span class="chip ${x.score > 0 ? "c-g" : x.score > -10 ? "c-a" : "c-r"}" style="position:absolute;top:8px;left:8px">${x.d >= 0 ? "−" + fmt(x.d) + " % under" : "+" + fmt(-x.d) + " % över"} trend</span>${x.ends ? `<span class=tl>${ic("clock", 12)} ${countdown(x.ends)}</span>` : ""}</div>
@@ -190,9 +205,9 @@ function vOverview() {
   const t = totals(), pts = portfolioSeries(), w = winStart(), shown = pts.filter(p => p[0] >= w);
   const before = pts.filter(p => p[0] < w).pop(), base = before || shown[0];
   const ch = base && shown.length ? (shown[shown.length - 1][1] - base[1]) : null;
-  const deals = P.items.flatMap(offersOf).filter(o => o.deal).sort((a, b) => b.d - a.d);
+  const dc = {}, deals = P.items.flatMap(offersOf).filter(o => o.deal).sort((a, b) => b.d - a.d).filter(o => (dc[o.item.id] = (dc[o.item.id] || 0) + 1) <= 2);
   const live = auctions().filter(a => a.live), gems = live.filter(a => a.lot_analysis?.gems?.length);
-  const soon = [...gems, ...live.filter(a => !a.lot_analysis?.gems?.length)].slice(0, 6);
+  const pc = {}, soon = [...gems, ...live.filter(a => !a.lot_analysis?.gems?.length).sort(byDeal)].filter(a => (pc[a.item_id || a.url] = (pc[a.item_id || a.url] || 0) + 1) <= 2).slice(0, 6);
   const fired = P.items.flatMap(it => alertState(it).filter(a => a.hit).map(a => ({...a, it})));
   const movers = P.items.map(it => ({it, m: move(it)})).filter(x => x.m && x.m.d > 0).sort((a, b) => b.m.d - a.m.d).slice(0, 4);
   const strip = [...deals.map(o => `<a class=hc href="${esc(o.url)}" target=_blank rel=noopener><div class=im>${img(o.item)}${chip(o.d) ? `<span class="chip c-g" style="position:absolute;top:8px;left:8px">−${fmt(o.d)} %</span>` : ""}<span class=tl>${ic("tag", 12)} Deal</span></div>
@@ -211,40 +226,41 @@ function vOverview() {
   ${fired.length ? `<div class=banner>${ic("bell")}<div><b>${fired.length} prisbevakning${fired.length > 1 ? "ar" : ""} utlöst${fired.length > 1 ? "a" : ""}</b><br>${fired.map(a => `${esc(short(a.it.name))}: ${a.type === "below" ? "≤" : "≥"} ${kr(a.sek)} (nu ${kr(a.cur)})`).join("<br>")}</div></div>` : ""}
   <div class=sec><h2>Att titta på nu</h2><span>${deals.length} deal · ${live.length} auktioner</span></div>${strip.length ? `<div class=strip>${strip.join("")}</div>` : '<div class="card empty">Inget att lyfta fram just nu.</div>'}
   <div class=two><div><div class=sec><h2 style="font-size:15px">Stiger mest</h2><span>${RANGE === "all" ? "allt" : RANGE.replace("d", " d")}</span></div>
-    ${movers.length ? `<div class=list>${movers.map(({it, m}) => `<a class=row href="#${it.status === "owned" ? "samling" : "bevakning"}"><div class=th>${img(it)}</div><div><div class=nm>${esc(short(it.name))}</div><div class=meta>${esc(m.src)} · ${iso(m.from[0])} → ${iso(m.to[0])}</div></div><div class=rt><b>${kr(m.to[1])}</b>${chip(m.d)}</div></a>`).join("")}</div>` : '<div class="card empty">Inga rörelser i perioden.</div>'}</div>
+    ${movers.length ? `<div class=list>${movers.map(({it, m}) => `<a class=row href="${itemHref(it)}"><div class=th>${img(it)}</div><div><div class=nm>${esc(short(it.name))}</div><div class=meta>${esc(m.src)} · ${iso(m.from[0])} → ${iso(m.to[0])}</div></div><div class=rt><b>${kr(m.to[1])}</b>${chip(m.d)}</div></a>`).join("")}</div>` : '<div class="card empty">Inga rörelser i perioden.</div>'}</div>
   <div><div class=sec><h2>Dina styrkor</h2></div><div class="card" style="padding:14px 16px;font-size:13.5px;line-height:1.7">${ic("se", 16)} Svenska källor: Tradera, Auctionet, svenska butiker<br>${ic("swap", 16)} Landat pris i SEK inkl. moms, frakt &amp; provision<br>${ic("gem", 16)} Bildanalys av auktionslotter</div></div></div>
   ${foot()}`;
 }
+function groupBlock(it, body, n, what) {
+  return `<div class=grp><a class=grph href="${itemHref(it)}"><div class=th>${img(it)}</div><div><div class=nm>${esc(short(it.name))}</div><div class="xs mut">${n} ${what} · trend ${kr(bench(it)[0])}</div></div>${ic("chev", 16)}</a>${body}</div>`;
+}
 function vDeals() {
-  const all = P.items.flatMap(offersOf), deals = all.filter(o => o.deal);
-  return `<div class=h1>Deals</div><p class=sub>Erbjudanden ≥ ${DS.threshold_pct} % under Cardmarket-trend, i landat SEK-pris.</p>
-  ${deals.length ? `<div class=strip>${deals.map(o => `<a class=hc href="${esc(o.url)}" target=_blank rel=noopener><div class=im>${img(o.item)}<span class="chip c-g" style="position:absolute;top:8px;left:8px">−${fmt(o.d)} %</span></div><div class=bd><div class=t>${esc(short(o.item.name))}</div><div class="xs mut">${esc(o.source)} · ${esc(o.risk.slice(0, 2).join(", "))}</div><div class=p>${kr(o.L)}</div></div></a>`).join("")}</div>` : '<div class="card empty">Inga deals just nu.</div>'}
-  <div class=sec><h2>Alla erbjudanden</h2><span>${all.length}</span></div>${offerRows(all, true)}<p class="xs mut" style="margin-top:10px">${esc(DS.notes)}</p>${foot()}`;
+  const all = P.items.flatMap(offersOf), dc = {}, deals = all.filter(o => o.deal).sort((a, b) => b.d - a.d).filter(o => (dc[o.item.id] = (dc[o.item.id] || 0) + 1) <= 2);
+  const items = P.items.filter(it => (it.offers || []).length).map(it => ({it, os: offersOf(it)})).sort((a, b) => (Math.max(...b.os.filter(o => o.stock_status === "in_stock" && o.eng).map(o => o.d ?? -1e9), -1e9)) - (Math.max(...a.os.filter(o => o.stock_status === "in_stock" && o.eng).map(o => o.d ?? -1e9), -1e9)));
+  return `<div class=h1>Deals</div><p class=sub>≥ ${DS.threshold_pct} % under Cardmarket-trend i landat SEK. Max 5 per objekt – tryck för alla.</p>
+  ${deals.length ? `<div class=strip>${deals.map(o => `<a class=hc href="${esc(o.url)}" target=_blank rel=noopener><div class=im>${img(o.item)}<span class="chip c-g" style="position:absolute;top:8px;left:8px">−${fmt(o.d)} %</span></div><div class=bd><div class=t>${esc(short(o.item.name))}</div><div class="xs mut">${esc(o.source)}</div><div class=p>${kr(o.L)}</div></div></a>`).join("")}</div>` : '<div class="card empty sm">Inga deals just nu.</div>'}
+  <div class=sec><h2>Per objekt</h2><span>${all.length} erbjudanden</span></div>${items.map(({it, os}) => groupBlock(it, offerRows(os, false, false), os.length, "erbjudanden")).join("")}${foot()}`;
 }
 function vAuctions() {
   const live = auctions().filter(a => a.live), lots = live.filter(a => a.lot_analysis);
   const fees = Object.entries(AF).map(([k, v]) => `<a href="${esc(v.source)}" target=_blank rel=noopener>${esc(k)}</a> ${v.premium_pct} % + ${v.fixed} ${v.currency}`).join(" · ");
   return `<div class=h1>Auktioner</div><p class=sub>Tradera, Auctionet &amp; Bukowskis · landat pris inkl. köparprovision${", +25 % importmoms för UK-hus"}.</p>
-  <div class=sec><h2>Slutar snart</h2><span>${live.length} pågående</span></div>
-  <div class=list>${live.map(a => `<a class=row href="${esc(a.url)}" target=_blank rel=noopener><div class=th>${a.lot_analysis ? `<img class=cover src="${esc(a.lot_analysis.images[0])}" alt="">` : img(a.it, a.title)}</div>
-    <div><div class=nm>${esc(a.title)}${(a.qty || 1) > 1 ? " ×" + a.qty : ""}</div><div class=meta><span class="chip c-n">${ic("clock", 12)} ${countdown(a.ends_at)}</span>${esc(a.platform)} · ${esc(a.price_kind)} ${a.currency === "SEK" ? kr(a.price) : fmt(a.price) + " " + a.currency}${a.estimate ? ` · värd. ${fmt(a.estimate)} ${a.currency}` : ""}</div></div>
-    <div class=rt><b>${kr(a.per)}</b>${a.d != null ? vs(a.d) : a.lot_analysis ? `<span class="chip ${a.lot_analysis.gems.length ? "c-g" : "c-n"}">${a.lot_analysis.gems.length ? "💎" : "analyserad"}</span>` : ""}</div></a>`).join("") || '<div class=empty>Inga pågående auktioner.</div>'}</div>
-  ${lots.length ? `<div class=sec><h2>Lotter – bildanalys</h2><span>${ic("gem", 14)} dyrgripar / gömt och glömt</span></div><div class=list>${lots.map(a => { const x = a.lot_analysis;
+  <div class=sec><h2>Per objekt</h2><span>${live.length} pågående</span></div>
+  ${P.items.map(it => ({it, l: live.filter(a => a.item_id === it.id).sort(byDeal)})).filter(x => x.l.length).map(({it, l}) => groupBlock(it, aucRows(l, false, itemHref(it)), l.length, "auktioner")).join("")}
+  ${lots.length ? `<div class=sec><h2>Lotter – bildanalys</h2><span>${ic("gem", 14)} dyrgripar / gömt och glömt</span></div><div class=list>${(location.hash === "#lotter" ? lots : lots.slice(0, LIM)).map(a => { const x = a.lot_analysis;
     return expRow(`<div class=th><img class=cover src="${esc(x.images[0])}" alt=""></div><div><div class=nm>${esc(a.title)}</div><div class=meta>${x.gems.length ? x.gems.map(g => `<span class="chip c-g">💎 ${esc(g)}</span>`).join("") : '<span class="chip c-n">Inga dyrgripar</span>'}${x.flags.map(f => `<span class="chip c-a">${esc(f)}</span>`).join("")}</div></div><div class=rt><b>${kr(a.L)}</b><span class="xs mut">${countdown(a.ends_at)}</span><br><span class=chev>${ic("chev", 16)}</span></div>`,
       `<div class=in><p class=sm><b>Bedömning:</b> ${esc(x.verdict)}</p><p class="sm mut">${esc(x.value_note)}${x.value_range ? " Uppskattat värde: " + esc(x.value_range) : ""}</p><h4>Hittat i bilderna</h4>
        ${x.identified.map(i => `<div class=sm style="margin-bottom:8px"><b>${esc(i.what)}</b><br><span class=mut>${esc(i.notes || "")}</span>${i.price ? `<br>${i.url ? `<a href="${esc(i.url)}" target=_blank rel=noopener>${esc(i.price)}</a>` : esc(i.price)}` : ""}</div>`).join("")}
-       <h4>Bilder</h4><div class=gal>${x.images.map(u => `<a href="${esc(u)}" target=_blank><img src="${esc(u)}" loading=lazy alt=""></a>`).join("")}</div><p class="xs mut">Analyserad ${esc(x.analyzed)} · <a href="${esc(a.url)}" target=_blank rel=noopener>Öppna auktionen ${ic("ext", 12)}</a></p></div>`); }).join("")}</div>` : ""}
-  <div class=sec><h2>Övrigt att bevaka</h2></div><div class=list>${(P.market_watch || []).map(m => `<a class=row href="${esc(m.url)}" target=_blank rel=noopener style="grid-template-columns:1fr auto"><div><div class=nm>${esc(m.title)}</div><div class=meta>${esc(m.platform)} · ${m.date_seen} · ${esc(m.notes)}</div></div><div class=rt><b>${m.price ? kr(sek(m.price, m.currency)) : "–"}</b></div></a>`).join("")}</div>
+       <h4>Bilder</h4><div class=gal>${x.images.map(u => `<a href="${esc(u)}" target=_blank><img src="${esc(u)}" loading=lazy alt=""></a>`).join("")}</div><p class="xs mut">Analyserad ${esc(x.analyzed)} · <a href="${esc(a.url)}" target=_blank rel=noopener>Öppna auktionen ${ic("ext", 12)}</a></p></div>`); }).join("")}</div>${location.hash === "#lotter" ? "" : more(lots.length, "#lotter", "lotter")}` : ""}
+  <div class=sec><h2>Övrigt att bevaka</h2></div><div class=list>${(P.market_watch || []).slice(0, LIM).map(m => `<a class=row href="${esc(m.url)}" target=_blank rel=noopener style="grid-template-columns:1fr auto"><div><div class=nm>${esc(m.title)}</div><div class=meta>${esc(m.platform)} · ${m.date_seen} · ${esc(m.notes)}</div></div><div class=rt><b>${m.price ? kr(sek(m.price, m.currency)) : "–"}</b></div></a>`).join("")}</div>
   <p class="xs mut" style="margin-top:10px">Avgifter: ${fees}. Tradera-procenten är observerad, ej officiell.</p>${foot()}`;
 }
 function vCollection() {
   const {h} = holdings(); const owned = P.items.filter(i => i.status === "owned");
   const tx = [...(P.transactions || [])].sort((a, b) => (b.date || "").localeCompare(a.date || ""));
-  return `<div class=h1>Samling</div><p class=sub>${owned.length} objekt · tryck för graf, källor och erbjudanden.</p>
+  return `<div class=h1>Samling</div><p class=sub>${owned.length} objekt · tryck för detaljer.</p>
   <div class=list>${owned.map(it => { const q = h[it.id]?.qty ?? it.quantity, c = h[it.id]?.cost ?? it.purchase_price_sek, m = val(it, "mid") * q, g = m - c;
-    return expRow(`<div class=th>${img(it)}</div><div><div class=nm>${esc(short(it.name))}</div><div class=meta>${esc(it.category)} · ${esc(it.language)} · ${q} st · köpt ${kr(c)}</div><div class=alerts>${alertChips(it)}</div></div>
-      <div class=rt><b>${kr(m)}</b>${chip(g / c * 100)}${spark(it)}<span class=chev>${ic("chev", 16)}</span></div>`,
-      `<div class=range style="padding:12px 0 0">${[["conservative", "Försiktig"], ["mid", "Mitten"], ["high", "Hög"]].map(([k, l]) => `<div><span>${l} · ${esc((it.valuation[k] || it.valuation.mid).basis)}</span><b>${kr(val(it, k))}</b></div>`).join("")}</div>${details(it)}`); }).join("")}</div>
+    return `<a class=row href="${itemHref(it)}"><div class=th>${img(it)}</div><div><div class=nm>${esc(short(it.name))}</div><div class=meta>${esc(it.category)} · ${esc(it.language)} · ${q} st · köpt ${kr(c)}</div><div class=alerts>${alertChips(it)}</div></div>
+      <div class=rt><b>${kr(m)}</b>${chip(g / c * 100)}${spark(it)}</div></a>`; }).join("")}</div>
   <div class=sec><h2>Transaktioner</h2><span>${tx.length}</span></div>
   <div class=list>${tx.map(t => { const it = ITEMS[t.item_id]; return `<div class=row style="cursor:default"><div class=th>${img(it)}</div><div><div class=nm>${t.type === "buy" ? "Köp" : "Sälj"} · ${esc(short(it?.name || t.item_id))}</div><div class=meta>${t.date || "datum okänt"} · ${esc(t.platform)} · ${t.qty} st${t.fees_sek ? " · avgifter " + kr(t.fees_sek) : ""}${t.note ? " · " + esc(t.note) : ""}</div></div><div class=rt><b class="${t.type === "sell" ? "g" : ""}">${t.type === "buy" ? "−" : "+"}${kr(t.price_sek)}</b></div></div>`; }).join("")}</div>
   ${(() => { const t = totals(); return `<div class=kpis><div class=kpi><span>Orealiserat</span><b class="${t.unreal >= 0 ? "g" : "r"}">${t.unreal >= 0 ? "+" : "−"}${kr(Math.abs(t.unreal))}</b></div><div class=kpi><span>Realiserat</span><b>${kr(t.realised)}</b></div><div class=kpi><span>Investerat</span><b>${kr(t.cost)}</b></div></div>`; })()}${foot()}`;
@@ -253,8 +269,17 @@ function vWatch() {
   const w = P.items.filter(i => i.status === "watchlist");
   return `<div class=h1>Bevakning</div><p class=sub>Ej ägda · marknadsvärde (Cardmarket) · prisbevakningar.</p>
   <div class=list>${w.map(it => { const m = move(it), deals = offersOf(it).filter(o => o.deal).length;
-    return expRow(`<div class=th>${img(it)}</div><div><div class=nm>${esc(short(it.name))}</div><div class=meta>${esc(it.category)}${deals ? ` · <span class="chip c-g">${deals} deal</span>` : ""}</div><div class=alerts>${alertChips(it)}</div></div>
-      <div class=rt><b>${kr(val(it, "mid"))}</b>${m ? chip(m.d) : `<span class="xs mut">${eur(val(it, "mid"))}</span>`}${spark(it)}<span class=chev>${ic("chev", 16)}</span></div>`, details(it)); }).join("")}</div>${foot()}`;
+    return `<a class=row href="${itemHref(it)}"><div class=th>${img(it)}</div><div><div class=nm>${esc(short(it.name))}</div><div class=meta>${esc(it.category)}${deals ? ` · <span class="chip c-g">${deals} deal</span>` : ""}</div><div class=alerts>${alertChips(it)}</div></div>
+      <div class=rt><b>${kr(val(it, "mid"))}</b>${m ? chip(m.d) : `<span class="xs mut">${eur(val(it, "mid"))}</span>`}${spark(it)}</div></a>`; }).join("")}</div>${foot()}`;
+}
+function vItem(id) {
+  const it = ITEMS[id]; if (!it) return '<div class="card empty">Objektet finns inte.</div>';
+  const {h} = holdings(), x = h[it.id], m = val(it, "mid"), back = it.status === "owned" ? "samling" : "bevakning";
+  return `<a class=back href="#${back}" onclick="if(history.length>1){history.back();return false}">${ic("chev", 16)} Tillbaka</a>
+  <div class="card big"><div class=th>${img(it)}</div><div><div class="xs mut">${esc(it.category)} · ${esc(it.language)} · ${it.status === "owned" ? "Ägd" : "Bevakning"}</div><div class=nm style="font-weight:700;font-size:17px;line-height:1.3">${esc(short(it.name))}</div><div class=v>${kr(m)}</div>
+    ${x && x.qty > 0 ? chip((m * x.qty - x.cost) / x.cost * 100) + ` <span class="xs mut">köpt ${kr(x.cost)}</span>` : `<span class="xs mut">${eur(m)} · ${esc(it.valuation.mid.basis)}</span>`}<div class=alerts>${alertChips(it)}</div></div></div>
+  ${it.valuation.conservative ? `<div class=range style="padding:10px 0 0">${[["conservative", "Försiktig"], ["mid", "Mitten"], ["high", "Hög"]].map(([k, l]) => `<div><span>${l}</span><b>${kr(val(it, k))}</b></div>`).join("")}</div>` : ""}
+  <div class="card" style="margin-top:14px">${details(it, true)}</div>${foot()}`;
 }
 const foot = () => `<p class=foot>Valutor (ECB-referens): ${Object.entries(P.rates).map(([k, v]) => `1 ${k} = ${v} SEK`).join(" · ")}. Värden är uppskattningar från annonser och trender, inte bekräftade försäljningar. Produktbilder tillhör respektive rättighetsinnehavare.</p>`;
 
@@ -267,7 +292,9 @@ function nav() {
   document.getElementById("side").innerHTML = `<div class=brand><span class=logo>${ic("box", 18)}</span>Samlarportfölj</div>` + links(false);
 }
 function route() {
-  if (!P) return; const k = VIEWS[location.hash.slice(1)] ? location.hash.slice(1) : "oversikt"; nav();
+  if (!P) return; const hsh = location.hash.slice(1);
+  if (hsh.startsWith("item/")) { nav(); document.getElementById("app").innerHTML = `<div class=view>${vItem(decodeURIComponent(hsh.slice(5)))}</div>`; return; }
+  const k = VIEWS[hsh] ? hsh : hsh === "lotter" ? "auktioner" : "oversikt"; nav();
   document.getElementById("app").innerHTML = `<div class=view>${VIEWS[k][2]()}</div>`;
 }
 window.addEventListener("hashchange", () => { route(); window.scrollTo(0, 0); });
