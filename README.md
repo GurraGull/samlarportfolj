@@ -99,3 +99,9 @@ Ranking av **enskilda köpbara erbjudanden** över alla objekt (app.js `dealCand
 Webhallen blockerar curl/automatik. Erbjudanden med `manual_stock_check: "browser"` hoppas över av `stockcheck.py` och ska **kontrolleras i webbläsaren (computerUse)** varje rutin: öppna varje Webhallen-URL med `restock_watch: true`, läs lagerstatus för webb och butik, uppdatera `stock_status`, `stock_checked_at`, `stock_evidence` (och pris) i data.json.
 **Om något är i lager (webb eller butik): meddela Gustaf omedelbart** (produkt, pris, länk, ev. köpbegränsning/medlemskrav) – vänta inte på rutinrapporten.
 Sajten visar dessa i sektionen "Bevaka restock" på Översikt (butikspris under trend, t.ex. 30th ETB 999 kr, Hobbit 4 999 kr).
+
+## Amazon.se (manuell webbläsarkoll, sparsamt)
+Amazon.se blockerar curl och felar i webbläsaren efter några sidladdningar. Erbjudanden med `manual_stock_check: "browser"` hoppas över av `stockcheck.py`; kontrollera dem i webbläsaren (computerUse) **sparsamt** (några produktsidor per rutin, inte sökningar i serie). Notera säljare (Amazon vs tredjepart), frakt, leveranstid (lång leveranstid = `stock_status: "preorder"`, `backorder: true`) och språk. Exkludera icke-engelska (t.ex. tysk Duskmourn, se `excluded` i data.json).
+
+## Restock-notiser via e-post
+Botens inkorg **gurragull@mail.grokbot.com** kan användas för butikernas "meddela mig när i lager"-notiser. Använd +taggar per butik/produkt, t.ex. `gurragull+webhallen-hobbit@mail.grokbot.com`, `gurragull+amazon@mail.grokbot.com`. Rutinen söker i inkorgen efter nya notiser och meddelar Gustaf direkt vid restock.

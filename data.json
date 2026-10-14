@@ -2510,6 +2510,25 @@
           "restock_watch": true,
           "members_only": true,
           "discontinued": true
+        },
+        {
+          "date": "2026-10-14",
+          "source": "Amazon.se",
+          "seller": "okänd (ej verifierad)",
+          "price": 6188.32,
+          "currency": "SEK",
+          "shipping": 207.61,
+          "origin": "SE",
+          "in_stock": true,
+          "url": "https://www.amazon.se/dp/B0GF44F4MG",
+          "seller_rating": null,
+          "language": "okänt",
+          "notes": "4 kvar. Andra erbjudanden från 5 512,49 kr.",
+          "stock_status": "in_stock",
+          "stock_checked_at": "2026-10-14T09:10+02:00",
+          "stock_evidence": "Sett i webbläsare 14 okt 2026 (endast sökresultat; säljare ej verifierad). Amazon blockerar curl. 4 kvar. Andra erbjudanden från 5 512,49 kr.",
+          "manual_stock_check": "browser",
+          "backorder": false
         }
       ],
       "alerts": [],
@@ -2571,6 +2590,26 @@
           "restock_watch": true,
           "members_only": true,
           "discontinued": false
+        },
+        {
+          "date": "2026-10-14",
+          "source": "Amazon.se",
+          "seller": "okänd (ej verifierad)",
+          "price": 3074.1,
+          "currency": "SEK",
+          "shipping": 0.0,
+          "origin": "SE",
+          "in_stock": false,
+          "url": "https://www.amazon.se/dp/B0GXGXJ55L",
+          "seller_rating": null,
+          "language": "Engelska",
+          "notes": "Skickas av Amazon, fri frakt. Leverans 8 jan–23 apr 2027 → restorder/förbeställning.",
+          "stock_status": "preorder",
+          "stock_checked_at": "2026-10-14T09:10+02:00",
+          "stock_evidence": "Sett i webbläsare 14 okt 2026 (endast sökresultat; säljare ej verifierad). Amazon blockerar curl. Skickas av Amazon, fri frakt. Leverans 8 jan–23 apr 2027 → restorder/förbeställning.",
+          "manual_stock_check": "browser",
+          "backorder": true,
+          "restock_watch": true
         }
       ],
       "alerts": [],
@@ -2578,6 +2617,65 @@
         "src": "images/mtg-reality-fracture-cbb.webp",
         "credit": "Produktbild via återförsäljare (© Wizards of the Coast)",
         "source_url": "https://dragonslair.se/products/magic-the-gathering-reality-fracture-collector-booster-display",
+        "downloaded": "2026-10-14"
+      }
+    },
+    {
+      "id": "mtg-innistrad-midnight-hunt-cbb",
+      "name": "MTG Innistrad: Midnight Hunt Collector Booster Box",
+      "category": "Magic: The Gathering",
+      "language": "Engelska",
+      "quantity": 1,
+      "purchase_price_sek": null,
+      "status": "watchlist",
+      "cardmarket_id": 573781,
+      "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products/Search?searchString=Innistrad%3A+Midnight+Hunt+Collector+Booster+Box&idCategory=7&language=1",
+      "valuation": {
+        "mid": {
+          "price": 207.65,
+          "currency": "EUR",
+          "basis": "Cardmarket-trend (prisguide 2026-10-12)"
+        }
+      },
+      "notes": "Tillagd 14 okt via Amazon.se. Cardmarket prisguide 12 okt: trend €207.65 (ej språkfiltrerad).",
+      "snapshots": [
+        {
+          "date": "2026-10-12",
+          "source": "Cardmarket prisguide",
+          "price": 207.65,
+          "currency": "EUR",
+          "type": "trend",
+          "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
+          "note": "idProduct 573781"
+        }
+      ],
+      "community": [],
+      "offers": [
+        {
+          "date": "2026-10-14",
+          "source": "Amazon.se",
+          "seller": "okänd (ej verifierad)",
+          "price": 4026.38,
+          "currency": "SEK",
+          "shipping": 216.29,
+          "origin": "SE",
+          "in_stock": true,
+          "url": "https://www.amazon.se/dp/B0996W4YC6",
+          "seller_rating": null,
+          "language": "okänt",
+          "notes": "1 kvar, troligen tredjepartssäljare.",
+          "stock_status": "in_stock",
+          "stock_checked_at": "2026-10-14T09:10+02:00",
+          "stock_evidence": "Sett i webbläsare 14 okt 2026 (endast sökresultat; säljare ej verifierad). Amazon blockerar curl. 1 kvar, troligen tredjepartssäljare.",
+          "manual_stock_check": "browser",
+          "backorder": false
+        }
+      ],
+      "alerts": [],
+      "image": {
+        "src": "images/mtg-innistrad-midnight-hunt-cbb.webp",
+        "credit": "Produktbild via återförsäljare (© Wizards of the Coast)",
+        "source_url": "https://dragonslair.se/products/innistrad-midnight-hunt-collectors-booster-display-magic-the-gathering",
         "downloaded": "2026-10-14"
       }
     }
@@ -3493,5 +3591,13 @@
     "language": "Engelska",
     "cardmarket_param": "language=1",
     "note": "Endast engelska erbjudanden räknas. Cardmarkets prisguide (trend) är inte språkfiltrerad – för MTG Collector-boxar är engelska dominerande men kontrollera EN-filtret via länken."
-  }
+  },
+  "excluded": [
+    {
+      "date": "2026-10-14",
+      "source": "Amazon.se",
+      "what": "Duskmourn Collector Booster (tysk)",
+      "reason": "Ej engelska – exkluderad enligt språkfilter"
+    }
+  ]
 }

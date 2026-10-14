@@ -198,7 +198,7 @@ function restock() {
   return `<div class=sec><h2 style="font-size:15px">${ic("bell", 16)} Bevaka restock</h2><span>${L.filter(o => o.stock_status === "in_stock").length ? '<b class=g>I LAGER!</b>' : "alla slut"}</span></div>
   <p class="xs mut" style="margin:-4px 0 8px">Butikspris under trend – köp direkt om de kommer tillbaka. Kontrolleras i webbläsare (Webhallen blockerar automatik).</p>
   <div class=list>${L.map(o => `<a class=row href="${esc(o.url)}" target=_blank rel=noopener><div class=th>${img(o.item)}</div><div><div class=nm>${esc(short(o.item.name))}</div>
-    <div class=meta><span class="chip ${o.stock_status === "in_stock" ? "c-g" : "c-n"}">${o.discontinued ? "Utgången" : o.stock_status === "in_stock" ? "I lager!" : "Slut"}</span>${esc(o.source)}${o.members_only ? " · medlemspris" : ""} · koll ${ago(o.stock_checked_at)}</div></div>
+    <div class=meta><span class="chip ${o.stock_status === "in_stock" ? "c-g" : "c-n"}">${o.discontinued ? "Utgången" : o.stock_status === "in_stock" ? "I lager!" : o.stock_status === "preorder" ? "Restorder" : "Slut"}</span>${esc(o.source)}${o.members_only ? " · medlemspris" : ""} · koll ${ago(o.stock_checked_at)}</div></div>
     <div class=rt><b>${o.price != null ? kr(o.price) : "–"}</b>${o.d != null ? vs(o.d) : ""}</div></a>`).join("")}</div>`;
 }
 function bestOf() {
