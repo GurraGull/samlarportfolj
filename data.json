@@ -2545,8 +2545,8 @@
       "category": "Magic: The Gathering",
       "language": "Engelska",
       "quantity": 1,
-      "purchase_price_sek": null,
-      "status": "watchlist",
+      "purchase_price_sek": 3074.1,
+      "status": "ordered",
       "cardmarket_id": 885563,
       "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products/Search?searchString=Reality%20Fracture%20Collector%20Booster%20Box&idCategory=7&language=1",
       "valuation": {
@@ -2603,13 +2603,13 @@
           "url": "https://www.amazon.se/dp/B0GXGXJ55L",
           "seller_rating": null,
           "language": "Engelska",
-          "notes": "Skickas av Amazon, fri frakt. Leverans 8 jan–23 apr 2027 → restorder/förbeställning.",
+          "notes": "Skickas av Amazon, fri frakt. Leverans 8 jan–23 apr 2027 → restorder/förbeställning. KÖPT av Gustaf 14 okt 2026.",
           "stock_status": "preorder",
           "stock_checked_at": "2026-10-14T09:10+02:00",
           "stock_evidence": "Sett i webbläsare 14 okt 2026 (endast sökresultat; säljare ej verifierad). Amazon blockerar curl. Skickas av Amazon, fri frakt. Leverans 8 jan–23 apr 2027 → restorder/förbeställning.",
           "manual_stock_check": "browser",
           "backorder": true,
-          "restock_watch": true
+          "restock_watch": false
         }
       ],
       "alerts": [],
@@ -2618,6 +2618,14 @@
         "credit": "Produktbild via återförsäljare (© Wizards of the Coast)",
         "source_url": "https://dragonslair.se/products/magic-the-gathering-reality-fracture-collector-booster-display",
         "downloaded": "2026-10-14"
+      },
+      "purchase_date": "2026-10-14",
+      "order": {
+        "platform": "Amazon.se",
+        "ordered": "2026-10-14",
+        "delivery_estimate": "2027-01-08 – 2027-04-23",
+        "badge": "Beställd – lev. jan–apr 2027",
+        "delivered": false
       }
     },
     {
@@ -3585,6 +3593,17 @@
       "fees_sek": 0,
       "platform": "okänd",
       "note": "Köpdatum okänt"
+    },
+    {
+      "id": "t2",
+      "item_id": "mtg-reality-fracture-cbb",
+      "type": "buy",
+      "date": "2026-10-14",
+      "qty": 1,
+      "price_sek": 3074.1,
+      "fees_sek": 0,
+      "platform": "Amazon.se",
+      "note": "Engelska, 12 packs. Fri frakt. Beställd, ej levererad (lev. 8 jan–23 apr 2027)."
     }
   ],
   "language_filter": {

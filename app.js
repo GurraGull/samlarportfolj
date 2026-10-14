@@ -265,11 +265,11 @@ function vAuctions() {
   <p class="xs mut" style="margin-top:10px">Avgifter: ${fees}. Tradera-procenten är observerad, ej officiell.</p>${foot()}`;
 }
 function vCollection() {
-  const {h} = holdings(); const owned = P.items.filter(i => i.status === "owned");
+  const {h} = holdings(); const owned = P.items.filter(i => i.status === "owned" || i.status === "ordered");
   const tx = [...(P.transactions || [])].sort((a, b) => (b.date || "").localeCompare(a.date || ""));
   return `<div class=h1>Samling</div><p class=sub>${owned.length} objekt · tryck för detaljer.</p>
   <div class=list>${owned.map(it => { const q = h[it.id]?.qty ?? it.quantity, c = h[it.id]?.cost ?? it.purchase_price_sek, m = val(it, "mid") * q, g = m - c;
-    return `<a class=row href="${itemHref(it)}"><div class=th>${img(it)}</div><div><div class=nm>${esc(short(it.name))}</div><div class=meta>${esc(it.category)} · ${esc(it.language)} · ${q} st · köpt ${kr(c)}</div><div class=alerts>${alertChips(it)}</div></div>
+    return `<a class=row href="${itemHref(it)}"><div class=th>${img(it)}</div><div><div class=nm>${esc(short(it.name))}</div><div class=meta>${esc(it.category)} · ${esc(it.language)} · ${q} st · köpt ${kr(c)}</div><div class=alerts>${it.order && !it.order.delivered ? `<span class="chip c-acc">${ic("clock", 12)} ${esc(it.order.badge)}</span>` : ""}${alertChips(it)}</div></div>
       <div class=rt><b>${kr(m)}</b>${chip(g / c * 100)}${spark(it)}</div></a>`; }).join("")}</div>
   <div class=sec><h2>Transaktioner</h2><span>${tx.length}</span></div>
   <div class=list>${tx.map(t => { const it = ITEMS[t.item_id]; return `<div class=row style="cursor:default"><div class=th>${img(it)}</div><div><div class=nm>${t.type === "buy" ? "Köp" : "Sälj"} · ${esc(short(it?.name || t.item_id))}</div><div class=meta>${t.date || "datum okänt"} · ${esc(t.platform)} · ${t.qty} st${t.fees_sek ? " · avgifter " + kr(t.fees_sek) : ""}${t.note ? " · " + esc(t.note) : ""}</div></div><div class=rt><b class="${t.type === "sell" ? "g" : ""}">${t.type === "buy" ? "−" : "+"}${kr(t.price_sek)}</b></div></div>`; }).join("")}</div>
@@ -284,10 +284,10 @@ function vWatch() {
 }
 function vItem(id) {
   const it = ITEMS[id]; if (!it) return '<div class="card empty">Objektet finns inte.</div>';
-  const {h} = holdings(), x = h[it.id], m = val(it, "mid"), back = it.status === "owned" ? "samling" : "bevakning";
+  const {h} = holdings(), x = h[it.id], m = val(it, "mid"), back = it.status === "watchlist" ? "bevakning" : "samling";
   return `<a class=back href="#${back}" onclick="if(history.length>1){history.back();return false}">${ic("chev", 16)} Tillbaka</a>
-  <div class="card big"><div class=th>${img(it)}</div><div><div class="xs mut">${esc(it.category)} · ${esc(it.language)} · ${it.status === "owned" ? "Ägd" : "Bevakning"}</div><div class=nm style="font-weight:700;font-size:17px;line-height:1.3">${esc(short(it.name))}</div><div class=v>${kr(m)}</div>
-    ${x && x.qty > 0 ? chip((m * x.qty - x.cost) / x.cost * 100) + ` <span class="xs mut">köpt ${kr(x.cost)}</span>` : `<span class="xs mut">${eur(m)} · ${esc(it.valuation.mid.basis)}</span>`}<div class=alerts>${alertChips(it)}</div></div></div>
+  <div class="card big"><div class=th>${img(it)}</div><div><div class="xs mut">${esc(it.category)} · ${esc(it.language)} · ${it.status === "owned" ? "Ägd" : it.status === "ordered" ? "Beställd" : "Bevakning"}</div><div class=nm style="font-weight:700;font-size:17px;line-height:1.3">${esc(short(it.name))}</div><div class=v>${kr(m)}</div>
+    ${x && x.qty > 0 ? chip((m * x.qty - x.cost) / x.cost * 100) + ` <span class="xs mut">köpt ${kr(x.cost)}</span>` : `<span class="xs mut">${eur(m)} · ${esc(it.valuation.mid.basis)}</span>`}<div class=alerts>${it.order && !it.order.delivered ? `<span class="chip c-acc">${esc(it.order.badge)}</span>` : ""}${alertChips(it)}</div></div></div>
   ${it.valuation.conservative ? `<div class=range style="padding:10px 0 0">${[["conservative", "Försiktig"], ["mid", "Mitten"], ["high", "Hög"]].map(([k, l]) => `<div><span>${l}</span><b>${kr(val(it, k))}</b></div>`).join("")}</div>` : ""}
   <div class="card" style="margin-top:14px">${details(it, true)}</div>${foot()}`;
 }
