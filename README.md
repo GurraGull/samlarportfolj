@@ -94,3 +94,8 @@ Ranking av **enskilda köpbara erbjudanden** över alla objekt (app.js `dealCand
 3. Tradera: söksidans HTML innehåller JSON (`"items":[...]` före `"relatedItems"`) med itemUrl, itemType (Auction/AuctionBin/PureBin/ShopItem), price, totalBids, endDate (UTC), buyNowPrice. Lägg Köp nu som offer (fee_pct 5) och auktioner i `auctions` med item-URL. Ta bort Tradera-auktioner utan /item/-URL.
 4. Ej åtkomliga utan webbläsare (okt 2026): Cardmarket (Cloudflare 403), Webhallen, Inet, Spelexperten, Worlds of Wonder, Magic Madhouse, Fantasia, Spellbound, Fanatics – kolla manuellt/i webbläsare vid behov.
 5. `update.py stock` → `update.py check` → rapportera topp 3 i "Bästa deals" → `publish`.
+
+## Bevaka restock – Webhallen (manuell webbläsarkoll, mån & tors)
+Webhallen blockerar curl/automatik. Erbjudanden med `manual_stock_check: "browser"` hoppas över av `stockcheck.py` och ska **kontrolleras i webbläsaren (computerUse)** varje rutin: öppna varje Webhallen-URL med `restock_watch: true`, läs lagerstatus för webb och butik, uppdatera `stock_status`, `stock_checked_at`, `stock_evidence` (och pris) i data.json.
+**Om något är i lager (webb eller butik): meddela Gustaf omedelbart** (produkt, pris, länk, ev. köpbegränsning/medlemskrav) – vänta inte på rutinrapporten.
+Sajten visar dessa i sektionen "Bevaka restock" på Översikt (butikspris under trend, t.ex. 30th ETB 999 kr, Hobbit 4 999 kr).

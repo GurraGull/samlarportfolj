@@ -63,6 +63,8 @@ if __name__ == "__main__":
     p = json.loads(F.read_text()); dry = "--dry" in sys.argv; cnt = {}
     for i in p["items"]:
         for o in i.get("offers", []):
+            if o.get("manual_stock_check") == "browser":
+                print(f'{"(manuell)":13} {i["id"][:12]:12} {o["source"][:22]:22} – kontrollera i webbläsare (blockerar curl): {o["url"]}'); continue
             r = check(o["url"]); cnt[r["stock_status"]] = cnt.get(r["stock_status"], 0) + 1
             print(f'{r["stock_status"]:13} {i["id"][:12]:12} {o["source"][:22]:22} {o["price"]:>8} {o["currency"]} {r["stock_evidence"][:90]}{" DÖD LÄNK" if r.get("dead_link") else ""}')
             if not dry:

@@ -82,7 +82,7 @@ function portfolioSeries() {
   const end = dnum(P.last_updated); if (pts.length && pts[pts.length - 1][0] < end) pts.push([end, totals().mid]);
   return pts;
 }
-const landed = o => { const r = R[o.currency]; if (r == null) return null; let b = (o.price * (1 + (o.fee_pct || 0) / 100) + (o.shipping || 0)) * r;
+const landed = o => { const r = R[o.currency]; if (r == null || o.price == null) return null; let b = (o.price * (1 + (o.fee_pct || 0) / 100) + (o.shipping || 0)) * r;
   if (o.origin === "non-EU") b = b * (1 + DS.customs_pct / 100) * (1 + DS.import_vat_pct / 100) + DS.non_eu_handling_fee_sek; return b; };
 function offersOf(it) {
   const [b] = bench(it), offers = it.offers || []; if (!offers.length) return [];
@@ -192,6 +192,15 @@ function dealCands() {
       why: `Slutar om ${countdown(a.ends_at)} · ${a.bids ? a.bids + " bud" : "inga bud"} · justerat −${r} % för väntad budhöjning`}); }
   return c.sort((x, y) => y.score - x.score);
 }
+function restock() {
+  const L = P.items.flatMap(it => offersOf(it).filter(o => o.restock_watch)).sort((a, b) => (b.d ?? -1e9) - (a.d ?? -1e9));
+  if (!L.length) return "";
+  return `<div class=sec><h2 style="font-size:15px">${ic("bell", 16)} Bevaka restock</h2><span>${L.filter(o => o.stock_status === "in_stock").length ? '<b class=g>I LAGER!</b>' : "alla slut"}</span></div>
+  <p class="xs mut" style="margin:-4px 0 8px">Butikspris under trend – köp direkt om de kommer tillbaka. Kontrolleras i webbläsare (Webhallen blockerar automatik).</p>
+  <div class=list>${L.map(o => `<a class=row href="${esc(o.url)}" target=_blank rel=noopener><div class=th>${img(o.item)}</div><div><div class=nm>${esc(short(o.item.name))}</div>
+    <div class=meta><span class="chip ${o.stock_status === "in_stock" ? "c-g" : "c-n"}">${o.discontinued ? "Utgången" : o.stock_status === "in_stock" ? "I lager!" : "Slut"}</span>${esc(o.source)}${o.members_only ? " · medlemspris" : ""} · koll ${ago(o.stock_checked_at)}</div></div>
+    <div class=rt><b>${o.price != null ? kr(o.price) : "–"}</b>${o.d != null ? vs(o.d) : ""}</div></a>`).join("")}</div>`;
+}
 function bestOf() {
   const all = dealCands(), cnt = {}, top = all.filter(x => (cnt[x.it.id] = (cnt[x.it.id] || 0) + 1) <= 2).slice(0, 6), any = top.length && top[0].score > 0;
   const info = `<details class=info><summary>${ic("spark", 14)} Hur rankas?</summary><div class="xs mut">Varje köpbart erbjudande rankas för sig, över alla bevakade objekt, efter <b>rabatt mot Cardmarket-trend</b> i landat SEK (pris + köparavgift/köparskydd + frakt + ev. importmoms).<br>• Butiker: bara verifierat i lager (lagerkoll) och engelska.<br>• Tradera Köp nu: +5 % köparskydd.<br>• Auktioner: nuvarande bud + avgifter, minus antagen budhöjning till slut: 15 % (> 3 d kvar), 10 % (1–3 d), 5 % (6–24 h), 2 % (< 6 h).<br>• Cardmarket: billigaste annons, inte live-kontrollerad.<br>Inga poäng för att bara finnas i lager. Okänd frakt räknas som 0.</div></details>`;
@@ -219,6 +228,7 @@ function vOverview() {
     <span class="chip ${t.unreal >= 0 ? "c-g" : "c-r"}">${t.unreal >= 0 ? "▲" : "▼"} ${kr(Math.abs(t.unreal))} · ${pctTxt(t.unreal / t.cost * 100)}</span> <span class="sm mut">${eur(t.mid)} · orealiserat</span>
     <div class=kpis><div class=kpi><span>Investerat</span><b>${kr(t.cost)}</b></div><div class=kpi><span>Realiserat</span><b class="${t.realised > 0 ? "g" : ""}">${kr(t.realised)}</b></div><div class=kpi><span>Spann</span><b>${fmt(t.lo)}–${fmt(t.hi)}</b></div></div></section>
   ${bestOf()}
+  ${restock()}
   <div class="card chartcard"><div class=top style="margin-bottom:8px"><div class=legend><span><i style="background:#8b7cf6"></i>Marknadsvärde</span><span><i style="background:#8a96ab"></i>Investerat</span></div>
     <div class=seg>${["7d", "30d", "all"].map(r => `<button class="${RANGE === r ? "on" : ""}" onclick="RANGE='${r}';route()">${r === "all" ? "Allt" : r.replace("d", " d")}</button>`).join("")}</div></div>
     <div class=pchart>${lineChart([{color: "#8b7cf6", fill: true, pts: shown.map(p => [...p])}], {cost: t.cost})}</div>

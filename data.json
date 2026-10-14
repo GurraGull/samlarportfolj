@@ -972,6 +972,27 @@
           "stock_checked_at": "2026-10-13T23:27+02:00",
           "stock_evidence": "Shopify .js available=True, pris 1879",
           "checked_price": 1879.0
+        },
+        {
+          "date": "2026-10-14",
+          "source": "Webhallen",
+          "seller": "webhallen.com",
+          "price": 999,
+          "currency": "SEK",
+          "shipping": null,
+          "origin": "SE",
+          "in_stock": false,
+          "url": "https://www.webhallen.com/se/product/402000-Pokemon-30th-Celebration-Elite-Trainer-Box",
+          "seller_rating": null,
+          "language": "okänt",
+          "notes": "Max 1 per kund, endast butiksupphämtning.",
+          "stock_status": "out_of_stock",
+          "stock_checked_at": "2026-10-14T09:00+02:00",
+          "stock_evidence": "Kontrollerat i webbläsare 14 okt 2026: slut i lager webb + butik. Endast medlemmar. Språk ej angivet.",
+          "manual_stock_check": "browser",
+          "restock_watch": true,
+          "members_only": true,
+          "discontinued": false
         }
       ],
       "image": {
@@ -1295,6 +1316,27 @@
           "http_status": 200,
           "stock_checked_at": "2026-10-13T23:27+02:00",
           "stock_evidence": "schema.org availability=InStock"
+        },
+        {
+          "date": "2026-10-14",
+          "source": "Webhallen",
+          "seller": "webhallen.com",
+          "price": 4999,
+          "currency": "SEK",
+          "shipping": null,
+          "origin": "SE",
+          "in_stock": false,
+          "url": "https://www.webhallen.com/se/product/400151-Magic-the-Gathering-The-Hobbit-Collector-Display-12-boosters",
+          "seller_rating": null,
+          "language": "okänt",
+          "notes": "Max 4 per kund.",
+          "stock_status": "out_of_stock",
+          "stock_checked_at": "2026-10-14T09:00+02:00",
+          "stock_evidence": "Kontrollerat i webbläsare 14 okt 2026: slut i lager webb + butik. Endast medlemmar. Språk ej angivet.",
+          "manual_stock_check": "browser",
+          "restock_watch": true,
+          "members_only": true,
+          "discontinued": false
         }
       ],
       "image": {
@@ -2415,6 +2457,128 @@
         "credit": "Produktbild via återförsäljare (© Wizards of the Coast)",
         "source_url": "https://dragonslair.se/products/magic-the-gathering-avatar-the-last-airbender-collector-booster-displ-magic-the-gathering",
         "downloaded": "2026-10-13"
+      }
+    },
+    {
+      "id": "mtg-marvel-super-heroes-cbb",
+      "name": "MTG Marvel Super Heroes Collector Booster Box",
+      "category": "Magic: The Gathering",
+      "language": "Engelska",
+      "quantity": 1,
+      "purchase_price_sek": null,
+      "status": "watchlist",
+      "cardmarket_id": 869496,
+      "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products/Search?searchString=Marvel%20Super%20Heroes%20Collector%20Booster%20Box&idCategory=7&language=1",
+      "valuation": {
+        "mid": {
+          "price": 325.12,
+          "currency": "EUR",
+          "basis": "Cardmarket-trend (prisguide 2026-10-12)"
+        }
+      },
+      "notes": "Tillagd 14 okt via Webhallen-bevakning. Cardmarket prisguide 12 okt: trend €325.12 (ej språkfiltrerad).",
+      "snapshots": [
+        {
+          "date": "2026-10-12",
+          "source": "Cardmarket prisguide",
+          "price": 325.12,
+          "currency": "EUR",
+          "type": "trend",
+          "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
+          "note": "idProduct 869496"
+        }
+      ],
+      "community": [],
+      "offers": [
+        {
+          "date": "2026-10-14",
+          "source": "Webhallen",
+          "seller": "webhallen.com",
+          "price": null,
+          "currency": "SEK",
+          "shipping": null,
+          "origin": "SE",
+          "in_stock": false,
+          "url": "https://www.webhallen.com/se/product/395310-Magic-the-Gathering-Marvel-Super-Heroes-Collector-Display-12-boosters",
+          "seller_rating": null,
+          "language": "okänt",
+          "notes": "Utgången hos Webhallen (discontinued).",
+          "stock_status": "out_of_stock",
+          "stock_checked_at": "2026-10-14T09:00+02:00",
+          "stock_evidence": "Kontrollerat i webbläsare 14 okt 2026: slut i lager webb + butik. Endast medlemmar. Språk ej angivet. Utgången.",
+          "manual_stock_check": "browser",
+          "restock_watch": true,
+          "members_only": true,
+          "discontinued": true
+        }
+      ],
+      "alerts": [],
+      "image": {
+        "src": "images/mtg-marvel-super-heroes-cbb.webp",
+        "credit": "Produktbild via återförsäljare (© Wizards of the Coast)",
+        "source_url": "https://dragonslair.se/products/magic-the-gathering-marvel-super-heroes-collector-booster-display-12-magic-the-gathering",
+        "downloaded": "2026-10-14"
+      }
+    },
+    {
+      "id": "mtg-reality-fracture-cbb",
+      "name": "MTG Reality Fracture Collector Booster Box",
+      "category": "Magic: The Gathering",
+      "language": "Engelska",
+      "quantity": 1,
+      "purchase_price_sek": null,
+      "status": "watchlist",
+      "cardmarket_id": 885563,
+      "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products/Search?searchString=Reality%20Fracture%20Collector%20Booster%20Box&idCategory=7&language=1",
+      "valuation": {
+        "mid": {
+          "price": 347.09,
+          "currency": "EUR",
+          "basis": "Cardmarket-trend (prisguide 2026-10-12)"
+        }
+      },
+      "notes": "Tillagd 14 okt via Webhallen-bevakning. Cardmarket prisguide 12 okt: trend €347.09 (ej språkfiltrerad).",
+      "snapshots": [
+        {
+          "date": "2026-10-12",
+          "source": "Cardmarket prisguide",
+          "price": 347.09,
+          "currency": "EUR",
+          "type": "trend",
+          "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
+          "note": "idProduct 885563"
+        }
+      ],
+      "community": [],
+      "offers": [
+        {
+          "date": "2026-10-14",
+          "source": "Webhallen",
+          "seller": "webhallen.com",
+          "price": 3399,
+          "currency": "SEK",
+          "shipping": null,
+          "origin": "SE",
+          "in_stock": false,
+          "url": "https://www.webhallen.com/se/product/401344-Magic-The-Gathering-Reality-Fracture-Collector-Booster",
+          "seller_rating": null,
+          "language": "okänt",
+          "notes": "Oklart om display (12 boosters) eller enstaka paket – verifiera.",
+          "stock_status": "out_of_stock",
+          "stock_checked_at": "2026-10-14T09:00+02:00",
+          "stock_evidence": "Kontrollerat i webbläsare 14 okt 2026: slut i lager webb + butik. Endast medlemmar. Språk ej angivet.",
+          "manual_stock_check": "browser",
+          "restock_watch": true,
+          "members_only": true,
+          "discontinued": false
+        }
+      ],
+      "alerts": [],
+      "image": {
+        "src": "images/mtg-reality-fracture-cbb.webp",
+        "credit": "Produktbild via återförsäljare (© Wizards of the Coast)",
+        "source_url": "https://dragonslair.se/products/magic-the-gathering-reality-fracture-collector-booster-display",
+        "downloaded": "2026-10-14"
       }
     }
   ],
