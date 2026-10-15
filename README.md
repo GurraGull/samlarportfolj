@@ -33,7 +33,7 @@ Avgifter i `auction_fees` (källa per hus). Landat = bud × (1+premium_pct) + fi
 Steg:
 1. Tradera: WebFetch `https://www.tradera.com/search?q=<objekt>` – notera sluttid, ledande bud/utrop, Köp nu.
 2. Auctionet: sökningen är JS-renderad; använd `curl -sL -A Mozilla/5.0 https://auctionet.com/sv/search?q=pokemon` och plocka `/sv/<id>-...`-länkar, hämta varje föremålssida och läs `ends_at`, `estimate`, `next_bid_amount`, `original_currency` ur inbäddad JSON (beloppen visas i boxens valuta, ofta USD – notera originalvalutan). Sök även "magic the gathering", "booster", "trading cards".
-3. Bukowskis: `https://www.bukowskis.com/sv/search?q=pokemon` (och magic). Hittills inga TCG-objekt.
+3. Bukowskis: `https://www.bukowskis.com/sv/search?q=…` ger HTTP 404 sedan 15 okt 2026; `/sv/lots` ignorerar sökparametern (JS-sök) – bläddra i `/sv/lots` eller sök i webbläsare. Hittills inga TCG-objekt.
 4. Lägg in i `auctions` i portfolio.json (item_id om objektet spåras, annars null; platform måste matcha en nyckel i `auction_fees`; price_kind = bud|utrop|lägsta nästa bud; ends_at ISO lokal tid). Ta inte bort avslutade – de blir historik och döljs i "På auktion nu".
 5. Fasta annonser (Blocket m.fl.) som är intressanta men inte spåras: `market_watch`.
 
@@ -96,7 +96,7 @@ Ranking av **enskilda köpbara erbjudanden** över alla objekt (app.js `dealCand
 5. `update.py stock` → `update.py check` → rapportera topp 3 i "Bästa deals" → `publish`.
 
 ## Bevaka restock – Webhallen (manuell webbläsarkoll, mån & tors)
-Webhallen blockerar curl/automatik. Erbjudanden med `manual_stock_check: "browser"` hoppas över av `stockcheck.py` och ska **kontrolleras i webbläsaren (computerUse)** varje rutin: öppna varje Webhallen-URL med `restock_watch: true`, läs lagerstatus för webb och butik, uppdatera `stock_status`, `stock_checked_at`, `stock_evidence` (och pris) i data.json.
+Webhallen blockerar curl mot produktsidorna, men den publika produkt-JSON:en `https://www.webhallen.com/api/product/<id>` gick att läsa 15 okt 2026 (fält `stock.web`, butiks-id → antal, `price.price`). Erbjudanden med `manual_stock_check: "browser"` hoppas över av `stockcheck.py` och ska **kontrolleras i webbläsaren (computerUse)** varje rutin: öppna varje Webhallen-URL med `restock_watch: true`, läs lagerstatus för webb och butik, uppdatera `stock_status`, `stock_checked_at`, `stock_evidence` (och pris) i data.json.
 **Om något är i lager (webb eller butik): meddela Gustaf omedelbart** (produkt, pris, länk, ev. köpbegränsning/medlemskrav) – vänta inte på rutinrapporten.
 Sajten visar dessa i sektionen "Bevaka restock" på Översikt (butikspris under trend, t.ex. 30th ETB 999 kr, Hobbit 4 999 kr).
 

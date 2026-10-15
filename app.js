@@ -85,7 +85,7 @@ function portfolioSeries() {
 const landed = o => { const r = R[o.currency]; if (r == null || o.price == null) return null; let b = (o.price * (1 + (o.fee_pct || 0) / 100) + (o.shipping || 0)) * r;
   if (o.origin === "non-EU") b = b * (1 + DS.customs_pct / 100) * (1 + DS.import_vat_pct / 100) + DS.non_eu_handling_fee_sek; return b; };
 function offersOf(it) {
-  const [b] = bench(it), offers = it.offers || []; if (!offers.length) return [];
+  const [b] = bench(it), seen = new Set(), offers = [...(it.offers || [])].sort((x, y) => y.date.localeCompare(x.date)).filter(o => !seen.has(o.url) && seen.add(o.url)); if (!offers.length) return []; // senaste per URL
   const latest = offers.map(o => o.date).sort().pop();
   return offers.map(o => { const L = landed(o), d = b && L ? (b - L) / b * 100 : null, risk = [];
     if (o.shipping == null) risk.push("frakt okänd"); if (o.in_stock == null) risk.push("lager okänt"); if (o.in_stock === false) risk.push("ej i lager");

@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-14",
+  "last_updated": "2026-10-15",
   "rates": {
     "EUR": 11.158,
     "USD": 9.9669,
@@ -28,9 +28,9 @@
           "basis": "Cardmarket lägsta"
         },
         "mid": {
-          "price": 131.16,
+          "price": 131.52,
           "currency": "EUR",
-          "basis": "Cardmarket trend (ValoTCG 11 okt)"
+          "basis": "Cardmarket-trend (prisguide 2026-10-15)"
         },
         "high": {
           "price": 1798,
@@ -212,6 +212,24 @@
           "type": "trend",
           "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_6.json",
           "note": "Officiell Cardmarket-prisguide (idProduct 895551), ej språkfiltrerad"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Cardmarket prisguide",
+          "price": 131.52,
+          "currency": "EUR",
+          "type": "trend",
+          "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_6.json",
+          "note": "Officiell Cardmarket-prisguide (idProduct 895551, skapad 2026-10-15 02:46), ej språkfiltrerad. avg 150.45, avg1 None, low 80 (low ofta fel språk)"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "eBay",
+          "price": 129.96,
+          "currency": "EUR",
+          "type": "listing",
+          "url": "https://www.ebay.de/sch/i.html?_nkw=30th+celebration+elite+trainer+box+english&LH_BIN=1&_sop=15",
+          "note": "eBay.de Sofort-Kaufen: billigast ny/förseglad engelsk 129,96 € + ~20,22 € frakt från UK (icke-EU, +25 % moms ⇒ ~188 € landat). Billigast inom EU (DE) 160 € + 6,19 €. Annons-URL ej hämtbar."
         }
       ],
       "community": [
@@ -242,7 +260,7 @@
           "notes": "Max 1/kund. Lagerstatus syntes inte i sökutdraget.",
           "stock_status": "out_of_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:57+02:00",
+          "stock_checked_at": "2026-10-15T10:03+02:00",
           "stock_evidence": "Shopify .js available=False, pris 1195",
           "checked_price": 1195.0
         },
@@ -261,7 +279,7 @@
           "notes": "Lägsta pris oavsett språk; kan vara IT/ES.",
           "stock_status": "in_stock",
           "http_status": null,
-          "stock_checked_at": "2026-10-14T20:57+02:00",
+          "stock_checked_at": "2026-10-15T10:03+02:00",
           "stock_evidence": "Cardmarket-marknadsplats: listade annonser är i lager per definition (sidan blockerar bottar, priset ej live-kontrollerat)"
         },
         {
@@ -279,7 +297,7 @@
           "notes": "9 kvar i lager.",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:57+02:00",
+          "stock_checked_at": "2026-10-15T10:03+02:00",
           "stock_evidence": "Shopify .js available=True, pris 1999",
           "checked_price": 1999.0
         },
@@ -298,7 +316,7 @@
           "notes": "Frakt gäller inom UK; leverans till Sverige ej bekräftad. Best Offer.",
           "stock_status": "unknown",
           "http_status": 403,
-          "stock_checked_at": "2026-10-14T20:57+02:00",
+          "stock_checked_at": "2026-10-15T10:03+02:00",
           "stock_evidence": "Kunde inte läsa sidan (HTTP 403)"
         },
         {
@@ -316,7 +334,7 @@
           "notes": "",
           "stock_status": "unknown",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:57+02:00",
+          "stock_checked_at": "2026-10-15T10:03+02:00",
           "stock_evidence": "Sök-/listsida – inte en specifik produkt, kan inte verifieras"
         },
         {
@@ -334,7 +352,7 @@
           "notes": "",
           "stock_status": "unknown",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:57+02:00",
+          "stock_checked_at": "2026-10-15T10:03+02:00",
           "stock_evidence": "Sök-/listsida – inte en specifik produkt, kan inte verifieras"
         },
         {
@@ -352,7 +370,7 @@
           "notes": "Auktion (ledande bud), slutade 24 sep. Historik.",
           "stock_status": "out_of_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:57+02:00",
+          "stock_checked_at": "2026-10-15T10:03+02:00",
           "stock_evidence": "schema.org availability=OutOfStock"
         },
         {
@@ -371,7 +389,7 @@
           "notes": "Pokemon 30th Celebration Elite Trainer Box",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:57+02:00",
+          "stock_checked_at": "2026-10-15T10:03+02:00",
           "stock_evidence": "schema.org availability=InStock"
         },
         {
@@ -390,7 +408,7 @@
           "notes": "Pokémon TCG: 30th Celebration Elite Trainer Box",
           "stock_status": "out_of_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:57+02:00",
+          "stock_checked_at": "2026-10-15T10:03+02:00",
           "stock_evidence": "schema.org availability=OutOfStock"
         },
         {
@@ -409,7 +427,7 @@
           "notes": "Pokémon TCG: 30th Celebration Elite Trainer Box",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:57+02:00",
+          "stock_checked_at": "2026-10-15T10:03+02:00",
           "stock_evidence": "schema.org availability=InStock"
         },
         {
@@ -428,7 +446,7 @@
           "notes": "30th Celebration Elite Trainer Box - 30th Celebration",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:57+02:00",
+          "stock_checked_at": "2026-10-15T10:03+02:00",
           "stock_evidence": "schema.org availability=InStock"
         },
         {
@@ -447,7 +465,7 @@
           "notes": "Pokémon 30th Celebration Elite Trainer Box",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:57+02:00",
+          "stock_checked_at": "2026-10-15T10:03+02:00",
           "stock_evidence": "schema.org availability=InStock"
         },
         {
@@ -466,7 +484,7 @@
           "notes": "Pokémon Elite Trainer Box 30th Celebration",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:57+02:00",
+          "stock_checked_at": "2026-10-15T10:03+02:00",
           "stock_evidence": "schema.org availability=InStock"
         },
         {
@@ -485,7 +503,7 @@
           "notes": "Pokémon Elite Trainer Box - 30th Celebration",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:57+02:00",
+          "stock_checked_at": "2026-10-15T10:03+02:00",
           "stock_evidence": "schema.org availability=InStock"
         },
         {
@@ -504,7 +522,7 @@
           "notes": "Pokémon Elite Trainer Box 30th Celebration",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:57+02:00",
+          "stock_checked_at": "2026-10-15T10:03+02:00",
           "stock_evidence": "schema.org availability=InStock"
         },
         {
@@ -523,7 +541,7 @@
           "notes": "Pokémon TCG: 30th Celebration Elite Trainer Box",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:57+02:00",
+          "stock_checked_at": "2026-10-15T10:03+02:00",
           "stock_evidence": "schema.org availability=InStock"
         },
         {
@@ -542,7 +560,7 @@
           "notes": "Pokémon TCG: 30th Celebration Elite Trainer Box",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:57+02:00",
+          "stock_checked_at": "2026-10-15T10:03+02:00",
           "stock_evidence": "schema.org availability=InStock"
         },
         {
@@ -561,7 +579,7 @@
           "notes": "Pokemon Elite Trainer Box 30th Celebration",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:57+02:00",
+          "stock_checked_at": "2026-10-15T10:03+02:00",
           "stock_evidence": "schema.org availability=InStock"
         },
         {
@@ -580,7 +598,7 @@
           "notes": "30th Celebration 10 Elite Trainer Box Case - 30th Celebration - Pokemonkort",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:57+02:00",
+          "stock_checked_at": "2026-10-15T10:03+02:00",
           "stock_evidence": "schema.org availability=InStock"
         },
         {
@@ -599,7 +617,7 @@
           "notes": "Pokémon TCG: sealed 30th Celebration Elite Trainer Box",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:57+02:00",
+          "stock_checked_at": "2026-10-15T10:03+02:00",
           "stock_evidence": "schema.org availability=InStock"
         },
         {
@@ -618,7 +636,7 @@
           "notes": "Pokémon 30th Anniversary Celebration Elite Trainer Box ETB [SEALED] 2 STK",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:57+02:00",
+          "stock_checked_at": "2026-10-15T10:03+02:00",
           "stock_evidence": "schema.org availability=InStock"
         },
         {
@@ -637,7 +655,7 @@
           "notes": "Pokémon TCG: 30th Celebration Elite Trainer Box",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:57+02:00",
+          "stock_checked_at": "2026-10-15T10:03+02:00",
           "stock_evidence": "schema.org availability=InStock"
         },
         {
@@ -656,7 +674,7 @@
           "notes": "Pokémon TCG Elite Trainer Box 30th Celebration",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:57+02:00",
+          "stock_checked_at": "2026-10-15T10:03+02:00",
           "stock_evidence": "schema.org availability=InStock"
         },
         {
@@ -675,7 +693,7 @@
           "notes": "Pokémon 30th Anniversary Celebration Elite Trainer Box ETB [SEALED] 2 STK",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:57+02:00",
+          "stock_checked_at": "2026-10-15T10:03+02:00",
           "stock_evidence": "schema.org availability=InStock"
         },
         {
@@ -694,7 +712,7 @@
           "notes": "Pokémon TCG: 30th Celebration Elite Trainer Box",
           "stock_status": "out_of_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:57+02:00",
+          "stock_checked_at": "2026-10-15T10:03+02:00",
           "stock_evidence": "schema.org availability=OutOfStock"
         },
         {
@@ -705,16 +723,16 @@
           "currency": "SEK",
           "shipping": null,
           "origin": "SE",
-          "in_stock": true,
+          "in_stock": false,
           "url": "https://www.tradera.com/item/1001341/755640958/30th-celebration-elite-trainer-box",
           "seller_rating": null,
           "language": "okänt",
           "fee_pct": 5.0,
           "notes": "30th Celebration Elite Trainer Box",
-          "stock_status": "in_stock",
+          "stock_status": "out_of_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:57+02:00",
-          "stock_evidence": "schema.org availability=InStock"
+          "stock_checked_at": "2026-10-15T10:03+02:00",
+          "stock_evidence": "schema.org availability=OutOfStock"
         },
         {
           "date": "2026-10-13",
@@ -732,7 +750,7 @@
           "notes": "Pokemon 30th Celebration Elite Trainer Box",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:57+02:00",
+          "stock_checked_at": "2026-10-15T10:04+02:00",
           "stock_evidence": "schema.org availability=InStock"
         },
         {
@@ -751,7 +769,7 @@
           "notes": "Pokémon TCG: 30th Celebration Elite Trainer Box",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:57+02:00",
+          "stock_checked_at": "2026-10-15T10:04+02:00",
           "stock_evidence": "schema.org availability=InStock"
         },
         {
@@ -770,7 +788,7 @@
           "notes": "Pokémon TCG: 30th Celebration Elite Trainer Box Ny \\u0026 Inplastad",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:57+02:00",
+          "stock_checked_at": "2026-10-15T10:04+02:00",
           "stock_evidence": "schema.org availability=InStock"
         },
         {
@@ -789,7 +807,7 @@
           "notes": "Pokémon Trading Card Game Elite Trainer Box 30th Celebration",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:57+02:00",
+          "stock_checked_at": "2026-10-15T10:04+02:00",
           "stock_evidence": "schema.org availability=InStock"
         },
         {
@@ -808,7 +826,7 @@
           "notes": "Pokémon Celebrations Elite Trainer Box 30th",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:57+02:00",
+          "stock_checked_at": "2026-10-15T10:04+02:00",
           "stock_evidence": "schema.org availability=InStock"
         },
         {
@@ -827,7 +845,7 @@
           "notes": "Helt ny Pokémon TCG 30th Celebration Elite Trainer Box ETB – English 2026",
           "stock_status": "out_of_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:57+02:00",
+          "stock_checked_at": "2026-10-15T10:04+02:00",
           "stock_evidence": "schema.org availability=OutOfStock"
         },
         {
@@ -846,7 +864,7 @@
           "notes": "Pokémon 30th Anniversary Celebration Elite Trainer Box",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:57+02:00",
+          "stock_checked_at": "2026-10-15T10:04+02:00",
           "stock_evidence": "schema.org availability=InStock"
         },
         {
@@ -865,7 +883,7 @@
           "notes": "30th Celebration Elite Trainer Box",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:57+02:00",
+          "stock_checked_at": "2026-10-15T10:04+02:00",
           "stock_evidence": "schema.org availability=InStock"
         },
         {
@@ -884,7 +902,7 @@
           "notes": "Pokémon TCG: sealed 30th Celebration Elite Trainer Box",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:57+02:00",
+          "stock_checked_at": "2026-10-15T10:04+02:00",
           "stock_evidence": "schema.org availability=InStock"
         },
         {
@@ -895,16 +913,16 @@
           "currency": "SEK",
           "shipping": null,
           "origin": "SE",
-          "in_stock": true,
+          "in_stock": false,
           "url": "https://www.tradera.com/item/1001341/754588428/pokémon-tcg-30th-celebration-elite-trainer-box-",
           "seller_rating": null,
           "language": "okänt",
           "fee_pct": 5.0,
           "notes": "Pokémon TCG: 30th Celebration Elite Trainer Box.",
-          "stock_status": "in_stock",
+          "stock_status": "out_of_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:58+02:00",
-          "stock_evidence": "schema.org availability=InStock"
+          "stock_checked_at": "2026-10-15T10:04+02:00",
+          "stock_evidence": "schema.org availability=OutOfStock"
         },
         {
           "date": "2026-10-13",
@@ -922,7 +940,7 @@
           "notes": "Pokémon Celebrations Elite Trainer Box (ETB) - 30th Anniversary",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:58+02:00",
+          "stock_checked_at": "2026-10-15T10:04+02:00",
           "stock_evidence": "schema.org availability=InStock"
         },
         {
@@ -941,7 +959,7 @@
           "notes": "Pokémon TCG: 30th Celebration Elite Trainer Box – fabriksförseglad",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:58+02:00",
+          "stock_checked_at": "2026-10-15T10:04+02:00",
           "stock_evidence": "schema.org availability=InStock"
         },
         {
@@ -960,7 +978,7 @@
           "notes": "Pokémon TCG: 30th Celebration Elite Trainer Box",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:58+02:00",
+          "stock_checked_at": "2026-10-15T10:04+02:00",
           "stock_evidence": "schema.org availability=InStock"
         },
         {
@@ -971,16 +989,17 @@
           "currency": "SEK",
           "shipping": null,
           "origin": "SE",
-          "in_stock": true,
+          "in_stock": false,
           "url": "https://blindbox.se/products/pokemon-30th-celebration-elite-trainer-box-b-grade",
           "seller_rating": null,
           "language": "okänt",
           "notes": "B-grade = skadad förpackning",
-          "stock_status": "in_stock",
-          "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:58+02:00",
-          "stock_evidence": "Shopify .js available=True, pris 1879",
-          "checked_price": 1879.0
+          "stock_status": "out_of_stock",
+          "http_status": 404,
+          "stock_checked_at": "2026-10-15T10:04+02:00",
+          "stock_evidence": "HTTP 404 – död länk",
+          "checked_price": 1879.0,
+          "dead_link": true
         },
         {
           "date": "2026-10-14",
@@ -1018,7 +1037,7 @@
           "notes": "",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:58+02:00",
+          "stock_checked_at": "2026-10-15T10:04+02:00",
           "stock_evidence": "Shopify .js available=True, pris 1999",
           "checked_price": 1999.0
         },
@@ -1030,16 +1049,17 @@
           "currency": "SEK",
           "shipping": null,
           "origin": "SE",
-          "in_stock": true,
+          "in_stock": false,
           "url": "https://blindbox.se/products/pokemon-30th-celebration-elite-trainer-box-b-grade",
           "seller_rating": null,
           "language": "engelska",
           "notes": "B-grade (skadad förpackning)",
-          "stock_status": "in_stock",
-          "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:58+02:00",
-          "stock_evidence": "Shopify .js available=True, pris 1879",
-          "checked_price": 1879.0
+          "stock_status": "out_of_stock",
+          "http_status": 404,
+          "stock_checked_at": "2026-10-15T10:04+02:00",
+          "stock_evidence": "HTTP 404 – död länk",
+          "checked_price": 1879.0,
+          "dead_link": true
         },
         {
           "date": "2026-10-14",
@@ -1056,7 +1076,7 @@
           "notes": "",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:58+02:00",
+          "stock_checked_at": "2026-10-15T10:04+02:00",
           "stock_evidence": "Shopify .js available=True, pris 189.9",
           "checked_price": 189.9
         },
@@ -1075,7 +1095,7 @@
           "notes": "Pokemon 30th Celebration Elite Trainer Box",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:58+02:00",
+          "stock_checked_at": "2026-10-15T10:04+02:00",
           "stock_evidence": "schema.org availability=InStock",
           "origin": "SE",
           "seller_rating": null,
@@ -1089,15 +1109,15 @@
           "currency": "SEK",
           "shipping": 49,
           "region": "SE",
-          "in_stock": true,
+          "in_stock": false,
           "language": "engelska",
           "url": "https://www.tradera.com/item/1001341/755640958/30th-celebration-elite-trainer-box",
           "fee_pct": 5.0,
           "notes": "30th Celebration Elite Trainer Box",
-          "stock_status": "in_stock",
+          "stock_status": "out_of_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:58+02:00",
-          "stock_evidence": "schema.org availability=InStock",
+          "stock_checked_at": "2026-10-15T10:04+02:00",
+          "stock_evidence": "schema.org availability=OutOfStock",
           "origin": "SE",
           "seller_rating": null,
           "checked_price": null
@@ -1117,7 +1137,7 @@
           "notes": "Pokémon 30th Celebration Elite Trainer Box",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:58+02:00",
+          "stock_checked_at": "2026-10-15T10:04+02:00",
           "stock_evidence": "schema.org availability=InStock",
           "origin": "SE",
           "seller_rating": null,
@@ -1138,7 +1158,7 @@
           "notes": "30th Celebration Elite Trainer Box",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:58+02:00",
+          "stock_checked_at": "2026-10-15T10:04+02:00",
           "stock_evidence": "schema.org availability=InStock",
           "origin": "SE",
           "seller_rating": null,
@@ -1159,7 +1179,7 @@
           "notes": "Pokémon 30th Celebrations Elite Trainer Box",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:58+02:00",
+          "stock_checked_at": "2026-10-15T10:04+02:00",
           "stock_evidence": "schema.org availability=InStock",
           "origin": "SE",
           "seller_rating": null,
@@ -1180,7 +1200,7 @@
           "notes": "30th Celebration Elite Trainer Box - 30th Celebration",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:58+02:00",
+          "stock_checked_at": "2026-10-15T10:04+02:00",
           "stock_evidence": "schema.org availability=InStock",
           "origin": "SE",
           "seller_rating": null,
@@ -1201,7 +1221,7 @@
           "notes": "Pokémon TCG: 30th Celebration Elite Trainer Box",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:58+02:00",
+          "stock_checked_at": "2026-10-15T10:04+02:00",
           "stock_evidence": "schema.org availability=InStock",
           "origin": "SE",
           "seller_rating": null,
@@ -1222,7 +1242,7 @@
           "notes": "Pokémon TCG: 30th Celebration Elite Trainer Box",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:58+02:00",
+          "stock_checked_at": "2026-10-15T10:04+02:00",
           "stock_evidence": "schema.org availability=InStock",
           "origin": "SE",
           "seller_rating": null,
@@ -1243,7 +1263,7 @@
           "notes": "Pokémon TCG: 30th Celebration Elite Trainer Box",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:58+02:00",
+          "stock_checked_at": "2026-10-15T10:04+02:00",
           "stock_evidence": "schema.org availability=InStock",
           "origin": "SE",
           "seller_rating": null,
@@ -1264,7 +1284,7 @@
           "notes": "Pokémon TCG: 30th Celebration Elite Trainer Box",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:58+02:00",
+          "stock_checked_at": "2026-10-15T10:04+02:00",
           "stock_evidence": "schema.org availability=InStock",
           "origin": "SE",
           "seller_rating": null,
@@ -1285,7 +1305,7 @@
           "notes": "Pokemon 30th Celebration Elite Trainer Box",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:58+02:00",
+          "stock_checked_at": "2026-10-15T10:04+02:00",
           "stock_evidence": "schema.org availability=InStock",
           "origin": "SE",
           "seller_rating": null,
@@ -1306,7 +1326,7 @@
           "notes": "Pokémon TCG: 30th Celebration Elite Trainer Box",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:58+02:00",
+          "stock_checked_at": "2026-10-15T10:04+02:00",
           "stock_evidence": "schema.org availability=InStock",
           "origin": "SE",
           "seller_rating": null,
@@ -1320,15 +1340,15 @@
           "currency": "SEK",
           "shipping": 49,
           "region": "SE",
-          "in_stock": true,
+          "in_stock": false,
           "language": "engelska",
           "url": "https://www.tradera.com/item/1001341/754588428/pokémon-tcg-30th-celebration-elite-trainer-box-",
           "fee_pct": 5.0,
           "notes": "Pokémon TCG: 30th Celebration Elite Trainer Box.",
-          "stock_status": "in_stock",
+          "stock_status": "out_of_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:58+02:00",
-          "stock_evidence": "schema.org availability=InStock",
+          "stock_checked_at": "2026-10-15T10:04+02:00",
+          "stock_evidence": "schema.org availability=OutOfStock",
           "origin": "SE",
           "seller_rating": null,
           "checked_price": null
@@ -1348,7 +1368,7 @@
           "notes": "Pokémon TCG: 30th Celebration Elite Trainer Box",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:58+02:00",
+          "stock_checked_at": "2026-10-15T10:04+02:00",
           "stock_evidence": "schema.org availability=InStock",
           "origin": "SE",
           "seller_rating": null,
@@ -1369,7 +1389,7 @@
           "notes": "Pokémon TCG: 30th Celebration Elite Trainer Box",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:58+02:00",
+          "stock_checked_at": "2026-10-15T10:04+02:00",
           "stock_evidence": "schema.org availability=InStock",
           "origin": "SE",
           "seller_rating": null,
@@ -1390,7 +1410,7 @@
           "notes": "Pokémon TCG: 30th Celebration Elite Trainer Box",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:58+02:00",
+          "stock_checked_at": "2026-10-15T10:04+02:00",
           "stock_evidence": "schema.org availability=InStock",
           "origin": "SE",
           "seller_rating": null,
@@ -1411,7 +1431,7 @@
           "notes": "Pokémon TCG: 30th Celebration Elite Trainer Box",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:58+02:00",
+          "stock_checked_at": "2026-10-15T10:04+02:00",
           "stock_evidence": "schema.org availability=InStock",
           "origin": "SE",
           "seller_rating": null,
@@ -1432,7 +1452,7 @@
           "notes": "Pokémon TCG: 30th Celebration Elite Trainer Box",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:58+02:00",
+          "stock_checked_at": "2026-10-15T10:04+02:00",
           "stock_evidence": "schema.org availability=InStock",
           "origin": "SE",
           "seller_rating": null,
@@ -1453,7 +1473,7 @@
           "notes": "Pokémon TCG: 30th Celebration Elite Trainer Box",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:58+02:00",
+          "stock_checked_at": "2026-10-15T10:04+02:00",
           "stock_evidence": "schema.org availability=InStock",
           "origin": "SE",
           "seller_rating": null,
@@ -1474,7 +1494,7 @@
           "notes": "Pokémon TCG: 30th Celebration Elite Trainer Box",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:58+02:00",
+          "stock_checked_at": "2026-10-15T10:04+02:00",
           "stock_evidence": "schema.org availability=InStock",
           "origin": "SE",
           "seller_rating": null,
@@ -1495,7 +1515,7 @@
           "notes": "Pokémon TCG: 30th Celebration Elite Trainer Box",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:58+02:00",
+          "stock_checked_at": "2026-10-15T10:04+02:00",
           "stock_evidence": "schema.org availability=InStock",
           "origin": "SE",
           "seller_rating": null,
@@ -1516,7 +1536,7 @@
           "notes": "Pokémon TCG: 30th Celebration Elite Trainer Box",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:58+02:00",
+          "stock_checked_at": "2026-10-15T10:04+02:00",
           "stock_evidence": "schema.org availability=InStock",
           "origin": "SE",
           "seller_rating": null,
@@ -1537,7 +1557,7 @@
           "notes": "Pokémon TCG: 30th Celebration Elite Trainer Box",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:58+02:00",
+          "stock_checked_at": "2026-10-15T10:04+02:00",
           "stock_evidence": "schema.org availability=InStock",
           "origin": "SE",
           "seller_rating": null,
@@ -1558,7 +1578,7 @@
           "notes": "Pokémon 30th celebrations Elite Trainer Box",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:58+02:00",
+          "stock_checked_at": "2026-10-15T10:04+02:00",
           "stock_evidence": "schema.org availability=InStock",
           "origin": "SE",
           "seller_rating": null,
@@ -1579,7 +1599,7 @@
           "notes": "Pokémon TCG: 30th Celebration Elite Trainer Box Ny & Inplastad",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:58+02:00",
+          "stock_checked_at": "2026-10-15T10:04+02:00",
           "stock_evidence": "schema.org availability=InStock",
           "origin": "SE",
           "seller_rating": null,
@@ -1600,7 +1620,7 @@
           "notes": "Pokémon TCG: 30th Celebration Elite Trainer Box – fabriksförseglad",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:58+02:00",
+          "stock_checked_at": "2026-10-15T10:04+02:00",
           "stock_evidence": "schema.org availability=InStock",
           "origin": "SE",
           "seller_rating": null,
@@ -1621,7 +1641,7 @@
           "notes": "Pokémon TCG: 30th Celebration Elite Trainer Box",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:58+02:00",
+          "stock_checked_at": "2026-10-15T10:04+02:00",
           "stock_evidence": "schema.org availability=InStock",
           "origin": "SE",
           "seller_rating": null,
@@ -1642,7 +1662,7 @@
           "notes": "Pokémon Trading Card Game 30th Celebration Elite Trainer Box",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:58+02:00",
+          "stock_checked_at": "2026-10-15T10:04+02:00",
           "stock_evidence": "schema.org availability=InStock",
           "origin": "SE",
           "seller_rating": null,
@@ -1663,7 +1683,7 @@
           "notes": "Pokemon 30th Celebration Elite Trainer Box x2 & Poster Collection x1",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:58+02:00",
+          "stock_checked_at": "2026-10-15T10:04+02:00",
           "stock_evidence": "schema.org availability=InStock",
           "origin": "SE",
           "seller_rating": null,
@@ -1684,7 +1704,7 @@
           "notes": "Pokémon 30th Anniversary Celebration Elite Trainer Box",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:58+02:00",
+          "stock_checked_at": "2026-10-15T10:04+02:00",
           "stock_evidence": "schema.org availability=InStock",
           "origin": "SE",
           "seller_rating": null,
@@ -1705,7 +1725,7 @@
           "notes": "Pokémon TCG: 30th Celebration - Elite Trainer Box",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:58+02:00",
+          "stock_checked_at": "2026-10-15T10:04+02:00",
           "stock_evidence": "schema.org availability=InStock",
           "origin": "SE",
           "seller_rating": null,
@@ -1726,11 +1746,910 @@
           "notes": "Pokémon 30th Anniversary Celebration Elite Trainer Box ETB [SEALED]",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:58+02:00",
+          "stock_checked_at": "2026-10-15T10:04+02:00",
           "stock_evidence": "schema.org availability=InStock",
           "origin": "SE",
           "seller_rating": null,
           "checked_price": null
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Tradera Köp nu",
+          "seller": "BlindBox",
+          "price": 2079.0,
+          "currency": "SEK",
+          "shipping": 49,
+          "region": "SE",
+          "in_stock": true,
+          "language": "engelska",
+          "url": "https://www.tradera.com/item/1001341/753700835/pokemon-30th-celebration-elite-trainer-box",
+          "fee_pct": 5.0,
+          "notes": "Pokemon 30th Celebration Elite Trainer Box",
+          "origin": "SE",
+          "seller_rating": null,
+          "stock_status": "in_stock",
+          "http_status": 200,
+          "stock_checked_at": "2026-10-15T10:04+02:00",
+          "stock_evidence": "schema.org availability=InStock"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Tradera Köp nu",
+          "seller": "Kennie",
+          "price": 1900.0,
+          "currency": "SEK",
+          "shipping": 59,
+          "region": "SE",
+          "in_stock": true,
+          "language": "engelska",
+          "url": "https://www.tradera.com/item/1001341/755642182/pokémon-30th-celebration-elite-trainer-box",
+          "fee_pct": 5.0,
+          "notes": "Pokémon 30th Celebration Elite Trainer Box (auktion med Köp nu)",
+          "origin": "SE",
+          "seller_rating": null,
+          "stock_status": "in_stock",
+          "http_status": 200,
+          "stock_checked_at": "2026-10-15T10:04+02:00",
+          "stock_evidence": "schema.org availability=InStock"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Tradera Köp nu",
+          "seller": "E.S10",
+          "price": 2200.0,
+          "currency": "SEK",
+          "shipping": 49,
+          "region": "SE",
+          "in_stock": true,
+          "language": "engelska",
+          "url": "https://www.tradera.com/item/1001341/753568018/pokémon-tcg-30th-celebration-elite-trainer-box",
+          "fee_pct": 5.0,
+          "notes": "Pokémon TCG: 30th Celebration Elite Trainer Box",
+          "origin": "SE",
+          "seller_rating": null,
+          "stock_status": "in_stock",
+          "http_status": 200,
+          "stock_checked_at": "2026-10-15T10:04+02:00",
+          "stock_evidence": "schema.org availability=InStock"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Tradera Köp nu",
+          "seller": "MubawaG",
+          "price": 1799.0,
+          "currency": "SEK",
+          "shipping": 59,
+          "region": "SE",
+          "in_stock": true,
+          "language": "engelska",
+          "url": "https://www.tradera.com/item/1001341/754250883/30th-celebration-elite-trainer-box",
+          "fee_pct": 5.0,
+          "notes": "30th Celebration Elite Trainer Box",
+          "origin": "SE",
+          "seller_rating": null,
+          "stock_status": "in_stock",
+          "http_status": 200,
+          "stock_checked_at": "2026-10-15T10:04+02:00",
+          "stock_evidence": "schema.org availability=InStock"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Tradera Köp nu",
+          "seller": "POCKETVAULT",
+          "price": 2099.0,
+          "currency": "SEK",
+          "shipping": 22,
+          "region": "SE",
+          "in_stock": true,
+          "language": "engelska",
+          "url": "https://www.tradera.com/item/1001341/754771877/30th-celebration-elite-trainer-box-30th-celebration",
+          "fee_pct": 5.0,
+          "notes": "30th Celebration Elite Trainer Box - 30th Celebration",
+          "origin": "SE",
+          "seller_rating": null,
+          "stock_status": "in_stock",
+          "http_status": 200,
+          "stock_checked_at": "2026-10-15T10:04+02:00",
+          "stock_evidence": "schema.org availability=InStock"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Tradera Köp nu",
+          "seller": "DiceDecides",
+          "price": 2500.0,
+          "currency": "SEK",
+          "shipping": 49,
+          "region": "SE",
+          "in_stock": true,
+          "language": "engelska",
+          "url": "https://www.tradera.com/item/1001341/755728186/pokémon-30th-celebrations-elite-trainer-box",
+          "fee_pct": 5.0,
+          "notes": "Pokémon 30th Celebrations Elite Trainer Box",
+          "origin": "SE",
+          "seller_rating": null,
+          "stock_status": "in_stock",
+          "http_status": 200,
+          "stock_checked_at": "2026-10-15T10:04+02:00",
+          "stock_evidence": "schema.org availability=InStock"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Tradera Köp nu",
+          "seller": "jme29",
+          "price": 2200.0,
+          "currency": "SEK",
+          "shipping": 0,
+          "region": "SE",
+          "in_stock": true,
+          "language": "engelska",
+          "url": "https://www.tradera.com/item/1001341/754982878/pokémon-tcg-30th-celebration-elite-trainer-box",
+          "fee_pct": 5.0,
+          "notes": "Pokémon TCG: 30th Celebration Elite Trainer Box",
+          "origin": "SE",
+          "seller_rating": null,
+          "stock_status": "in_stock",
+          "http_status": 200,
+          "stock_checked_at": "2026-10-15T10:04+02:00",
+          "stock_evidence": "schema.org availability=InStock"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Tradera Köp nu",
+          "seller": "Nexely",
+          "price": 1900.0,
+          "currency": "SEK",
+          "shipping": 59,
+          "region": "SE",
+          "in_stock": true,
+          "language": "engelska",
+          "url": "https://www.tradera.com/item/1001341/755150680/pokémon-tcg-30th-celebration-elite-trainer-box",
+          "fee_pct": 5.0,
+          "notes": "Pokémon TCG: 30th Celebration Elite Trainer Box (auktion med Köp nu)",
+          "origin": "SE",
+          "seller_rating": null,
+          "stock_status": "in_stock",
+          "http_status": 200,
+          "stock_checked_at": "2026-10-15T10:04+02:00",
+          "stock_evidence": "schema.org availability=InStock"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Tradera Köp nu",
+          "seller": "linus911",
+          "price": 2099.0,
+          "currency": "SEK",
+          "shipping": 49,
+          "region": "SE",
+          "in_stock": true,
+          "language": "engelska",
+          "url": "https://www.tradera.com/item/1001341/755378542/pokémon-tcg-30th-celebration-elite-trainer-box",
+          "fee_pct": 5.0,
+          "notes": "Pokémon TCG: 30th Celebration Elite Trainer Box",
+          "origin": "SE",
+          "seller_rating": null,
+          "stock_status": "in_stock",
+          "http_status": 200,
+          "stock_checked_at": "2026-10-15T10:04+02:00",
+          "stock_evidence": "schema.org availability=InStock"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Tradera Köp nu",
+          "seller": "PoksuTCG",
+          "price": 1810.0,
+          "currency": "SEK",
+          "shipping": 136,
+          "region": "SE",
+          "in_stock": true,
+          "language": "engelska",
+          "url": "https://www.tradera.com/item/1001341/752696122/pokemon-30th-celebration-elite-trainer-box",
+          "fee_pct": 5.0,
+          "notes": "Pokemon 30th Celebration Elite Trainer Box",
+          "origin": "SE",
+          "seller_rating": null,
+          "stock_status": "in_stock",
+          "http_status": 200,
+          "stock_checked_at": "2026-10-15T10:04+02:00",
+          "stock_evidence": "schema.org availability=InStock"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Tradera Köp nu",
+          "seller": "E.S10",
+          "price": 2200.0,
+          "currency": "SEK",
+          "shipping": 49,
+          "region": "SE",
+          "in_stock": true,
+          "language": "engelska",
+          "url": "https://www.tradera.com/item/1001341/753969529/pokémon-tcg-30th-celebration-elite-trainer-box",
+          "fee_pct": 5.0,
+          "notes": "Pokémon TCG: 30th Celebration Elite Trainer Box",
+          "origin": "SE",
+          "seller_rating": null,
+          "stock_status": "in_stock",
+          "http_status": 200,
+          "stock_checked_at": "2026-10-15T10:04+02:00",
+          "stock_evidence": "schema.org availability=InStock"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Tradera Köp nu",
+          "seller": "Shade45",
+          "price": 2199.0,
+          "currency": "SEK",
+          "shipping": 0,
+          "region": "SE",
+          "in_stock": true,
+          "language": "engelska",
+          "url": "https://www.tradera.com/item/1001341/755851962/pokémon-tcg-30th-celebration-elite-trainer-box",
+          "fee_pct": 5.0,
+          "notes": "Pokémon TCG: 30th Celebration Elite Trainer Box",
+          "origin": "SE",
+          "seller_rating": null,
+          "stock_status": "in_stock",
+          "http_status": 200,
+          "stock_checked_at": "2026-10-15T10:04+02:00",
+          "stock_evidence": "schema.org availability=InStock"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Tradera Köp nu",
+          "seller": "lizzie89",
+          "price": 1900.0,
+          "currency": "SEK",
+          "shipping": 0,
+          "region": "SE",
+          "in_stock": true,
+          "language": "engelska",
+          "url": "https://www.tradera.com/item/1001341/755815753/pokémon-tcg-30th-celebration-elite-trainer-box",
+          "fee_pct": 5.0,
+          "notes": "Pokémon TCG: 30th Celebration Elite Trainer Box",
+          "origin": "SE",
+          "seller_rating": null,
+          "stock_status": "in_stock",
+          "http_status": 200,
+          "stock_checked_at": "2026-10-15T10:04+02:00",
+          "stock_evidence": "schema.org availability=InStock"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Tradera Köp nu",
+          "seller": "Chasecard",
+          "price": 1999.0,
+          "currency": "SEK",
+          "shipping": 49,
+          "region": "SE",
+          "in_stock": true,
+          "language": "engelska",
+          "url": "https://www.tradera.com/item/1001341/752116177/pokémon-tcg-30th-celebration-elite-trainer-box",
+          "fee_pct": 5.0,
+          "notes": "Pokémon TCG: 30th Celebration Elite Trainer Box",
+          "origin": "SE",
+          "seller_rating": null,
+          "stock_status": "in_stock",
+          "http_status": 200,
+          "stock_checked_at": "2026-10-15T10:04+02:00",
+          "stock_evidence": "schema.org availability=InStock"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Tradera Köp nu",
+          "seller": "hannahkeya",
+          "price": 1788.0,
+          "currency": "SEK",
+          "shipping": 49,
+          "region": "SE",
+          "in_stock": true,
+          "language": "engelska",
+          "url": "https://www.tradera.com/item/1001337/754243522/pokémon-tcg-30th-celebration-elite-trainer-box",
+          "fee_pct": 5.0,
+          "notes": "Pokémon TCG: 30th Celebration Elite Trainer Box",
+          "origin": "SE",
+          "seller_rating": null,
+          "stock_status": "in_stock",
+          "http_status": 200,
+          "stock_checked_at": "2026-10-15T10:04+02:00",
+          "stock_evidence": "schema.org availability=InStock"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Tradera Köp nu",
+          "seller": "Pokeskane",
+          "price": 2000.0,
+          "currency": "SEK",
+          "shipping": 49,
+          "region": "SE",
+          "in_stock": true,
+          "language": "engelska",
+          "url": "https://www.tradera.com/item/1001341/755663885/pokémon-30th-celebrations-elite-trainer-box",
+          "fee_pct": 5.0,
+          "notes": "Pokémon 30th celebrations Elite Trainer Box",
+          "origin": "SE",
+          "seller_rating": null,
+          "stock_status": "in_stock",
+          "http_status": 200,
+          "stock_checked_at": "2026-10-15T10:04+02:00",
+          "stock_evidence": "schema.org availability=InStock"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Tradera Köp nu",
+          "seller": "Chasecard",
+          "price": 1999.0,
+          "currency": "SEK",
+          "shipping": 49,
+          "region": "SE",
+          "in_stock": true,
+          "language": "engelska",
+          "url": "https://www.tradera.com/item/1001341/752116170/pokémon-tcg-30th-celebration-elite-trainer-box",
+          "fee_pct": 5.0,
+          "notes": "Pokémon TCG: 30th Celebration Elite Trainer Box",
+          "origin": "SE",
+          "seller_rating": null,
+          "stock_status": "in_stock",
+          "http_status": 200,
+          "stock_checked_at": "2026-10-15T10:04+02:00",
+          "stock_evidence": "schema.org availability=InStock"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Tradera Köp nu",
+          "seller": "Chasecard",
+          "price": 1999.0,
+          "currency": "SEK",
+          "shipping": 49,
+          "region": "SE",
+          "in_stock": true,
+          "language": "engelska",
+          "url": "https://www.tradera.com/item/1001341/752116172/pokémon-tcg-30th-celebration-elite-trainer-box",
+          "fee_pct": 5.0,
+          "notes": "Pokémon TCG: 30th Celebration Elite Trainer Box",
+          "origin": "SE",
+          "seller_rating": null,
+          "stock_status": "in_stock",
+          "http_status": 200,
+          "stock_checked_at": "2026-10-15T10:04+02:00",
+          "stock_evidence": "schema.org availability=InStock"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Tradera Köp nu",
+          "seller": "Chasecard",
+          "price": 1999.0,
+          "currency": "SEK",
+          "shipping": 49,
+          "region": "SE",
+          "in_stock": true,
+          "language": "engelska",
+          "url": "https://www.tradera.com/item/1001341/752116174/pokémon-tcg-30th-celebration-elite-trainer-box",
+          "fee_pct": 5.0,
+          "notes": "Pokémon TCG: 30th Celebration Elite Trainer Box",
+          "origin": "SE",
+          "seller_rating": null,
+          "stock_status": "in_stock",
+          "http_status": 200,
+          "stock_checked_at": "2026-10-15T10:04+02:00",
+          "stock_evidence": "schema.org availability=InStock"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Tradera Köp nu",
+          "seller": "Chasecard",
+          "price": 1999.0,
+          "currency": "SEK",
+          "shipping": 49,
+          "region": "SE",
+          "in_stock": true,
+          "language": "engelska",
+          "url": "https://www.tradera.com/item/1001341/752116095/pokémon-tcg-30th-celebration-elite-trainer-box",
+          "fee_pct": 5.0,
+          "notes": "Pokémon TCG: 30th Celebration Elite Trainer Box",
+          "origin": "SE",
+          "seller_rating": null,
+          "stock_status": "in_stock",
+          "http_status": 200,
+          "stock_checked_at": "2026-10-15T10:04+02:00",
+          "stock_evidence": "schema.org availability=InStock"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Tradera Köp nu",
+          "seller": "Chasecard",
+          "price": 1999.0,
+          "currency": "SEK",
+          "shipping": 49,
+          "region": "SE",
+          "in_stock": true,
+          "language": "engelska",
+          "url": "https://www.tradera.com/item/1001341/752116171/pokémon-tcg-30th-celebration-elite-trainer-box",
+          "fee_pct": 5.0,
+          "notes": "Pokémon TCG: 30th Celebration Elite Trainer Box",
+          "origin": "SE",
+          "seller_rating": null,
+          "stock_status": "in_stock",
+          "http_status": 200,
+          "stock_checked_at": "2026-10-15T10:04+02:00",
+          "stock_evidence": "schema.org availability=InStock"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Tradera Köp nu",
+          "seller": "Chasecard",
+          "price": 1999.0,
+          "currency": "SEK",
+          "shipping": 49,
+          "region": "SE",
+          "in_stock": true,
+          "language": "engelska",
+          "url": "https://www.tradera.com/item/1001341/752116178/pokémon-tcg-30th-celebration-elite-trainer-box",
+          "fee_pct": 5.0,
+          "notes": "Pokémon TCG: 30th Celebration Elite Trainer Box",
+          "origin": "SE",
+          "seller_rating": null,
+          "stock_status": "in_stock",
+          "http_status": 200,
+          "stock_checked_at": "2026-10-15T10:04+02:00",
+          "stock_evidence": "schema.org availability=InStock"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Tradera Köp nu",
+          "seller": "Chasecard",
+          "price": 1999.0,
+          "currency": "SEK",
+          "shipping": 49,
+          "region": "SE",
+          "in_stock": true,
+          "language": "engelska",
+          "url": "https://www.tradera.com/item/1001341/752116173/pokémon-tcg-30th-celebration-elite-trainer-box",
+          "fee_pct": 5.0,
+          "notes": "Pokémon TCG: 30th Celebration Elite Trainer Box",
+          "origin": "SE",
+          "seller_rating": null,
+          "stock_status": "in_stock",
+          "http_status": 200,
+          "stock_checked_at": "2026-10-15T10:04+02:00",
+          "stock_evidence": "schema.org availability=InStock"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Tradera Köp nu",
+          "seller": "Chasecard",
+          "price": 1999.0,
+          "currency": "SEK",
+          "shipping": 49,
+          "region": "SE",
+          "in_stock": true,
+          "language": "engelska",
+          "url": "https://www.tradera.com/item/1001341/752116176/pokémon-tcg-30th-celebration-elite-trainer-box",
+          "fee_pct": 5.0,
+          "notes": "Pokémon TCG: 30th Celebration Elite Trainer Box",
+          "origin": "SE",
+          "seller_rating": null,
+          "stock_status": "in_stock",
+          "http_status": 200,
+          "stock_checked_at": "2026-10-15T10:04+02:00",
+          "stock_evidence": "schema.org availability=InStock"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Tradera Köp nu",
+          "seller": "Rolliman88",
+          "price": 1950.0,
+          "currency": "SEK",
+          "shipping": 49,
+          "region": "SE",
+          "in_stock": true,
+          "language": "engelska",
+          "url": "https://www.tradera.com/item/1001341/750975698/pokémon-tcg-30th-celebration-elite-trainer-box-fabriksforseglad",
+          "fee_pct": 5.0,
+          "notes": "Pokémon TCG: 30th Celebration Elite Trainer Box – fabriksförseglad",
+          "origin": "SE",
+          "seller_rating": null,
+          "stock_status": "in_stock",
+          "http_status": 200,
+          "stock_checked_at": "2026-10-15T10:04+02:00",
+          "stock_evidence": "schema.org availability=InStock"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Tradera Köp nu",
+          "seller": "kaninjegarn",
+          "price": 1900.0,
+          "currency": "SEK",
+          "shipping": 59,
+          "region": "SE",
+          "in_stock": true,
+          "language": "engelska",
+          "url": "https://www.tradera.com/item/1001341/752794236/pokémon-tcg-30th-celebration-elite-trainer-box",
+          "fee_pct": 5.0,
+          "notes": "Pokémon TCG: 30th Celebration Elite Trainer Box",
+          "origin": "SE",
+          "seller_rating": null,
+          "stock_status": "in_stock",
+          "http_status": 200,
+          "stock_checked_at": "2026-10-15T10:04+02:00",
+          "stock_evidence": "schema.org availability=InStock"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Tradera Köp nu",
+          "seller": "Toniatto",
+          "price": 1700.0,
+          "currency": "SEK",
+          "shipping": 49,
+          "region": "SE",
+          "in_stock": true,
+          "language": "engelska",
+          "url": "https://www.tradera.com/item/1001341/755328834/pokémon-trading-card-game-30th-celebration-elite-trainer-box",
+          "fee_pct": 5.0,
+          "notes": "Pokémon Trading Card Game 30th Celebration Elite Trainer Box (auktion med Köp nu)",
+          "origin": "SE",
+          "seller_rating": null,
+          "stock_status": "in_stock",
+          "http_status": 200,
+          "stock_checked_at": "2026-10-15T10:04+02:00",
+          "stock_evidence": "schema.org availability=InStock"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Tradera Köp nu",
+          "seller": "Zulfaj",
+          "price": 2200.0,
+          "currency": "SEK",
+          "shipping": 0,
+          "region": "SE",
+          "in_stock": true,
+          "language": "engelska",
+          "url": "https://www.tradera.com/item/1001341/755160158/pokémon-30th-anniversary-celebration-elite-trainer-box",
+          "fee_pct": 5.0,
+          "notes": "Pokémon 30th Anniversary Celebration Elite Trainer Box (auktion med Köp nu)",
+          "origin": "SE",
+          "seller_rating": null,
+          "stock_status": "in_stock",
+          "http_status": 200,
+          "stock_checked_at": "2026-10-15T10:04+02:00",
+          "stock_evidence": "schema.org availability=InStock"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Tradera Köp nu",
+          "seller": "Japon",
+          "price": 1799.0,
+          "currency": "SEK",
+          "shipping": 0,
+          "region": "SE",
+          "in_stock": true,
+          "language": "engelska",
+          "url": "https://www.tradera.com/item/1001340/754295910/pokémon-tcg-30th-celebration-elite-trainer-box",
+          "fee_pct": 5.0,
+          "notes": "Pokémon TCG: 30th Celebration - Elite Trainer Box",
+          "origin": "SE",
+          "seller_rating": null,
+          "stock_status": "in_stock",
+          "http_status": 200,
+          "stock_checked_at": "2026-10-15T10:04+02:00",
+          "stock_evidence": "schema.org availability=InStock"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Tradera Köp nu",
+          "seller": "Storsaljaren",
+          "price": 2990.0,
+          "currency": "SEK",
+          "shipping": 59,
+          "region": "SE",
+          "in_stock": true,
+          "language": "engelska",
+          "url": "https://www.tradera.com/item/1001341/754137303/pokémon-30th-anniversary-celebration-elite-trainer-box-etb-sealed-",
+          "fee_pct": 5.0,
+          "notes": "Pokémon 30th Anniversary Celebration Elite Trainer Box ETB [SEALED]",
+          "origin": "SE",
+          "seller_rating": null,
+          "stock_status": "in_stock",
+          "http_status": 200,
+          "stock_checked_at": "2026-10-15T10:04+02:00",
+          "stock_evidence": "schema.org availability=InStock"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Tradera Köp nu",
+          "seller": "Drysse31",
+          "price": 1900.0,
+          "currency": "SEK",
+          "shipping": 49,
+          "region": "SE",
+          "in_stock": true,
+          "language": "engelska",
+          "url": "https://www.tradera.com/item/1001341/755567985/pokémon-30th-celebration-etb",
+          "fee_pct": 5.0,
+          "notes": "Pokémon 30th celebration etb (auktion med Köp nu)",
+          "origin": "SE",
+          "seller_rating": null,
+          "stock_status": "in_stock",
+          "http_status": 200,
+          "stock_checked_at": "2026-10-15T10:04+02:00",
+          "stock_evidence": "schema.org availability=InStock"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Tradera Köp nu",
+          "seller": "Pokemonista",
+          "price": 2199.0,
+          "currency": "SEK",
+          "shipping": 0,
+          "region": "SE",
+          "in_stock": true,
+          "language": "engelska",
+          "url": "https://www.tradera.com/item/1001341/751864571/pokémon-30th-celebration-etb-sealed-",
+          "fee_pct": 5.0,
+          "notes": "Pokémon 30th Celebration ETB (Sealed)",
+          "origin": "SE",
+          "seller_rating": null,
+          "stock_status": "in_stock",
+          "http_status": 200,
+          "stock_checked_at": "2026-10-15T10:04+02:00",
+          "stock_evidence": "schema.org availability=InStock"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Tradera Köp nu",
+          "seller": "Johhh",
+          "price": 1600.0,
+          "currency": "SEK",
+          "shipping": 49,
+          "region": "SE",
+          "in_stock": true,
+          "language": "engelska",
+          "url": "https://www.tradera.com/item/1001341/755783606/pokémon-30th-celebration-etb",
+          "fee_pct": 5.0,
+          "notes": "Pokémon 30th celebration ETB (auktion med Köp nu)",
+          "origin": "SE",
+          "seller_rating": null,
+          "stock_status": "in_stock",
+          "http_status": 200,
+          "stock_checked_at": "2026-10-15T10:04+02:00",
+          "stock_evidence": "schema.org availability=InStock"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Tradera Köp nu",
+          "seller": "got2pair",
+          "price": 2499.0,
+          "currency": "SEK",
+          "shipping": 54,
+          "region": "SE",
+          "in_stock": true,
+          "language": "engelska",
+          "url": "https://www.tradera.com/item/1001341/751460812/1x-30th-celebration-etb-ny",
+          "fee_pct": 5.0,
+          "notes": "1x 30th Celebration ETB - NY",
+          "origin": "SE",
+          "seller_rating": null,
+          "stock_status": "in_stock",
+          "http_status": 200,
+          "stock_checked_at": "2026-10-15T10:04+02:00",
+          "stock_evidence": "schema.org availability=InStock"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Tradera Köp nu",
+          "seller": "got2pair",
+          "price": 2499.0,
+          "currency": "SEK",
+          "shipping": 54,
+          "region": "SE",
+          "in_stock": true,
+          "language": "engelska",
+          "url": "https://www.tradera.com/item/1001341/751460840/1x-30th-celebration-etb-ny",
+          "fee_pct": 5.0,
+          "notes": "1x 30th Celebration ETB - NY",
+          "origin": "SE",
+          "seller_rating": null,
+          "stock_status": "in_stock",
+          "http_status": 200,
+          "stock_checked_at": "2026-10-15T10:04+02:00",
+          "stock_evidence": "schema.org availability=InStock"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Tradera Köp nu",
+          "seller": "got2pair",
+          "price": 2499.0,
+          "currency": "SEK",
+          "shipping": 54,
+          "region": "SE",
+          "in_stock": true,
+          "language": "engelska",
+          "url": "https://www.tradera.com/item/1001341/751460859/1x-30th-celebration-etb-ny",
+          "fee_pct": 5.0,
+          "notes": "1x 30th Celebration ETB - NY",
+          "origin": "SE",
+          "seller_rating": null,
+          "stock_status": "in_stock",
+          "http_status": 200,
+          "stock_checked_at": "2026-10-15T10:04+02:00",
+          "stock_evidence": "schema.org availability=InStock"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Tradera Köp nu",
+          "seller": "got2pair",
+          "price": 2499.0,
+          "currency": "SEK",
+          "shipping": 54,
+          "region": "SE",
+          "in_stock": true,
+          "language": "engelska",
+          "url": "https://www.tradera.com/item/1001341/751460788/1x-30th-celebration-etb-ny",
+          "fee_pct": 5.0,
+          "notes": "1x 30th Celebration ETB - NY",
+          "origin": "SE",
+          "seller_rating": null,
+          "stock_status": "in_stock",
+          "http_status": 200,
+          "stock_checked_at": "2026-10-15T10:05+02:00",
+          "stock_evidence": "schema.org availability=InStock"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Tradera Köp nu",
+          "seller": "got2pair",
+          "price": 2499.0,
+          "currency": "SEK",
+          "shipping": 54,
+          "region": "SE",
+          "in_stock": true,
+          "language": "engelska",
+          "url": "https://www.tradera.com/item/1001341/751460705/1x-30th-celebration-etb-ny",
+          "fee_pct": 5.0,
+          "notes": "1x 30th Celebration ETB - NY",
+          "origin": "SE",
+          "seller_rating": null,
+          "stock_status": "in_stock",
+          "http_status": 200,
+          "stock_checked_at": "2026-10-15T10:05+02:00",
+          "stock_evidence": "schema.org availability=InStock"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Tradera Köp nu",
+          "seller": "Clasmunk",
+          "price": 1899.0,
+          "currency": "SEK",
+          "shipping": 0,
+          "region": "SE",
+          "in_stock": true,
+          "language": "engelska",
+          "url": "https://www.tradera.com/item/1001341/755111077/pokémon-tcg-30th-celebration-etb",
+          "fee_pct": 5.0,
+          "notes": "Pokémon TCG: 30th Celebration ETB",
+          "origin": "SE",
+          "seller_rating": null,
+          "stock_status": "in_stock",
+          "http_status": 200,
+          "stock_checked_at": "2026-10-15T10:05+02:00",
+          "stock_evidence": "schema.org availability=InStock"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Tradera Köp nu",
+          "seller": "JT-CARDHOUSE",
+          "price": 2099.0,
+          "currency": "SEK",
+          "shipping": 59,
+          "region": "SE",
+          "in_stock": true,
+          "language": "engelska",
+          "url": "https://www.tradera.com/item/1001337/755687688/elite-trainer-box-sealed-30th-celebration-etb",
+          "fee_pct": 5.0,
+          "notes": "Elite trainer box Sealed 30th Celebration ETB",
+          "origin": "SE",
+          "seller_rating": null,
+          "stock_status": "in_stock",
+          "http_status": 200,
+          "stock_checked_at": "2026-10-15T10:05+02:00",
+          "stock_evidence": "schema.org availability=InStock"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Tradera Köp nu",
+          "seller": "Mauser18",
+          "price": 2100.0,
+          "currency": "SEK",
+          "shipping": 49,
+          "region": "SE",
+          "in_stock": true,
+          "language": "engelska",
+          "url": "https://www.tradera.com/item/1001341/751036240/pokémon-tcg-elite-trainer-box-30th-celebration",
+          "fee_pct": 5.0,
+          "notes": "Pokémon TCG Elite Trainer Box 30th Celebration",
+          "origin": "SE",
+          "seller_rating": null,
+          "stock_status": "in_stock",
+          "http_status": 200,
+          "stock_checked_at": "2026-10-15T10:05+02:00",
+          "stock_evidence": "schema.org availability=InStock"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Tradera Köp nu",
+          "seller": "OmgNoobie",
+          "price": 1800.0,
+          "currency": "SEK",
+          "shipping": 49,
+          "region": "SE",
+          "in_stock": true,
+          "language": "engelska",
+          "url": "https://www.tradera.com/item/1001341/754139712/pokémon-elite-trainer-box-30th-celebration",
+          "fee_pct": 5.0,
+          "notes": "Pokémon Elite Trainer Box 30th Celebration",
+          "origin": "SE",
+          "seller_rating": null,
+          "stock_status": "in_stock",
+          "http_status": 200,
+          "stock_checked_at": "2026-10-15T10:05+02:00",
+          "stock_evidence": "schema.org availability=InStock"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Blindbox",
+          "seller": "blindbox.se",
+          "price": 1999.0,
+          "currency": "SEK",
+          "shipping": null,
+          "origin": "SE",
+          "in_stock": true,
+          "url": "https://blindbox.se/products/pokemon-30th-anniversary-elite-trainer-box",
+          "seller_rating": null,
+          "language": "engelska",
+          "notes": "Pokemon 30th Celebration Elite Trainer Box (Shopify products.json available=true 15 okt; frakt ej angiven)",
+          "stock_status": "in_stock",
+          "http_status": 200,
+          "stock_checked_at": "2026-10-15T10:05+02:00",
+          "stock_evidence": "Shopify .js available=True, pris 1999",
+          "checked_price": 1999.0
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Card Cosmos (DE)",
+          "seller": "cardcosmos.de",
+          "price": 189.9,
+          "currency": "EUR",
+          "shipping": null,
+          "origin": "EU",
+          "in_stock": true,
+          "url": "https://cardcosmos.de/products/pokemon-30th-celebration-elite-trainer-box-englisch",
+          "seller_rating": null,
+          "language": "engelska",
+          "notes": "Pokémon - 30th Celebration Elite Trainer Box - EN (Shopify products.json available=true 15 okt; frakt ej angiven)",
+          "stock_status": "in_stock",
+          "http_status": 200,
+          "stock_checked_at": "2026-10-15T10:05+02:00",
+          "stock_evidence": "Shopify .js available=True, pris 189.9",
+          "checked_price": 189.9
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Webhallen",
+          "seller": "webhallen.com",
+          "price": 999.0,
+          "currency": "SEK",
+          "shipping": null,
+          "origin": "SE",
+          "in_stock": false,
+          "url": "https://www.webhallen.com/se/product/402000-Pokemon-30th-Celebration-Elite-Trainer-Box",
+          "seller_rating": null,
+          "language": "okänt",
+          "notes": "Max 1 per kund, endast butiksupphämtning.",
+          "stock_status": "out_of_stock",
+          "stock_checked_at": "2026-10-15T10:05+02:00",
+          "stock_evidence": "Webhallens produkt-API (webhallen.com/api/product/402000) 15 okt 10:00: webblager 0, alla butiker 0, pris 999.00 kr. Inte i lager.",
+          "manual_stock_check": "browser",
+          "restock_watch": true,
+          "members_only": true,
+          "discontinued": false
         }
       ],
       "image": {
@@ -1769,9 +2688,9 @@
       },
       "valuation": {
         "mid": {
-          "price": 605.23,
+          "price": 594.88,
           "currency": "EUR",
-          "basis": "Cardmarket (PackQuant 12 okt)"
+          "basis": "Cardmarket-trend (prisguide 2026-10-15)"
         }
       },
       "notes": "Släppt 14 aug 2026. Collector-boxar trycks normalt en gång (WPN-policy enl. PureGrail). Slut i svenska butiker.",
@@ -1855,6 +2774,24 @@
           "type": "trend",
           "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
           "note": "Officiell Cardmarket-prisguide (idProduct 885552), ej språkfiltrerad"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Cardmarket prisguide",
+          "price": 594.88,
+          "currency": "EUR",
+          "type": "trend",
+          "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
+          "note": "Officiell Cardmarket-prisguide (idProduct 885552, skapad 2026-10-15 02:46), ej språkfiltrerad. avg 674.52, avg1 None, low 500 (low ofta fel språk)"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "eBay",
+          "price": 639.99,
+          "currency": "EUR",
+          "type": "listing",
+          "url": "https://www.ebay.de/sch/i.html?_nkw=hobbit+collector+booster+display+english&LH_BIN=1&_sop=15",
+          "note": "eBay.de Sofort-Kaufen, billigaste engelska EU-annons (privat säljare, DE): 639,99 € + 14,49 € frakt. Billigaste US-annonser 626,51 € + ~40–66 € frakt (icke-EU, +25 % moms). Annons-URL ej hämtbar (sökresultat)."
         }
       ],
       "community": [
@@ -1890,7 +2827,7 @@
           "notes": "Påstår WPN-auktoriserad; lagerstatus ej explicit.",
           "stock_status": "out_of_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:58+02:00",
+          "stock_checked_at": "2026-10-15T10:05+02:00",
           "stock_evidence": "Shopify .js available=False, pris 599.99",
           "checked_price": 599.99
         },
@@ -1909,7 +2846,7 @@
           "notes": "2 kvar.",
           "stock_status": "out_of_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:58+02:00",
+          "stock_checked_at": "2026-10-15T10:05+02:00",
           "stock_evidence": "Shopify .js available=False, pris 549.95",
           "checked_price": 549.95
         },
@@ -1928,7 +2865,7 @@
           "notes": "Tysk utgåva; frakt €4,99 gäller DE.",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:58+02:00",
+          "stock_checked_at": "2026-10-15T10:05+02:00",
           "stock_evidence": "Shopify .js available=True, pris 749.9",
           "checked_price": 749.9
         },
@@ -1947,7 +2884,7 @@
           "notes": "'Mejla mig när tillgänglig' – ej i lager.",
           "stock_status": "out_of_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:58+02:00",
+          "stock_checked_at": "2026-10-15T10:05+02:00",
           "stock_evidence": "text: '…e hobbit prerelease pack price tba view sold out the hobbit play booster display 167.99€…'"
         },
         {
@@ -1966,7 +2903,7 @@
           "stock_status": "out_of_stock",
           "dead_link": true,
           "http_status": 404,
-          "stock_checked_at": "2026-10-14T20:58+02:00",
+          "stock_checked_at": "2026-10-15T10:05+02:00",
           "stock_evidence": "HTTP 404 – död länk"
         },
         {
@@ -1984,7 +2921,7 @@
           "notes": "",
           "stock_status": "out_of_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:58+02:00",
+          "stock_checked_at": "2026-10-15T10:05+02:00",
           "stock_evidence": "Shopify .js available=False, pris 6499",
           "checked_price": 6499.0
         },
@@ -2004,7 +2941,7 @@
           "notes": "Magic: The Gathering The Hobbit Collector Booster Box",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:58+02:00",
+          "stock_checked_at": "2026-10-15T10:05+02:00",
           "stock_evidence": "schema.org availability=InStock"
         },
         {
@@ -2023,7 +2960,7 @@
           "notes": "Magic The Gathering - The Hobbit Collector Booster Box (12st)",
           "stock_status": "out_of_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:58+02:00",
+          "stock_checked_at": "2026-10-15T10:05+02:00",
           "stock_evidence": "schema.org availability=OutOfStock"
         },
         {
@@ -2042,7 +2979,7 @@
           "notes": "Magic: The Gathering - The Hobbit - Collector Booster Box - 12 Collector",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:58+02:00",
+          "stock_checked_at": "2026-10-15T10:05+02:00",
           "stock_evidence": "schema.org availability=InStock"
         },
         {
@@ -2061,7 +2998,7 @@
           "notes": "The Hobbit Collector Booster Box",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:58+02:00",
+          "stock_checked_at": "2026-10-15T10:05+02:00",
           "stock_evidence": "schema.org availability=InStock"
         },
         {
@@ -2100,7 +3037,7 @@
           "notes": "The Hobbit Collector Booster Box",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:58+02:00",
+          "stock_checked_at": "2026-10-15T10:05+02:00",
           "stock_evidence": "schema.org availability=InStock",
           "origin": "SE",
           "seller_rating": null,
@@ -2121,7 +3058,7 @@
           "notes": "Magic: The Gathering The Hobbit Collector Booster Box",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:58+02:00",
+          "stock_checked_at": "2026-10-15T10:05+02:00",
           "stock_evidence": "schema.org availability=InStock",
           "origin": "SE",
           "seller_rating": null,
@@ -2142,11 +3079,92 @@
           "notes": "Magic: The Gathering - The Hobbit - Collector Booster Box - 12 Collector",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:58+02:00",
+          "stock_checked_at": "2026-10-15T10:05+02:00",
           "stock_evidence": "schema.org availability=InStock",
           "origin": "SE",
           "seller_rating": null,
           "checked_price": null
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Tradera Köp nu",
+          "seller": "Barin0",
+          "price": 8000.0,
+          "currency": "SEK",
+          "shipping": 49,
+          "region": "SE",
+          "in_stock": true,
+          "language": "engelska",
+          "url": "https://www.tradera.com/item/293305/755453437/the-hobbit-collector-booster-box",
+          "fee_pct": 5.0,
+          "notes": "The Hobbit Collector Booster Box (auktion med Köp nu)",
+          "origin": "SE",
+          "seller_rating": null,
+          "stock_status": "in_stock",
+          "http_status": 200,
+          "stock_checked_at": "2026-10-15T10:05+02:00",
+          "stock_evidence": "schema.org availability=InStock"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Tradera Köp nu",
+          "seller": "chilly_eileen321",
+          "price": 7763.0,
+          "currency": "SEK",
+          "shipping": 0,
+          "region": "SE",
+          "in_stock": true,
+          "language": "engelska",
+          "url": "https://www.tradera.com/item/293305/752936562/magic-the-gathering-the-hobbit-collector-booster-box",
+          "fee_pct": 5.0,
+          "notes": "Magic: The Gathering The Hobbit Collector Booster Box",
+          "origin": "SE",
+          "seller_rating": null,
+          "stock_status": "in_stock",
+          "http_status": 200,
+          "stock_checked_at": "2026-10-15T10:05+02:00",
+          "stock_evidence": "schema.org availability=InStock"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Tradera Köp nu",
+          "seller": "Kelz0r",
+          "price": 9598.0,
+          "currency": "SEK",
+          "shipping": 149,
+          "region": "SE",
+          "in_stock": true,
+          "language": "engelska",
+          "url": "https://www.tradera.com/item/293305/744327925/magic-the-gathering-the-hobbit-collector-booster-box-12-collector",
+          "fee_pct": 5.0,
+          "notes": "Magic: The Gathering - The Hobbit - Collector Booster Box - 12 Collector",
+          "origin": "SE",
+          "seller_rating": null,
+          "stock_status": "in_stock",
+          "http_status": 200,
+          "stock_checked_at": "2026-10-15T10:05+02:00",
+          "stock_evidence": "schema.org availability=InStock"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Webhallen",
+          "seller": "webhallen.com",
+          "price": 4999.0,
+          "currency": "SEK",
+          "shipping": null,
+          "origin": "SE",
+          "in_stock": false,
+          "url": "https://www.webhallen.com/se/product/400151-Magic-the-Gathering-The-Hobbit-Collector-Display-12-boosters",
+          "seller_rating": null,
+          "language": "okänt",
+          "notes": "Max 4 per kund.",
+          "stock_status": "out_of_stock",
+          "stock_checked_at": "2026-10-15T10:05+02:00",
+          "stock_evidence": "Webhallens produkt-API (webhallen.com/api/product/400151) 15 okt 10:00: webblager 0, alla butiker 0, pris 4999.00 kr. Inte i lager.",
+          "manual_stock_check": "browser",
+          "restock_watch": true,
+          "members_only": true,
+          "discontinued": false
         }
       ],
       "image": {
@@ -2216,6 +3234,15 @@
           "type": "trend",
           "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
           "note": "Officiell Cardmarket-prisguide (idProduct 732335), ej språkfiltrerad"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Cardmarket prisguide",
+          "price": 5650.16,
+          "currency": "EUR",
+          "type": "trend",
+          "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
+          "note": "Officiell Cardmarket-prisguide (idProduct 732335, skapad 2026-10-15 02:46), ej språkfiltrerad. avg 5439, avg1 None, low 5150 (low ofta fel språk)"
         }
       ],
       "community": [],
@@ -2298,6 +3325,15 @@
           "type": "trend",
           "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
           "note": "Officiell Cardmarket-prisguide (idProduct 812573), ej språkfiltrerad"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Cardmarket prisguide",
+          "price": 1124.2,
+          "currency": "EUR",
+          "type": "trend",
+          "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
+          "note": "Officiell Cardmarket-prisguide (idProduct 812573, skapad 2026-10-15 02:46), ej språkfiltrerad. avg 1149.74, avg1 None, low 895 (low ofta fel språk)"
         }
       ],
       "community": [
@@ -2368,6 +3404,15 @@
           "type": "trend",
           "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
           "note": "Officiell Cardmarket-prisguide (idProduct 758483), ej språkfiltrerad"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Cardmarket prisguide",
+          "price": 734.07,
+          "currency": "EUR",
+          "type": "trend",
+          "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
+          "note": "Officiell Cardmarket-prisguide (idProduct 758483, skapad 2026-10-15 02:46), ej språkfiltrerad. avg 706.13, avg1 None, low 600 (low ofta fel språk)"
         }
       ],
       "community": [],
@@ -2396,7 +3441,7 @@
         "mid": {
           "price": 555.19,
           "currency": "EUR",
-          "basis": "Cardmarket-trend (prisguide 2026-10-12)"
+          "basis": "Cardmarket-trend (prisguide 2026-10-15)"
         }
       },
       "notes": "Cardmarket prisguide 2026-10-12: trend €555.19. Produkt tillagd på Cardmarket 2024-07-02. Prisguiden är ej språkfiltrerad; 'lägsta' (€474) utelämnas då den ofta är fel språk/fel produkt.",
@@ -2418,6 +3463,15 @@
           "type": "trend",
           "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
           "note": "Officiell Cardmarket-prisguide (idProduct 776442), ej språkfiltrerad"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Cardmarket prisguide",
+          "price": 555.19,
+          "currency": "EUR",
+          "type": "trend",
+          "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
+          "note": "Officiell Cardmarket-prisguide (idProduct 776442, skapad 2026-10-15 02:46), ej språkfiltrerad. avg 455, avg1 None, low 450 (low ofta fel språk)"
         }
       ],
       "community": [],
@@ -2444,7 +3498,7 @@
         "mid": {
           "price": 883.55,
           "currency": "EUR",
-          "basis": "Cardmarket-trend (prisguide 2026-10-12)"
+          "basis": "Cardmarket-trend (prisguide 2026-10-15)"
         }
       },
       "notes": "Cardmarket prisguide 2026-10-12: trend €883.55. Produkt tillagd på Cardmarket 2024-06-10. Prisguiden är ej språkfiltrerad; 'lägsta' (€950) utelämnas då den ofta är fel språk/fel produkt.",
@@ -2466,6 +3520,15 @@
           "type": "trend",
           "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
           "note": "Officiell Cardmarket-prisguide (idProduct 774110), ej språkfiltrerad"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Cardmarket prisguide",
+          "price": 883.55,
+          "currency": "EUR",
+          "type": "trend",
+          "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
+          "note": "Officiell Cardmarket-prisguide (idProduct 774110, skapad 2026-10-15 02:46), ej språkfiltrerad. avg 854.83, avg1 None, low 949 (low ofta fel språk)"
         }
       ],
       "community": [],
@@ -2485,7 +3548,7 @@
           "notes": "Magic: The Gathering - Bloomburrow Collectors Booster Box - EN",
           "stock_status": "out_of_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:58+02:00",
+          "stock_checked_at": "2026-10-15T10:05+02:00",
           "stock_evidence": "Shopify .js available=False, pris 1199.99",
           "checked_price": 1199.99
         }
@@ -2510,9 +3573,9 @@
       "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products/Search?searchString=Outlaws%20of%20Thunder%20Junction%20Collector%20Booster%20Box&idCategory=7&language=1",
       "valuation": {
         "mid": {
-          "price": 369.34,
+          "price": 389.85,
           "currency": "EUR",
-          "basis": "Cardmarket-trend (prisguide 2026-10-12)"
+          "basis": "Cardmarket-trend (prisguide 2026-10-15)"
         }
       },
       "notes": "Cardmarket prisguide 2026-10-12: trend €369.34. Produkt tillagd på Cardmarket 2024-02-24. Prisguiden är ej språkfiltrerad; 'lägsta' (€144) utelämnas då den ofta är fel språk/fel produkt.",
@@ -2534,6 +3597,15 @@
           "type": "trend",
           "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
           "note": "Officiell Cardmarket-prisguide (idProduct 758326), ej språkfiltrerad"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Cardmarket prisguide",
+          "price": 389.85,
+          "currency": "EUR",
+          "type": "trend",
+          "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
+          "note": "Officiell Cardmarket-prisguide (idProduct 758326, skapad 2026-10-15 02:46), ej språkfiltrerad. avg 365, avg1 None, low 246 (low ofta fel språk)"
         }
       ],
       "community": [],
@@ -2560,7 +3632,7 @@
         "mid": {
           "price": 351.8,
           "currency": "EUR",
-          "basis": "Cardmarket-trend (prisguide 2026-10-12)"
+          "basis": "Cardmarket-trend (prisguide 2026-10-15)"
         }
       },
       "notes": "Cardmarket prisguide 2026-10-12: trend €351.80. Produkt tillagd på Cardmarket 2023-12-06. Prisguiden är ej språkfiltrerad; 'lägsta' (€122) utelämnas då den ofta är fel språk/fel produkt.",
@@ -2582,6 +3654,15 @@
           "type": "trend",
           "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
           "note": "Officiell Cardmarket-prisguide (idProduct 748052), ej språkfiltrerad"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Cardmarket prisguide",
+          "price": 351.8,
+          "currency": "EUR",
+          "type": "trend",
+          "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
+          "note": "Officiell Cardmarket-prisguide (idProduct 748052, skapad 2026-10-15 02:46), ej språkfiltrerad. avg 347.87, avg1 None, low 219.99 (low ofta fel språk)"
         }
       ],
       "community": [],
@@ -2608,7 +3689,7 @@
         "mid": {
           "price": 835.92,
           "currency": "EUR",
-          "basis": "Cardmarket-trend (prisguide 2026-10-12)"
+          "basis": "Cardmarket-trend (prisguide 2026-10-15)"
         }
       },
       "notes": "Cardmarket prisguide 2026-10-12: trend €835.92. Produkt tillagd på Cardmarket 2023-09-23. Prisguiden är ej språkfiltrerad; 'lägsta' (€649.9) utelämnas då den ofta är fel språk/fel produkt.",
@@ -2630,6 +3711,15 @@
           "type": "trend",
           "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
           "note": "Officiell Cardmarket-prisguide (idProduct 734175), ej språkfiltrerad"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Cardmarket prisguide",
+          "price": 835.92,
+          "currency": "EUR",
+          "type": "trend",
+          "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
+          "note": "Officiell Cardmarket-prisguide (idProduct 734175, skapad 2026-10-15 02:46), ej språkfiltrerad. avg 839.45, avg1 None, low 649.9 (low ofta fel språk)"
         }
       ],
       "community": [],
@@ -2656,7 +3746,7 @@
         "mid": {
           "price": 718.35,
           "currency": "EUR",
-          "basis": "Cardmarket-trend (prisguide 2026-10-12)"
+          "basis": "Cardmarket-trend (prisguide 2026-10-15)"
         }
       },
       "notes": "Cardmarket prisguide 2026-10-12: trend €718.35. Produkt tillagd på Cardmarket 2023-06-21. Prisguiden är ej språkfiltrerad; 'lägsta' (€479.9) utelämnas då den ofta är fel språk/fel produkt.",
@@ -2678,6 +3768,15 @@
           "type": "trend",
           "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
           "note": "Officiell Cardmarket-prisguide (idProduct 719684), ej språkfiltrerad"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Cardmarket prisguide",
+          "price": 718.35,
+          "currency": "EUR",
+          "type": "trend",
+          "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
+          "note": "Officiell Cardmarket-prisguide (idProduct 719684, skapad 2026-10-15 02:46), ej språkfiltrerad. avg 666.27, avg1 None, low 479.9 (low ofta fel språk)"
         }
       ],
       "community": [],
@@ -2698,7 +3797,7 @@
           "notes": "Magic The Gathering Wilds of Eldraine Collector Booster Box",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:58+02:00",
+          "stock_checked_at": "2026-10-15T10:05+02:00",
           "stock_evidence": "schema.org availability=InStock"
         },
         {
@@ -2716,11 +3815,31 @@
           "notes": "Magic The Gathering Wilds of Eldraine Collector Booster Box",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:58+02:00",
+          "stock_checked_at": "2026-10-15T10:05+02:00",
           "stock_evidence": "schema.org availability=InStock",
           "origin": "SE",
           "seller_rating": null,
           "checked_price": null
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Tradera Köp nu",
+          "seller": "Mugen25",
+          "price": 10450.0,
+          "currency": "SEK",
+          "shipping": 59,
+          "region": "SE",
+          "in_stock": true,
+          "language": "engelska",
+          "url": "https://www.tradera.com/item/293305/755562077/magic-the-gathering-wilds-of-eldraine-collector-booster-box",
+          "fee_pct": 5.0,
+          "notes": "Magic The Gathering Wilds of Eldraine Collector Booster Box",
+          "origin": "SE",
+          "seller_rating": null,
+          "stock_status": "in_stock",
+          "http_status": 200,
+          "stock_checked_at": "2026-10-15T10:05+02:00",
+          "stock_evidence": "schema.org availability=InStock"
         }
       ],
       "alerts": [],
@@ -2745,7 +3864,7 @@
         "mid": {
           "price": 808.42,
           "currency": "EUR",
-          "basis": "Cardmarket-trend (prisguide 2026-10-12)"
+          "basis": "Cardmarket-trend (prisguide 2026-10-15)"
         }
       },
       "notes": "Cardmarket prisguide 2026-10-12: trend €808.42. Produkt tillagd på Cardmarket 2023-02-10. Prisguiden är ej språkfiltrerad; 'lägsta' (€500) utelämnas då den ofta är fel språk/fel produkt.",
@@ -2767,6 +3886,15 @@
           "type": "trend",
           "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
           "note": "Officiell Cardmarket-prisguide (idProduct 696391), ej språkfiltrerad"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Cardmarket prisguide",
+          "price": 808.42,
+          "currency": "EUR",
+          "type": "trend",
+          "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
+          "note": "Officiell Cardmarket-prisguide (idProduct 696391, skapad 2026-10-15 02:46), ej språkfiltrerad. avg 716.64, avg1 None, low 500 (low ofta fel språk)"
         }
       ],
       "community": [],
@@ -2785,9 +3913,9 @@
       "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products/Search?searchString=Dominaria%20United%20Collector%20Booster%20Box&idCategory=7&language=1",
       "valuation": {
         "mid": {
-          "price": 277.44,
+          "price": 282.12,
           "currency": "EUR",
-          "basis": "Cardmarket-trend (prisguide 2026-10-12)"
+          "basis": "Cardmarket-trend (prisguide 2026-10-15)"
         }
       },
       "notes": "Cardmarket prisguide 2026-10-12: trend €277.44. Produkt tillagd på Cardmarket 2022-05-13. Prisguiden är ej språkfiltrerad; 'lägsta' (€122) utelämnas då den ofta är fel språk/fel produkt.",
@@ -2809,6 +3937,15 @@
           "type": "trend",
           "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
           "note": "Officiell Cardmarket-prisguide (idProduct 657414), ej språkfiltrerad"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Cardmarket prisguide",
+          "price": 282.12,
+          "currency": "EUR",
+          "type": "trend",
+          "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
+          "note": "Officiell Cardmarket-prisguide (idProduct 657414, skapad 2026-10-15 02:46), ej språkfiltrerad. avg 270.3, avg1 None, low 234.99 (low ofta fel språk)"
         }
       ],
       "community": [],
@@ -2835,7 +3972,7 @@
         "mid": {
           "price": 622.49,
           "currency": "EUR",
-          "basis": "Cardmarket-trend (prisguide 2026-10-12)"
+          "basis": "Cardmarket-trend (prisguide 2026-10-15)"
         }
       },
       "notes": "Cardmarket prisguide 2026-10-12: trend €622.49. Produkt tillagd på Cardmarket 2022-09-29. Prisguiden är ej språkfiltrerad; 'lägsta' (€448) utelämnas då den ofta är fel språk/fel produkt.",
@@ -2857,6 +3994,15 @@
           "type": "trend",
           "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
           "note": "Officiell Cardmarket-prisguide (idProduct 677805), ej språkfiltrerad"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Cardmarket prisguide",
+          "price": 622.49,
+          "currency": "EUR",
+          "type": "trend",
+          "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
+          "note": "Officiell Cardmarket-prisguide (idProduct 677805, skapad 2026-10-15 02:46), ej språkfiltrerad. avg 557.86, avg1 None, low 500 (low ofta fel språk)"
         }
       ],
       "community": [],
@@ -2883,7 +4029,7 @@
         "mid": {
           "price": 699.1,
           "currency": "EUR",
-          "basis": "Cardmarket-trend (prisguide 2026-10-12)"
+          "basis": "Cardmarket-trend (prisguide 2026-10-15)"
         }
       },
       "notes": "Cardmarket prisguide 2026-10-12: trend €699.10. Produkt tillagd på Cardmarket 2022-11-04. Prisguiden är ej språkfiltrerad; 'lägsta' (€144) utelämnas då den ofta är fel språk/fel produkt.",
@@ -2905,6 +4051,15 @@
           "type": "trend",
           "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
           "note": "Officiell Cardmarket-prisguide (idProduct 683494), ej språkfiltrerad"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Cardmarket prisguide",
+          "price": 699.1,
+          "currency": "EUR",
+          "type": "trend",
+          "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
+          "note": "Officiell Cardmarket-prisguide (idProduct 683494, skapad 2026-10-15 02:46), ej språkfiltrerad. avg 767.33, avg1 None, low 550 (low ofta fel språk)"
         }
       ],
       "community": [],
@@ -2925,7 +4080,7 @@
           "notes": "Magic The Gathering: Phyrexia All Will Be One Collector Booster Box",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:58+02:00",
+          "stock_checked_at": "2026-10-15T10:05+02:00",
           "stock_evidence": "schema.org availability=InStock"
         },
         {
@@ -2943,11 +4098,31 @@
           "notes": "Magic The Gathering: Phyrexia All Will Be One Collector Booster Box",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:58+02:00",
+          "stock_checked_at": "2026-10-15T10:05+02:00",
           "stock_evidence": "schema.org availability=InStock",
           "origin": "SE",
           "seller_rating": null,
           "checked_price": null
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Tradera Köp nu",
+          "seller": "Mugen25",
+          "price": 10499.0,
+          "currency": "SEK",
+          "shipping": 49,
+          "region": "SE",
+          "in_stock": true,
+          "language": "engelska",
+          "url": "https://www.tradera.com/item/293305/755065887/magic-the-gathering-phyrexia-all-will-be-one-collector-booster-box",
+          "fee_pct": 5.0,
+          "notes": "Magic The Gathering: Phyrexia All Will Be One Collector Booster Box",
+          "origin": "SE",
+          "seller_rating": null,
+          "stock_status": "in_stock",
+          "http_status": 200,
+          "stock_checked_at": "2026-10-15T10:05+02:00",
+          "stock_evidence": "schema.org availability=InStock"
         }
       ],
       "alerts": [],
@@ -2970,9 +4145,9 @@
       "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products/Search?searchString=Dominaria%20Remastered%20Collector%20Booster%20Box&idCategory=7&language=1",
       "valuation": {
         "mid": {
-          "price": 531.96,
+          "price": 540.56,
           "currency": "EUR",
-          "basis": "Cardmarket-trend (prisguide 2026-10-12)"
+          "basis": "Cardmarket-trend (prisguide 2026-10-15)"
         }
       },
       "notes": "Cardmarket prisguide 2026-10-12: trend €531.96. Produkt tillagd på Cardmarket 2022-10-25. Prisguiden är ej språkfiltrerad; 'lägsta' (€374.99) utelämnas då den ofta är fel språk/fel produkt.",
@@ -2994,6 +4169,15 @@
           "type": "trend",
           "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
           "note": "Officiell Cardmarket-prisguide (idProduct 681210), ej språkfiltrerad"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Cardmarket prisguide",
+          "price": 540.56,
+          "currency": "EUR",
+          "type": "trend",
+          "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
+          "note": "Officiell Cardmarket-prisguide (idProduct 681210, skapad 2026-10-15 02:46), ej språkfiltrerad. avg 515.33, avg1 None, low 374.99 (low ofta fel språk)"
         }
       ],
       "community": [],
@@ -3014,7 +4198,7 @@
           "notes": "Dominaria Remastered - Collector Booster Box (Display)",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:58+02:00",
+          "stock_checked_at": "2026-10-15T10:05+02:00",
           "stock_evidence": "schema.org availability=InStock"
         },
         {
@@ -3032,11 +4216,31 @@
           "notes": "Dominaria Remastered - Collector Booster Box (Display)",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:58+02:00",
+          "stock_checked_at": "2026-10-15T10:05+02:00",
           "stock_evidence": "schema.org availability=InStock",
           "origin": "SE",
           "seller_rating": null,
           "checked_price": null
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Tradera Köp nu",
+          "seller": "Kelz0r",
+          "price": 7605.0,
+          "currency": "SEK",
+          "shipping": 150,
+          "region": "SE",
+          "in_stock": true,
+          "language": "engelska",
+          "url": "https://www.tradera.com/item/293305/752282952/dominaria-remastered-collector-booster-box-display-",
+          "fee_pct": 5.0,
+          "notes": "Dominaria Remastered - Collector Booster Box (Display)",
+          "origin": "SE",
+          "seller_rating": null,
+          "stock_status": "in_stock",
+          "http_status": 200,
+          "stock_checked_at": "2026-10-15T10:05+02:00",
+          "stock_evidence": "schema.org availability=InStock"
         }
       ],
       "alerts": [],
@@ -3061,7 +4265,7 @@
         "mid": {
           "price": 404.29,
           "currency": "EUR",
-          "basis": "Cardmarket-trend (prisguide 2026-10-12)"
+          "basis": "Cardmarket-trend (prisguide 2026-10-15)"
         }
       },
       "notes": "Cardmarket prisguide 2026-10-12: trend €404.29. Produkt tillagd på Cardmarket 2022-05-13. Prisguiden är ej språkfiltrerad; 'lägsta' (€122) utelämnas då den ofta är fel språk/fel produkt.",
@@ -3083,6 +4287,15 @@
           "type": "trend",
           "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
           "note": "Officiell Cardmarket-prisguide (idProduct 657282), ej språkfiltrerad"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Cardmarket prisguide",
+          "price": 404.29,
+          "currency": "EUR",
+          "type": "trend",
+          "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
+          "note": "Officiell Cardmarket-prisguide (idProduct 657282, skapad 2026-10-15 02:46), ej språkfiltrerad. avg 406.5, avg1 None, low 295 (low ofta fel språk)"
         }
       ],
       "community": [],
@@ -3102,7 +4315,7 @@
           "notes": "Magic: The Gathering - Double Masters 2022 Collector Booster Box - EN",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:58+02:00",
+          "stock_checked_at": "2026-10-15T10:05+02:00",
           "stock_evidence": "Shopify .js available=True, pris 524.9",
           "checked_price": 524.9
         },
@@ -3121,7 +4334,26 @@
           "notes": "",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:58+02:00",
+          "stock_checked_at": "2026-10-15T10:05+02:00",
+          "stock_evidence": "Shopify .js available=True, pris 524.9",
+          "checked_price": 524.9
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Card Cosmos (DE)",
+          "seller": "cardcosmos.de",
+          "price": 524.9,
+          "currency": "EUR",
+          "shipping": null,
+          "origin": "EU",
+          "in_stock": true,
+          "url": "https://cardcosmos.de/products/magic-the-gathering-double-masters-2022-collector-booster-box-englisch",
+          "seller_rating": null,
+          "language": "engelska",
+          "notes": "Magic: The Gathering - Double Masters 2022 Collector Booster Box - EN (Shopify products.json available=true 15 okt; frakt ej angiven)",
+          "stock_status": "in_stock",
+          "http_status": 200,
+          "stock_checked_at": "2026-10-15T10:05+02:00",
           "stock_evidence": "Shopify .js available=True, pris 524.9",
           "checked_price": 524.9
         }
@@ -3146,9 +4378,9 @@
       "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products/Search?searchString=Commander%20Masters%20Collector%20Booster%20Box&idCategory=7&language=1",
       "valuation": {
         "mid": {
-          "price": 545.43,
+          "price": 540.21,
           "currency": "EUR",
-          "basis": "Cardmarket-trend (prisguide 2026-10-12)"
+          "basis": "Cardmarket-trend (prisguide 2026-10-15)"
         }
       },
       "notes": "Cardmarket prisguide 2026-10-12: trend €545.43. Produkt tillagd på Cardmarket 2023-02-22. Prisguiden är ej språkfiltrerad; 'lägsta' (€288) utelämnas då den ofta är fel språk/fel produkt.",
@@ -3170,6 +4402,15 @@
           "type": "trend",
           "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
           "note": "Officiell Cardmarket-prisguide (idProduct 698962), ej språkfiltrerad"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Cardmarket prisguide",
+          "price": 540.21,
+          "currency": "EUR",
+          "type": "trend",
+          "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
+          "note": "Officiell Cardmarket-prisguide (idProduct 698962, skapad 2026-10-15 02:46), ej språkfiltrerad. avg 544.95, avg1 None, low 450 (low ofta fel språk)"
         }
       ],
       "community": [],
@@ -3196,7 +4437,7 @@
         "mid": {
           "price": 400.99,
           "currency": "EUR",
-          "basis": "Cardmarket-trend (prisguide 2026-10-12)"
+          "basis": "Cardmarket-trend (prisguide 2026-10-15)"
         }
       },
       "notes": "Cardmarket prisguide 2026-10-12: trend €400.99. Produkt tillagd på Cardmarket 2024-10-28. Prisguiden är ej språkfiltrerad; 'lägsta' (€144) utelämnas då den ofta är fel språk/fel produkt.",
@@ -3218,6 +4459,15 @@
           "type": "trend",
           "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
           "note": "Officiell Cardmarket-prisguide (idProduct 795092), ej språkfiltrerad"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Cardmarket prisguide",
+          "price": 400.99,
+          "currency": "EUR",
+          "type": "trend",
+          "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
+          "note": "Officiell Cardmarket-prisguide (idProduct 795092, skapad 2026-10-15 02:46), ej språkfiltrerad. avg 379.01, avg1 None, low 319.99 (low ofta fel språk)"
         }
       ],
       "community": [],
@@ -3242,9 +4492,9 @@
       "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products/Search?searchString=Aetherdrift%20Collector%20Booster%20Box&idCategory=7&language=1",
       "valuation": {
         "mid": {
-          "price": 245.49,
+          "price": 249.29,
           "currency": "EUR",
-          "basis": "Cardmarket-trend (prisguide 2026-10-12)"
+          "basis": "Cardmarket-trend (prisguide 2026-10-15)"
         }
       },
       "notes": "Cardmarket prisguide 2026-10-12: trend €245.49. Produkt tillagd på Cardmarket 2024-12-11. Prisguiden är ej språkfiltrerad; 'lägsta' (€122) utelämnas då den ofta är fel språk/fel produkt.",
@@ -3266,6 +4516,15 @@
           "type": "trend",
           "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
           "note": "Officiell Cardmarket-prisguide (idProduct 803869), ej språkfiltrerad"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Cardmarket prisguide",
+          "price": 249.29,
+          "currency": "EUR",
+          "type": "trend",
+          "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
+          "note": "Officiell Cardmarket-prisguide (idProduct 803869, skapad 2026-10-15 02:46), ej språkfiltrerad. avg 239.15, avg1 None, low 200 (low ofta fel språk)"
         }
       ],
       "community": [],
@@ -3285,7 +4544,7 @@
           "notes": "Aetherdrift Collector Booster Box",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:58+02:00",
+          "stock_checked_at": "2026-10-15T10:05+02:00",
           "stock_evidence": "Shopify .js available=True, pris 3199",
           "checked_price": 3199.0
         },
@@ -3305,7 +4564,7 @@
           "notes": "Aetherdrift - Collector Booster Box/Display (12 Boosters)",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:58+02:00",
+          "stock_checked_at": "2026-10-15T10:05+02:00",
           "stock_evidence": "schema.org availability=InStock"
         },
         {
@@ -3323,7 +4582,7 @@
           "notes": "",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:58+02:00",
+          "stock_checked_at": "2026-10-15T10:05+02:00",
           "stock_evidence": "Shopify .js available=True, pris 3199",
           "checked_price": 3199.0
         },
@@ -3342,11 +4601,50 @@
           "notes": "Aetherdrift - Collector Booster Box/Display (12 Boosters)",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:58+02:00",
+          "stock_checked_at": "2026-10-15T10:05+02:00",
           "stock_evidence": "schema.org availability=InStock",
           "origin": "SE",
           "seller_rating": null,
           "checked_price": null
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Tradera Köp nu",
+          "seller": "Kelz0r",
+          "price": 3483.0,
+          "currency": "SEK",
+          "shipping": 150,
+          "region": "SE",
+          "in_stock": true,
+          "language": "engelska",
+          "url": "https://www.tradera.com/item/293305/661470124/aetherdrift-collector-booster-box-display-12-boosters-",
+          "fee_pct": 5.0,
+          "notes": "Aetherdrift - Collector Booster Box/Display (12 Boosters)",
+          "origin": "SE",
+          "seller_rating": null,
+          "stock_status": "in_stock",
+          "http_status": 200,
+          "stock_checked_at": "2026-10-15T10:05+02:00",
+          "stock_evidence": "schema.org availability=InStock"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Hobbykort",
+          "seller": "hobbykort.se",
+          "price": 3199.0,
+          "currency": "SEK",
+          "shipping": null,
+          "origin": "SE",
+          "in_stock": true,
+          "url": "https://hobbykort.se/products/magic-the-gathering-aetherdrift-collector-booster-box-display",
+          "seller_rating": null,
+          "language": "engelska",
+          "notes": "Magic The Gathering: Aetherdrift Collector Booster Box (Shopify products.json available=true 15 okt; frakt ej angiven)",
+          "stock_status": "in_stock",
+          "http_status": 200,
+          "stock_checked_at": "2026-10-15T10:05+02:00",
+          "stock_evidence": "Shopify .js available=True, pris 3199",
+          "checked_price": 3199.0
         }
       ],
       "alerts": [],
@@ -3369,9 +4667,9 @@
       "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products/Search?searchString=Tarkir%3A%20Dragonstorm%20Collector%20Booster%20Box&idCategory=7&language=1",
       "valuation": {
         "mid": {
-          "price": 478.14,
+          "price": 479.61,
           "currency": "EUR",
-          "basis": "Cardmarket-trend (prisguide 2026-10-12)"
+          "basis": "Cardmarket-trend (prisguide 2026-10-15)"
         }
       },
       "notes": "Cardmarket prisguide 2026-10-12: trend €478.14. Produkt tillagd på Cardmarket 2025-02-24. Prisguiden är ej språkfiltrerad; 'lägsta' (€399.99) utelämnas då den ofta är fel språk/fel produkt.",
@@ -3393,6 +4691,15 @@
           "type": "trend",
           "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
           "note": "Officiell Cardmarket-prisguide (idProduct 813080), ej språkfiltrerad"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Cardmarket prisguide",
+          "price": 479.61,
+          "currency": "EUR",
+          "type": "trend",
+          "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
+          "note": "Officiell Cardmarket-prisguide (idProduct 813080, skapad 2026-10-15 02:46), ej språkfiltrerad. avg 426.1, avg1 None, low 399.99 (low ofta fel språk)"
         }
       ],
       "community": [],
@@ -3419,7 +4726,7 @@
         "mid": {
           "price": 692.06,
           "currency": "EUR",
-          "basis": "Cardmarket-trend (prisguide 2026-10-12)"
+          "basis": "Cardmarket-trend (prisguide 2026-10-15)"
         }
       },
       "notes": "Cardmarket prisguide 2026-10-12: trend €692.06. Produkt tillagd på Cardmarket 2025-02-24. Prisguiden är ej språkfiltrerad; 'lägsta' (€499.9) utelämnas då den ofta är fel språk/fel produkt.",
@@ -3441,6 +4748,15 @@
           "type": "trend",
           "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
           "note": "Officiell Cardmarket-prisguide (idProduct 813293), ej språkfiltrerad"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Cardmarket prisguide",
+          "price": 692.06,
+          "currency": "EUR",
+          "type": "trend",
+          "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
+          "note": "Officiell Cardmarket-prisguide (idProduct 813293, skapad 2026-10-15 02:46), ej språkfiltrerad. avg 600.75, avg1 None, low 499.9 (low ofta fel språk)"
         }
       ],
       "community": [],
@@ -3465,9 +4781,9 @@
       "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products/Search?searchString=Magic%3A%20The%20Gathering%20%7C%20Marvel%27s%20Spider-Man%20Collector%20Booster%20Box&idCategory=7&language=1",
       "valuation": {
         "mid": {
-          "price": 342.51,
+          "price": 337.53,
           "currency": "EUR",
-          "basis": "Cardmarket-trend (prisguide 2026-10-12)"
+          "basis": "Cardmarket-trend (prisguide 2026-10-15)"
         }
       },
       "notes": "Cardmarket prisguide 2026-10-12: trend €342.51. Produkt tillagd på Cardmarket 2025-03-03. Prisguiden är ej språkfiltrerad; 'lägsta' (€158) utelämnas då den ofta är fel språk/fel produkt.",
@@ -3489,6 +4805,15 @@
           "type": "trend",
           "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
           "note": "Officiell Cardmarket-prisguide (idProduct 814380), ej språkfiltrerad"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Cardmarket prisguide",
+          "price": 337.53,
+          "currency": "EUR",
+          "type": "trend",
+          "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
+          "note": "Officiell Cardmarket-prisguide (idProduct 814380, skapad 2026-10-15 02:46), ej språkfiltrerad. avg 362.57, avg1 None, low 305 (low ofta fel språk)"
         }
       ],
       "community": [],
@@ -3509,7 +4834,7 @@
           "notes": "MTG - Marvel's Spider-Man Collector Booster Box (12 förpackningar)",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:58+02:00",
+          "stock_checked_at": "2026-10-15T10:05+02:00",
           "stock_evidence": "schema.org availability=InStock"
         },
         {
@@ -3527,11 +4852,31 @@
           "notes": "MTG - Marvel's Spider-Man Collector Booster Box (12 förpackningar)",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:58+02:00",
+          "stock_checked_at": "2026-10-15T10:05+02:00",
           "stock_evidence": "schema.org availability=InStock",
           "origin": "SE",
           "seller_rating": null,
           "checked_price": null
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Tradera Köp nu",
+          "seller": "Kelz0r",
+          "price": 5253.0,
+          "currency": "SEK",
+          "shipping": 0,
+          "region": "SE",
+          "in_stock": true,
+          "language": "engelska",
+          "url": "https://www.tradera.com/item/293305/693695753/mtg-marvel-s-spider-man-collector-booster-box-12-forpackningar-",
+          "fee_pct": 5.0,
+          "notes": "MTG - Marvel's Spider-Man Collector Booster Box (12 förpackningar)",
+          "origin": "SE",
+          "seller_rating": null,
+          "stock_status": "in_stock",
+          "http_status": 200,
+          "stock_checked_at": "2026-10-15T10:05+02:00",
+          "stock_evidence": "schema.org availability=InStock"
         }
       ],
       "alerts": [],
@@ -3554,9 +4899,9 @@
       "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products/Search?searchString=Magic%3A%20The%20Gathering%20%7C%20Avatar%3A%20The%20Last%20Airbender%20Collector%20Booster%20Box&idCategory=7&language=1",
       "valuation": {
         "mid": {
-          "price": 376.25,
+          "price": 378.41,
           "currency": "EUR",
-          "basis": "Cardmarket-trend (prisguide 2026-10-12)"
+          "basis": "Cardmarket-trend (prisguide 2026-10-15)"
         }
       },
       "notes": "Cardmarket prisguide 2026-10-12: trend €376.25. Produkt tillagd på Cardmarket 2025-08-13. Prisguiden är ej språkfiltrerad; 'lägsta' (€349.95) utelämnas då den ofta är fel språk/fel produkt.",
@@ -3578,6 +4923,15 @@
           "type": "trend",
           "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
           "note": "Officiell Cardmarket-prisguide (idProduct 842564), ej språkfiltrerad"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Cardmarket prisguide",
+          "price": 378.41,
+          "currency": "EUR",
+          "type": "trend",
+          "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
+          "note": "Officiell Cardmarket-prisguide (idProduct 842564, skapad 2026-10-15 02:46), ej språkfiltrerad. avg 369.16, avg1 None, low 349.95 (low ofta fel språk)"
         }
       ],
       "community": [],
@@ -3598,7 +4952,7 @@
           "notes": "MTG - Avatar: The Last Airbender - Collector Booster Box",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:58+02:00",
+          "stock_checked_at": "2026-10-15T10:05+02:00",
           "stock_evidence": "schema.org availability=InStock"
         },
         {
@@ -3616,7 +4970,7 @@
           "notes": "MTG - Avatar: The Last Airbender - Collector Booster Box",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:58+02:00",
+          "stock_checked_at": "2026-10-15T10:05+02:00",
           "stock_evidence": "schema.org availability=InStock",
           "origin": "SE",
           "seller_rating": null,
@@ -3643,9 +4997,9 @@
       "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products/Search?searchString=Marvel%20Super%20Heroes%20Collector%20Booster%20Box&idCategory=7&language=1",
       "valuation": {
         "mid": {
-          "price": 325.12,
+          "price": 330.26,
           "currency": "EUR",
-          "basis": "Cardmarket-trend (prisguide 2026-10-12)"
+          "basis": "Cardmarket-trend (prisguide 2026-10-15)"
         }
       },
       "notes": "Tillagd 14 okt via Webhallen-bevakning. Cardmarket prisguide 12 okt: trend €325.12 (ej språkfiltrerad).",
@@ -3667,6 +5021,15 @@
           "type": "trend",
           "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
           "note": "Officiell Cardmarket-prisguide (idProduct 869496), ej språkfiltrerad"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Cardmarket prisguide",
+          "price": 330.26,
+          "currency": "EUR",
+          "type": "trend",
+          "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
+          "note": "Officiell Cardmarket-prisguide (idProduct 869496, skapad 2026-10-15 02:46), ej språkfiltrerad. avg 324, avg1 None, low 280 (low ofta fel språk)"
         }
       ],
       "community": [],
@@ -3726,7 +5089,7 @@
           "notes": "",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:58+02:00",
+          "stock_checked_at": "2026-10-15T10:05+02:00",
           "stock_evidence": "Shopify .js available=True, pris 379.95",
           "checked_price": 379.95
         },
@@ -3745,7 +5108,7 @@
           "notes": "",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:58+02:00",
+          "stock_checked_at": "2026-10-15T10:05+02:00",
           "stock_evidence": "Shopify .js available=True, pris 4490",
           "checked_price": 4490.0
         },
@@ -3764,11 +5127,109 @@
           "notes": "Magic the Gathering: Marvel Super Heroes Collector Booster",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:58+02:00",
+          "stock_checked_at": "2026-10-15T10:05+02:00",
           "stock_evidence": "schema.org availability=InStock",
           "origin": "SE",
           "seller_rating": null,
           "checked_price": null
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Tradera Köp nu",
+          "seller": "DrRogers",
+          "price": 4050.0,
+          "currency": "SEK",
+          "shipping": 59,
+          "region": "SE",
+          "in_stock": true,
+          "language": "engelska",
+          "url": "https://www.tradera.com/item/293305/754753667/magic-the-gathering-marvel-super-heroes-collector-booster-display",
+          "fee_pct": 5.0,
+          "notes": "Magic: The Gathering Marvel Super Heroes Collector Booster Display",
+          "origin": "SE",
+          "seller_rating": null,
+          "stock_status": "in_stock",
+          "http_status": 200,
+          "stock_checked_at": "2026-10-15T10:05+02:00",
+          "stock_evidence": "schema.org availability=InStock"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Kortarkivet",
+          "seller": "kortarkivet.se",
+          "price": 4490.0,
+          "currency": "SEK",
+          "shipping": null,
+          "origin": "SE",
+          "in_stock": true,
+          "url": "https://www.kortarkivet.se/products/magic-the-gathering-marvel-super-heroes-collector-booster-display",
+          "seller_rating": null,
+          "language": "engelska",
+          "notes": "Magic: The Gathering – Marvel Super Heroes Collector Booster Display (Shopify products.json available=true 15 okt; frakt ej angiven)",
+          "stock_status": "in_stock",
+          "http_status": 200,
+          "stock_checked_at": "2026-10-15T10:05+02:00",
+          "stock_evidence": "Shopify .js available=True, pris 4490",
+          "checked_price": 4490.0
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Nordic Legends",
+          "seller": "nordic-legends.com",
+          "price": 379.95,
+          "currency": "EUR",
+          "shipping": null,
+          "origin": "EU",
+          "in_stock": true,
+          "url": "https://nordic-legends.com/products/magic-the-gathering-marvel-super-heroes-collector-booster-box-869496",
+          "seller_rating": null,
+          "language": "engelska",
+          "notes": "Magic: The Gathering | Marvel Super Heroes Collector Booster Box - Marvel Super Heroes (Shopify products.json available=true 15 okt; frakt ej angiven)",
+          "stock_status": "in_stock",
+          "http_status": 200,
+          "stock_checked_at": "2026-10-15T10:05+02:00",
+          "stock_evidence": "Shopify .js available=True, pris 379.95",
+          "checked_price": 379.95
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Webhallen",
+          "seller": "webhallen.com",
+          "price": 4999.0,
+          "currency": "SEK",
+          "shipping": null,
+          "origin": "SE",
+          "in_stock": false,
+          "url": "https://www.webhallen.com/se/product/395310-Magic-the-Gathering-Marvel-Super-Heroes-Collector-Display-12-boosters",
+          "seller_rating": null,
+          "language": "okänt",
+          "notes": "Utgången hos Webhallen (discontinued).",
+          "stock_status": "out_of_stock",
+          "stock_checked_at": "2026-10-15T10:05+02:00",
+          "stock_evidence": "Webhallens produkt-API (webhallen.com/api/product/395310) 15 okt 10:00: webblager 0, alla butiker 0, pris 4999.00 kr. Inte i lager.",
+          "manual_stock_check": "browser",
+          "restock_watch": true,
+          "members_only": true,
+          "discontinued": true
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Amazon.se",
+          "seller": "okänd (ej verifierad)",
+          "price": 6188.32,
+          "currency": "SEK",
+          "shipping": 207.61,
+          "origin": "SE",
+          "in_stock": true,
+          "url": "https://www.amazon.se/dp/B0GF44F4MG",
+          "seller_rating": null,
+          "language": "okänt",
+          "notes": "4 kvar. Andra erbjudanden från 5 512,49 kr.",
+          "stock_status": "in_stock",
+          "stock_checked_at": "2026-10-15T10:05+02:00",
+          "stock_evidence": "Amazon.se produktsida 15 okt: 6 188,32 kr + 207,61 kr leverans, säljs av Padis (tredjepart), \"Endast 4 kvar i lager\". Språk ej angivet.",
+          "manual_stock_check": "browser",
+          "backorder": false
         }
       ],
       "alerts": [],
@@ -3791,9 +5252,9 @@
       "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products/Search?searchString=Reality%20Fracture%20Collector%20Booster%20Box&idCategory=7&language=1",
       "valuation": {
         "mid": {
-          "price": 347.09,
+          "price": 338.15,
           "currency": "EUR",
-          "basis": "Cardmarket-trend (prisguide 2026-10-12)"
+          "basis": "Cardmarket-trend (prisguide 2026-10-15)"
         }
       },
       "notes": "Tillagd 14 okt via Webhallen-bevakning. Cardmarket prisguide 12 okt: trend €347.09 (ej språkfiltrerad).",
@@ -3815,6 +5276,24 @@
           "type": "trend",
           "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
           "note": "Officiell Cardmarket-prisguide (idProduct 885563), ej språkfiltrerad"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Cardmarket prisguide",
+          "price": 338.15,
+          "currency": "EUR",
+          "type": "trend",
+          "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
+          "note": "Officiell Cardmarket-prisguide (idProduct 885563, skapad 2026-10-15 02:46), ej språkfiltrerad. avg 329.15, avg1 None, low 312.99 (low ofta fel språk)"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "eBay",
+          "price": 351.67,
+          "currency": "EUR",
+          "type": "listing",
+          "url": "https://www.ebay.de/sch/i.html?_nkw=reality+fracture+collector+booster+display&LH_BIN=1&_sop=15",
+          "note": "eBay.de Sofort-Kaufen: billigast engelsk 351,67 € + 35,46 € frakt från UK (icke-EU, +25 % moms); billigast i EU 429,99 € + 20 € (IT). US-annonser från 371,95 € + ~33 €. Annons-URL ej hämtbar."
         }
       ],
       "community": [],
@@ -3875,7 +5354,7 @@
           "notes": "",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:58+02:00",
+          "stock_checked_at": "2026-10-15T10:05+02:00",
           "stock_evidence": "Shopify .js available=True, pris 349.95",
           "checked_price": 349.95
         },
@@ -3894,7 +5373,7 @@
           "notes": "",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:58+02:00",
+          "stock_checked_at": "2026-10-15T10:05+02:00",
           "stock_evidence": "Shopify .js available=True, pris 3490",
           "checked_price": 3490.0
         },
@@ -3913,7 +5392,7 @@
           "notes": "Magic The Gathering Reality Fracture Collector Booster Box",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:58+02:00",
+          "stock_checked_at": "2026-10-15T10:05+02:00",
           "stock_evidence": "schema.org availability=InStock",
           "origin": "SE",
           "seller_rating": null,
@@ -3934,7 +5413,7 @@
           "notes": "Magic: The Gathering Reality Fracture Collector Booster Box",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:58+02:00",
+          "stock_checked_at": "2026-10-15T10:05+02:00",
           "stock_evidence": "schema.org availability=InStock",
           "origin": "SE",
           "seller_rating": null,
@@ -3955,7 +5434,7 @@
           "notes": "Magic: The Gathering Reality Fracture Collector Booster Box",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:58+02:00",
+          "stock_checked_at": "2026-10-15T10:05+02:00",
           "stock_evidence": "schema.org availability=InStock",
           "origin": "SE",
           "seller_rating": null,
@@ -3976,7 +5455,7 @@
           "notes": "Magic: The Gathering - Reality fracture Collector Booster Box NY 10/10 Skick",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:58+02:00",
+          "stock_checked_at": "2026-10-15T10:05+02:00",
           "stock_evidence": "schema.org availability=InStock",
           "origin": "SE",
           "seller_rating": null,
@@ -3997,11 +5476,190 @@
           "notes": "Reality Fracture - Collector Booster Box - 12 Collector",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:58+02:00",
+          "stock_checked_at": "2026-10-15T10:05+02:00",
           "stock_evidence": "schema.org availability=InStock",
           "origin": "SE",
           "seller_rating": null,
           "checked_price": null
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Tradera Köp nu",
+          "seller": "Scrubpr0",
+          "price": 3850.0,
+          "currency": "SEK",
+          "shipping": 49,
+          "region": "SE",
+          "in_stock": true,
+          "language": "engelska",
+          "url": "https://www.tradera.com/item/293305/754578282/magic-the-gathering-reality-fracture-collector-booster-box",
+          "fee_pct": 5.0,
+          "notes": "Magic: The Gathering Reality Fracture Collector Booster Box",
+          "origin": "SE",
+          "seller_rating": null,
+          "stock_status": "in_stock",
+          "http_status": 200,
+          "stock_checked_at": "2026-10-15T10:05+02:00",
+          "stock_evidence": "schema.org availability=InStock"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Tradera Köp nu",
+          "seller": "Scrubpr0",
+          "price": 3850.0,
+          "currency": "SEK",
+          "shipping": 49,
+          "region": "SE",
+          "in_stock": true,
+          "language": "engelska",
+          "url": "https://www.tradera.com/item/293305/754578291/magic-the-gathering-reality-fracture-collector-booster-box",
+          "fee_pct": 5.0,
+          "notes": "Magic: The Gathering Reality Fracture Collector Booster Box",
+          "origin": "SE",
+          "seller_rating": null,
+          "stock_status": "in_stock",
+          "http_status": 200,
+          "stock_checked_at": "2026-10-15T10:05+02:00",
+          "stock_evidence": "schema.org availability=InStock"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Tradera Köp nu",
+          "seller": "Mugen25",
+          "price": 3599.0,
+          "currency": "SEK",
+          "shipping": 49,
+          "region": "SE",
+          "in_stock": true,
+          "language": "engelska",
+          "url": "https://www.tradera.com/item/293305/753476939/magic-the-gathering-reality-fracture-collector-booster-box",
+          "fee_pct": 5.0,
+          "notes": "Magic The Gathering Reality Fracture Collector Booster Box",
+          "origin": "SE",
+          "seller_rating": null,
+          "stock_status": "in_stock",
+          "http_status": 200,
+          "stock_checked_at": "2026-10-15T10:05+02:00",
+          "stock_evidence": "schema.org availability=InStock"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Tradera Köp nu",
+          "seller": "DavPok112",
+          "price": 3599.0,
+          "currency": "SEK",
+          "shipping": 0,
+          "region": "SE",
+          "in_stock": true,
+          "language": "engelska",
+          "url": "https://www.tradera.com/item/293305/754771214/magic-the-gathering-reality-fracture-collector-booster-box-ny-10-10-skick",
+          "fee_pct": 5.0,
+          "notes": "Magic: The Gathering - Reality fracture Collector Booster Box NY 10/10 Skick",
+          "origin": "SE",
+          "seller_rating": null,
+          "stock_status": "in_stock",
+          "http_status": 200,
+          "stock_checked_at": "2026-10-15T10:05+02:00",
+          "stock_evidence": "schema.org availability=InStock"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Tradera Köp nu",
+          "seller": "Kelz0r",
+          "price": 4354.0,
+          "currency": "SEK",
+          "shipping": 150,
+          "region": "SE",
+          "in_stock": true,
+          "language": "engelska",
+          "url": "https://www.tradera.com/item/293305/752128544/reality-fracture-collector-booster-box-12-collector",
+          "fee_pct": 5.0,
+          "notes": "Reality Fracture - Collector Booster Box - 12 Collector",
+          "origin": "SE",
+          "seller_rating": null,
+          "stock_status": "in_stock",
+          "http_status": 200,
+          "stock_checked_at": "2026-10-15T10:05+02:00",
+          "stock_evidence": "schema.org availability=InStock"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Kortarkivet",
+          "seller": "kortarkivet.se",
+          "price": 3490.0,
+          "currency": "SEK",
+          "shipping": null,
+          "origin": "SE",
+          "in_stock": true,
+          "url": "https://www.kortarkivet.se/products/magic-the-gathering-reality-fracture-collector-booster-display",
+          "seller_rating": null,
+          "language": "engelska",
+          "notes": "Magic: The Gathering – Reality Fracture Collector Booster Display (Shopify products.json available=true 15 okt; frakt ej angiven)",
+          "stock_status": "in_stock",
+          "http_status": 200,
+          "stock_checked_at": "2026-10-15T10:05+02:00",
+          "stock_evidence": "Shopify .js available=True, pris 3490",
+          "checked_price": 3490.0
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Nordic Legends",
+          "seller": "nordic-legends.com",
+          "price": 349.95,
+          "currency": "EUR",
+          "shipping": null,
+          "origin": "EU",
+          "in_stock": true,
+          "url": "https://nordic-legends.com/products/reality-fracture-collector-booster-box-885563",
+          "seller_rating": null,
+          "language": "engelska",
+          "notes": "Reality Fracture Collector Booster Box - Reality Fracture (Shopify products.json available=true 15 okt; frakt ej angiven)",
+          "stock_status": "in_stock",
+          "http_status": 200,
+          "stock_checked_at": "2026-10-15T10:05+02:00",
+          "stock_evidence": "Shopify .js available=True, pris 349.95",
+          "checked_price": 349.95
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Webhallen",
+          "seller": "webhallen.com",
+          "price": 3399.0,
+          "currency": "SEK",
+          "shipping": null,
+          "origin": "SE",
+          "in_stock": false,
+          "url": "https://www.webhallen.com/se/product/401344-Magic-The-Gathering-Reality-Fracture-Collector-Booster",
+          "seller_rating": null,
+          "language": "okänt",
+          "notes": "Oklart om display (12 boosters) eller enstaka paket – verifiera.",
+          "stock_status": "out_of_stock",
+          "stock_checked_at": "2026-10-15T10:05+02:00",
+          "stock_evidence": "Webhallens produkt-API (webhallen.com/api/product/401344) 15 okt 10:00: webblager 0, alla butiker 0, pris 3399.00 kr. Inte i lager.",
+          "manual_stock_check": "browser",
+          "restock_watch": true,
+          "members_only": true,
+          "discontinued": false
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Amazon.se",
+          "seller": "okänd (ej verifierad)",
+          "price": 3074.1,
+          "currency": "SEK",
+          "shipping": 0.0,
+          "origin": "SE",
+          "in_stock": false,
+          "url": "https://www.amazon.se/dp/B0GXGXJ55L",
+          "seller_rating": null,
+          "language": "Engelska",
+          "notes": "Skickas av Amazon, fri frakt. Leverans 8 jan–23 apr 2027 → restorder/förbeställning. KÖPT av Gustaf 14 okt 2026.",
+          "stock_status": "preorder",
+          "stock_checked_at": "2026-10-15T10:05+02:00",
+          "stock_evidence": "Amazon.se produktsida 15 okt: 3 074,10 kr, säljs av Amazon, gratis leverans, \"Skickas vanligtvis inom 3 till 7 månader\".",
+          "manual_stock_check": "browser",
+          "backorder": true,
+          "restock_watch": false
         }
       ],
       "alerts": [],
@@ -4032,9 +5690,9 @@
       "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products/Search?searchString=Innistrad%3A+Midnight+Hunt+Collector+Booster+Box&idCategory=7&language=1",
       "valuation": {
         "mid": {
-          "price": 207.65,
+          "price": 210.95,
           "currency": "EUR",
-          "basis": "Cardmarket-trend (prisguide 2026-10-12)"
+          "basis": "Cardmarket-trend (prisguide 2026-10-15)"
         }
       },
       "notes": "Tillagd 14 okt via Amazon.se. Cardmarket prisguide 12 okt: trend €207.65 (ej språkfiltrerad).",
@@ -4056,6 +5714,15 @@
           "type": "trend",
           "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
           "note": "Officiell Cardmarket-prisguide (idProduct 573781), ej språkfiltrerad"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Cardmarket prisguide",
+          "price": 210.95,
+          "currency": "EUR",
+          "type": "trend",
+          "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
+          "note": "Officiell Cardmarket-prisguide (idProduct 573781, skapad 2026-10-15 02:46), ej språkfiltrerad. avg 200.33, avg1 None, low 128.68 (low ofta fel språk)"
         }
       ],
       "community": [],
@@ -4094,7 +5761,7 @@
           "notes": "Innistrad: Midnight Hunt - Collector Booster Box (Display)",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:58+02:00",
+          "stock_checked_at": "2026-10-15T10:05+02:00",
           "stock_evidence": "schema.org availability=InStock",
           "origin": "SE",
           "seller_rating": null,
@@ -4115,7 +5782,7 @@
           "notes": "MTG Innistrad: Midnight Hunt – Collector Booster Box (display)",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:58+02:00",
+          "stock_checked_at": "2026-10-15T10:05+02:00",
           "stock_evidence": "schema.org availability=InStock",
           "origin": "SE",
           "seller_rating": null,
@@ -4136,7 +5803,7 @@
           "notes": "Magic: The Gathering - Innistrad: Midnight Hunt Collector Booster Box",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:58+02:00",
+          "stock_checked_at": "2026-10-15T10:05+02:00",
           "stock_evidence": "schema.org availability=InStock",
           "origin": "SE",
           "seller_rating": null,
@@ -4157,11 +5824,110 @@
           "notes": "Magic: The Gathering - Innistrad: Midnight Hunt Collector Booster Box",
           "stock_status": "in_stock",
           "http_status": 200,
-          "stock_checked_at": "2026-10-14T20:58+02:00",
+          "stock_checked_at": "2026-10-15T10:05+02:00",
           "stock_evidence": "schema.org availability=InStock",
           "origin": "SE",
           "seller_rating": null,
           "checked_price": null
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Tradera Köp nu",
+          "seller": "The Arkenstore",
+          "price": 2455.0,
+          "currency": "SEK",
+          "shipping": 44,
+          "region": "SE",
+          "in_stock": true,
+          "language": "engelska",
+          "url": "https://www.tradera.com/item/293305/754137815/mtg-innistrad-midnight-hunt-collector-booster-box-display-",
+          "fee_pct": 5.0,
+          "notes": "MTG Innistrad: Midnight Hunt – Collector Booster Box (display)",
+          "origin": "SE",
+          "seller_rating": null,
+          "stock_status": "in_stock",
+          "http_status": 200,
+          "stock_checked_at": "2026-10-15T10:05+02:00",
+          "stock_evidence": "schema.org availability=InStock"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Tradera Köp nu",
+          "seller": "Kelz0r",
+          "price": 3241.0,
+          "currency": "SEK",
+          "shipping": 0,
+          "region": "SE",
+          "in_stock": true,
+          "language": "engelska",
+          "url": "https://www.tradera.com/item/293305/629169128/innistrad-midnight-hunt-collector-booster-box-display-",
+          "fee_pct": 5.0,
+          "notes": "Innistrad: Midnight Hunt - Collector Booster Box (Display)",
+          "origin": "SE",
+          "seller_rating": null,
+          "stock_status": "in_stock",
+          "http_status": 200,
+          "stock_checked_at": "2026-10-15T10:05+02:00",
+          "stock_evidence": "schema.org availability=InStock"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Tradera Köp nu",
+          "seller": "GoldenScarabBazaar",
+          "price": 2790.0,
+          "currency": "SEK",
+          "shipping": 49,
+          "region": "SE",
+          "in_stock": true,
+          "language": "engelska",
+          "url": "https://www.tradera.com/item/293305/754271081/magic-the-gathering-innistrad-midnight-hunt-collector-booster-box",
+          "fee_pct": 5.0,
+          "notes": "Magic: The Gathering - Innistrad: Midnight Hunt Collector Booster Box",
+          "origin": "SE",
+          "seller_rating": null,
+          "stock_status": "in_stock",
+          "http_status": 200,
+          "stock_checked_at": "2026-10-15T10:05+02:00",
+          "stock_evidence": "schema.org availability=InStock"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Tradera Köp nu",
+          "seller": "GoldenScarabBazaar",
+          "price": 2790.0,
+          "currency": "SEK",
+          "shipping": 49,
+          "region": "SE",
+          "in_stock": true,
+          "language": "engelska",
+          "url": "https://www.tradera.com/item/293305/754271031/magic-the-gathering-innistrad-midnight-hunt-collector-booster-box",
+          "fee_pct": 5.0,
+          "notes": "Magic: The Gathering - Innistrad: Midnight Hunt Collector Booster Box",
+          "origin": "SE",
+          "seller_rating": null,
+          "stock_status": "in_stock",
+          "http_status": 200,
+          "stock_checked_at": "2026-10-15T10:05+02:00",
+          "stock_evidence": "schema.org availability=InStock"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "Amazon.se",
+          "seller": "Firestorm Cards",
+          "price": 5731.63,
+          "currency": "SEK",
+          "shipping": 216.29,
+          "origin": "SE",
+          "in_stock": true,
+          "url": "https://www.amazon.se/dp/B0996W4YC6",
+          "seller_rating": null,
+          "language": "okänt",
+          "notes": "1 kvar, troligen tredjepartssäljare.",
+          "stock_status": "in_stock",
+          "stock_checked_at": "2026-10-15T10:05+02:00",
+          "stock_evidence": "Amazon.se 15 okt: ingen köpruta; enda erbjudandet 5 731,63 kr + 216,29 kr leverans (28–31 okt) från Firestorm Cards (säljarbetyg 3/5, 4 betyg). Språk ej angivet.",
+          "manual_stock_check": "browser",
+          "backorder": false
         }
       ],
       "alerts": [],
@@ -4222,14 +5988,14 @@
       "title": "30th anniversary Pokémon-kort m.m. (blandat lot, toploaders)",
       "url": "https://auctionet.com/sv/5420827-30th-anniversary-pokemon-kort-m-m",
       "ends_at": "2026-10-18T20:06",
-      "price": 51,
+      "price": 51.0,
       "currency": "USD",
       "price_kind": "bud",
       "qty": 1,
       "estimate": 331,
       "shipping": null,
       "date_seen": "2026-10-14",
-      "notes": "Brittiskt hus (originalvaluta GBP, visat i USD). Bevakningspris ej uppnått. Blandat lot, ingen benchmark.",
+      "notes": "Brittiskt hus (originalvaluta GBP, visat i USD). 2 bud (22 → 51 USD), nästa bud 57 USD. Bevakningspris ej uppnått. Värdering £250 (331 USD). Uppdaterad 15 okt.",
       "lot_analysis": {
         "images": [
           "images/lots/auctionet-5420827-1.webp",
@@ -4277,8 +6043,9 @@
       },
       "auction_status": "active",
       "http_status": 200,
-      "stock_checked_at": "2026-10-14T20:58+02:00",
-      "stock_evidence": "sluttid 2026-10-18T20:06 i framtiden, HTTP 200"
+      "stock_checked_at": "2026-10-15T10:05+02:00",
+      "stock_evidence": "sluttid 2026-10-18T20:06 i framtiden, HTTP 200",
+      "bids": 2
     },
     {
       "item_id": null,
@@ -4293,7 +6060,7 @@
       "estimate": 133,
       "shipping": null,
       "date_seen": "2026-10-14",
-      "notes": "Brittiskt hus. Bevakningspris ej uppnått.",
+      "notes": "Brittiskt hus. Bevakningspris ej uppnått. Uppdaterad 15 okt: fortfarande inga bud, lägsta nästa bud 20 USD.",
       "lot_analysis": {
         "images": [
           "images/lots/auctionet-5402927-4.webp",
@@ -4339,7 +6106,7 @@
       },
       "auction_status": "active",
       "http_status": 200,
-      "stock_checked_at": "2026-10-14T20:58+02:00",
+      "stock_checked_at": "2026-10-15T10:05+02:00",
       "stock_evidence": "sluttid 2026-10-16T19:33 i framtiden, HTTP 200"
     },
     {
@@ -4355,7 +6122,7 @@
       "estimate": 133,
       "shipping": null,
       "date_seen": "2026-10-14",
-      "notes": "Brittiskt hus. Bevakningspris ej uppnått.",
+      "notes": "Brittiskt hus. Bevakningspris ej uppnått. Uppdaterad 15 okt: fortfarande inga bud, lägsta nästa bud 20 USD.",
       "lot_analysis": {
         "images": [
           "images/lots/auctionet-5403007-4.webp",
@@ -4394,7 +6161,7 @@
       },
       "auction_status": "active",
       "http_status": 200,
-      "stock_checked_at": "2026-10-14T20:58+02:00",
+      "stock_checked_at": "2026-10-15T10:05+02:00",
       "stock_evidence": "sluttid 2026-10-16T22:29 i framtiden, HTTP 200"
     },
     {
@@ -4414,7 +6181,7 @@
       "notes": "Köp nu 2199 kr",
       "auction_status": "ended",
       "http_status": 200,
-      "stock_checked_at": "2026-10-14T20:58+02:00",
+      "stock_checked_at": "2026-10-15T10:05+02:00",
       "stock_evidence": "sluttid passerad/sidan säger avslutad"
     },
     {
@@ -4423,7 +6190,7 @@
       "title": "Pokémon 30th Celebration Elite Trainer Box",
       "url": "https://www.tradera.com/item/1001341/754948380/pokémon-30th-celebration-elite-trainer-box",
       "ends_at": "2026-10-17T13:36",
-      "price": 1469,
+      "price": 1469.0,
       "currency": "SEK",
       "price_kind": "bud",
       "bids": 14,
@@ -4431,10 +6198,10 @@
       "estimate": null,
       "shipping": 49,
       "date_seen": "2026-10-14",
-      "notes": "",
+      "notes": "Uppdaterad 2026-10-15.",
       "auction_status": "active",
       "http_status": 200,
-      "stock_checked_at": "2026-10-14T20:58+02:00",
+      "stock_checked_at": "2026-10-15T10:05+02:00",
       "stock_evidence": "sluttid 2026-10-17T13:36 i framtiden, HTTP 200"
     },
     {
@@ -4443,7 +6210,7 @@
       "title": "Pokémon 30th Celebration Elite Trainer Box",
       "url": "https://www.tradera.com/item/1001341/755628155/pokémon-30th-celebration-elite-trainer-box",
       "ends_at": "2026-10-20T19:18",
-      "price": 1700,
+      "price": 1700.0,
       "currency": "SEK",
       "price_kind": "utrop",
       "bids": 0,
@@ -4451,10 +6218,10 @@
       "estimate": null,
       "shipping": 49,
       "date_seen": "2026-10-14",
-      "notes": "",
+      "notes": "Uppdaterad 2026-10-15.",
       "auction_status": "active",
       "http_status": 200,
-      "stock_checked_at": "2026-10-14T20:58+02:00",
+      "stock_checked_at": "2026-10-15T10:05+02:00",
       "stock_evidence": "sluttid 2026-10-20T19:18 i framtiden, HTTP 200"
     },
     {
@@ -4463,7 +6230,7 @@
       "title": "Pokémon 30th Celebration Elite Trainer Box",
       "url": "https://www.tradera.com/item/1001341/755642182/pokémon-30th-celebration-elite-trainer-box",
       "ends_at": "2026-10-16T20:12",
-      "price": 1899,
+      "price": 1899.0,
       "currency": "SEK",
       "price_kind": "utrop",
       "bids": 0,
@@ -4471,10 +6238,10 @@
       "estimate": null,
       "shipping": 59,
       "date_seen": "2026-10-14",
-      "notes": "Köp nu 1900 kr",
+      "notes": "Köp nu 1900 kr. Uppdaterad 2026-10-15.",
       "auction_status": "active",
       "http_status": 200,
-      "stock_checked_at": "2026-10-14T20:58+02:00",
+      "stock_checked_at": "2026-10-15T10:05+02:00",
       "stock_evidence": "sluttid 2026-10-16T20:12 i framtiden, HTTP 200"
     },
     {
@@ -4483,7 +6250,7 @@
       "title": "Pokémon TCG: 30th Celebration Elite Trainer Box",
       "url": "https://www.tradera.com/item/1001341/755150680/pokémon-tcg-30th-celebration-elite-trainer-box",
       "ends_at": "2026-10-17T14:19",
-      "price": 1506,
+      "price": 1506.0,
       "currency": "SEK",
       "price_kind": "bud",
       "bids": 3,
@@ -4491,10 +6258,10 @@
       "estimate": null,
       "shipping": 59,
       "date_seen": "2026-10-14",
-      "notes": "Köp nu 1900 kr",
+      "notes": "Köp nu 1900 kr. Uppdaterad 2026-10-15.",
       "auction_status": "active",
       "http_status": 200,
-      "stock_checked_at": "2026-10-14T20:58+02:00",
+      "stock_checked_at": "2026-10-15T10:05+02:00",
       "stock_evidence": "sluttid 2026-10-17T14:19 i framtiden, HTTP 200"
     },
     {
@@ -4514,7 +6281,7 @@
       "notes": "",
       "auction_status": "active",
       "http_status": 200,
-      "stock_checked_at": "2026-10-14T20:59+02:00",
+      "stock_checked_at": "2026-10-15T10:05+02:00",
       "stock_evidence": "sluttid 2026-10-19T19:15 i framtiden, HTTP 200"
     },
     {
@@ -4534,7 +6301,7 @@
       "notes": "",
       "auction_status": "active",
       "http_status": 200,
-      "stock_checked_at": "2026-10-14T20:59+02:00",
+      "stock_checked_at": "2026-10-15T10:05+02:00",
       "stock_evidence": "sluttid 2026-10-20T19:17 i framtiden, HTTP 200"
     },
     {
@@ -4543,18 +6310,18 @@
       "title": "Pokémon TCG: 30th Celebration Elite Trainer Box",
       "url": "https://www.tradera.com/item/1001341/755422867/pokémon-tcg-30th-celebration-elite-trainer-box",
       "ends_at": "2026-10-18T19:00",
-      "price": 1493,
+      "price": 1573.0,
       "currency": "SEK",
       "price_kind": "bud",
-      "bids": 35,
+      "bids": 37,
       "qty": 1,
       "estimate": null,
       "shipping": 49,
       "date_seen": "2026-10-14",
-      "notes": "",
+      "notes": "Uppdaterad 2026-10-15.",
       "auction_status": "active",
       "http_status": 200,
-      "stock_checked_at": "2026-10-14T20:59+02:00",
+      "stock_checked_at": "2026-10-15T10:05+02:00",
       "stock_evidence": "sluttid 2026-10-18T19:00 i framtiden, HTTP 200"
     },
     {
@@ -4563,7 +6330,7 @@
       "title": "Pokémon TCG: 30th Celebration Elite Trainer Box",
       "url": "https://www.tradera.com/item/1001341/754967435/pokémon-tcg-30th-celebration-elite-trainer-box",
       "ends_at": "2026-10-17T15:16",
-      "price": 1551,
+      "price": 1551.0,
       "currency": "SEK",
       "price_kind": "bud",
       "bids": 14,
@@ -4571,10 +6338,10 @@
       "estimate": null,
       "shipping": 0,
       "date_seen": "2026-10-14",
-      "notes": "",
+      "notes": "Uppdaterad 2026-10-15.",
       "auction_status": "active",
       "http_status": 200,
-      "stock_checked_at": "2026-10-14T20:59+02:00",
+      "stock_checked_at": "2026-10-15T10:06+02:00",
       "stock_evidence": "sluttid 2026-10-17T15:16 i framtiden, HTTP 200"
     },
     {
@@ -4594,7 +6361,7 @@
       "notes": "Köp nu 1850 kr",
       "auction_status": "ended",
       "http_status": 200,
-      "stock_checked_at": "2026-10-14T20:59+02:00",
+      "stock_checked_at": "2026-10-15T10:06+02:00",
       "stock_evidence": "sluttid passerad/sidan säger avslutad"
     },
     {
@@ -4602,8 +6369,8 @@
       "platform": "Tradera",
       "title": "Pokémon TCG 30th Celebration Elite Trainer Box ETB – Factory Sealed",
       "url": "https://www.tradera.com/item/1001341/755269579/pokémon-tcg-30th-celebration-elite-trainer-box-etb-factory-sealed",
-      "ends_at": "2026-10-25T21:17",
-      "price": 1600,
+      "ends_at": "2026-10-25T20:17",
+      "price": 1600.0,
       "currency": "SEK",
       "price_kind": "bud",
       "bids": 2,
@@ -4611,11 +6378,11 @@
       "estimate": null,
       "shipping": 59,
       "date_seen": "2026-10-14",
-      "notes": "",
+      "notes": "Uppdaterad 2026-10-15.",
       "auction_status": "active",
       "http_status": 200,
-      "stock_checked_at": "2026-10-14T20:59+02:00",
-      "stock_evidence": "sluttid 2026-10-25T21:17 i framtiden, HTTP 200"
+      "stock_checked_at": "2026-10-15T10:06+02:00",
+      "stock_evidence": "sluttid 2026-10-25T20:17 i framtiden, HTTP 200"
     },
     {
       "item_id": "pkm-30c-etb",
@@ -4623,7 +6390,7 @@
       "title": "Pokémon TCG: 30th Celebration Elite Trainer Box",
       "url": "https://www.tradera.com/item/1001341/754654652/pokémon-tcg-30th-celebration-elite-trainer-box",
       "ends_at": "2026-10-15T18:00",
-      "price": 1440,
+      "price": 1440.0,
       "currency": "SEK",
       "price_kind": "bud",
       "bids": 2,
@@ -4631,10 +6398,10 @@
       "estimate": null,
       "shipping": 0,
       "date_seen": "2026-10-14",
-      "notes": "",
+      "notes": "Uppdaterad 2026-10-15.",
       "auction_status": "active",
       "http_status": 200,
-      "stock_checked_at": "2026-10-14T20:59+02:00",
+      "stock_checked_at": "2026-10-15T10:06+02:00",
       "stock_evidence": "sluttid 2026-10-15T18:00 i framtiden, HTTP 200"
     },
     {
@@ -4654,7 +6421,7 @@
       "notes": "Köp nu 2000 kr",
       "auction_status": "active",
       "http_status": 200,
-      "stock_checked_at": "2026-10-14T20:59+02:00",
+      "stock_checked_at": "2026-10-15T10:06+02:00",
       "stock_evidence": "sluttid 2026-10-19T19:17 i framtiden, HTTP 200"
     },
     {
@@ -4674,7 +6441,7 @@
       "notes": "",
       "auction_status": "active",
       "http_status": 200,
-      "stock_checked_at": "2026-10-14T20:59+02:00",
+      "stock_checked_at": "2026-10-15T10:06+02:00",
       "stock_evidence": "sluttid 2026-10-16T15:09 i framtiden, HTTP 200"
     },
     {
@@ -4683,18 +6450,18 @@
       "title": "Pokémon TCG: 30th Celebration Elite Trainer Box",
       "url": "https://www.tradera.com/item/1001341/755045003/pokémon-tcg-30th-celebration-elite-trainer-box",
       "ends_at": "2026-10-15T21:25",
-      "price": 1638,
+      "price": 1678.0,
       "currency": "SEK",
       "price_kind": "bud",
-      "bids": 46,
+      "bids": 47,
       "qty": 1,
       "estimate": null,
       "shipping": 49,
       "date_seen": "2026-10-14",
-      "notes": "",
+      "notes": "Uppdaterad 2026-10-15.",
       "auction_status": "active",
       "http_status": 200,
-      "stock_checked_at": "2026-10-14T20:59+02:00",
+      "stock_checked_at": "2026-10-15T10:06+02:00",
       "stock_evidence": "sluttid 2026-10-15T21:25 i framtiden, HTTP 200"
     },
     {
@@ -4714,7 +6481,7 @@
       "notes": "Köp nu 2350 kr",
       "auction_status": "ended",
       "http_status": 200,
-      "stock_checked_at": "2026-10-14T20:59+02:00",
+      "stock_checked_at": "2026-10-15T10:06+02:00",
       "stock_evidence": "sluttid passerad/sidan säger avslutad"
     },
     {
@@ -4723,7 +6490,7 @@
       "title": "Pokémon 30th Celebrations Elite Trainer Box",
       "url": "https://www.tradera.com/item/1001341/755555017/pokémon-30th-celebrations-elite-trainer-box",
       "ends_at": "2026-10-20T18:07",
-      "price": 1626,
+      "price": 1626.0,
       "currency": "SEK",
       "price_kind": "bud",
       "bids": 30,
@@ -4731,10 +6498,10 @@
       "estimate": null,
       "shipping": 0,
       "date_seen": "2026-10-14",
-      "notes": "",
+      "notes": "Uppdaterad 2026-10-15.",
       "auction_status": "active",
       "http_status": 200,
-      "stock_checked_at": "2026-10-14T20:59+02:00",
+      "stock_checked_at": "2026-10-15T10:06+02:00",
       "stock_evidence": "sluttid 2026-10-20T18:07 i framtiden, HTTP 200"
     },
     {
@@ -4743,7 +6510,7 @@
       "title": "Pokémon TCG: 30th Celebration Elite Trainer Box",
       "url": "https://www.tradera.com/item/1001341/755601132/pokémon-tcg-30th-celebration-elite-trainer-box",
       "ends_at": "2026-10-16T17:15",
-      "price": 1850,
+      "price": 1850.0,
       "currency": "SEK",
       "price_kind": "utrop",
       "bids": 0,
@@ -4751,10 +6518,10 @@
       "estimate": null,
       "shipping": 0,
       "date_seen": "2026-10-14",
-      "notes": "",
+      "notes": "Uppdaterad 2026-10-15.",
       "auction_status": "active",
       "http_status": 200,
-      "stock_checked_at": "2026-10-14T20:59+02:00",
+      "stock_checked_at": "2026-10-15T10:06+02:00",
       "stock_evidence": "sluttid 2026-10-16T17:15 i framtiden, HTTP 200"
     },
     {
@@ -4763,7 +6530,7 @@
       "title": "Pokémon 30th Anniversary Celebration Elite Trainer Box",
       "url": "https://www.tradera.com/item/1001341/755160158/pokémon-30th-anniversary-celebration-elite-trainer-box",
       "ends_at": "2026-10-18T14:53",
-      "price": 2000,
+      "price": 2000.0,
       "currency": "SEK",
       "price_kind": "utrop",
       "bids": 0,
@@ -4771,10 +6538,10 @@
       "estimate": null,
       "shipping": 0,
       "date_seen": "2026-10-14",
-      "notes": "Köp nu 2200 kr",
+      "notes": "Köp nu 2200 kr. Uppdaterad 2026-10-15.",
       "auction_status": "active",
       "http_status": 200,
-      "stock_checked_at": "2026-10-14T20:59+02:00",
+      "stock_checked_at": "2026-10-15T10:06+02:00",
       "stock_evidence": "sluttid 2026-10-18T14:53 i framtiden, HTTP 200"
     },
     {
@@ -4794,7 +6561,7 @@
       "notes": "",
       "auction_status": "ended",
       "http_status": 200,
-      "stock_checked_at": "2026-10-14T20:59+02:00",
+      "stock_checked_at": "2026-10-15T10:06+02:00",
       "stock_evidence": "sluttid passerad/sidan säger avslutad"
     },
     {
@@ -4803,7 +6570,7 @@
       "title": "Pokémon TCG: 30th Celebration Elite Trainer Box",
       "url": "https://www.tradera.com/item/1001341/755424393/pokémon-tcg-30th-celebration-elite-trainer-box",
       "ends_at": "2026-10-19T18:08",
-      "price": 1600,
+      "price": 1600.0,
       "currency": "SEK",
       "price_kind": "utrop",
       "bids": 0,
@@ -4811,10 +6578,10 @@
       "estimate": null,
       "shipping": 0,
       "date_seen": "2026-10-14",
-      "notes": "",
+      "notes": "Uppdaterad 2026-10-15.",
       "auction_status": "active",
       "http_status": 200,
-      "stock_checked_at": "2026-10-14T20:59+02:00",
+      "stock_checked_at": "2026-10-15T10:06+02:00",
       "stock_evidence": "sluttid 2026-10-19T18:08 i framtiden, HTTP 200"
     },
     {
@@ -4823,7 +6590,7 @@
       "title": "Pokémon Celebrations 30th Elite Trainer Box",
       "url": "https://www.tradera.com/item/1001341/755609446/pokémon-celebrations-30th-elite-trainer-box",
       "ends_at": "2026-10-17T16:58",
-      "price": 1469,
+      "price": 1469.0,
       "currency": "SEK",
       "price_kind": "bud",
       "bids": 26,
@@ -4831,10 +6598,10 @@
       "estimate": null,
       "shipping": 49,
       "date_seen": "2026-10-14",
-      "notes": "",
+      "notes": "Uppdaterad 2026-10-15.",
       "auction_status": "active",
       "http_status": 200,
-      "stock_checked_at": "2026-10-14T20:59+02:00",
+      "stock_checked_at": "2026-10-15T10:06+02:00",
       "stock_evidence": "sluttid 2026-10-17T16:58 i framtiden, HTTP 200"
     },
     {
@@ -4843,18 +6610,18 @@
       "title": "30th celebration ETB Pokémon",
       "url": "https://www.tradera.com/item/1001341/755121557/30th-celebration-etb-pokémon",
       "ends_at": "2026-10-18T21:13",
-      "price": 1600,
+      "price": 1689.0,
       "currency": "SEK",
-      "price_kind": "utrop",
-      "bids": 0,
+      "price_kind": "bud",
+      "bids": 4,
       "qty": 1,
       "estimate": null,
-      "shipping": null,
+      "shipping": 49,
       "date_seen": "2026-10-13",
-      "notes": "",
+      "notes": "Uppdaterad 2026-10-15.",
       "auction_status": "active",
       "http_status": 200,
-      "stock_checked_at": "2026-10-14T20:59+02:00",
+      "stock_checked_at": "2026-10-15T10:06+02:00",
       "stock_evidence": "sluttid 2026-10-18T21:13 i framtiden, HTTP 200"
     },
     {
@@ -4863,18 +6630,18 @@
       "title": "Pokémon 30th celebration ETB",
       "url": "https://www.tradera.com/item/1001341/755363285/pokémon-30th-celebration-etb",
       "ends_at": "2026-10-15T10:30",
-      "price": 1561,
+      "price": 1681.0,
       "currency": "SEK",
       "price_kind": "bud",
-      "bids": 16,
+      "bids": 19,
       "qty": 1,
       "estimate": null,
-      "shipping": null,
+      "shipping": 59,
       "date_seen": "2026-10-13",
-      "notes": "",
+      "notes": "Uppdaterad 2026-10-15.",
       "auction_status": "active",
       "http_status": 200,
-      "stock_checked_at": "2026-10-14T20:59+02:00",
+      "stock_checked_at": "2026-10-15T10:06+02:00",
       "stock_evidence": "sluttid 2026-10-15T10:30 i framtiden, HTTP 200"
     },
     {
@@ -4883,7 +6650,7 @@
       "title": "Pokémon 30th Celebration Elite Trainer Box",
       "url": "https://www.tradera.com/item/1001341/755609743/pokémon-30th-celebration-elite-trainer-box",
       "ends_at": "2026-10-17T16:59",
-      "price": 1463,
+      "price": 1463.0,
       "currency": "SEK",
       "price_kind": "bud",
       "bids": 20,
@@ -4891,10 +6658,10 @@
       "estimate": null,
       "shipping": 49,
       "date_seen": "2026-10-14",
-      "notes": "",
+      "notes": "Uppdaterad 2026-10-15.",
       "auction_status": "active",
       "http_status": 200,
-      "stock_checked_at": "2026-10-14T20:59+02:00",
+      "stock_checked_at": "2026-10-15T10:06+02:00",
       "stock_evidence": "sluttid 2026-10-17T16:59 i framtiden, HTTP 200"
     },
     {
@@ -4912,10 +6679,10 @@
       "shipping": 49,
       "date_seen": "2026-10-14",
       "notes": "Köp nu 1900 kr",
-      "auction_status": "active",
+      "auction_status": "ended",
       "http_status": 200,
-      "stock_checked_at": "2026-10-14T20:59+02:00",
-      "stock_evidence": "sluttid 2026-10-15T09:20 i framtiden, HTTP 200"
+      "stock_checked_at": "2026-10-15T10:06+02:00",
+      "stock_evidence": "sluttid passerad/sidan säger avslutad"
     },
     {
       "item_id": "pkm-30c-etb",
@@ -4934,7 +6701,7 @@
       "notes": "Köp nu 5700 kr",
       "auction_status": "active",
       "http_status": 200,
-      "stock_checked_at": "2026-10-14T20:59+02:00",
+      "stock_checked_at": "2026-10-15T10:06+02:00",
       "stock_evidence": "sluttid 2026-10-16T22:41 i framtiden, HTTP 200"
     },
     {
@@ -4943,18 +6710,18 @@
       "title": "Pokémon 30th Celebration ETB - Sealed",
       "url": "https://www.tradera.com/item/1001341/755347392/pokémon-30th-celebration-etb-sealed",
       "ends_at": "2026-10-17T20:02",
-      "price": 1481,
+      "price": 1653.0,
       "currency": "SEK",
       "price_kind": "bud",
-      "bids": 9,
+      "bids": 14,
       "qty": 1,
       "estimate": null,
-      "shipping": null,
+      "shipping": 49,
       "date_seen": "2026-10-13",
-      "notes": "",
+      "notes": "Uppdaterad 2026-10-15.",
       "auction_status": "active",
       "http_status": 200,
-      "stock_checked_at": "2026-10-14T20:59+02:00",
+      "stock_checked_at": "2026-10-15T10:06+02:00",
       "stock_evidence": "sluttid 2026-10-17T20:02 i framtiden, HTTP 200"
     },
     {
@@ -4974,7 +6741,7 @@
       "notes": "",
       "auction_status": "ended",
       "http_status": 200,
-      "stock_checked_at": "2026-10-14T20:59+02:00",
+      "stock_checked_at": "2026-10-15T10:06+02:00",
       "stock_evidence": "sluttid passerad/sidan säger avslutad"
     },
     {
@@ -4983,7 +6750,7 @@
       "title": "Pokémon TCG: 30th Celebration Elite Trainer Box",
       "url": "https://www.tradera.com/item/1001341/754988874/pokémon-tcg-30th-celebration-elite-trainer-box",
       "ends_at": "2026-10-16T16:00",
-      "price": 1506,
+      "price": 1506.0,
       "currency": "SEK",
       "price_kind": "bud",
       "bids": 14,
@@ -4991,10 +6758,10 @@
       "estimate": null,
       "shipping": 49,
       "date_seen": "2026-10-14",
-      "notes": "",
+      "notes": "Uppdaterad 2026-10-15.",
       "auction_status": "active",
       "http_status": 200,
-      "stock_checked_at": "2026-10-14T20:59+02:00",
+      "stock_checked_at": "2026-10-15T10:06+02:00",
       "stock_evidence": "sluttid 2026-10-16T16:00 i framtiden, HTTP 200"
     },
     {
@@ -5003,7 +6770,7 @@
       "title": "The Hobbit Collector Booster Box",
       "url": "https://www.tradera.com/item/293305/755453437/the-hobbit-collector-booster-box",
       "ends_at": "2026-10-15T19:10",
-      "price": 7700,
+      "price": 7700.0,
       "currency": "SEK",
       "price_kind": "bud",
       "bids": 2,
@@ -5011,10 +6778,10 @@
       "estimate": null,
       "shipping": 49,
       "date_seen": "2026-10-14",
-      "notes": "Köp nu 8000 kr",
+      "notes": "Köp nu 8000 kr. Uppdaterad 2026-10-15.",
       "auction_status": "active",
       "http_status": 200,
-      "stock_checked_at": "2026-10-14T20:59+02:00",
+      "stock_checked_at": "2026-10-15T10:06+02:00",
       "stock_evidence": "sluttid 2026-10-15T19:10 i framtiden, HTTP 200"
     },
     {
@@ -5023,18 +6790,18 @@
       "title": "Magic: The Gathering Marvel Spider-Man Collector Booster Display",
       "url": "https://www.tradera.com/item/293305/754885569/magic-the-gathering-marvel-spider-man-collector-booster-display",
       "ends_at": "2026-10-19T20:01",
-      "price": 3900,
+      "price": 3900.0,
       "currency": "SEK",
       "price_kind": "utrop",
       "bids": 0,
       "qty": 1,
       "estimate": null,
-      "shipping": null,
+      "shipping": 59,
       "date_seen": "2026-10-13",
-      "notes": "",
+      "notes": "Uppdaterad 2026-10-15.",
       "auction_status": "active",
       "http_status": 200,
-      "stock_checked_at": "2026-10-14T20:59+02:00",
+      "stock_checked_at": "2026-10-15T10:06+02:00",
       "stock_evidence": "sluttid 2026-10-19T20:01 i framtiden, HTTP 200"
     },
     {
@@ -5043,18 +6810,18 @@
       "title": "Pokémon 30th Celebration Elite Trainer Box - SEALED",
       "url": "https://www.tradera.com/item/1001341/755759694/pokémon-30th-celebration-elite-trainer-box-sealed",
       "ends_at": "2026-10-21T17:12",
-      "price": 525,
+      "price": 950.0,
       "currency": "SEK",
       "price_kind": "bud",
-      "bids": 2,
+      "bids": 5,
       "qty": 1,
       "estimate": null,
       "shipping": 49,
       "date_seen": "2026-10-14",
-      "notes": "",
+      "notes": "Uppdaterad 2026-10-15.",
       "auction_status": "active",
       "http_status": 200,
-      "stock_checked_at": "2026-10-14T20:59+02:00",
+      "stock_checked_at": "2026-10-15T10:06+02:00",
       "stock_evidence": "sluttid 2026-10-21T17:12 i framtiden, HTTP 200"
     },
     {
@@ -5063,18 +6830,18 @@
       "title": "Pokémon TCG: 30th Celebration Elite Trainer Box",
       "url": "https://www.tradera.com/item/1001341/755799734/pokémon-tcg-30th-celebration-elite-trainer-box",
       "ends_at": "2026-10-17T20:21",
-      "price": 921,
+      "price": 1200.0,
       "currency": "SEK",
       "price_kind": "bud",
-      "bids": 4,
+      "bids": 5,
       "qty": 1,
       "estimate": null,
       "shipping": 49,
       "date_seen": "2026-10-14",
-      "notes": "",
+      "notes": "Uppdaterad 2026-10-15.",
       "auction_status": "active",
       "http_status": 200,
-      "stock_checked_at": "2026-10-14T20:59+02:00",
+      "stock_checked_at": "2026-10-15T10:06+02:00",
       "stock_evidence": "sluttid 2026-10-17T20:21 i framtiden, HTTP 200"
     },
     {
@@ -5083,18 +6850,18 @@
       "title": "Pokémon TCG 30th Celebration Elite Trainer Box",
       "url": "https://www.tradera.com/item/1001341/755793955/pokémon-tcg-30th-celebration-elite-trainer-box",
       "ends_at": "2026-10-17T19:59",
-      "price": 468,
+      "price": 599.0,
       "currency": "SEK",
       "price_kind": "bud",
-      "bids": 4,
+      "bids": 5,
       "qty": 1,
       "estimate": null,
       "shipping": 49,
       "date_seen": "2026-10-14",
-      "notes": "",
+      "notes": "Uppdaterad 2026-10-15.",
       "auction_status": "active",
       "http_status": 200,
-      "stock_checked_at": "2026-10-14T20:59+02:00",
+      "stock_checked_at": "2026-10-15T10:06+02:00",
       "stock_evidence": "sluttid 2026-10-17T19:59 i framtiden, HTTP 200"
     },
     {
@@ -5103,18 +6870,18 @@
       "title": "Pokémon 30th Celebration Elite Trainer Box - SEALED",
       "url": "https://www.tradera.com/item/1001341/755759040/pokémon-30th-celebration-elite-trainer-box-sealed",
       "ends_at": "2026-10-21T19:09",
-      "price": 500,
+      "price": 940.0,
       "currency": "SEK",
       "price_kind": "bud",
-      "bids": 1,
+      "bids": 4,
       "qty": 1,
       "estimate": null,
       "shipping": 49,
       "date_seen": "2026-10-14",
-      "notes": "",
+      "notes": "Uppdaterad 2026-10-15.",
       "auction_status": "active",
       "http_status": 200,
-      "stock_checked_at": "2026-10-14T20:59+02:00",
+      "stock_checked_at": "2026-10-15T10:06+02:00",
       "stock_evidence": "sluttid 2026-10-21T19:09 i framtiden, HTTP 200"
     },
     {
@@ -5134,7 +6901,7 @@
       "notes": "",
       "auction_status": "active",
       "http_status": 200,
-      "stock_checked_at": "2026-10-14T20:59+02:00",
+      "stock_checked_at": "2026-10-15T10:06+02:00",
       "stock_evidence": "sluttid 2026-10-18T19:48 i framtiden, HTTP 200"
     },
     {
@@ -5143,7 +6910,7 @@
       "title": "Pokémon TCG: 30th Celebration Elite Trainer Box",
       "url": "https://www.tradera.com/item/1001341/755771523/pokémon-tcg-30th-celebration-elite-trainer-box",
       "ends_at": "2026-10-22T18:18",
-      "price": 1979,
+      "price": 1979.0,
       "currency": "SEK",
       "price_kind": "utrop",
       "bids": 0,
@@ -5151,10 +6918,10 @@
       "estimate": null,
       "shipping": 49,
       "date_seen": "2026-10-14",
-      "notes": "",
+      "notes": "Uppdaterad 2026-10-15.",
       "auction_status": "active",
       "http_status": 200,
-      "stock_checked_at": "2026-10-14T20:59+02:00",
+      "stock_checked_at": "2026-10-15T10:06+02:00",
       "stock_evidence": "sluttid 2026-10-22T18:18 i framtiden, HTTP 200"
     },
     {
@@ -5163,7 +6930,7 @@
       "title": "Pokemon 30th Celebration Elite Trainer Box",
       "url": "https://www.tradera.com/item/1001341/755714843/pokemon-30th-celebration-elite-trainer-box",
       "ends_at": "2026-10-19T18:37",
-      "price": 1499,
+      "price": 1499.0,
       "currency": "SEK",
       "price_kind": "utrop",
       "bids": 0,
@@ -5171,10 +6938,10 @@
       "estimate": null,
       "shipping": 59,
       "date_seen": "2026-10-14",
-      "notes": "",
+      "notes": "Uppdaterad 2026-10-15.",
       "auction_status": "active",
       "http_status": 200,
-      "stock_checked_at": "2026-10-14T20:59+02:00",
+      "stock_checked_at": "2026-10-15T10:06+02:00",
       "stock_evidence": "sluttid 2026-10-19T18:37 i framtiden, HTTP 200"
     },
     {
@@ -5183,18 +6950,18 @@
       "title": "Pokémon 30th Celebration Elite Trainer Box - SEALED",
       "url": "https://www.tradera.com/item/1001341/755759393/pokémon-30th-celebration-elite-trainer-box-sealed",
       "ends_at": "2026-10-21T19:11",
-      "price": 525,
+      "price": 1340.0,
       "currency": "SEK",
       "price_kind": "bud",
-      "bids": 2,
+      "bids": 12,
       "qty": 1,
       "estimate": null,
       "shipping": 49,
       "date_seen": "2026-10-14",
-      "notes": "",
+      "notes": "Uppdaterad 2026-10-15.",
       "auction_status": "active",
       "http_status": 200,
-      "stock_checked_at": "2026-10-14T20:59+02:00",
+      "stock_checked_at": "2026-10-15T10:06+02:00",
       "stock_evidence": "sluttid 2026-10-21T19:11 i framtiden, HTTP 200"
     },
     {
@@ -5203,7 +6970,7 @@
       "title": "Pokémon TCG 30th Celebration Elite Trainer Box ETB – Sealed",
       "url": "https://www.tradera.com/item/1001337/755127883/pokémon-tcg-30th-celebration-elite-trainer-box-etb-sealed",
       "ends_at": "2026-10-15T12:44",
-      "price": 1799,
+      "price": 1799.0,
       "currency": "SEK",
       "price_kind": "utrop",
       "bids": 0,
@@ -5211,10 +6978,10 @@
       "estimate": null,
       "shipping": 59,
       "date_seen": "2026-10-14",
-      "notes": "",
+      "notes": "Uppdaterad 2026-10-15.",
       "auction_status": "active",
       "http_status": 200,
-      "stock_checked_at": "2026-10-14T20:59+02:00",
+      "stock_checked_at": "2026-10-15T10:06+02:00",
       "stock_evidence": "sluttid 2026-10-15T12:44 i framtiden, HTTP 200"
     },
     {
@@ -5223,7 +6990,7 @@
       "title": "Pokémon Trading Card Game 30th Celebration Elite Trainer Box",
       "url": "https://www.tradera.com/item/1001341/755328834/pokémon-trading-card-game-30th-celebration-elite-trainer-box",
       "ends_at": "2026-10-18T23:11",
-      "price": 1200,
+      "price": 1200.0,
       "currency": "SEK",
       "price_kind": "bud",
       "bids": 1,
@@ -5231,10 +6998,10 @@
       "estimate": null,
       "shipping": 49,
       "date_seen": "2026-10-14",
-      "notes": "Köp nu 1700 kr",
+      "notes": "Köp nu 1700 kr. Uppdaterad 2026-10-15.",
       "auction_status": "active",
       "http_status": 200,
-      "stock_checked_at": "2026-10-14T20:59+02:00",
+      "stock_checked_at": "2026-10-15T10:06+02:00",
       "stock_evidence": "sluttid 2026-10-18T23:11 i framtiden, HTTP 200"
     },
     {
@@ -5243,7 +7010,7 @@
       "title": "Pokémon TCG: 30th Celebration Elite Trainer Box SEALED",
       "url": "https://www.tradera.com/item/1001341/755446804/pokémon-tcg-30th-celebration-elite-trainer-box-sealed",
       "ends_at": "2026-10-19T18:48",
-      "price": 1580,
+      "price": 1580.0,
       "currency": "SEK",
       "price_kind": "bud",
       "bids": 4,
@@ -5251,10 +7018,10 @@
       "estimate": null,
       "shipping": 0,
       "date_seen": "2026-10-14",
-      "notes": "",
+      "notes": "Uppdaterad 2026-10-15.",
       "auction_status": "active",
       "http_status": 200,
-      "stock_checked_at": "2026-10-14T20:59+02:00",
+      "stock_checked_at": "2026-10-15T10:06+02:00",
       "stock_evidence": "sluttid 2026-10-19T18:48 i framtiden, HTTP 200"
     },
     {
@@ -5263,7 +7030,7 @@
       "title": "Pokémon TCG: 30th Celebration Elite Trainer Box SEALED",
       "url": "https://www.tradera.com/item/1001341/755446585/pokémon-tcg-30th-celebration-elite-trainer-box-sealed",
       "ends_at": "2026-10-19T18:47",
-      "price": 1499,
+      "price": 1499.0,
       "currency": "SEK",
       "price_kind": "bud",
       "bids": 1,
@@ -5271,10 +7038,10 @@
       "estimate": null,
       "shipping": 0,
       "date_seen": "2026-10-14",
-      "notes": "",
+      "notes": "Uppdaterad 2026-10-15.",
       "auction_status": "active",
       "http_status": 200,
-      "stock_checked_at": "2026-10-14T20:59+02:00",
+      "stock_checked_at": "2026-10-15T10:06+02:00",
       "stock_evidence": "sluttid 2026-10-19T18:47 i framtiden, HTTP 200"
     },
     {
@@ -5294,8 +7061,396 @@
       "notes": "",
       "auction_status": "active",
       "http_status": 200,
-      "stock_checked_at": "2026-10-14T20:59+02:00",
+      "stock_checked_at": "2026-10-15T10:06+02:00",
       "stock_evidence": "sluttid 2026-10-17T17:07 i framtiden, HTTP 200"
+    },
+    {
+      "item_id": "pkm-30c-etb",
+      "platform": "Tradera",
+      "title": "Pokémon TCG: 30th Celebration Elite Trainer Box",
+      "url": "https://www.tradera.com/item/1001341/755852132/pokémon-tcg-30th-celebration-elite-trainer-box",
+      "ends_at": "2026-10-22T19:10",
+      "price": 1499.0,
+      "currency": "SEK",
+      "price_kind": "utrop",
+      "bids": 0,
+      "qty": 1,
+      "estimate": null,
+      "shipping": 0,
+      "date_seen": "2026-10-15",
+      "notes": "Säljare Shade45.",
+      "auction_status": "active",
+      "http_status": 200,
+      "stock_checked_at": "2026-10-15T10:06+02:00",
+      "stock_evidence": "sluttid 2026-10-22T19:10 i framtiden, HTTP 200"
+    },
+    {
+      "item_id": "pkm-30c-etb",
+      "platform": "Tradera",
+      "title": "Pokemon TCG - 30th celebration etb",
+      "url": "https://www.tradera.com/item/1001341/754854847/pokemon-tcg-30th-celebration-etb",
+      "ends_at": "2026-10-17T18:07",
+      "price": 1640.0,
+      "currency": "SEK",
+      "price_kind": "bud",
+      "bids": 16,
+      "qty": 1,
+      "estimate": null,
+      "shipping": 49,
+      "date_seen": "2026-10-15",
+      "notes": "Säljare Lanzo.",
+      "auction_status": "active",
+      "http_status": 200,
+      "stock_checked_at": "2026-10-15T10:06+02:00",
+      "stock_evidence": "sluttid 2026-10-17T18:07 i framtiden, HTTP 200"
+    },
+    {
+      "item_id": "pkm-30c-etb",
+      "platform": "Tradera",
+      "title": "Pokémon 30th Celebration ETB",
+      "url": "https://www.tradera.com/item/1001341/754924023/pokémon-30th-celebration-etb",
+      "ends_at": "2026-10-17T11:04",
+      "price": 1717.0,
+      "currency": "SEK",
+      "price_kind": "bud",
+      "bids": 5,
+      "qty": 1,
+      "estimate": null,
+      "shipping": 59,
+      "date_seen": "2026-10-15",
+      "notes": "Säljare Mountainbranch.",
+      "auction_status": "active",
+      "http_status": 200,
+      "stock_checked_at": "2026-10-15T10:06+02:00",
+      "stock_evidence": "sluttid 2026-10-17T11:04 i framtiden, HTTP 200"
+    },
+    {
+      "item_id": "pkm-30c-etb",
+      "platform": "Tradera",
+      "title": "Pokémon 30th celebration etb",
+      "url": "https://www.tradera.com/item/1001341/755567985/pokémon-30th-celebration-etb",
+      "ends_at": "2026-10-17T19:42",
+      "price": 1631.0,
+      "currency": "SEK",
+      "price_kind": "bud",
+      "bids": 7,
+      "qty": 1,
+      "estimate": null,
+      "shipping": 49,
+      "date_seen": "2026-10-15",
+      "notes": "Köp nu 1900 kr. Säljare Drysse31.",
+      "auction_status": "active",
+      "http_status": 200,
+      "stock_checked_at": "2026-10-15T10:06+02:00",
+      "stock_evidence": "sluttid 2026-10-17T19:42 i framtiden, HTTP 200"
+    },
+    {
+      "item_id": "pkm-30c-etb",
+      "platform": "Tradera",
+      "title": "30th celebration ETB",
+      "url": "https://www.tradera.com/item/1001337/755723738/30th-celebration-etb",
+      "ends_at": "2026-10-19T18:57",
+      "price": 1793.0,
+      "currency": "SEK",
+      "price_kind": "utrop",
+      "bids": 0,
+      "qty": 1,
+      "estimate": null,
+      "shipping": 61,
+      "date_seen": "2026-10-15",
+      "notes": "Säljare active_rubbed.",
+      "auction_status": "active",
+      "http_status": 200,
+      "stock_checked_at": "2026-10-15T10:06+02:00",
+      "stock_evidence": "sluttid 2026-10-19T18:57 i framtiden, HTTP 200"
+    },
+    {
+      "item_id": "pkm-30c-etb",
+      "platform": "Tradera",
+      "title": "30th celebration ETB",
+      "url": "https://www.tradera.com/item/1001337/755723641/30th-celebration-etb",
+      "ends_at": "2026-10-19T18:56",
+      "price": 1793.0,
+      "currency": "SEK",
+      "price_kind": "utrop",
+      "bids": 0,
+      "qty": 1,
+      "estimate": null,
+      "shipping": 61,
+      "date_seen": "2026-10-15",
+      "notes": "Säljare active_rubbed.",
+      "auction_status": "active",
+      "http_status": 200,
+      "stock_checked_at": "2026-10-15T10:06+02:00",
+      "stock_evidence": "sluttid 2026-10-19T18:56 i framtiden, HTTP 200"
+    },
+    {
+      "item_id": "pkm-30c-etb",
+      "platform": "Tradera",
+      "title": "Pokémon 30th celebration ETB",
+      "url": "https://www.tradera.com/item/1001341/755783606/pokémon-30th-celebration-etb",
+      "ends_at": "2026-10-21T19:14",
+      "price": 1380.0,
+      "currency": "SEK",
+      "price_kind": "bud",
+      "bids": 3,
+      "qty": 1,
+      "estimate": null,
+      "shipping": 49,
+      "date_seen": "2026-10-15",
+      "notes": "Köp nu 1600 kr. Säljare Johhh.",
+      "auction_status": "active",
+      "http_status": 200,
+      "stock_checked_at": "2026-10-15T10:06+02:00",
+      "stock_evidence": "sluttid 2026-10-21T19:14 i framtiden, HTTP 200"
+    },
+    {
+      "item_id": "pkm-30c-etb",
+      "platform": "Tradera",
+      "title": "Pokemon 30th Celebrations ETB",
+      "url": "https://www.tradera.com/item/1001341/755062624/pokemon-30th-celebrations-etb",
+      "ends_at": "2026-10-17T23:12",
+      "price": 12500.0,
+      "currency": "SEK",
+      "price_kind": "utrop",
+      "bids": 0,
+      "qty": 1,
+      "estimate": null,
+      "shipping": 0,
+      "date_seen": "2026-10-15",
+      "notes": "Säljare Amadeus100.",
+      "auction_status": "active",
+      "http_status": 200,
+      "stock_checked_at": "2026-10-15T10:06+02:00",
+      "stock_evidence": "sluttid 2026-10-17T23:12 i framtiden, HTTP 200"
+    },
+    {
+      "item_id": null,
+      "platform": "Auctionet UK",
+      "title": "Lord of the Rings & The Hobbit-filmmemorabilia (samling)",
+      "url": "https://auctionet.com/sv/5414307-samling-med-lord-of-the-rings-och-the-hobbit-memorabilia",
+      "ends_at": "2026-10-20T22:15",
+      "price": 27.0,
+      "currency": "USD",
+      "price_kind": "lägsta nästa bud",
+      "bids": 0,
+      "qty": 1,
+      "estimate": 40,
+      "shipping": null,
+      "date_seen": "2026-10-15",
+      "notes": "Brittiskt hus (Warwick, originalvaluta GBP, värdering £30 ≈ 40 USD). Inga bud. Ingen benchmark.",
+      "lot_analysis": {
+        "images": [
+          "images/lots/auctionet-5414307-1.webp",
+          "images/lots/auctionet-5414307-2.webp",
+          "images/lots/auctionet-5414307-3.webp",
+          "images/lots/auctionet-5414307-4.webp"
+        ],
+        "analyzed": "2026-10-15",
+        "identified": [
+          {
+            "what": "LotR: The Two Towers schackset (\"Antique Ivory and Chinese Lacquer Finish\", New Line Cinema), i obruten originalkartong",
+            "notes": "nämnt i beskrivningen (tTT schackspel)"
+          },
+          {
+            "what": "DVD: LotR Motion Picture Trilogy-box, RotK Special Extended (velourbox), FotR, National Geographic Beyond the Movie, The Hobbit DoS",
+            "notes": "brittiska utgåvor, lågt andrahandsvärde"
+          },
+          {
+            "what": "Eaglemoss/Fabbri \"Lo Hobbit\" nr 43 – Thranduil-figur med tidning",
+            "notes": "ITALIENSK utgåva (Fabbri Centauria) – nämns inte i beskrivningen"
+          },
+          {
+            "what": "2 st LotR Two Towers 2004-dagböcker, Hobbit-muggar (3), LotR vattenflaska",
+            "notes": "nämnt"
+          }
+        ],
+        "flags": [
+          "Inga Magic-kort eller samlarkort i lotten"
+        ],
+        "gems": [],
+        "value_range": null,
+        "value_note": "Allt syns och stämmer med beskrivningen; enda onämnda detaljen är att Eaglemoss-figuren är den italienska Fabbri-utgåvan. Inga kort.",
+        "verdict": "Ingen 'gömt och glömt'. Trevlig LotR-fanlott men inget investeringsobjekt."
+      },
+      "auction_status": "active",
+      "http_status": 200,
+      "stock_checked_at": "2026-10-15T10:06+02:00",
+      "stock_evidence": "sluttid 2026-10-20T22:15 i framtiden, HTTP 200"
+    },
+    {
+      "item_id": null,
+      "platform": "Auctionet UK",
+      "title": "NPL/Marvel (ToyBiz) Lord of the Rings-figurer m.m. (blandad samling)",
+      "url": "https://auctionet.com/sv/5427043-samling-av-npl-marvel-lord-of-the-rings-leksaker",
+      "ends_at": "2026-10-21T20:51",
+      "price": 27.0,
+      "currency": "USD",
+      "price_kind": "lägsta nästa bud",
+      "bids": 0,
+      "qty": 1,
+      "estimate": 40,
+      "shipping": null,
+      "date_seen": "2026-10-15",
+      "notes": "Brittiskt hus (Warwick, värdering £30 ≈ 40 USD). Inga bud. \"Marvel\" = ToyBiz (Marvel-ägt) som gjorde LotR-figurerna, inte Marvel-superhjältar.",
+      "lot_analysis": {
+        "images": [
+          "images/lots/auctionet-5427043-1.webp",
+          "images/lots/auctionet-5427043-2.webp",
+          "images/lots/auctionet-5427043-3.webp",
+          "images/lots/auctionet-5427043-4.webp",
+          "images/lots/auctionet-5427043-5.webp"
+        ],
+        "analyzed": "2026-10-15",
+        "identified": [
+          {
+            "what": "~21 lösa ToyBiz LotR-actionfigurer: bl.a. Häxkungen, Sauron, Aragorn, Boromir, Gimli, Saruman, Uruk-hai, stor Shelob (Lockmyra)",
+            "notes": "nämnt; lösa, ofullständiga tillbehör"
+          },
+          {
+            "what": "Frank Miller & Lynn Varley \"300\" inbunden grafisk roman",
+            "notes": "INTE nämnd i beskrivningen"
+          },
+          {
+            "what": "World of Warcraft Official Strategy Guide (BradyGames) och Zelda: Breath of the Wild-guide (i plast)",
+            "notes": "INTE nämnda; utgåva av Zelda-guiden ej bekräftad (baksidan syns)"
+          },
+          {
+            "what": "Funko Pop-liknande figur (Overwatch Reaper?) utan kartong, liten LEGO/klossbyggd Star Wars-farkost (Slave I?) i plastlåda",
+            "notes": "INTE nämnda; identifiering osäker"
+          },
+          {
+            "what": "3 Pikachu/Pichu-mjukisar (TOMY + en virkad), Minecraft-skumhacka, Zelda-skumsvärd, Meccano-bil, trädjur",
+            "notes": "nämnt (utom Minecraft-hackan)"
+          }
+        ],
+        "flags": [
+          "Onämnt: \"300\"-bok + spelguider (måttligt värde)",
+          "Lösa figurer utan förpackning",
+          "Identifiering av Funko/LEGO osäker"
+        ],
+        "gems": [],
+        "value_range": null,
+        "value_note": "Onämnda böcker/guider ger lite extra värde, men inget av klart högt värde syns. Priser ej kontrollerade.",
+        "verdict": "Ingen riktig dyrgrip. Onämnda böcker/guider (\"300\" HC, WoW- och Zelda-guide) ger en liten bonus. Brittiskt hus = importmoms + frakt."
+      },
+      "auction_status": "active",
+      "http_status": 200,
+      "stock_checked_at": "2026-10-15T10:06+02:00",
+      "stock_evidence": "sluttid 2026-10-21T20:51 i framtiden, HTTP 200"
+    },
+    {
+      "item_id": null,
+      "platform": "Auctionet SE",
+      "title": "Hockeykort, parti ca 1990-tal (delvis i toploaders)",
+      "url": "https://auctionet.com/sv/5419509-hockeykort-ett-parti-ca-1990-tal",
+      "ends_at": "2026-10-15T19:32",
+      "price": 21.0,
+      "currency": "USD",
+      "price_kind": "bud",
+      "bids": 1,
+      "qty": 1,
+      "estimate": 41,
+      "shipping": null,
+      "date_seen": "2026-10-15",
+      "notes": "Svenskt hus (Södra Sandby). Värdering 400 kr (41 USD). 1 bud, reservation uppnådd. Slutar idag 19:32.",
+      "lot_analysis": {
+        "images": [
+          "images/lots/auctionet-5419509-1.webp",
+          "images/lots/auctionet-5419509-2.webp",
+          "images/lots/auctionet-5419509-3.webp",
+          "images/lots/auctionet-5419509-4.webp",
+          "images/lots/auctionet-5419509-5.webp",
+          "images/lots/auctionet-5419509-6.webp",
+          "images/lots/auctionet-5419509-7.webp",
+          "images/lots/auctionet-5419509-8.webp",
+          "images/lots/auctionet-5419509-9.webp",
+          "images/lots/auctionet-5419509-10.webp"
+        ],
+        "analyzed": "2026-10-15",
+        "identified": [
+          {
+            "what": "Henrik Lundqvist Upper Deck SPx, serienumrerad 608/999 (toploader)",
+            "notes": "troligen SPxcitement-insert 2008–10; inte nämnt",
+            "price": "≈1–10 USD (SportLots/eBay-listningar)",
+            "url": "https://www.sportlots.com/Hockey/card_values/2008-SPx-SPxcitement.tpl"
+          },
+          {
+            "what": "Henrik Lundqvist Upper Deck med inlagd bit (möjligen jersey/memorabilia-kort)",
+            "notes": "kan inte bekräftas från bilden"
+          },
+          {
+            "what": "Peter Forsberg Fleer Ultra Gold Medallion (Nordiques), Patrick Roy UD Legends/Sporting News Top 50, Patrick Roy Be A Player, Martin Brodeur \"Rookie Sensations\", Pelle Lindbergh All-Star (1980-tal)",
+            "notes": "toploaders, inga graderingar"
+          },
+          {
+            "what": "Elitserien 2001/02 Malmö Redhawks-lag (svenska kort), Victory/MVP/Pacific bulk inkl. Gretzky/Bure \"jersey\"-kort",
+            "notes": "bulk, lågt värde"
+          }
+        ],
+        "flags": [
+          "Hockey – inte inom Pokémon/MTG-fokus",
+          "Inga graderade kort"
+        ],
+        "gems": [],
+        "value_range": null,
+        "value_note": "Numrerade och toploaderade kort syns men nämns inte; ändå låga värden (Lundqvist /999 ≈ 1–10 USD). Pelle Lindbergh-kortet är det mest samlarintressanta, skick/utgåva oklart.",
+        "verdict": "Ingen riktig 'gömt och glömt'. Värt några hundralappar som mest."
+      },
+      "auction_status": "active",
+      "http_status": 200,
+      "stock_checked_at": "2026-10-15T10:06+02:00",
+      "stock_evidence": "sluttid 2026-10-15T19:32 i framtiden, HTTP 200"
+    },
+    {
+      "item_id": null,
+      "platform": "Auctionet SE",
+      "title": "Stort parti sportmemorabilia: samlarkort, autografer, tidningar (1950–60-tal)",
+      "url": "https://auctionet.com/sv/5400576-stort-parti-sportmemorobilia-bestaende-av-samlarkort-autografer-och-tidningar",
+      "ends_at": "2026-10-15T17:00",
+      "price": 31.0,
+      "currency": "USD",
+      "price_kind": "lägsta nästa bud",
+      "bids": 0,
+      "qty": 1,
+      "estimate": 86,
+      "shipping": null,
+      "date_seen": "2026-10-15",
+      "notes": "Svenskt hus (Malmö). Värdering 850 kr (86 USD). Inga bud. Slutar idag 17:00.",
+      "lot_analysis": {
+        "images": [
+          "images/lots/auctionet-5400576-1.webp",
+          "images/lots/auctionet-5400576-2.webp",
+          "images/lots/auctionet-5400576-3.webp"
+        ],
+        "analyzed": "2026-10-15",
+        "identified": [
+          {
+            "what": "Signerade fotbollssamlarbilder 1950–60-tal, flera AIK-spelare (svart/gul tröja) + ett IFK Göteborg-/OK-kort",
+            "notes": "autografer nämns generellt i titeln men inte vilka; äkthet ej verifierad"
+          },
+          {
+            "what": "Allsport (11 nr), Rekordmagasinets idrottsalbum, Friidrott, Start, Ishockey, NHL 2000, Stjärnsport 1980-tal",
+            "notes": "nämnt"
+          },
+          {
+            "what": "Pressurklipp fotboll 1960-tal",
+            "notes": "nämnt"
+          }
+        ],
+        "flags": [
+          "Autografer overifierade",
+          "Ålderslitage"
+        ],
+        "gems": [],
+        "value_range": null,
+        "value_note": "Signerade AIK-kort från 1960-talet kan ha samlarvärde om äkta, men spelare och äkthet kan inte fastställas från bilderna.",
+        "verdict": "Inget TCG. Möjligt intresse för svensk fotbollssamlare; ingen säker dyrgrip."
+      },
+      "auction_status": "active",
+      "http_status": 200,
+      "stock_checked_at": "2026-10-15T10:06+02:00",
+      "stock_evidence": "sluttid 2026-10-15T17:00 i framtiden, HTTP 200"
     }
   ],
   "market_watch": [
@@ -5306,7 +7461,10 @@
       "currency": "SEK",
       "url": "https://www.blocket.se/recommerce/forsale/item/27079552",
       "date_seen": "2026-10-13",
-      "notes": "Annons senast ändrad 2026-10-02. Fast pris, ej auktion."
+      "notes": "Annons senast ändrad 2026-10-02. Fast pris, ej auktion. Död länk 15 okt 2026 (HTTP 404 – annonsen borttagen).",
+      "dead_link": true,
+      "http_status": 404,
+      "date_checked": "2026-10-15"
     },
     {
       "platform": "Blocket",
@@ -5315,7 +7473,10 @@
       "currency": "SEK",
       "url": "https://www.blocket.se/recommerce/forsale/item/25886762",
       "date_seen": "2026-10-13",
-      "notes": "Annons senast ändrad 2026-08-20; kan vara inaktuell."
+      "notes": "Annons senast ändrad 2026-08-20; kan vara inaktuell. Död länk 15 okt 2026 (HTTP 404 – annonsen borttagen).",
+      "dead_link": true,
+      "http_status": 404,
+      "date_checked": "2026-10-15"
     },
     {
       "platform": "Bukowskis",
@@ -5323,8 +7484,40 @@
       "price": null,
       "currency": "SEK",
       "url": "https://www.bukowskis.com/sv/search?q=pokemon",
-      "date_seen": "2026-10-13",
-      "notes": "Sökning på 'pokemon' gav inga träffar; nästa stora auktion är Important Winter Sale 3–11 dec (konst/design)."
+      "date_seen": "2026-10-15",
+      "notes": "15 okt: sök-URL:en /sv/search?q= ger HTTP 404 (död länk). /sv/lots ignorerar sökparametern (JS-sök); sida 1 av aktuella lotter (95 st) innehåller inga TCG-objekt. Inga Pokémon/MTG-lotter hittade.",
+      "dead_link": true,
+      "http_status": 404
+    },
+    {
+      "platform": "Blocket",
+      "title": "Magic The Gathering Marvel Super Heroes Collector Booster Box [ENG]",
+      "price": 4700,
+      "currency": "SEK",
+      "url": "https://www.blocket.se/recommerce/forsale/item/24644836",
+      "date_seen": "2026-10-15",
+      "item_id": "mtg-marvel-super-heroes-cbb",
+      "notes": "Fast pris, privat annons. Över Cardmarket-trend (330,26 € ≈ 3 685 kr). Frakt/upphämtning ej kontrollerad."
+    },
+    {
+      "platform": "Blocket",
+      "title": "30th Celebration ETB (Sealed / ENG)",
+      "price": 1500,
+      "currency": "SEK",
+      "url": "https://www.blocket.se/recommerce/forsale/item/27190021",
+      "date_seen": "2026-10-15",
+      "item_id": "pkm-30c-etb",
+      "notes": "Billigaste enstaka 30th ETB på Blocket 15 okt. ≈ trend (131,52 € ≈ 1 467 kr). Frakt ej angiven."
+    },
+    {
+      "platform": "Blocket",
+      "title": "Pokémon 30th Celebration Elite Trainer Box",
+      "price": 1550,
+      "currency": "SEK",
+      "url": "https://www.blocket.se/recommerce/forsale/item/26971372",
+      "date_seen": "2026-10-15",
+      "item_id": "pkm-30c-etb",
+      "notes": "Fast pris. Frakt ej angiven."
     }
   ],
   "transactions": [
