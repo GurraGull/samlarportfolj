@@ -6,7 +6,7 @@ D = pathlib.Path(__file__).parent
 p = json.loads((D/"portfolio.json").read_text())
 RATES = {"SEK": 1.0, **p["rates"]}
 e = html.escape
-def sek(price, cur): return price*RATES[cur] if cur in RATES else None
+def sek(price, cur): return price*RATES[cur] if (cur in RATES and price is not None) else None
 def kr(v): return "–" if v is None else f"{v:,.0f}".replace(",", " ") + " kr"
 def money(price, cur):
     s = f"{price:,.2f}".replace(",", " ") + " " + cur if cur != "SEK" else kr(price)
@@ -71,7 +71,7 @@ def section(i):
 DS = p["deal_settings"]
 def landed(o):
     r = RATES.get(o["currency"])
-    if r is None: return None
+    if r is None or o.get("price") is None: return None
     base = (o["price"] + (o["shipping"] or 0)) * r
     if o["origin"] == "non-EU":
         base = base*(1+DS["customs_pct"]/100)*(1+DS["import_vat_pct"]/100) + DS["non_eu_handling_fee_sek"]

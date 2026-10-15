@@ -5937,6 +5937,142 @@
         "source_url": "https://dragonslair.se/products/innistrad-midnight-hunt-collectors-booster-display-magic-the-gathering",
         "downloaded": "2026-10-14"
       }
+    },
+    {
+      "id": "mtg-revised-pack",
+      "name": "MTG Revised Edition Booster Pack (EN, förseglat, inramat)",
+      "category": "Magic: The Gathering",
+      "language": "Engelska",
+      "quantity": 3,
+      "purchase_price_sek": 1500,
+      "purchase_price_estimated": false,
+      "purchase_date": null,
+      "status": "owned",
+      "cardmarket_id": 210006,
+      "valuation": {
+        "conservative": {
+          "price": 250,
+          "currency": "EUR",
+          "basis": "Cardmarket lägsta (prisguide 2026-10-15)"
+        },
+        "mid": {
+          "price": 281.84,
+          "currency": "EUR",
+          "basis": "Cardmarket-trend (prisguide 2026-10-15), per paket"
+        },
+        "high": {
+          "price": 349.99,
+          "currency": "USD",
+          "basis": "TCGplayer/eBay övre (PriceCharting/MTGStocks)"
+        }
+      },
+      "notes": "3 st, inramade. Köpt 500 kr/st. Revised (1994) trycktes bara på engelska (FBB är separata produkter). Ramen kan påverka värdet; äkthet/förseglingskontroll rekommenderas vid försäljning.",
+      "snapshots": [
+        {
+          "date": "2026-10-15",
+          "source": "Cardmarket prisguide",
+          "price": 281.84,
+          "currency": "EUR",
+          "type": "trend",
+          "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
+          "note": "idProduct 210006 Revised Booster, ej språkfiltrerad"
+        },
+        {
+          "date": "2026-09-14",
+          "source": "eBay (PriceCharting)",
+          "price": 285.0,
+          "currency": "USD",
+          "type": "sold",
+          "url": "https://www.pricecharting.com/game/magic-revised/booster-pack",
+          "note": "Senaste eBay-försäljning; aug–sep 242,50–293,88 USD"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "MTGStocks market",
+          "price": 320.76,
+          "currency": "USD",
+          "type": "trend",
+          "url": "https://www.mtgstocks.com/sealed/920-revised-edition-booster-pack",
+          "note": "TCGplayer market; lägsta listning 349,99 USD"
+        }
+      ],
+      "community": [],
+      "offers": [],
+      "alerts": [],
+      "image": {
+        "src": "images/mtg-revised-pack.webp",
+        "credit": "Produktbild via PriceCharting (© Wizards of the Coast)",
+        "source_url": "https://www.pricecharting.com/game/magic-revised/booster-pack",
+        "downloaded": "2026-10-15"
+      }
+    },
+    {
+      "id": "mtg-the-dark-pack",
+      "name": "MTG The Dark Booster Pack (EN, förseglat, inramat)",
+      "category": "Magic: The Gathering",
+      "language": "Engelska",
+      "quantity": 3,
+      "purchase_price_sek": 750,
+      "purchase_price_estimated": true,
+      "purchase_date": null,
+      "status": "owned",
+      "cardmarket_id": 210008,
+      "valuation": {
+        "conservative": {
+          "price": 84.9,
+          "currency": "EUR",
+          "basis": "Cardmarket lägsta (prisguide 2026-10-15)"
+        },
+        "mid": {
+          "price": 90.71,
+          "currency": "EUR",
+          "basis": "Cardmarket-trend (prisguide 2026-10-15), per paket"
+        },
+        "high": {
+          "price": 100.05,
+          "currency": "USD",
+          "basis": "TCGplayer/eBay övre (PriceCharting/MTGStocks)"
+        }
+      },
+      "notes": "3 st, inramade. Köppris ca 250 kr/st (uppskattat). Cardmarket-prisguiden är inte språkfiltrerad – italienska The Dark är egen produkt (300137).",
+      "snapshots": [
+        {
+          "date": "2026-10-15",
+          "source": "Cardmarket prisguide",
+          "price": 90.71,
+          "currency": "EUR",
+          "type": "trend",
+          "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
+          "note": "idProduct 210008 The Dark Booster, ej språkfiltrerad"
+        },
+        {
+          "date": "2026-09-28",
+          "source": "TCGplayer (PriceCharting)",
+          "price": 83.1,
+          "currency": "USD",
+          "type": "sold",
+          "url": "https://www.pricecharting.com/game/magic-the-dark/booster-pack",
+          "note": "eBay 25 sep 54–77 USD (slitna)"
+        },
+        {
+          "date": "2026-10-15",
+          "source": "MTGStocks market",
+          "price": 78.71,
+          "currency": "USD",
+          "type": "trend",
+          "url": "https://www.mtgstocks.com/sealed/924-the-dark-booster-pack",
+          "note": "Lägsta listning 79,99 USD"
+        }
+      ],
+      "community": [],
+      "offers": [],
+      "alerts": [],
+      "image": {
+        "src": "images/mtg-the-dark-pack.webp",
+        "credit": "Produktbild via PriceCharting (© Wizards of the Coast)",
+        "source_url": "https://www.pricecharting.com/game/magic-the-dark/booster-pack",
+        "downloaded": "2026-10-15"
+      }
     }
   ],
   "rate_sources": {
@@ -7542,6 +7678,28 @@
       "fees_sek": 0,
       "platform": "Amazon.se",
       "note": "Engelska, 12 packs. Fri frakt. Beställd, ej levererad (lev. 8 jan–23 apr 2027)."
+    },
+    {
+      "id": "t3",
+      "item_id": "mtg-revised-pack",
+      "type": "buy",
+      "date": null,
+      "qty": 3,
+      "price_sek": 1500.0,
+      "fees_sek": 0.0,
+      "platform": "okänd",
+      "note": "500 kr/st, inramade"
+    },
+    {
+      "id": "t4",
+      "item_id": "mtg-the-dark-pack",
+      "type": "buy",
+      "date": null,
+      "qty": 3,
+      "price_sek": 750.0,
+      "fees_sek": 0.0,
+      "platform": "okänd",
+      "note": "Ca 250 kr/st (uppskattat köppris), inramade"
     }
   ],
   "language_filter": {
