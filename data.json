@@ -6251,7 +6251,8 @@
           "currency": "USD",
           "type": "sold",
           "url": "https://tcgindex.io/magic-the-gathering/card/magic-the-gathering-revised-edition-bayou-rare",
-          "note": "Well Played-värdering. eBay MP-försäljning 2026-09-30: $379,43 (+frakt) – PriceCharting"
+          "note": "Well Played-värdering. eBay MP-försäljning 2026-09-30: $379,43 (+frakt) – PriceCharting",
+          "condition": "Well Played"
         }
       ],
       "community": [],
@@ -6279,7 +6280,7 @@
       "set": "2ED",
       "collector_number": "236",
       "condition": "Well Played",
-      "identification": "Medel-hög: vit kant och Chaos Orb finns inte i Revised → Unlimited. Rundade hörn talar mot Collectors’ Edition (fyrkantiga hörn, ~4 960 kr trend). Baksida/äkthet ej verifierad.",
+      "identification": "Medel-hög: vit kant och Chaos Orb finns inte i Revised → Unlimited. Rundade hörn talar mot Collectors’ Edition (fyrkantiga hörn, ~5 560 kr trend). Baksida/äkthet ej verifierad.",
       "valuation": {
         "conservative": {
           "price": 945,
@@ -6297,7 +6298,7 @@
           "basis": "NM-referens: Cardmarket-trend non-foil (prisguide 2026-10-16), per kort"
         }
       },
-      "notes": "Från pärmsida (foto 16 okt 2026). Skick: Well Played (enligt Gustaf). Identifiering: Medel-hög: vit kant och Chaos Orb finns inte i Revised → Unlimited. Rundade hörn talar mot Collectors’ Edition (fyrkantiga hörn, ~4 960 kr trend). Baksida/äkthet ej verifierad. Inköpspris okänt.",
+      "notes": "Från pärmsida (foto 16 okt 2026). Skick: Well Played (enligt Gustaf). Identifiering: Medel-hög: vit kant och Chaos Orb finns inte i Revised → Unlimited. Rundade hörn talar mot Collectors’ Edition (fyrkantiga hörn, ~5 560 kr trend). Baksida/äkthet ej verifierad. Inköpspris okänt.",
       "snapshots": [
         {
           "date": "2026-10-16",
@@ -6315,7 +6316,8 @@
           "currency": "USD",
           "type": "sold",
           "url": "https://www.pricecharting.com/game/magic-unlimited/chaos-orb",
-          "note": "Well Played-värdering. TCGplayer MP $1 022,49 (TCGIndex); HP sålda $750–859"
+          "note": "Well Played-värdering. TCGplayer MP $1 022,49 (TCGIndex); HP sålda $750–859",
+          "condition": "Well Played"
         }
       ],
       "community": [],
@@ -6379,7 +6381,8 @@
           "currency": "EUR",
           "type": "listing",
           "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
-          "note": "Well Played-värdering. "
+          "note": "Well Played-värdering. ",
+          "condition": "Well Played"
         }
       ],
       "community": [],
@@ -6443,7 +6446,8 @@
           "currency": "EUR",
           "type": "listing",
           "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
-          "note": "Well Played-värdering. "
+          "note": "Well Played-värdering. ",
+          "condition": "Well Played"
         }
       ],
       "community": [],
@@ -6507,7 +6511,8 @@
           "currency": "EUR",
           "type": "listing",
           "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
-          "note": "Well Played-värdering. "
+          "note": "Well Played-värdering. ",
+          "condition": "Well Played"
         }
       ],
       "community": [],
@@ -6571,7 +6576,8 @@
           "currency": "EUR",
           "type": "listing",
           "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
-          "note": "Well Played-värdering. Inget played-specifikt pris hittat; Cardmarket played-filter blockerat (Cloudflare)"
+          "note": "Well Played-värdering. Inget played-specifikt pris hittat; Cardmarket played-filter blockerat (Cloudflare)",
+          "condition": "Well Played"
         }
       ],
       "community": [],

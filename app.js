@@ -38,10 +38,13 @@ const ic = (n, s = 20) => `<svg class=i viewBox="0 0 24 24" style="width:${s}px;
 
 // ---------- beräkningar ----------
 const val = (i, k) => { const v = i.valuation[k] || i.valuation.mid; return sek(v.price, v.currency); };
-const bench = it => { const t = it.snapshots.filter(s => s.type === "trend" && s.source.toLowerCase().includes("cardmarket") && !s.approx);
+const condAdj = it => !!(it.condition && !/^NM/i.test(it.condition));
+const nmTrend = it => { const t = it.snapshots.filter(s => s.type === "trend" && s.source.toLowerCase().includes("cardmarket") && !s.approx); if (!t.length) return null; const s = t.reduce((a, b) => b.date > a.date ? b : a); return sek(s.price, s.currency); };
+const bench = it => { if (condAdj(it)) return [val(it, "mid"), {cond: it.condition, basis: it.valuation.mid.basis}]; const t = it.snapshots.filter(s => s.type === "trend" && s.source.toLowerCase().includes("cardmarket") && !s.approx);
   if (!t.length) return [null, null]; const s = t.reduce((a, b) => b.date > a.date ? b : a); return [sek(s.price, s.currency), s]; };
 // prisserie för ett objekt: den trendkälla som har flest olika datum (helst Cardmarket)
 function series(it) {
+  if (condAdj(it)) { const pts = it.snapshots.filter(s => s.condition === it.condition && sek(s.price, s.currency)).map(s => [dnum(s.date), sek(s.price, s.currency)]).sort((a, b) => a[0] - b[0]); if (pts.length) return {src: it.condition, pts}; }
   const by = {};
   for (const s of it.snapshots) if (s.type === "trend" && !s.approx && sek(s.price, s.currency)) {
     const sl = s.source.toLowerCase(), k = sl.includes("prisguide") ? "Cardmarket prisguide" : sl.includes("cardmarket") ? "Cardmarket" : s.source.split(" ")[0];
@@ -111,8 +114,8 @@ const alertChips = it => alertState(it).map(a => `<span class="chip ${a.hit ? "c
 
 // ---------- grafer ----------
 function lineChart(lines, {w = innerWidth < 600 ? 400 : 900, h = innerWidth < 600 ? 240 : 230, pad = 44, cost = null} = {}) {
-  const all = lines.flatMap(l => l.pts); if (all.length < 2) return '<div class="empty">För få datapunkter ännu – grafen fylls på vid varje prisuppdatering.</div>';
-  let x0 = Math.min(...all.map(p => p[0])), x1 = Math.max(...all.map(p => p[0])); if (x1 === x0) x0 -= 1;
+  const all = lines.flatMap(l => l.pts); if (all.length < 1) return '<div class="empty">För få datapunkter ännu – grafen fylls på vid varje prisuppdatering.</div>';
+  let x0 = Math.min(...all.map(p => p[0])), x1 = Math.max(...all.map(p => p[0])); const one = x1 === x0; if (one) { x0 -= 0.5; x1 += 0.5; }
   const ys = all.map(p => p[1]).concat(cost != null ? [cost] : []); const lo = Math.min(...ys) * .92, hi = Math.max(...ys) * 1.04;
   const X = d => pad + (d - x0) / (x1 - x0) * (w - pad - 8), Y = v => h - 24 - (v - lo) / (hi - lo) * (h - 36);
   let g = `<svg viewBox="0 0 ${w} ${h}"><defs><linearGradient id=gf x1=0 y1=0 x2=0 y2=1><stop offset=0 stop-color="#8b7cf6" stop-opacity=".35"/><stop offset=1 stop-color="#8b7cf6" stop-opacity="0"/></linearGradient></defs>`;
@@ -124,12 +127,13 @@ function lineChart(lines, {w = innerWidth < 600 ? 400 : 900, h = innerWidth < 60
     if (p.length > 1 && !l.dots) g += `<path d="${path}" fill=none stroke="${l.color}" stroke-width=2.6 stroke-linejoin=round />`;
     for (const q of p) if (l.dots || l.end) g += `<circle cx=${X(q[0])} cy=${Y(q[1])} r=${l.dots ? 3.5 : 0} fill="${l.color}"><title>${iso(q[0])}: ${kr(q[1])}${q[2] ? " · " + esc(q[2]) : ""}</title></circle>`;
     const e = p[p.length - 1]; g += `<circle cx=${X(e[0])} cy=${Y(e[1])} r=4.5 fill="${l.color}" stroke="#121826" stroke-width=2 />`; }
-  return g + `<text x=${pad} y=${h - 6} class=ax>${iso(x0)}</text><text x=${w - 8} y=${h - 6} class=ax text-anchor=end>${iso(x1)}</text></svg>`;
+  return g + (one ? `<text x=${(pad + w - 8) / 2} y=${h - 6} class=ax text-anchor=middle>${iso(x0 + 0.5)}</text></svg>` : `<text x=${pad} y=${h - 6} class=ax>${iso(x0)}</text><text x=${w - 8} y=${h - 6} class=ax text-anchor=end>${iso(x1)}</text></svg>`);
 }
 function itemChart(it) {
   const lines = Object.keys(TYPES).map(t => ({color: COL[t], dots: t !== "trend", pts: it.snapshots.filter(s => s.type === t && !s.approx && sek(s.price, s.currency)).map(s => [dnum(s.date), sek(s.price, s.currency), s.source])}));
   const tr = series(it); lines[0] = {color: COL.trend, fill: true, pts: tr.pts.map(p => [...p, tr.src])};
-  return `<div class=legend style="margin-bottom:6px">${Object.keys(TYPES).map(t => `<span><i style="background:${COL[t]}"></i>${TYPES[t]}</span>`).join("")}${it.purchase_price_sek ? '<span><i style="background:#8a96ab"></i>köppris</span>' : ""}</div>` + lineChart(lines, {cost: it.purchase_price_sek || null});
+  if (condAdj(it)) { const nm = it.snapshots.filter(s => s.type === "trend" && sek(s.price, s.currency)).map(s => [dnum(s.date), sek(s.price, s.currency), "NM-referens: " + s.source]); lines.push({color: "#5b6577", dots: true, pts: nm}); }
+  return `<div class=legend style="margin-bottom:6px">${Object.keys(TYPES).map(t => `<span><i style="background:${COL[t]}"></i>${t === "trend" && condAdj(it) ? "värde (" + esc(it.condition) + ")" : TYPES[t]}</span>`).join("")}${condAdj(it) ? '<span><i style="background:#5b6577"></i>NM-trend (ref.)</span>' : ""}${it.purchase_price_sek ? '<span><i style="background:#8a96ab"></i>köppris</span>' : ""}</div>` + lineChart(lines, {cost: it.purchase_price_sek || null});
 }
 function spark(it) { const p = series(it).pts; if (new Set(p.map(x => x[0])).size < 2) return "";
   const w = 64, h = 24, xs = p.map(q => q[0]), ys = p.map(q => q[1]), x0 = Math.min(...xs), x1 = Math.max(...xs), y0 = Math.min(...ys), y1 = Math.max(...ys);
@@ -171,7 +175,7 @@ function details(it, full) {
   const src = sources(it, full);
   return `<div class=in>${full ? `<p class="sm mut">${esc(it.notes)}</p>` : ""}<h4>Prishistorik (SEK)</h4><div class=pchart>${itemChart(it)}</div>
     ${(it.alerts || []).length ? `<h4>Prisbevakning</h4>${alertState(it).map(a => `<div class=sm style="margin-bottom:6px"><span class="chip ${a.hit ? "c-a" : "c-n"}">${ic("bell", 12)} ${a.type === "below" ? "under" : "över"} ${kr(a.sek)}</span> <span class=mut>nu ${kr(a.cur)}</span></div>`).join("")}` : ""}
-    <h4>Bästa erbjudanden${b ? ` · trend ${kr(b)}` : ""}</h4>${offerRows(offersOf(it), false, full)}
+    <h4>Bästa erbjudanden${b ? (bs && bs.cond ? ` · värde ${esc(bs.cond)} ${kr(b)}` : ` · trend ${kr(b)}`) : ""}</h4>${bs && bs.cond && nmTrend(it) ? `<p class="xs mut" style="margin:-4px 0 8px">NM-trend (Cardmarket) ${kr(nmTrend(it))} – endast referens.</p>` : ""}${offerRows(offersOf(it), false, full)}
     ${aucs.length ? `<h4>Auktioner</h4>${aucRows(aucs, full, itemHref(it))}` : ""}
     ${it.cardmarket_url ? `<p class=sm><a href="${esc(it.cardmarket_url)}" target=_blank rel=noopener>${ic("ext", 13)} Cardmarket – engelska annonser</a></p>` : ""}
     ${full ? `<h4>Källor</h4>${src}<h4>Forum &amp; community</h4>${community(it, true)}${it.msrp ? `<p class="sm mut">MSRP <a href="${esc(it.msrp.url)}" target=_blank rel=noopener>${money(it.msrp.price, it.msrp.currency)}</a></p>` : ""}
@@ -226,7 +230,7 @@ function vOverview() {
   return `<div class=top><div><div class=h1>Översikt</div></div><div class=upd><span class=live></span>Uppdaterad ${esc(P.last_updated)}</div></div>
   <section class=hero><div class=lbl>Portföljvärde</div><div class=val>${kr(t.mid)}</div>
     <span class="chip ${t.unreal >= 0 ? "c-g" : "c-r"}">${t.unreal >= 0 ? "▲" : "▼"} ${kr(Math.abs(t.unreal))} · ${pctTxt(t.unreal / t.cost * 100)}</span> <span class="sm mut">${eur(t.mid)} · orealiserat</span>
-    <div class=kpis><div class=kpi><span>Investerat</span><b>${kr(t.cost)}</b></div><div class=kpi><span>Realiserat</span><b class="${t.realised > 0 ? "g" : ""}">${kr(t.realised)}</b></div><div class=kpi><span>Spann</span><b>${fmt(t.lo)}–${fmt(t.hi)}</b></div></div></section>
+    <div class=kpis><div class=kpi><span>Investerat</span><b>${kr(t.cost)}</b></div><div class=kpi><span>Realiserat</span><b class="${t.realised > 0 ? "g" : ""}">${kr(t.realised)}</b></div><div class=kpi><span>Spann</span><b style="white-space:nowrap">${fmt(t.lo / 1000, 1)}–${fmt(t.hi / 1000, 1)}<small class=mut> tkr</small></b></div></div></section>
   ${bestOf()}
   ${restock()}
   <div class="card chartcard"><div class=top style="margin-bottom:8px"><div class=legend><span><i style="background:#8b7cf6"></i>Marknadsvärde</span><span><i style="background:#8a96ab"></i>Investerat</span></div>
@@ -274,8 +278,8 @@ function vCollection() {
     const allCards = owned.filter(i => i.kind === "card"), rest = owned.filter(i => i.kind !== "card"), all = location.hash === "#kort";
     const BULK = P.bulk_threshold_sek || 20, bulk = allCards.filter(i => val(i, "mid") < BULK), cards = allCards.filter(i => val(i, "mid") >= BULK).sort((x, y) => val(y, "mid") * (h[y.id]?.qty ?? y.quantity) - val(x, "mid") * (h[x.id]?.qty ?? x.quantity));
     const bq = bulk.reduce((s, i) => s + (h[i.id]?.qty ?? i.quantity), 0), bv = bulk.reduce((s, i) => s + val(i, "mid") * (h[i.id]?.qty ?? i.quantity), 0);
-    const bulkRow = bulk.length ? `<details class=row style="display:block;cursor:pointer"><summary style="display:flex;justify-content:space-between;align-items:center;list-style:none"><div><div class=nm>Bulk (under ${BULK} kr/st)</div><div class=meta>${bq} kort · ${bulk.length} olika · inköpspris okänt</div></div><div class=rt><b>${kr(bv)}</b></div></summary><div class=list style="margin-top:8px">${bulk.map(row).join("")}</div></details>` : "";
-    return `<div class=list>${rest.map(row).join("")}</div>${allCards.length ? `<div class=sec><h2>Kort</h2><span>${allCards.length} st${cards.length > LIM ? ` · <a href="#${all ? "samling" : "kort"}">${all ? "Visa färre" : "Visa alla"}</a>` : ""}</span></div><div class=list>${(all ? cards : cards.slice(0, LIM)).map(row).join("")}${bulkRow}</div>` : ""}`; })()}
+    const bulkRow = bulk.length ? `<details class=bulk><summary class=row style="list-style:none;cursor:pointer"><div class=th>${img(bulk[0])}</div><div><div class=nm>Bulk (under ${BULK} kr/st)</div><div class=meta>${bq} kort · ${bulk.length} unika · inköpspris okänt</div><div class=alerts><span class="chip c-n">${ic("chev", 12)} Tryck för att visa</span></div></div><div class=rt><b>${kr(bv)}</b></div></summary><div class=list style="margin-top:8px">${bulk.map(row).join("")}</div></details>` : "";
+    return `<div class=list>${rest.map(row).join("")}</div>${allCards.length ? `<div class=sec><h2>Kort</h2><span>${allCards.reduce((n, i) => n + (h[i.id]?.qty ?? i.quantity), 0)} kort, ${allCards.length} unika${cards.length > LIM ? ` · <a href="#${all ? "samling" : "kort"}">${all ? "Visa färre" : "Visa alla"}</a>` : ""}</span></div><div class=list>${(all ? cards : cards.slice(0, LIM)).map(row).join("")}${bulkRow}</div>` : ""}`; })()}
   <div class=sec><h2>Transaktioner</h2><span>${tx.length}</span></div>
   <div class=list>${tx.map(t => { const it = ITEMS[t.item_id]; return `<div class=row style="cursor:default"><div class=th>${img(it)}</div><div><div class=nm>${t.type === "buy" ? "Köp" : "Sälj"} · ${esc(short(it?.name || t.item_id))}</div><div class=meta>${t.date || "datum okänt"} · ${esc(t.platform)} · ${t.qty} st${t.fees_sek ? " · avgifter " + kr(t.fees_sek) : ""}${t.note ? " · " + esc(t.note) : ""}</div></div><div class=rt><b class="${t.type === "sell" ? "g" : ""}">${t.type === "buy" ? "−" : "+"}${kr(t.price_sek)}</b></div></div>`; }).join("")}</div>
   ${(() => { const t = totals(); return `<div class=kpis><div class=kpi><span>Orealiserat</span><b class="${t.unreal >= 0 ? "g" : "r"}">${t.unreal >= 0 ? "+" : "−"}${kr(Math.abs(t.unreal))}</b></div><div class=kpi><span>Realiserat</span><b>${kr(t.realised)}</b></div><div class=kpi><span>Investerat</span><b>${kr(t.cost)}</b></div></div>`; })()}${foot()}`;
