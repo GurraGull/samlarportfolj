@@ -1,0 +1,66 @@
+{
+  "checked_at": "2026-10-16T08:23+02:00",
+  "source": "browser product pages + search collector booster",
+  "watched_products": [
+    {
+      "id": 402000,
+      "name": "Pokemon 30th Celebration Elite Trainer Box",
+      "price": 999.0,
+      "web": 0,
+      "stores": 0,
+      "in_stock": false,
+      "url": "https://www.webhallen.com/se/product/402000-Pokemon-30th-Celebration-Elite-Trainer-Box",
+      "notes": "Ej i lager webb/butik; max 1/kund; medlemmar; endast butikshämtning"
+    },
+    {
+      "id": 400151,
+      "name": "Magic the Gathering: The Hobbit Collector Display (12 boosters)",
+      "price": 4999.0,
+      "web": 0,
+      "stores": 0,
+      "in_stock": false,
+      "url": "https://www.webhallen.com/se/product/400151-Magic-the-Gathering-The-Hobbit-Collector-Display-12-boosters",
+      "notes": "Max 4/kund; medlemmar"
+    },
+    {
+      "id": 401344,
+      "name": "Magic: The Gathering Reality Fracture Collector Booster",
+      "price": 3399.0,
+      "web": 2,
+      "stores": 8,
+      "stores_detail": "2 st vardera: Hötorget/Sveavägen, Fridhemsplan, Solna Centrum, Farsta Centrum",
+      "in_stock": true,
+      "url": "https://www.webhallen.com/se/product/401344-Magic-The-Gathering-Reality-Fracture-Collector-Booster",
+      "notes": "Max 1/kund; medlemmar; Webblager 2; Butiker 2/ställe (minst 4 butiker)"
+    }
+  ],
+  "collector_displays_seen": [
+    {
+      "id": 400151,
+      "name": "Magic the Gathering: The Hobbit Collector Display (12 boosters)",
+      "price": 4999.0,
+      "in_stock": false
+    },
+    {
+      "id": 395310,
+      "name": "Magic the Gathering: Marvel Super Heroes Collector Display (12 boosters)",
+      "price": null,
+      "in_stock": false,
+      "status": "discontinued"
+    },
+    {
+      "id": 401321,
+      "name": "Magic the Gathering: Star Trek Collector Display (12 boosters)",
+      "price": 4999.0,
+      "in_stock": false,
+      "release": "2026-11-13",
+      "status": "preorder"
+    }
+  ],
+  "notes": "RESTTOCK: Reality Fracture (401344) i lager Webblager=2, Butiker=2×4 Stockholm-butiker. Pokemon ETB + Hobbit OOS. Inga nya Collector Displays vs baseline.",
+  "appeared_since_prior": [],
+  "restocked_since_prior": [
+    401344
+  ],
+  "browser_confirmed": true
+}
