@@ -6197,7 +6197,8 @@
         "credit": "Kortbild via Scryfall (© Wizards of the Coast)",
         "source_url": "https://scryfall.com/card/frf/1",
         "downloaded": "2026-10-16"
-      }
+      },
+      "condition": "NM (antaget)"
     },
     {
       "id": "mtg-bayou-3ed",
@@ -6213,26 +6214,26 @@
       "foil": false,
       "set": "3ED",
       "collector_number": "283",
-      "condition": "NM antaget – ej verifierat",
+      "condition": "Well Played",
       "identification": "Hög: Revised-ordalydelsen (\"Add either … to your mana pool. Counts as both…\") och blekt Revised-tryck jämfört med Unlimited. Äkthet ej verifierad (Revised-dualer förfalskas ofta).",
       "valuation": {
         "conservative": {
-          "price": 224.99,
-          "currency": "EUR",
-          "basis": "Cardmarket lägsta (prisguide 2026-10-16)"
+          "price": 270.28,
+          "currency": "USD",
+          "basis": "TCGplayer Moderately Played EN (via TCGIndex, 2026-10-16)"
         },
         "mid": {
-          "price": 264.15,
-          "currency": "EUR",
-          "basis": "Cardmarket-trend non-foil (prisguide 2026-10-16), per kort"
+          "price": 270.28,
+          "currency": "USD",
+          "basis": "TCGplayer Moderately Played EN (via TCGIndex, 2026-10-16) – Well Played"
         },
         "high": {
-          "price": 296.44,
+          "price": 264.15,
           "currency": "EUR",
-          "basis": "Cardmarket trend/30d-snitt (högsta)"
+          "basis": "NM-referens: Cardmarket-trend non-foil (prisguide 2026-10-16), per kort"
         }
       },
-      "notes": "Från pärmsida (foto 16 okt 2026). Skick antaget NM, ej verifierat. Identifiering: Hög: Revised-ordalydelsen (\"Add either … to your mana pool. Counts as both…\") och blekt Revised-tryck jämfört med Unlimited. Äkthet ej verifierad (Revised-dualer förfalskas ofta). Inköpspris okänt.",
+      "notes": "Från pärmsida (foto 16 okt 2026). Skick: Well Played (enligt Gustaf). Identifiering: Hög: Revised-ordalydelsen (\"Add either … to your mana pool. Counts as both…\") och blekt Revised-tryck jämfört med Unlimited. Äkthet ej verifierad (Revised-dualer förfalskas ofta). Inköpspris okänt.",
       "snapshots": [
         {
           "date": "2026-10-16",
@@ -6242,6 +6243,15 @@
           "type": "trend",
           "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
           "note": "idProduct 5811, non-foil; avg30 296.44"
+        },
+        {
+          "date": "2026-10-16",
+          "source": "TCGplayer Moderately Played EN",
+          "price": 270.28,
+          "currency": "USD",
+          "type": "sold",
+          "url": "https://tcgindex.io/magic-the-gathering/card/magic-the-gathering-revised-edition-bayou-rare",
+          "note": "Well Played-värdering. eBay MP-försäljning 2026-09-30: $379,43 (+frakt) – PriceCharting"
         }
       ],
       "community": [],
@@ -6268,26 +6278,26 @@
       "foil": false,
       "set": "2ED",
       "collector_number": "236",
-      "condition": "NM antaget – ej verifierat",
+      "condition": "Well Played",
       "identification": "Medel-hög: vit kant och Chaos Orb finns inte i Revised → Unlimited. Rundade hörn talar mot Collectors’ Edition (fyrkantiga hörn, ~4 960 kr trend). Baksida/äkthet ej verifierad.",
       "valuation": {
         "conservative": {
-          "price": 850,
-          "currency": "EUR",
-          "basis": "Cardmarket lägsta (prisguide 2026-10-16)"
+          "price": 945,
+          "currency": "USD",
+          "basis": "eBay såld \"Moderately Played\" 2026-06-30 (PriceCharting)"
         },
         "mid": {
-          "price": 1242.71,
-          "currency": "EUR",
-          "basis": "Cardmarket-trend non-foil (prisguide 2026-10-16), per kort"
+          "price": 945,
+          "currency": "USD",
+          "basis": "eBay såld \"Moderately Played\" 2026-06-30 (PriceCharting) – Well Played"
         },
         "high": {
           "price": 1242.71,
           "currency": "EUR",
-          "basis": "Cardmarket trend/30d-snitt (högsta)"
+          "basis": "NM-referens: Cardmarket-trend non-foil (prisguide 2026-10-16), per kort"
         }
       },
-      "notes": "Från pärmsida (foto 16 okt 2026). Skick antaget NM, ej verifierat. Identifiering: Medel-hög: vit kant och Chaos Orb finns inte i Revised → Unlimited. Rundade hörn talar mot Collectors’ Edition (fyrkantiga hörn, ~4 960 kr trend). Baksida/äkthet ej verifierad. Inköpspris okänt.",
+      "notes": "Från pärmsida (foto 16 okt 2026). Skick: Well Played (enligt Gustaf). Identifiering: Medel-hög: vit kant och Chaos Orb finns inte i Revised → Unlimited. Rundade hörn talar mot Collectors’ Edition (fyrkantiga hörn, ~4 960 kr trend). Baksida/äkthet ej verifierad. Inköpspris okänt.",
       "snapshots": [
         {
           "date": "2026-10-16",
@@ -6297,6 +6307,15 @@
           "type": "trend",
           "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
           "note": "idProduct 5099, non-foil; avg30 1078.82"
+        },
+        {
+          "date": "2026-10-16",
+          "source": "eBay såld \"Moderately Played\" 2026-06-30",
+          "price": 945,
+          "currency": "USD",
+          "type": "sold",
+          "url": "https://www.pricecharting.com/game/magic-unlimited/chaos-orb",
+          "note": "Well Played-värdering. TCGplayer MP $1 022,49 (TCGIndex); HP sålda $750–859"
         }
       ],
       "community": [],
@@ -6323,26 +6342,26 @@
       "foil": false,
       "set": "MM2",
       "collector_number": "200",
-      "condition": "NM antaget – ej verifierat",
+      "condition": "Well Played",
       "identification": "Hög: samlarnummer 200/249 och MM2-symbol synliga.",
       "valuation": {
         "conservative": {
           "price": 0.1,
           "currency": "EUR",
-          "basis": "Cardmarket lägsta (prisguide 2026-10-16)"
+          "basis": "Cardmarket lägsta listning, alla skick (prisguide 2026-10-16)"
         },
         "mid": {
-          "price": 0.6,
+          "price": 0.1,
           "currency": "EUR",
-          "basis": "Cardmarket-trend non-foil (prisguide 2026-10-16), per kort"
+          "basis": "Cardmarket lägsta listning, alla skick (prisguide 2026-10-16) – Well Played"
         },
         "high": {
           "price": 0.6,
           "currency": "EUR",
-          "basis": "Cardmarket trend/30d-snitt (högsta)"
+          "basis": "NM-referens: Cardmarket-trend non-foil (prisguide 2026-10-16), per kort"
         }
       },
-      "notes": "Från pärmsida (foto 16 okt 2026). Skick antaget NM, ej verifierat. Identifiering: Hög: samlarnummer 200/249 och MM2-symbol synliga. Inköpspris okänt.",
+      "notes": "Från pärmsida (foto 16 okt 2026). Skick: Well Played (enligt Gustaf). Identifiering: Hög: samlarnummer 200/249 och MM2-symbol synliga. Inköpspris okänt.",
       "snapshots": [
         {
           "date": "2026-10-16",
@@ -6352,6 +6371,15 @@
           "type": "trend",
           "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
           "note": "idProduct 282855, non-foil; avg30 0.37"
+        },
+        {
+          "date": "2026-10-16",
+          "source": "Cardmarket lägsta listning, alla skick",
+          "price": 0.1,
+          "currency": "EUR",
+          "type": "listing",
+          "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
+          "note": "Well Played-värdering. "
         }
       ],
       "community": [],
@@ -6378,26 +6406,26 @@
       "foil": false,
       "set": "MM2",
       "collector_number": "193",
-      "condition": "NM antaget – ej verifierat",
+      "condition": "Well Played",
       "identification": "Hög för kort/set; samlarnumret är #193 i MM2 (inte #181 – MM2 #181 är Necrogenesis).",
       "valuation": {
         "conservative": {
           "price": 0.4,
           "currency": "EUR",
-          "basis": "Cardmarket lägsta (prisguide 2026-10-16)"
+          "basis": "Cardmarket lägsta listning, alla skick (prisguide 2026-10-16)"
         },
         "mid": {
-          "price": 1,
+          "price": 0.4,
           "currency": "EUR",
-          "basis": "Cardmarket-trend non-foil (prisguide 2026-10-16), per kort"
+          "basis": "Cardmarket lägsta listning, alla skick (prisguide 2026-10-16) – Well Played"
         },
         "high": {
           "price": 1,
           "currency": "EUR",
-          "basis": "Cardmarket trend/30d-snitt (högsta)"
+          "basis": "NM-referens: Cardmarket-trend non-foil (prisguide 2026-10-16), per kort"
         }
       },
-      "notes": "Från pärmsida (foto 16 okt 2026). Skick antaget NM, ej verifierat. Identifiering: Hög för kort/set; samlarnumret är #193 i MM2 (inte #181 – MM2 #181 är Necrogenesis). Inköpspris okänt.",
+      "notes": "Från pärmsida (foto 16 okt 2026). Skick: Well Played (enligt Gustaf). Identifiering: Hög för kort/set; samlarnumret är #193 i MM2 (inte #181 – MM2 #181 är Necrogenesis). Inköpspris okänt.",
       "snapshots": [
         {
           "date": "2026-10-16",
@@ -6407,6 +6435,15 @@
           "type": "trend",
           "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
           "note": "idProduct 282794, non-foil; avg30 0.94"
+        },
+        {
+          "date": "2026-10-16",
+          "source": "Cardmarket lägsta listning, alla skick",
+          "price": 0.4,
+          "currency": "EUR",
+          "type": "listing",
+          "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
+          "note": "Well Played-värdering. "
         }
       ],
       "community": [],
@@ -6433,26 +6470,26 @@
       "foil": false,
       "set": "MM2",
       "collector_number": "23",
-      "condition": "NM antaget – ej verifierat",
+      "condition": "Well Played",
       "identification": "Hög: 023/249 MM2 synligt.",
       "valuation": {
         "conservative": {
           "price": 0.35,
           "currency": "EUR",
-          "basis": "Cardmarket lägsta (prisguide 2026-10-16)"
+          "basis": "Cardmarket lägsta listning, alla skick (prisguide 2026-10-16)"
         },
         "mid": {
-          "price": 0.69,
+          "price": 0.35,
           "currency": "EUR",
-          "basis": "Cardmarket-trend non-foil (prisguide 2026-10-16), per kort"
+          "basis": "Cardmarket lägsta listning, alla skick (prisguide 2026-10-16) – Well Played"
         },
         "high": {
-          "price": 0.87,
+          "price": 0.69,
           "currency": "EUR",
-          "basis": "Cardmarket trend/30d-snitt (högsta)"
+          "basis": "NM-referens: Cardmarket-trend non-foil (prisguide 2026-10-16), per kort"
         }
       },
-      "notes": "Från pärmsida (foto 16 okt 2026). Skick antaget NM, ej verifierat. Identifiering: Hög: 023/249 MM2 synligt. Inköpspris okänt.",
+      "notes": "Från pärmsida (foto 16 okt 2026). Skick: Well Played (enligt Gustaf). Identifiering: Hög: 023/249 MM2 synligt. Inköpspris okänt.",
       "snapshots": [
         {
           "date": "2026-10-16",
@@ -6462,6 +6499,15 @@
           "type": "trend",
           "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
           "note": "idProduct 282809, non-foil; avg30 0.87"
+        },
+        {
+          "date": "2026-10-16",
+          "source": "Cardmarket lägsta listning, alla skick",
+          "price": 0.35,
+          "currency": "EUR",
+          "type": "listing",
+          "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
+          "note": "Well Played-värdering. "
         }
       ],
       "community": [],
@@ -6488,26 +6534,26 @@
       "foil": false,
       "set": "DMR",
       "collector_number": "284",
-      "condition": "NM antaget – ej verifierat",
+      "condition": "Well Played",
       "identification": "Hög: gammal (1997) ram, DMR-symbol i mythic-orange, Donato Giancola, \"284\" och ©2023 i nederkant. Röd kant = hylsan. Non-foil antaget (ingen synlig foil-glans).",
       "valuation": {
         "conservative": {
           "price": 49.99,
           "currency": "EUR",
-          "basis": "Cardmarket lägsta (prisguide 2026-10-16)"
+          "basis": "Cardmarket lägsta listning, alla skick (prisguide 2026-10-16)"
         },
         "mid": {
-          "price": 54.72,
+          "price": 49.99,
           "currency": "EUR",
-          "basis": "Cardmarket-trend non-foil (prisguide 2026-10-16), per kort"
+          "basis": "Cardmarket lägsta listning, alla skick (prisguide 2026-10-16) – Well Played"
         },
         "high": {
           "price": 54.72,
           "currency": "EUR",
-          "basis": "Cardmarket trend/30d-snitt (högsta)"
+          "basis": "NM-referens: Cardmarket-trend non-foil (prisguide 2026-10-16), per kort"
         }
       },
-      "notes": "Från pärmsida (foto 16 okt 2026). Skick antaget NM, ej verifierat. Identifiering: Hög: gammal (1997) ram, DMR-symbol i mythic-orange, Donato Giancola, \"284\" och ©2023 i nederkant. Röd kant = hylsan. Non-foil antaget (ingen synlig foil-glans). Inköpspris okänt.",
+      "notes": "Från pärmsida (foto 16 okt 2026). Skick: Well Played (enligt Gustaf). Identifiering: Hög: gammal (1997) ram, DMR-symbol i mythic-orange, Donato Giancola, \"284\" och ©2023 i nederkant. Röd kant = hylsan. Non-foil antaget (ingen synlig foil-glans). Inköpspris okänt.",
       "snapshots": [
         {
           "date": "2026-10-16",
@@ -6517,6 +6563,15 @@
           "type": "trend",
           "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
           "note": "idProduct 688405, non-foil; avg30 54.51"
+        },
+        {
+          "date": "2026-10-16",
+          "source": "Cardmarket lägsta listning, alla skick",
+          "price": 49.99,
+          "currency": "EUR",
+          "type": "listing",
+          "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
+          "note": "Well Played-värdering. Inget played-specifikt pris hittat; Cardmarket played-filter blockerat (Cloudflare)"
         }
       ],
       "community": [],
