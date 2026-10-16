@@ -6646,6 +6646,349 @@
         "source_url": "https://scryfall.com/card/dmr/284",
         "downloaded": "2026-10-16"
       }
+    },
+    {
+      "id": "hk-roy-94ult-ppm6",
+      "kind": "card",
+      "name": "Patrick Roy – 1994-95 Fleer Ultra Premier Pad Men #6/6",
+      "category": "Hockey",
+      "language": "Engelska",
+      "quantity": 1,
+      "purchase_price_sek": null,
+      "purchase_date": null,
+      "status": "owned",
+      "condition": "EX-NM (observerat, ej graderat)",
+      "valuation": {
+        "conservative": {
+          "price": 14.62,
+          "currency": "USD",
+          "basis": "COMC raw-snitt"
+        },
+        "mid": {
+          "price": 19.11,
+          "currency": "USD",
+          "basis": "COMC raw \"EX to NM\" (4-årsförsäljning)"
+        },
+        "high": {
+          "price": 94.55,
+          "currency": "USD",
+          "basis": "COMC PSA 8 (ref.)"
+        }
+      },
+      "notes": "Hockeykort i screwdown. Inköpspris okänt. COMC raw-snitt $14.62 (3 sålda); Aukro såld 24 sep 2026 103,08 lei (8 budgivare); Tradera-auktion (hörnskador) 112 kr bud sep 2026; COMC PSA 8 $94.55 (ref.)",
+      "snapshots": [
+        {
+          "date": "2026-10-16",
+          "source": "COMC raw \"EX to NM\" (4-årsförsäljning)",
+          "price": 19.11,
+          "currency": "USD",
+          "type": "sold",
+          "url": "https://www.comc.com/Cards/Hockey/1994-95/Fleer_Ultra_-_Premier_Pad_Men/6/Patrick_Roy/209339"
+        }
+      ],
+      "community": [],
+      "offers": [],
+      "alerts": [],
+      "image": {
+        "src": "images/hk-roy-94ult-ppm6.webp",
+        "credit": "Foto från Gustaf 16 okt 2026",
+        "source_url": null,
+        "downloaded": "2026-10-16"
+      }
+    },
+    {
+      "id": "hk-gretzky-94ud-ig15",
+      "kind": "card",
+      "name": "Wayne Gretzky – 1994-95 Upper Deck Ice Gallery #IG15",
+      "category": "Hockey",
+      "language": "Engelska",
+      "quantity": 1,
+      "purchase_price_sek": null,
+      "purchase_date": null,
+      "status": "owned",
+      "condition": "Ej bedömt (screwdown)",
+      "valuation": {
+        "conservative": {
+          "price": 5.72,
+          "currency": "USD",
+          "basis": "Sportlots NM"
+        },
+        "mid": {
+          "price": 5.72,
+          "currency": "USD",
+          "basis": "Sportlots NM"
+        },
+        "high": {
+          "price": 5.72,
+          "currency": "USD",
+          "basis": "Sportlots NM"
+        }
+      },
+      "notes": "Hockeykort i screwdown. Inköpspris okänt.",
+      "snapshots": [
+        {
+          "date": "2026-10-16",
+          "source": "Sportlots NM",
+          "price": 5.72,
+          "currency": "USD",
+          "type": "listing",
+          "url": "https://www.sportlots.com/Hockey/card_values/1994-Upper-Deck-Ice-Gallery.tpl"
+        }
+      ],
+      "community": [],
+      "offers": [],
+      "alerts": [],
+      "image": {
+        "src": "images/hk-gretzky-94ud-ig15.webp",
+        "credit": "Foto från Gustaf 16 okt 2026",
+        "source_url": null,
+        "downloaded": "2026-10-16"
+      }
+    },
+    {
+      "id": "hk-lindros-94don-elite7",
+      "kind": "card",
+      "name": "Eric Lindros – 1994-95 Donruss Elite Series #7/10 (00281/10 000)",
+      "category": "Hockey",
+      "language": "Engelska",
+      "quantity": 1,
+      "purchase_price_sek": null,
+      "purchase_date": null,
+      "status": "owned",
+      "condition": "Ej bedömt (screwdown)",
+      "valuation": {
+        "conservative": {
+          "price": 5.02,
+          "currency": "USD",
+          "basis": "TCDB median raw (sålda)"
+        },
+        "mid": {
+          "price": 5.02,
+          "currency": "USD",
+          "basis": "TCDB median raw (sålda)"
+        },
+        "high": {
+          "price": 5.02,
+          "currency": "USD",
+          "basis": "TCDB median raw (sålda)"
+        }
+      },
+      "notes": "Hockeykort i screwdown. Inköpspris okänt. Listningar $4,25–25 CAD",
+      "snapshots": [
+        {
+          "date": "2026-10-16",
+          "source": "TCDB median raw (sålda)",
+          "price": 5.02,
+          "currency": "USD",
+          "type": "sold",
+          "url": "https://www.tcdb.com/Prices.cfm/sid/5014/1994-95-Donruss-Elite"
+        }
+      ],
+      "community": [],
+      "offers": [],
+      "alerts": [],
+      "image": {
+        "src": "images/hk-lindros-94don-elite7.webp",
+        "credit": "Foto från Gustaf 16 okt 2026",
+        "source_url": null,
+        "downloaded": "2026-10-16"
+      }
+    },
+    {
+      "id": "hk-jagr-95score-dt8",
+      "kind": "card",
+      "name": "Jaromir Jagr – 1995-96 Score Dream Team #8/12",
+      "category": "Hockey",
+      "language": "Engelska",
+      "quantity": 1,
+      "purchase_price_sek": null,
+      "purchase_date": null,
+      "status": "owned",
+      "condition": "Ej bedömt",
+      "valuation": {
+        "conservative": {
+          "price": 3.77,
+          "currency": "USD",
+          "basis": "Sportlots NM"
+        },
+        "mid": {
+          "price": 3.77,
+          "currency": "USD",
+          "basis": "Sportlots NM"
+        },
+        "high": {
+          "price": 3.77,
+          "currency": "USD",
+          "basis": "Sportlots NM"
+        }
+      },
+      "notes": "Hockeykort i screwdown. Inköpspris okänt. År: #8 av 12 matchar 1995-96 (1996-97 Jagr är #7); Pinnacle-copyright ej avläst av mig",
+      "snapshots": [
+        {
+          "date": "2026-10-16",
+          "source": "Sportlots NM",
+          "price": 3.77,
+          "currency": "USD",
+          "type": "listing",
+          "url": "https://www.sportlots.com/Hockey/card_values/1995-Score-Dream-Team.tpl"
+        }
+      ],
+      "community": [],
+      "offers": [],
+      "alerts": [],
+      "image": {
+        "src": "images/hk-jagr-95score-dt8.webp",
+        "credit": "Foto från Gustaf 16 okt 2026",
+        "source_url": null,
+        "downloaded": "2026-10-16"
+      }
+    },
+    {
+      "id": "hk-huss-94leaf-ss2",
+      "kind": "card",
+      "name": "Anders Huss (Brynäs) – 1994-95 Leaf Elit Studio Signatures #2/12",
+      "category": "Hockey",
+      "language": "Engelska",
+      "quantity": 1,
+      "purchase_price_sek": null,
+      "purchase_date": null,
+      "status": "owned",
+      "condition": "Ej bedömt; tryckt autograf (trolig)",
+      "valuation": {
+        "conservative": {
+          "price": 3.0,
+          "currency": "USD",
+          "basis": "Center Ice Collectibles listpris"
+        },
+        "mid": {
+          "price": 3.0,
+          "currency": "USD",
+          "basis": "Center Ice Collectibles listpris"
+        },
+        "high": {
+          "price": 3.0,
+          "currency": "USD",
+          "basis": "Center Ice Collectibles listpris"
+        }
+      },
+      "notes": "Hockeykort i screwdown. Inköpspris okänt. Coolcard 20 kr/st för serien; tryckta autografer",
+      "snapshots": [
+        {
+          "date": "2026-10-16",
+          "source": "Center Ice Collectibles listpris",
+          "price": 3.0,
+          "currency": "USD",
+          "type": "listing",
+          "url": "http://www.centericecollectibles.com/index.aspx?PlayerName=Anders+Huss"
+        }
+      ],
+      "community": [],
+      "offers": [],
+      "alerts": [],
+      "image": {
+        "src": "images/hk-huss-94leaf-ss2.webp",
+        "credit": "Foto från Gustaf 16 okt 2026",
+        "source_url": null,
+        "downloaded": "2026-10-16"
+      }
+    },
+    {
+      "id": "hk-34-94leaf-guest",
+      "kind": "card",
+      "name": "#34 – 1994-95 Leaf Elit Guest Special (spelare ej verifierad)",
+      "category": "Hockey",
+      "language": "Engelska",
+      "quantity": 1,
+      "purchase_price_sek": null,
+      "purchase_date": null,
+      "status": "owned",
+      "condition": "Ej bedömt",
+      "valuation": {
+        "conservative": {
+          "price": 50,
+          "currency": "SEK",
+          "basis": "Coolcard butikspris (serien)"
+        },
+        "mid": {
+          "price": 50,
+          "currency": "SEK",
+          "basis": "Coolcard butikspris (serien)"
+        },
+        "high": {
+          "price": 50,
+          "currency": "SEK",
+          "basis": "Coolcard butikspris (serien)"
+        }
+      },
+      "notes": "Hockeykort i screwdown. Inköpspris okänt. Tradera #6 R. Johansson 74 kr. Trolig spelare #6 R. Johansson, Leksand – ej verifierat",
+      "snapshots": [
+        {
+          "date": "2026-10-16",
+          "source": "Coolcard butikspris (serien)",
+          "price": 50,
+          "currency": "SEK",
+          "type": "listing",
+          "url": "https://www.coolcard.se/en/product/1994-95-swedish-leaf-guest-special-1-mats-sundin-4"
+        }
+      ],
+      "community": [],
+      "offers": [],
+      "alerts": [],
+      "image": {
+        "src": "images/hk-34-94leaf-guest.webp",
+        "credit": "Foto från Gustaf 16 okt 2026",
+        "source_url": null,
+        "downloaded": "2026-10-16"
+      }
+    },
+    {
+      "id": "hk-holzinger-97cc-sq14",
+      "kind": "card",
+      "name": "Brian Holzinger – 1997-98 Collector’s Choice StarQuest #SQ14",
+      "category": "Hockey",
+      "language": "Engelska",
+      "quantity": 1,
+      "purchase_price_sek": null,
+      "purchase_date": null,
+      "status": "owned",
+      "condition": "Ej bedömt",
+      "valuation": {
+        "conservative": {
+          "price": 1.41,
+          "currency": "USD",
+          "basis": "SportsCardsPro ungraded (eBay-baserat)"
+        },
+        "mid": {
+          "price": 1.41,
+          "currency": "USD",
+          "basis": "SportsCardsPro ungraded (eBay-baserat)"
+        },
+        "high": {
+          "price": 1.41,
+          "currency": "USD",
+          "basis": "SportsCardsPro ungraded (eBay-baserat)"
+        }
+      },
+      "notes": "Hockeykort i screwdown. Inköpspris okänt.",
+      "snapshots": [
+        {
+          "date": "2026-10-16",
+          "source": "SportsCardsPro ungraded (eBay-baserat)",
+          "price": 1.41,
+          "currency": "USD",
+          "type": "listing",
+          "url": "https://www.sportscardspro.com/console/hockey-cards-1997-collector%27s-choice-starquest"
+        }
+      ],
+      "community": [],
+      "offers": [],
+      "alerts": [],
+      "image": {
+        "src": "images/hk-holzinger-97cc-sq14.webp",
+        "credit": "Foto från Gustaf 16 okt 2026",
+        "source_url": null,
+        "downloaded": "2026-10-16"
+      }
     }
   ],
   "rate_sources": {
@@ -8350,6 +8693,83 @@
       "fees_sek": 0,
       "platform": "okänd",
       "note": "Inköpspris okänt (pärmsida)"
+    },
+    {
+      "id": "t12",
+      "item_id": "hk-roy-94ult-ppm6",
+      "type": "buy",
+      "date": null,
+      "qty": 1,
+      "price_sek": null,
+      "fees_sek": 0,
+      "platform": "okänd",
+      "note": "Inköpspris okänt (hockeykort)"
+    },
+    {
+      "id": "t13",
+      "item_id": "hk-gretzky-94ud-ig15",
+      "type": "buy",
+      "date": null,
+      "qty": 1,
+      "price_sek": null,
+      "fees_sek": 0,
+      "platform": "okänd",
+      "note": "Inköpspris okänt (hockeykort)"
+    },
+    {
+      "id": "t14",
+      "item_id": "hk-lindros-94don-elite7",
+      "type": "buy",
+      "date": null,
+      "qty": 1,
+      "price_sek": null,
+      "fees_sek": 0,
+      "platform": "okänd",
+      "note": "Inköpspris okänt (hockeykort)"
+    },
+    {
+      "id": "t15",
+      "item_id": "hk-jagr-95score-dt8",
+      "type": "buy",
+      "date": null,
+      "qty": 1,
+      "price_sek": null,
+      "fees_sek": 0,
+      "platform": "okänd",
+      "note": "Inköpspris okänt (hockeykort)"
+    },
+    {
+      "id": "t16",
+      "item_id": "hk-huss-94leaf-ss2",
+      "type": "buy",
+      "date": null,
+      "qty": 1,
+      "price_sek": null,
+      "fees_sek": 0,
+      "platform": "okänd",
+      "note": "Inköpspris okänt (hockeykort)"
+    },
+    {
+      "id": "t17",
+      "item_id": "hk-34-94leaf-guest",
+      "type": "buy",
+      "date": null,
+      "qty": 1,
+      "price_sek": null,
+      "fees_sek": 0,
+      "platform": "okänd",
+      "note": "Inköpspris okänt (hockeykort)"
+    },
+    {
+      "id": "t18",
+      "item_id": "hk-holzinger-97cc-sq14",
+      "type": "buy",
+      "date": null,
+      "qty": 1,
+      "price_sek": null,
+      "fees_sek": 0,
+      "platform": "okänd",
+      "note": "Inköpspris okänt (hockeykort)"
     }
   ],
   "language_filter": {
