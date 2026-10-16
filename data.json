@@ -3207,6 +3207,25 @@
           "restock_watch": true,
           "members_only": true,
           "discontinued": false
+        },
+        {
+          "date": "2026-10-16",
+          "origin": "DE",
+          "seller_rating": null,
+          "manual_stock_check": "browser",
+          "stock_checked_at": "2026-10-16T19:51+02:00",
+          "source": "Amazon.de",
+          "seller": "inget erbjudande",
+          "price": null,
+          "currency": "EUR",
+          "shipping": null,
+          "in_stock": false,
+          "url": "https://www.amazon.de/dp/B0GWSDDFFF",
+          "language": "okänt",
+          "notes": "Listning finns men inget pris/erbjudande ('See options').",
+          "stock_status": "out_of_stock",
+          "backorder": false,
+          "stock_evidence": "Amazon.de sökresultat 16 okt 19:51: ingen pris/köpknapp. Ej hittad på Amazon.se."
         }
       ],
       "image": {
@@ -5272,6 +5291,25 @@
           "stock_evidence": "Amazon.se produktsida 15 okt: 6 188,32 kr + 207,61 kr leverans, säljs av Padis (tredjepart), \"Endast 4 kvar i lager\". Språk ej angivet.",
           "manual_stock_check": "browser",
           "backorder": false
+        },
+        {
+          "date": "2026-10-16",
+          "origin": "SE",
+          "seller_rating": null,
+          "manual_stock_check": "browser",
+          "stock_checked_at": "2026-10-16T19:51+02:00",
+          "source": "Amazon.se",
+          "seller": "okänd (ej verifierad)",
+          "price": 6188.32,
+          "currency": "SEK",
+          "shipping": 207.61,
+          "in_stock": true,
+          "url": "https://www.amazon.se/dp/B0GF44F4MG",
+          "language": "okänt",
+          "notes": "4 kvar. 4 andra erbjudanden från 5 512,49 kr.",
+          "stock_status": "in_stock",
+          "backorder": false,
+          "stock_evidence": "Amazon.se sökresultat 16 okt 19:51: 6 188,32 kr + 207,61 kr leverans (24–27 okt), 'Endast 4 kvar'."
         }
       ],
       "alerts": [],
@@ -5991,6 +6029,25 @@
           "stock_evidence": "Amazon.se 15 okt: ingen köpruta; enda erbjudandet 5 731,63 kr + 216,29 kr leverans (28–31 okt) från Firestorm Cards (säljarbetyg 3/5, 4 betyg). Språk ej angivet.",
           "manual_stock_check": "browser",
           "backorder": false
+        },
+        {
+          "date": "2026-10-16",
+          "origin": "SE",
+          "seller_rating": null,
+          "manual_stock_check": "browser",
+          "stock_checked_at": "2026-10-16T19:51+02:00",
+          "source": "Amazon.se",
+          "seller": "okänd (ej verifierad)",
+          "price": 4026.38,
+          "currency": "SEK",
+          "shipping": 216.29,
+          "in_stock": true,
+          "url": "https://www.amazon.se/dp/B0996W4YC6",
+          "language": "okänt",
+          "notes": "1 kvar. Pris ned från 5 731,63 kr (15 okt). Säljare ej verifierad.",
+          "stock_status": "in_stock",
+          "backorder": false,
+          "stock_evidence": "Amazon.se sökresultat 16 okt 19:51: 4 026,38 kr + 216,29 kr leverans (29 okt–2 nov), 'Endast 1 kvar'. Fortfarande långt över Cardmarket-trend."
         }
       ],
       "alerts": [],
