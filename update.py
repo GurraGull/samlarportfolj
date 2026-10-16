@@ -79,17 +79,20 @@ elif a[0] == "tx":
     typ, iid, date, price, fees, plat = a[1:7]; assert typ in ("buy", "sell"); assert any(i["id"] == iid for i in p["items"])
     if date != "-": dt.date.fromisoformat(date)
     t = {"id": f"t{len(p.setdefault('transactions', [])) + 1}", "item_id": iid, "type": typ, "date": None if date == "-" else date,
-         "qty": int(a[7]) if len(a) > 7 else 1, "price_sek": float(price), "fees_sek": float(fees), "platform": plat, "note": a[8] if len(a) > 8 else ""}
+         "qty": int(a[7]) if len(a) > 7 else 1, "price_sek": None if price in ("?", "okänt") else float(price), "fees_sek": float(fees), "platform": plat, "note": a[8] if len(a) > 8 else ""}
     p["transactions"].append(t); save(); print("transaktion tillagd", t["id"])
     print("OBS: uppdatera även item.status/quantity om innehavet ändrats (t.ex. status=owned vid köp av bevakat objekt).")
 elif a[0] == "txs":
     R = {"SEK": 1, **p["rates"]}; h = {}; real = 0
     for t in sorted(p.get("transactions", []), key=lambda t: t["date"] or ""):
         x = h.setdefault(t["item_id"], [0, 0.0]); print(t["date"] or "okänt", t["type"], t["item_id"], t["qty"], t["price_sek"], "kr, avgift", t["fees_sek"], t["platform"])
-        if t["type"] == "buy": x[0] += t["qty"]; x[1] += t["price_sek"] + t["fees_sek"]
+        if t["type"] == "buy":
+            x[0] += t["qty"]
+            if t["price_sek"] is None: x.append("unknown")
+            else: x[1] += t["price_sek"] + t["fees_sek"]
         else: avg = x[1] / x[0] if x[0] else 0; real += t["price_sek"] - t["fees_sek"] - avg * t["qty"]; x[1] -= avg * t["qty"]; x[0] -= t["qty"]
     items = {i["id"]: i for i in p["items"]}
-    unreal = sum(items[k]["valuation"]["mid"]["price"] * R[items[k]["valuation"]["mid"]["currency"]] * q - c for k, (q, c) in h.items() if q > 0)
+    unreal = sum(items[k]["valuation"]["mid"]["price"] * R[items[k]["valuation"]["mid"]["currency"]] * q - c for k, (q, c, *u) in h.items() if q > 0 and not u)
     print(f"Realiserat: {real:.0f} kr  Orealiserat (mittvärde): {unreal:.0f} kr")
 elif a[0] == "stock":
     subprocess.run([sys.executable, str(D/"stockcheck.py"), *a[1:]], check=True)

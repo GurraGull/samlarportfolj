@@ -54,7 +54,7 @@ def compare(item):
 
 def val(i, k): v = i["valuation"].get(k, i["valuation"]["mid"]); return sek(v["price"], v["currency"])
 owned = [i for i in p["items"] if i["status"] == "owned"]; watch = [i for i in p["items"] if i["status"] == "watchlist"]
-cost = sum(i["purchase_price_sek"]*i["quantity"] for i in owned)
+cost = sum((i.get("purchase_price_sek") or 0)*i["quantity"] for i in owned)
 tot = {k: sum(val(i, k)*i["quantity"] for i in owned) for k in ("conservative", "mid", "high")}
 eur = lambda v: f"€{v/RATES['EUR']:,.0f}".replace(",", " ")
 card = lambda t, v, s="": f'<div class=card><div class=m>{t}</div><div class=big>{v}</div><div class=m>{s}</div></div>'

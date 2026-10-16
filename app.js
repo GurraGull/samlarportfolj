@@ -63,16 +63,16 @@ function holdings() { // från transaktionslogg
   const h = {}; let realised = 0;
   for (const t of [...(P.transactions || [])].sort((a, b) => (a.date || "").localeCompare(b.date || ""))) {
     const x = h[t.item_id] ||= {qty: 0, cost: 0};
-    if (t.type === "buy") { x.qty += t.qty; x.cost += t.price_sek + (t.fees_sek || 0); }
+    if (t.type === "buy") { x.qty += t.qty; if (t.price_sek == null) { x.unknown = true; x.uqty = (x.uqty || 0) + t.qty; } else x.cost += t.price_sek + (t.fees_sek || 0); }
     else if (t.type === "sell") { const avg = x.qty ? x.cost / x.qty : 0; realised += t.price_sek - (t.fees_sek || 0) - avg * t.qty; x.cost -= avg * t.qty; x.qty -= t.qty; }
   }
   return {h, realised};
 }
 function totals() {
-  const {h, realised} = holdings(); let cost = 0, mid = 0, lo = 0, hi = 0;
+  const {h, realised} = holdings(); let cost = 0, mid = 0, midK = 0, lo = 0, hi = 0;
   for (const [id, x] of Object.entries(h)) { const it = ITEMS[id]; if (!it || x.qty <= 0) continue;
-    cost += x.cost; mid += val(it, "mid") * x.qty; lo += val(it, "conservative") * x.qty; hi += val(it, "high") * x.qty; }
-  return {cost, mid, lo, hi, realised, unreal: mid - cost};
+    cost += x.cost; mid += val(it, "mid") * x.qty; if (!x.unknown) midK += val(it, "mid") * x.qty; lo += val(it, "conservative") * x.qty; hi += val(it, "high") * x.qty; }
+  return {cost, mid, midK, lo, hi, realised, unreal: midK - cost};
 }
 function portfolioSeries() {
   const {h} = holdings(); const owned = Object.entries(h).filter(([id, x]) => x.qty > 0 && ITEMS[id]);
@@ -268,9 +268,11 @@ function vCollection() {
   const {h} = holdings(); const owned = P.items.filter(i => i.status === "owned" || i.status === "ordered");
   const tx = [...(P.transactions || [])].sort((a, b) => (b.date || "").localeCompare(a.date || ""));
   return `<div class=h1>Samling</div><p class=sub>${owned.length} objekt · tryck för detaljer.</p>
-  <div class=list>${owned.map(it => { const q = h[it.id]?.qty ?? it.quantity, c = h[it.id]?.cost ?? it.purchase_price_sek, m = val(it, "mid") * q, g = m - c;
-    return `<a class=row href="${itemHref(it)}"><div class=th>${img(it)}</div><div><div class=nm>${esc(short(it.name))}</div><div class=meta>${esc(it.category)} · ${esc(it.language)} · ${q} st · köpt ${kr(c)}${it.purchase_price_estimated ? ' <span class="chip c-n">uppskattat</span>' : ""}</div><div class=alerts>${it.order && !it.order.delivered ? `<span class="chip c-acc">${ic("clock", 12)} ${esc(it.order.badge)}</span>` : ""}${alertChips(it)}</div></div>
-      <div class=rt><b>${kr(m)}</b>${chip(g / c * 100)}${spark(it)}</div></a>`; }).join("")}</div>
+  ${(() => { const row = it => { const x = h[it.id], q = x?.qty ?? it.quantity, unk = x ? x.unknown : it.purchase_price_sek == null, c = x?.cost ?? it.purchase_price_sek, m = val(it, "mid") * q, g = m - c;
+    return `<a class=row href="${itemHref(it)}"><div class=th>${img(it)}</div><div><div class=nm>${esc(short(it.name))}</div><div class=meta>${esc(it.category)} · ${esc(it.language)} · ${q} st · ${unk ? '<span class="chip c-n">inköpspris okänt</span>' : `köpt ${kr(c)}`}${it.purchase_price_estimated ? ' <span class="chip c-n">uppskattat</span>' : ""}</div><div class=alerts>${it.order && !it.order.delivered ? `<span class="chip c-acc">${ic("clock", 12)} ${esc(it.order.badge)}</span>` : ""}${alertChips(it)}</div></div>
+      <div class=rt><b>${kr(m)}</b>${unk ? "" : chip(g / c * 100)}${spark(it)}</div></a>`; };
+    const cards = owned.filter(i => i.kind === "card"), rest = owned.filter(i => i.kind !== "card"), all = location.hash === "#kort";
+    return `<div class=list>${rest.map(row).join("")}</div>${cards.length ? `<div class=sec><h2>Kort</h2><span>${cards.length} st${cards.length > LIM ? ` · <a href="#${all ? "samling" : "kort"}">${all ? "Visa färre" : "Visa alla"}</a>` : ""}</span></div><div class=list>${(all ? cards : cards.slice(0, LIM)).map(row).join("")}</div>` : ""}`; })()}
   <div class=sec><h2>Transaktioner</h2><span>${tx.length}</span></div>
   <div class=list>${tx.map(t => { const it = ITEMS[t.item_id]; return `<div class=row style="cursor:default"><div class=th>${img(it)}</div><div><div class=nm>${t.type === "buy" ? "Köp" : "Sälj"} · ${esc(short(it?.name || t.item_id))}</div><div class=meta>${t.date || "datum okänt"} · ${esc(t.platform)} · ${t.qty} st${t.fees_sek ? " · avgifter " + kr(t.fees_sek) : ""}${t.note ? " · " + esc(t.note) : ""}</div></div><div class=rt><b class="${t.type === "sell" ? "g" : ""}">${t.type === "buy" ? "−" : "+"}${kr(t.price_sek)}</b></div></div>`; }).join("")}</div>
   ${(() => { const t = totals(); return `<div class=kpis><div class=kpi><span>Orealiserat</span><b class="${t.unreal >= 0 ? "g" : "r"}">${t.unreal >= 0 ? "+" : "−"}${kr(Math.abs(t.unreal))}</b></div><div class=kpi><span>Realiserat</span><b>${kr(t.realised)}</b></div><div class=kpi><span>Investerat</span><b>${kr(t.cost)}</b></div></div>`; })()}${foot()}`;
@@ -287,7 +289,7 @@ function vItem(id) {
   const {h} = holdings(), x = h[it.id], m = val(it, "mid"), back = it.status === "watchlist" ? "bevakning" : "samling";
   return `<a class=back href="#${back}" onclick="if(history.length>1){history.back();return false}">${ic("chev", 16)} Tillbaka</a>
   <div class="card big"><div class=th>${img(it)}</div><div><div class="xs mut">${esc(it.category)} · ${esc(it.language)} · ${it.status === "owned" ? "Ägd" : it.status === "ordered" ? "Beställd" : "Bevakning"}</div><div class=nm style="font-weight:700;font-size:17px;line-height:1.3">${esc(short(it.name))}</div><div class=v>${kr(m)}</div>
-    ${x && x.qty > 0 ? chip((m * x.qty - x.cost) / x.cost * 100) + ` <span class="xs mut">köpt ${kr(x.cost)}</span>` : `<span class="xs mut">${eur(m)} · ${esc(it.valuation.mid.basis)}</span>`}<div class=alerts>${it.order && !it.order.delivered ? `<span class="chip c-acc">${esc(it.order.badge)}</span>` : ""}${alertChips(it)}</div></div></div>
+    ${x && x.qty > 0 && x.unknown ? `<span class="chip c-n">inköpspris okänt</span>` : x && x.qty > 0 ? chip((m * x.qty - x.cost) / x.cost * 100) + ` <span class="xs mut">köpt ${kr(x.cost)}</span>` : `<span class="xs mut">${eur(m)} · ${esc(it.valuation.mid.basis)}</span>`}<div class=alerts>${it.order && !it.order.delivered ? `<span class="chip c-acc">${esc(it.order.badge)}</span>` : ""}${alertChips(it)}</div></div></div>
   ${it.valuation.conservative ? `<div class=range style="padding:10px 0 0">${[["conservative", "Försiktig"], ["mid", "Mitten"], ["high", "Hög"]].map(([k, l]) => `<div><span>${l}</span><b>${kr(val(it, k))}</b></div>`).join("")}</div>` : ""}
   <div class="card" style="margin-top:14px">${details(it, true)}</div>${foot()}`;
 }
@@ -304,7 +306,7 @@ function nav() {
 function route() {
   if (!P) return; const hsh = location.hash.slice(1);
   if (hsh.startsWith("item/")) { nav(); document.getElementById("app").innerHTML = `<div class=view>${vItem(decodeURIComponent(hsh.slice(5)))}</div>`; return; }
-  const k = VIEWS[hsh] ? hsh : hsh === "lotter" ? "auktioner" : "oversikt"; nav();
+  const k = VIEWS[hsh] ? hsh : hsh === "lotter" ? "auktioner" : hsh === "kort" ? "samling" : "oversikt"; nav();
   document.getElementById("app").innerHTML = `<div class=view>${VIEWS[k][2]()}</div>`;
 }
 window.addEventListener("hashchange", () => { route(); window.scrollTo(0, 0); });

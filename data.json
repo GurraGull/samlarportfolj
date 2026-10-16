@@ -6136,6 +6136,68 @@
         "source_url": "https://www.pricecharting.com/game/magic-the-dark/booster-pack",
         "downloaded": "2026-10-15"
       }
+    },
+    {
+      "id": "mtg-ugin-frf-001",
+      "kind": "card",
+      "name": "Ugin, the Spirit Dragon – Fate Reforged (FRF) #001/185",
+      "category": "Magic: The Gathering",
+      "language": "Engelska",
+      "quantity": 2,
+      "purchase_price_sek": null,
+      "purchase_date": null,
+      "status": "owned",
+      "cardmarket_id": 271444,
+      "foil": false,
+      "set": "FRF",
+      "collector_number": "001/185",
+      "valuation": {
+        "conservative": {
+          "price": 6,
+          "currency": "EUR",
+          "basis": "Cardmarket lägsta non-foil (prisguide 2026-10-16)"
+        },
+        "mid": {
+          "price": 11.83,
+          "currency": "EUR",
+          "basis": "Cardmarket-trend non-foil (prisguide 2026-10-16), per kort"
+        },
+        "high": {
+          "price": 14.61,
+          "currency": "USD",
+          "basis": "TCGplayer via Scryfall"
+        }
+      },
+      "notes": "Singelkort, 2 st, non-foil, engelska. Inköpspris okänt – räknas i totalvärde men inte i investerat/vinst. Cardmarket-prisguiden är inte språkfiltrerad.",
+      "snapshots": [
+        {
+          "date": "2026-10-16",
+          "source": "Cardmarket prisguide",
+          "price": 11.83,
+          "currency": "EUR",
+          "type": "trend",
+          "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
+          "note": "idProduct 271444, non-foil trend (avg30 11.49)"
+        },
+        {
+          "date": "2026-10-16",
+          "source": "TCGplayer (Scryfall)",
+          "price": 14.61,
+          "currency": "USD",
+          "type": "trend",
+          "url": "https://scryfall.com/card/frf/1",
+          "note": "non-foil"
+        }
+      ],
+      "community": [],
+      "offers": [],
+      "alerts": [],
+      "image": {
+        "src": "images/mtg-ugin-frf-001.webp",
+        "credit": "Kortbild via Scryfall (© Wizards of the Coast)",
+        "source_url": "https://scryfall.com/card/frf/1",
+        "downloaded": "2026-10-16"
+      }
     }
   ],
   "rate_sources": {
@@ -7763,6 +7825,17 @@
       "fees_sek": 0.0,
       "platform": "okänd",
       "note": "Ca 250 kr/st (uppskattat köppris), inramade"
+    },
+    {
+      "id": "t5",
+      "item_id": "mtg-ugin-frf-001",
+      "type": "buy",
+      "date": null,
+      "qty": 2,
+      "price_sek": null,
+      "fees_sek": 0.0,
+      "platform": "okänd",
+      "note": "Inköpspris okänt"
     }
   ],
   "language_filter": {
