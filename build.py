@@ -9,6 +9,7 @@ e = html.escape
 def sek(price, cur): return price*RATES[cur] if (cur in RATES and price is not None) else None
 def kr(v): return "–" if v is None else f"{v:,.0f}".replace(",", " ") + " kr"
 def money(price, cur):
+    if price is None: return "–"
     s = f"{price:,.2f}".replace(",", " ") + " " + cur if cur != "SEK" else kr(price)
     v = sek(price, cur)
     return s + (f' <span class=m>({kr(v)})</span>' if cur != "SEK" and v else "")
