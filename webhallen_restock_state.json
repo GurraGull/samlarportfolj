@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-16T08:23+02:00",
+  "checked_at": "2026-10-16T12:22+02:00",
   "source": "browser product pages + search collector booster",
   "watched_products": [
     {
@@ -26,12 +26,11 @@
       "id": 401344,
       "name": "Magic: The Gathering Reality Fracture Collector Booster",
       "price": 3399.0,
-      "web": 2,
-      "stores": 8,
-      "stores_detail": "2 st vardera: Hötorget/Sveavägen, Fridhemsplan, Solna Centrum, Farsta Centrum",
-      "in_stock": true,
+      "web": 0,
+      "stores": 0,
+      "in_stock": false,
       "url": "https://www.webhallen.com/se/product/401344-Magic-The-Gathering-Reality-Fracture-Collector-Booster",
-      "notes": "Max 1/kund; medlemmar; Webblager 2; Butiker 2/ställe (minst 4 butiker)"
+      "notes": "Max 1/kund; medlemmar; slut i lager (var i lager 08:23 idag)"
     }
   ],
   "collector_displays_seen": [
@@ -44,7 +43,7 @@
     {
       "id": 395310,
       "name": "Magic the Gathering: Marvel Super Heroes Collector Display (12 boosters)",
-      "price": null,
+      "price": 4999.0,
       "in_stock": false,
       "status": "discontinued"
     },
@@ -57,9 +56,10 @@
       "status": "preorder"
     }
   ],
-  "notes": "RESTTOCK: Reality Fracture (401344) i lager Webblager=2, Butiker=2×4 Stockholm-butiker. Pokemon ETB + Hobbit OOS. Inga nya Collector Displays vs baseline.",
+  "notes": "Alla bevakade OOS. Reality Fracture (401344) slut efter morgonens restock (web/butik 0). Pokemon ETB + Hobbit fortfarande OOS. Inga nya Magic Collector Displays (samma set: Hobbit, Marvel, Star Trek + Reality Fracture). Fotbolls-tins och Doom Prevails-deck i sök ignoreras.",
   "appeared_since_prior": [],
-  "restocked_since_prior": [
+  "restocked_since_prior": [],
+  "went_oos_since_prior": [
     401344
   ],
   "browser_confirmed": true
