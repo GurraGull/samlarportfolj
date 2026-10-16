@@ -6198,6 +6198,336 @@
         "source_url": "https://scryfall.com/card/frf/1",
         "downloaded": "2026-10-16"
       }
+    },
+    {
+      "id": "mtg-bayou-3ed",
+      "kind": "card",
+      "name": "Bayou – Revised Edition (3ED)",
+      "category": "Magic: The Gathering",
+      "language": "Engelska",
+      "quantity": 4,
+      "purchase_price_sek": null,
+      "purchase_date": null,
+      "status": "owned",
+      "cardmarket_id": 5811,
+      "foil": false,
+      "set": "3ED",
+      "collector_number": "283",
+      "condition": "NM antaget – ej verifierat",
+      "identification": "Hög: Revised-ordalydelsen (\"Add either … to your mana pool. Counts as both…\") och blekt Revised-tryck jämfört med Unlimited. Äkthet ej verifierad (Revised-dualer förfalskas ofta).",
+      "valuation": {
+        "conservative": {
+          "price": 224.99,
+          "currency": "EUR",
+          "basis": "Cardmarket lägsta (prisguide 2026-10-16)"
+        },
+        "mid": {
+          "price": 264.15,
+          "currency": "EUR",
+          "basis": "Cardmarket-trend non-foil (prisguide 2026-10-16), per kort"
+        },
+        "high": {
+          "price": 296.44,
+          "currency": "EUR",
+          "basis": "Cardmarket trend/30d-snitt (högsta)"
+        }
+      },
+      "notes": "Från pärmsida (foto 16 okt 2026). Skick antaget NM, ej verifierat. Identifiering: Hög: Revised-ordalydelsen (\"Add either … to your mana pool. Counts as both…\") och blekt Revised-tryck jämfört med Unlimited. Äkthet ej verifierad (Revised-dualer förfalskas ofta). Inköpspris okänt.",
+      "snapshots": [
+        {
+          "date": "2026-10-16",
+          "source": "Cardmarket prisguide",
+          "price": 264.15,
+          "currency": "EUR",
+          "type": "trend",
+          "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
+          "note": "idProduct 5811, non-foil; avg30 296.44"
+        }
+      ],
+      "community": [],
+      "offers": [],
+      "alerts": [],
+      "image": {
+        "src": "images/mtg-bayou-3ed.webp",
+        "credit": "Kortbild via Scryfall (© Wizards of the Coast)",
+        "source_url": "https://scryfall.com/card/3ed/283",
+        "downloaded": "2026-10-16"
+      }
+    },
+    {
+      "id": "mtg-chaos-orb-2ed",
+      "kind": "card",
+      "name": "Chaos Orb – Unlimited Edition (2ED)",
+      "category": "Magic: The Gathering",
+      "language": "Engelska",
+      "quantity": 1,
+      "purchase_price_sek": null,
+      "purchase_date": null,
+      "status": "owned",
+      "cardmarket_id": 5099,
+      "foil": false,
+      "set": "2ED",
+      "collector_number": "236",
+      "condition": "NM antaget – ej verifierat",
+      "identification": "Medel-hög: vit kant och Chaos Orb finns inte i Revised → Unlimited. Rundade hörn talar mot Collectors’ Edition (fyrkantiga hörn, ~4 960 kr trend). Baksida/äkthet ej verifierad.",
+      "valuation": {
+        "conservative": {
+          "price": 850,
+          "currency": "EUR",
+          "basis": "Cardmarket lägsta (prisguide 2026-10-16)"
+        },
+        "mid": {
+          "price": 1242.71,
+          "currency": "EUR",
+          "basis": "Cardmarket-trend non-foil (prisguide 2026-10-16), per kort"
+        },
+        "high": {
+          "price": 1242.71,
+          "currency": "EUR",
+          "basis": "Cardmarket trend/30d-snitt (högsta)"
+        }
+      },
+      "notes": "Från pärmsida (foto 16 okt 2026). Skick antaget NM, ej verifierat. Identifiering: Medel-hög: vit kant och Chaos Orb finns inte i Revised → Unlimited. Rundade hörn talar mot Collectors’ Edition (fyrkantiga hörn, ~4 960 kr trend). Baksida/äkthet ej verifierad. Inköpspris okänt.",
+      "snapshots": [
+        {
+          "date": "2026-10-16",
+          "source": "Cardmarket prisguide",
+          "price": 1242.71,
+          "currency": "EUR",
+          "type": "trend",
+          "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
+          "note": "idProduct 5099, non-foil; avg30 1078.82"
+        }
+      ],
+      "community": [],
+      "offers": [],
+      "alerts": [],
+      "image": {
+        "src": "images/mtg-chaos-orb-2ed.webp",
+        "credit": "Kortbild via Scryfall (© Wizards of the Coast)",
+        "source_url": "https://scryfall.com/card/2ed/236",
+        "downloaded": "2026-10-16"
+      }
+    },
+    {
+      "id": "mtg-wilt-leaf-liege-mm2",
+      "kind": "card",
+      "name": "Wilt-Leaf Liege – Modern Masters 2015 (MM2) #200",
+      "category": "Magic: The Gathering",
+      "language": "Engelska",
+      "quantity": 1,
+      "purchase_price_sek": null,
+      "purchase_date": null,
+      "status": "owned",
+      "cardmarket_id": 282855,
+      "foil": false,
+      "set": "MM2",
+      "collector_number": "200",
+      "condition": "NM antaget – ej verifierat",
+      "identification": "Hög: samlarnummer 200/249 och MM2-symbol synliga.",
+      "valuation": {
+        "conservative": {
+          "price": 0.1,
+          "currency": "EUR",
+          "basis": "Cardmarket lägsta (prisguide 2026-10-16)"
+        },
+        "mid": {
+          "price": 0.6,
+          "currency": "EUR",
+          "basis": "Cardmarket-trend non-foil (prisguide 2026-10-16), per kort"
+        },
+        "high": {
+          "price": 0.6,
+          "currency": "EUR",
+          "basis": "Cardmarket trend/30d-snitt (högsta)"
+        }
+      },
+      "notes": "Från pärmsida (foto 16 okt 2026). Skick antaget NM, ej verifierat. Identifiering: Hög: samlarnummer 200/249 och MM2-symbol synliga. Inköpspris okänt.",
+      "snapshots": [
+        {
+          "date": "2026-10-16",
+          "source": "Cardmarket prisguide",
+          "price": 0.6,
+          "currency": "EUR",
+          "type": "trend",
+          "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
+          "note": "idProduct 282855, non-foil; avg30 0.37"
+        }
+      ],
+      "community": [],
+      "offers": [],
+      "alerts": [],
+      "image": {
+        "src": "images/mtg-wilt-leaf-liege-mm2.webp",
+        "credit": "Kortbild via Scryfall (© Wizards of the Coast)",
+        "source_url": "https://scryfall.com/card/mm2/200",
+        "downloaded": "2026-10-16"
+      }
+    },
+    {
+      "id": "mtg-fulminator-mage-mm2",
+      "kind": "card",
+      "name": "Fulminator Mage – Modern Masters 2015 (MM2) #193",
+      "category": "Magic: The Gathering",
+      "language": "Engelska",
+      "quantity": 1,
+      "purchase_price_sek": null,
+      "purchase_date": null,
+      "status": "owned",
+      "cardmarket_id": 282794,
+      "foil": false,
+      "set": "MM2",
+      "collector_number": "193",
+      "condition": "NM antaget – ej verifierat",
+      "identification": "Hög för kort/set; samlarnumret är #193 i MM2 (inte #181 – MM2 #181 är Necrogenesis).",
+      "valuation": {
+        "conservative": {
+          "price": 0.4,
+          "currency": "EUR",
+          "basis": "Cardmarket lägsta (prisguide 2026-10-16)"
+        },
+        "mid": {
+          "price": 1,
+          "currency": "EUR",
+          "basis": "Cardmarket-trend non-foil (prisguide 2026-10-16), per kort"
+        },
+        "high": {
+          "price": 1,
+          "currency": "EUR",
+          "basis": "Cardmarket trend/30d-snitt (högsta)"
+        }
+      },
+      "notes": "Från pärmsida (foto 16 okt 2026). Skick antaget NM, ej verifierat. Identifiering: Hög för kort/set; samlarnumret är #193 i MM2 (inte #181 – MM2 #181 är Necrogenesis). Inköpspris okänt.",
+      "snapshots": [
+        {
+          "date": "2026-10-16",
+          "source": "Cardmarket prisguide",
+          "price": 1,
+          "currency": "EUR",
+          "type": "trend",
+          "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
+          "note": "idProduct 282794, non-foil; avg30 0.94"
+        }
+      ],
+      "community": [],
+      "offers": [],
+      "alerts": [],
+      "image": {
+        "src": "images/mtg-fulminator-mage-mm2.webp",
+        "credit": "Kortbild via Scryfall (© Wizards of the Coast)",
+        "source_url": "https://scryfall.com/card/mm2/193",
+        "downloaded": "2026-10-16"
+      }
+    },
+    {
+      "id": "mtg-leyline-of-sanctity-mm2",
+      "kind": "card",
+      "name": "Leyline of Sanctity – Modern Masters 2015 (MM2) #23",
+      "category": "Magic: The Gathering",
+      "language": "Engelska",
+      "quantity": 1,
+      "purchase_price_sek": null,
+      "purchase_date": null,
+      "status": "owned",
+      "cardmarket_id": 282809,
+      "foil": false,
+      "set": "MM2",
+      "collector_number": "23",
+      "condition": "NM antaget – ej verifierat",
+      "identification": "Hög: 023/249 MM2 synligt.",
+      "valuation": {
+        "conservative": {
+          "price": 0.35,
+          "currency": "EUR",
+          "basis": "Cardmarket lägsta (prisguide 2026-10-16)"
+        },
+        "mid": {
+          "price": 0.69,
+          "currency": "EUR",
+          "basis": "Cardmarket-trend non-foil (prisguide 2026-10-16), per kort"
+        },
+        "high": {
+          "price": 0.87,
+          "currency": "EUR",
+          "basis": "Cardmarket trend/30d-snitt (högsta)"
+        }
+      },
+      "notes": "Från pärmsida (foto 16 okt 2026). Skick antaget NM, ej verifierat. Identifiering: Hög: 023/249 MM2 synligt. Inköpspris okänt.",
+      "snapshots": [
+        {
+          "date": "2026-10-16",
+          "source": "Cardmarket prisguide",
+          "price": 0.69,
+          "currency": "EUR",
+          "type": "trend",
+          "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
+          "note": "idProduct 282809, non-foil; avg30 0.87"
+        }
+      ],
+      "community": [],
+      "offers": [],
+      "alerts": [],
+      "image": {
+        "src": "images/mtg-leyline-of-sanctity-mm2.webp",
+        "credit": "Kortbild via Scryfall (© Wizards of the Coast)",
+        "source_url": "https://scryfall.com/card/mm2/23",
+        "downloaded": "2026-10-16"
+      }
+    },
+    {
+      "id": "mtg-force-of-will-dmr-284",
+      "kind": "card",
+      "name": "Force of Will – Dominaria Remastered retro frame (DMR #284)",
+      "category": "Magic: The Gathering",
+      "language": "Engelska",
+      "quantity": 1,
+      "purchase_price_sek": null,
+      "purchase_date": null,
+      "status": "owned",
+      "cardmarket_id": 688405,
+      "foil": false,
+      "set": "DMR",
+      "collector_number": "284",
+      "condition": "NM antaget – ej verifierat",
+      "identification": "Hög: gammal (1997) ram, DMR-symbol i mythic-orange, Donato Giancola, \"284\" och ©2023 i nederkant. Röd kant = hylsan. Non-foil antaget (ingen synlig foil-glans).",
+      "valuation": {
+        "conservative": {
+          "price": 49.99,
+          "currency": "EUR",
+          "basis": "Cardmarket lägsta (prisguide 2026-10-16)"
+        },
+        "mid": {
+          "price": 54.72,
+          "currency": "EUR",
+          "basis": "Cardmarket-trend non-foil (prisguide 2026-10-16), per kort"
+        },
+        "high": {
+          "price": 54.72,
+          "currency": "EUR",
+          "basis": "Cardmarket trend/30d-snitt (högsta)"
+        }
+      },
+      "notes": "Från pärmsida (foto 16 okt 2026). Skick antaget NM, ej verifierat. Identifiering: Hög: gammal (1997) ram, DMR-symbol i mythic-orange, Donato Giancola, \"284\" och ©2023 i nederkant. Röd kant = hylsan. Non-foil antaget (ingen synlig foil-glans). Inköpspris okänt.",
+      "snapshots": [
+        {
+          "date": "2026-10-16",
+          "source": "Cardmarket prisguide",
+          "price": 54.72,
+          "currency": "EUR",
+          "type": "trend",
+          "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
+          "note": "idProduct 688405, non-foil; avg30 54.51"
+        }
+      ],
+      "community": [],
+      "offers": [],
+      "alerts": [],
+      "image": {
+        "src": "images/mtg-force-of-will-dmr-284.webp",
+        "credit": "Kortbild via Scryfall (© Wizards of the Coast)",
+        "source_url": "https://scryfall.com/card/dmr/284",
+        "downloaded": "2026-10-16"
+      }
     }
   ],
   "rate_sources": {
@@ -7836,6 +8166,72 @@
       "fees_sek": 0.0,
       "platform": "okänd",
       "note": "Inköpspris okänt"
+    },
+    {
+      "id": "t6",
+      "item_id": "mtg-bayou-3ed",
+      "type": "buy",
+      "date": null,
+      "qty": 4,
+      "price_sek": null,
+      "fees_sek": 0,
+      "platform": "okänd",
+      "note": "Inköpspris okänt (pärmsida)"
+    },
+    {
+      "id": "t7",
+      "item_id": "mtg-chaos-orb-2ed",
+      "type": "buy",
+      "date": null,
+      "qty": 1,
+      "price_sek": null,
+      "fees_sek": 0,
+      "platform": "okänd",
+      "note": "Inköpspris okänt (pärmsida)"
+    },
+    {
+      "id": "t8",
+      "item_id": "mtg-wilt-leaf-liege-mm2",
+      "type": "buy",
+      "date": null,
+      "qty": 1,
+      "price_sek": null,
+      "fees_sek": 0,
+      "platform": "okänd",
+      "note": "Inköpspris okänt (pärmsida)"
+    },
+    {
+      "id": "t9",
+      "item_id": "mtg-fulminator-mage-mm2",
+      "type": "buy",
+      "date": null,
+      "qty": 1,
+      "price_sek": null,
+      "fees_sek": 0,
+      "platform": "okänd",
+      "note": "Inköpspris okänt (pärmsida)"
+    },
+    {
+      "id": "t10",
+      "item_id": "mtg-leyline-of-sanctity-mm2",
+      "type": "buy",
+      "date": null,
+      "qty": 1,
+      "price_sek": null,
+      "fees_sek": 0,
+      "platform": "okänd",
+      "note": "Inköpspris okänt (pärmsida)"
+    },
+    {
+      "id": "t11",
+      "item_id": "mtg-force-of-will-dmr-284",
+      "type": "buy",
+      "date": null,
+      "qty": 1,
+      "price_sek": null,
+      "fees_sek": 0,
+      "platform": "okänd",
+      "note": "Inköpspris okänt (pärmsida)"
     }
   ],
   "language_filter": {
@@ -7850,5 +8246,6 @@
       "what": "Duskmourn Collector Booster (tysk)",
       "reason": "Ej engelska – exkluderad enligt språkfilter"
     }
-  ]
+  ],
+  "bulk_threshold_sek": 20
 }
