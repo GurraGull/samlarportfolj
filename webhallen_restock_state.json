@@ -1,6 +1,6 @@
 {
-  "checked_at": "2026-10-16T12:22+02:00",
-  "source": "browser product pages + search collector booster",
+  "checked_at": "2026-10-17T08:23+02:00",
+  "source": "Webhallen API /api/product/<id> + /api/productdiscovery/search (collector, collector display, collector booster, magic display)",
   "watched_products": [
     {
       "id": 402000,
@@ -30,7 +30,7 @@
       "stores": 0,
       "in_stock": false,
       "url": "https://www.webhallen.com/se/product/401344-Magic-The-Gathering-Reality-Fracture-Collector-Booster",
-      "notes": "Max 1/kund; medlemmar; slut i lager (var i lager 08:23 idag)"
+      "notes": "Max 1/kund; medlemmar; slut i lager (web/butik 0)"
     }
   ],
   "collector_displays_seen": [
@@ -56,11 +56,9 @@
       "status": "preorder"
     }
   ],
-  "notes": "Alla bevakade OOS. Reality Fracture (401344) slut efter morgonens restock (web/butik 0). Pokemon ETB + Hobbit fortfarande OOS. Inga nya Magic Collector Displays (samma set: Hobbit, Marvel, Star Trek + Reality Fracture). Fotbolls-tins och Doom Prevails-deck i sök ignoreras.",
+  "notes": "08:23: Oförändrat. Alla bevakade slut (Pokémon ETB, Hobbit, Reality Fracture: webb 0, alla butiker 0). Inga nya Magic Collector Displays (Hobbit, Marvel, Star Trek – alla 0 i lager).",
   "appeared_since_prior": [],
   "restocked_since_prior": [],
-  "went_oos_since_prior": [
-    401344
-  ],
-  "browser_confirmed": true
+  "went_oos_since_prior": [],
+  "browser_confirmed": false
 }
