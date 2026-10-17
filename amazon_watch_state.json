@@ -1,6 +1,6 @@
 {
-  "last_checked": "2026-10-16T19:51+02:00",
-  "note": "Första körningen. Amazon.se felade på 3:e sidladdningen; 30th ETB och Hobbit-produktsidan ej kontrollerade.",
+  "last_checked": "2026-10-17T09:52+02:00",
+  "note": "17 okt 09:52: Amazon gav felsidor på alla sidladdningar (amazon.de \"Tut uns Leid!\", amazon.se \"Ett oväntat fel har inträffat\"). Inget kunde kontrolleras; tidigare listningar oförändrade sedan 16 okt.",
   "listings": {
     "amazon.de/B0GWSDDFFF": {
       "item": "mtg-hobbit-cbb",
@@ -69,5 +69,34 @@
     "amazon.de/dp/B0GWSDDFFF produktsida (Hobbit-erbjudanden?)",
     "Pokémon 30th Celebration ETB på Amazon.se/.de",
     "amazon.se magic collector booster display-sökning"
+  ],
+  "unchecked": [
+    {
+      "target": "amazon.de/dp/B0GWSDDFFF (Hobbit Collector Display, toppprioritet)",
+      "reason": "Amazon.de felsida 'Tut uns Leid!' på 3 försök",
+      "at": "2026-10-17T09:52+02:00"
+    },
+    {
+      "target": "amazon.se sökning: pokemon 30th celebration elite trainer box",
+      "reason": "Amazon.se felsida 'Ett oväntat fel har inträffat' på 2 försök",
+      "at": "2026-10-17T09:52+02:00"
+    },
+    {
+      "target": "amazon.se sökning: magic collector booster display",
+      "reason": "ej laddad, sidladdningsgräns nådd efter felsidor",
+      "at": "2026-10-17T09:52+02:00"
+    },
+    {
+      "target": "amazon.de sökning: pokemon 30th celebration elite trainer box",
+      "reason": "ej laddad, sidladdningsgräns nådd efter felsidor",
+      "at": "2026-10-17T09:52+02:00"
+    }
+  ],
+  "run_log": [
+    {
+      "at": "2026-10-17T09:52+02:00",
+      "result": "alla kontroller okontrollerade (Amazon-felsidor)",
+      "alerts": 0
+    }
   ]
 }
