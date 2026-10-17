@@ -8535,11 +8535,12 @@
       "title": "Inga TCG-objekt hittade",
       "price": null,
       "currency": "SEK",
-      "url": "https://www.bukowskis.com/sv/search?q=pokemon",
-      "date_seen": "2026-10-15",
-      "notes": "15 okt: sök-URL:en /sv/search?q= ger HTTP 404 (död länk). /sv/lots ignorerar sökparametern (JS-sök); sida 1 av aktuella lotter (95 st) innehåller inga TCG-objekt. Inga Pokémon/MTG-lotter hittade.",
-      "dead_link": true,
-      "http_status": 404
+      "url": "https://www.bukowskis.com/sv/lots/search/pokemon",
+      "date_seen": "2026-10-17",
+      "notes": "17 okt: rätt sök-URL är /sv/lots/search/<sökord> (gamla /sv/search?q= gav 404). Sökning 'pokemon' och 'magic the gathering' ger inga aktuella lotter.",
+      "dead_link": false,
+      "http_status": 200,
+      "date_checked": "2026-10-17"
     },
     {
       "platform": "Blocket",
