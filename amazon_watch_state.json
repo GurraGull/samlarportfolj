@@ -98,5 +98,8 @@
       "result": "alla kontroller okontrollerade (Amazon-felsidor)",
       "alerts": 0
     }
-  ]
+  ],
+  "consecutive_failed_runs": 1,
+  "blocked_note": null,
+  "last_successful_check": "2026-10-16 19:51"
 }
