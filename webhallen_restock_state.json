@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-18T17:24+02:00",
+  "checked_at": "2026-10-18T21:20+02:00",
   "source": "Webhallen API /api/product/<id> + /api/productdiscovery/search (collector, collector display, collector booster, magic display)",
   "watched_products": [
     {
@@ -26,11 +26,11 @@
       "id": 401344,
       "name": "Magic: The Gathering Reality Fracture Collector Booster",
       "price": 3399.0,
-      "web": 0,
-      "stores": 0,
-      "in_stock": false,
+      "web": 3,
+      "stores": 13,
+      "in_stock": true,
       "url": "https://www.webhallen.com/se/product/401344-Magic-The-Gathering-Reality-Fracture-Collector-Booster",
-      "notes": "Max 1/kund; medlemmar; slut i lager (web/butik 0)"
+      "notes": "Max 1/kund (totalt 108); medlemmar; I LAGER: webb 3, 13 st i 8 butiker (id 2,9,14,15,19,27,33,34)"
     }
   ],
   "collector_displays_seen": [
@@ -56,9 +56,17 @@
       "status": "preorder"
     }
   ],
-  "notes": "17:24: Oförändrat. Alla bevakade slut (Pokémon 30th ETB, Hobbit, Reality Fracture: webb 0, alla butiker 0). Inga nya Magic Collector Displays (Hobbit, Marvel, Star Trek – alla 0 i lager). Alla produkter kontrollerade, inga okontrollerade.",
+  "notes": "21:20: RESTOCK Reality Fracture Collector Booster (webb 3, 13 st i 8 butiker, 3399 kr, max 1/kund). Pokémon 30th ETB och Hobbit fortfarande slut (webb 0, butiker 0). Inga nya Magic Collector Displays (Hobbit, Marvel, Star Trek – alla 0 i lager). Alla produkter kontrollerade, inga okontrollerade.",
   "appeared_since_prior": [],
-  "restocked_since_prior": [],
+  "restocked_since_prior": [
+    {
+      "id": 401344,
+      "name": "Magic: The Gathering Reality Fracture Collector Booster",
+      "web": 3,
+      "stores": 13,
+      "price": 3399.0
+    }
+  ],
   "went_oos_since_prior": [],
   "browser_confirmed": false,
   "unchecked": []
