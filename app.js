@@ -26,6 +26,7 @@ const I = {
   tag: '<path d="M20 12l-8 8-9-9V3h8z"/><circle cx="7.5" cy="7.5" r="1.5"/>',
   gavel: '<path d="M14 4l6 6M11 7l6 6M8.5 9.5l6 6M3 21l7-7"/>',
   box: '<path d="M21 8l-9-5-9 5v8l9 5 9-5z"/><path d="M3 8l9 5 9-5M12 13v8"/>',
+  cart: '<circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/><path d="M2 3h3l2.5 12h11.5l2-8H6.5"/>',
   eye: '<path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/>',
   bell: '<path d="M6 8a6 6 0 1112 0c0 7 3 8 3 8H3s3-1 3-8"/><path d="M10 20a2 2 0 004 0"/>',
   clock: '<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',
@@ -214,6 +215,8 @@ function bestOf() {
 }
 
 // ---------- vyer ----------
+function buyTeaser() { const L = P.buylist || []; if (!L.length) return ""; const buy = L.filter(b => b.group === "buy").sort((a, b) => a.rank - b.rank), w = L.filter(b => b.group === "wait"), fl = L.filter(b => (b.group === "wait" && blState(b).inw) || blState(b).drop), blk = blBlock();
+  return `<a class="card" href="#koplista" style="display:flex;gap:12px;align-items:center;padding:12px 14px;margin:12px 0"><span style="color:var(--acc2)">${ic("cart", 22)}</span><div style="flex:1"><b>Köpläge · 5-års-köplista</b><div class="xs mut">${blk ? "Köpspärr just nu (prerelease) · " : ""}Topp: ${buy.slice(0, 3).map(b => esc(b.name.replace(/ Collector Booster Display| Booster Box/, ""))).join(", ")} · ${w.length} att vänta på${fl.length ? ` · <b class=g>${fl.length} flagga${fl.length > 1 ? "or" : ""}</b>` : ""}</div></div>${ic("chev", 16)}</a>`; }
 function vOverview() {
   const t = totals(), pts = portfolioSeries(), w = winStart(), shown = pts.filter(p => p[0] >= w);
   const before = pts.filter(p => p[0] < w).pop(), base = before || shown[0];
@@ -233,6 +236,7 @@ function vOverview() {
     <div class=kpis><div class=kpi><span>Investerat</span><b>${kr(t.cost)}</b></div><div class=kpi><span>Realiserat</span><b class="${t.realised > 0 ? "g" : ""}">${kr(t.realised)}</b></div><div class=kpi><span>Spann</span><b style="white-space:nowrap">${fmt(t.lo / 1000, 1)}–${fmt(t.hi / 1000, 1)}<small class=mut> tkr</small></b></div></div></section>
   ${bestOf()}
   ${restock()}
+  ${buyTeaser()}
   <div class="card chartcard"><div class=top style="margin-bottom:8px"><div class=legend><span><i style="background:#8b7cf6"></i>Marknadsvärde</span><span><i style="background:#8a96ab"></i>Investerat</span></div>
     <div class=seg>${["7d", "30d", "all"].map(r => `<button class="${RANGE === r ? "on" : ""}" onclick="RANGE='${r}';route()">${r === "all" ? "Allt" : r.replace("d", " d")}</button>`).join("")}</div></div>
     <div class=pchart>${lineChart([{color: "#8b7cf6", fill: true, pts: shown.map(p => [...p])}], {cost: t.cost})}</div>
@@ -304,12 +308,49 @@ function vItem(id) {
   ${it.valuation.conservative ? `<div class=range style="padding:10px 0 0">${[["conservative", "Försiktig"], ["mid", "Mitten"], ["high", "Hög"]].map(([k, l]) => `<div><span>${l}</span><b>${kr(val(it, k))}</b></div>`).join("")}</div>` : ""}
   <div class="card" style="margin-top:14px">${details(it, true)}</div>${foot()}`;
 }
+// ---------- Köpläge: 5-års-köplista ----------
+const todayIso = () => new Date().toISOString().slice(0, 10);
+function blWin(b) { const w = b.buy_window; if (!w || !w.includes("..")) return [null, null]; let [f, t] = w.split("..");
+  if (f.length === 7) f += "-01"; if (t.length === 7) { const [y, m] = t.split("-").map(Number); t = new Date(Date.UTC(y, m, 0)).toISOString().slice(0, 10); } return [f, t]; }
+const blBlock = () => { const d = todayIso(); return (P.buylist_settings?.blackouts || []).find(x => x.from <= d && d <= x.to); };
+const blNextBlock = () => { const d = todayIso(); return (P.buylist_settings?.blackouts || []).filter(x => x.to >= d).sort((a, b) => a.from.localeCompare(b.from))[0]; };
+function blState(b) { const [f, t] = blWin(b), d = todayIso(), inw = !!(f && f <= d && d <= t), ch = b.trend_eur && b.added_trend_eur ? (b.trend_eur / b.added_trend_eur - 1) * 100 : null;
+  return {f, t, inw, ch, drop: ch != null && ch <= -10, before: f && d < f}; }
+const mon = s => { const [y, m] = s.split("-"); return ["jan", "feb", "mar", "apr", "maj", "jun", "jul", "aug", "sep", "okt", "nov", "dec"][+m - 1] + " " + y; };
+const winTxt = b => { const w = b.buy_window; if (!w) return b.window_note || "okänt"; const [f, t] = w.split(".."); return `${f.length === 7 ? mon(f) : f.slice(8, 10).replace(/^0/, "") + " " + mon(f)} – ${mon(t)}`; };
+function blRow(b) {
+  const it = b.item_id ? ITEMS[b.item_id] : null, s = blState(b), blk = blBlock();
+  const st = b.group === "buy" ? (blk ? `<span class="chip c-a">Köpspärr t.o.m. ${esc(blk.to)}</span>` : `<span class="chip c-g">${ic("cart", 12)} ${esc(b.verdict)}</span>`)
+    : s.inw ? `<span class="chip c-g">${ic("bell", 12)} Köpfönster öppet</span>` : `<span class="chip c-n">${ic("clock", 12)} Köp ${esc(winTxt(b))}</span>`;
+  const flags = (s.drop ? `<span class="chip c-g">▼ ${fmt(Math.abs(s.ch))} % sedan ${esc(b.added_date)}</span>` : "") + (b.group === "wait" ? `<span class="chip c-n">${esc(b.verdict)}</span>` : "");
+  const head = `<div class=th>${img(it, b.name)}</div><div><div class=nm><span class=mut>#${b.rank}</span> ${esc(b.name)}</div><div class=meta>${st}${flags}</div></div>
+    <div class=rt><b>${kr(b.sek)}</b><span class="xs mut">€${fmt(b.trend_eur, 2)}</span><br><span class=chev>${ic("chev", 16)}</span></div>`;
+  const body = `<div class=in><p class=sm><b>Varför 5 år:</b> ${esc(b.why)}</p><p class=sm><b>Risk:</b> <span class=mut>${esc(b.risk)}</span></p>
+    <p class=sm><b>Köpfönster:</b> ${esc(winTxt(b))}${b.group === "buy" ? " (utom köpspärrar)" : ""} · <b>Utlåtande:</b> ${esc(b.verdict)}</p>
+    <p class="xs mut">Cardmarket-trend ${b.trend_date ? esc(b.trend_date) : ""} (idProduct ${b.idProduct}) · tillagd ${esc(b.added_date)} på €${fmt(b.added_trend_eur, 2)}${s.ch != null ? ` · ${s.ch >= 0 ? "+" : "−"}${fmt(Math.abs(s.ch), 1)} % sedan dess` : ""}</p>
+    <h4>Källor</h4>${(b.sources || []).map(x => `<div class=sm><a href="${esc(x.url)}" target=_blank rel=noopener>${ic("ext", 12)} ${esc(x.label)}</a></div>`).join("")}
+    ${it ? `<p class=sm style="margin-top:8px"><a href="${itemHref(it)}">Öppna objektsidan ${ic("chev", 14)}</a></p>` : ""}${(b.cardmarket_url || it?.cardmarket_url) ? `<p class=sm><a href="${esc(b.cardmarket_url || it.cardmarket_url)}" target=_blank rel=noopener>${ic("ext", 13)} Cardmarket – engelska annonser</a></p>` : ""}</div>`;
+  return expRow(head, body);
+}
+function vBuy() {
+  const L = P.buylist || [], S = P.buylist_settings || {}, blk = blBlock(), nb = blNextBlock(), h = location.hash.slice(1);
+  const buy = L.filter(b => b.group === "buy").sort((a, b) => a.rank - b.rank), wait = L.filter(b => b.group === "wait").sort((a, b) => a.rank - b.rank);
+  const opened = wait.filter(b => blState(b).inw), drops = L.filter(b => blState(b).drop);
+  const list = (arr, key, what) => { const all = h === key; return `<div class=list>${(all ? arr : arr.slice(0, LIM)).map(blRow).join("")}</div>${arr.length > LIM ? (all ? `<a class=more href="#koplista">Visa färre ${ic("chev", 14)}</a>` : more(arr.length, "#" + key, what)) : ""}`; };
+  return `<div class=h1>Köpläge</div><p class=sub>5-års-köplista: vad som kan vara värt att köpa och behålla i ~5 år. Tryck på en rad för motivering, risk och källor.</p>
+  <div class=banner>${ic("clock")}<div><b>${esc(S.rule || "Köp aldrig under prerelease/release-säsong.")}</b><br>${blk ? `Köpspärr just nu: ${esc(blk.reason)} – t.o.m. ${esc(blk.to)}.` : nb ? `Nästa köpspärr: ${esc(nb.from)} – ${esc(nb.to)} (${esc(nb.reason)}).` : "Ingen köpspärr inlagd."}</div></div>
+  ${opened.length || drops.length ? `<div class=banner>${ic("bell")}<div>${opened.map(b => `<b>Köpfönster öppet:</b> ${esc(b.name)} (${kr(b.sek)})`).join("<br>")}${opened.length && drops.length ? "<br>" : ""}${drops.map(b => `<b>−${fmt(Math.abs(blState(b).ch))} %:</b> ${esc(b.name)} sedan ${esc(b.added_date)}`).join("<br>")}</div></div>` : ""}
+  <div class=sec><h2>Köp nu – topp ${buy.length}</h2><span>rankat</span></div>${list(buy, "kopnu", "kandidater")}
+  <div class=sec><h2>Vänta på dippen</h2><span>${wait.length} st</span></div>${list(wait, "vanta", "att vänta på")}
+  <div class="card xs mut" style="padding:12px 14px;margin-top:14px;line-height:1.6"><b style="color:var(--txt)">${ic("spark", 14)} Om priserna</b><br>${esc(S.note || "")}<br>${esc(S.method || "")}<br>Priser i kr = Cardmarket-trend × ${P.rates.EUR}. Uppdateras automatiskt mån &amp; tors (prisuppdateringen). Flaggor: köpfönster öppnat, eller ≥ 10 % billigare än när objektet lades till. Inte investeringsråd.</div>
+  ${foot()}`;
+}
 const foot = () => `<p class=foot>Valutor (ECB-referens): ${Object.entries(P.rates).map(([k, v]) => `1 ${k} = ${v} SEK`).join(" · ")}. Värden är uppskattningar från annonser och trender, inte bekräftade försäljningar. Produktbilder tillhör respektive rättighetsinnehavare.</p>`;
 
 // ---------- routing ----------
-const VIEWS = {oversikt: ["Översikt", "home", vOverview], deals: ["Deals", "tag", vDeals], auktioner: ["Auktioner", "gavel", vAuctions], samling: ["Samling", "box", vCollection], bevakning: ["Bevakning", "eye", vWatch]};
+const VIEWS = {oversikt: ["Översikt", "home", vOverview], deals: ["Deals", "tag", vDeals], auktioner: ["Auktioner", "gavel", vAuctions], samling: ["Samling", "box", vCollection], bevakning: ["Bevakning", "eye", vWatch], koplista: ["Köpläge", "cart", vBuy]};
 function nav() {
-  const cur = (location.hash.slice(1) || "oversikt"), cnt = {deals: P.items.flatMap(offersOf).filter(o => o.deal).length, auktioner: auctions().filter(a => a.live).length};
+  const cur = ({kopnu: "koplista", vanta: "koplista", kort: "samling", transaktioner: "samling", lotter: "auktioner"}[location.hash.slice(1)] || location.hash.slice(1) || "oversikt"), cnt = {deals: P.items.flatMap(offersOf).filter(o => o.deal).length, auktioner: auctions().filter(a => a.live).length};
   const links = (cls) => Object.entries(VIEWS).map(([k, [n, i]]) => `<a href="#${k}" class="${cur === k ? "on" : ""}">${ic(i, cls ? 22 : 20)}<span>${n}</span>${!cls && cnt[k] ? `<span class=cnt>${cnt[k]}</span>` : cls && k === "deals" && cnt[k] ? `<span class=dot>${cnt[k]}</span>` : ""}</a>`).join("");
   document.getElementById("tabbar").innerHTML = links(true);
   document.getElementById("side").innerHTML = `<div class=brand><span class=logo>${ic("box", 18)}</span>Samlarportfölj</div>` + links(false);
@@ -317,7 +358,7 @@ function nav() {
 function route() {
   if (!P) return; const hsh = location.hash.slice(1);
   if (hsh.startsWith("item/")) { nav(); document.getElementById("app").innerHTML = `<div class=view>${vItem(decodeURIComponent(hsh.slice(5)))}</div>`; return; }
-  const k = VIEWS[hsh] ? hsh : hsh === "lotter" ? "auktioner" : hsh === "kort" || hsh === "transaktioner" ? "samling" : "oversikt"; nav();
+  const k = VIEWS[hsh] ? hsh : hsh === "lotter" ? "auktioner" : hsh === "kort" || hsh === "transaktioner" ? "samling" : hsh === "kopnu" || hsh === "vanta" ? "koplista" : "oversikt"; nav();
   document.getElementById("app").innerHTML = `<div class=view>${VIEWS[k][2]()}</div>`;
 }
 window.addEventListener("hashchange", () => { route(); window.scrollTo(0, 0); });

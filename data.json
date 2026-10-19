@@ -3518,9 +3518,9 @@
       "status": "watchlist",
       "valuation": {
         "mid": {
-          "price": 2866.77,
+          "price": 5650.16,
           "currency": "EUR",
-          "basis": "Cardmarket trend"
+          "basis": "Cardmarket-trend (prisguide 2026-10-19)"
         }
       },
       "notes": "Ur tryck. 30-dagarssnitt €2 735,16. OBS: Cardmarkets prisguide 12 okt anger trend €5650.16 för 'LotR Special Edition Collector Booster Box' (id 732335) – kraftigt över tidigare €2 866,77; oklart om samma produkt/variant, verifiera.",
@@ -3600,9 +3600,9 @@
       "status": "watchlist",
       "valuation": {
         "mid": {
-          "price": 832.08,
+          "price": 1173.73,
           "currency": "EUR",
-          "basis": "Cardmarket trend"
+          "basis": "Cardmarket-trend (prisguide 2026-10-19)"
         }
       },
       "notes": "Källor motstridiga: MythicHub visar €1 123 för Cardmarket.",
@@ -3706,9 +3706,9 @@
       "status": "watchlist",
       "valuation": {
         "mid": {
-          "price": 724.56,
+          "price": 734.07,
           "currency": "EUR",
-          "basis": "Cardmarket (MythicHub)"
+          "basis": "Cardmarket-trend (prisguide 2026-10-19)"
         }
       },
       "notes": "Släppt 14 jun 2024.",
@@ -7105,7 +7105,7 @@
         "mid": {
           "price": 12.14,
           "currency": "EUR",
-          "basis": "Cardmarket-trend non-foil (prisguide 2026-10-19), per kort"
+          "basis": "Cardmarket-trend (prisguide 2026-10-19), per st"
         },
         "high": {
           "price": 14.61,
@@ -9081,7 +9081,7 @@
         "mid": {
           "price": 1.15,
           "currency": "EUR",
-          "basis": "Cardmarket-trend foil (prisguide 2026-10-19), per st"
+          "basis": "Cardmarket-trend-foil (prisguide 2026-10-19), per st"
         }
       },
       "notes": "Cardmarket-köp 2017-02-02; 1.74 €/st; kostnad i SEK med dagens kurs 11.145; frakt fördelad på artiklarna.",
@@ -10107,7 +10107,7 @@
         "mid": {
           "price": 0.35,
           "currency": "EUR",
-          "basis": "Cardmarket-trend foil (prisguide 2026-10-19), per st"
+          "basis": "Cardmarket-trend-foil (prisguide 2026-10-19), per st"
         }
       },
       "notes": "Cardmarket-köp 2016-03-29; 0.73 €/st; kostnad i SEK med dagens kurs 11.145; frakt fördelad på artiklarna.",
@@ -13077,7 +13077,7 @@
         "mid": {
           "price": 0.44,
           "currency": "EUR",
-          "basis": "Cardmarket-trend foil (prisguide 2026-10-19), per st"
+          "basis": "Cardmarket-trend-foil (prisguide 2026-10-19), per st"
         }
       },
       "notes": "Cardmarket-köp 2015-07-25; 0.34 €/st; kostnad i SEK med dagens kurs 11.145; frakt fördelad på artiklarna.",
@@ -13647,7 +13647,7 @@
         "mid": {
           "price": 0.45,
           "currency": "EUR",
-          "basis": "Cardmarket-trend foil (prisguide 2026-10-19), per st"
+          "basis": "Cardmarket-trend-foil (prisguide 2026-10-19), per st"
         }
       },
       "notes": "Cardmarket-köp 2015-07-16; 1.95 €/st; kostnad i SEK med dagens kurs 11.145; frakt fördelad på artiklarna.",
@@ -13686,7 +13686,7 @@
         "mid": {
           "price": 0.66,
           "currency": "EUR",
-          "basis": "Cardmarket-trend foil (prisguide 2026-10-19), per st"
+          "basis": "Cardmarket-trend-foil (prisguide 2026-10-19), per st"
         }
       },
       "notes": "Cardmarket-köp 2015-07-16; 1.45 €/st; kostnad i SEK med dagens kurs 11.145; frakt fördelad på artiklarna.",
@@ -13893,7 +13893,7 @@
         "mid": {
           "price": 0.84,
           "currency": "EUR",
-          "basis": "Cardmarket-trend foil (prisguide 2026-10-19), per st"
+          "basis": "Cardmarket-trend-foil (prisguide 2026-10-19), per st"
         }
       },
       "notes": "Cardmarket-köp 2015-07-16; 2.99 €/st; kostnad i SEK med dagens kurs 11.145; frakt fördelad på artiklarna.",
@@ -15084,7 +15084,7 @@
         "mid": {
           "price": 7.4,
           "currency": "EUR",
-          "basis": "Cardmarket-trend foil (prisguide 2026-10-19), per st"
+          "basis": "Cardmarket-trend-foil (prisguide 2026-10-19), per st"
         }
       },
       "notes": "Cardmarket-köp 2015-06-01; 8.95 €/st; kostnad i SEK med dagens kurs 11.145; frakt fördelad på artiklarna.",
@@ -20115,5 +20115,655 @@
       "reason": "Ej engelska – exkluderad enligt språkfilter"
     }
   ],
-  "bulk_threshold_sek": 20
+  "bulk_threshold_sek": 20,
+  "buylist": [
+    {
+      "id": "bl-spm-cbb",
+      "item_id": "mtg-marvel-s-spider-man-cbb",
+      "name": "Marvel's Spider-Man Collector Booster Display",
+      "rank": 1,
+      "group": "buy",
+      "idProduct": 814380,
+      "verdict": "Köp nu (före 6 nov) eller från december",
+      "buy_window": "2026-10-19..2027-06",
+      "why": "Under officiellt MSRP ($455,88; US-marknad $414). Botten ~$329 i apr 2026, nu på väg upp. Marvel – stark popkultur.",
+      "risk": "Svagt mottagen set; fler Marvel-set (Super Heroes, Darkhold) späder ut. Rallyt 2025–26 kan vända.",
+      "sources": [
+        {
+          "label": "WotC: Collecting Marvel's Spider-Man (MSRP $37,99/pack)",
+          "url": "https://magic.wizards.com/en/news/feature/collecting-marvels-spider-man"
+        },
+        {
+          "label": "Draftsim: Spider-Man-boxar faller",
+          "url": "https://draftsim.com/spider-man-collector-boxes-price-drop/"
+        },
+        {
+          "label": "CCG Index (TCGplayer-marknad)",
+          "url": "https://ccgindex.com/index/mtg_collector_booster_box"
+        },
+        {
+          "label": "Cardmarket prisguide",
+          "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json"
+        }
+      ],
+      "game": 1,
+      "trend_eur": 340.82,
+      "sek": 3798,
+      "trend_date": "2026-10-19",
+      "added_trend_eur": 340.82,
+      "added_date": "2026-10-19",
+      "history": [
+        {
+          "date": "2026-10-19",
+          "trend_eur": 340.82
+        }
+      ],
+      "flags": {
+        "window_open_since": "2026-10-19"
+      }
+    },
+    {
+      "id": "bl-tla-cbb",
+      "item_id": "mtg-avatar-the-last-airbender-cbb",
+      "name": "Avatar: The Last Airbender Collector Booster Display",
+      "rank": 2,
+      "group": "buy",
+      "idProduct": 842564,
+      "verdict": "Köp nu",
+      "buy_window": "2026-10-19..2027-06",
+      "why": "Bottnade dec 2025–feb 2026 ($346–371), nu ~$493 mot MSRP $455,88. Stark popkulturfranchise.",
+      "risk": "Föll från ~$928 i förköp – efterfrågan har redan svalnat en gång.",
+      "sources": [
+        {
+          "label": "Beckett: MSRP $37,99/pack",
+          "url": "https://www.beckett.com/news/why-are-spider-man-mtg-collector-booster-boxes-already-1000/"
+        },
+        {
+          "label": "pricehistory.app: Avatar CB",
+          "url": "https://pricehistory.app/p/magic-gathering-avatar-last-airbender-collector-booster-szBZXwmb"
+        },
+        {
+          "label": "CCG Index (TCGplayer-marknad)",
+          "url": "https://ccgindex.com/index/mtg_collector_booster_box"
+        },
+        {
+          "label": "Cardmarket prisguide",
+          "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json"
+        }
+      ],
+      "game": 1,
+      "trend_eur": 392.66,
+      "sek": 4376,
+      "trend_date": "2026-10-19",
+      "added_trend_eur": 392.66,
+      "added_date": "2026-10-19",
+      "history": [
+        {
+          "date": "2026-10-19",
+          "trend_eur": 392.66
+        }
+      ],
+      "flags": {
+        "window_open_since": "2026-10-19"
+      }
+    },
+    {
+      "id": "bl-fin-cbb",
+      "item_id": "mtg-fin-cbb",
+      "name": "Final Fantasy Collector Booster Display",
+      "rank": 3,
+      "group": "buy",
+      "idProduct": 812573,
+      "verdict": "Liten post – köp vid rekyl",
+      "buy_window": "2026-10-19..2027-12",
+      "why": "Starkaste Universes Beyond-franchisen hittills. ~21 % billigare i EU än i USA ($1 663). Botten ~$1 033 i feb 2026.",
+      "risk": "Redan +132 % sedan release; trycktes fortfarande sent 2025.",
+      "sources": [
+        {
+          "label": "mtgrocks: Final Fantasy CB $1 200",
+          "url": "https://mtgrocks.com/final-fantasy-collector-booster-box-prices/"
+        },
+        {
+          "label": "MTGStocks: Four MTG Macro Trends 2026",
+          "url": "https://www.mtgstocks.com/news/20762-four-mtg-macro-trends-heading-into-2026"
+        },
+        {
+          "label": "CCG Index (TCGplayer-marknad)",
+          "url": "https://ccgindex.com/index/mtg_collector_booster_box"
+        },
+        {
+          "label": "Cardmarket prisguide",
+          "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json"
+        }
+      ],
+      "game": 1,
+      "trend_eur": 1173.73,
+      "sek": 13081,
+      "trend_date": "2026-10-19",
+      "added_trend_eur": 1173.73,
+      "added_date": "2026-10-19",
+      "history": [
+        {
+          "date": "2026-10-19",
+          "trend_eur": 1173.73
+        }
+      ],
+      "flags": {
+        "window_open_since": "2026-10-19"
+      }
+    },
+    {
+      "id": "bl-mh3-cbb",
+      "item_id": "mtg-mh3-cbb",
+      "name": "Modern Horizons 3 Collector Booster Display",
+      "rank": 4,
+      "group": "buy",
+      "idProduct": 758483,
+      "verdict": "Köp nu (måttlig övertygelse)",
+      "buy_window": "2026-10-19..2027-12",
+      "why": "Varaktig efterfrågan från Modern- och Commander-spelare. US-marknad $894.",
+      "risk": "Nyckelkorten kan tryckas om.",
+      "sources": [
+        {
+          "label": "ICv2 TCGplayer Top 25 Sealed (månadsdata)",
+          "url": "https://icv2.com/articles/markets/view/49685/tcgplayer-top-25-sealed-tcg-products-with-price-shifts-index"
+        },
+        {
+          "label": "CCG Index (TCGplayer-marknad)",
+          "url": "https://ccgindex.com/index/mtg_collector_booster_box"
+        },
+        {
+          "label": "Cardmarket prisguide",
+          "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json"
+        }
+      ],
+      "game": 1,
+      "trend_eur": 734.07,
+      "sek": 8181,
+      "trend_date": "2026-10-19",
+      "added_trend_eur": 734.07,
+      "added_date": "2026-10-19",
+      "history": [
+        {
+          "date": "2026-10-19",
+          "trend_eur": 734.07
+        }
+      ],
+      "flags": {
+        "window_open_since": "2026-10-19"
+      }
+    },
+    {
+      "id": "bl-tmt-cbb",
+      "item_id": null,
+      "name": "Teenage Mutant Ninja Turtles Collector Booster Display",
+      "rank": 5,
+      "group": "buy",
+      "idProduct": 853671,
+      "verdict": "Köp nu – liten, spekulativ post",
+      "buy_window": "2026-10-19..2027-06",
+      "why": "Billigaste Universes Beyond-displayen på Cardmarket, ~26 % under US-pris ($427). Flat $390–440 sedan januari.",
+      "risk": "Floppade vid release – spekulativ.",
+      "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products/Search?searchString=Teenage%20Mutant%20Ninja%20Turtles%20Collector%20Booster%20Box&language=1",
+      "sources": [
+        {
+          "label": "Nerdbeak: TMNT floppar vid release",
+          "url": "https://www.nerdbeak.com/news/mtg-tmnt-flopping-launch-weekend-march-2026"
+        },
+        {
+          "label": "CCG Index (TCGplayer-marknad)",
+          "url": "https://ccgindex.com/index/mtg_collector_booster_box"
+        },
+        {
+          "label": "Cardmarket prisguide",
+          "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json"
+        }
+      ],
+      "game": 1,
+      "trend_eur": 281.96,
+      "sek": 3142,
+      "trend_date": "2026-10-19",
+      "added_trend_eur": 281.96,
+      "added_date": "2026-10-19",
+      "history": [
+        {
+          "date": "2026-10-19",
+          "trend_eur": 281.96
+        }
+      ],
+      "flags": {
+        "window_open_since": "2026-10-19"
+      }
+    },
+    {
+      "id": "bl-who-cbb",
+      "item_id": null,
+      "name": "Doctor Who Collector Booster Display",
+      "rank": 6,
+      "group": "buy",
+      "idProduct": 710800,
+      "verdict": "Vänta på rekyl",
+      "buy_window": "2026-10-19..2027-12",
+      "why": "Slutsåld (ur tryck) och popkultur.",
+      "risk": "+115 % på Cardmarket sedan juli 2025 – köp inte på toppen.",
+      "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products/Search?searchString=Doctor%20Who%20Collector%20Booster%20Box&language=1",
+      "sources": [
+        {
+          "label": "ICv2 TCGplayer Top 25 Sealed (månadsdata)",
+          "url": "https://icv2.com/articles/markets/view/49685/tcgplayer-top-25-sealed-tcg-products-with-price-shifts-index"
+        },
+        {
+          "label": "CCG Index (TCGplayer-marknad)",
+          "url": "https://ccgindex.com/index/mtg_collector_booster_box"
+        },
+        {
+          "label": "Cardmarket prisguide",
+          "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json"
+        }
+      ],
+      "game": 1,
+      "trend_eur": 538.51,
+      "sek": 6002,
+      "trend_date": "2026-10-19",
+      "added_trend_eur": 538.51,
+      "added_date": "2026-10-19",
+      "history": [
+        {
+          "date": "2026-10-19",
+          "trend_eur": 538.51
+        }
+      ],
+      "flags": {
+        "window_open_since": "2026-10-19"
+      }
+    },
+    {
+      "id": "bl-sos-cbb",
+      "item_id": null,
+      "name": "Secrets of Strixhaven Collector Booster Display",
+      "rank": 7,
+      "group": "buy",
+      "idProduct": 869357,
+      "verdict": "Köp nu eller dec–jan",
+      "buy_window": "2026-10-19..2027-06",
+      "why": "6 mån efter release, flat $440–500. Vanliga set har bottnat 0–3 mån efter release. MSRP $323,88.",
+      "risk": "Vanligt set (inte Universes Beyond); svagare franchisedragning.",
+      "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products/Search?searchString=Secrets%20of%20Strixhaven%20Collector%20Booster%20Box&language=1",
+      "sources": [
+        {
+          "label": "WotC: Lorwyn Eclipsed – nytt CB-pris $26,99",
+          "url": "https://magic.wizards.com/en/news/feature/collecting-lorwyn-eclipsed"
+        },
+        {
+          "label": "CCG Index (TCGplayer-marknad)",
+          "url": "https://ccgindex.com/index/mtg_collector_booster_box"
+        },
+        {
+          "label": "Cardmarket prisguide",
+          "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json"
+        }
+      ],
+      "game": 1,
+      "trend_eur": 387.89,
+      "sek": 4323,
+      "trend_date": "2026-10-19",
+      "added_trend_eur": 387.89,
+      "added_date": "2026-10-19",
+      "history": [
+        {
+          "date": "2026-10-19",
+          "trend_eur": 387.89
+        }
+      ],
+      "flags": {
+        "window_open_since": "2026-10-19"
+      }
+    },
+    {
+      "id": "bl-ecl-cbb",
+      "item_id": null,
+      "name": "Lorwyn Eclipsed Collector Booster Display",
+      "rank": 8,
+      "group": "buy",
+      "idProduct": 851271,
+      "verdict": "Köp nu – låg prioritet",
+      "buy_window": "2026-10-19..2027-06",
+      "why": "Bottnade ~maj 2026 och har legat flat sedan dess. MSRP $323,88.",
+      "risk": "Vanligt set; begränsad uppsida.",
+      "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products/Search?searchString=Lorwyn%20Eclipsed%20Collector%20Booster%20Box&language=1",
+      "sources": [
+        {
+          "label": "WotC: Collecting Lorwyn Eclipsed",
+          "url": "https://magic.wizards.com/en/news/feature/collecting-lorwyn-eclipsed"
+        },
+        {
+          "label": "CCG Index (TCGplayer-marknad)",
+          "url": "https://ccgindex.com/index/mtg_collector_booster_box"
+        },
+        {
+          "label": "Cardmarket prisguide",
+          "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json"
+        }
+      ],
+      "game": 1,
+      "trend_eur": 359.23,
+      "sek": 4004,
+      "trend_date": "2026-10-19",
+      "added_trend_eur": 359.23,
+      "added_date": "2026-10-19",
+      "history": [
+        {
+          "date": "2026-10-19",
+          "trend_eur": 359.23
+        }
+      ],
+      "flags": {
+        "window_open_since": "2026-10-19"
+      }
+    },
+    {
+      "id": "bl-usea-3ed",
+      "item_id": null,
+      "name": "Underground Sea – Revised (Reserved List)",
+      "rank": 9,
+      "group": "buy",
+      "idProduct": 5833,
+      "verdict": "Köp nu – stabil diversifiering",
+      "buy_window": "2026-10-19..2027-12",
+      "why": "Reserved List: Wizards har lovat att aldrig trycka om den. NM-trend som referens; stadigare än sealed.",
+      "risk": "MTGStocks: Reserved List-priser rör sig 'i sidled' – vänta dig inte stora vinster. Kontrollera skick och äkthet.",
+      "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products/Singles/Revised/Underground-Sea",
+      "sources": [
+        {
+          "label": "WotC: Official Reprint Policy",
+          "url": "https://magic.wizards.com/en/news/announcements/official-reprint-policy"
+        },
+        {
+          "label": "MTGStocks: Four MTG Macro Trends 2026",
+          "url": "https://www.mtgstocks.com/news/20762-four-mtg-macro-trends-heading-into-2026"
+        },
+        {
+          "label": "Cardmarket prisguide",
+          "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json"
+        }
+      ],
+      "game": 1,
+      "trend_eur": 772.22,
+      "sek": 8606,
+      "trend_date": "2026-10-19",
+      "added_trend_eur": 772.22,
+      "added_date": "2026-10-19",
+      "history": [
+        {
+          "date": "2026-10-19",
+          "trend_eur": 772.22
+        }
+      ],
+      "flags": {
+        "window_open_since": "2026-10-19"
+      }
+    },
+    {
+      "id": "bl-evs-bb",
+      "item_id": null,
+      "name": "Pokémon Evolving Skies Booster Box",
+      "rank": 10,
+      "group": "buy",
+      "idProduct": 568765,
+      "game": 6,
+      "verdict": "Köp nu om budgeten tillåter",
+      "buy_window": "2026-10-19..2027-12",
+      "why": "Blue chip inom förseglat Pokémon (Eeveelution-alt arts). Prismatic Evolutions ETB (149,83 €) trycks fortfarande – vänta på omtrycksdipp.",
+      "risk": "Redan dyr att gå in i; topptunga utfall.",
+      "cardmarket_url": "https://www.cardmarket.com/en/Pokemon/Products/Search?searchString=Evolving%20Skies%20Booster%20Box&language=1",
+      "sources": [
+        {
+          "label": "bench.capital: Pokémon sealed-data",
+          "url": "https://bench.capital/"
+        },
+        {
+          "label": "poke-life: vad prishistoriken visar",
+          "url": "https://www.poke-life.com/research/how-to-invest-in-pokemon-cards/"
+        },
+        {
+          "label": "Colorful Cardboard: Prismatic Evolutions",
+          "url": "https://colorfulcardboard.com/posts/2026-03-09-prismatic-evolutions-sealed-hold-market-analysis-2026/"
+        },
+        {
+          "label": "Cardmarket prisguide (Pokémon)",
+          "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_6.json"
+        }
+      ],
+      "trend_eur": 1689.77,
+      "sek": 18832,
+      "trend_date": "2026-10-19",
+      "added_trend_eur": 1689.77,
+      "added_date": "2026-10-19",
+      "history": [
+        {
+          "date": "2026-10-19",
+          "trend_eur": 1689.77
+        }
+      ],
+      "flags": {
+        "window_open_since": "2026-10-19"
+      }
+    },
+    {
+      "id": "bl-hob-cbb",
+      "item_id": "mtg-hobbit-cbb",
+      "name": "The Hobbit Collector Booster Display",
+      "rank": 1,
+      "group": "wait",
+      "idProduct": 885552,
+      "verdict": "Vänta – sjunker fortfarande",
+      "buy_window": "2026-12..2027-04",
+      "why": "Släppt 14 aug. Universes Beyond-set har bottnat 4–8 mån efter release. Högsta prioritet; LotR-förlagan steg kraftigt. Keepa-larmet (710 €) ligger nu över Cardmarket-trenden.",
+      "risk": "Kan fortsätta ned; MSRP $455,88.",
+      "sources": [
+        {
+          "label": "WotC: Collecting The Hobbit",
+          "url": "https://magic.wizards.com/en/news/feature/collecting-the-hobbit"
+        },
+        {
+          "label": "SCG: släppschema 2026",
+          "url": "https://articles.starcitygames.com/magic-the-gathering/magic-the-gathering-full-set-release-schedule-for-2026/"
+        },
+        {
+          "label": "CCG Index (TCGplayer-marknad)",
+          "url": "https://ccgindex.com/index/mtg_collector_booster_box"
+        },
+        {
+          "label": "Cardmarket prisguide",
+          "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json"
+        }
+      ],
+      "game": 1,
+      "trend_eur": 586.56,
+      "sek": 6537,
+      "trend_date": "2026-10-19",
+      "added_trend_eur": 586.56,
+      "added_date": "2026-10-19",
+      "history": [
+        {
+          "date": "2026-10-19",
+          "trend_eur": 586.56
+        }
+      ],
+      "flags": {}
+    },
+    {
+      "id": "bl-msh-cbb",
+      "item_id": "mtg-marvel-super-heroes-cbb",
+      "name": "Marvel Super Heroes Collector Booster Display",
+      "rank": 2,
+      "group": "wait",
+      "idProduct": 869496,
+      "verdict": "Vänta",
+      "buy_window": "2026-12..2027-02",
+      "why": "Släppt 26 jun, fortfarande på botten. Marvel.",
+      "risk": "Flera Marvel-set på rad.",
+      "sources": [
+        {
+          "label": "SCG: släppschema 2026",
+          "url": "https://articles.starcitygames.com/magic-the-gathering/magic-the-gathering-full-set-release-schedule-for-2026/"
+        },
+        {
+          "label": "CCG Index (TCGplayer-marknad)",
+          "url": "https://ccgindex.com/index/mtg_collector_booster_box"
+        },
+        {
+          "label": "Cardmarket prisguide",
+          "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json"
+        }
+      ],
+      "game": 1,
+      "trend_eur": 334.39,
+      "sek": 3727,
+      "trend_date": "2026-10-19",
+      "added_trend_eur": 334.39,
+      "added_date": "2026-10-19",
+      "history": [
+        {
+          "date": "2026-10-19",
+          "trend_eur": 334.39
+        }
+      ],
+      "flags": {}
+    },
+    {
+      "id": "bl-fra-cbb",
+      "item_id": "mtg-reality-fracture-cbb",
+      "name": "Reality Fracture Collector Booster Display",
+      "rank": 3,
+      "group": "wait",
+      "idProduct": 885563,
+      "verdict": "Vänta (en förbeställd)",
+      "buy_window": "2026-12..2027-01",
+      "why": "Släppt 2 okt; vanliga set bottnar 0–3 mån efter release. MSRP $323,88.",
+      "risk": "Vanligt set.",
+      "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products/Search?searchString=Reality%20Fracture%20Collector%20Booster%20Box&language=1",
+      "sources": [
+        {
+          "label": "tabletopmeta: Reality Fracture-priser",
+          "url": "https://www.tabletopmeta.com/news/reality-fracture-prices-serialized-cards-30-pack-boxes"
+        },
+        {
+          "label": "SCG: släppschema 2026",
+          "url": "https://articles.starcitygames.com/magic-the-gathering/magic-the-gathering-full-set-release-schedule-for-2026/"
+        },
+        {
+          "label": "Cardmarket prisguide",
+          "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json"
+        }
+      ],
+      "game": 1,
+      "trend_eur": 323.57,
+      "sek": 3606,
+      "trend_date": "2026-10-19",
+      "added_trend_eur": 323.57,
+      "added_date": "2026-10-19",
+      "history": [
+        {
+          "date": "2026-10-19",
+          "trend_eur": 323.57
+        }
+      ],
+      "flags": {}
+    },
+    {
+      "id": "bl-trk-cbb",
+      "item_id": null,
+      "name": "Star Trek Collector Booster Display",
+      "rank": 4,
+      "group": "wait",
+      "idProduct": 897523,
+      "verdict": "Vänta – släpps 13 nov",
+      "buy_window": "2027-03..2027-07",
+      "why": "Faller redan i förköp (~$930 i juli → ~$575–662). Vissa butiker förbeställer för $400.",
+      "risk": "Okänd efterfrågan efter release.",
+      "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products/Search?searchString=Star%20Trek%20Collector%20Booster%20Box&language=1",
+      "sources": [
+        {
+          "label": "Final Boss: Star Trek-förköp",
+          "url": "https://www.finalbossva.com/blog/mtg-star-trek"
+        },
+        {
+          "label": "SCG: släppschema 2026",
+          "url": "https://articles.starcitygames.com/magic-the-gathering/magic-the-gathering-full-set-release-schedule-for-2026/"
+        },
+        {
+          "label": "CCG Index (TCGplayer-marknad)",
+          "url": "https://ccgindex.com/index/mtg_collector_booster_box"
+        },
+        {
+          "label": "Cardmarket prisguide",
+          "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json"
+        }
+      ],
+      "game": 1,
+      "trend_eur": 469.12,
+      "sek": 5228,
+      "trend_date": "2026-10-19",
+      "added_trend_eur": 469.12,
+      "added_date": "2026-10-19",
+      "history": [
+        {
+          "date": "2026-10-19",
+          "trend_eur": 469.12
+        }
+      ],
+      "flags": {}
+    },
+    {
+      "id": "bl-dhd-cbb",
+      "item_id": null,
+      "name": "Marvel: Darkhold Destiny Collector Booster Display",
+      "rank": 5,
+      "group": "wait",
+      "idProduct": 916747,
+      "verdict": "Vänta – förköp, släpps 2027",
+      "buy_window": null,
+      "window_note": "4–8 mån efter release (datum ej känt)",
+      "why": "Marvel. Universes Beyond-mönstret: toppen kommer i förköpet.",
+      "risk": "Endast förköp; inget releasedatum bekräftat.",
+      "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products/Search?searchString=Marvel%20Darkhold%20Destiny%20Collector%20Booster%20Box&language=1",
+      "sources": [
+        {
+          "label": "CCG Index (TCGplayer-marknad)",
+          "url": "https://ccgindex.com/index/mtg_collector_booster_box"
+        },
+        {
+          "label": "Cardmarket prisguide",
+          "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json"
+        }
+      ],
+      "game": 1,
+      "trend_eur": 412.16,
+      "sek": 4594,
+      "trend_date": "2026-10-19",
+      "added_trend_eur": 412.16,
+      "added_date": "2026-10-19",
+      "history": [
+        {
+          "date": "2026-10-19",
+          "trend_eur": 412.16
+        }
+      ],
+      "flags": {}
+    }
+  ],
+  "buylist_settings": {
+    "rule": "Köp aldrig under prerelease/release-säsong.",
+    "blackouts": [
+      {
+        "from": "2026-11-06",
+        "to": "2026-11-30",
+        "reason": "Star Trek prerelease 6–12 nov, release 13 nov (+ buffert)"
+      }
+    ],
+    "note": "Cardmarket-trenden är inte språkfiltrerad (blandar EN/DE/FR/JP m.fl.). Kontrollera engelska annonser innan köp.",
+    "method": "Köpfönster bygger på hur Collector-displayer 2019–2026 rört sig efter release (ICv2/TCGplayer, CCG Index). Vanliga set: botten 0–3 mån efter release; Universes Beyond 2025–26: 4–8 mån. Priserna är uppblåsta av rallyt 2025–26 (median +75 % på Cardmarket sedan juli 2025) – sprid köpen.",
+    "added": "2026-10-19"
+  }
 }

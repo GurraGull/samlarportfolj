@@ -113,3 +113,10 @@ Botens inkorg **gurragull@mail.grokbot.com** kan användas för butikernas "medd
 - Värde: Cardmarket-trend (trend-foil för foil) per st, uppdateras med `update.py cmguide`. Prisguiden är inte språk- eller skickfiltrerad (3 japanska, 2 spanska; Antiquities-länder GD/EX).
 - Säljarnamn och order-id ligger bara i den privata CSV:n (gitignorerad), inte i repot.
 - Samling visar max 5 kort per spel + "Visa alla"; kort under `bulk_threshold_sek` ligger i hopfälld Bulk-rad. Transaktioner visar 5 senaste + "Visa alla" (`#transaktioner`).
+
+## Köpläge / 5-års-köplista
+- Data: `buylist` (toppnivå i data.json) + `buylist_settings` (regel, köpspärrar `blackouts`, språknotis). Fält per rad: id, item_id (valfri koppling till bevakat objekt), name, rank, group (`buy`|`wait`), idProduct, game (1 = Magic, 6 = Pokémon), trend_eur, sek, trend_date, added_trend_eur, added_date, verdict, buy_window (`ÅÅÅÅ-MM[-DD]..ÅÅÅÅ-MM[-DD]`), why, risk, sources[], history[], flags{}.
+- `python3 update.py cmguide` uppdaterar trend_eur/sek via idProduct (Pokémon från price_guide_6) och sätter flaggor: `window_open_since` (köpfönstret öppnat; för `wait` skrivs "KÖPFÖNSTER ÖPPET" ut) och `dropped_10_since` (≥ 10 % under priset när den lades till). Körs i prisuppdateringen mån & tors.
+- `python3 update.py buylist` visar listan, fönster, köpspärr och flaggor.
+- cmguide uppdaterar nu också `valuation.mid` för bevakade objekt (watchlist) som har `cardmarket_id`.
+- Sajten: fliken "Köpläge" (#koplista; max 5 per lista, "Visa alla" → #kopnu / #vanta) + ett kort på Översikt.

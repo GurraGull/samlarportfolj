@@ -5,3 +5,5 @@ cardmarket_purchases*.csv
 cardmarket_purchases_raw.csv
 cardmarket_purchases.csv
 cardmarket_purchases_summary.md
+collector_display_history.md
+signup_plan.md

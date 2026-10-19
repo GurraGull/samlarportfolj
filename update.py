@@ -15,12 +15,47 @@
   python3 update.py publish ["meddelande"]  -> git commit + push (sajten läser data.json)
   python3 update.py build                     -> sätter last_updated=idag och bygger HTML
   python3 update.py cmguide [--dry]           -> hämtar Cardmarkets prisguide och uppdaterar alla items med
-                                                 price_source=cardmarket_guide via cardmarket_id (trend / trend-foil)
+                                                 price_source=cardmarket_guide via cardmarket_id (trend / trend-foil),
+                                                 bevakade (watchlist) items med cardmarket_id, samt köplistan (buylist)
+  python3 update.py buylist                   -> visar köplistan med köpfönster/flaggor (ingen nedladdning)
 Inga priser hämtas automatiskt: agenten/användaren söker fram dem och matar in här."""
 import json, sys, pathlib, datetime as dt, subprocess
 D = pathlib.Path(__file__).parent; F = D/"data.json"
 p = json.loads(F.read_text()); a = sys.argv[1:]
 def save(): F.write_text(json.dumps(p, ensure_ascii=False, indent=2))
+def _win(b):  # köpfönster "ÅÅÅÅ-MM[-DD]..ÅÅÅÅ-MM[-DD]" -> (från, till) som datum
+    w = b.get("buy_window")
+    if not w or ".." not in w: return None, None
+    f_, t_ = w.split("..")
+    fr = dt.date.fromisoformat(f_ + "-01" if len(f_) == 7 else f_)
+    if len(t_) == 7: y, m = map(int, t_.split("-")); to = dt.date(y + m // 12, m % 12 + 1, 1) - dt.timedelta(days=1)
+    else: to = dt.date.fromisoformat(t_)
+    return fr, to
+def buylist_status(b, today=None):
+    """Returnerar (i_fönster, spärrad_av, ändring_% mot tillagt)."""
+    today = today or dt.date.today(); fr, to = _win(b)
+    block = next((x for x in p.get("buylist_settings", {}).get("blackouts", []) if dt.date.fromisoformat(x["from"]) <= today <= dt.date.fromisoformat(x["to"])), None)
+    inw = bool(fr and fr <= today <= to)
+    ch = (b["trend_eur"] / b["added_trend_eur"] - 1) * 100 if b.get("trend_eur") and b.get("added_trend_eur") else None
+    return inw, block, ch
+def buylist_refresh(guides, day):
+    """Uppdaterar köplistans trend_eur/sek via idProduct och sätter flaggor (köpfönster öppnat, −10 % sedan tillagd)."""
+    rate = p["rates"]["EUR"]; today = dt.date.today()
+    for b in p["buylist"]:
+        x = guides.get(b.get("game", 1), {}).get(b.get("idProduct")); t = x.get("trend") if x else None
+        if not t: print("köplista saknar pris:", b["id"]); continue
+        b["trend_eur"] = t; b["sek"] = round(t * rate); b["trend_date"] = day
+        h = b.setdefault("history", [])
+        if not any(e["date"] == day for e in h): h.append({"date": day, "trend_eur": t})
+        inw, block, ch = buylist_status(b, today); fl = b.setdefault("flags", {})
+        if inw and not block and not fl.get("window_open_since"):
+            fl["window_open_since"] = today.isoformat()
+            if b["group"] == "wait": print(f"  KÖPFÖNSTER ÖPPET: {b['name']} ({b['buy_window']}) {t} € – dags att titta på köp")
+        if not inw and fl.get("window_open_since") and b["group"] == "wait": fl.pop("window_open_since")
+        if ch is not None and ch <= -10:
+            if not fl.get("dropped_10_since"): fl["dropped_10_since"] = today.isoformat(); print(f"  −10 %: {b['name']} {b['added_trend_eur']} → {t} € ({ch:.0f} %)")
+        else: fl.pop("dropped_10_since", None)
+    print(f"köplista: {len(p['buylist'])} uppdaterade")
 if not a or a[0] == "list":
     auto = [i for i in p["items"] if i.get("price_source") == "cardmarket_guide"]
     if auto: print(f"{len(auto)} items uppdateras automatiskt via 'update.py cmguide' (Cardmarket-prisguiden, idProduct) och listas inte här.")
@@ -105,7 +140,7 @@ elif a[0] == "publish":
     # Commit + push data.json (och ev. ändrade filer). Kräver remote 'origin' och GITHUB_TOKEN i env.
     msg = a[1] if len(a) > 1 else f"Prisuppdatering {dt.date.today()}"
     g = lambda *c: subprocess.run(["git", "-C", str(D), *c], check=True)
-    g("add", "data.json", "index.html", "app.js", "style.css", "README.md", "update.py", "stockcheck.py", "images")
+    g("add", "data.json", "index.html", "app.js", "style.css", "README.md", "update.py", "stockcheck.py", "images", ".gitignore")
     if subprocess.run(["git", "-C", str(D), "diff", "--cached", "--quiet"]).returncode: g("commit", "-m", msg)
     g("-c", "credential.helper=!f() { echo username=x-access-token; echo password=$GITHUB_TOKEN; }; f", "push", "origin", "main")
 elif a[0] == "cmguide":
@@ -126,8 +161,34 @@ elif a[0] == "cmguide":
                                    "note": f"idProduct {i['cardmarket_id']}, {k} (avg30 {x.get('avg30-foil' if i.get('foil') else 'avg30')})"})
         n += 1
         if abs(t - old) / max(old, 0.01) >= 0.2 and t * p["rates"]["EUR"] * i["quantity"] >= 100: print(f"  {i['name']}: {old} → {t} €")
-    print(f"prisguide {g['createdAt']}: {n} uppdaterade, {miss} utan pris")
+    # Bevakade objekt (watchlist) med cardmarket_id: håll valuation.mid i takt med prisguiden
+    w = 0
+    for i in p["items"]:
+        if i.get("status") != "watchlist" or not i.get("cardmarket_id") or i.get("price_source") == "cardmarket_guide": continue
+        x = pg.get(i["cardmarket_id"]); t = x.get("trend") if x else None
+        if not t: print("bevakning saknar pris:", i["id"]); continue
+        old = i["valuation"]["mid"]["price"]
+        i["valuation"]["mid"] = {"price": t, "currency": "EUR", "basis": f"Cardmarket-trend (prisguide {day})"}
+        if not any(s["date"] == day and s["source"] == "Cardmarket prisguide" for s in i["snapshots"]):
+            i["snapshots"].append({"date": day, "source": "Cardmarket prisguide", "price": t, "currency": "EUR", "type": "trend", "url": URL,
+                                   "note": f"Officiell Cardmarket-prisguide (idProduct {i['cardmarket_id']}), ej språkfiltrerad."})
+        if abs(t - old) / max(old, 0.01) >= 0.1: print(f"  bevakning {i['name']}: {old} → {t} €")
+        w += 1
+    print(f"prisguide {g['createdAt']}: {n} uppdaterade, {miss} utan pris, {w} bevakade")
+    if p.get("buylist"):
+        guides = {1: pg}
+        for gm in sorted({b.get("game", 1) for b in p["buylist"]} - {1}):
+            u = URL.replace("price_guide_1", f"price_guide_{gm}")
+            gg = json.loads(urllib.request.urlopen(urllib.request.Request(u, headers={"User-Agent": "Mozilla/5.0"}), timeout=120).read())
+            guides[gm] = {x["idProduct"]: x for x in gg["priceGuides"]}
+        buylist_refresh(guides, day)
     if "--dry" not in a: save()
+elif a[0] == "buylist":
+    for b in sorted(p.get("buylist", []), key=lambda b: (b["group"] != "buy", b["rank"])):
+        inw, block, ch = buylist_status(b)
+        st = "SPÄRR (" + block["reason"] + ")" if block and b["group"] == "buy" else "I FÖNSTER" if inw else "vänta"
+        print(f'{b["group"]:4} #{b["rank"]:<2} {b["name"][:45]:45} {b.get("trend_eur")} € ({b.get("sek")} kr)  {b.get("buy_window")}  {st}'
+              + (f"  {ch:+.0f} % sedan {b['added_date']}" if ch is not None else "") + (f"  flaggor: {b['flags']}" if b.get("flags") else ""))
 elif a[0] == "build":
     p["last_updated"] = dt.date.today().isoformat(); save()
     subprocess.run([sys.executable, str(D/"build.py")], check=True)
