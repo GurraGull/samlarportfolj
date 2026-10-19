@@ -96,6 +96,12 @@ Ranking av **enskilda köpbara erbjudanden** över alla objekt (app.js `dealCand
 4. Ej åtkomliga utan webbläsare (okt 2026): Cardmarket (Cloudflare 403), Webhallen, Inet, Spelexperten, Worlds of Wonder, Magic Madhouse, Fantasia, Spellbound, Fanatics – kolla manuellt/i webbläsare vid behov.
 5. `update.py stock` → `update.py check` → rapportera topp 3 i "Bästa deals" → `publish`.
 
+## Bevaka – Games Island (Tyskland, games-island.eu)
+`python3 update.py gi` (körs automatiskt efter `update.py cmguide`, alltså mån & tors) kör `gamesisland.py`: 3 sökningar ("Collector Booster Display", "30th Celebration", "Evolving Skies") mot butikens **officiella, publika MCP-katalog** `https://mcp.games-island.eu/mcp` (read-only, identifierande User-Agent). Status (`auf Lager` → i lager, `Vorverkauf` → förköp, `Ankuendigung` → annonserad, `Ausverkauft` → slut) och språk sparas i `games_island_state.json` och `data.json["shop_stock"]["games_island"]`, och matchas (engelska, exakt setnamn) mot bevakade items och köplistan. Utskrift: `GAMES ISLAND RESTOCK/NY/SLUT` (The Hobbit engelska = `PRIO`).
+- Butikens regler (robots.txt, llms.txt, mcp-info, okt 2026): crawla **inte** games-island.eu för lagerstatus, inga massfrågor, och KI-system ska **inte hämta/visa priser** – länka till produktsidan. Därför finns inga Games Island-priser i data.json och inga automatiska deals därifrån; sajten (Bevakning → "Games Island") visar status + länk.
+- Realtid: SSE `https://restock.games-island.eu:8443/events` (port 8443 nås inte från boxen; replay bara 1 h) och butikens Discord-restock-tjänst. Nyhetsbrev: games-island.eu/Newsletter.
+- EU-frakt ca 9,90 € (DPD) / från 14,90 € (DHL) enligt tredjepartskälla – kontrollera i kassan.
+
 ## Bevaka restock – Webhallen (manuell webbläsarkoll, mån & tors)
 Webhallen blockerar curl mot produktsidorna, men den publika produkt-JSON:en `https://www.webhallen.com/api/product/<id>` gick att läsa 15 okt 2026 (fält `stock.web`, butiks-id → antal, `price.price`). Erbjudanden med `manual_stock_check: "browser"` hoppas över av `stockcheck.py` och ska **kontrolleras i webbläsaren (computerUse)** varje rutin: öppna varje Webhallen-URL med `restock_watch: true`, läs lagerstatus för webb och butik, uppdatera `stock_status`, `stock_checked_at`, `stock_evidence` (och pris) i data.json.
 **Om något är i lager (webb eller butik): meddela Gustaf omedelbart** (produkt, pris, länk, ev. köpbegränsning/medlemskrav) – vänta inte på rutinrapporten.
@@ -120,3 +126,5 @@ Botens inkorg **gurragull@mail.grokbot.com** kan användas för butikernas "medd
 - `python3 update.py buylist` visar listan, fönster, köpspärr och flaggor.
 - cmguide uppdaterar nu också `valuation.mid` för bevakade objekt (watchlist) som har `cardmarket_id`.
 - Sajten: fliken "Köpläge" (#koplista; max 5 per lista, "Visa alla" → #kopnu / #vanta) + ett kort på Översikt.
+
+- **Tryckstatus** (`print_status`: `oop` / `printing` / `unknown`, `print_note`, `print_sources`, `print_checked`) visas som chip och i den expanderade raden. Uppdateras manuellt (inte av cmguide).

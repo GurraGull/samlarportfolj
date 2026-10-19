@@ -20160,7 +20160,29 @@
       ],
       "flags": {
         "window_open_since": "2026-10-19"
-      }
+      },
+      "print_status": "oop",
+      "print_note": "Engångstryck enligt Wizards (bara Play Boosters kan tryckas om). Ingen omtryckning aviserad. Element Games: slut hos distributör. Amazon har haft korta påfyllningar ur befintligt lager (senast slut 3 okt 2026).",
+      "print_checked": "2026-10-19",
+      "print_sources": [
+        {
+          "label": "Wizards (A. Smith) 20 aug 2025: Collector Boosters har bara en tryckomgång – Magic Untapped",
+          "url": "https://magicuntapped.com/index.php/news/multiple-print-runs-possible-for-marvels-spider-man"
+        },
+        {
+          "label": "IGN 19 aug 2025: bara Play Boosters har flera tryckomgångar",
+          "url": "https://www.ign.com/articles/wizards-of-the-coast-says-no-truth-to-rumors-that-magic-the-gatherings-spider-man-crossover-will-only-get-one-print-run"
+        },
+        {
+          "label": "Element Games: ”distribution has ceased”",
+          "url": "https://elementgames.co.uk/mtg-marvels-spider-man-collector-booster-box"
+        },
+        {
+          "label": "NowInStock – Amazon-historik SPM",
+          "url": "https://www.nowinstock.net/full_historydetails/1243/81651/"
+        }
+      ],
+      "print_source": "https://magicuntapped.com/index.php/news/multiple-print-runs-possible-for-marvels-spider-man"
     },
     {
       "id": "bl-tla-cbb",
@@ -20205,7 +20227,25 @@
       ],
       "flags": {
         "window_open_since": "2026-10-19"
-      }
+      },
+      "print_status": "oop",
+      "print_note": "Collector Boosters trycks en gång (Wizards-policy). Ingen extra tryckomgång aviserad. Element Games: slut hos distributör. Amazon senast i lager 15 sep 2026, Best Buy 8 jan 2026.",
+      "print_checked": "2026-10-19",
+      "print_sources": [
+        {
+          "label": "Wizards (WPN, N. Brown) mar 2025: ”Collector Boosters are a single-print-run by design” – Magic Untapped",
+          "url": "https://magicuntapped.com/index.php/news/wotc-provides-update-on-foundations-printing-comfirms-no-more-bundles-or-collector-boosters"
+        },
+        {
+          "label": "Element Games: ”distribution has ceased”",
+          "url": "https://elementgames.co.uk/magic-the-gathering-avatar-the-last-airbender-collector-booster-display"
+        },
+        {
+          "label": "NowInStock – Amazon-historik TLA",
+          "url": "https://www.nowinstock.net/full_historydetails/1243/83883/"
+        }
+      ],
+      "print_source": "https://magicuntapped.com/index.php/news/wotc-provides-update-on-foundations-printing-comfirms-no-more-bundles-or-collector-boosters"
     },
     {
       "id": "bl-fin-cbb",
@@ -20250,7 +20290,29 @@
       ],
       "flags": {
         "window_open_since": "2026-10-19"
-      }
+      },
+      "print_status": "oop",
+      "print_note": "Wizards extratryck (26 maj 2025) gällde bara Play Boosters, Commander-lekar och Starter Kits – inte Collector Boosters. Uppföljningen dec 2025 (Scene Box, Chocobo Bundle) trycker inte om CB. Element Games: slut hos distributör. Amazon senast i lager 9 jun 2026.",
+      "print_checked": "2026-10-19",
+      "print_sources": [
+        {
+          "label": "Wizards (mtg-jp.com) 26 maj 2025: extratryck av Play Booster/Commander/Starter Kit",
+          "url": "https://mtg-jp.com/reading/information/0038669/"
+        },
+        {
+          "label": "Wizards 26 sep 2025: nya FIN-produkter 5 dec 2025",
+          "url": "https://magic.wizards.com/en/news/feature/collecting-final-fantasy"
+        },
+        {
+          "label": "Element Games: ”distribution has ceased”",
+          "url": "https://elementgames.co.uk/mtg-final-fantasy-collector-booster-display"
+        },
+        {
+          "label": "NowInStock – Amazon/Walmart/Best Buy-lagerhistorik (19 okt 2026)",
+          "url": "https://www.nowinstock.net/toys/magicthegathering/"
+        }
+      ],
+      "print_source": "https://mtg-jp.com/reading/information/0038669/"
     },
     {
       "id": "bl-mh3-cbb",
@@ -20291,7 +20353,25 @@
       ],
       "flags": {
         "window_open_since": "2026-10-19"
-      }
+      },
+      "print_status": "oop",
+      "print_note": "2+ år gammal, inte Standard-set. Collector Boosters engångstryck. Element Games: MH3-produkter ”distribution has ceased”, US-butiker slutsålda, Amazon senast i lager 13 nov 2025.",
+      "print_checked": "2026-10-19",
+      "print_sources": [
+        {
+          "label": "Wizards (WPN, N. Brown) mar 2025: ”Collector Boosters are a single-print-run by design” – Magic Untapped",
+          "url": "https://magicuntapped.com/index.php/news/wotc-provides-update-on-foundations-printing-comfirms-no-more-bundles-or-collector-boosters"
+        },
+        {
+          "label": "Element Games: ”distribution has ceased” (MH3)",
+          "url": "https://elementgames.co.uk/modern-horizons-3"
+        },
+        {
+          "label": "NowInStock – Amazon/Walmart/Best Buy-lagerhistorik (19 okt 2026)",
+          "url": "https://www.nowinstock.net/toys/magicthegathering/"
+        }
+      ],
+      "print_source": "https://magicuntapped.com/index.php/news/wotc-provides-update-on-foundations-printing-comfirms-no-more-bundles-or-collector-boosters"
     },
     {
       "id": "bl-tmt-cbb",
@@ -20333,7 +20413,29 @@
       ],
       "flags": {
         "window_open_since": "2026-10-19"
-      }
+      },
+      "print_status": "oop",
+      "print_note": "Engångstryck (Wizards-policy). Reddit-trådar (feb–mar 2026) rapporterar nedskurna allokeringar – obekräftat. Lager finns kvar i handeln: Walmart i lager $519,97 den 19 okt 2026, Amazon senast 15 okt 2026. MTGStocks: marknad $427 vs MSRP $456.",
+      "print_checked": "2026-10-19",
+      "print_sources": [
+        {
+          "label": "Wizards (WPN, N. Brown) mar 2025: ”Collector Boosters are a single-print-run by design” – Magic Untapped",
+          "url": "https://magicuntapped.com/index.php/news/wotc-provides-update-on-foundations-printing-comfirms-no-more-bundles-or-collector-boosters"
+        },
+        {
+          "label": "Reddit r/mtgfinance mar 2026: ”TMNT Collector Short Print Run” (obekräftat)",
+          "url": "https://www.reddit.com/r/mtgfinance/comments/1rnrz20/tmnt_collector_short_print_run/"
+        },
+        {
+          "label": "MTGStocks – TMT Collector Display",
+          "url": "https://www.mtgstocks.com/sealed/11188-teenage-mutant-ninja-turtles-collector-booster-display"
+        },
+        {
+          "label": "NowInStock – Amazon/Walmart/Best Buy-lagerhistorik (19 okt 2026)",
+          "url": "https://www.nowinstock.net/toys/magicthegathering/"
+        }
+      ],
+      "print_source": "https://magicuntapped.com/index.php/news/wotc-provides-update-on-foundations-printing-comfirms-no-more-bundles-or-collector-boosters"
     },
     {
       "id": "bl-who-cbb",
@@ -20375,7 +20477,21 @@
       ],
       "flags": {
         "window_open_since": "2026-10-19"
-      }
+      },
+      "print_status": "oop",
+      "print_note": "Släpptes okt 2023 (Commander-set). Collector Boosters engångstryck. Element Games: ”distribution has ceased”. Ingen omtryckning känd.",
+      "print_checked": "2026-10-19",
+      "print_sources": [
+        {
+          "label": "Wizards (WPN, N. Brown) mar 2025: ”Collector Boosters are a single-print-run by design” – Magic Untapped",
+          "url": "https://magicuntapped.com/index.php/news/wotc-provides-update-on-foundations-printing-comfirms-no-more-bundles-or-collector-boosters"
+        },
+        {
+          "label": "Element Games: ”distribution has ceased”",
+          "url": "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/card-games/magic-the-gathering/mtg-doctor-who/mtg-doctor-who-collector-booster"
+        }
+      ],
+      "print_source": "https://magicuntapped.com/index.php/news/wotc-provides-update-on-foundations-printing-comfirms-no-more-bundles-or-collector-boosters"
     },
     {
       "id": "bl-sos-cbb",
@@ -20417,7 +20533,21 @@
       ],
       "flags": {
         "window_open_since": "2026-10-19"
-      }
+      },
+      "print_status": "oop",
+      "print_note": "Engångstryck (Wizards-policy). Amazon CB-display senast i lager 3 okt 2026. Element Games listar displayen som ej tillgänglig (enligt sökresultat, ej sidkontroll).",
+      "print_checked": "2026-10-19",
+      "print_sources": [
+        {
+          "label": "Wizards (WPN, N. Brown) mar 2025: ”Collector Boosters are a single-print-run by design” – Magic Untapped",
+          "url": "https://magicuntapped.com/index.php/news/wotc-provides-update-on-foundations-printing-comfirms-no-more-bundles-or-collector-boosters"
+        },
+        {
+          "label": "NowInStock – Amazon/Walmart/Best Buy-lagerhistorik (19 okt 2026)",
+          "url": "https://www.nowinstock.net/toys/magicthegathering/"
+        }
+      ],
+      "print_source": "https://magicuntapped.com/index.php/news/wotc-provides-update-on-foundations-printing-comfirms-no-more-bundles-or-collector-boosters"
     },
     {
       "id": "bl-ecl-cbb",
@@ -20459,7 +20589,25 @@
       ],
       "flags": {
         "window_open_since": "2026-10-19"
-      }
+      },
+      "print_status": "oop",
+      "print_note": "Engångstryck (Wizards-policy). Element Games: slut hos distributör. Amazon senast i lager 28 jan 2026, Best Buy 31 mar 2026.",
+      "print_checked": "2026-10-19",
+      "print_sources": [
+        {
+          "label": "Wizards (WPN, N. Brown) mar 2025: ”Collector Boosters are a single-print-run by design” – Magic Untapped",
+          "url": "https://magicuntapped.com/index.php/news/wotc-provides-update-on-foundations-printing-comfirms-no-more-bundles-or-collector-boosters"
+        },
+        {
+          "label": "Element Games: ”distribution has ceased”",
+          "url": "https://elementgames.co.uk/magic-the-gathering-lorwyn-eclipsed-collector-booster-box"
+        },
+        {
+          "label": "NowInStock – Amazon/Walmart/Best Buy-lagerhistorik (19 okt 2026)",
+          "url": "https://www.nowinstock.net/toys/magicthegathering/"
+        }
+      ],
+      "print_source": "https://magicuntapped.com/index.php/news/wotc-provides-update-on-foundations-printing-comfirms-no-more-bundles-or-collector-boosters"
     },
     {
       "id": "bl-usea-3ed",
@@ -20501,7 +20649,17 @@
       ],
       "flags": {
         "window_open_since": "2026-10-19"
-      }
+      },
+      "print_status": "oop",
+      "print_note": "Reserved List – Wizards officiella policy: trycks aldrig om i funktionellt identisk form.",
+      "print_checked": "2026-10-19",
+      "print_sources": [
+        {
+          "label": "Wizards – Official Reprint Policy (Reserved List)",
+          "url": "https://magic.wizards.com/en/news/announcements/official-reprint-policy"
+        }
+      ],
+      "print_source": "https://magic.wizards.com/en/news/announcements/official-reprint-policy"
     },
     {
       "id": "bl-evs-bb",
@@ -20547,7 +20705,25 @@
       ],
       "flags": {
         "window_open_since": "2026-10-19"
-      }
+      },
+      "print_status": "oop",
+      "print_note": "TPCi meddelar inte tryckstopp. Enligt samlarforum kom en liten andra tryckvåg av booster-boxar sommaren 2022. Ingen boxomtryckning därefter. Ses som slut i tryck senast 2024. Lösa paket/samlingsboxar kan dyka upp ur restlager.",
+      "print_checked": "2026-10-19",
+      "print_sources": [
+        {
+          "label": "Reddit r/PokeInvesting jul 2022: andra tryckvågen",
+          "url": "https://www.reddit.com/r/PokeInvesting/comments/w04fsd/did_the_evolving_skies_reprint_just_happen_and_is/"
+        },
+        {
+          "label": "Reddit r/PokemonTCG apr 2024: ”Is Evolving Skies out-of-print?”",
+          "url": "https://www.reddit.com/r/PokemonTCG/comments/1cdg387/is_evolving_skies_outofprint/"
+        },
+        {
+          "label": "Elite Fourum – Evolving Skies Market Watch",
+          "url": "https://www.elitefourum.com/t/evolving-skies-market-watch/37087?page=2"
+        }
+      ],
+      "print_source": "https://www.reddit.com/r/PokeInvesting/comments/w04fsd/did_the_evolving_skies_reprint_just_happen_and_is/"
     },
     {
       "id": "bl-hob-cbb",
@@ -20590,7 +20766,29 @@
           "trend_eur": 586.56
         }
       ],
-      "flags": {}
+      "flags": {},
+      "print_status": "oop",
+      "print_note": "Engångstryck (WPN-policy). Slutsåld i förköp redan i juli 2026. Element Games: ”distribution has ceased”. Amazon senast i lager 28 aug 2026. Vissa UK-butiker har lager, långt över MSRP (Magic Madhouse £684,95).",
+      "print_checked": "2026-10-19",
+      "print_sources": [
+        {
+          "label": "Wizards (WPN, N. Brown) mar 2025: ”Collector Boosters are a single-print-run by design” – Magic Untapped",
+          "url": "https://magicuntapped.com/index.php/news/wotc-provides-update-on-foundations-printing-comfirms-no-more-bundles-or-collector-boosters"
+        },
+        {
+          "label": "PureGrail 17 jul 2026: Hobbit CB slutsåld före release (WPN-policy)",
+          "url": "https://puregrail.com/article/the-hobbit-mtg-collector-booster-preorder-scarcity-allocation-theater"
+        },
+        {
+          "label": "Element Games: ”distribution has ceased”",
+          "url": "https://elementgames.co.uk/magic-the-gathering-the-hobbit-collector-booster-box"
+        },
+        {
+          "label": "NowInStock – Amazon/Walmart/Best Buy-lagerhistorik (19 okt 2026)",
+          "url": "https://www.nowinstock.net/toys/magicthegathering/"
+        }
+      ],
+      "print_source": "https://magicuntapped.com/index.php/news/wotc-provides-update-on-foundations-printing-comfirms-no-more-bundles-or-collector-boosters"
     },
     {
       "id": "bl-msh-cbb",
@@ -20629,7 +20827,25 @@
           "trend_eur": 334.39
         }
       ],
-      "flags": {}
+      "flags": {},
+      "print_status": "oop",
+      "print_note": "Engångstryck (Wizards-policy) – men gott om lager kvar: Amazon i lager $459,99 (≈ MSRP $455,88) den 19 okt 2026. Element Games slut. Trycket är klart. Butikslagret är inte slut än.",
+      "print_checked": "2026-10-19",
+      "print_sources": [
+        {
+          "label": "Wizards (WPN, N. Brown) mar 2025: ”Collector Boosters are a single-print-run by design” – Magic Untapped",
+          "url": "https://magicuntapped.com/index.php/news/wotc-provides-update-on-foundations-printing-comfirms-no-more-bundles-or-collector-boosters"
+        },
+        {
+          "label": "Element Games: ”distribution has ceased”",
+          "url": "https://elementgames.co.uk/card-games-board-games-and-more/card-games/magic-the-gathering-544/magic-the-gathering-marvel-super-heroes-collector-booster-display"
+        },
+        {
+          "label": "NowInStock – Amazon/Walmart/Best Buy-lagerhistorik (19 okt 2026)",
+          "url": "https://www.nowinstock.net/toys/magicthegathering/"
+        }
+      ],
+      "print_source": "https://magicuntapped.com/index.php/news/wotc-provides-update-on-foundations-printing-comfirms-no-more-bundles-or-collector-boosters"
     },
     {
       "id": "bl-fra-cbb",
@@ -20669,7 +20885,25 @@
           "trend_eur": 323.57
         }
       ],
-      "flags": {}
+      "flags": {},
+      "print_status": "oop",
+      "print_note": "Engångstryck (Wizards-policy). Släpptes 2 okt 2026. Element Games markerar den redan som slut (deras allokering). Andra UK-butiker har lager till MSRP £323,88. Amazon slut sedan 29 sep 2026.",
+      "print_checked": "2026-10-19",
+      "print_sources": [
+        {
+          "label": "Wizards (WPN, N. Brown) mar 2025: ”Collector Boosters are a single-print-run by design” – Magic Untapped",
+          "url": "https://magicuntapped.com/index.php/news/wotc-provides-update-on-foundations-printing-comfirms-no-more-bundles-or-collector-boosters"
+        },
+        {
+          "label": "Element Games: ”distribution has ceased”",
+          "url": "https://www.elementgames.co.uk/reality-fracture/magic-the-gathering-reality-fracture-collector-booster-box"
+        },
+        {
+          "label": "NowInStock – Amazon/Walmart/Best Buy-lagerhistorik (19 okt 2026)",
+          "url": "https://www.nowinstock.net/toys/magicthegathering/"
+        }
+      ],
+      "print_source": "https://magicuntapped.com/index.php/news/wotc-provides-update-on-foundations-printing-comfirms-no-more-bundles-or-collector-boosters"
     },
     {
       "id": "bl-trk-cbb",
@@ -20713,7 +20947,25 @@
           "trend_eur": 469.12
         }
       ],
-      "flags": {}
+      "flags": {},
+      "print_status": "unknown",
+      "print_note": "Ej släppt (13 nov 2026). Väntas bli engångstryck som alla CB. Distributören AIE (AU) skriver ”stock allocation exhausted”: förbeställningarna överstiger tilldelningen. Hur stort trycket är vet vi inte.",
+      "print_checked": "2026-10-19",
+      "print_sources": [
+        {
+          "label": "Wizards (WPN, N. Brown) mar 2025: ”Collector Boosters are a single-print-run by design” – Magic Untapped",
+          "url": "https://magicuntapped.com/index.php/news/wotc-provides-update-on-foundations-printing-comfirms-no-more-bundles-or-collector-boosters"
+        },
+        {
+          "label": "AIE Games (distributör) – Star Trek CB ”stock allocation exhausted”",
+          "url": "https://www.aiegames.com.au/category/star-trek-845.html"
+        },
+        {
+          "label": "NowInStock – Amazon/Walmart/Best Buy-lagerhistorik (19 okt 2026)",
+          "url": "https://www.nowinstock.net/toys/magicthegathering/"
+        }
+      ],
+      "print_source": "https://magicuntapped.com/index.php/news/wotc-provides-update-on-foundations-printing-comfirms-no-more-bundles-or-collector-boosters"
     },
     {
       "id": "bl-dhd-cbb",
@@ -20723,8 +20975,8 @@
       "group": "wait",
       "idProduct": 916747,
       "verdict": "Vänta – förköp, släpps 2027",
-      "buy_window": null,
-      "window_note": "4–8 mån efter release (datum ej känt)",
+      "buy_window": "2027-08..2027-12",
+      "window_note": "Release 9 apr 2027 → 4–8 mån efter release",
       "why": "Marvel. Universes Beyond-mönstret: toppen kommer i förköpet.",
       "risk": "Endast förköp; inget releasedatum bekräftat.",
       "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products/Search?searchString=Marvel%20Darkhold%20Destiny%20Collector%20Booster%20Box&language=1",
@@ -20750,7 +21002,21 @@
           "trend_eur": 412.16
         }
       ],
-      "flags": {}
+      "flags": {},
+      "print_status": "unknown",
+      "print_note": "Ej släppt – Wizards: release 9 apr 2027, förbeställning öppen. Väntas bli engångstryck. Inga tryck-/allokeringsuppgifter än.",
+      "print_checked": "2026-10-19",
+      "print_sources": [
+        {
+          "label": "Wizards 10 okt 2026: Darkhold Destiny släpps 9 apr 2027",
+          "url": "https://magic.wizards.com/en/news/announcements/marvel-darkhold-destiny-emerges-april-2027"
+        },
+        {
+          "label": "Wizards (WPN, N. Brown) mar 2025: ”Collector Boosters are a single-print-run by design” – Magic Untapped",
+          "url": "https://magicuntapped.com/index.php/news/wotc-provides-update-on-foundations-printing-comfirms-no-more-bundles-or-collector-boosters"
+        }
+      ],
+      "print_source": "https://magic.wizards.com/en/news/announcements/marvel-darkhold-destiny-emerges-april-2027"
     }
   ],
   "buylist_settings": {
@@ -20764,6 +21030,491 @@
     ],
     "note": "Cardmarket-trenden är inte språkfiltrerad (blandar EN/DE/FR/JP m.fl.). Kontrollera engelska annonser innan köp.",
     "method": "Köpfönster bygger på hur Collector-displayer 2019–2026 rört sig efter release (ICv2/TCGplayer, CCG Index). Vanliga set: botten 0–3 mån efter release; Universes Beyond 2025–26: 4–8 mån. Priserna är uppblåsta av rallyt 2025–26 (median +75 % på Cardmarket sedan juli 2025) – sprid köpen.",
-    "added": "2026-10-19"
+    "added": "2026-10-19",
+    "print_note": "Tryckstatus: Wizards trycker Collector Boosters en gång (”single-print-run by design”). Bara Play Boosters, Commander-lekar och Starter Kits trycks till efterfrågan under Standard-tiden (~3 år). Därför är en CB-display i praktiken ur tryck redan vid release. Det som avgör tillgången är restlagret hos distributörer och butiker. Wizards meddelar aldrig när det tar slut. Signaler: distributören skriver ”allocation exhausted” eller ”distribution has ceased”. Amazon och Walmart fyller bara på sporadiskt. Priset ligger stadigt över MSRP när butikslagret är slut. Kontrollerat 2026-10-19."
+  },
+  "shop_stock": {
+    "games_island": {
+      "name": "Games Island",
+      "country": "DE",
+      "checked_at": "2026-10-19T16:07+02:00",
+      "shipping_note": "EU-frakt ca 9,90 € (DPD) / från 14,90 € (DHL) enligt tredjepartskälla – kontrollera i kassan.",
+      "note": "Lagerstatus via butikens officiella katalog-API. Butiken vill inte att bottar visar priser – se priset på games-island.eu.",
+      "products": [
+        {
+          "name": "Pokemon TCG - 30th Celebration Collection Booster Bundle - Englisch",
+          "kind": "pokemon_sealed",
+          "language": "engelska",
+          "status": "in_stock",
+          "date": null,
+          "url": "https://games-island.eu/Pokemon-TCG-30th-Celebration-Collection-Booster-Bundle-Englisch",
+          "item_id": null,
+          "buylist_id": null,
+          "changed_at": "2026-10-19T16:07+02:00"
+        },
+        {
+          "name": "MTG - Marvel: Darkhold Destiny Collector Booster Display - Englisch",
+          "kind": "mtg_collector_display",
+          "language": "engelska",
+          "status": "announced",
+          "date": "2027-04-09",
+          "url": "https://games-island.eu/MTG-Marvel-Darkhold-Destiny-Collector-Booster-Display-Englisch",
+          "item_id": null,
+          "buylist_id": "bl-dhd-cbb",
+          "changed_at": "2026-10-19T16:07+02:00"
+        },
+        {
+          "name": "MTG - Star Trek Collector Booster Display - Englisch",
+          "kind": "mtg_collector_display",
+          "language": "engelska",
+          "status": "announced",
+          "date": "2026-11-13",
+          "url": "https://games-island.eu/MTG-Star-Trek-Collector-Booster-Display-Englisch",
+          "item_id": null,
+          "buylist_id": "bl-trk-cbb",
+          "changed_at": "2026-10-19T16:07+02:00"
+        },
+        {
+          "name": "Adventures in the Forgotten Realms Collector Booster Display - Englisch",
+          "kind": "mtg_collector_display",
+          "language": "engelska",
+          "status": "out_of_stock",
+          "date": null,
+          "url": "https://games-island.eu/Adventures-in-the-Forgotten-Realms-Collector-Booster-Display-Englisch",
+          "item_id": null,
+          "buylist_id": null,
+          "changed_at": "2026-10-19T16:07+02:00"
+        },
+        {
+          "name": "Aetherdrift Collector Booster Display - Englisch",
+          "kind": "mtg_collector_display",
+          "language": "engelska",
+          "status": "out_of_stock",
+          "date": null,
+          "url": "https://games-island.eu/Aetherdrift-Collector-Booster-Display-Englisch",
+          "item_id": "mtg-aetherdrift-cbb",
+          "buylist_id": null,
+          "changed_at": "2026-10-19T16:07+02:00"
+        },
+        {
+          "name": "Avatar: The Last Airbender Collector Booster Display - Englisch",
+          "kind": "mtg_collector_display",
+          "language": "engelska",
+          "status": "out_of_stock",
+          "date": null,
+          "url": "https://games-island.eu/Avatar-The-Last-Airbender-Collector-Booster-Display-Englisch",
+          "item_id": "mtg-avatar-the-last-airbender-cbb",
+          "buylist_id": "bl-tla-cbb",
+          "changed_at": "2026-10-19T16:07+02:00"
+        },
+        {
+          "name": "Bloomburrow Collector Booster Display - Englisch",
+          "kind": "mtg_collector_display",
+          "language": "engelska",
+          "status": "out_of_stock",
+          "date": null,
+          "url": "https://games-island.eu/Bloomburrow-Collector-Booster-Display-Englisch",
+          "item_id": "mtg-bloomburrow-cbb",
+          "buylist_id": null,
+          "changed_at": "2026-10-19T16:07+02:00"
+        },
+        {
+          "name": "Commander Masters Collector Booster Display - Englisch",
+          "kind": "mtg_collector_display",
+          "language": "engelska",
+          "status": "out_of_stock",
+          "date": null,
+          "url": "https://games-island.eu/Commander-Masters-Collector-Booster-Display-Englisch",
+          "item_id": "mtg-commander-masters-cbb",
+          "buylist_id": null,
+          "changed_at": "2026-10-19T16:07+02:00"
+        },
+        {
+          "name": "Edge of Eternities Collector Booster Display - Englisch",
+          "kind": "mtg_collector_display",
+          "language": "engelska",
+          "status": "out_of_stock",
+          "date": null,
+          "url": "https://games-island.eu/Edge-of-Eternities-Collector-Booster-Display-Englisch",
+          "item_id": "mtg-edge-of-eternities-cbb",
+          "buylist_id": null,
+          "changed_at": "2026-10-19T16:07+02:00"
+        },
+        {
+          "name": "Final Fantasy Collector Booster Display - Englisch",
+          "kind": "mtg_collector_display",
+          "language": "engelska",
+          "status": "out_of_stock",
+          "date": null,
+          "url": "https://games-island.eu/Final-Fantasy-Collector-Booster-Display-Englisch",
+          "item_id": "mtg-fin-cbb",
+          "buylist_id": "bl-fin-cbb",
+          "changed_at": "2026-10-19T16:07+02:00"
+        },
+        {
+          "name": "Foundations Collector Booster Display - Englisch",
+          "kind": "mtg_collector_display",
+          "language": "engelska",
+          "status": "out_of_stock",
+          "date": null,
+          "url": "https://games-island.eu/Foundations-Collector-Booster-Display-Englisch",
+          "item_id": null,
+          "buylist_id": null,
+          "changed_at": "2026-10-19T16:07+02:00"
+        },
+        {
+          "name": "Innistrad Remastered Collector Booster Display - Englisch",
+          "kind": "mtg_collector_display",
+          "language": "engelska",
+          "status": "out_of_stock",
+          "date": null,
+          "url": "https://games-island.eu/Innistrad-Remastered-Collector-Booster-Display-Englisch",
+          "item_id": "mtg-innistrad-remastered-cbb",
+          "buylist_id": null,
+          "changed_at": "2026-10-19T16:07+02:00"
+        },
+        {
+          "name": "Innistrad: Midnight Hunt Collector Booster Display - Englisch",
+          "kind": "mtg_collector_display",
+          "language": "engelska",
+          "status": "out_of_stock",
+          "date": null,
+          "url": "https://games-island.eu/Innistrad-Midnight-Hunt-Collector-Booster-Display-Englisch",
+          "item_id": "mtg-innistrad-midnight-hunt-cbb",
+          "buylist_id": null,
+          "changed_at": "2026-10-19T16:07+02:00"
+        },
+        {
+          "name": "MTG - Commander Legends Collector Booster Display - Englisch",
+          "kind": "mtg_collector_display",
+          "language": "engelska",
+          "status": "out_of_stock",
+          "date": null,
+          "url": "https://games-island.eu/MTG-Commander-Legends-Collector-Booster-Display-Englisch",
+          "item_id": null,
+          "buylist_id": null,
+          "changed_at": "2026-10-19T16:07+02:00"
+        },
+        {
+          "name": "MTG - Core Set 2021 Collector Booster Display - Englisch (Verpackung beschädigt)",
+          "kind": "mtg_collector_display",
+          "language": "engelska",
+          "status": "out_of_stock",
+          "date": null,
+          "url": "https://games-island.eu/MTG-Core-Set-2021-Collector-Booster-Display-Englisch-Verpackung-beschaedigt",
+          "item_id": null,
+          "buylist_id": null,
+          "changed_at": "2026-10-19T16:07+02:00"
+        },
+        {
+          "name": "MTG - Ikoria: Lair of Behemoths Collector Booster Display - Englisch",
+          "kind": "mtg_collector_display",
+          "language": "engelska",
+          "status": "out_of_stock",
+          "date": null,
+          "url": "https://games-island.eu/MTG-Ikoria-Lair-of-Behemoths-Collector-Booster-Display-Englisch",
+          "item_id": null,
+          "buylist_id": null,
+          "changed_at": "2026-10-19T16:07+02:00"
+        },
+        {
+          "name": "MTG - Reality Fracture Collector Booster Display - Englisch",
+          "kind": "mtg_collector_display",
+          "language": "engelska",
+          "status": "out_of_stock",
+          "date": null,
+          "url": "https://games-island.eu/MTG-Reality-Fracture-Collector-Booster-Display-Englisch",
+          "item_id": null,
+          "buylist_id": "bl-fra-cbb",
+          "changed_at": "2026-10-19T16:07+02:00"
+        },
+        {
+          "name": "MTG - Tarkir: Dragonstorm Collector Booster Display - Englisch",
+          "kind": "mtg_collector_display",
+          "language": "engelska",
+          "status": "out_of_stock",
+          "date": null,
+          "url": "https://games-island.eu/MTG-Tarkir-Dragonstorm-Collector-Booster-Display-Englisch",
+          "item_id": "mtg-tarkir-dragonstorm-cbb",
+          "buylist_id": null,
+          "changed_at": "2026-10-19T16:07+02:00"
+        },
+        {
+          "name": "MTG - The Hobbit Collector Booster Display - Englisch",
+          "kind": "mtg_collector_display",
+          "language": "engelska",
+          "status": "out_of_stock",
+          "date": null,
+          "url": "https://games-island.eu/MTG-The-Hobbit-Collector-Booster-Display-Englisch",
+          "item_id": "mtg-hobbit-cbb",
+          "buylist_id": "bl-hob-cbb",
+          "changed_at": "2026-10-19T16:07+02:00"
+        },
+        {
+          "name": "MTG - Theros Beyond Death Collector Booster Display - Englisch",
+          "kind": "mtg_collector_display",
+          "language": "engelska",
+          "status": "out_of_stock",
+          "date": null,
+          "url": "https://games-island.eu/MTG-Theros-Beyond-Death-Collector-Booster-Display-Englisch",
+          "item_id": null,
+          "buylist_id": null,
+          "changed_at": "2026-10-19T16:07+02:00"
+        },
+        {
+          "name": "MTG - Throne of Eldraine Collector Booster Display - Englisch",
+          "kind": "mtg_collector_display",
+          "language": "engelska",
+          "status": "out_of_stock",
+          "date": null,
+          "url": "https://games-island.eu/MTG-Throne-of-Eldraine-Collector-Booster-Display-Englisch",
+          "item_id": null,
+          "buylist_id": null,
+          "changed_at": "2026-10-19T16:07+02:00"
+        },
+        {
+          "name": "MTG - Zendikar Rising Collector Booster Display - Englisch",
+          "kind": "mtg_collector_display",
+          "language": "engelska",
+          "status": "out_of_stock",
+          "date": null,
+          "url": "https://games-island.eu/MTG-Zendikar-Rising-Collector-Booster-Display-Englisch",
+          "item_id": null,
+          "buylist_id": null,
+          "changed_at": "2026-10-19T16:07+02:00"
+        },
+        {
+          "name": "March of the Machine Collector Booster Display - Englisch",
+          "kind": "mtg_collector_display",
+          "language": "engelska",
+          "status": "out_of_stock",
+          "date": null,
+          "url": "https://games-island.eu/March-of-the-Machine-Collector-Booster-Display-Englisch",
+          "item_id": "mtg-march-of-the-machine-cbb",
+          "buylist_id": null,
+          "changed_at": "2026-10-19T16:07+02:00"
+        },
+        {
+          "name": "March of the Machine: The Aftermath Collector Booster Display - Englisch",
+          "kind": "mtg_collector_display",
+          "language": "engelska",
+          "status": "out_of_stock",
+          "date": null,
+          "url": "https://games-island.eu/March-of-the-Machine-The-Aftermath-Collector-Booster-Display-Englisch",
+          "item_id": null,
+          "buylist_id": null,
+          "changed_at": "2026-10-19T16:07+02:00"
+        },
+        {
+          "name": "Marvels Spider-Man Collector Booster Display - Englisch",
+          "kind": "mtg_collector_display",
+          "language": "engelska",
+          "status": "out_of_stock",
+          "date": null,
+          "url": "https://games-island.eu/Marvels-Spider-Man-Collector-Booster-Display-Englisch",
+          "item_id": "mtg-marvel-s-spider-man-cbb",
+          "buylist_id": "bl-spm-cbb",
+          "changed_at": "2026-10-19T16:07+02:00"
+        },
+        {
+          "name": "MtG - Adventures in the Forgotten Realms Collector Booster Display (Fehldruck, transparente Verpackung) – Englisch",
+          "kind": "mtg_collector_display",
+          "language": "engelska",
+          "status": "out_of_stock",
+          "date": null,
+          "url": "https://games-island.eu/MtG-Adventures-in-the-Forgotten-Realms-Collector-Booster-Display-Fehldruck-transparente-Verpackung-Englisch",
+          "item_id": null,
+          "buylist_id": null,
+          "changed_at": "2026-10-19T16:07+02:00"
+        },
+        {
+          "name": "MtG - Lorwyn Eclipsed Collector Booster Display - Englisch",
+          "kind": "mtg_collector_display",
+          "language": "engelska",
+          "status": "out_of_stock",
+          "date": null,
+          "url": "https://games-island.eu/MtG-Lorwyn-Eclipsed-Collector-Booster-Display-Englisch",
+          "item_id": null,
+          "buylist_id": "bl-ecl-cbb",
+          "changed_at": "2026-10-19T16:07+02:00"
+        },
+        {
+          "name": "MtG - Marvel Super Heroes Collector Booster Display - Englisch",
+          "kind": "mtg_collector_display",
+          "language": "engelska",
+          "status": "out_of_stock",
+          "date": null,
+          "url": "https://games-island.eu/MtG-Marvel-Super-Heroes-Collector-Booster-Display-Englisch",
+          "item_id": "mtg-marvel-super-heroes-cbb",
+          "buylist_id": "bl-msh-cbb",
+          "changed_at": "2026-10-19T16:07+02:00"
+        },
+        {
+          "name": "MtG - Secrets of Strixhaven Collector Booster Display - Englisch",
+          "kind": "mtg_collector_display",
+          "language": "engelska",
+          "status": "out_of_stock",
+          "date": null,
+          "url": "https://games-island.eu/MtG-Secrets-of-Strixhaven-Collector-Booster-Display-Englisch",
+          "item_id": null,
+          "buylist_id": "bl-sos-cbb",
+          "changed_at": "2026-10-19T16:07+02:00"
+        },
+        {
+          "name": "MtG - Teenage Mutant Ninja Turtles Collector Booster Display - Englisch",
+          "kind": "mtg_collector_display",
+          "language": "engelska",
+          "status": "out_of_stock",
+          "date": null,
+          "url": "https://games-island.eu/MtG-Teenage-Mutant-Ninja-Turtles-Collector-Booster-Display-Englisch",
+          "item_id": null,
+          "buylist_id": "bl-tmt-cbb",
+          "changed_at": "2026-10-19T16:07+02:00"
+        },
+        {
+          "name": "Murders at Karlov Manor Collector Booster Display - Englisch",
+          "kind": "mtg_collector_display",
+          "language": "engelska",
+          "status": "out_of_stock",
+          "date": null,
+          "url": "https://games-island.eu/Murders-at-Karlov-Manor-Collector-Booster-Display-Englisch",
+          "item_id": "mtg-murders-at-karlov-manor-cbb",
+          "buylist_id": null,
+          "changed_at": "2026-10-19T16:07+02:00"
+        },
+        {
+          "name": "Outlaws of Thunder Junction Collector Booster Display - Englisch",
+          "kind": "mtg_collector_display",
+          "language": "engelska",
+          "status": "out_of_stock",
+          "date": null,
+          "url": "https://games-island.eu/Outlaws-of-Thunder-Junction-Collector-Booster-Display-Englisch",
+          "item_id": "mtg-outlaws-of-thunder-junction-cbb",
+          "buylist_id": null,
+          "changed_at": "2026-10-19T16:07+02:00"
+        },
+        {
+          "name": "The Lord of the Rings: Tales of Middle-Earth - Holiday Collector Booster Display - Englisch",
+          "kind": "mtg_collector_display",
+          "language": "engelska",
+          "status": "out_of_stock",
+          "date": null,
+          "url": "https://games-island.eu/The-Lord-of-the-Rings-Tales-of-Middle-Earth-Holiday-Collector-Booster-Display-Englisch",
+          "item_id": null,
+          "buylist_id": null,
+          "changed_at": "2026-10-19T16:07+02:00"
+        },
+        {
+          "name": "Unfinity Collector Booster Display - Englisch",
+          "kind": "mtg_collector_display",
+          "language": "engelska",
+          "status": "out_of_stock",
+          "date": null,
+          "url": "https://games-island.eu/Unfinity-Collector-Booster-Display-Englisch",
+          "item_id": null,
+          "buylist_id": null,
+          "changed_at": "2026-10-19T16:07+02:00"
+        },
+        {
+          "name": "Universes Beyond: Doctor Who Collector Booster Display - Englisch",
+          "kind": "mtg_collector_display",
+          "language": "engelska",
+          "status": "out_of_stock",
+          "date": null,
+          "url": "https://games-island.eu/Universes-Beyond-Doctor-Who-Collector-Booster-Display-Englisch",
+          "item_id": null,
+          "buylist_id": "bl-who-cbb",
+          "changed_at": "2026-10-19T16:07+02:00"
+        },
+        {
+          "name": "MTG - The Hobbit Collector Booster Display - Französisch",
+          "kind": "mtg_collector_display",
+          "language": "franska",
+          "status": "in_stock",
+          "date": null,
+          "url": "https://games-island.eu/MTG-The-Hobbit-Collector-Booster-Display-Franzoesisch",
+          "item_id": null,
+          "buylist_id": null,
+          "changed_at": "2026-10-19T16:07+02:00"
+        },
+        {
+          "name": "Double Masters 2022 Collector Booster Display - Japanisch",
+          "kind": "mtg_collector_display",
+          "language": "japanska",
+          "status": "out_of_stock",
+          "date": null,
+          "url": "https://games-island.eu/Magic-The-Gathering_24",
+          "item_id": null,
+          "buylist_id": null,
+          "changed_at": "2026-10-19T16:07+02:00"
+        },
+        {
+          "name": "Foundations Collector Booster Display - Japanisch",
+          "kind": "mtg_collector_display",
+          "language": "japanska",
+          "status": "out_of_stock",
+          "date": null,
+          "url": "https://games-island.eu/Foundations-Collector-Booster-Display-Japanisch",
+          "item_id": null,
+          "buylist_id": null,
+          "changed_at": "2026-10-19T16:07+02:00"
+        },
+        {
+          "name": "MTG - March of the Machine Collector Booster Display - Japanisch",
+          "kind": "mtg_collector_display",
+          "language": "japanska",
+          "status": "out_of_stock",
+          "date": null,
+          "url": "https://games-island.eu/MTG-March-of-the-Machine-Collector-Booster-Display-Japanisch",
+          "item_id": null,
+          "buylist_id": null,
+          "changed_at": "2026-10-19T16:07+02:00"
+        },
+        {
+          "name": "MTG - The Hobbit Collector Booster Display - Japanisch",
+          "kind": "mtg_collector_display",
+          "language": "japanska",
+          "status": "out_of_stock",
+          "date": null,
+          "url": "https://games-island.eu/MTG-The-Hobbit-Collector-Booster-Display-Japanisch",
+          "item_id": null,
+          "buylist_id": null,
+          "changed_at": "2026-10-19T16:07+02:00"
+        },
+        {
+          "name": "Marvels Spider-Man Collector Booster Display - Französisch",
+          "kind": "mtg_collector_display",
+          "language": "franska",
+          "status": "out_of_stock",
+          "date": null,
+          "url": "https://games-island.eu/Marvels-Spider-Man-Collector-Booster-Display-Franzoesisch",
+          "item_id": null,
+          "buylist_id": null,
+          "changed_at": "2026-10-19T16:07+02:00"
+        },
+        {
+          "name": "MtG - Avatar: The Last Airbender Collector Booster Display - Japanisch",
+          "kind": "mtg_collector_display",
+          "language": "japanska",
+          "status": "out_of_stock",
+          "date": null,
+          "url": "https://games-island.eu/MtG-Avatar-The-Last-Airbender-Collector-Booster-Display-Japanisch",
+          "item_id": null,
+          "buylist_id": null,
+          "changed_at": "2026-10-19T16:07+02:00"
+        },
+        {
+          "name": "MtG - Lorwyn Eclipsed Collector Booster Display - Japanisch",
+          "kind": "mtg_collector_display",
+          "language": "japanska",
+          "status": "out_of_stock",
+          "date": null,
+          "url": "https://games-island.eu/MtG-Lorwyn-Eclipsed-Collector-Booster-Display-Japanisch",
+          "item_id": null,
+          "buylist_id": null,
+          "changed_at": "2026-10-19T16:07+02:00"
+        }
+      ]
+    }
   }
 }

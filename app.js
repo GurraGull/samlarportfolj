@@ -236,6 +236,7 @@ function vOverview() {
     <div class=kpis><div class=kpi><span>Investerat</span><b>${kr(t.cost)}</b></div><div class=kpi><span>Realiserat</span><b class="${t.realised > 0 ? "g" : ""}">${kr(t.realised)}</b></div><div class=kpi><span>Spann</span><b style="white-space:nowrap">${fmt(t.lo / 1000, 1)}–${fmt(t.hi / 1000, 1)}<small class=mut> tkr</small></b></div></div></section>
   ${bestOf()}
   ${restock()}
+  ${giTeaser()}
   ${buyTeaser()}
   <div class="card chartcard"><div class=top style="margin-bottom:8px"><div class=legend><span><i style="background:#8b7cf6"></i>Marknadsvärde</span><span><i style="background:#8a96ab"></i>Investerat</span></div>
     <div class=seg>${["7d", "30d", "all"].map(r => `<button class="${RANGE === r ? "on" : ""}" onclick="RANGE='${r}';route()">${r === "all" ? "Allt" : r.replace("d", " d")}</button>`).join("")}</div></div>
@@ -292,12 +293,26 @@ function vCollection() {
   <div class=list>${(location.hash === "#transaktioner" ? tx : tx.slice(0, LIM)).map(t => { const it = ITEMS[t.item_id]; return `<div class=row style="cursor:default"><div class=th>${img(it)}</div><div><div class=nm>${t.type === "buy" ? "Köp" : "Sälj"} · ${esc(short(it?.name || t.item_id))}</div><div class=meta>${t.date || "datum okänt"} · ${esc(t.platform)} · ${t.qty} st${t.fees_sek ? " · avgifter " + kr(t.fees_sek) : ""}${t.note ? " · " + esc(t.note) : ""}</div></div><div class=rt><b class="${t.type === "sell" ? "g" : ""}">${t.type === "buy" ? "−" : "+"}${kr(t.price_sek)}</b></div></div>`; }).join("")}</div>${location.hash === "#transaktioner" ? "" : more(tx.length, "#transaktioner", "transaktioner")}
   ${(() => { const t = totals(); return `<div class=kpis><div class=kpi><span>Orealiserat</span><b class="${t.unreal >= 0 ? "g" : "r"}">${t.unreal >= 0 ? "+" : "−"}${kr(Math.abs(t.unreal))}</b></div><div class=kpi><span>Realiserat</span><b>${kr(t.realised)}</b></div><div class=kpi><span>Investerat</span><b>${kr(t.cost)}</b></div></div>`; })()}${foot()}`;
 }
+function giBlock(full) {
+  const G = P.shop_stock?.games_island; if (!G) return "";
+  const L = G.products.filter(r => r.language === "engelska" || full), lab = {in_stock: ["I lager", "c-g"], preorder: ["Förköp", "c-g"], announced: ["Annonserad", "c-a"], out_of_stock: ["Slut", "c-n"], unknown: ["Okänt", "c-n"]};
+  const row = r => { const it = r.item_id && ITEMS[r.item_id], [t, c] = lab[r.status] || lab.unknown;
+    return `<a class=row href="${esc(r.url)}" target=_blank rel=noopener style="grid-template-columns:1fr auto"><div><div class=nm>${esc(r.name.replace(/^(MtG|MTG) - /, "").replace(/ [-–] (Englisch|Französisch|Japanisch)$/, ""))}</div>
+    <div class=meta><span class="chip ${c}">${t}${r.date && r.status !== "out_of_stock" ? " " + esc(r.date) : ""}</span>${esc(r.language)}${r.buylist_id ? " · på köplistan" : ""}${/hobbit/i.test(r.name) && r.language === "engelska" ? " · <b>prio</b>" : ""}</div></div>
+    <div class=rt><span class="xs mut">${it ? "trend " + kr(val(it, "mid")) : ""}</span><span class="xs mut">pris på sajten ${ic("chev", 12)}</span></div></a>`; };
+  const n = L.filter(r => r.status === "in_stock" || r.status === "preorder").length;
+  return `<div class=sec id=gamesisland><h2 style="font-size:15px">${ic("bell", 16)} Games Island (Tyskland)</h2><span>${n ? `<b class=g>${n} köpbara</b>` : "inga köpbara"} · koll ${ago(G.checked_at)}</span></div>
+  <p class="xs mut" style="margin:-4px 0 8px">Collector-displays och Pokémon, ${full ? "alla språk" : "engelska"}. ${esc(G.note)} ${esc(G.shipping_note)}</p>
+  <div class=list>${(full ? L : L.slice(0, LIM)).map(row).join("")}</div>${full ? `<a class=more href="#bevakning">Visa färre ${ic("chev", 14)}</a>` : more(G.products.length, "#gamesisland", "produkter")}`;
+}
+function giTeaser() { const G = P.shop_stock?.games_island; if (!G) return ""; const L = G.products.filter(r => r.language === "engelska" && (r.status === "in_stock" || r.status === "preorder") && (r.kind === "mtg_collector_display" || r.item_id || r.buylist_id));
+  return L.length ? `<a class="card" href="#gamesisland" style="display:flex;gap:12px;align-items:center;padding:12px 14px;margin:12px 0"><span style="color:var(--acc2)">${ic("bell", 22)}</span><div style="flex:1"><b>Games Island har ${L.length} i lager/förköp</b><div class="xs mut">${L.slice(0, 3).map(r => esc(r.name.replace(/^(MtG|MTG) - /, "").replace(/ - Englisch$/, ""))).join(", ")}</div></div>${ic("chev", 16)}</a>` : ""; }
 function vWatch() {
   const w = P.items.filter(i => i.status === "watchlist");
   return `<div class=h1>Bevakning</div><p class=sub>Ej ägda · marknadsvärde (Cardmarket) · prisbevakningar.</p>
   <div class=list>${w.map(it => { const m = move(it), deals = offersOf(it).filter(o => o.deal).length;
     return `<a class=row href="${itemHref(it)}"><div class=th>${img(it)}</div><div><div class=nm>${esc(short(it.name))}</div><div class=meta>${esc(it.category)}${deals ? ` · <span class="chip c-g">${deals} deal</span>` : ""}</div><div class=alerts>${alertChips(it)}</div></div>
-      <div class=rt><b>${kr(val(it, "mid"))}</b>${m ? chip(m.d) : `<span class="xs mut">${eur(val(it, "mid"))}</span>`}${spark(it)}</div></a>`; }).join("")}</div>${foot()}`;
+      <div class=rt><b>${kr(val(it, "mid"))}</b>${m ? chip(m.d) : `<span class="xs mut">${eur(val(it, "mid"))}</span>`}${spark(it)}</div></a>`; }).join("")}</div>${giBlock(location.hash === "#gamesisland")}${foot()}`;
 }
 function vItem(id) {
   const it = ITEMS[id]; if (!it) return '<div class="card empty">Objektet finns inte.</div>';
@@ -322,12 +337,14 @@ function blRow(b) {
   const it = b.item_id ? ITEMS[b.item_id] : null, s = blState(b), blk = blBlock();
   const st = b.group === "buy" ? (blk ? `<span class="chip c-a">Köpspärr t.o.m. ${esc(blk.to)}</span>` : `<span class="chip c-g">${ic("cart", 12)} ${esc(b.verdict)}</span>`)
     : s.inw ? `<span class="chip c-g">${ic("bell", 12)} Köpfönster öppet</span>` : `<span class="chip c-n">${ic("clock", 12)} Köp ${esc(winTxt(b))}</span>`;
-  const flags = (s.drop ? `<span class="chip c-g">▼ ${fmt(Math.abs(s.ch))} % sedan ${esc(b.added_date)}</span>` : "") + (b.group === "wait" ? `<span class="chip c-n">${esc(b.verdict)}</span>` : "");
+  const PS = {oop: ["c-n", "Sannolikt ur tryck"], printing: ["c-g", "Trycks fortfarande"], unknown: ["c-a", "Tryckstatus okänd"]}[b.print_status];
+  const flags = (PS ? `<span class="chip ${PS[0]}">${ic("box", 12)} ${PS[1]}</span>` : "") + (s.drop ? `<span class="chip c-g">▼ ${fmt(Math.abs(s.ch))} % sedan ${esc(b.added_date)}</span>` : "") + (b.group === "wait" ? `<span class="chip c-n">${esc(b.verdict)}</span>` : "");
   const head = `<div class=th>${img(it, b.name)}</div><div><div class=nm><span class=mut>#${b.rank}</span> ${esc(b.name)}</div><div class=meta>${st}${flags}</div></div>
     <div class=rt><b>${kr(b.sek)}</b><span class="xs mut">€${fmt(b.trend_eur, 2)}</span><br><span class=chev>${ic("chev", 16)}</span></div>`;
   const body = `<div class=in><p class=sm><b>Varför 5 år:</b> ${esc(b.why)}</p><p class=sm><b>Risk:</b> <span class=mut>${esc(b.risk)}</span></p>
     <p class=sm><b>Köpfönster:</b> ${esc(winTxt(b))}${b.group === "buy" ? " (utom köpspärrar)" : ""} · <b>Utlåtande:</b> ${esc(b.verdict)}</p>
     <p class="xs mut">Cardmarket-trend ${b.trend_date ? esc(b.trend_date) : ""} (idProduct ${b.idProduct}) · tillagd ${esc(b.added_date)} på €${fmt(b.added_trend_eur, 2)}${s.ch != null ? ` · ${s.ch >= 0 ? "+" : "−"}${fmt(Math.abs(s.ch), 1)} % sedan dess` : ""}</p>
+    ${PS ? `<p class=sm><b>Tryckstatus:</b> ${PS[1]} – <span class=mut>${esc(b.print_note || "")}</span></p>${(b.print_sources || []).map(x => `<div class=xs><a href="${esc(x.url)}" target=_blank rel=noopener>${ic("ext", 11)} ${esc(x.label)}</a></div>`).join("")}<p class="xs mut">Tryckstatus kontrollerad ${esc(b.print_checked || "")}</p>` : ""}
     <h4>Källor</h4>${(b.sources || []).map(x => `<div class=sm><a href="${esc(x.url)}" target=_blank rel=noopener>${ic("ext", 12)} ${esc(x.label)}</a></div>`).join("")}
     ${it ? `<p class=sm style="margin-top:8px"><a href="${itemHref(it)}">Öppna objektsidan ${ic("chev", 14)}</a></p>` : ""}${(b.cardmarket_url || it?.cardmarket_url) ? `<p class=sm><a href="${esc(b.cardmarket_url || it.cardmarket_url)}" target=_blank rel=noopener>${ic("ext", 13)} Cardmarket – engelska annonser</a></p>` : ""}</div>`;
   return expRow(head, body);
@@ -342,7 +359,7 @@ function vBuy() {
   ${opened.length || drops.length ? `<div class=banner>${ic("bell")}<div>${opened.map(b => `<b>Köpfönster öppet:</b> ${esc(b.name)} (${kr(b.sek)})`).join("<br>")}${opened.length && drops.length ? "<br>" : ""}${drops.map(b => `<b>−${fmt(Math.abs(blState(b).ch))} %:</b> ${esc(b.name)} sedan ${esc(b.added_date)}`).join("<br>")}</div></div>` : ""}
   <div class=sec><h2>Köp nu – topp ${buy.length}</h2><span>rankat</span></div>${list(buy, "kopnu", "kandidater")}
   <div class=sec><h2>Vänta på dippen</h2><span>${wait.length} st</span></div>${list(wait, "vanta", "att vänta på")}
-  <div class="card xs mut" style="padding:12px 14px;margin-top:14px;line-height:1.6"><b style="color:var(--txt)">${ic("spark", 14)} Om priserna</b><br>${esc(S.note || "")}<br>${esc(S.method || "")}<br>Priser i kr = Cardmarket-trend × ${P.rates.EUR}. Uppdateras automatiskt mån &amp; tors (prisuppdateringen). Flaggor: köpfönster öppnat, eller ≥ 10 % billigare än när objektet lades till. Inte investeringsråd.</div>
+  <div class="card xs mut" style="padding:12px 14px;margin-top:14px;line-height:1.6"><b style="color:var(--txt)">${ic("spark", 14)} Om priserna</b><br>${esc(S.note || "")}<br>${esc(S.method || "")}<br>${S.print_note ? esc(S.print_note) + "<br>" : ""}Priser i kr = Cardmarket-trend × ${P.rates.EUR}. Uppdateras automatiskt mån &amp; tors (prisuppdateringen). Flaggor: köpfönster öppnat, eller ≥ 10 % billigare än när objektet lades till. Inte investeringsråd.</div>
   ${foot()}`;
 }
 const foot = () => `<p class=foot>Valutor (ECB-referens): ${Object.entries(P.rates).map(([k, v]) => `1 ${k} = ${v} SEK`).join(" · ")}. Värden är uppskattningar från annonser och trender, inte bekräftade försäljningar. Produktbilder tillhör respektive rättighetsinnehavare.</p>`;
@@ -350,7 +367,7 @@ const foot = () => `<p class=foot>Valutor (ECB-referens): ${Object.entries(P.rat
 // ---------- routing ----------
 const VIEWS = {oversikt: ["Översikt", "home", vOverview], deals: ["Deals", "tag", vDeals], auktioner: ["Auktioner", "gavel", vAuctions], samling: ["Samling", "box", vCollection], bevakning: ["Bevakning", "eye", vWatch], koplista: ["Köpläge", "cart", vBuy]};
 function nav() {
-  const cur = ({kopnu: "koplista", vanta: "koplista", kort: "samling", transaktioner: "samling", lotter: "auktioner"}[location.hash.slice(1)] || location.hash.slice(1) || "oversikt"), cnt = {deals: P.items.flatMap(offersOf).filter(o => o.deal).length, auktioner: auctions().filter(a => a.live).length};
+  const cur = ({gamesisland: "bevakning", kopnu: "koplista", vanta: "koplista", kort: "samling", transaktioner: "samling", lotter: "auktioner"}[location.hash.slice(1)] || location.hash.slice(1) || "oversikt"), cnt = {deals: P.items.flatMap(offersOf).filter(o => o.deal).length, auktioner: auctions().filter(a => a.live).length};
   const links = (cls) => Object.entries(VIEWS).map(([k, [n, i]]) => `<a href="#${k}" class="${cur === k ? "on" : ""}">${ic(i, cls ? 22 : 20)}<span>${n}</span>${!cls && cnt[k] ? `<span class=cnt>${cnt[k]}</span>` : cls && k === "deals" && cnt[k] ? `<span class=dot>${cnt[k]}</span>` : ""}</a>`).join("");
   document.getElementById("tabbar").innerHTML = links(true);
   document.getElementById("side").innerHTML = `<div class=brand><span class=logo>${ic("box", 18)}</span>Samlarportfölj</div>` + links(false);
@@ -358,7 +375,7 @@ function nav() {
 function route() {
   if (!P) return; const hsh = location.hash.slice(1);
   if (hsh.startsWith("item/")) { nav(); document.getElementById("app").innerHTML = `<div class=view>${vItem(decodeURIComponent(hsh.slice(5)))}</div>`; return; }
-  const k = VIEWS[hsh] ? hsh : hsh === "lotter" ? "auktioner" : hsh === "kort" || hsh === "transaktioner" ? "samling" : hsh === "kopnu" || hsh === "vanta" ? "koplista" : "oversikt"; nav();
+  const k = VIEWS[hsh] ? hsh : hsh === "lotter" ? "auktioner" : hsh === "kort" || hsh === "transaktioner" ? "samling" : hsh === "kopnu" || hsh === "vanta" ? "koplista" : hsh === "gamesisland" ? "bevakning" : "oversikt"; nav();
   document.getElementById("app").innerHTML = `<div class=view>${VIEWS[k][2]()}</div>`;
 }
 window.addEventListener("hashchange", () => { route(); window.scrollTo(0, 0); });

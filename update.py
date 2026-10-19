@@ -17,6 +17,9 @@
   python3 update.py cmguide [--dry]           -> hämtar Cardmarkets prisguide och uppdaterar alla items med
                                                  price_source=cardmarket_guide via cardmarket_id (trend / trend-foil),
                                                  bevakade (watchlist) items med cardmarket_id, samt köplistan (buylist)
+  python3 update.py gi [--dry]                -> Games Island (DE): lagerstatus för engelska Collector-displays + Pokémon via butikens
+                                                 officiella MCP-katalog (gamesisland.py). Körs även automatiskt efter cmguide.
+                                                 Inga priser (butikens regel) -> inga automatiska deals, bara status + länk.
   python3 update.py buylist                   -> visar köplistan med köpfönster/flaggor (ingen nedladdning)
 Inga priser hämtas automatiskt: agenten/användaren söker fram dem och matar in här."""
 import json, sys, pathlib, datetime as dt, subprocess
@@ -140,7 +143,7 @@ elif a[0] == "publish":
     # Commit + push data.json (och ev. ändrade filer). Kräver remote 'origin' och GITHUB_TOKEN i env.
     msg = a[1] if len(a) > 1 else f"Prisuppdatering {dt.date.today()}"
     g = lambda *c: subprocess.run(["git", "-C", str(D), *c], check=True)
-    g("add", "data.json", "index.html", "app.js", "style.css", "README.md", "update.py", "stockcheck.py", "images", ".gitignore")
+    g("add", "data.json", "index.html", "app.js", "style.css", "README.md", "update.py", "stockcheck.py", "gamesisland.py", "games_island_state.json", "images", ".gitignore")
     if subprocess.run(["git", "-C", str(D), "diff", "--cached", "--quiet"]).returncode: g("commit", "-m", msg)
     g("-c", "credential.helper=!f() { echo username=x-access-token; echo password=$GITHUB_TOKEN; }; f", "push", "origin", "main")
 elif a[0] == "cmguide":
@@ -182,7 +185,12 @@ elif a[0] == "cmguide":
             gg = json.loads(urllib.request.urlopen(urllib.request.Request(u, headers={"User-Agent": "Mozilla/5.0"}), timeout=120).read())
             guides[gm] = {x["idProduct"]: x for x in gg["priceGuides"]}
         buylist_refresh(guides, day)
-    if "--dry" not in a: save()
+    if "--dry" not in a:
+        save()
+        try: subprocess.run([sys.executable, str(D/"gamesisland.py")], check=True, timeout=180)
+        except Exception as e: print("Games Island-kollen misslyckades (ej kritiskt):", e)
+elif a[0] == "gi":
+    subprocess.run([sys.executable, str(D/"gamesisland.py")] + (["--dry"] if "--dry" in a else []), check=True)
 elif a[0] == "buylist":
     for b in sorted(p.get("buylist", []), key=lambda b: (b["group"] != "buy", b["rank"])):
         inw, block, ch = buylist_status(b)
