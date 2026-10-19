@@ -14,13 +14,18 @@
   python3 update.py stock [--dry]            -> lagerkontroll av alla länkar (stockcheck.py), flaggar döda länkar
   python3 update.py publish ["meddelande"]  -> git commit + push (sajten läser data.json)
   python3 update.py build                     -> sätter last_updated=idag och bygger HTML
+  python3 update.py cmguide [--dry]           -> hämtar Cardmarkets prisguide och uppdaterar alla items med
+                                                 price_source=cardmarket_guide via cardmarket_id (trend / trend-foil)
 Inga priser hämtas automatiskt: agenten/användaren söker fram dem och matar in här."""
 import json, sys, pathlib, datetime as dt, subprocess
 D = pathlib.Path(__file__).parent; F = D/"data.json"
 p = json.loads(F.read_text()); a = sys.argv[1:]
 def save(): F.write_text(json.dumps(p, ensure_ascii=False, indent=2))
 if not a or a[0] == "list":
+    auto = [i for i in p["items"] if i.get("price_source") == "cardmarket_guide"]
+    if auto: print(f"{len(auto)} items uppdateras automatiskt via 'update.py cmguide' (Cardmarket-prisguiden, idProduct) och listas inte här.")
     for i in p["items"]:
+        if i.get("price_source") == "cardmarket_guide": continue
         urls = sorted({s["url"] for s in i["snapshots"]})
         last = max(i["snapshots"], key=lambda s: s["date"])
         print(f'\n[{i["id"]}] {i["name"]} ({i["status"]})  senaste: {last["date"]}')
@@ -103,6 +108,26 @@ elif a[0] == "publish":
     g("add", "data.json", "index.html", "app.js", "style.css", "README.md", "update.py", "stockcheck.py", "images")
     if subprocess.run(["git", "-C", str(D), "diff", "--cached", "--quiet"]).returncode: g("commit", "-m", msg)
     g("-c", "credential.helper=!f() { echo username=x-access-token; echo password=$GITHUB_TOKEN; }; f", "push", "origin", "main")
+elif a[0] == "cmguide":
+    # Cardmarkets officiella prisguide (publik JSON, uppdateras dagligen). Rör bara items med price_source=cardmarket_guide.
+    import urllib.request
+    URL = "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json"
+    g = json.loads(urllib.request.urlopen(urllib.request.Request(URL, headers={"User-Agent": "Mozilla/5.0"}), timeout=120).read())
+    day = g["createdAt"][:10]; pg = {x["idProduct"]: x for x in g["priceGuides"]}; n = miss = 0
+    for i in p["items"]:
+        if i.get("price_source") != "cardmarket_guide": continue
+        x = pg.get(i.get("cardmarket_id")); k = "trend-foil" if i.get("foil") else "trend"
+        t = x.get(k) if x else None
+        if not t: miss += 1; print("saknar pris:", i["id"], i.get("cardmarket_id")); continue
+        old = i["valuation"]["mid"]["price"]
+        i["valuation"]["mid"] = {"price": t, "currency": "EUR", "basis": f"Cardmarket-{k} (prisguide {day}), per st"}
+        if not any(s["date"] == day and s["source"] == "Cardmarket prisguide" for s in i["snapshots"]):
+            i["snapshots"].append({"date": day, "source": "Cardmarket prisguide", "price": t, "currency": "EUR", "type": "trend", "url": URL,
+                                   "note": f"idProduct {i['cardmarket_id']}, {k} (avg30 {x.get('avg30-foil' if i.get('foil') else 'avg30')})"})
+        n += 1
+        if abs(t - old) / max(old, 0.01) >= 0.2 and t * p["rates"]["EUR"] * i["quantity"] >= 100: print(f"  {i['name']}: {old} → {t} €")
+    print(f"prisguide {g['createdAt']}: {n} uppdaterade, {miss} utan pris")
+    if "--dry" not in a: save()
 elif a[0] == "build":
     p["last_updated"] = dt.date.today().isoformat(); save()
     subprocess.run([sys.executable, str(D/"build.py")], check=True)

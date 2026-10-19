@@ -5,6 +5,7 @@ Statisk sajt: `index.html` + `app.js` + `style.css` hämtar `data.json` (cache-b
 
 ## Måndag/torsdag-rutin
 1. `python3 update.py list` för källor.
+1b. `python3 update.py cmguide` – uppdaterar automatiskt alla items med `price_source: "cardmarket_guide"` (Cardmarket-köpen 2015–2018 + Ugin, ~194 st) från Cardmarkets publika prisguide via `cardmarket_id` (trend, eller trend-foil för foil). Lägger en trend-snapshot per dag och sätter `valuation.mid`. De listas inte i `update.py list`.
 2. Priser, erbjudanden och auktioner läggs in i `data.json` (via `update.py add`, `offer`, `rate` eller handredigering av `auctions`/`market_watch`) enligt avsnitten nedan. Hitta aldrig på siffror.
 3. Sätt `last_updated` (`python3 update.py build` gör det och bygger även offline-HTML).
 4. Förhandsgranska: `python3 -m http.server 8765` → http://localhost:8765, skärmdump med headless Chrome (`--virtual-time-budget=3000`).
@@ -105,3 +106,10 @@ Amazon.se blockerar curl och felar i webbläsaren efter några sidladdningar. Er
 
 ## Restock-notiser via e-post
 Botens inkorg **gurragull@mail.grokbot.com** kan användas för butikernas "meddela mig när i lager"-notiser. Använd +taggar per butik/produkt, t.ex. `gurragull+webhallen-hobbit@mail.grokbot.com`, `gurragull+amazon@mail.grokbot.com`. Rutinen söker i inkorgen efter nya notiser och meddelar Gustaf direkt vid restock.
+
+## Cardmarket-köp 2015–2018 (importerade 19 okt 2026)
+193 nya items (`id` = `mtg-cm-<idProduct>[-foil][-språk][-skick]`, `group: "Cardmarket-köp 2015–2018"`) + Ugin uppdaterad till 3 st. Källa: Gustafs Cardmarket-köphistorik (50 ordrar, alla Arrived); Gustaf har bekräftat att han har kvar alla kort.
+- Kostnad: pris/st × antal i EUR omräknat med **dagens kurs 11.145** (inte historisk kurs), i `transactions` (`price_sek`). Orderns frakt fördelad på artiklarna efter pris → `fees_sek`.
+- Värde: Cardmarket-trend (trend-foil för foil) per st, uppdateras med `update.py cmguide`. Prisguiden är inte språk- eller skickfiltrerad (3 japanska, 2 spanska; Antiquities-länder GD/EX).
+- Säljarnamn och order-id ligger bara i den privata CSV:n (gitignorerad), inte i repot.
+- Samling visar max 5 kort per spel + "Visa alla"; kort under `bulk_threshold_sek` ligger i hopfälld Bulk-rad. Transaktioner visar 5 senaste + "Visa alla" (`#transaktioner`).

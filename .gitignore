@@ -1,2 +1,7 @@
 __pycache__/
 shots/
+arbitrage_plan.md
+cardmarket_purchases*.csv
+cardmarket_purchases_raw.csv
+cardmarket_purchases.csv
+cardmarket_purchases_summary.md
