@@ -15786,6 +15786,284 @@
       "community": [],
       "offers": [],
       "alerts": []
+    },
+    {
+      "id": "sw-kenner-ig88",
+      "kind": "figure",
+      "name": "Star Wars IG-88 – Kenner 15\" (Empire Strikes Back, 1980, no. 39960) i originalkartong",
+      "category": "Vintage Star Wars (Kenner 12\")",
+      "language": "Engelska",
+      "quantity": 1,
+      "purchase_price_sek": 6982,
+      "purchase_price_estimated": true,
+      "purchase_date": "2026-01-19",
+      "status": "owned",
+      "condition": "Komplett, kartong med reva/tejp",
+      "valuation": {
+        "conservative": {
+          "price": 5940,
+          "currency": "SEK",
+          "basis": "Sålda priser, lågt (2026-10-21)"
+        },
+        "mid": {
+          "price": 7920,
+          "currency": "SEK",
+          "basis": "Marknadsvärdering, mitten (sålda priser 2026-10-21)"
+        },
+        "high": {
+          "price": 9900,
+          "currency": "SEK",
+          "basis": "Sålda priser, högt (2026-10-21)"
+        }
+      },
+      "price_source": "manual",
+      "notes": "Komplett med gevär, pistol och bandolier. Kartongen har en reva och tejp på ena kortsidan. Köpt 2026-01-19 på Stockholms Auktionsverk (Sickla, onlineauktion via Auctionet). Eget lot. Inköpspris uppskattat: klubbpris × 1,25 (köparprovision 25 % inkl. moms) + 80 kr slagavgift. Värde = mitten av sålda priser 2026-10-21 (actionfigure411, Hake's, Goldin, Landry Pop, Brian's Toys, Collectors Club of GB, Auktionsverket); manuellt värde, uppdateras inte automatiskt. Långsiktigt innehav.",
+      "snapshots": [
+        {
+          "date": "2026-10-21",
+          "source": "Marknadsvärdering (sålda priser)",
+          "price": 7920,
+          "currency": "SEK",
+          "type": "trend",
+          "condition": "Komplett, kartong med reva/tejp",
+          "url": "https://auctionet.com/sv/4731594-star-wars-ig-88-actionfigur-no-39960-i-originalkartong-kenner-usa-1978",
+          "note": "Spann 5940–9900 kr. Värdering 2026-10-21 från sålda priser (actionfigure411, Hake's, Goldin, Landry Pop, Brian's Toys, Collectors Club of GB, Auktionsverket)"
+        }
+      ],
+      "community": [],
+      "offers": [],
+      "alerts": [],
+      "image": {
+        "src": "images/sw-kenner-ig88.webp",
+        "credit": "Foto från Gustaf 21 okt 2026",
+        "source_url": null,
+        "downloaded": "2026-10-21"
+      },
+      "auction_url": "https://auctionet.com/sv/4731594-star-wars-ig-88-actionfigur-no-39960-i-originalkartong-kenner-usa-1978"
+    },
+    {
+      "id": "sw-kenner-boba-fett",
+      "kind": "figure",
+      "name": "Star Wars Boba Fett – Kenner 13\" (1979, no. 39140) i originalkartong",
+      "category": "Vintage Star Wars (Kenner 12\")",
+      "language": "Engelska",
+      "quantity": 1,
+      "purchase_price_sek": 4708,
+      "purchase_price_estimated": true,
+      "purchase_date": "2026-01-19",
+      "status": "owned",
+      "condition": "Komplett, kartong med lös flik",
+      "valuation": {
+        "conservative": {
+          "price": 4460,
+          "currency": "SEK",
+          "basis": "Sålda priser, lågt (2026-10-21)"
+        },
+        "mid": {
+          "price": 6440,
+          "currency": "SEK",
+          "basis": "Marknadsvärdering, mitten (sålda priser 2026-10-21)"
+        },
+        "high": {
+          "price": 8910,
+          "currency": "SEK",
+          "basis": "Sålda priser, högt (2026-10-21)"
+        }
+      },
+      "price_source": "manual",
+      "notes": "Komplett med instruktioner. Kartongen har en lös flik och prisetikett. Köpt 2026-01-19 på Stockholms Auktionsverk (Sickla, onlineauktion via Auctionet). Eget lot. Inköpspris uppskattat: klubbpris × 1,25 (köparprovision 25 % inkl. moms) + 80 kr slagavgift. Värde = mitten av sålda priser 2026-10-21 (actionfigure411, Hake's, Goldin, Landry Pop, Brian's Toys, Collectors Club of GB, Auktionsverket); manuellt värde, uppdateras inte automatiskt. Långsiktigt innehav.",
+      "snapshots": [
+        {
+          "date": "2026-10-21",
+          "source": "Marknadsvärdering (sålda priser)",
+          "price": 6440,
+          "currency": "SEK",
+          "type": "trend",
+          "condition": "Komplett, kartong med lös flik",
+          "url": "https://auctionet.com/sv/4743193-star-wars-boba-fett-actionfigur-no-39140-i-originalkartong-kenner-usa-1978",
+          "note": "Spann 4460–8910 kr. Värdering 2026-10-21 från sålda priser (actionfigure411, Hake's, Goldin, Landry Pop, Brian's Toys, Collectors Club of GB, Auktionsverket)"
+        }
+      ],
+      "community": [],
+      "offers": [],
+      "alerts": [],
+      "image": {
+        "src": "images/sw-kenner-boba-fett.webp",
+        "credit": "Foto från Gustaf 21 okt 2026",
+        "source_url": null,
+        "downloaded": "2026-10-21"
+      },
+      "auction_url": "https://auctionet.com/sv/4743193-star-wars-boba-fett-actionfigur-no-39140-i-originalkartong-kenner-usa-1978"
+    },
+    {
+      "id": "sw-kenner-c3po",
+      "kind": "figure",
+      "name": "Star Wars C-3PO (See-Threepio) – Kenner 12\" (1978, no. 38620) i originalkartong",
+      "category": "Vintage Star Wars (Kenner 12\")",
+      "language": "Engelska",
+      "quantity": 1,
+      "purchase_price_sek": 2642,
+      "purchase_price_estimated": true,
+      "purchase_date": "2026-01-19",
+      "status": "owned",
+      "condition": "I originalkartong, slitage",
+      "valuation": {
+        "conservative": {
+          "price": 1980,
+          "currency": "SEK",
+          "basis": "Sålda priser, lågt (2026-10-21)"
+        },
+        "mid": {
+          "price": 2720,
+          "currency": "SEK",
+          "basis": "Marknadsvärdering, mitten (sålda priser 2026-10-21)"
+        },
+        "high": {
+          "price": 3960,
+          "currency": "SEK",
+          "basis": "Sålda priser, högt (2026-10-21)"
+        }
+      },
+      "price_source": "manual",
+      "notes": "I originalkartong med normalt slitage. Köpt 2026-01-19 på Stockholms Auktionsverk (Sickla, onlineauktion via Auctionet). Köpt i samma lot som C-3PO, Jawa och R2-D2 (klubba 5 516 kr, ≈6 975 kr inkl. avgifter); kostnaden är fördelad efter värde (38 %). Inköpspris uppskattat: klubbpris × 1,25 (köparprovision 25 % inkl. moms) + 80 kr slagavgift. Värde = mitten av sålda priser 2026-10-21 (actionfigure411, Hake's, Goldin, Landry Pop, Brian's Toys, Collectors Club of GB, Auktionsverket); manuellt värde, uppdateras inte automatiskt. Långsiktigt innehav.",
+      "snapshots": [
+        {
+          "date": "2026-10-21",
+          "source": "Marknadsvärdering (sålda priser)",
+          "price": 2720,
+          "currency": "SEK",
+          "type": "trend",
+          "condition": "I originalkartong, slitage",
+          "url": "https://stockholmsauktionsverk.com/en/objekt/4731103",
+          "note": "Spann 1980–3960 kr. Värdering 2026-10-21 från sålda priser (actionfigure411, Hake's, Goldin, Landry Pop, Brian's Toys, Collectors Club of GB, Auktionsverket)"
+        }
+      ],
+      "community": [],
+      "offers": [],
+      "alerts": [],
+      "image": {
+        "src": "images/sw-kenner-c3po.webp",
+        "credit": "Foto från Gustaf 21 okt 2026",
+        "source_url": null,
+        "downloaded": "2026-10-21"
+      },
+      "auction_url": "https://stockholmsauktionsverk.com/en/objekt/4731103"
+    },
+    {
+      "id": "sw-kenner-jawa",
+      "kind": "figure",
+      "name": "Star Wars Jawa – Kenner 12\" (1978, no. 39350) i originalkartong",
+      "category": "Vintage Star Wars (Kenner 12\")",
+      "language": "Engelska",
+      "quantity": 1,
+      "purchase_price_sek": 2409,
+      "purchase_price_estimated": true,
+      "purchase_date": "2026-01-19",
+      "status": "owned",
+      "condition": "Komplett, kartong med slitage",
+      "valuation": {
+        "conservative": {
+          "price": 1490,
+          "currency": "SEK",
+          "basis": "Sålda priser, lågt (2026-10-21)"
+        },
+        "mid": {
+          "price": 2480,
+          "currency": "SEK",
+          "basis": "Marknadsvärdering, mitten (sålda priser 2026-10-21)"
+        },
+        "high": {
+          "price": 3710,
+          "currency": "SEK",
+          "basis": "Sålda priser, högt (2026-10-21)"
+        }
+      },
+      "price_source": "manual",
+      "notes": "Komplett med lasergevär och ammunitionsbälte, i originalkartong med normalt slitage. Köpt 2026-01-19 på Stockholms Auktionsverk (Sickla, onlineauktion via Auctionet). Köpt i samma lot som C-3PO, Jawa och R2-D2 (klubba 5 516 kr, ≈6 975 kr inkl. avgifter); kostnaden är fördelad efter värde (35 %). Inköpspris uppskattat: klubbpris × 1,25 (köparprovision 25 % inkl. moms) + 80 kr slagavgift. Värde = mitten av sålda priser 2026-10-21 (actionfigure411, Hake's, Goldin, Landry Pop, Brian's Toys, Collectors Club of GB, Auktionsverket); manuellt värde, uppdateras inte automatiskt. Långsiktigt innehav.",
+      "snapshots": [
+        {
+          "date": "2026-10-21",
+          "source": "Marknadsvärdering (sålda priser)",
+          "price": 2480,
+          "currency": "SEK",
+          "type": "trend",
+          "condition": "Komplett, kartong med slitage",
+          "url": "https://stockholmsauktionsverk.com/en/objekt/4731103",
+          "note": "Spann 1490–3710 kr. Värdering 2026-10-21 från sålda priser (actionfigure411, Hake's, Goldin, Landry Pop, Brian's Toys, Collectors Club of GB, Auktionsverket)"
+        }
+      ],
+      "community": [],
+      "offers": [],
+      "alerts": [],
+      "image": {
+        "src": "images/sw-kenner-jawa.webp",
+        "credit": "Foto från Gustaf 21 okt 2026",
+        "source_url": null,
+        "downloaded": "2026-10-21"
+      },
+      "auction_url": "https://stockholmsauktionsverk.com/en/objekt/4731103",
+      "gallery": [
+        "images/sw-kenner-jawa.webp",
+        "images/sw-kenner-jawa-figur.webp"
+      ]
+    },
+    {
+      "id": "sw-kenner-r2d2",
+      "kind": "figure",
+      "name": "Star Wars R2-D2 (Artoo-Detoo) – Kenner 12\" (1978, no. 38630) i brittisk Denys Fisher-kartong",
+      "category": "Vintage Star Wars (Kenner 12\")",
+      "language": "Engelska",
+      "quantity": 1,
+      "purchase_price_sek": 1923,
+      "purchase_price_estimated": true,
+      "purchase_date": "2026-01-19",
+      "status": "owned",
+      "condition": "UK-kartong (Denys Fisher), slitage",
+      "valuation": {
+        "conservative": {
+          "price": 1190,
+          "currency": "SEK",
+          "basis": "Sålda priser, lågt (2026-10-21)"
+        },
+        "mid": {
+          "price": 1980,
+          "currency": "SEK",
+          "basis": "Marknadsvärdering, mitten (sålda priser 2026-10-21)"
+        },
+        "high": {
+          "price": 2970,
+          "currency": "SEK",
+          "basis": "Sålda priser, högt (2026-10-21)"
+        }
+      },
+      "price_source": "manual",
+      "notes": "I brittisk Denys Fisher-kartong med normalt slitage. Köpt 2026-01-19 på Stockholms Auktionsverk (Sickla, onlineauktion via Auctionet). Köpt i samma lot som C-3PO, Jawa och R2-D2 (klubba 5 516 kr, ≈6 975 kr inkl. avgifter); kostnaden är fördelad efter värde (28 %). Inköpspris uppskattat: klubbpris × 1,25 (köparprovision 25 % inkl. moms) + 80 kr slagavgift. Värde = mitten av sålda priser 2026-10-21 (actionfigure411, Hake's, Goldin, Landry Pop, Brian's Toys, Collectors Club of GB, Auktionsverket); manuellt värde, uppdateras inte automatiskt. Långsiktigt innehav.",
+      "snapshots": [
+        {
+          "date": "2026-10-21",
+          "source": "Marknadsvärdering (sålda priser)",
+          "price": 1980,
+          "currency": "SEK",
+          "type": "trend",
+          "condition": "UK-kartong (Denys Fisher), slitage",
+          "url": "https://stockholmsauktionsverk.com/en/objekt/4731103",
+          "note": "Spann 1190–2970 kr. Värdering 2026-10-21 från sålda priser (actionfigure411, Hake's, Goldin, Landry Pop, Brian's Toys, Collectors Club of GB, Auktionsverket)"
+        }
+      ],
+      "community": [],
+      "offers": [],
+      "alerts": [],
+      "image": {
+        "src": "images/sw-kenner-r2d2.webp",
+        "credit": "Foto från Gustaf 21 okt 2026",
+        "source_url": null,
+        "downloaded": "2026-10-21"
+      },
+      "auction_url": "https://stockholmsauktionsverk.com/en/objekt/4731103",
+      "gallery": [
+        "images/sw-kenner-r2d2.webp",
+        "images/sw-kenner-r2d2-figur.webp"
+      ]
     }
   ],
   "rate_sources": {
@@ -20144,6 +20422,61 @@
       "fees_sek": 12.26,
       "platform": "Cardmarket",
       "note": "1 orderrad(er), dagens kurs 11.145"
+    },
+    {
+      "id": "t212",
+      "item_id": "sw-kenner-ig88",
+      "type": "buy",
+      "date": "2026-01-19",
+      "qty": 1,
+      "price_sek": 5522,
+      "fees_sek": 1460.5,
+      "platform": "Stockholms Auktionsverk (Auctionet)",
+      "note": "Klubbpris; avgifter uppskattade (25 % inkl. moms + 80 kr)"
+    },
+    {
+      "id": "t213",
+      "item_id": "sw-kenner-boba-fett",
+      "type": "buy",
+      "date": "2026-01-19",
+      "qty": 1,
+      "price_sek": 3702,
+      "fees_sek": 1005.5,
+      "platform": "Stockholms Auktionsverk (Auctionet)",
+      "note": "Klubbpris; avgifter uppskattade (25 % inkl. moms + 80 kr)"
+    },
+    {
+      "id": "t214",
+      "item_id": "sw-kenner-c3po",
+      "type": "buy",
+      "date": "2026-01-19",
+      "qty": 1,
+      "price_sek": 2089.6,
+      "fees_sek": 552.7,
+      "platform": "Stockholms Auktionsverk (Auctionet)",
+      "note": "Klubbpris; avgifter uppskattade (25 % inkl. moms + 80 kr) – andel av lot (C-3PO/Jawa/R2-D2)"
+    },
+    {
+      "id": "t215",
+      "item_id": "sw-kenner-jawa",
+      "type": "buy",
+      "date": "2026-01-19",
+      "qty": 1,
+      "price_sek": 1905.2,
+      "fees_sek": 503.9,
+      "platform": "Stockholms Auktionsverk (Auctionet)",
+      "note": "Klubbpris; avgifter uppskattade (25 % inkl. moms + 80 kr) – andel av lot (C-3PO/Jawa/R2-D2)"
+    },
+    {
+      "id": "t216",
+      "item_id": "sw-kenner-r2d2",
+      "type": "buy",
+      "date": "2026-01-19",
+      "qty": 1,
+      "price_sek": 1521.1,
+      "fees_sek": 402.3,
+      "platform": "Stockholms Auktionsverk (Auctionet)",
+      "note": "Klubbpris; avgifter uppskattade (25 % inkl. moms + 80 kr) – andel av lot (C-3PO/Jawa/R2-D2)"
     }
   ],
   "language_filter": {

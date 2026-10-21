@@ -142,7 +142,7 @@ function spark(it) { const p = series(it).pts; if (new Set(p.map(x => x[0])).siz
   return `<svg width=${w} height=${h} viewBox="0 0 ${w} ${h}" style="display:block;margin-left:auto"><polyline fill=none stroke="${c}" stroke-width=1.8 points="${p.map(q => (2 + (q[0] - x0) / (x1 - x0) * (w - 4)) + "," + (h - 2 - (q[1] - y0) / Math.max(y1 - y0, 1) * (h - 4))).join(" ")}"/></svg>`; }
 
 // ---------- delkomponenter ----------
-const sources = (it, full) => { const G = [["Cardmarket", ["cardmarket", "packquant"]], ["TCGplayer", ["tcgplayer"]], ["Tradera", ["tradera"]], ["Svenska butiker", ["pokejakt", "dragon", "hobbykort", "kortarkivet", "manatorsk"]], ["eBay", ["ebay"]], ["Aukro", ["aukro"]], ["Övriga EU", ["butiker eu", "pokeschnapp"]]];
+const sources = (it, full) => { const G = [["Cardmarket", ["cardmarket", "packquant"]], ["TCGplayer", ["tcgplayer"]], ["Tradera", ["tradera"]], ["Svenska butiker", ["pokejakt", "dragon", "hobbykort", "kortarkivet", "manatorsk"]], ["eBay", ["ebay"]], ["Aukro", ["aukro"]], ["Övriga EU", ["butiker eu", "pokeschnapp"]], ["Värdering (sålda priser)", ["marknadsvärdering"]]];
   return `<div class=src>${G.map(([g, k]) => { const ss = it.snapshots.filter(s => k.some(x => s.source.toLowerCase().includes(x))).sort((a, b) => b.date.localeCompare(a.date)).slice(0, full ? 99 : 3);
     return ss.length ? `<div><b>${g}</b>${ss.map(s => `<div><a href="${esc(s.url)}" target=_blank rel=noopener>${money(s.price, s.currency)}</a> <span class=mut>${TYPES[s.type]} · ${s.date}${s.approx ? "~" : ""}</span></div>`).join("")}</div>` : ""; }).join("")}</div>`; };
 function offerRow(o, withItem) {
@@ -180,7 +180,9 @@ function details(it, full) {
     ${aucs.length ? `<h4>Auktioner</h4>${aucRows(aucs, full, itemHref(it))}` : ""}
     ${it.cardmarket_url ? `<p class=sm><a href="${esc(it.cardmarket_url)}" target=_blank rel=noopener>${ic("ext", 13)} Cardmarket – engelska annonser</a></p>` : ""}
     ${full ? `<h4>Källor</h4>${src}<h4>Forum &amp; community</h4>${community(it, true)}${it.msrp ? `<p class="sm mut">MSRP <a href="${esc(it.msrp.url)}" target=_blank rel=noopener>${money(it.msrp.price, it.msrp.currency)}</a></p>` : ""}
-    ${it.image ? `<p class="xs mut">Bild: <a href="${esc(it.image.source_url)}" target=_blank rel=noopener>${esc(it.image.credit)}</a></p>` : ""}` : `<a class=more href="${itemHref(it)}">Öppna objektsidan ${ic("chev", 14)}</a>`}</div>`;
+    ${it.gallery?.length ? `<h4>Bilder</h4><div class=gal>${it.gallery.map(u => `<a href="${esc(u)}" target=_blank><img src="${esc(u)}" loading=lazy alt=""></a>`).join("")}</div>` : ""}
+    ${it.auction_url ? `<p class=sm><a href="${esc(it.auction_url)}" target=_blank rel=noopener>${ic("ext", 13)} Auktionen där den köptes</a></p>` : ""}
+    ${it.image ? `<p class="xs mut">Bild: ${it.image.source_url ? `<a href="${esc(it.image.source_url)}" target=_blank rel=noopener>${esc(it.image.credit)}</a>` : esc(it.image.credit)}</p>` : ""}` : `<a class=more href="${itemHref(it)}">Öppna objektsidan ${ic("chev", 14)}</a>`}</div>`;
 }
 const expRow = (head, body) => `<div class=row onclick="this.classList.toggle('open')">${head}</div><div class=exp><div>${body}</div></div>`;
 
