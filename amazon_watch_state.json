@@ -1,31 +1,32 @@
 {
-  "last_checked": "2026-10-17T14:43+02:00",
-  "note": "17 okt 14:43: lyckad körning (3 av 4 sidor laddade). Hobbit-sidan gav 'Page Not Found' p.g.a. felstavat ASIN, rättat till B0GWSDDFFJ; i sökresultat utan pris ('See options'). Inga nya i-lager-displayer som är billiga; inget larm.",
+  "last_checked": "2026-10-21T13:36+02:00",
+  "note": "21 okt 13:36: lyckad körning (4 av 4 sidor). Hobbit ej köpbar (inget pris). Nytt: Avatar CBB (EN) i lager på amazon.se 4 389,81 kr skickas av Amazon (≈ trend). 30th ETB på amazon.de $280,60 (långt över trend). Inga erbjudanden ≥10 % under trend.",
   "listings": {
     "amazon.se/B0996W4YC6": {
       "item": "mtg-innistrad-midnight-hunt-cbb",
       "in_stock": true,
       "price_sek": 4026.38,
       "shipping_sek": 216.29,
-      "seen": "2026-10-17T14:43+02:00"
+      "seen": "2026-10-21T13:36+02:00",
+      "stock": "1 kvar"
     },
     "amazon.se/B0GF44F4MG": {
       "item": "mtg-marvel-super-heroes-cbb",
       "in_stock": true,
-      "price_sek": 6188.32,
+      "price_sek": 6120.56,
       "shipping_sek": 207.61,
       "other_offers_from_sek": 5512.49,
-      "seen": "2026-10-17T14:43+02:00",
+      "seen": "2026-10-21T13:36+02:00",
       "stock": "4 kvar"
     },
     "amazon.de/B0GXGXJ55L": {
       "item": "mtg-reality-fracture-cbb",
       "in_stock": false,
-      "stock": "dispatch 1-3 months, leverans 19 nov–2 jan",
-      "price_usd": 328.68,
-      "shipping_usd": 15.71,
+      "stock": "dispatch 3-7 months, leverans 30 nov–27 apr",
+      "price_usd": 390.75,
+      "shipping_usd": 8.23,
       "lang": "English",
-      "seen": "2026-10-17T14:43+02:00"
+      "seen": "2026-10-21T13:36+02:00"
     },
     "amazon.de/B0G881RW2S": {
       "item": "mtg-marvel-super-heroes-cbb",
@@ -48,8 +49,8 @@
       "title": "Marvel: Darkhold Destiny Collector Booster Display",
       "in_stock": false,
       "stock": "preorder, release 2027-04-09",
-      "price_usd": 475.92,
-      "seen": "2026-10-16T19:51+02:00"
+      "price_usd": 565.92,
+      "seen": "2026-10-21T13:36+02:00"
     },
     "amazon.de/B0DP1Q9H2Q": {
       "item": "mtg-aetherdrift-cbb",
@@ -63,8 +64,9 @@
       "title": "MTG The Hobbit Collector's Booster Display",
       "in_stock": false,
       "price": null,
-      "seen": "2026-10-17T14:43+02:00",
-      "asin_note": "Rättat ASIN 17 okt (tidigare felstavat B0GWSDDFFF gav 'Page Not Found'). Sökresultat: 'See options', inget pris."
+      "seen": "2026-10-21T13:36+02:00",
+      "asin_note": "Rättat ASIN 17 okt (tidigare felstavat B0GWSDDFFF gav 'Page Not Found'). Sökresultat: 'See options', inget pris.",
+      "stock": "ej köpbar: inget pris/köpknapp, bara 'See All Buying Options' (erbjudandesidan ej laddad)"
     },
     "amazon.se/B0GXGXJ55L": {
       "item": "mtg-reality-fracture-cbb",
@@ -118,14 +120,15 @@
       "lang": "German (exkluderad)",
       "in_stock": true,
       "price_sek": 2862.1,
-      "seen": "2026-10-17T14:43+02:00"
+      "seen": "2026-10-21T13:36+02:00"
     },
     "amazon.de/B0G8T844N8": {
       "item": "mtg-marvel-super-heroes-cbb",
       "lang": "German (exkluderad)",
-      "in_stock": true,
-      "price_usd": 476.01,
-      "seen": "2026-10-17T14:43+02:00"
+      "in_stock": false,
+      "price_usd": null,
+      "seen": "2026-10-21T13:36+02:00",
+      "stock": "See options"
     },
     "amazon.de/B0H6KK4R81": {
       "item": null,
@@ -133,8 +136,8 @@
       "lang": "German (exkluderad)",
       "in_stock": false,
       "stock": "förbeställning, släpp 13 nov 2026",
-      "price_usd": 476.01,
-      "seen": "2026-10-17T14:43+02:00"
+      "price_usd": 565.92,
+      "seen": "2026-10-21T13:36+02:00"
     },
     "amazon.de/B0D6WFXZN4": {
       "item": "mtg-duskmourn-house-of-horror-cbb",
@@ -142,22 +145,68 @@
       "in_stock": true,
       "price_usd": 306.01,
       "seen": "2026-10-17T14:43+02:00"
+    },
+    "amazon.se/B0FHJHP2DK": {
+      "item": "mtg-avatar-the-last-airbender-cbb",
+      "in_stock": true,
+      "price_sek": 4389.81,
+      "shipping_sek": 0,
+      "lang": "English",
+      "seller": "skickas av Amazon",
+      "seen": "2026-10-21T13:36+02:00"
+    },
+    "amazon.de/B0FRBFT2BK": {
+      "item": null,
+      "title": "TMNT Collector Booster Display",
+      "in_stock": true,
+      "stock": "2 kvar",
+      "price_usd": 477.2,
+      "shipping_usd": 17.3,
+      "lang": "okänt",
+      "seen": "2026-10-21T13:36+02:00"
+    },
+    "amazon.de/B0FRDBLGCQ": {
+      "item": null,
+      "title": "TMNT Collector Booster Display",
+      "lang": "German (exkluderad)",
+      "in_stock": true,
+      "price_usd": 425.55,
+      "seen": "2026-10-21T13:36+02:00"
+    },
+    "amazon.de/B0DWTY71R8": {
+      "item": "mtg-marvel-s-spider-man-cbb",
+      "lang": "German (exkluderad)",
+      "in_stock": true,
+      "price_usd": 412.25,
+      "seen": "2026-10-21T13:36+02:00"
+    },
+    "amazon.de/B0H8SV3WJ8": {
+      "item": "pkm-30c-etb",
+      "in_stock": true,
+      "stock": "8 kvar",
+      "price_usd": 280.6,
+      "shipping_usd": 22.34,
+      "lang": "okänt",
+      "seen": "2026-10-21T13:36+02:00"
+    },
+    "amazon.de/B0H8SVJL9F": {
+      "item": "pkm-30c-etb",
+      "in_stock": true,
+      "stock": "1 kvar",
+      "price_usd": 280.6,
+      "shipping_usd": 19.91,
+      "lang": "okänt",
+      "seen": "2026-10-21T13:36+02:00"
     }
   },
   "pending_checks": [
-    "amazon.de/dp/B0GWSDDFFJ produktsida (Hobbit-erbjudanden, rätt ASIN)",
-    "Pokémon 30th Celebration ETB på Amazon.de"
+    "amazon.de/gp/offer-listing/B0GWSDDFFJ (Hobbit tredjepartserbjudanden)"
   ],
   "unchecked": [
     {
-      "target": "amazon.de/dp/B0GWSDDFFJ (Hobbit Collector Display, toppprioritet), produktsida",
-      "reason": "Laddade felstavat ASIN B0GWSDDFFF ('Page Not Found'); rätt ASIN hittat i sökresultat men produktsidan ej laddad (sidladdningsgräns). Sökresultatet visar inget pris.",
-      "at": "2026-10-17T14:43+02:00"
-    },
-    {
-      "target": "amazon.de sökning: pokemon 30th celebration elite trainer box",
-      "reason": "ej laddad, sidladdningsgräns (4) nådd",
-      "at": "2026-10-17T14:43+02:00"
+      "target": "amazon.de/gp/offer-listing/B0GWSDDFFJ (Hobbit, toppprioritet), erbjudandelista",
+      "reason": "Produktsidan laddad men visar inget pris/köpknapp; erbjudandelistan är egen sida och ej laddad (sidladdningsgräns 4). Ta den först nästa körning.",
+      "at": "2026-10-21T13:36+02:00"
     }
   ],
   "run_log": [
@@ -170,9 +219,14 @@
       "at": "2026-10-17T14:43+02:00",
       "result": "lyckad: amazon.se CBB-sök, amazon.se 30th ETB-sök (ingen ETB hittad), amazon.de CBB-sök. Hobbit utan pris.",
       "alerts": 0
+    },
+    {
+      "at": "2026-10-21T13:36+02:00",
+      "result": "lyckad: Hobbit-produktsida (ej köpbar), amazon.de 30th ETB-sök, amazon.se CBB-sök, amazon.de CBB-sök",
+      "alerts": 1
     }
   ],
   "consecutive_failed_runs": 0,
   "blocked_note": null,
-  "last_successful_check": "2026-10-17 14:43"
+  "last_successful_check": "2026-10-21 13:36"
 }
