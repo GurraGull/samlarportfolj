@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-20T21:20+02:00",
+  "checked_at": "2026-10-21T08:25+02:00",
   "source": "Webhallen API /api/product/<id> + /api/productdiscovery/search (collector, collector display, collector booster, magic display)",
   "watched_products": [
     {
@@ -56,7 +56,7 @@
       "status": "preorder"
     }
   ],
-  "notes": "21:20: Inga förändringar. Pokémon 30th ETB, Hobbit Collector Display och Reality Fracture Collector Booster alla slut (webb 0, butiker 0). Inga nya Magic Collector Displays (Hobbit, Marvel, Star Trek – alla 0 i lager). Alla produkter kontrollerade, inga okontrollerade.",
+  "notes": "08:25: Inga förändringar. Pokémon 30th ETB, Hobbit Collector Display och Reality Fracture Collector Booster alla slut (webb 0, butiker 0). Inga nya Magic Collector Displays (Hobbit, Marvel, Star Trek, Reality Fracture – alla 0 i lager). Alla produkter kontrollerade, inga okontrollerade.",
   "appeared_since_prior": [],
   "restocked_since_prior": [],
   "went_oos_since_prior": [],
