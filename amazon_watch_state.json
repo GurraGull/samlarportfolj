@@ -1,5 +1,5 @@
 {
-  "last_checked": "2026-10-21T13:36+02:00",
+  "last_checked": "2026-10-22T19:45+02:00",
   "note": "21 okt 13:36: lyckad körning (4 av 4 sidor). Hobbit ej köpbar (inget pris). Nytt: Avatar CBB (EN) i lager på amazon.se 4 389,81 kr skickas av Amazon (≈ trend). 30th ETB på amazon.de $280,60 (långt över trend). Inga erbjudanden ≥10 % under trend.",
   "listings": {
     "amazon.se/B0996W4YC6": {
@@ -33,15 +33,19 @@
       "in_stock": true,
       "price_usd": 476.01,
       "shipping_usd": 13.3,
-      "lang": "okänt",
-      "seen": "2026-10-17T14:43+02:00",
+      "lang": "English (Keepa-titel 'Englische Version')",
+      "seen": "2026-10-22T19:45+02:00",
       "keepa_alert": {
         "at": "2026-10-22T19:44+02:00",
         "buy_box_eur": 470.92,
         "keepa_threshold_eur": 478.8,
-        "verified": false,
-        "verify_note": "En Amazon-sidladdning gav 200 men en skript-/utmaningssida utan produktdata; inte omprovad."
-      }
+        "verified": true,
+        "verify_note": "Verifierad med en sidladdning: 5 240,35 kr + 75,11 kr frakt = 5 315 kr landat, i lager, Amazon säljare."
+      },
+      "price_sek": 5240.35,
+      "shipping_sek": 75.11,
+      "seller": "Amazon (skickas och säljs av Amazon)",
+      "delivery": "27 okt–2 nov"
     },
     "amazon.de/B0DWVDFYX1": {
       "item": "mtg-marvel-s-spider-man-cbb",
@@ -234,7 +238,7 @@
     },
     {
       "at": "2026-10-22T19:44+02:00",
-      "result": "Keepa-larm MSH CBB amazon.de €470,92 (≈5 226 kr) vs Cardmarket-trend €340,38 (≈3 777 kr), +38 %. Ingen deal, inget meddelande. Amazon-verifiering misslyckades (utmaningssida).",
+      "result": "Keepa-larm MSH CBB amazon.de €470,92. Verifierat 5 240,35 kr + 75,11 kr frakt (Amazon, i lager, lev. 27 okt–2 nov) ≈ 5 315 kr vs Cardmarket-trend €340,38 ≈ 3 777 kr (+41 %). Ingen deal, inget meddelande.",
       "alerts": 0
     }
   ],
