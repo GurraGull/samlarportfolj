@@ -34,7 +34,14 @@
       "price_usd": 476.01,
       "shipping_usd": 13.3,
       "lang": "okänt",
-      "seen": "2026-10-17T14:43+02:00"
+      "seen": "2026-10-17T14:43+02:00",
+      "keepa_alert": {
+        "at": "2026-10-22T19:44+02:00",
+        "buy_box_eur": 470.92,
+        "keepa_threshold_eur": 478.8,
+        "verified": false,
+        "verify_note": "En Amazon-sidladdning gav 200 men en skript-/utmaningssida utan produktdata; inte omprovad."
+      }
     },
     "amazon.de/B0DWVDFYX1": {
       "item": "mtg-marvel-s-spider-man-cbb",
@@ -224,6 +231,11 @@
       "at": "2026-10-21T13:36+02:00",
       "result": "lyckad: Hobbit-produktsida (ej köpbar), amazon.de 30th ETB-sök, amazon.se CBB-sök, amazon.de CBB-sök",
       "alerts": 1
+    },
+    {
+      "at": "2026-10-22T19:44+02:00",
+      "result": "Keepa-larm MSH CBB amazon.de €470,92 (≈5 226 kr) vs Cardmarket-trend €340,38 (≈3 777 kr), +38 %. Ingen deal, inget meddelande. Amazon-verifiering misslyckades (utmaningssida).",
+      "alerts": 0
     }
   ],
   "consecutive_failed_runs": 0,
