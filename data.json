@@ -8008,7 +8008,7 @@
           "currency": "USD",
           "type": "trend",
           "url": "https://www.pricecharting.com/game/magic-unlimited/chaos-orb",
-          "note": "Ungraded-snitt; senaste sålda: LP/NM cd /workspace/collectibles && D=2026-10-22 && A=\"python3 update.py add\" && \n$A pkm-30c-etb $D \"Tickermint (TCGplayer market)\" 122.29 USD trend https://tickermint.cards/card/704143 \"TCGplayer market 2026-10-21, −29 % på 30 dagar\" &&\n$A pkm-30c-etb $D \"PokeFocus (TCGplayer market)\" 121.16 USD trend https://pokefocus.com/sealed/30th-celebration-elite-trainer-box \"TCGplayer market −18,1 % på 14 dagar; eBay lägsta $99.87 fri frakt (US)\" &&\n$A pkm-30c-etb $D \"Dragon's Lair\" 1195 SEK listing https://dragonslair.se/products/pokemon-tcg-30th-celebration-elite-trainer-box \"Shopify .js available=false (slut i lager)\" &&\n$A mtg-revised-pack $D \"MTGStocks market\" 343.28 USD trend https://www.mtgstocks.com/sealed/920-revised-edition-booster-pack \"TCGplayer market; lägsta $349.99, snitt $394.00\" &&\n$A mtg-revised-pack $D \"eBay (PriceCharting)\" 293.88 USD sold https://www.pricecharting.com/game/magic-revised/booster-pack \"Senaste eBay-försäljning 2026-10-21; PriceCharting ungraded $349.99\" &&\n$A mtg-the-dark-pack $D \"TCGplayer (PriceCharting)\" 99.95 USD sold https://www.pricecharting.com/game/magic-the-dark/booster-pack \"Såld 2026-10-14; PriceCharting ungraded $77.00\" &&\n$A mtg-chaos-orb-2ed $D \"PriceCharting ungraded\" 1017.5 USD trend https://www.pricecharting.com/game/magic-unlimited/chaos-orb \"Ungraded-snitt; senaste sålda: LP/NM $1 425 (9 okt), HP $915 (21 sep), $821 (17 sep)\" &&\n$A mtg-bayou-3ed $D \"TCGplayer Moderately Played EN\" 341.03 USD sold https://tcgindex.io/magic-the-gathering/card/magic-the-gathering-revised-edition-bayou-rare \"Via TCGIndex 2026-10-22: NM $500.82 (+2,6 % 30d), LP $441.07, MP $341.03, HP $324.44\" &&\n$A hk-roy-94ult-ppm6 $D \"COMC raw \\\"EX to NM\\\" (4-årsförsäljning)\" 19.11 USD sold https://www.comc.com/Cards/Hockey/1994-95/Fleer_Ultra_-_Premier_Pad_Men/6/Patrick_Roy/209339 \"Oförändrat; raw $12.90 (4 sålda), billigaste annons $12.90\" &&\n$A hk-lindros-94don-elite7 $D \"TCDB median raw (sålda)\" 5.02 USD sold https://www.tcdb.com/Prices.cfm/sid/5014/1994-95-Donruss-Elite \"Oförändrat\" &&\n$A hk-holzinger-97cc-sq14 $D \"SportsCardsPro ungraded (eBay-baserat)\" 1.41 USD listing https://www.sportscardspro.com/console/hockey-cards-1997-collector%27s-choice-starquest \"Oförändrat\" &&\n$A hk-34-94leaf-guest $D \"Coolcard butikspris (serien)\" 50 SEK listing https://www.coolcard.se/en/product/1994-95-swedish-leaf-guest-special-1-mats-sundin-4 \"Oförändrat (50 kr/st)\" &&\n$A sw-kenner-c3po $D \"Tradera (AFA 80, utrop)\" 5399 SEK listing https://www.tradera.com/item/293801/756701599/star-wars-12-c-3po-kenner-1978-afa-80 \"AFA 80-graderad 12\\\" C-3PO, utrop utan bud, slutar 25 okt 20:43 – graderad, ej direkt jämförbar med ograderat ex.\" &&\npython3 - <<'E'\nimport json\np=json.load(open('data.json'))\nfor i in p['items']:\n    if i['id']=='mtg-bayou-3ed':\n        i['valuation']['mid']={\"price\":341.03,\"currency\":\"USD\",\"basis\":\"TCGplayer Moderately Played EN (via TCGIndex, 2026-10-22) – Well Played\"}\n        i['valuation']['conservative']={\"price\":324.44,\"currency\":\"USD\",\"basis\":\"TCGplayer Heavily Played EN (via TCGIndex, 2026-10-22)\"}\njson.dump(p,open('data.json','w'),ensure_ascii=False,indent=2)\nE 425 (9 okt), HP 15 (21 sep), 21 (17 sep)"
+          "note": "Ungraded-snitt; senaste sålda: LP/NM $1 425 (9 okt), HP $915 (21 sep), $821 (17 sep)"
         }
       ],
       "community": [],
@@ -8470,7 +8470,7 @@
           "currency": "USD",
           "type": "sold",
           "url": "https://www.comc.com/Cards/Hockey/1994-95/Fleer_Ultra_-_Premier_Pad_Men/6/Patrick_Roy/209339",
-          "note": "Oförändrat; raw cd /workspace/collectibles && D=2026-10-22 && A=\"python3 update.py add\" && \n$A pkm-30c-etb $D \"Tickermint (TCGplayer market)\" 122.29 USD trend https://tickermint.cards/card/704143 \"TCGplayer market 2026-10-21, −29 % på 30 dagar\" &&\n$A pkm-30c-etb $D \"PokeFocus (TCGplayer market)\" 121.16 USD trend https://pokefocus.com/sealed/30th-celebration-elite-trainer-box \"TCGplayer market −18,1 % på 14 dagar; eBay lägsta $99.87 fri frakt (US)\" &&\n$A pkm-30c-etb $D \"Dragon's Lair\" 1195 SEK listing https://dragonslair.se/products/pokemon-tcg-30th-celebration-elite-trainer-box \"Shopify .js available=false (slut i lager)\" &&\n$A mtg-revised-pack $D \"MTGStocks market\" 343.28 USD trend https://www.mtgstocks.com/sealed/920-revised-edition-booster-pack \"TCGplayer market; lägsta $349.99, snitt $394.00\" &&\n$A mtg-revised-pack $D \"eBay (PriceCharting)\" 293.88 USD sold https://www.pricecharting.com/game/magic-revised/booster-pack \"Senaste eBay-försäljning 2026-10-21; PriceCharting ungraded $349.99\" &&\n$A mtg-the-dark-pack $D \"TCGplayer (PriceCharting)\" 99.95 USD sold https://www.pricecharting.com/game/magic-the-dark/booster-pack \"Såld 2026-10-14; PriceCharting ungraded $77.00\" &&\n$A mtg-chaos-orb-2ed $D \"PriceCharting ungraded\" 1017.5 USD trend https://www.pricecharting.com/game/magic-unlimited/chaos-orb \"Ungraded-snitt; senaste sålda: LP/NM $1 425 (9 okt), HP $915 (21 sep), $821 (17 sep)\" &&\n$A mtg-bayou-3ed $D \"TCGplayer Moderately Played EN\" 341.03 USD sold https://tcgindex.io/magic-the-gathering/card/magic-the-gathering-revised-edition-bayou-rare \"Via TCGIndex 2026-10-22: NM $500.82 (+2,6 % 30d), LP $441.07, MP $341.03, HP $324.44\" &&\n$A hk-roy-94ult-ppm6 $D \"COMC raw \\\"EX to NM\\\" (4-årsförsäljning)\" 19.11 USD sold https://www.comc.com/Cards/Hockey/1994-95/Fleer_Ultra_-_Premier_Pad_Men/6/Patrick_Roy/209339 \"Oförändrat; raw $12.90 (4 sålda), billigaste annons $12.90\" &&\n$A hk-lindros-94don-elite7 $D \"TCDB median raw (sålda)\" 5.02 USD sold https://www.tcdb.com/Prices.cfm/sid/5014/1994-95-Donruss-Elite \"Oförändrat\" &&\n$A hk-holzinger-97cc-sq14 $D \"SportsCardsPro ungraded (eBay-baserat)\" 1.41 USD listing https://www.sportscardspro.com/console/hockey-cards-1997-collector%27s-choice-starquest \"Oförändrat\" &&\n$A hk-34-94leaf-guest $D \"Coolcard butikspris (serien)\" 50 SEK listing https://www.coolcard.se/en/product/1994-95-swedish-leaf-guest-special-1-mats-sundin-4 \"Oförändrat (50 kr/st)\" &&\n$A sw-kenner-c3po $D \"Tradera (AFA 80, utrop)\" 5399 SEK listing https://www.tradera.com/item/293801/756701599/star-wars-12-c-3po-kenner-1978-afa-80 \"AFA 80-graderad 12\\\" C-3PO, utrop utan bud, slutar 25 okt 20:43 – graderad, ej direkt jämförbar med ograderat ex.\" &&\npython3 - <<'E'\nimport json\np=json.load(open('data.json'))\nfor i in p['items']:\n    if i['id']=='mtg-bayou-3ed':\n        i['valuation']['mid']={\"price\":341.03,\"currency\":\"USD\",\"basis\":\"TCGplayer Moderately Played EN (via TCGIndex, 2026-10-22) – Well Played\"}\n        i['valuation']['conservative']={\"price\":324.44,\"currency\":\"USD\",\"basis\":\"TCGplayer Heavily Played EN (via TCGIndex, 2026-10-22)\"}\njson.dump(p,open('data.json','w'),ensure_ascii=False,indent=2)\nE2.90 (4 sålda), billigaste annons cd /workspace/collectibles && D=2026-10-22 && A=\"python3 update.py add\" && \n$A pkm-30c-etb $D \"Tickermint (TCGplayer market)\" 122.29 USD trend https://tickermint.cards/card/704143 \"TCGplayer market 2026-10-21, −29 % på 30 dagar\" &&\n$A pkm-30c-etb $D \"PokeFocus (TCGplayer market)\" 121.16 USD trend https://pokefocus.com/sealed/30th-celebration-elite-trainer-box \"TCGplayer market −18,1 % på 14 dagar; eBay lägsta $99.87 fri frakt (US)\" &&\n$A pkm-30c-etb $D \"Dragon's Lair\" 1195 SEK listing https://dragonslair.se/products/pokemon-tcg-30th-celebration-elite-trainer-box \"Shopify .js available=false (slut i lager)\" &&\n$A mtg-revised-pack $D \"MTGStocks market\" 343.28 USD trend https://www.mtgstocks.com/sealed/920-revised-edition-booster-pack \"TCGplayer market; lägsta $349.99, snitt $394.00\" &&\n$A mtg-revised-pack $D \"eBay (PriceCharting)\" 293.88 USD sold https://www.pricecharting.com/game/magic-revised/booster-pack \"Senaste eBay-försäljning 2026-10-21; PriceCharting ungraded $349.99\" &&\n$A mtg-the-dark-pack $D \"TCGplayer (PriceCharting)\" 99.95 USD sold https://www.pricecharting.com/game/magic-the-dark/booster-pack \"Såld 2026-10-14; PriceCharting ungraded $77.00\" &&\n$A mtg-chaos-orb-2ed $D \"PriceCharting ungraded\" 1017.5 USD trend https://www.pricecharting.com/game/magic-unlimited/chaos-orb \"Ungraded-snitt; senaste sålda: LP/NM $1 425 (9 okt), HP $915 (21 sep), $821 (17 sep)\" &&\n$A mtg-bayou-3ed $D \"TCGplayer Moderately Played EN\" 341.03 USD sold https://tcgindex.io/magic-the-gathering/card/magic-the-gathering-revised-edition-bayou-rare \"Via TCGIndex 2026-10-22: NM $500.82 (+2,6 % 30d), LP $441.07, MP $341.03, HP $324.44\" &&\n$A hk-roy-94ult-ppm6 $D \"COMC raw \\\"EX to NM\\\" (4-årsförsäljning)\" 19.11 USD sold https://www.comc.com/Cards/Hockey/1994-95/Fleer_Ultra_-_Premier_Pad_Men/6/Patrick_Roy/209339 \"Oförändrat; raw $12.90 (4 sålda), billigaste annons $12.90\" &&\n$A hk-lindros-94don-elite7 $D \"TCDB median raw (sålda)\" 5.02 USD sold https://www.tcdb.com/Prices.cfm/sid/5014/1994-95-Donruss-Elite \"Oförändrat\" &&\n$A hk-holzinger-97cc-sq14 $D \"SportsCardsPro ungraded (eBay-baserat)\" 1.41 USD listing https://www.sportscardspro.com/console/hockey-cards-1997-collector%27s-choice-starquest \"Oförändrat\" &&\n$A hk-34-94leaf-guest $D \"Coolcard butikspris (serien)\" 50 SEK listing https://www.coolcard.se/en/product/1994-95-swedish-leaf-guest-special-1-mats-sundin-4 \"Oförändrat (50 kr/st)\" &&\n$A sw-kenner-c3po $D \"Tradera (AFA 80, utrop)\" 5399 SEK listing https://www.tradera.com/item/293801/756701599/star-wars-12-c-3po-kenner-1978-afa-80 \"AFA 80-graderad 12\\\" C-3PO, utrop utan bud, slutar 25 okt 20:43 – graderad, ej direkt jämförbar med ograderat ex.\" &&\npython3 - <<'E'\nimport json\np=json.load(open('data.json'))\nfor i in p['items']:\n    if i['id']=='mtg-bayou-3ed':\n        i['valuation']['mid']={\"price\":341.03,\"currency\":\"USD\",\"basis\":\"TCGplayer Moderately Played EN (via TCGIndex, 2026-10-22) – Well Played\"}\n        i['valuation']['conservative']={\"price\":324.44,\"currency\":\"USD\",\"basis\":\"TCGplayer Heavily Played EN (via TCGIndex, 2026-10-22)\"}\njson.dump(p,open('data.json','w'),ensure_ascii=False,indent=2)\nE2.90"
+          "note": "Oförändrat; raw $12.90 (4 sålda), billigaste annons $12.90"
         }
       ],
       "community": [],
@@ -8803,6 +8803,89 @@
         "source_url": null,
         "downloaded": "2026-10-16"
       }
+    },
+    {
+      "id": "hk-modano-94score-dt17",
+      "kind": "card",
+      "name": "Mike Modano – 1994-95 Score Dream Team #DT17 (hologram)",
+      "category": "Hockey",
+      "language": "Engelska",
+      "quantity": 1,
+      "purchase_price_sek": null,
+      "purchase_date": null,
+      "status": "owned",
+      "condition": "Good/VG (observerat, ej graderat) – veck",
+      "valuation": {
+        "conservative": {
+          "price": 20,
+          "currency": "SEK",
+          "basis": "eBay såld $2.00 2026-08-12 (SportsCardsPro), skicksjusterat lågt"
+        },
+        "mid": {
+          "price": 35,
+          "currency": "SEK",
+          "basis": "Skicksjusterad värdering (veck) från eBay-försäljningar via SportsCardsPro, 2026-10-22"
+        },
+        "high": {
+          "price": 50,
+          "currency": "SEK",
+          "basis": "eBay såld $4.99 2026-02-28 (SportsCardsPro)"
+        }
+      },
+      "price_source": "manual",
+      "notes": "Ett av de första hockeykorten i samlingen – barndomskort, inköpspris okänt. Hologram-insert från amerikanska Score-paket (US-versionen, ca 1 per 36 paket). Skick: veck från överkanten genom kortet, krackelering i hologrammet, mjuka hörn och kantnötning – ungefär Good/VG (≈ PSA 2–3). eBay-försäljningar (SportsCardsPro): $2.00 (12 aug 2026), $4.99 (28 feb 2026); fina ex. $11.75–17.79; prisguide ungraded $3.50. Värde ≈35 kr (spann 20–50 kr). Inte värt att gradera – gradering och frakt kostar mer än kortet. Behåll som minne i plastficka + toploader.",
+      "snapshots": [
+        {
+          "date": "2026-10-22",
+          "source": "eBay såld (SportsCardsPro)",
+          "price": 2.0,
+          "currency": "USD",
+          "type": "sold",
+          "url": "https://www.sportscardspro.com/game/hockey-cards-1994-score-dream-team/mike-modano-dt17",
+          "note": "Såld 2026-08-12, ograderad"
+        },
+        {
+          "date": "2026-10-22",
+          "source": "eBay såld (SportsCardsPro)",
+          "price": 4.99,
+          "currency": "USD",
+          "type": "sold",
+          "url": "https://www.sportscardspro.com/game/hockey-cards-1994-score-dream-team/mike-modano-dt17",
+          "note": "Såld 2026-02-28, ograderad (\"READ DESCRIPTION\")"
+        },
+        {
+          "date": "2026-10-22",
+          "source": "SportsCardsPro ungraded (eBay-baserat)",
+          "price": 3.5,
+          "currency": "USD",
+          "type": "trend",
+          "url": "https://www.sportscardspro.com/game/hockey-cards-1994-score-dream-team/mike-modano-dt17",
+          "note": "Prisguide ungraded; fina ex. sålda $11.75 (14 feb) och $17.79 (18 jan 2026); PSA 10 $138.21"
+        },
+        {
+          "date": "2026-10-22",
+          "source": "Skicksjusterad värdering",
+          "price": 35,
+          "currency": "SEK",
+          "type": "trend",
+          "url": "https://www.sportscardspro.com/game/hockey-cards-1994-score-dream-team/mike-modano-dt17",
+          "condition": "Good/VG (veck)",
+          "note": "Spann 20–50 kr för kort med veck"
+        }
+      ],
+      "community": [],
+      "offers": [],
+      "alerts": [],
+      "image": {
+        "src": "images/hk-modano-94score-dt17.webp",
+        "credit": "Foto från Gustaf 22 okt 2026",
+        "source_url": null,
+        "downloaded": "2026-10-22"
+      },
+      "gallery": [
+        "images/hk-modano-94score-dt17.webp",
+        "images/hk-modano-94score-dt17-back.webp"
+      ]
     },
     {
       "id": "mtg-cm-257144",
@@ -23491,6 +23574,17 @@
       "fees_sek": 402.3,
       "platform": "Stockholms Auktionsverk (Auctionet)",
       "note": "Klubbpris; avgifter uppskattade (25 % inkl. moms + 80 kr) – andel av lot (C-3PO/Jawa/R2-D2)"
+    },
+    {
+      "id": "t217",
+      "item_id": "hk-modano-94score-dt17",
+      "type": "buy",
+      "date": null,
+      "qty": 1,
+      "price_sek": null,
+      "fees_sek": 0,
+      "platform": "okänd",
+      "note": "Barndomskort, inköpspris okänt (hockeykort)"
     }
   ],
   "language_filter": {
