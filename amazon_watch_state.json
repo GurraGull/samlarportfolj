@@ -208,6 +208,16 @@
       "shipping_usd": 19.91,
       "lang": "okänt",
       "seen": "2026-10-21T13:36+02:00"
+    },
+    "amazon.de/B0H78BB9TY": {
+      "item": "pkm-30c-etb",
+      "keepa_alert": {
+        "at": "2026-10-25T20:49+01:00",
+        "new_eur": 252.99,
+        "keepa_threshold_eur": 294.03,
+        "verified": false,
+        "verify_note": "Ej verifierad på Amazon: priset ligger ~93 % över Cardmarket-trend (130,77 EUR, 22 okt) och långt över köpgränsen 1 100 kr, så ingen åtgärd. Gustaf ej notifierad."
+      }
     }
   },
   "pending_checks": [
