@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-22T09:50+02:00",
+  "checked_at": "2026-10-26T09:46+01:00",
   "source": "Games Island MCP https://mcp.games-island.eu/mcp search_products: Collector Booster Display, 30th Celebration, Evolving Skies",
   "rules": "Ingen prisinhämtning (butikens regel för KI). Ingen crawling av games-island.eu. Read-only.",
   "products": {
@@ -596,16 +596,74 @@
       "name": "Pokemon TCG - 30th Celebration Collection Booster Bundle - Englisch",
       "kind": "pokemon_sealed",
       "language": "engelska",
-      "status": "in_stock",
-      "status_raw": "auf Lager",
+      "status": "out_of_stock",
+      "status_raw": "Ausverkauft",
       "date": null,
       "url": "https://games-island.eu/Pokemon-TCG-30th-Celebration-Collection-Booster-Bundle-Englisch",
       "item_id": null,
       "buylist_id": null,
       "first_seen": "2026-10-19T16:07+02:00",
-      "changed_at": "2026-10-19T16:07+02:00"
+      "changed_at": "2026-10-26T09:46+01:00"
+    },
+    "1130027": {
+      "kArtikel": 1130027,
+      "name": "Pokemon TCG - 30th Anniversary First Partner Card Set (Vol. 1) - Chinesisch",
+      "kind": "pokemon_sealed",
+      "language": "kinesiska",
+      "status": "out_of_stock",
+      "status_raw": "Ausverkauft",
+      "date": null,
+      "url": "https://games-island.eu/Pokemon-TCG-30th-Anniversary-First-Partner-Card-Set-Vol-1-Chinesisch",
+      "item_id": null,
+      "buylist_id": null,
+      "first_seen": "2026-10-26T09:46+01:00",
+      "changed_at": "2026-10-26T09:46+01:00"
+    },
+    "1170561": {
+      "kArtikel": 1170561,
+      "name": "Pokemon TCG - 30th Anniversary First Partner Card Set (Vol. 2) - Chinesisch",
+      "kind": "pokemon_sealed",
+      "language": "kinesiska",
+      "status": "in_stock",
+      "status_raw": "auf Lager",
+      "date": null,
+      "url": "https://games-island.eu/Pokemon-TCG-30th-Anniversary-First-Partner-Card-Set-Vol-2-Chinesisch",
+      "item_id": null,
+      "buylist_id": null,
+      "first_seen": "2026-10-26T09:46+01:00",
+      "changed_at": "2026-10-26T09:46+01:00"
+    },
+    "1176062": {
+      "kArtikel": 1176062,
+      "name": "Pokemon TCG - 30th Anniversary First Partner Card Set (Vol. 3) - Chinesisch",
+      "kind": "pokemon_sealed",
+      "language": "kinesiska",
+      "status": "in_stock",
+      "status_raw": "auf Lager",
+      "date": null,
+      "url": "https://games-island.eu/Pokemon-TCG-30th-Anniversary-First-Partner-Card-Set-Vol-3-Chinesisch",
+      "item_id": null,
+      "buylist_id": null,
+      "first_seen": "2026-10-26T09:46+01:00",
+      "changed_at": "2026-10-26T09:46+01:00"
+    },
+    "1028010": {
+      "kArtikel": 1028010,
+      "name": "Pokemon TCG - CS3.5C: Scorching Skies Booster Box - Chinesisch",
+      "kind": "pokemon_sealed",
+      "language": "kinesiska",
+      "status": "out_of_stock",
+      "status_raw": "Ausverkauft",
+      "date": null,
+      "url": "https://games-island.eu/Pokemon-TCG-CS35C-Scorching-Skies-Booster-Box-Chinesisch",
+      "item_id": null,
+      "buylist_id": null,
+      "first_seen": "2026-10-26T09:46+01:00",
+      "changed_at": "2026-10-26T09:46+01:00"
     }
   },
-  "last_events": [],
-  "last_events_at": null
+  "last_events": [
+    "GAMES ISLAND SLUT: Pokemon TCG - 30th Celebration Collection Booster Bundle - Englisch – Ausverkauft"
+  ],
+  "last_events_at": "2026-10-26T09:46+01:00"
 }
