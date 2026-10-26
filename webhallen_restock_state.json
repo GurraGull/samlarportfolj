@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-26T08:25+01:00",
+  "checked_at": "2026-10-26T12:25+01:00",
   "source": "Webhallen API /api/product/<id> + /api/productdiscovery/search (collector, collector display, collector booster, magic display)",
   "watched_products": [
     {
@@ -57,7 +57,7 @@
       "status": "preorder"
     }
   ],
-  "notes": "08:25: Inga lagerförändringar. Pokémon 30th ETB, Hobbit Collector Display och Reality Fracture Collector Booster alla slut (webb 0, butiker 0). Inga nya Magic Collector Displays. Marvel Super Heroes Collector Display sänkt till kampanjpris 4 299 kr (från 4 999) men fortfarande 0 i lager. Star Trek förbeställning. Alla produkter kontrollerade, inga okontrollerade.",
+  "notes": "12:25: Inga lagerförändringar. Pokémon 30th ETB, Hobbit Collector Display och Reality Fracture Collector Booster alla slut (webb 0, butiker 0; Reality Fracture 3 st inkommande, ej bekräftat). Inga nya Magic Collector Displays (sök: collector, collector display, collector booster, magic display). Marvel Super Heroes CD 4 299 kr, 0 i lager. Star Trek förbeställning 4 999 kr. Alla produkter kontrollerade, inga okontrollerade.",
   "appeared_since_prior": [],
   "restocked_since_prior": [],
   "went_oos_since_prior": [],
