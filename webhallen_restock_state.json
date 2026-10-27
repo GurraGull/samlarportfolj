@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-27T12:25+01:00",
+  "checked_at": "2026-10-27T17:25+01:00",
   "source": "Webhallen API /api/product/<id> + /api/productdiscovery/search (collector, collector display, collector booster, magic display)",
   "watched_products": [
     {
@@ -44,9 +44,11 @@
       "id": 395310,
       "name": "Magic the Gathering: Marvel Super Heroes Collector Display (12 boosters)",
       "price": 4299.0,
-      "in_stock": false,
-      "status": "discontinued",
-      "notes": "Kampanjpris 4 299 kr (26 okt–12 nov, max 2/kund), men 0 i lager webb/butik"
+      "in_stock": true,
+      "status": "in_stock",
+      "notes": "ÅTER I LAGER 27 okt 17:25: webb 1, butik-id 32: 1 (sannolikt samma ex). Kampanjpris 4 299 kr (26 okt–12 nov, max 2/kund).",
+      "web": 1,
+      "stores": 1
     },
     {
       "id": 401321,
@@ -57,9 +59,17 @@
       "status": "preorder"
     }
   ],
-  "notes": "12:25: Inga lagerförändringar. Pokémon 30th ETB, Hobbit Collector Display och Reality Fracture Collector Booster alla slut (webb 0, butiker 0). Inga nya Magic Collector Displays (sök: collector, collector display, collector booster, magic display). Marvel Super Heroes CD 4 299 kr, 0 i lager. Star Trek förbeställning 4 999 kr, 0 i lager. Alla produkter kontrollerade, inga okontrollerade.",
+  "notes": "17:25: Marvel Super Heroes Collector Display ÅTER I LAGER (webb 1, butik-id 32: 1), kampanjpris 4 299 kr. Pokémon 30th ETB, Hobbit CD, Reality Fracture CB fortsatt slut (webb 0, butiker 0). Star Trek förbeställning 4 999 kr, 0 i lager. Inga nya Collector Displays. Alla produkter kontrollerade.",
   "appeared_since_prior": [],
-  "restocked_since_prior": [],
+  "restocked_since_prior": [
+    {
+      "id": 395310,
+      "name": "Magic the Gathering: Marvel Super Heroes Collector Display (12 boosters)",
+      "price": 4299.0,
+      "web": 1,
+      "stores": 1
+    }
+  ],
   "went_oos_since_prior": [],
   "browser_confirmed": false,
   "unchecked": []
