@@ -1,5 +1,5 @@
 {
-  "last_checked": "2026-10-22T19:45+02:00",
+  "last_checked": "2026-10-27T20:12+01:00",
   "note": "21 okt 13:36: lyckad körning (4 av 4 sidor). Hobbit ej köpbar (inget pris). Nytt: Avatar CBB (EN) i lager på amazon.se 4 389,81 kr skickas av Amazon (≈ trend). 30th ETB på amazon.de $280,60 (långt över trend). Inga erbjudanden ≥10 % under trend.",
   "listings": {
     "amazon.se/B0996W4YC6": {
@@ -34,18 +34,18 @@
       "price_usd": 476.01,
       "shipping_usd": 13.3,
       "lang": "English (Keepa-titel 'Englische Version')",
-      "seen": "2026-10-22T19:45+02:00",
+      "seen": "2026-10-27T20:12+01:00",
       "keepa_alert": {
-        "at": "2026-10-22T19:44+02:00",
-        "buy_box_eur": 470.92,
+        "at": "2026-10-27T20:09+01:00",
+        "buy_box_eur": 449.99,
         "keepa_threshold_eur": 478.8,
-        "verified": true,
-        "verify_note": "Verifierad med en sidladdning: 5 240,35 kr + 75,11 kr frakt = 5 315 kr landat, i lager, Amazon säljare."
+        "verified": false,
+        "verify_note": "En sidladdning 27 okt 20:12: Amazon visar 5 580,54 kr (≈€501) + 74,74 kr frakt, i lager, säljs av Amazon – Keepas €449,99 syntes inte. Långt över Cardmarket-trend €343,86 (≈3 827 kr) och över Webhallen 4 299 kr. Ingen åtgärd; Gustaf väntar på trend 380 €."
       },
-      "price_sek": 5240.35,
-      "shipping_sek": 75.11,
-      "seller": "Amazon (skickas och säljs av Amazon)",
-      "delivery": "27 okt–2 nov"
+      "price_sek": 5580.54,
+      "shipping_sek": 74.74,
+      "seller": "Amazon",
+      "delivery": "2–5 nov"
     },
     "amazon.de/B0DWVDFYX1": {
       "item": "mtg-marvel-s-spider-man-cbb",
