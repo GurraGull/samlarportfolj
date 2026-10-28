@@ -1,6 +1,6 @@
 {
-  "last_checked": "2026-10-27T20:12+01:00",
-  "note": "21 okt 13:36: lyckad körning (4 av 4 sidor). Hobbit ej köpbar (inget pris). Nytt: Avatar CBB (EN) i lager på amazon.se 4 389,81 kr skickas av Amazon (≈ trend). 30th ETB på amazon.de $280,60 (långt över trend). Inga erbjudanden ≥10 % under trend.",
+  "last_checked": "2026-10-28T13:38+01:00",
+  "note": "28 okt 13:38: lyckad körning (4 av 4). NYTT: Hobbit CBB köpbar på amazon.de via tredjepart: Robo294 €794,99 + €4 frakt, JS-Warenhandel €796,99 + €8 (≈8 893 kr levererat, ~37 % över Cardmarket-trend €582). MSH amazon.se 5 636,60 kr. Inga erbjudanden ≥10 % under trend.",
   "listings": {
     "amazon.se/B0996W4YC6": {
       "item": "mtg-innistrad-midnight-hunt-cbb",
@@ -60,34 +60,49 @@
       "title": "Marvel: Darkhold Destiny Collector Booster Display",
       "in_stock": false,
       "stock": "preorder, release 2027-04-09",
-      "price_usd": 565.92,
-      "seen": "2026-10-21T13:36+02:00"
+      "price_usd": 560.63,
+      "seen": "2026-10-28T13:38+01:00",
+      "shipping_usd": 7.03
     },
     "amazon.de/B0DP1Q9H2Q": {
       "item": "mtg-aetherdrift-cbb",
       "lang": "German (exkluderad)",
       "in_stock": true,
-      "price_usd": 306.01,
-      "seen": "2026-10-17T14:43+02:00"
+      "price_usd": 360.41,
+      "seen": "2026-10-28T13:38+01:00",
+      "shipping_usd": 7.45
     },
     "amazon.de/B0GWSDDFFJ": {
       "item": "mtg-hobbit-cbb",
       "title": "MTG The Hobbit Collector's Booster Display",
-      "in_stock": false,
+      "in_stock": true,
       "price": null,
-      "seen": "2026-10-21T13:36+02:00",
+      "seen": "2026-10-28T13:38+01:00",
       "asin_note": "Rättat ASIN 17 okt (tidigare felstavat B0GWSDDFFF gav 'Page Not Found'). Sökresultat: 'See options', inget pris.",
-      "stock": "ej köpbar: inget pris/köpknapp, bara 'See All Buying Options' (erbjudandesidan ej laddad)"
+      "stock": "köpbar via 2 tredjepartssäljare (ingen featured offer, inte Amazon)",
+      "price_eur": 794.99,
+      "shipping_eur": 4.0,
+      "seller": "Robo294 (DE, 4,5★, 232 betyg, 92 % positiva)",
+      "delivery": "5–13 nov",
+      "other_offers": [
+        {
+          "price_eur": 796.99,
+          "shipping_eur": 8.0,
+          "seller": "JS-Warenhandel (DE, 5★, 16 betyg, 94 %)",
+          "delivery": "5–9 nov"
+        }
+      ],
+      "lang": "ej angivet (engelsk beskrivning, ej 'German Version')"
     },
     "amazon.se/B0GXGXJ55L": {
       "item": "mtg-reality-fracture-cbb",
       "in_stock": false,
-      "stock": "förbeställning, leverans 11 jan–26 apr 2027",
-      "price_sek": 3074.1,
+      "stock": "See options, 1 nytt erbjudande, ingen featured offer",
+      "price_sek": 5369.41,
       "shipping_sek": 0,
       "lang": "English",
       "note": "Gustafs egen beställning (samma pris)",
-      "seen": "2026-10-17T14:43+02:00"
+      "seen": "2026-10-28T13:38+01:00"
     },
     "amazon.se/B0DV27CY5V": {
       "item": "mtg-marvel-s-spider-man-cbb",
@@ -110,10 +125,11 @@
     "amazon.se/B0G881RW2S": {
       "item": "mtg-marvel-super-heroes-cbb",
       "in_stock": true,
-      "price_sek": 5016.2,
-      "shipping_sek": 220,
+      "price_sek": 5636.6,
+      "shipping_sek": 0,
       "lang": "English",
-      "seen": "2026-10-17T14:43+02:00"
+      "seen": "2026-10-28T13:38+01:00",
+      "delivery": "4 nov"
     },
     "amazon.se/B082J42R57": {
       "item": null,
@@ -130,16 +146,17 @@
       "item": "mtg-duskmourn-house-of-horror-cbb",
       "lang": "German (exkluderad)",
       "in_stock": true,
-      "price_sek": 2862.1,
-      "seen": "2026-10-21T13:36+02:00"
+      "price_sek": 3081.23,
+      "seen": "2026-10-28T13:38+01:00"
     },
     "amazon.de/B0G8T844N8": {
       "item": "mtg-marvel-super-heroes-cbb",
       "lang": "German (exkluderad)",
-      "in_stock": false,
-      "price_usd": null,
-      "seen": "2026-10-21T13:36+02:00",
-      "stock": "See options"
+      "in_stock": true,
+      "price_usd": 558.34,
+      "seen": "2026-10-28T13:38+01:00",
+      "stock": "See options",
+      "shipping_usd": 7.11
     },
     "amazon.de/B0H6KK4R81": {
       "item": null,
@@ -147,15 +164,17 @@
       "lang": "German (exkluderad)",
       "in_stock": false,
       "stock": "förbeställning, släpp 13 nov 2026",
-      "price_usd": 565.92,
-      "seen": "2026-10-21T13:36+02:00"
+      "price_usd": 560.63,
+      "seen": "2026-10-28T13:38+01:00",
+      "shipping_usd": 57.35
     },
     "amazon.de/B0D6WFXZN4": {
       "item": "mtg-duskmourn-house-of-horror-cbb",
       "lang": "German (exkluderad)",
       "in_stock": true,
-      "price_usd": 306.01,
-      "seen": "2026-10-17T14:43+02:00"
+      "price_usd": 360.41,
+      "seen": "2026-10-28T13:38+01:00",
+      "shipping_usd": 6.73
     },
     "amazon.se/B0FHJHP2DK": {
       "item": "mtg-avatar-the-last-airbender-cbb",
@@ -164,32 +183,34 @@
       "shipping_sek": 0,
       "lang": "English",
       "seller": "skickas av Amazon",
-      "seen": "2026-10-21T13:36+02:00"
+      "seen": "2026-10-28T13:38+01:00"
     },
     "amazon.de/B0FRBFT2BK": {
       "item": null,
       "title": "TMNT Collector Booster Display",
       "in_stock": true,
       "stock": "2 kvar",
-      "price_usd": 477.2,
-      "shipping_usd": 17.3,
+      "price_usd": 472.75,
+      "shipping_usd": 17.14,
       "lang": "okänt",
-      "seen": "2026-10-21T13:36+02:00"
+      "seen": "2026-10-28T13:38+01:00"
     },
     "amazon.de/B0FRDBLGCQ": {
       "item": null,
       "title": "TMNT Collector Booster Display",
       "lang": "German (exkluderad)",
       "in_stock": true,
-      "price_usd": 425.55,
-      "seen": "2026-10-21T13:36+02:00"
+      "price_usd": 381.52,
+      "seen": "2026-10-28T13:38+01:00",
+      "shipping_usd": 6.75
     },
     "amazon.de/B0DWTY71R8": {
       "item": "mtg-marvel-s-spider-man-cbb",
       "lang": "German (exkluderad)",
       "in_stock": true,
-      "price_usd": 412.25,
-      "seen": "2026-10-21T13:36+02:00"
+      "price_usd": 498.06,
+      "seen": "2026-10-28T13:38+01:00",
+      "shipping_usd": 22.36
     },
     "amazon.de/B0H8SV3WJ8": {
       "item": "pkm-30c-etb",
@@ -218,16 +239,22 @@
         "verified": false,
         "verify_note": "Ej verifierad på Amazon: €253,45 ligger ~94 % över Cardmarket-trend (~130 €) och långt över köpgränsen 1 100 kr; samma nivå som larmet 25 okt (€252,99). Ingen åtgärd, Gustaf ej notifierad."
       }
+    },
+    "amazon.de/B0GF44F4MG": {
+      "price_usd": 555.07,
+      "shipping_usd": 17.23,
+      "seen": "2026-10-28T13:38+01:00",
+      "item": "mtg-marvel-super-heroes-cbb",
+      "in_stock": true,
+      "stock": "4 kvar"
     }
   },
-  "pending_checks": [
-    "amazon.de/gp/offer-listing/B0GWSDDFFJ (Hobbit tredjepartserbjudanden)"
-  ],
+  "pending_checks": [],
   "unchecked": [
     {
-      "target": "amazon.de/gp/offer-listing/B0GWSDDFFJ (Hobbit, toppprioritet), erbjudandelista",
-      "reason": "Produktsidan laddad men visar inget pris/köpknapp; erbjudandelistan är egen sida och ej laddad (sidladdningsgräns 4). Ta den först nästa körning.",
-      "at": "2026-10-21T13:36+02:00"
+      "target": "pkm-30c-etb på amazon.se",
+      "reason": "Ingen 30th Celebration ETB bland första 16 sökträffarna på amazon.se (ej listad/ej hittad). amazon.de ETB-sök ej laddad denna körning (gräns 4 sidladdningar).",
+      "at": "2026-10-28T13:38+01:00"
     }
   ],
   "run_log": [
@@ -250,9 +277,14 @@
       "at": "2026-10-22T19:44+02:00",
       "result": "Keepa-larm MSH CBB amazon.de €470,92. Verifierat 5 240,35 kr + 75,11 kr frakt (Amazon, i lager, lev. 27 okt–2 nov) ≈ 5 315 kr vs Cardmarket-trend €340,38 ≈ 3 777 kr (+41 %). Ingen deal, inget meddelande.",
       "alerts": 0
+    },
+    {
+      "at": "2026-10-28T13:38+01:00",
+      "result": "lyckad: Hobbit-erbjudandelista (2 tredjepartserbjudanden, nytt i lager), amazon.se CBB-sök, amazon.de CBB-sök, amazon.se 30th ETB-sök (ingen ETB hittad)",
+      "alerts": 1
     }
   ],
   "consecutive_failed_runs": 0,
   "blocked_note": null,
-  "last_successful_check": "2026-10-21 13:36"
+  "last_successful_check": "2026-10-28 13:38"
 }
