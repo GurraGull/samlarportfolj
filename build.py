@@ -151,7 +151,7 @@ h1{{margin:0 0 4px}}h2{{margin-top:36px}}h3{{margin:0}}.m{{color:#94a3b8;font-si
 .row{{display:flex;gap:24px;align-items:flex-start;flex-wrap:wrap}}.vals{{display:grid;gap:10px;min-width:260px}}.ax{{fill:#94a3b8;font-size:10px}}
 .scroll{{overflow-x:auto;margin-top:14px}}table.cmp{{border-collapse:collapse;width:100%;font-size:12.5px}}.cmp th,.cmp td{{border:1px solid #334155;padding:8px;vertical-align:top;text-align:left}}
 .cmp th{{background:#273449;color:#94a3b8;text-transform:uppercase;font-size:11px}}.deals{{border-color:#4ade80}}summary{{cursor:pointer;color:#7dd3fc}}.cmp td div{{margin-bottom:6px}}</style>
-<h1>Samlarportfölj</h1><div class=m>Senast uppdaterad {e(p["last_updated"])} · 1 EUR = {RATES["EUR"]} SEK · 1 USD = {RATES["USD"]} SEK · 1 GBP = {RATES["GBP"]} SEK (ECB-referens 12 okt) · endast källbelagda priser · ~ = ungefärligt datum</div>
+<h1>Samlarportfölj</h1><div class=m>Senast uppdaterad {e(p["last_updated"])} · 1 EUR = {RATES["EUR"]} SEK · 1 USD = {RATES["USD"]} SEK · 1 GBP = {RATES["GBP"]} SEK (ECB-referens, {e(p.get("rate_date", ""))}) · endast källbelagda priser · ~ = ungefärligt datum</div>
 <div class=cards>{card("Anskaffningsvärde", kr(cost), eur(cost))}{card("Värde (mitten)", kr(tot["mid"]), eur(tot["mid"]))}
 {card("Vinst (mitten)", f'<span class=g>{kr(tot["mid"]-cost)}</span>', pct(tot["mid"], cost))}{card("Värdespann", f'{kr(tot["conservative"])} – {kr(tot["high"])}', "försiktig – hög")}</div>
 {deals_html()}{auctions_html()}<h2>Innehav</h2>{"".join(section(i) for i in owned)}<h2>Bevakningslista</h2>{"".join(section(i) for i in watch)}
