@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-30T17:20+01:00",
+  "checked_at": "2026-10-30T21:27+01:00",
   "source": "Webhallen API /api/product/<id> + /api/productdiscovery/search/<query> (collector, collector display, collector booster, magic display)",
   "watched_products": [
     {
@@ -59,7 +59,7 @@
       "status": "preorder"
     }
   ],
-  "notes": "17:20: Inga förändringar. Pokémon 30th ETB, Hobbit CD, Reality Fracture CB slut (webb 0, butiker 0). Marvel Super Heroes CD fortfarande slut (pris null, stock tom). Star Trek CD förbeställning 4 999 kr (webb 0). Inga nya Collector Displays i sök. Alla produkter kontrollerade.",
+  "notes": "21:27: Inga förändringar. Pokémon 30th ETB, Hobbit CD, Reality Fracture CB slut (webb 0, butiker 0). Marvel Super Heroes CD fortfarande slut (pris null, stock tom). Star Trek CD förbeställning 4 999 kr (webb 0). Inga nya Collector Displays i sök. Alla produkter kontrollerade.",
   "appeared_since_prior": [],
   "restocked_since_prior": [],
   "went_oos_since_prior": [],
