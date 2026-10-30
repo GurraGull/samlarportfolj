@@ -286,5 +286,16 @@
   ],
   "consecutive_failed_runs": 0,
   "blocked_note": null,
-  "last_successful_check": "2026-10-28 13:38"
+  "last_successful_check": "2026-10-28 13:38",
+  "keepa_alerts_ignored": [
+    {
+      "at": "2026-10-30T05:36+01:00",
+      "item": "pkm-30c-etb",
+      "title": "Pokémon TCG 30. Jubiläums-Elite-Trainer-Box (amazon.de, Keepa)",
+      "keepa_price_eur": 248.95,
+      "cardmarket_trend_eur": 127.93,
+      "trend_date": "2026-10-29",
+      "verdict": "ej affär: ~95 % över Cardmarket-trend, långt över köpgräns 1 100 kr landat; ingen Amazon-sidladdning gjord, Gustaf ej notifierad"
+    }
+  ]
 }
