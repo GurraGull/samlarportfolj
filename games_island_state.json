@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-29T09:45+01:00",
+  "checked_at": "2026-11-01T10:03+01:00",
   "source": "Games Island MCP https://mcp.games-island.eu/mcp search_products: Collector Booster Display, 30th Celebration, Evolving Skies",
   "rules": "Ingen prisinhämtning (butikens regel för KI). Ingen crawling av games-island.eu. Read-only.",
   "products": {
@@ -381,6 +381,20 @@
       "first_seen": "2026-10-19T16:07+02:00",
       "changed_at": "2026-10-19T16:07+02:00"
     },
+    "1205449": {
+      "kArtikel": 1205449,
+      "name": "MTG - Reality Fracture Collector Booster Display - Japanisch",
+      "kind": "mtg_collector_display",
+      "language": "japanska",
+      "status": "in_stock",
+      "status_raw": "auf Lager",
+      "date": null,
+      "url": "https://games-island.eu/MTG-Reality-Fracture-Collector-Booster-Display-Japanisch",
+      "item_id": null,
+      "buylist_id": null,
+      "first_seen": "2026-11-01T10:02+01:00",
+      "changed_at": "2026-11-01T10:02+01:00"
+    },
     "1098340": {
       "kArtikel": 1098340,
       "name": "MtG - Secrets of Strixhaven Collector Booster Display - Englisch",
@@ -605,6 +619,34 @@
       "first_seen": "2026-10-19T16:07+02:00",
       "changed_at": "2026-10-26T09:46+01:00"
     },
+    "1182325": {
+      "kArtikel": 1182325,
+      "name": "Pokemon TCG - 30th Celebration Collection Elite Trainer Box - Englisch",
+      "kind": "pokemon_sealed",
+      "language": "engelska",
+      "status": "out_of_stock",
+      "status_raw": "Ausverkauft",
+      "date": null,
+      "url": "https://games-island.eu/Pokemon-TCG-30th-Celebration-Collection-Elite-Trainer-Box-Englisch",
+      "item_id": null,
+      "buylist_id": null,
+      "first_seen": "2026-11-01T10:02+01:00",
+      "changed_at": "2026-11-01T10:02+01:00"
+    },
+    "1204785": {
+      "kArtikel": 1204785,
+      "name": "Pokemon TCG - 30th Celebration Collection Elite Trainer Box - Englisch - Sealed Case",
+      "kind": "pokemon_sealed",
+      "language": "engelska",
+      "status": "in_stock",
+      "status_raw": "auf Lager",
+      "date": null,
+      "url": "https://games-island.eu/Pokemon-TCG-30th-Celebration-Collection-Elite-Trainer-Box-Englisch-Sealed-Case",
+      "item_id": null,
+      "buylist_id": null,
+      "first_seen": "2026-11-01T10:02+01:00",
+      "changed_at": "2026-11-01T10:02+01:00"
+    },
     "1130027": {
       "kArtikel": 1130027,
       "name": "Pokemon TCG - 30th Anniversary First Partner Card Set (Vol. 1) - Chinesisch",
@@ -663,7 +705,8 @@
     }
   },
   "last_events": [
-    "GAMES ISLAND SLUT: Pokemon TCG - 30th Celebration Collection Booster Bundle - Englisch – Ausverkauft"
+    "GAMES ISLAND NY: Pokemon TCG - 30th Celebration Collection Elite Trainer Box - Englisch – Ausverkauft https://games-island.eu/Pokemon-TCG-30th-Celebration-Collection-Elite-Trainer-Box-Englisch",
+    "GAMES ISLAND NY: Pokemon TCG - 30th Celebration Collection Elite Trainer Box - Englisch - Sealed Case – auf Lager https://games-island.eu/Pokemon-TCG-30th-Celebration-Collection-Elite-Trainer-Box-Englisch-Sealed-Case"
   ],
-  "last_events_at": "2026-10-26T09:46+01:00"
+  "last_events_at": "2026-11-01T10:02+01:00"
 }
