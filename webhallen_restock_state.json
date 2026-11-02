@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-02T08:21+01:00",
+  "checked_at": "2026-11-02T12:30+01:00",
   "source": "Webhallen API /api/product/<id> + /api/productdiscovery/search/<query> (collector, collector display, collector booster, magic display)",
   "watched_products": [
     {
@@ -57,10 +57,24 @@
       "in_stock": false,
       "release": "2026-11-13",
       "status": "preorder"
+    },
+    {
+      "id": 383774,
+      "name": "Magic the Gathering: Spider-Man Collectors Display (12 booster)",
+      "price": 4999.0,
+      "in_stock": true,
+      "web": 1,
+      "stores": 0,
+      "status": "in_stock",
+      "url": "https://www.webhallen.com/se/product/383774-Magic-the-Gathering-Spider-Man-Collectors-Display-12-booster",
+      "first_seen": "2026-11-02T12:30+01:00",
+      "notes": "Ny i sök 2 nov 12:30: 1 st webb (lager 992), 0 butiker, ingen köpgräns angiven."
     }
   ],
-  "notes": "08:21: Inga förändringar. Pokémon 30th ETB, Hobbit CD, Reality Fracture CB slut (webb 0, butiker 0). Marvel Super Heroes CD fortfarande slut (pris null, stock tom). Star Trek CD förbeställning 4 999 kr (webb 0). Inga nya Collector Displays i sök. Alla produkter kontrollerade.",
-  "appeared_since_prior": [],
+  "notes": "12:30: NY Collector Display i lager: Spider-Man Collectors Display 4 999 kr, webb 1, butiker 0. Pokémon 30th ETB, Hobbit CD, Reality Fracture CB fortfarande slut (webb 0, butiker 0). Marvel Super Heroes CD slut (pris null). Star Trek CD förbeställning 4 999 kr. Alla produkter kontrollerade.",
+  "appeared_since_prior": [
+    383774
+  ],
   "restocked_since_prior": [],
   "went_oos_since_prior": [],
   "browser_confirmed": false,
