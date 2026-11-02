@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-02T12:30+01:00",
+  "checked_at": "2026-11-02T17:27+01:00",
   "source": "Webhallen API /api/product/<id> + /api/productdiscovery/search/<query> (collector, collector display, collector booster, magic display)",
   "watched_products": [
     {
@@ -26,11 +26,11 @@
       "id": 401344,
       "name": "Magic: The Gathering Reality Fracture Collector Booster",
       "price": 3399.0,
-      "web": 0,
-      "stores": 0,
-      "in_stock": false,
+      "web": 3,
+      "stores": 11,
+      "in_stock": true,
       "url": "https://www.webhallen.com/se/product/401344-Magic-The-Gathering-Reality-Fracture-Collector-Booster",
-      "notes": "Max 1/kund (totalt 108); medlemmar; slut sedan 19 okt 08:25 (webb 0, butiker 0); 23 okt: 3 st inkommande (ej bekräftat, inget leveransdatum)"
+      "notes": "Max 1/kund; medlemmar; ÅTER I LAGER 2 nov ~17:25: webb 3, butiker 11 st i 6 butiker (id 2:3, 15:3, 33:2, 14:1, 19:1, 34:1)"
     }
   ],
   "collector_displays_seen": [
@@ -56,7 +56,8 @@
       "price": 4999.0,
       "in_stock": false,
       "release": "2026-11-13",
-      "status": "preorder"
+      "status": "preorder",
+      "notes": "Förbeställning 4 999 kr, webb 0"
     },
     {
       "id": 383774,
@@ -71,11 +72,11 @@
       "notes": "Ny i sök 2 nov 12:30: 1 st webb (lager 992), 0 butiker, ingen köpgräns angiven."
     }
   ],
-  "notes": "12:30: NY Collector Display i lager: Spider-Man Collectors Display 4 999 kr, webb 1, butiker 0. Pokémon 30th ETB, Hobbit CD, Reality Fracture CB fortfarande slut (webb 0, butiker 0). Marvel Super Heroes CD slut (pris null). Star Trek CD förbeställning 4 999 kr. Alla produkter kontrollerade.",
-  "appeared_since_prior": [
-    383774
+  "notes": "2026-11-02T17:27+01:00: Reality Fracture Collector Booster ÅTER I LAGER (3 399 kr, webb 3, butiker 11 st/6 butiker, max 1/kund). Hobbit CD och Pokémon 30th ETB fortfarande slut. Spider-Man CD kvar i lager (webb 1). Marvel Super Heroes CD slut (pris null). Star Trek CD förbeställning 4 999 kr. Ingen ny Collector Display. Alla produkter kontrollerade.",
+  "appeared_since_prior": [],
+  "restocked_since_prior": [
+    401344
   ],
-  "restocked_since_prior": [],
   "went_oos_since_prior": [],
   "browser_confirmed": false,
   "unchecked": []
