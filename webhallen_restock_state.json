@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-02T17:27+01:00",
+  "checked_at": "2026-11-02T21:18+01:00",
   "source": "Webhallen API /api/product/<id> + /api/productdiscovery/search/<query> (collector, collector display, collector booster, magic display)",
   "watched_products": [
     {
@@ -27,10 +27,10 @@
       "name": "Magic: The Gathering Reality Fracture Collector Booster",
       "price": 3399.0,
       "web": 3,
-      "stores": 11,
+      "stores": 9,
       "in_stock": true,
       "url": "https://www.webhallen.com/se/product/401344-Magic-The-Gathering-Reality-Fracture-Collector-Booster",
-      "notes": "Max 1/kund; medlemmar; ÅTER I LAGER 2 nov ~17:25: webb 3, butiker 11 st i 6 butiker (id 2:3, 15:3, 33:2, 14:1, 19:1, 34:1)"
+      "notes": "Max 1/kund; medlemmar; i lager sedan 2 nov ~17:25. 21:18: webb 3, butiker 9 st i 5 butiker (id 2:2, 15:3, 33:2, 19:1, 34:1)"
     }
   ],
   "collector_displays_seen": [
@@ -72,11 +72,9 @@
       "notes": "Ny i sök 2 nov 12:30: 1 st webb (lager 992), 0 butiker, ingen köpgräns angiven."
     }
   ],
-  "notes": "2026-11-02T17:27+01:00: Reality Fracture Collector Booster ÅTER I LAGER (3 399 kr, webb 3, butiker 11 st/6 butiker, max 1/kund). Hobbit CD och Pokémon 30th ETB fortfarande slut. Spider-Man CD kvar i lager (webb 1). Marvel Super Heroes CD slut (pris null). Star Trek CD förbeställning 4 999 kr. Ingen ny Collector Display. Alla produkter kontrollerade.",
+  "notes": "2026-11-02T21:18+01:00: Inga lagerförändringar. Hobbit CD och Pokémon 30th ETB fortfarande slut. Reality Fracture CB kvar i lager (webb 3, butiker 9/5). Spider-Man CD kvar (webb 1). Marvel Super Heroes CD slut (pris null). Star Trek CD förbeställning 4 999 kr. Ingen ny Collector Display. Alla produkter kontrollerade.",
   "appeared_since_prior": [],
-  "restocked_since_prior": [
-    401344
-  ],
+  "restocked_since_prior": [],
   "went_oos_since_prior": [],
   "browser_confirmed": false,
   "unchecked": []
