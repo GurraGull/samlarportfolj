@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-03T12:25+01:00",
+  "checked_at": "2026-11-03T17:27+01:00",
   "source": "Webhallen API /api/product/<id> + /api/productdiscovery/search/<query> (collector, collector display, collector booster, magic display)",
   "watched_products": [
     {
@@ -10,7 +10,7 @@
       "stores": 0,
       "in_stock": false,
       "url": "https://www.webhallen.com/se/product/402000-Pokemon-30th-Celebration-Elite-Trainer-Box",
-      "notes": "Ej i lager webb/butik; max 1/kund; medlemmar; endast butikshämtning"
+      "notes": "Ej i lager webb/butik (pris null, 3 nov 17:27); max 1/kund; medlemmar; endast butikshämtning"
     },
     {
       "id": 400151,
@@ -20,17 +20,17 @@
       "stores": 0,
       "in_stock": false,
       "url": "https://www.webhallen.com/se/product/400151-Magic-the-Gathering-The-Hobbit-Collector-Display-12-boosters",
-      "notes": "Max 4/kund; medlemmar"
+      "notes": "Max 4/kund; medlemmar. 3 nov 17:27: webb 0, butiker 0, 4 999 kr"
     },
     {
       "id": 401344,
       "name": "Magic: The Gathering Reality Fracture Collector Booster",
-      "price": 3399.0,
-      "web": 1,
-      "stores": 2,
-      "in_stock": true,
+      "price": null,
+      "web": 0,
+      "stores": 0,
+      "in_stock": false,
       "url": "https://www.webhallen.com/se/product/401344-Magic-The-Gathering-Reality-Fracture-Collector-Booster",
-      "notes": "Max 1/kund; medlemmar; i lager sedan 2 nov ~17:25. 3 nov 12:25: webb 1, butiker 2 st i 2 butiker (id 19:1, 33:1)"
+      "notes": "Max 1/kund; medlemmar. SLUT igen 3 nov ~17:27 (API: lager tomt, pris null). Var i lager 2 nov 17:25–3 nov 12:25 (senast webb 1, butiker 2)."
     }
   ],
   "collector_displays_seen": [
@@ -57,7 +57,7 @@
       "in_stock": false,
       "release": "2026-11-13",
       "status": "preorder",
-      "notes": "Förbeställning 4 999 kr, webb 0, butiker 0 (3 nov 12:25)"
+      "notes": "Förbeställning 4 999 kr, webb 0, butiker 0 (3 nov 17:27)"
     },
     {
       "id": 383774,
@@ -69,13 +69,15 @@
       "status": "in_stock",
       "url": "https://www.webhallen.com/se/product/383774-Magic-the-Gathering-Spider-Man-Collectors-Display-12-booster",
       "first_seen": "2026-11-02T12:30+01:00",
-      "notes": "Ny i sök 2 nov 12:30. 3 nov 12:25: fortfarande 1 st webb (lager 992), 0 butiker."
+      "notes": "Ny i sök 2 nov 12:30. 3 nov 17:27: fortfarande 1 st webb (lager 992), 0 butiker."
     }
   ],
-  "notes": "2026-11-03T12:25+01:00: Inga lagerstatusförändringar. Hobbit CD och Pokémon 30th ETB fortfarande slut (Pokémon pris null). Reality Fracture CB kvar i lager (webb 1, butiker 2). Spider-Man CD kvar (webb 1). Marvel Super Heroes CD slut (pris null). Star Trek CD förbeställning 4 999 kr. Ingen ny Collector Display. Alla produkter kontrollerade.",
+  "notes": "2026-11-03T17:27+01:00: Reality Fracture CB slutsåld igen (i lager → slut). Hobbit CD och Pokémon 30th ETB fortfarande slut. Spider-Man CD kvar (webb 1). Marvel Super Heroes CD slut. Star Trek CD förbeställning 4 999 kr. Ingen ny Collector Display. Alla produkter kontrollerade.",
   "appeared_since_prior": [],
   "restocked_since_prior": [],
-  "went_oos_since_prior": [],
+  "went_oos_since_prior": [
+    401344
+  ],
   "browser_confirmed": false,
   "unchecked": []
 }
