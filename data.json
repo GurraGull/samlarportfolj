@@ -3615,6 +3615,15 @@
           "type": "trend",
           "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
           "note": "Officiell Cardmarket-prisguide (idProduct 885552), ej språkfiltrerad."
+        },
+        {
+          "date": "2026-11-04",
+          "source": "Amazon.de (Robo294, tredjepart)",
+          "price": 796.98,
+          "currency": "EUR",
+          "type": "offer",
+          "url": "https://www.amazon.de/dp/B0GWSDDFFJ",
+          "note": "Lägsta erbjudande €792,98 + €4 frakt till Sverige, lev. 12–20 nov. Även JS-Warenhandel €796,99 + €8 (lev. 10–13 nov). Ingen featured offer, säljs inte av Amazon. ~34 % över Cardmarket-trend €592,65."
         }
       ],
       "community": [
