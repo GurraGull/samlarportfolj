@@ -1,5 +1,5 @@
 {
-  "last_checked": "2026-11-04T13:36+01:00",
+  "last_checked": "2026-11-04T19:12+01:00",
   "note": "4 nov 13:36: lyckad körning (4 av 4). Hobbit CBB amazon.de: Robo294 €792,98 + €4 (≈8 750 kr), JS-Warenhandel €796,99 + €8; ~34 % över Cardmarket-trend €592,65. 30th ETB amazon.de USD 280,84 + 19,84 (~2× trend). Inga nya relevanta lagersignaler, inga erbjudanden ≥10 % under trend. Ingen notis.",
   "listings": {
     "amazon.se/B0996W4YC6": {
@@ -53,8 +53,20 @@
       "price_usd": 533.81,
       "shipping_usd": 21.35,
       "lang": "okänt",
-      "seen": "2026-11-04T13:36+01:00",
-      "stock": "1 kvar"
+      "seen": "2026-11-04T19:12+01:00",
+      "stock": "In stock (säljs och skickas av Amazon)",
+      "price_sek": 5162.37,
+      "shipping_sek": 74.04,
+      "seller": "Amazon",
+      "delivery": "9–13 nov",
+      "keepa_alert": {
+        "at": "2026-11-04T19:09+01:00",
+        "buy_box_eur": 469.24,
+        "keepa_threshold_eur": 383.73,
+        "cause": "Back in stock",
+        "verified": true,
+        "verify_note": "En sidladdning 4 nov 19:12: 5 162,37 kr + 74,04 kr frakt (≈5 236 kr), i lager, Amazon, leverans 9–13 nov. Cardmarket-trend €348,57 (≈3 840 kr) – ca 36 % över trend. Ingen notis."
+      }
     },
     "amazon.de/B0HK9YL6PJ": {
       "item": null,
