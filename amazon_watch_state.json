@@ -305,6 +305,17 @@
       "cardmarket_trend_eur": 127.93,
       "trend_date": "2026-10-29",
       "verdict": "ej affär: Buy Box/Ny €195,94 (≈2 151 kr exkl. frakt) är ~53 % över Cardmarket-trend och långt över köpgräns 1 100 kr landat; lägsta nivån hittills (från ~€249–253) men ingen Amazon-sidladdning gjord, Gustaf ej notifierad"
+    },
+    {
+      "at": "2026-11-04T06:33+01:00",
+      "item": "bl-tmt-cbb",
+      "title": "MTG TMNT Sammler-Booster-Display (Englische Version) (amazon.de B0FRBFT2BK, Keepa)",
+      "keepa_price_eur": 495.91,
+      "keepa_threshold_eur": 382.49,
+      "cause": "Back in stock (Amazon), över tröskel",
+      "cardmarket_trend_eur": 284.86,
+      "trend_date": "2026-11-02",
+      "verdict": "ej affär: €495,91 är ~74 % över Cardmarket-trend €284,86 (≈3 127 kr) och över Keepa-tröskel €382,49; ingen Amazon-sidladdning gjord, Gustaf ej notifierad"
     }
   ]
 }
