@@ -7703,21 +7703,21 @@
           "stock_evidence": "schema.org availability=InStock"
         },
         {
-          "date": "2026-11-02",
+          "date": "2026-11-06",
           "source": "Webhallen",
           "seller": "webhallen.com",
           "price": 4999,
           "currency": "SEK",
           "shipping": null,
           "origin": "SE",
-          "in_stock": false,
+          "in_stock": true,
           "url": "https://www.webhallen.com/se/product/383774-Magic-the-Gathering-Spider-Man-Collectors-Display-12-booster",
           "seller_rating": null,
           "language": "okänt",
-          "notes": "Magic the Gathering: Spider-Man Collectors Display (12 booster). Dök upp i Webhallen-sök 2 nov 12:30, 1 st webblager (lager 992), 0 i butiker. ~1 170 kr över Cardmarket-trend (€348,57 ≈ 3 827 kr). SLUT 4 nov 17:25 (web 0, butiker 0).",
-          "stock_status": "out_of_stock",
-          "stock_checked_at": "2026-11-05T10:30+01:00",
-          "stock_evidence": "Webhallen API product/383774 2026-11-05: stock/price empty or missing — behandlad som ej i lager",
+          "notes": "Magic the Gathering: Spider-Man Collectors Display (12 booster). Dök upp i Webhallen-sök 2 nov 12:30, 1 st webblager (lager 992), 0 i butiker. ~1 170 kr över Cardmarket-trend (€348,57 ≈ 3 827 kr). SLUT 4 nov 17:25 (web 0, butiker 0). ÅTER I LAGER 6 nov 17:23: webb 1, butik-id 15: 1, 4 999 kr.",
+          "stock_status": "in_stock",
+          "stock_checked_at": "2026-11-06T17:23+01:00",
+          "stock_evidence": "Webhallen API product/383774 2026-11-06T17:23+01:00: stock.web=1, butik-id 15=1, price=4999 SEK, saleLimit=null",
           "restock_watch": true,
           "manual_stock_check": "browser"
         }
