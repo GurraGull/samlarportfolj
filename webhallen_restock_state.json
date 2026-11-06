@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-06T17:23+01:00",
+  "checked_at": "2026-11-06T21:18+01:00",
   "source": "Webhallen API /api/product/<id> + /api/productdiscovery/search/<query> (collector, collector display, collector booster, magic display)",
   "watched_products": [
     {
@@ -10,7 +10,7 @@
       "stores": 0,
       "in_stock": false,
       "url": "https://www.webhallen.com/se/product/402000-Pokemon-30th-Celebration-Elite-Trainer-Box",
-      "notes": "Ej i lager webb/butik (pris null, 3 nov 17:27); max 1/kund; medlemmar; endast butikshämtning | 3 nov 21:18: oförändrat, slut (webb 0, butiker 0) | 4 nov 08:21: oförändrat, slut (webb 0, butiker 0) | 4 nov 12:20: oförändrat, slut (webb 0, butiker 0) | 4 nov 17:25: oförändrat, slut (webb 0, butiker 0) | 4 nov 21:23: oförändrat, slut (webb 0, butiker 0) | 5 nov 08:24: oförändrat, slut (webb 0, butiker 0) | 5 nov 12:22: oförändrat, slut (webb 0, butiker 0) | 5 nov 17:25: oförändrat, slut (webb 0, butiker 0) | 5 nov 21:23: oförändrat, slut (webb 0, butiker 0) | 6 nov 08:19: oförändrat, slut (webb 0, butiker 0) | 6 nov 12:27: oförändrat, slut (webb 0, butiker 0) | 6 nov 17:23: oförändrat, slut (webb 0, butiker 0)"
+      "notes": "Ej i lager webb/butik (pris null, 3 nov 17:27); max 1/kund; medlemmar; endast butikshämtning | 3 nov 21:18: oförändrat, slut (webb 0, butiker 0) | 4 nov 08:21: oförändrat, slut (webb 0, butiker 0) | 4 nov 12:20: oförändrat, slut (webb 0, butiker 0) | 4 nov 17:25: oförändrat, slut (webb 0, butiker 0) | 4 nov 21:23: oförändrat, slut (webb 0, butiker 0) | 5 nov 08:24: oförändrat, slut (webb 0, butiker 0) | 5 nov 12:22: oförändrat, slut (webb 0, butiker 0) | 5 nov 17:25: oförändrat, slut (webb 0, butiker 0) | 5 nov 21:23: oförändrat, slut (webb 0, butiker 0) | 6 nov 08:19: oförändrat, slut (webb 0, butiker 0) | 6 nov 12:27: oförändrat, slut (webb 0, butiker 0) | 6 nov 17:23: oförändrat, slut (webb 0, butiker 0) | 6 nov 21:18: oförändrat, slut (webb 0, butiker 0)"
     },
     {
       "id": 400151,
@@ -20,7 +20,7 @@
       "stores": 0,
       "in_stock": false,
       "url": "https://www.webhallen.com/se/product/400151-Magic-the-Gathering-The-Hobbit-Collector-Display-12-boosters",
-      "notes": "Max 4/kund; medlemmar. 3 nov 17:27: webb 0, butiker 0, 4 999 kr | 3 nov 21:18: oförändrat, slut (webb 0, butiker 0) | 4 nov 08:21: oförändrat, slut (webb 0, butiker 0) | 4 nov 12:20: oförändrat, slut (webb 0, butiker 0) | 4 nov 17:25: oförändrat, slut (webb 0, butiker 0) | 4 nov 21:23: oförändrat, slut (webb 0, butiker 0) | 5 nov 08:24: oförändrat, slut (webb 0, butiker 0) | 5 nov 12:22: oförändrat, slut (webb 0, butiker 0) | 5 nov 17:25: oförändrat, slut (webb 0, butiker 0) | 5 nov 21:23: oförändrat, slut (webb 0, butiker 0) | 6 nov 08:19: oförändrat, slut (webb 0, butiker 0) | 6 nov 12:27: oförändrat, slut (webb 0, butiker 0) | 6 nov 17:23: oförändrat, slut (webb 0, butiker 0)"
+      "notes": "Max 4/kund; medlemmar. 3 nov 17:27: webb 0, butiker 0, 4 999 kr | 3 nov 21:18: oförändrat, slut (webb 0, butiker 0) | 4 nov 08:21: oförändrat, slut (webb 0, butiker 0) | 4 nov 12:20: oförändrat, slut (webb 0, butiker 0) | 4 nov 17:25: oförändrat, slut (webb 0, butiker 0) | 4 nov 21:23: oförändrat, slut (webb 0, butiker 0) | 5 nov 08:24: oförändrat, slut (webb 0, butiker 0) | 5 nov 12:22: oförändrat, slut (webb 0, butiker 0) | 5 nov 17:25: oförändrat, slut (webb 0, butiker 0) | 5 nov 21:23: oförändrat, slut (webb 0, butiker 0) | 6 nov 08:19: oförändrat, slut (webb 0, butiker 0) | 6 nov 12:27: oförändrat, slut (webb 0, butiker 0) | 6 nov 17:23: oförändrat, slut (webb 0, butiker 0) | 6 nov 21:18: oförändrat, slut (webb 0, butiker 0)"
     },
     {
       "id": 401344,
@@ -30,19 +30,22 @@
       "stores": 0,
       "in_stock": false,
       "url": "https://www.webhallen.com/se/product/401344-Magic-The-Gathering-Reality-Fracture-Collector-Booster",
-      "notes": "Max 1/kund; medlemmar. SLUT igen 3 nov ~17:27 (API: lager tomt, pris null). Var i lager 2 nov 17:25–3 nov 12:25 (senast webb 1, butiker 2). | 3 nov 21:18: oförändrat, slut (webb 0, butiker 0) | 4 nov 08:21: oförändrat, slut (webb 0, butiker 0) | 4 nov 12:20: oförändrat, slut (webb 0, butiker 0) | 4 nov 17:25: oförändrat, slut (webb 0, butiker 0) | 4 nov 21:23: oförändrat, slut (webb 0, butiker 0) | 5 nov 08:24: oförändrat, slut (webb 0, butiker 0) | 5 nov 12:22: oförändrat, slut (webb 0, butiker 0) | 5 nov 17:25: oförändrat, slut (webb 0, butiker 0) | 5 nov 21:23: oförändrat, slut (webb 0, butiker 0) | 6 nov 08:19: oförändrat, slut (webb 0, butiker 0) | 6 nov 12:27: oförändrat, slut (webb 0, butiker 0) | 6 nov 17:23: oförändrat, slut (webb 0, butiker 0)"
+      "notes": "Max 1/kund; medlemmar. SLUT igen 3 nov ~17:27 (API: lager tomt, pris null). Var i lager 2 nov 17:25–3 nov 12:25 (senast webb 1, butiker 2). | 3 nov 21:18: oförändrat, slut (webb 0, butiker 0) | 4 nov 08:21: oförändrat, slut (webb 0, butiker 0) | 4 nov 12:20: oförändrat, slut (webb 0, butiker 0) | 4 nov 17:25: oförändrat, slut (webb 0, butiker 0) | 4 nov 21:23: oförändrat, slut (webb 0, butiker 0) | 5 nov 08:24: oförändrat, slut (webb 0, butiker 0) | 5 nov 12:22: oförändrat, slut (webb 0, butiker 0) | 5 nov 17:25: oförändrat, slut (webb 0, butiker 0) | 5 nov 21:23: oförändrat, slut (webb 0, butiker 0) | 6 nov 08:19: oförändrat, slut (webb 0, butiker 0) | 6 nov 12:27: oförändrat, slut (webb 0, butiker 0) | 6 nov 17:23: oförändrat, slut (webb 0, butiker 0) | 6 nov 21:18: oförändrat, slut (webb 0, butiker 0)"
     }
   ],
   "collector_displays_seen": [
     {
-      "id": 400151,
-      "name": "Magic the Gathering: The Hobbit Collector Display (12 boosters)",
+      "id": 383774,
+      "name": "Magic the Gathering: Spider-Man Collectors Display (12 booster)",
       "price": 4999.0,
-      "in_stock": false,
-      "web": 0,
-      "stores": 0,
-      "status": "out_of_stock",
-      "url": "https://www.webhallen.com/se/product/400151-Magic-the-Gathering-The-Hobbit-Collector-Display-12-boosters"
+      "in_stock": true,
+      "web": 1,
+      "stores": 1,
+      "status": "in_stock",
+      "url": "https://www.webhallen.com/se/product/383774-Magic-the-Gathering-Spider-Man-Collectors-Display-12-booster",
+      "release": "2025-09-26",
+      "notes": "Ny i sök 2 nov 12:30. 4 nov 08:21: fortfarande 1 st webb (lager 992), 0 butiker. SLUT 4 nov 17:25 (API: web 0, butiker 0, pris null, ej i sök). Var i lager 2 nov 12:30–4 nov 12:20. ÅTER I LAGER 6 nov 17:23: webb 1, butik-id 15: 1, 4 999 kr, ingen köpgräns i API (saleLimit null). | 6 nov 21:18: fortfarande i lager webb 1, butik-detalj [{'id': 15, 'qty': 1}], 4999.0 kr",
+      "first_seen": "2026-11-02T12:30+01:00"
     },
     {
       "id": 395310,
@@ -52,8 +55,20 @@
       "web": 0,
       "stores": 0,
       "status": "out_of_stock",
-      "notes": "SLUT igen 28 okt ~08:23 (API: stock tom, pris null, ej i sök). Var i lager 27 okt 17:25–21:26 (1 st, 4 299 kr).",
-      "url": "https://www.webhallen.com/se/product/395310-Magic-the-Gathering-Marvel-Super-Heroes-Collector-Display-12-boosters"
+      "url": "https://www.webhallen.com/se/product/395310-Magic-the-Gathering-Marvel-Super-Heroes-Collector-Display-12-boosters",
+      "release": "2026-06-26",
+      "notes": "SLUT igen 28 okt ~08:23 (API: stock tom, pris null, ej i sök). Var i lager 27 okt 17:25–21:26 (1 st, 4 299 kr)."
+    },
+    {
+      "id": 400151,
+      "name": "Magic the Gathering: The Hobbit Collector Display (12 boosters)",
+      "price": 4999.0,
+      "in_stock": false,
+      "web": 0,
+      "stores": 0,
+      "status": "preorder",
+      "url": "https://www.webhallen.com/se/product/400151-Magic-the-Gathering-The-Hobbit-Collector-Display-12-boosters",
+      "release": "2026-08-14"
     },
     {
       "id": 401321,
@@ -63,27 +78,14 @@
       "web": 0,
       "stores": 0,
       "status": "preorder",
+      "url": "https://www.webhallen.com/se/product/401321-Magic-the-Gathering-Star-Trek-Collector-Display-12-boosters",
       "release": "2026-11-13",
-      "notes": "Förbeställning 4999 kr, webb 0, butiker 0 (6 nov 17:23); minimumRankLevel 9"
-    },
-    {
-      "id": 383774,
-      "name": "Magic the Gathering: Spider-Man Collectors Display (12 booster)",
-      "price": 4999.0,
-      "in_stock": true,
-      "web": 1,
-      "stores": 1,
-      "status": "in_stock",
-      "notes": "Ny i sök 2 nov 12:30. 4 nov 08:21: fortfarande 1 st webb (lager 992), 0 butiker. SLUT 4 nov 17:25 (API: web 0, butiker 0, pris null, ej i sök). Var i lager 2 nov 12:30–4 nov 12:20. ÅTER I LAGER 6 nov 17:23: webb 1, butik-id 15: 1, 4 999 kr, ingen köpgräns i API (saleLimit null).",
-      "url": "https://www.webhallen.com/se/product/383774-Magic-the-Gathering-Spider-Man-Collectors-Display-12-booster",
-      "first_seen": "2026-11-02T12:30+01:00"
+      "notes": "Förbeställning 4999 kr, webb 0, butiker 0 (6 nov 21:18); minimumRankLevel 9"
     }
   ],
-  "notes": "2026-11-06T17:23+01:00: RESTOCK Spider-Man Collectors Display (383774) — webb 1, butik-id 15: 1, 4 999 kr. Hobbit CD, Pokémon 30th ETB, Reality Fracture CB, Marvel Super Heroes CD slut. Star Trek CD förbeställning 4 999 kr (webb 0). Ingen ny Collector Display. Alla produkter kontrollerade.",
+  "notes": "2026-11-06T21:18+01:00: Inga lagerändringar. Hobbit CD, Pokémon 30th ETB, Reality Fracture CB, Marvel Super Heroes CD slut. Spider-Man CD fortfarande i lager (webb 1, butiker 1, 4999.0 kr). Star Trek CD förbeställning 4999.0 kr (webb 0). Ingen ny Collector Display. Alla produkter kontrollerade.",
   "appeared_since_prior": [],
-  "restocked_since_prior": [
-    383774
-  ],
+  "restocked_since_prior": [],
   "went_oos_since_prior": [],
   "browser_confirmed": false,
   "unchecked": []
