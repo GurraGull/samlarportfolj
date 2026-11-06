@@ -1,6 +1,6 @@
 {
-  "last_checked": "2026-11-04T19:12+01:00",
-  "note": "4 nov 13:36: lyckad körning (4 av 4). Hobbit CBB amazon.de: Robo294 €792,98 + €4 (≈8 750 kr), JS-Warenhandel €796,99 + €8; ~34 % över Cardmarket-trend €592,65. 30th ETB amazon.de USD 280,84 + 19,84 (~2× trend). Inga nya relevanta lagersignaler, inga erbjudanden ≥10 % under trend. Ingen notis.",
+  "last_checked": "2026-11-06T18:29+01:00",
+  "note": "6 nov 18:29: Keepa-larm MSH CBB amazon.de B0G881RW2S Buy Box €425.12. Verifierat USD 479.11 + 7.83 frakt (Amazon, i lager) ≈ 4742 kr vs Cardmarket-trend €313.82 ≈ 3443 kr (+35.5 %). Ingen deal, ingen notis.",
   "listings": {
     "amazon.se/B0996W4YC6": {
       "item": "mtg-innistrad-midnight-hunt-cbb",
@@ -31,21 +31,24 @@
     "amazon.de/B0G881RW2S": {
       "item": "mtg-marvel-super-heroes-cbb",
       "in_stock": true,
-      "price_usd": 530.83,
-      "shipping_usd": 7.81,
-      "lang": "English (Keepa-titel 'Englische Version')",
-      "seen": "2026-11-04T13:36+01:00",
+      "price_usd": 479.11,
+      "shipping_usd": 7.83,
+      "lang": "English (Keepa-titel 'Englische Version'; produktsidan visar ej språk)",
+      "seen": "2026-11-06T18:29+01:00",
       "keepa_alert": {
-        "at": "2026-10-27T20:09+01:00",
-        "buy_box_eur": 449.99,
-        "keepa_threshold_eur": 478.8,
-        "verified": false,
-        "verify_note": "En sidladdning 27 okt 20:12: Amazon visar 5 580,54 kr (≈€501) + 74,74 kr frakt, i lager, säljs av Amazon – Keepas €449,99 syntes inte. Långt över Cardmarket-trend €343,86 (≈3 827 kr) och över Webhallen 4 299 kr. Ingen åtgärd; Gustaf väntar på trend 380 €."
+        "at": "2026-11-06T18:27+01:00",
+        "buy_box_eur": 425.12,
+        "amazon_desired_eur": 453.6,
+        "new_desired_eur": 436.72,
+        "buy_box_desired_eur": 478.8,
+        "verified": true,
+        "verify_note": "En sidladdning 6 nov 18:29: Amazon.de visar USD 479.11 + USD 7.83 frakt (≈4666+76=4742 kr), i lager, säljs av Amazon, lev. 11–17 nov. Keepa Buy Box €425.12 stämmer (~USD 479.11). Cardmarket-trend €313.82 (≈3443 kr, prisguide 2026-11-05) → ca +35.5 %. Över köpsignal 380 € och Webhallen-nivå; ingen affär. Gustaf ej notifierad."
       },
-      "price_sek": 5580.54,
-      "shipping_sek": 74.74,
+      "price_sek": 4665.57,
+      "shipping_sek": 76.25,
       "seller": "Amazon",
-      "delivery": "2–5 nov"
+      "delivery": "11–17 nov (snabbast 12 nov)",
+      "stock": "I lager (säljs och skickas av Amazon)"
     },
     "amazon.de/B0DWVDFYX1": {
       "item": "mtg-marvel-s-spider-man-cbb",
@@ -349,11 +352,16 @@
       "at": "2026-11-04T13:36+01:00",
       "result": "lyckad: Hobbit-erbjudanden (oförändrat 2 tredjepart, något billigare), amazon.de 30th ETB-sök, amazon.se CBB-sök, amazon.de CBB-sök. Inga larm.",
       "alerts": 0
+    },
+    {
+      "at": "2026-11-06T18:29+01:00",
+      "result": "Keepa-larm MSH CBB amazon.de €425.12. Verifierat USD 479.11 + 7.83 (Amazon, i lager, lev. 11–17 nov) ≈ 4742 kr vs Cardmarket-trend €313.82 ≈ 3443 kr (+35.5 %). Ingen deal, inget meddelande.",
+      "alerts": 0
     }
   ],
   "consecutive_failed_runs": 0,
   "blocked_note": null,
-  "last_successful_check": "2026-11-04 13:36",
+  "last_successful_check": "2026-11-06T18:29+01:00",
   "keepa_alerts_ignored": [
     {
       "at": "2026-10-30T05:36+01:00",
@@ -383,6 +391,21 @@
       "cardmarket_trend_eur": 284.86,
       "trend_date": "2026-11-02",
       "verdict": "ej affär: €495,91 är ~74 % över Cardmarket-trend €284,86 (≈3 127 kr) och över Keepa-tröskel €382,49; ingen Amazon-sidladdning gjord, Gustaf ej notifierad"
+    },
+    {
+      "at": "2026-11-06T18:29+01:00",
+      "item": "mtg-marvel-super-heroes-cbb",
+      "title": "Magic: The Gathering | Marvel Super Heroes Sammler-Booster-Display (Englische Version) (amazon.de B0G881RW2S, Keepa)",
+      "keepa_price_eur": 425.12,
+      "keepa_threshold_eur": 478.8,
+      "cause": "Buy Box/Amazon/New under Keepa-önskade priser",
+      "verified_price_usd": 479.11,
+      "verified_shipping_usd": 7.83,
+      "verified_landed_sek": 4741.82,
+      "seller": "Amazon",
+      "cardmarket_trend_eur": 313.82,
+      "trend_date": "2026-11-05",
+      "verdict": "ej affär: Keepa €425.12 / Amazon USD 479.11+7.83 (≈4742 kr landat) är ~35.5 % över Cardmarket-trend €313.82 och över köpsignal 380 €; Amazon-sidladdning OK, Gustaf ej notifierad"
     }
   ]
 }
