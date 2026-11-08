@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-07",
+  "last_updated": "2026-11-08",
   "rates": {
     "EUR": 10.9718,
     "USD": 9.738,
@@ -3561,21 +3561,31 @@
       "category": "Magic: The Gathering",
       "language": "Engelska",
       "quantity": 1,
-      "purchase_price_sek": null,
-      "status": "watchlist",
+      "purchase_price_sek": 7140,
+      "status": "owned",
       "msrp": {
         "price": 455.88,
         "currency": "USD",
         "url": "https://www.thegamer.com/mtg-the-hobbit-collector-booster-prices-rising/"
       },
       "valuation": {
-        "mid": {
-          "price": 588.56,
+        "conservative": {
+          "price": 549.99,
           "currency": "EUR",
-          "basis": "Cardmarket-trend (prisguide 2026-11-05)"
+          "basis": "Cardmarket lägsta erbjudande 2026-11-08"
+        },
+        "mid": {
+          "price": 726.73,
+          "currency": "EUR",
+          "basis": "Cardmarket-trend 2026-11-08"
+        },
+        "high": {
+          "price": 739.82,
+          "currency": "EUR",
+          "basis": "Cardmarket 7-dagarssnitt 2026-11-08"
         }
       },
-      "notes": "Släppt 14 aug 2026. Collector-boxar trycks normalt en gång (WPN-policy enl. PureGrail). Slut i svenska butiker.",
+      "notes": "Släppt 14 aug 2026. Collector-boxar trycks normalt en gång (WPN-policy enl. PureGrail). Slut i svenska butiker. Köpt 2026-11-08 på Tradera-auktion: klubbat 6 800 kr + cirka 340 kr köparskydd (uppskattat, ~5 %) = cirka 7 140 kr; frakt/hämtning ej inräknad. Långsiktigt innehav (~5 år).",
       "snapshots": [
         {
           "date": "2026-08",
@@ -3757,6 +3767,14 @@
           "type": "trend",
           "url": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_1.json",
           "note": "Officiell Cardmarket-prisguide (idProduct 885552), ej språkfiltrerad."
+        },
+        {
+          "date": "2026-11-08",
+          "source": "Cardmarket",
+          "price": 726.73,
+          "currency": "EUR",
+          "type": "trend",
+          "url": "https://www.cardmarket.com/en/Magic/Products/Booster-Boxes/The-Hobbit-Collector-Booster-Box"
         }
       ],
       "community": [
@@ -4244,7 +4262,11 @@
         }
       ],
       "cardmarket_id": 885552,
-      "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products/Search?searchString=The%20Hobbit%20Collector%20Booster%20Box&idCategory=7&language=1"
+      "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products/Search?searchString=The%20Hobbit%20Collector%20Booster%20Box&idCategory=7&language=1",
+      "kind": "sealed",
+      "purchase_price_estimated": true,
+      "purchase_date": "2026-11-08",
+      "condition": "Förseglad"
     },
     {
       "id": "mtg-ltr-se-cbb",
@@ -36645,6 +36667,17 @@
       "fees_sek": 0,
       "platform": "okänd",
       "note": "Barndomskort, inköpspris okänt (hockeykort)"
+    },
+    {
+      "id": "t218",
+      "item_id": "mtg-hobbit-cbb",
+      "type": "buy",
+      "date": "2026-11-08",
+      "qty": 1,
+      "price_sek": 6800,
+      "fees_sek": 340,
+      "platform": "Tradera",
+      "note": "Auktion; köparskydd uppskattat, frakt ej inräknad"
     }
   ],
   "language_filter": {
@@ -37515,9 +37548,9 @@
       "item_id": "mtg-hobbit-cbb",
       "name": "The Hobbit Collector Booster Display",
       "rank": 1,
-      "group": "wait",
+      "group": "bought",
       "idProduct": 885552,
-      "verdict": "Vänta – sjunker fortfarande",
+      "verdict": "Köpt 2026-11-08 (Tradera, ~7 140 kr)",
       "buy_window": "2026-12..2027-04",
       "why": "Släppt 14 aug. Universes Beyond-set har bottnat 4–8 mån efter release. Högsta prioritet; LotR-förlagan steg kraftigt. Keepa-larmet (710 €) ligger nu över Cardmarket-trenden.",
       "risk": "Kan fortsätta ned; MSRP $455,88.",
