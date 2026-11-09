@@ -1,6 +1,6 @@
 {
-  "last_checked": "2026-11-06T18:29+01:00",
-  "note": "6 nov 18:29: Keepa-larm MSH CBB amazon.de B0G881RW2S Buy Box €425.12. Verifierat USD 479.11 + 7.83 frakt (Amazon, i lager) ≈ 4742 kr vs Cardmarket-trend €313.82 ≈ 3443 kr (+35.5 %). Ingen deal, ingen notis.",
+  "last_checked": "2026-11-09T05:07+01:00",
+  "note": "9 nov 05:07: Keepa-larm MSH CBB amazon.de B0G881RW2S Buy Box €392.65. Verifierat 4341.05 + 76.84 kr frakt (Amazon, i lager) ≈ 4418 kr vs Cardmarket-trend €308.92 ≈ 3390 kr (+30 %). Ingen deal, ingen notis.",
   "listings": {
     "amazon.se/B0996W4YC6": {
       "item": "mtg-innistrad-midnight-hunt-cbb",
@@ -31,24 +31,22 @@
     "amazon.de/B0G881RW2S": {
       "item": "mtg-marvel-super-heroes-cbb",
       "in_stock": true,
-      "price_usd": 479.11,
-      "shipping_usd": 7.83,
       "lang": "English (Keepa-titel 'Englische Version'; produktsidan visar ej språk)",
-      "seen": "2026-11-06T18:29+01:00",
+      "seen": "2026-11-09T05:07+01:00",
       "keepa_alert": {
-        "at": "2026-11-06T18:27+01:00",
-        "buy_box_eur": 425.12,
+        "at": "2026-11-09T05:06+01:00",
+        "buy_box_eur": 392.65,
         "amazon_desired_eur": 453.6,
         "new_desired_eur": 436.72,
         "buy_box_desired_eur": 478.8,
         "verified": true,
-        "verify_note": "En sidladdning 6 nov 18:29: Amazon.de visar USD 479.11 + USD 7.83 frakt (≈4666+76=4742 kr), i lager, säljs av Amazon, lev. 11–17 nov. Keepa Buy Box €425.12 stämmer (~USD 479.11). Cardmarket-trend €313.82 (≈3443 kr, prisguide 2026-11-05) → ca +35.5 %. Över köpsignal 380 € och Webhallen-nivå; ingen affär. Gustaf ej notifierad."
+        "verify_note": "En sidladdning 9 nov 05:07: Amazon.de visar 4 341,05 kr + 76,84 kr frakt (≈4 418 kr), i lager, säljs av Amazon, lev. 12–17 nov. Cardmarket-trend €308,92 (prisguide 2026-11-09, ≈3 390 kr) → ca +30 %. Buy Box €392,65 över köpsignal 380 €; ingen affär. Gustaf ej notifierad."
       },
-      "price_sek": 4665.57,
-      "shipping_sek": 76.25,
+      "price_sek": 4341.05,
+      "shipping_sek": 76.84,
       "seller": "Amazon",
-      "delivery": "11–17 nov (snabbast 12 nov)",
-      "stock": "I lager (säljs och skickas av Amazon)"
+      "delivery": "12–17 nov (snabbast 16 nov)",
+      "stock": "In stock (säljs och skickas av Amazon)"
     },
     "amazon.de/B0DWVDFYX1": {
       "item": "mtg-marvel-s-spider-man-cbb",
