@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-05T09:45+01:00",
+  "checked_at": "2026-11-09T09:46+01:00",
   "source": "Games Island MCP https://mcp.games-island.eu/mcp search_products: Collector Booster Display, 30th Celebration, Evolving Skies",
   "rules": "Ingen prisinhämtning (butikens regel för KI). Ingen crawling av games-island.eu. Read-only.",
   "products": {
@@ -460,7 +460,7 @@
       "status_raw": "Ausverkauft",
       "date": null,
       "url": "https://games-island.eu/MTG-The-Hobbit-Collector-Booster-Display-Englisch",
-      "item_id": "mtg-hobbit-cbb",
+      "item_id": null,
       "buylist_id": "bl-hob-cbb",
       "first_seen": "2026-10-19T16:07+02:00",
       "changed_at": "2026-10-19T16:07+02:00"
@@ -647,6 +647,20 @@
       "first_seen": "2026-11-01T10:02+01:00",
       "changed_at": "2026-11-01T10:02+01:00"
     },
+    "1182348": {
+      "kArtikel": 1182348,
+      "name": "Pokemon TCG - 30th Celebration Collection Mini Tin (1x zufällig) - Englisch",
+      "kind": "pokemon_sealed",
+      "language": "engelska",
+      "status": "in_stock",
+      "status_raw": "auf Lager",
+      "date": null,
+      "url": "https://games-island.eu/Pokemon-TCG-30th-Celebration-Collection-Mini-Tin-1x-zufaellig-Englisch",
+      "item_id": null,
+      "buylist_id": null,
+      "first_seen": "2026-11-09T09:46+01:00",
+      "changed_at": "2026-11-09T09:46+01:00"
+    },
     "1130027": {
       "kArtikel": 1130027,
       "name": "Pokemon TCG - 30th Anniversary First Partner Card Set (Vol. 1) - Chinesisch",
@@ -680,14 +694,14 @@
       "name": "Pokemon TCG - 30th Anniversary First Partner Card Set (Vol. 3) - Chinesisch",
       "kind": "pokemon_sealed",
       "language": "kinesiska",
-      "status": "in_stock",
-      "status_raw": "auf Lager",
+      "status": "out_of_stock",
+      "status_raw": "Ausverkauft",
       "date": null,
       "url": "https://games-island.eu/Pokemon-TCG-30th-Anniversary-First-Partner-Card-Set-Vol-3-Chinesisch",
       "item_id": null,
       "buylist_id": null,
       "first_seen": "2026-10-26T09:46+01:00",
-      "changed_at": "2026-10-26T09:46+01:00"
+      "changed_at": "2026-11-09T09:46+01:00"
     },
     "1028010": {
       "kArtikel": 1028010,
@@ -705,8 +719,7 @@
     }
   },
   "last_events": [
-    "GAMES ISLAND NY: Pokemon TCG - 30th Celebration Collection Elite Trainer Box - Englisch – Ausverkauft https://games-island.eu/Pokemon-TCG-30th-Celebration-Collection-Elite-Trainer-Box-Englisch",
-    "GAMES ISLAND NY: Pokemon TCG - 30th Celebration Collection Elite Trainer Box - Englisch - Sealed Case – auf Lager https://games-island.eu/Pokemon-TCG-30th-Celebration-Collection-Elite-Trainer-Box-Englisch-Sealed-Case"
+    "GAMES ISLAND NY: Pokemon TCG - 30th Celebration Collection Mini Tin (1x zufällig) - Englisch – auf Lager https://games-island.eu/Pokemon-TCG-30th-Celebration-Collection-Mini-Tin-1x-zufaellig-Englisch"
   ],
-  "last_events_at": "2026-11-01T10:02+01:00"
+  "last_events_at": "2026-11-09T09:46+01:00"
 }
