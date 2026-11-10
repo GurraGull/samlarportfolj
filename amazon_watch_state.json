@@ -1,5 +1,5 @@
 {
-  "last_checked": "2026-11-09T05:07+01:00",
+  "last_checked": "2026-11-10T20:50+01:00",
   "note": "9 nov 05:07: Keepa-larm MSH CBB amazon.de B0G881RW2S Buy Box €392.65. Verifierat 4341.05 + 76.84 kr frakt (Amazon, i lager) ≈ 4418 kr vs Cardmarket-trend €308.92 ≈ 3390 kr (+30 %). Ingen deal, ingen notis.",
   "listings": {
     "amazon.se/B0996W4YC6": {
@@ -249,15 +249,16 @@
     "amazon.de/B0H78BB9TY": {
       "item": "pkm-30c-etb",
       "keepa_alert": {
-        "at": "2026-10-28T03:04+01:00",
-        "new_eur": 253.45,
+        "at": "2026-11-10T20:44+01:00",
+        "new_eur": 170.99,
         "keepa_threshold_eur": 294.03,
-        "verified": false,
-        "verify_note": "Ej verifierad på Amazon: €253,45 ligger ~94 % över Cardmarket-trend (~130 €) och långt över köpgränsen 1 100 kr; samma nivå som larmet 25 okt (€252,99). Ingen åtgärd, Gustaf ej notifierad."
+        "cause": "New price dropped below desired",
+        "verified": true,
+        "verify_note": "En sidladdning 10 nov ~20:50: Amazon.de visar 'No featured offers available, Other sellers' (inget Buy Box-pris, ingen säljare/leverans i utdraget). Keepa Ny €170,99 (≈1 885 kr exkl. frakt) är ~43 % över Cardmarket-trend €119,66 (prisguide 2026-11-09, ≈1 319 kr) och över köpgräns 1 100 kr landat. Lägsta Keepa-nivån hittills (från €195,94/€253). Ingen affär, Gustaf ej notifierad."
       },
-      "stock": "See options (ingen featured offer)",
+      "stock": "No featured offers (bara andra säljare)",
       "lang": "English",
-      "seen": "2026-11-04T13:36+01:00"
+      "seen": "2026-11-10T20:50+01:00"
     },
     "amazon.de/B0GF44F4MG": {
       "price_usd": 555.07,
@@ -359,7 +360,7 @@
   ],
   "consecutive_failed_runs": 0,
   "blocked_note": null,
-  "last_successful_check": "2026-11-06T18:29+01:00",
+  "last_successful_check": "2026-11-10T20:50+01:00",
   "keepa_alerts_ignored": [
     {
       "at": "2026-10-30T05:36+01:00",
@@ -404,6 +405,16 @@
       "cardmarket_trend_eur": 313.82,
       "trend_date": "2026-11-05",
       "verdict": "ej affär: Keepa €425.12 / Amazon USD 479.11+7.83 (≈4742 kr landat) är ~35.5 % över Cardmarket-trend €313.82 och över köpsignal 380 €; Amazon-sidladdning OK, Gustaf ej notifierad"
+    },
+    {
+      "at": "2026-11-10T20:44+01:00",
+      "item": "pkm-30c-etb",
+      "title": "Pokémon TCG 30. Jubiläums-Elite-Trainer-Box (amazon.de B0H78BB9TY, Keepa)",
+      "keepa_price_eur": 170.99,
+      "keepa_threshold_eur": 294.03,
+      "cardmarket_trend_eur": 119.66,
+      "trend_date": "2026-11-09",
+      "verdict": "ej affär: €170,99 (≈1 885 kr) ~43 % över trend och över köpgräns 1 100 kr; Amazon-sida utan featured offer; Gustaf ej notifierad"
     }
   ]
 }
