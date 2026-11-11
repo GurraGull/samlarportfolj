@@ -1,6 +1,6 @@
 {
-  "last_checked": "2026-11-10T20:50+01:00",
-  "note": "9 nov 05:07: Keepa-larm MSH CBB amazon.de B0G881RW2S Buy Box €392.65. Verifierat 4341.05 + 76.84 kr frakt (Amazon, i lager) ≈ 4418 kr vs Cardmarket-trend €308.92 ≈ 3390 kr (+30 %). Ingen deal, ingen notis.",
+  "last_checked": "2026-11-11T07:40+01:00",
+  "note": "11 nov 07:38: Keepa-larm igen MSH CBB amazon.de B0G881RW2S €392.65 (samma som 9 nov). Verifierat 4336.47 + 91.22 kr frakt (Amazon, i lager) ≈ 4428 kr vs Cardmarket-trend €308.92 ≈ 3390 kr (+31 %). Ingen deal, ingen notis.",
   "listings": {
     "amazon.se/B0996W4YC6": {
       "item": "mtg-innistrad-midnight-hunt-cbb",
@@ -32,20 +32,20 @@
       "item": "mtg-marvel-super-heroes-cbb",
       "in_stock": true,
       "lang": "English (Keepa-titel 'Englische Version'; produktsidan visar ej språk)",
-      "seen": "2026-11-09T05:07+01:00",
+      "seen": "2026-11-11T07:40+01:00",
       "keepa_alert": {
-        "at": "2026-11-09T05:06+01:00",
+        "at": "2026-11-11T07:37+01:00",
         "buy_box_eur": 392.65,
         "amazon_desired_eur": 453.6,
         "new_desired_eur": 436.72,
-        "buy_box_desired_eur": 478.8,
+        "cause": "Desired price reached again",
         "verified": true,
-        "verify_note": "En sidladdning 9 nov 05:07: Amazon.de visar 4 341,05 kr + 76,84 kr frakt (≈4 418 kr), i lager, säljs av Amazon, lev. 12–17 nov. Cardmarket-trend €308,92 (prisguide 2026-11-09, ≈3 390 kr) → ca +30 %. Buy Box €392,65 över köpsignal 380 €; ingen affär. Gustaf ej notifierad."
+        "verify_note": "En sidladdning 11 nov 07:40: Amazon.de visar 4 336,47 kr + 91,22 kr frakt (≈4 428 kr), i lager, säljs av Amazon, lev. 14–20 nov. Cardmarket-trend €308,92 (≈3 390 kr) → ca +31 %. Över köpsignal 380 €; ingen affär. Gustaf ej notifierad."
       },
-      "price_sek": 4341.05,
-      "shipping_sek": 76.84,
+      "price_sek": 4336.47,
+      "shipping_sek": 91.22,
       "seller": "Amazon",
-      "delivery": "12–17 nov (snabbast 16 nov)",
+      "delivery": "14–20 nov (snabbast 17 nov)",
       "stock": "In stock (säljs och skickas av Amazon)"
     },
     "amazon.de/B0DWVDFYX1": {
