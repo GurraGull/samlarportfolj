@@ -1,13 +1,13 @@
 {
-  "last_checked": "2026-11-11T07:40+01:00",
-  "note": "11 nov 07:38: Keepa-larm igen MSH CBB amazon.de B0G881RW2S €392.65 (samma som 9 nov). Verifierat 4336.47 + 91.22 kr frakt (Amazon, i lager) ≈ 4428 kr vs Cardmarket-trend €308.92 ≈ 3390 kr (+31 %). Ingen deal, ingen notis.",
+  "last_checked": "2026-11-11T13:43+01:00",
+  "note": "11 nov 13:43: Veckokoll. Hobbit amazon.de B0GWSDDFFJ oförändrad: Robo294 €792,98+€4 (lev. 19–27 nov) och JS-Warenhandel €796,99+€8 (lev. 17–20 nov); ny dyr Booghe Toys €1 450,02+€15,98 (UK, 3,5★ / 67 %, räknas inte). Landat ≈ 8 788 kr vs trend €595,81 ≈ 6 569 kr (+34 %). amazon.se ETB: B0H8SV3WJ8 2 520,88 kr och B0H8SVJL9F 2 640 kr, båda See options (ej bekräftat köpbara), ~91–100 % över trend €119,66 ≈ 1 319 kr. amazon.se CBB: Avatar 4 338,91 kr, MSH 4 876,54 kr (ned från 5 348,18), Spider-Man 4 999 kr, TMNT 5 669,35 kr — alla Add to basket / skickas av Amazon, inga ≥10 % under trend (MSH +43 % vs €308,92 ≈ 3 406 kr). amazon.de CBB-sök ej körd (4-lastgräns). Inga larm.",
   "listings": {
     "amazon.se/B0996W4YC6": {
       "item": "mtg-innistrad-midnight-hunt-cbb",
       "in_stock": false,
       "price_sek": 3981.91,
       "shipping_sek": 216.29,
-      "seen": "2026-11-04T13:36+01:00",
+      "seen": "2026-11-11T13:43+01:00",
       "stock": "See options, 1 nytt erbjudande"
     },
     "amazon.se/B0GF44F4MG": {
@@ -92,19 +92,25 @@
       "title": "MTG The Hobbit Collector's Booster Display",
       "in_stock": true,
       "price": null,
-      "seen": "2026-11-04T13:36+01:00",
+      "seen": "2026-11-11T13:43+01:00",
       "asin_note": "Rättat ASIN 17 okt (tidigare felstavat B0GWSDDFFF gav 'Page Not Found'). Sökresultat: 'See options', inget pris.",
-      "stock": "köpbar via 2 tredjepartssäljare (ingen featured offer, inte Amazon)",
+      "stock": "köpbar via 2 ansedda tredjepartssäljare (ingen featured offer, inte Amazon); plus 1 dyrt erbjudande med lågt anseende",
       "price_eur": 792.98,
       "shipping_eur": 4.0,
       "seller": "Robo294 (DE, 4,5★, 232 betyg, 92 % positiva)",
-      "delivery": "12–20 nov",
+      "delivery": "19–27 nov",
       "other_offers": [
         {
           "price_eur": 796.99,
           "shipping_eur": 8.0,
           "seller": "JS-Warenhandel (DE, 5★, 16 betyg, 94 %)",
-          "delivery": "10–13 nov"
+          "delivery": "17–20 nov"
+        },
+        {
+          "price_eur": 1450.02,
+          "shipping_eur": 15.98,
+          "seller": "Booghe Toys – Germany – (Fast Dispatch), skickar från UK; 3,5★, 816 betyg, 67 % positiva senaste 12 mån — räknas inte (lågt anseende)",
+          "delivery": "23 nov–9 dec"
         }
       ],
       "lang": "English (listning)"
@@ -135,16 +141,22 @@
       "price_sek": 4999.0,
       "shipping_sek": 0,
       "lang": "English",
-      "seen": "2026-11-04T13:36+01:00"
+      "seen": "2026-11-11T13:43+01:00",
+      "delivery": "1 dec",
+      "stock": "Add to basket (sökresultat)",
+      "seller": "skickas av Amazon"
     },
     "amazon.se/B0G881RW2S": {
       "item": "mtg-marvel-super-heroes-cbb",
       "in_stock": true,
-      "price_sek": 5348.18,
+      "price_sek": 4876.54,
       "shipping_sek": 0,
       "lang": "English",
-      "seen": "2026-11-04T13:36+01:00",
-      "delivery": "11 nov"
+      "seen": "2026-11-11T13:43+01:00",
+      "delivery": "17 nov",
+      "stock": "Add to basket (sökresultat)",
+      "seller": "skickas av Amazon",
+      "note": "Sökresultatets titel sade 'Trading Booster Box', men ASIN B0G881RW2S är den kända engelska Collector-displayen. Pris ned från 5 348,18 kr (4 nov); visad median 5 350,41 kr. ~43 % över Cardmarket-trend €308,92 ≈ 3 406 kr."
     },
     "amazon.se/B082J42R57": {
       "item": null,
@@ -198,8 +210,9 @@
       "shipping_sek": 0,
       "lang": "English",
       "seller": "skickas av Amazon",
-      "seen": "2026-11-04T13:36+01:00",
-      "delivery": "11 nov"
+      "seen": "2026-11-11T13:43+01:00",
+      "delivery": "17 nov",
+      "stock": "Add to basket (sökresultat)"
     },
     "amazon.de/B0FRBFT2BK": {
       "item": null,
@@ -271,12 +284,15 @@
     "amazon.se/B0FRBFT2BK": {
       "item": "bl-tmt-cbb",
       "title": "TMNT Collectible Booster Box (English)",
-      "price_sek": 5669.33,
+      "price_sek": 5669.35,
       "shipping_sek": 0,
       "in_stock": true,
       "lang": "English",
-      "note": "ny på amazon.se 4 nov; ~81 % över Cardmarket-trend €284,86",
-      "seen": "2026-11-04T13:36+01:00"
+      "note": "fortfarande på amazon.se; ~84 % över Cardmarket-trend €280,79 ≈ 3 081 kr (köplista 2026-11-09)",
+      "seen": "2026-11-11T13:43+01:00",
+      "delivery": "17 nov",
+      "stock": "Add to basket (sökresultat)",
+      "seller": "skickas av Amazon"
     },
     "amazon.se/B0GXC667JV": {
       "item": "mtg-reality-fracture-cbb",
@@ -311,14 +327,54 @@
       "stock": "1 kvar",
       "lang": "okänt",
       "seen": "2026-11-04T13:36+01:00"
+    },
+    "amazon.se/B0H8SV3WJ8": {
+      "item": "pkm-30c-etb",
+      "title": "TCG: 30th Celebration Elite Trainer Box (1 Full Art Promo Card, 9 Booster Packs & Premium Accessories)",
+      "in_stock": false,
+      "stock": "See options, 1 nytt erbjudande, ingen featured offer",
+      "price_sek": 2520.88,
+      "lang": "okänt (ej visat i sök)",
+      "seen": "2026-11-11T13:43+01:00",
+      "note": "Första gången sedd på amazon.se (samma ASIN fanns på amazon.de 4 nov som See options). Säljare/frakt/leverans ej visade; köpbarhet ej bekräftad. ~91 % över Cardmarket-trend €119,66 ≈ 1 319 kr."
+    },
+    "amazon.se/B0H8SVJL9F": {
+      "item": "pkm-30c-etb",
+      "title": "Pokémon TCG 30th Anniversary Elite Trainer Box (1 Fully Illustrated Promo Card, 9 Boosters & Premium Gaming Accessories)",
+      "in_stock": false,
+      "stock": "See options, 1 nytt erbjudande, ingen featured offer",
+      "price_sek": 2640.0,
+      "lang": "okänt (ej visat i sök)",
+      "seen": "2026-11-11T13:43+01:00",
+      "note": "Första gången sedd på amazon.se (samma ASIN fanns på amazon.de 4 nov, då 1 kvar). Säljare/frakt/leverans ej visade; köpbarhet ej bekräftad. ~100 % över Cardmarket-trend €119,66 ≈ 1 319 kr."
+    },
+    "amazon.se/B0BNM2FNGD": {
+      "item": null,
+      "title": "March of the Machine: The Aftermath Collector Booster Box | 12 Packs (72 Magic Cards)",
+      "in_stock": false,
+      "stock": "See options, 1 nytt erbjudande, ingen featured offer",
+      "price_sek": 3942.47,
+      "lang": "okänt (ej visat i sök)",
+      "seen": "2026-11-11T13:43+01:00",
+      "note": "Ny i amazon.se-sök 11 nov. Inte en vanlig 12×15-korts Collector Display (72 kort = Aftermath-format). Säljare ej visad; köpbarhet ej bekräftad."
+    },
+    "amazon.se/B09M8ZFLZJ": {
+      "item": null,
+      "title": "Collector Booster Omega Box",
+      "in_stock": false,
+      "stock": "See options, 1 nytt erbjudande",
+      "price_sek": 1669.75,
+      "lang": "Multi (enligt listning)",
+      "seen": "2026-11-11T13:43+01:00",
+      "note": "Ny i amazon.se-sök 11 nov. Oklart om det är en display; säljare ej visad; köpbarhet ej bekräftad."
     }
   },
   "pending_checks": [],
   "unchecked": [
     {
-      "target": "pkm-30c-etb på amazon.se",
-      "reason": "Ej sökt denna körning (gräns 4 sidladdningar; amazon.de ETB-sök prioriterades). Ingen ETB hittad på amazon.se 17 och 28 okt.",
-      "at": "2026-11-04T13:36+01:00"
+      "target": "engelska Collector Booster Displays på amazon.de (sök)",
+      "reason": "Ej sökt denna körning (gräns 4 sidladdningar: Hobbit-produktsida + erbjudandepanel, amazon.se 30th ETB-sök, amazon.se CBB-sök). Keepa täcker amazon.de som primär vakt.",
+      "at": "2026-11-11T13:43+01:00"
     }
   ],
   "run_log": [
@@ -356,11 +412,16 @@
       "at": "2026-11-06T18:29+01:00",
       "result": "Keepa-larm MSH CBB amazon.de €425.12. Verifierat USD 479.11 + 7.83 (Amazon, i lager, lev. 11–17 nov) ≈ 4742 kr vs Cardmarket-trend €313.82 ≈ 3443 kr (+35.5 %). Ingen deal, inget meddelande.",
       "alerts": 0
+    },
+    {
+      "at": "2026-11-11T13:43+01:00",
+      "result": "lyckad: Hobbit-erbjudanden (samma 2 ansedda tredjepart till samma pris €792,98+€4 / €796,99+€8, plus dyr Booghe Toys som inte räknas), amazon.se 30th ETB-sök (2 See options, ej bekräftat köpbara), amazon.se CBB-sök (Avatar/MSH/Spider-Man/TMNT i lager via Amazon, MSH ned till 4 876,54 kr). amazon.de CBB-sök okontrollerad (4-lastgräns). Inga larm.",
+      "alerts": 0
     }
   ],
   "consecutive_failed_runs": 0,
   "blocked_note": null,
-  "last_successful_check": "2026-11-10T20:50+01:00",
+  "last_successful_check": "2026-11-11T13:43+01:00",
   "keepa_alerts_ignored": [
     {
       "at": "2026-10-30T05:36+01:00",

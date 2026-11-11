@@ -8694,6 +8694,20 @@
           "stock_checked_at": "2026-11-09T09:50+01:00",
           "stock_evidence": "Shopify .js available=True, pris 4490",
           "checked_price": 4490.0
+        },
+        {
+          "date": "2026-11-11",
+          "source": "Amazon.se",
+          "seller": "Amazon (skickas av Amazon)",
+          "price": 4876.54,
+          "currency": "SEK",
+          "shipping": 0.0,
+          "origin": "SE",
+          "in_stock": true,
+          "url": "https://www.amazon.se/dp/B0G881RW2S",
+          "seller_rating": null,
+          "language": "English",
+          "notes": "Sökresultat: Add to basket, 4 876,54 kr (ned från 5 348,18 kr 4 nov), visad median 5 350,41 kr. Fri frakt tis 17 nov vid första order som skickas av Amazon. Titeln i sökresultatet sade Trading Booster Box, men ASIN B0G881RW2S är den kända engelska Collector-displayen. ~43 % över Cardmarket-trend €308,92 ≈ 3 406 kr."
         }
       ],
       "alerts": [],
