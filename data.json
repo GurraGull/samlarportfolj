@@ -3677,7 +3677,7 @@
           "basis": "Cardmarket 7-dagarssnitt 2026-11-08"
         }
       },
-      "notes": "Släppt 14 aug 2026. Collector-boxar trycks normalt en gång (WPN-policy enl. PureGrail). Slut i svenska butiker. Köpt 2026-11-08 på Tradera-auktion: klubbat 6 800 kr + cirka 340 kr köparskydd (uppskattat, ~5 %) = cirka 7 140 kr; frakt/hämtning ej inräknad. Långsiktigt innehav (~5 år).",
+      "notes": "Släppt 14 aug 2026. Collector-boxar trycks normalt en gång (WPN-policy enl. PureGrail). Slut i svenska butiker. Köpt 2026-11-08 på Tradera-auktion: klubbat 6 800 kr + cirka 340 kr köparskydd (uppskattat, ~5 %) = cirka 7 140 kr; frakt/hämtning ej inräknad. Långsiktigt innehav (~5 år). Mottagen 2026-11-12, förseglad i Wizards fabriksplast, inga synliga skador.",
       "snapshots": [
         {
           "date": "2026-08",
@@ -4395,7 +4395,8 @@
       "kind": "sealed",
       "purchase_price_estimated": true,
       "purchase_date": "2026-11-08",
-      "condition": "Förseglad"
+      "condition": "Förseglad",
+      "received": "2026-11-12"
     },
     {
       "id": "mtg-ltr-se-cbb",
