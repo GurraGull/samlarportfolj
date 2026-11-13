@@ -476,6 +476,16 @@
       "cardmarket_trend_eur": 119.66,
       "trend_date": "2026-11-09",
       "verdict": "ej affär: €170,99 (≈1 885 kr) ~43 % över trend och över köpgräns 1 100 kr; Amazon-sida utan featured offer; Gustaf ej notifierad"
+    },
+    {
+      "at": "2026-11-13T18:22+01:00",
+      "item": "mtg-reality-fracture-cbb",
+      "title": "MTG Reality Fracture Collector Booster Display (amazon.de B0GXC667JV, Keepa 'Now Available')",
+      "keepa_price_eur": 514.98,
+      "keepa_desired_eur": 449.91,
+      "cardmarket_trend_eur": 306.73,
+      "trend_date": "2026-11-12",
+      "verdict": "ej affär: åter i lager men 514,98 € är ~68 % över Cardmarket-trend och över Keepa-gränsen 449,91 €; Gustaf har redan en beställd; ingen Amazon-sidladdning gjord, Gustaf ej notifierad"
     }
   ]
 }
