@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-14T10:20+01:00",
+  "checked_at": "2026-11-14T14:55+01:00",
   "5436853": {
     "name": "Charizard Reverse Foil #3 LC",
     "bid": 16500,
@@ -237,5 +237,24 @@
     "cap_total": 14455,
     "first_seen": "2026-11-03T09:27+01:00",
     "note": "Probably same card as 5436853 (sold 16 500 kr hammer 26 Oct, then withdrawn); photos of old lot not saved, so not confirmed"
+  },
+  "catawiki_digest_2026-11-14": {
+    "source": "Catawiki weekly search-alert digest (181 MTG + 33 collector booster display)",
+    "scanned_lots": 218,
+    "details_file": "private_lots/catawiki_2026-11-14_details.json",
+    "hobbit_displays_ending_today": {
+      "108173506": "EUR600 no reserve, IT, ship 65, ends 21:05; landed ~722 EUR ~7979 kr vs trend 580 EUR (+24%); cap ~470 EUR",
+      "108188429": "EUR600 reserve not met (est 850-950), FR ship 24, ends 21:51; cap ~507 EUR",
+      "108179275": "EUR600 reserve not met, IT ship 180, ends 22:02"
+    },
+    "hobbit_displays_21nov": [
+      "108380200 (EUR1, IT, ship 65)",
+      "108380998",
+      "108381715/108381682 are Omega packs-boxes"
+    ],
+    "beta_mox_pearl": "107983531 PSA 8.5 Beta cert 23225259, est EUR9900-11000, reserve not met, FR, ends 21 Nov 22:21 - far above 30k kr Power budget",
+    "vintage_binders": "108543611 etc (NL): visible cards Revised/4th/FEM/HML/MIR bulk commons; many pages show only backs - nothing notable",
+    "reality_fracture_cbb": "108073702 EUR361 reserve met -> ~417 EUR landed vs trend 306.73, not a deal",
+    "verdict": "no deal at current bids; FYI sent re Hobbit + Beta Mox Pearl"
   }
 }
