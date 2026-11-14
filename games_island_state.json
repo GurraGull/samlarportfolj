@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-12T09:53+01:00",
+  "checked_at": "2026-11-14T23:45+01:00",
   "source": "Games Island MCP https://mcp.games-island.eu/mcp search_products: Collector Booster Display, 30th Celebration, Evolving Skies",
   "rules": "Ingen prisinhämtning (butikens regel för KI). Ingen crawling av games-island.eu. Read-only.",
   "products": {
@@ -367,6 +367,20 @@
       "first_seen": "2026-10-19T16:07+02:00",
       "changed_at": "2026-10-19T16:07+02:00"
     },
+    "1213328": {
+      "kArtikel": 1213328,
+      "name": "MTG - Nauctis: The Sunken Realm Collector Booster Display - Englisch",
+      "kind": "mtg_collector_display",
+      "language": "engelska",
+      "status": "announced",
+      "status_raw": "Ankuendigung - 2027-02-05",
+      "date": "2027-02-05",
+      "url": "https://games-island.eu/MTG-Nauctis-The-Sunken-Realm-Collector-Booster-Display-Englisch",
+      "item_id": null,
+      "buylist_id": null,
+      "first_seen": "2026-11-14T23:45+01:00",
+      "changed_at": "2026-11-14T23:45+01:00"
+    },
     "1138937": {
       "kArtikel": 1138937,
       "name": "MTG - Reality Fracture Collector Booster Display - Englisch",
@@ -414,14 +428,14 @@
       "name": "MTG - Star Trek Collector Booster Display - Englisch",
       "kind": "mtg_collector_display",
       "language": "engelska",
-      "status": "announced",
-      "status_raw": "Ankuendigung - 2026-11-13",
-      "date": "2026-11-13",
+      "status": "out_of_stock",
+      "status_raw": "Ausverkauft",
+      "date": null,
       "url": "https://games-island.eu/MTG-Star-Trek-Collector-Booster-Display-Englisch",
       "item_id": null,
       "buylist_id": "bl-trk-cbb",
       "first_seen": "2026-10-19T16:07+02:00",
-      "changed_at": "2026-10-19T16:07+02:00"
+      "changed_at": "2026-11-14T23:45+01:00"
     },
     "946305": {
       "kArtikel": 946305,
@@ -719,7 +733,7 @@
     }
   },
   "last_events": [
-    "GAMES ISLAND NY: Pokemon TCG - 30th Celebration Collection Mini Tin (1x zufällig) - Englisch – auf Lager https://games-island.eu/Pokemon-TCG-30th-Celebration-Collection-Mini-Tin-1x-zufaellig-Englisch"
+    "GAMES ISLAND NY: MTG - Nauctis: The Sunken Realm Collector Booster Display - Englisch – Ankuendigung - 2027-02-05 https://games-island.eu/MTG-Nauctis-The-Sunken-Realm-Collector-Booster-Display-Englisch"
   ],
-  "last_events_at": "2026-11-09T09:46+01:00"
+  "last_events_at": "2026-11-14T23:45+01:00"
 }
