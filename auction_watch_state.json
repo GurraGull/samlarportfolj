@@ -1,0 +1,241 @@
+{
+  "checked_at": "2026-11-14T10:20+01:00",
+  "5436853": {
+    "name": "Charizard Reverse Foil #3 LC",
+    "bid": 16500,
+    "bids": 44,
+    "last_bid_at": "2026-10-26 19:06",
+    "reserve_met": true,
+    "next_bid": 9600,
+    "total_cost": 20705,
+    "ends": "2026-10-26 19:09 (förlängd)",
+    "images": 5,
+    "note": "Sold at 1663 USD (site shows USD); SEK ~16 500 estimated at ~9.92 SEK/USD from earlier 9100/917 ratio",
+    "bid_usd": 1663,
+    "status": "withdrawn after sale (page shows 'Utdraget föremål' on 2026-11-03); likely relisted as 5532992"
+  },
+  "5453430": {
+    "name": "Pokémonpärm ca 205 kort",
+    "bid": 2800,
+    "bids": 13,
+    "last_bid_at": "2026-10-26 17:16",
+    "reserve_met": true,
+    "estimate": 3000,
+    "next_bid": 3000,
+    "total_cost": 3580,
+    "ends": "2026-10-26 20:31",
+    "images": 4,
+    "note": "Unchanged at 19:50: 283 USD (~2800 kr), 13 bids, ends 20:31"
+  },
+  "dismissed": {
+    "5427043": {
+      "name": "Toy collection (NECA/Marvel LOTR figures, 3 Pikachu plushies, misc)",
+      "checked": "2026-10-24",
+      "images": 5,
+      "reason": "All 5 images inspected: no trading cards or sealed product; Pokémon match is only plushies"
+    },
+    "5538743": {
+      "name": "POKEMON OCH FOTBOLLSBILDER (Markus Auktioner, Trelleborg)",
+      "url": "https://auctionet.com/sv/5538743-pokemon-och-fotbollsbilder",
+      "checked": "2026-11-05",
+      "estimate_sek": 600,
+      "next_bid_sek": 200,
+      "ends": "2026-11-14 18:30 CET",
+      "images": 20,
+      "images_dir": "private_lots/auctionet_5538743/",
+      "reason": "All 20 full-res images inspected. Lot is mostly Panini/Match Attax football binders (WC 2014, UCL 2011-15, FIFA 365, EURO 2024) plus loose sports bags. Pokémon portion is XY/SM/BW bulk commons-uncommons in binders, Evolutions reprints of classic art (not WotC vintage), Spanish Glaceon RS holo, Plasma Blast Suicune non-holo, open Zacian/Zamazenta tin + Dragonite mini tin (contents unknown/likely empty). No slabs, no sealed boxes/ETBs, no chase hits, no MTG. Identifiable Pokémon value well under estimate+fees (25%+80kr). Not a buy."
+    },
+    "5565102": {
+      "id": "5565102",
+      "title": "POKÉMON, 36 kort (i plåtask)",
+      "estimate_sek": 600,
+      "ends": "2026-11-22 13:15 CET",
+      "url": "https://auctionet.com/sv/5565102-pokemon-36-kort",
+      "notes": "4 images inspected (private_lots/auctionet_5565102). DP-era Infernape/Groudon tin (wear) + ~36 EX-era (2004-07) non-holo commons/uncommons: Dragonair δ (EX Delta Species, PriceCharting ungraded ~$7-10), Primeape δ, Skarmory, Hitmonlee, Electabuzz, Shuckle, Rhyhorn, Qwilfish, Swinub, Jigglypuff, Team Magma card; most cards obscured, no holo/ex/vintage WOTC visible. Est. retail well under 600 SEK estimate + 25%+80 kr premium + shipping. Not a deal.",
+      "dismissed_at": "2026-11-14"
+    }
+  },
+  "5526227": {
+    "house": "Chalkwell Auctions (Southend-on-Sea, UK) via Auctionet",
+    "prebid_closes": "2026-11-04 14:00 CET",
+    "images_dir": "private_lots/",
+    "title": "Binder of Pokémon cards",
+    "estimate_gbp": "1000-1200",
+    "notes": "~360 modern cards, mostly IR/full-art/V/ex, heavy CN/KR/JP share; notable: CN Pikachu ex SIR ~221/208, Mega ex text-art (EN Scrafty/Hawlucha/Gardevoir, JP/KR versions), Mega Latias ex, many 30th Celebration regular ex. Rough retail 1050-1500 GBP. Suggested hammer cap 600 GBP (~13.5k SEK all-in). | 1 Nov: bid £380 (3 bids), next £400, reserve not met. Shipping 922 kr -> landed at £600 ≈ 14.5k kr (earlier 13.5k understated); £554 ≈ 13.5k. | 4 Nov 13:52: leading £400 (5,260 kr, 4 bids, 3 bidders), next £420, reserve not met; landed ≈10.1k kr. 15-min reminder sent.",
+    "status": "reported",
+    "bid_gbp": 400,
+    "bids": 4,
+    "next_bid_gbp": 420,
+    "shipping_sek": 922
+  },
+  "5525970": {
+    "house": "Chalkwell Auctions (Southend-on-Sea, UK) via Auctionet",
+    "prebid_closes": "2026-11-04 14:00 CET",
+    "images_dir": "private_lots/",
+    "title": "Holofoil Pokémon cards (10)",
+    "estimate_gbp": "150-200",
+    "notes": "CN Pikachu ex gold UR 258/208, Teal Mask Ogerpon ex gold, Bulbasaur 151 IR 166, FR Charizard V, 30th Pikachu ex 053 regular. Rough value 60-110 GBP. Cap ~60 GBP.",
+    "status": "pass"
+  },
+  "5526176": {
+    "house": "Chalkwell Auctions (Southend-on-Sea, UK) via Auctionet",
+    "prebid_closes": "2026-11-04 14:00 CET",
+    "images_dir": "private_lots/",
+    "title": "Two TOC Pristine 10 CN Pokémon",
+    "estimate_gbp": "60-80",
+    "notes": "Stunfisk & Timburr CN AR in TOC slabs; low value.",
+    "status": "pass"
+  },
+  "5522697": {
+    "house": "Chalkwell Auctions (Southend-on-Sea, UK) via Auctionet",
+    "prebid_closes": "2026-11-04 14:00 CET",
+    "images_dir": "private_lots/",
+    "title": "Ungraded Mew promo #8",
+    "estimate_gbp": "30-50",
+    "notes": "WotC Black Star Mew #8 non-holo, looks clean; PriceCharting raw $9, PSA10 $467.50. Cap ~15 GBP.",
+    "status": "pass"
+  },
+  "5526081": {
+    "house": "Chalkwell Auctions (Southend-on-Sea, UK) via Auctionet",
+    "prebid_closes": "2026-11-04 14:00 CET",
+    "images_dir": "private_lots/5526081/",
+    "title": "Charmander MEP 038 (First Partner Illustration Coll. S1, EN) ACE 10 Gem Mint",
+    "cert": "1258454 (front+back label match description)",
+    "estimate_gbp": "50-80",
+    "bid_gbp": null,
+    "bids": 0,
+    "next_bid_gbp": 15,
+    "shipping_sek": 619,
+    "comps": {
+      "ACE10_usd": [
+        48.21,
+        50.62,
+        53.1,
+        56.56
+      ],
+      "ACE10_src": "https://www.pricecharting.com/game/pokemon-promo/charmander-38",
+      "ACE10_ebayuk_gbp": [
+        60,
+        67
+      ],
+      "PSA10_usd_market": 83.04,
+      "PSA10_90d": "-54.5%",
+      "PSA10_30d": "-5.1%",
+      "PSA10_src": "https://vaultedmarket.com/cards/mega-evolutions-black-star-promos-charmander-mep038-promo-holo-black-star-35960"
+    },
+    "landed_at_start_sek": 1242,
+    "notes": "Market ACE10 ~480-600 kr; landed at £15 start ~1240 kr. Shipping 619 kr kills it. Falling price.",
+    "status": "pass"
+  },
+  "5512237": {
+    "house": "Chalkwell Auctions (Southend-on-Sea, UK) via Auctionet",
+    "prebid_closes": "2026-11-04 14:00 CET",
+    "images_dir": "private_lots/5512237/",
+    "title": "Mixed Pokémon cards (ungraded)",
+    "estimate_gbp": "200 (2 644 SEK)",
+    "bids": 0,
+    "next_bid_gbp": 15,
+    "shipping_sek": 725,
+    "notes": "12 imgs inspected: ~40 toploaders mostly 30th-anniv Pikachu (many CN/JP), few ex (Gengar ex CN, Pidgeot, Darkrai, Dragonite), Tyranitar EX 42/98 (curved), basic energies, ~600+ bulk commons; curving noted. Not graded. Rough: only worth it at very low hammer (~£40, landed ~1.9k kr) — estimate, not priced card-by-card. | 2026-11-07: Re-alert (new end date 15 Nov); re-inspected all 12 full-res 3024px images, same content (modern CN/JP commons, 30th-anniv Pikachu toploaders, Tyranitar EX 42/98 with scratches). Still pass.",
+    "status": "pass",
+    "ends": "2026-11-15 15:52 CET"
+  },
+  "5511913": {
+    "url": "https://auctionet.com/sv/5511913-transformers-5-st-hasbro-1980-tal-samtliga-med-originalforpackningar",
+    "title": "TRANSFORMERS, 5 st, Hasbro, 1980-tal, med originalförpackningar",
+    "house": "Stockholms Auktionsverk Magasin 5, Frihamnen Palermogatan 19, Stockholm (pickup possible)",
+    "estimate_sek": 2000,
+    "current_bid_sek": 1400,
+    "bids": 8,
+    "bidders": 5,
+    "next_bid_sek": 1500,
+    "reserve_met": true,
+    "ends": "2026-11-07 20:54 Europe/Stockholm",
+    "fees": "25% incl VAT + 80 kr hammer fee; shipping unknown (pickup free in Stockholm)",
+    "landed_formula": "bid*1.25+80",
+    "figures": {
+      "Ultra Magnus 1986 Hasbro (5795)": {
+        "state": "box, looks near complete (missiles, launchers, fists, helmet, chest, rifle), no instructions, no insert, poster likely missing",
+        "est_usd": [
+          120,
+          170
+        ]
+      },
+      "Powermaster Optimus Prime 1988 Hasbro": {
+        "state": "box, HiQ engine NOT visible, no instructions, no insert",
+        "est_usd": [
+          110,
+          160
+        ]
+      },
+      "Doubledealer Powermaster 1988 Hasbro (5774)": {
+        "state": "box w peeling store price sticker, missile+bird gun present, Knok & Skar NOT visible, booklet included",
+        "est_usd": [
+          120,
+          180
+        ]
+      },
+      "Broadside Triple Changer 1986 Hasbro (5942/5736)": {
+        "state": "box, jet w 2 wing guns, axe and rifle NOT visible, Autobot catalog booklet",
+        "est_usd": [
+          80,
+          130
+        ]
+      },
+      "Apeface Headmaster Horrorcon 1987 Hasbro (5876/5802)": {
+        "state": "box, complete per house, gun + booklet, Spasma not shown separately",
+        "est_usd": [
+          170,
+          240
+        ]
+      }
+    },
+    "combined_est_sek": [
+      5900,
+      8700
+    ],
+    "realistic_swe_resale_sek": [
+      5000,
+      7000
+    ],
+    "suggested_max_bid_sek": 3000,
+    "landed_at_max_sek": 3830,
+    "comps": [
+      "https://www.transformerland.com/price/G1/Powermaster_(Godmaster)/Powermaster_Optimus_Prime",
+      "https://www.actionfigure411.com/transformers/g1/autobots/ultra-magnus-6117.php",
+      "https://www.transformerland.com/price/G1/Other/Ultra%20Magnus",
+      "https://www.transformerland.com/price/G1/Powermaster_(Godmaster)/Doubledealer",
+      "https://wheeljackslab.com/sales/doubledealer-powermaster-w-box-insert-100-complete-g1-transformers-vintage-2/",
+      "https://www.actionfigure411.com/transformers/g1/autobots/broadside-6123.php",
+      "https://www.transformerland.com/price/G1/Headmasters/Apeface",
+      "https://wheeljackslab.com/toys/pricing-guide/241744-apeface-w-spasma-headmaster-100-com"
+    ],
+    "red_flags": [
+      "no back/bottom photos (barcodes, tech specs, robot points unverified)",
+      "no styrofoam inserts",
+      "Prime HiQ missing",
+      "Doubledealer Knok+Skar missing",
+      "Broadside axe+gun missing",
+      "not function tested"
+    ],
+    "trend": "flat to slightly down for boxed G1 (PM Prime boxed 385/275 USD 2024 -> 215 USD Oct 2026; AF411 Broadside trending down); loose complete stable",
+    "checked_at": "2026-11-02 Europe/Stockholm",
+    "status": "assessed, no bid"
+  },
+  "5532992": {
+    "name": "Charizard Reverse Foil #3 LC (Stockholms Auktionsverk Sickla)",
+    "url": "https://auctionet.com/sv/5532992-pokemonkort-legendary-collection-charizard-reverse-foil-3",
+    "bid": 1200,
+    "next_bid": 1300,
+    "reserve_met": true,
+    "estimate": 2000,
+    "ends": "2026-11-10 20:28",
+    "images": 5,
+    "condition": "Handling wear, blue pen/ink scribble lower-left front (weakness/flavor text), back edge whitening and spotting on Pokeball",
+    "value_sek": "15000-22000 (PriceCharting PSA1 $2250, damaged raw $1533-2225; USD/SEK 9.76)",
+    "suggested_cap_hammer": 11500,
+    "cap_total": 14455,
+    "first_seen": "2026-11-03T09:27+01:00",
+    "note": "Probably same card as 5436853 (sold 16 500 kr hammer 26 Oct, then withdrawn); photos of old lot not saved, so not confirmed"
+  }
+}
