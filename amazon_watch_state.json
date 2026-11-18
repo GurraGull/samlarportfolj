@@ -1,14 +1,17 @@
 {
-  "last_checked": "2026-11-11T13:43+01:00",
-  "note": "11 nov 13:43: Veckokoll. Hobbit amazon.de B0GWSDDFFJ oförändrad: Robo294 €792,98+€4 (lev. 19–27 nov) och JS-Warenhandel €796,99+€8 (lev. 17–20 nov); ny dyr Booghe Toys €1 450,02+€15,98 (UK, 3,5★ / 67 %, räknas inte). Landat ≈ 8 788 kr vs trend €595,81 ≈ 6 569 kr (+34 %). amazon.se ETB: B0H8SV3WJ8 2 520,88 kr och B0H8SVJL9F 2 640 kr, båda See options (ej bekräftat köpbara), ~91–100 % över trend €119,66 ≈ 1 319 kr. amazon.se CBB: Avatar 4 338,91 kr, MSH 4 876,54 kr (ned från 5 348,18), Spider-Man 4 999 kr, TMNT 5 669,35 kr — alla Add to basket / skickas av Amazon, inga ≥10 % under trend (MSH +43 % vs €308,92 ≈ 3 406 kr). amazon.de CBB-sök ej körd (4-lastgräns). Inga larm.",
+  "last_checked": "2026-11-18T13:48+01:00",
+  "note": "18 nov 13:48: Veckokoll. Hobbit amazon.de B0GWSDDFFJ nu med featured offer: Robo294 USD 822,35+4,41 (lev. 26 nov–4 dec, 1 kvar); New (3) från samma pris. Landat ≈ 8 309 kr vs trend €572,22 ≈ 6 356 kr (+31 %), redan i lager 11 nov, inget larm. Nytt: Star Trek Collectible Booster Display amazon.de B0H6KL85R3 i lager, säljs och skickas av Amazon, USD 555,66+7,47 (lev. fre 27 nov, antal upp till 30), landat ≈ 5 660 kr vs trend €413,27 ≈ 4 590 kr (+23 %). Larm skickat (ny i lager). amazon.de CBB-sök: engelska Spider-Man 451,22+7,42 USD, MSH 512,18+7,44 USD, TMNT 468,55+16,99 USD (1 kvar), Avatar 518,16 USD (4 kvar) — säljare ej visad i sök, inga ≥10 % under trend; Reality Fracture See options. amazon.se CBB-sök: Spider-Man 4 999 kr oförändrad (skickas av Amazon, lev. 26 nov); MSH 5 321,27 kr (upp från 4 876,54); Avatar och TMNT ej synliga på sida 1. amazon.se 30th ETB-sök ej körd (4-lastgräns).",
   "listings": {
     "amazon.se/B0996W4YC6": {
       "item": "mtg-innistrad-midnight-hunt-cbb",
       "in_stock": false,
-      "price_sek": 3981.91,
+      "price_sek": 4033.77,
       "shipping_sek": 216.29,
-      "seen": "2026-11-11T13:43+01:00",
-      "stock": "See options, 1 nytt erbjudande"
+      "seen": "2026-11-18T13:48+01:00",
+      "stock": "See options, 1 nytt erbjudande, ingen featured offer",
+      "title": "Innistrad Midnight Hunt Collector Booster Display of 12 Booster Packs",
+      "lang": "okänt (ej visat i sök)",
+      "note": "Sök 18 nov: From kr 4 033,77 (1 new offer), inte bekräftat köpbar. Säljare/frakt/leverans ej visade."
     },
     "amazon.se/B0GF44F4MG": {
       "item": "mtg-marvel-super-heroes-cbb",
@@ -22,17 +25,17 @@
     "amazon.de/B0GXGXJ55L": {
       "item": "mtg-reality-fracture-cbb",
       "in_stock": false,
-      "stock": "dispatch 3-7 months, leverans 30 nov–27 apr",
-      "price_usd": 390.75,
-      "shipping_usd": 8.23,
+      "stock": "See options (ingen featured offer / inget pris i sök)",
       "lang": "English",
-      "seen": "2026-10-21T13:36+02:00"
+      "seen": "2026-11-18T13:48+01:00",
+      "title": "Shattered Reality Collector's Booster Display | 12 Boosters (English Version)",
+      "note": "Sök 18 nov: See options, inte köpbar nu. (Keepa 13 nov hade B0GXC667JV åter i lager till 514,98 €, ej verifierat på produktsida denna körning.)"
     },
     "amazon.de/B0G881RW2S": {
       "item": "mtg-marvel-super-heroes-cbb",
       "in_stock": true,
-      "lang": "English (Keepa-titel 'Englische Version'; produktsidan visar ej språk)",
-      "seen": "2026-11-11T07:40+01:00",
+      "lang": "okänt (ser engelsk ut; ingen German Version-märkning)",
+      "seen": "2026-11-18T13:48+01:00",
       "keepa_alert": {
         "at": "2026-11-11T07:37+01:00",
         "buy_box_eur": 392.65,
@@ -44,22 +47,27 @@
       },
       "price_sek": 4336.47,
       "shipping_sek": 91.22,
-      "seller": "Amazon",
-      "delivery": "14–20 nov (snabbast 17 nov)",
-      "stock": "In stock (säljs och skickas av Amazon)"
+      "seller": "ej visad i sök 18 nov",
+      "delivery": "tor 26 nov",
+      "stock": "Add to basket (sökresultat)",
+      "title": "Marvel Super Heroes Collectible Booster Display",
+      "price_usd": 512.18,
+      "shipping_usd": 7.44,
+      "note": "Sök 18 nov: USD 512,18 + 7,44 frakt (Was USD 555,66). Säljare ej visad i sök (produktsida 11 nov visade Amazon till 4 336,47+91,22 kr). Landat ≈ 5 222 kr vs trend €315,23 ≈ 3 501 kr (+49 %). Ej nytt i lager, ingen affär.",
+      "seller_last_verified": "Amazon (produktsida 2026-11-11)"
     },
     "amazon.de/B0DWVDFYX1": {
       "item": "mtg-marvel-s-spider-man-cbb",
       "in_stock": true,
-      "price_usd": 533.81,
-      "shipping_usd": 21.35,
-      "lang": "okänt",
-      "seen": "2026-11-04T19:12+01:00",
-      "stock": "In stock (säljs och skickas av Amazon)",
+      "price_usd": 451.22,
+      "shipping_usd": 7.42,
+      "lang": "okänt (ser engelsk ut; ingen German Version-märkning)",
+      "seen": "2026-11-18T13:48+01:00",
+      "stock": "Add to basket (sökresultat)",
       "price_sek": 5162.37,
       "shipping_sek": 74.04,
-      "seller": "Amazon",
-      "delivery": "9–13 nov",
+      "seller": "ej visad i sök 18 nov",
+      "delivery": "fre 27 nov",
       "keepa_alert": {
         "at": "2026-11-04T19:09+01:00",
         "buy_box_eur": 469.24,
@@ -67,16 +75,20 @@
         "cause": "Back in stock",
         "verified": true,
         "verify_note": "En sidladdning 4 nov 19:12: 5 162,37 kr + 74,04 kr frakt (≈5 236 kr), i lager, Amazon, leverans 9–13 nov. Cardmarket-trend €348,57 (≈3 840 kr) – ca 36 % över trend. Ingen notis."
-      }
+      },
+      "title": "Marvel's Spider-Man - Collectible Booster Display",
+      "note": "Sök 18 nov: USD 451,22 + 7,42 frakt. Säljare ej visad i sök (produktsida 4 nov visade Amazon). Landat ≈ 4 609 kr vs trend €341,68 ≈ 3 795 kr (+21 %). Ej nytt i lager, ingen affär.",
+      "seller_last_verified": "Amazon (produktsida 2026-11-04)"
     },
     "amazon.de/B0HK9YL6PJ": {
       "item": null,
-      "title": "Marvel: Darkhold Destiny Collector Booster Display",
+      "title": "Marvel: Darkhold Destiny | Collectors Booster Display",
       "in_stock": false,
-      "stock": "preorder, release 2027-04-09",
-      "price_usd": 566.4,
-      "seen": "2026-11-04T13:36+01:00",
-      "shipping_usd": 7.1
+      "stock": "preorder, release 2027-04-09, leverans mån 19 apr, Add to basket, pre-order price guarantee",
+      "price_usd": 555.66,
+      "seen": "2026-11-18T13:48+01:00",
+      "shipping_usd": 6.97,
+      "lang": "okänt (ser engelsk ut)"
     },
     "amazon.de/B0DP1Q9H2Q": {
       "item": "mtg-aetherdrift-cbb",
@@ -92,28 +104,20 @@
       "title": "MTG The Hobbit Collector's Booster Display",
       "in_stock": true,
       "price": null,
-      "seen": "2026-11-11T13:43+01:00",
+      "seen": "2026-11-18T13:48+01:00",
       "asin_note": "Rättat ASIN 17 okt (tidigare felstavat B0GWSDDFFF gav 'Page Not Found'). Sökresultat: 'See options', inget pris.",
-      "stock": "köpbar via 2 ansedda tredjepartssäljare (ingen featured offer, inte Amazon); plus 1 dyrt erbjudande med lågt anseende",
-      "price_eur": 792.98,
-      "shipping_eur": 4.0,
-      "seller": "Robo294 (DE, 4,5★, 232 betyg, 92 % positiva)",
-      "delivery": "19–27 nov",
+      "stock": "Only 1 left in stock (featured offer; säljs/skickas av Robo294)",
+      "seller": "Robo294",
+      "delivery": "26 nov–4 dec",
       "other_offers": [
         {
-          "price_eur": 796.99,
-          "shipping_eur": 8.0,
-          "seller": "JS-Warenhandel (DE, 5★, 16 betyg, 94 %)",
-          "delivery": "17–20 nov"
-        },
-        {
-          "price_eur": 1450.02,
-          "shipping_eur": 15.98,
-          "seller": "Booghe Toys – Germany – (Fast Dispatch), skickar från UK; 3,5★, 816 betyg, 67 % positiva senaste 12 mån — räknas inte (lågt anseende)",
-          "delivery": "23 nov–9 dec"
+          "note": "Other sellers on Amazon: New (3) from USD 822.35 (samma från-pris som featured offer; listan öppnades inte denna körning)"
         }
       ],
-      "lang": "English (listning)"
+      "lang": "English (listning; kortspråk ej angivet)",
+      "price_usd": 822.35,
+      "shipping_usd": 4.41,
+      "currency_note": "Produktsidan visade USD vid leverans till Sverige. Landat 826,76 USD ≈ 8 309 kr (kurs USD 10,0502 i data.json 16 nov). Motsvarar ca 6 % under förra veckans €792,98+€4 (dåvarande 'Was USD 877,53')."
     },
     "amazon.se/B0GXGXJ55L": {
       "item": "mtg-reality-fracture-cbb",
@@ -141,22 +145,25 @@
       "price_sek": 4999.0,
       "shipping_sek": 0,
       "lang": "English",
-      "seen": "2026-11-11T13:43+01:00",
-      "delivery": "1 dec",
+      "seen": "2026-11-18T13:48+01:00",
+      "delivery": "tor 26 nov",
       "stock": "Add to basket (sökresultat)",
-      "seller": "skickas av Amazon"
+      "seller": "skickas av Amazon",
+      "title": "Magic: The Gathering | Marvel's Spider-Man Collectible Booster (English Version)",
+      "note": "Sök 18 nov: 4 999 kr oförändrat, fri frakt, skickas av Amazon. ~32 % över Cardmarket-trend €341,68 ≈ 3 795 kr. Ej nytt i lager, ingen affär."
     },
     "amazon.se/B0G881RW2S": {
       "item": "mtg-marvel-super-heroes-cbb",
       "in_stock": true,
-      "price_sek": 4876.54,
+      "price_sek": 5321.27,
       "shipping_sek": 0,
       "lang": "English",
-      "seen": "2026-11-11T13:43+01:00",
-      "delivery": "17 nov",
+      "seen": "2026-11-18T13:48+01:00",
+      "delivery": "tor 26 nov",
       "stock": "Add to basket (sökresultat)",
       "seller": "skickas av Amazon",
-      "note": "Sökresultatets titel sade 'Trading Booster Box', men ASIN B0G881RW2S är den kända engelska Collector-displayen. Pris ned från 5 348,18 kr (4 nov); visad median 5 350,41 kr. ~43 % över Cardmarket-trend €308,92 ≈ 3 406 kr."
+      "note": "Sök 18 nov: 5 321,27 kr (upp från 4 876,54 kr 11 nov), fri frakt, skickas av Amazon. Titeln sade Trading Booster Box, men ASIN B0G881RW2S är den kända engelska Collector-displayen. ~52 % över Cardmarket-trend €315,23 ≈ 3 501 kr. Ingen affär.",
+      "title": "Magic: The Gathering | Marvel Super Heroes Trading Booster Box | Trading Card Game (English Version)"
     },
     "amazon.se/B082J42R57": {
       "item": null,
@@ -173,17 +180,23 @@
       "item": "mtg-duskmourn-house-of-horror-cbb",
       "lang": "German (exkluderad)",
       "in_stock": true,
-      "price_sek": 3081.23,
-      "seen": "2026-10-28T13:38+01:00"
+      "price_sek": 2791.31,
+      "seen": "2026-11-18T13:48+01:00",
+      "title": "Duskmourn: Home of Horror Collector-Booster Display (German Version)",
+      "shipping_sek": 0,
+      "delivery": "tor 26 nov",
+      "stock": "Add to basket (sökresultat)"
     },
     "amazon.de/B0G8T844N8": {
       "item": "mtg-marvel-super-heroes-cbb",
       "lang": "German (exkluderad)",
       "in_stock": true,
-      "price_usd": 565.95,
-      "seen": "2026-11-04T13:36+01:00",
-      "stock": "See options",
-      "shipping_usd": 7.18
+      "price_usd": 554.98,
+      "seen": "2026-11-18T13:48+01:00",
+      "stock": "Add to basket (sökresultat)",
+      "shipping_usd": 7.04,
+      "title": "Marvel Super Heroes Collector's Booster Display (German Version)",
+      "delivery": "tor 26 nov"
     },
     "amazon.de/B0H6KK4R81": {
       "item": null,
@@ -212,34 +225,42 @@
       "seller": "skickas av Amazon",
       "seen": "2026-11-11T13:43+01:00",
       "delivery": "17 nov",
-      "stock": "Add to basket (sökresultat)"
+      "stock": "Add to basket (sökresultat)",
+      "search_note_2026_11_18": "Avatar Collector Display syntes inte på amazon.se CBB-sök sida 1 den 18 nov; inte markerad som slutsåld (kan ligga längre ned i sök / sida 2)."
     },
     "amazon.de/B0FRBFT2BK": {
-      "item": null,
-      "title": "TMNT Collector Booster Display",
+      "item": "bl-tmt-cbb",
+      "title": "Teenage Mutant Ninja Turtles - Collector's Booster Display",
       "in_stock": true,
-      "stock": "1 kvar",
-      "price_usd": 477.6,
-      "shipping_usd": 17.32,
-      "lang": "okänt",
-      "seen": "2026-11-04T13:36+01:00"
+      "stock": "Only 1 left in stock (sökresultat, Add to basket)",
+      "price_usd": 468.55,
+      "shipping_usd": 16.99,
+      "lang": "okänt (ser engelsk ut; ingen German Version-märkning)",
+      "seen": "2026-11-18T13:48+01:00",
+      "delivery": "25 nov–1 dec",
+      "note": "Sök 18 nov: USD 468,55 + 16,99 frakt; andra erbjudande visat USD 491,14. Säljare ej visad. Landat ≈ 4 880 kr vs trend €290,77 ≈ 3 230 kr (+51 %). Ej nytt i lager, ingen affär."
     },
     "amazon.de/B0FRDBLGCQ": {
-      "item": null,
-      "title": "TMNT Collector Booster Display",
+      "item": "bl-tmt-cbb",
+      "title": "Teenage Mutant Ninja Turtles - Collector's Booster Display (German Version)",
       "lang": "German (exkluderad)",
       "in_stock": true,
-      "price_usd": 348.72,
-      "seen": "2026-11-04T13:36+01:00",
-      "shipping_usd": 6.82
+      "price_usd": 448.03,
+      "seen": "2026-11-18T13:48+01:00",
+      "shipping_usd": 6.69,
+      "delivery": "tor 26 nov",
+      "stock": "Add to basket (sökresultat); More buying choices from USD 413.44"
     },
     "amazon.de/B0DWTY71R8": {
       "item": "mtg-marvel-s-spider-man-cbb",
       "lang": "German (exkluderad)",
       "in_stock": true,
-      "price_usd": 464.69,
-      "seen": "2026-11-04T13:36+01:00",
-      "shipping_usd": 6.96
+      "price_usd": 461.15,
+      "seen": "2026-11-18T13:48+01:00",
+      "shipping_usd": 6.82,
+      "title": "Marvel's Spider-Man - Collector's Booster Display (German Version)",
+      "delivery": "fre 27 nov",
+      "stock": "Add to basket (sökresultat); More buying choices from USD 337.45"
     },
     "amazon.de/B0H8SV3WJ8": {
       "item": "pkm-30c-etb",
@@ -292,7 +313,8 @@
       "seen": "2026-11-11T13:43+01:00",
       "delivery": "17 nov",
       "stock": "Add to basket (sökresultat)",
-      "seller": "skickas av Amazon"
+      "seller": "skickas av Amazon",
+      "search_note_2026_11_18": "TMNT Collector Display syntes inte på amazon.se CBB-sök sida 1 den 18 nov; inte markerad som slutsåld (kan ligga längre ned i sök / sida 2)."
     },
     "amazon.se/B0GXC667JV": {
       "item": "mtg-reality-fracture-cbb",
@@ -367,14 +389,59 @@
       "lang": "Multi (enligt listning)",
       "seen": "2026-11-11T13:43+01:00",
       "note": "Ny i amazon.se-sök 11 nov. Oklart om det är en display; säljare ej visad; köpbarhet ej bekräftad."
+    },
+    "amazon.de/B0H6KL85R3": {
+      "item": "bl-trk-cbb",
+      "title": "Magic: The Gathering | Star Trek Collectible Booster Display",
+      "in_stock": true,
+      "lang": "okänt (listning på engelska, ingen 'German Version'-märkning; 12 Collector Boosters × 15 kort)",
+      "seen": "2026-11-18T13:48+01:00",
+      "price_usd": 555.66,
+      "shipping_usd": 7.47,
+      "seller": "Amazon",
+      "delivery": "fredag 27 nov",
+      "stock": "In stock (säljs och skickas av Amazon; antalväljare 1–30)",
+      "other_offers_from_usd": 555.66,
+      "other_offers_note": "Other sellers on Amazon: New (3) from USD 555.66 (listan öppnades inte)",
+      "note": "Nytt ASIN, ej sett tidigare. Produktsida 18 nov 13:48: featured offer, Add to basket och Buy Now, leverans till Sverige. Landat 563,13 USD ≈ 5 660 kr vs Cardmarket-trend €413,27 ≈ 4 590 kr (prisguide 16 nov, data.json) = +23 %. Tidigare amazon.de-listning B0H6KK4R81 var tysk förbeställning inför släpp 13 nov."
+    },
+    "amazon.de/B0FHJHP2DK": {
+      "item": "mtg-avatar-the-last-airbender-cbb",
+      "title": "Avatar - Lord of the Elements Collector's Booster Display",
+      "in_stock": true,
+      "price_usd": 518.16,
+      "stock": "Only 4 left in stock (sökresultat, Add to basket)",
+      "lang": "okänt (ser engelsk ut)",
+      "note": "Sök 18 nov: USD 518,16, 4 kvar, leveransdatum ej visat, säljare ej visad. ≈ 5 208 kr exkl. ev. frakt vs trend €387,67 ≈ 4 306 kr. Ingen affär.",
+      "seen": "2026-11-18T13:48+01:00"
+    },
+    "amazon.de/B0GXC667JV": {
+      "item": "mtg-reality-fracture-cbb",
+      "title": "Reality Fracture Collector Booster Box 12 Packs",
+      "in_stock": false,
+      "stock": "See options (ingen featured offer / inget pris i sök)",
+      "lang": "okänt",
+      "note": "Sök 18 nov: See options, inte köpbar i sökresultatet.",
+      "seen": "2026-11-18T13:48+01:00"
+    },
+    "amazon.se/B0DP1Q9H2Q": {
+      "item": "mtg-aetherdrift-cbb",
+      "title": "Etherdrift Collectible Booster Display (German Version)",
+      "in_stock": true,
+      "lang": "German (exkluderad)",
+      "price_sek": 4132.5,
+      "shipping_sek": 0,
+      "delivery": "ons 2 dec",
+      "stock": "Add to basket (sökresultat)",
+      "seen": "2026-11-18T13:48+01:00"
     }
   },
   "pending_checks": [],
   "unchecked": [
     {
-      "target": "engelska Collector Booster Displays på amazon.de (sök)",
-      "reason": "Ej sökt denna körning (gräns 4 sidladdningar: Hobbit-produktsida + erbjudandepanel, amazon.se 30th ETB-sök, amazon.se CBB-sök). Keepa täcker amazon.de som primär vakt.",
-      "at": "2026-11-11T13:43+01:00"
+      "target": "Pokémon 30th Celebration ETB på amazon.se (sök)",
+      "reason": "Ej sökt denna körning (gräns 4 sidladdningar: Hobbit-produktsida, amazon.de CBB-sök, Star Trek-produktsida B0H6KL85R3 för att verifiera nytt ASIN, amazon.se CBB-sök).",
+      "at": "2026-11-18T13:48+01:00"
     }
   ],
   "run_log": [
@@ -417,11 +484,16 @@
       "at": "2026-11-11T13:43+01:00",
       "result": "lyckad: Hobbit-erbjudanden (samma 2 ansedda tredjepart till samma pris €792,98+€4 / €796,99+€8, plus dyr Booghe Toys som inte räknas), amazon.se 30th ETB-sök (2 See options, ej bekräftat köpbara), amazon.se CBB-sök (Avatar/MSH/Spider-Man/TMNT i lager via Amazon, MSH ned till 4 876,54 kr). amazon.de CBB-sök okontrollerad (4-lastgräns). Inga larm.",
       "alerts": 0
+    },
+    {
+      "at": "2026-11-18T13:48+01:00",
+      "result": "lyckad: Hobbit-produktsida (featured offer Robo294 USD 822,35+4,41), amazon.de CBB-sök, Star Trek-produktsida B0H6KL85R3 (nytt i lager, Amazon), amazon.se CBB-sök (Spider-Man 4 999 kr, MSH 5 321,27 kr). amazon.se 30th ETB-sök okontrollerad (4-lastgräns). Ett larm (Star Trek ny i lager).",
+      "alerts": 1
     }
   ],
   "consecutive_failed_runs": 0,
   "blocked_note": null,
-  "last_successful_check": "2026-11-11T13:43+01:00",
+  "last_successful_check": "2026-11-18T13:48+01:00",
   "keepa_alerts_ignored": [
     {
       "at": "2026-10-30T05:36+01:00",

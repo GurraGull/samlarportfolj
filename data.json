@@ -4926,6 +4926,20 @@
           "http_status": 200,
           "stock_checked_at": "2026-11-16T10:16+01:00",
           "stock_evidence": "schema.org availability=InStock"
+        },
+        {
+          "date": "2026-11-18",
+          "source": "Amazon.de",
+          "seller": "Robo294",
+          "price": 822.35,
+          "currency": "USD",
+          "shipping": 4.41,
+          "origin": "EU",
+          "in_stock": true,
+          "url": "https://www.amazon.de/dp/B0GWSDDFFJ",
+          "seller_rating": null,
+          "language": "English",
+          "notes": "Produktsida 18 nov 13:48: featured offer finns nu. USD 822,35 + 4,41 frakt, säljs/skickas av Robo294, endast 1 kvar, leverans 26 nov–4 dec till Sverige. Sidan visar USD vid leverans till Sverige. Landat ≈ 8 309 kr vs Cardmarket-trend €572,22 ≈ 6 356 kr (+31 %). Other sellers: New (3) from USD 822,35 (ej öppnade). Inte nytt i lager (köpbar redan 11 nov), ingen affär."
         }
       ],
       "image": {
@@ -10625,6 +10639,20 @@
           "http_status": 200,
           "stock_checked_at": "2026-11-16T10:16+01:00",
           "stock_evidence": "schema.org availability=InStock"
+        },
+        {
+          "date": "2026-11-18",
+          "source": "Amazon.se",
+          "seller": "Amazon (skickas av Amazon)",
+          "price": 5321.27,
+          "currency": "SEK",
+          "shipping": 0.0,
+          "origin": "SE",
+          "in_stock": true,
+          "url": "https://www.amazon.se/dp/B0G881RW2S",
+          "seller_rating": null,
+          "language": "English",
+          "notes": "Sökresultat: Add to basket, 5 321,27 kr (upp från 4 876,54 kr 11 nov), fri frakt tors 26 nov, skickas av Amazon. Titeln sade Trading Booster Box, men ASIN B0G881RW2S är den kända engelska Collector-displayen. ~52 % över Cardmarket-trend €315,23 ≈ 3 501 kr."
         }
       ],
       "alerts": [],
