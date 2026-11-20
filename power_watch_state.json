@@ -1,0 +1,274 @@
+{
+ "created": "2026-11-02",
+ "last_run": "2026-11-20T09:20+01:00",
+ "threshold_kr": 30000,
+ "reference": {
+  "pricecharting_ungraded_usd_2026-11-02": {
+   "Mox Sapphire": 3999.73,
+   "Mox Pearl": 2843.16
+  },
+  "notes": "2026-11-06: Pearl/Sapphire flat vs 11-05. Jet slight up (+$37), Ruby down (−$319), Emerald up (+$143). Cardmarket/SvenskaMagic/HA blocked (WAF/403). Goldin/Catawiki/Fanatics: no under-threshold Unlimited Mox. Tradera Pearl 32999 still up. Three for One all Unlimited Mox sold out (Ruby €2180 OOS). New: eBay DE Pearl Poor €2299+59 (under $ but Poor < HP — not reported). eBay FR Pearl MP €2970 free ship (~32.7k, over). eBay US Emerald auction #960155611160 current ~$1025 LP — under now, likely 35–45k landed — reported.",
+  "pricecharting_ungraded_usd_2026-11-03": {
+   "Mox Sapphire": 3999.73,
+   "Mox Pearl": 2826.19
+  },
+  "pricecharting_ungraded_usd_2026-11-04": {
+   "Mox Sapphire": 3999.73,
+   "Mox Pearl": 2826.19
+  },
+  "pricecharting_ungraded_usd_2026-11-05": {
+   "Mox Sapphire": 3999.73,
+   "Mox Pearl": 2826.19
+  },
+  "pricecharting_ungraded_usd_2026-11-06": {
+   "Mox Pearl": 2826.19,
+   "Mox Sapphire": 3999.73,
+   "Mox Jet": 3100,
+   "Mox Ruby": 2965.04,
+   "Mox Emerald": 3192.79
+  },
+  "notes_2026-11-09": "eBay newest-first sweep: no new under-threshold Unlimited Mox. Many Italian graded (Ologram) Moxen 32-43k SEK. Canada binder-damage Pearl ~28.8k + VAT ~36k, over. PriceCharting/Cardmarket blocked from box curl.",
+  "pricecharting_ungraded_usd_2026-11-10": {
+   "Mox Ruby": 2989.54,
+   "Mox Jet": 3100
+  },
+  "notes_2026-11-10": "Ruby up +$24.50 to $2,989.54, Jet flat $3,100. Tradera: only Pearl 32,999 kr BIN. Catawiki: no Unlimited Mox. eBay direct curl blocked; WebFetch search showed two kidicarus2000 auctions (Unl Mox Jet Indents ~$560/11 bids, Unl Mox Ruby Roller Lines ~$130/9 bids, 'new listing' 10-Nov) but browser could not find them (gone or not indexed) - unverified, recheck next run. Kid Icarus comps: Jet Indents sold $2,938 (Aug), Ruby indent+roller $2,556 (Jan) -> both likely ~34-37k landed, over.",
+  "pricecharting_ungraded_usd_2026-11-11": {
+   "Mox Pearl": 2826.19
+  },
+  "notes_2026-11-11": "No new under-threshold Unlimited Mox. eBay newest-first: German Poor Pearl 204496008892 still BIN ~25.3k SEK (+650 ship, already reported); Canada Pearl 256063518395 C$3,950 + C$160 FedEx (~28.6k + 25% VAT ~36k, over); France Pearl 32.7k; Italian graded 37-43k; no Unlimited Mox auctions ending soon. kidicarus2000 Jet/Ruby auctions not found (seller search empty) - treat as gone. Tradera only Pearl 32,999 kr. Catawiki none. PriceCharting Pearl flat $2,826.19; recent sale LP $2,750 (Nov 6).",
+  "pricecharting_ungraded_usd_2026-11-12": {
+   "Mox Pearl": 2826.19
+  },
+  "notes_2026-11-12": "kidicarus2000 (344.2K, 99.9%) Jet Indents + Ruby Roller Lines auctions now confirmed live in eBay search (listed 9 Nov, end ~Mon 16 Nov 17:13/17:17 PST = Tue 17 Nov ~02:13/02:17 Stockholm). Jet $1,661/19 bids, Ruby $2,125/15 bids, +$70 ship. Under 30k now, likely end over. Item IDs not retrievable (eBay blocks curl, WebFetch strips links). Photos not personally verified. Tradera only Pearl 32,999. PriceCharting Pearl flat $2,826.19; Ruby Nov sales $2,879-3,051. REPORTED.",
+  "pricecharting_ungraded_usd_2026-11-13": {
+   "Mox Pearl": 2800
+  },
+  "notes_2026-11-13": "No new under-threshold Unlimited Mox. PriceCharting Pearl $2,800 (-$26.19, slight down; last sale LP $2,750 Nov 6). eBay.de newest: German Poor Pearl EUR 2,299 still up (already reported); Italian 'Ologramm' graded 3.4-3.9k EUR (over); Canada binder Pearl EUR 2,506 + 101.52 (over w/ VAT). eBay UK auctions: only kidicarus2000 Ruby Roller Lines GBP 1,681.15/16 bids and Jet Indents GBP 1,605.59/22 bids, 3d16h left (already reported, reminders scheduled). Tradera only Pearl 32,999 kr. eBay.com fetch timed out.",
+  "pricecharting_ungraded_usd_2026-11-16": {
+   "Mox Pearl": 2800,
+   "Mox Ruby": 2989.54
+  },
+  "notes_2026-11-16": "No new under-threshold Unlimited Mox. PriceCharting Pearl flat $2,800, Ruby flat $2,989.54 (Nov sales $2,879-3,051). eBay.com: kidicarus2000 Jet Indents $2,225/25 bids, Ruby Roller Lines $2,275/17 bids (+$70), ~28.4k/29.0k landed now, end Tue 17 Nov ~02:13-02:17 (already reported, reminders scheduled). eBay.de: German Poor Pearl EUR 2,299 still up (reported); new Japan CGC 3.5 signed/inked Jet EUR 2,903+59 (~41k landed w/ VAT, over); Italian graded 3.4-3.9k EUR over; Mox Jet PL private EUR 4,444 over. Tradera only Pearl 32,999. Catawiki none. eBay UK fetch failed.",
+  "pricecharting_ungraded_usd_2026-11-17": {
+   "Mox Pearl": 2800,
+   "Mox Jet": 3100
+  },
+  "notes_2026-11-17": "No new under-threshold Unlimited Mox. PriceCharting Pearl flat $2,800, Jet flat $3,100. eBay.com newest: new US auction 'Mox Jet Unlimited Good/MP see video' $2,900 start/0 bids listed Nov-16 (~29.5k + 25% VAT ~37k, over); new US BINs Emerald/Ruby/Pearl HP $3,199.99, Jet MP $3,699.99 (over); Japan CGC 3.5 inked Jet $3,199.99 (over). eBay UK auctions: only Eric Klug altered Ghibli Moxen (excluded, altered). eBay.de: German Poor Pearl EUR 2,299 now +EUR 10.50 ship (already reported). Kid Icarus Jet/Ruby auctions ended 17 Nov ~02:15; final prices not retrieved (sold search failed). Tradera only Pearl 32,999 kr. Catawiki none. Goldin: only Beta Sapphire BGS 9 (not Unlimited). Cardmarket/HA/SvenskaMagic not checked.",
+  "pricecharting_ungraded_usd_2026-11-18": {
+   "Mox Pearl": 2790.08,
+   "Mox Sapphire": 3999.83,
+   "Mox Jet": 3100.0,
+   "Mox Ruby": 2989.54,
+   "Mox Emerald": 3337.27
+  },
+  "notes_2026-11-18": "No new under-threshold Unlimited Mox. PriceCharting ungraded: Pearl $2,790.08 (-$9.92), Sapphire $3,999.83 (flat), Jet $3,100 (flat), Ruby $2,989.54 (flat), Emerald $3,337.27 (+$24.02; up ~$144 vs Nov 6). Kid Icarus finals (PriceCharting 2026-11-17): Jet Indents $3,350, Ruby Roller Lines $3,158 (+$70 ship -> ~42.4k/40.0k kr landed w/ 25% VAT). Other comps: Sapphire Ink/HP/Damaged $3,095 (Nov 14), Emerald $3,386.89 (Nov 10), Weschler's PSA 9 Ruby $3,200 / PSA 9 Sapphire $4,400 hammer (Oct 21). eBay.de: German Poor Pearl 204496008892 still EUR 2,299 + 10.50 (unchanged, already reported); Japan CGC 3.5 inked Jet now EUR 2,942.33 + 39.01 (over); Italian graded/Ologram 3.4-3.9k EUR over; no Unlimited Mox auctions on eBay.de. eBay.com (WebFetch, newest-sort unreliable/partial): no Unlimited Mox auctions; only old BINs (PSA 4 Pearl ~$3.9k, PSA 3 Ruby ~$3.6k, BGS 6.5 Emerald $4,750, Canada binder Pearl). Austria '341 Trading' Mox Sapphire (V.2) BGS 9.5 $2,706 - not Unlimited (likely CE/30th), ignored. eBay.co.uk timed out/403. Tradera only Pearl 32,999 kr. Catawiki none. Goldin only Beta Sapphire BGS 9. Fanatics JS-only (unchecked). Cardmarket/HA/SvenskaMagic blocked (403/Cloudflare/timeout).",
+  "pricecharting_ungraded_usd_2026-11-19": {
+   "Mox Pearl": 2790.08,
+   "Mox Sapphire": 3999.83,
+   "Mox Jet": 3275.0,
+   "Mox Ruby": 2989.54,
+   "Mox Emerald": 3337.27
+  },
+  "notes_2026-11-19": "No new under-threshold Unlimited Mox. PriceCharting ungraded: Jet $3,275 (+$175, driven by Kid Icarus Indents $3,350 Nov 17), Pearl/Sapphire/Ruby/Emerald flat vs 11-18. German Poor Pearl 204496008892 still live EUR 2,299 (randalette 2081/100%, already reported). eBay.de new: 'Mox Sapphire Unlimited Signed 8-8.5 Graded' EUR 12,500 OBO (over). eBay.com category 38292 newest (WebFetch, VND prices): no Unlimited Mox auctions; Playtest-card Moxen (excluded); Sweden-located BGS 8.5 Sapphire ~$7.2k (over, old May 6 listing); rest old BINs. eBay.com plain search + eBay.co.uk timed out; curl 403. Tradera only Pearl 32,999 kr. Catawiki none. Goldin only Beta Sapphire BGS 9 ($9,000/9 bids, ~10d left). Fanatics JS-only. Cardmarket/HA timed out, SvenskaMagic 403. No qualifying lots ending within 7 days.",
+  "pricecharting_ungraded_usd_2026-11-20": {
+   "Mox Pearl": 2790.08
+  },
+  "notes_2026-11-20": "No new under-threshold Unlimited Mox. PriceCharting Pearl flat $2,790.08 (last sale LP $2,750 Nov 6). eBay.de newest: German Poor Pearl 204496008892 still EUR 2,299 + 10.50 (already reported); new Japan BINs Ruby RL signed NM-EX EUR 4,495.57, Pearl RL NM, Emerald RL NM EUR 4,860-4,992 (all over); Japan CGC 3.5 inked Jet now EUR 2,917.84 + 59.27 (over w/ VAT). eBay.com/.co.uk auctions: only Eric Klug altered Ghibli Moxen (excluded, altered, end ~24 Nov). Tradera only Pearl 32,999 kr. Catawiki none. eBay.com newest timed out; HA 403. No qualifying lots ending within 7 days."
+ },
+ "seen": {
+  "tradera:unlimited-mox-pearl-32999": {
+   "first_seen": "2026-11-02",
+   "price_kr": 32999,
+   "type": "BIN, pickup option",
+   "qualified": false,
+   "note": "about 10% over threshold, Swedish (no VAT)"
+  },
+  "ebay.co.uk:234376220000": {
+   "first_seen": "2026-11-02",
+   "price_usd": 11999.99,
+   "qualified": false,
+   "note": "Mox Emerald NM BIN/best offer, far above"
+  },
+  "threeforonetrading:mox-pearl-unlimited": {
+   "first_seen": "2026-11-02",
+   "price_eur": 3050,
+   "qualified": false,
+   "note": "EX roller lines / LP, ~33,700 kr + shipping"
+  },
+  "ebay.co.uk:175054219888": {
+   "first_seen": "2026-11-03",
+   "price_gbp": 3066.69,
+   "qualified": false,
+   "note": "Mox Jet Unl LP, private seller mtg_trader_uk (55, 100%), UK so +25% VAT; ~50k kr landed, far above"
+  },
+  "ebay.co.uk:mox-ruby-977gbp-unverified": {
+   "first_seen": "2026-11-03",
+   "price_gbp": 977,
+   "qualified": false,
+   "note": "Seen only as related-item snippet on eBay UK product page, no link/version; far under market = red flag, unverified"
+  },
+  "ebay.com:mox-emerald-unl-3600-obo": {
+   "first_seen": "2026-11-04",
+   "price_usd": 3600,
+   "qualified": false,
+   "note": "US BIN/OBO raw, free delivery; ~44.5k kr landed incl 25% VAT"
+  },
+  "ebay.com:mox-sapphire-unl-bgs65-4500": {
+   "first_seen": "2026-11-04",
+   "price_usd": 4500,
+   "qualified": false,
+   "note": "US BIN/OBO, far above"
+  },
+  "ebay.com:204496008892": {
+   "first_seen": "2026-11-06",
+   "price_eur": 2299,
+   "shipping_eur": 59,
+   "qualified": true,
+   "note": "Unlimited Pearl raw Poor (Stark bespielt), Germany randalette 100%/2080; ~25.9k SEK EU but Poor < HP; 2026-11-09 still available, 9 photos front+back, dark ink strokes on front right side, edge whitening; ~26.1k kr landed; REPORTED under new any-condition rule; 2026-11-10 still available EUR 2,299 + 59 DHL, 22 watchers, no returns (eBay MBG only)",
+   "reported": "2026-11-09",
+   "last_checked": "2026-11-19T09:30+01:00"
+  },
+  "ebay.com:960155611160": {
+   "first_seen": "2026-11-06",
+   "current_bid_usd": 1075,
+   "shipping_usd": 62.72,
+   "qualified": false,
+   "note": "Unlimited Emerald raw LP auction, YOU-GOTTA-DEAL US; ends 2026-11-10 02:44 Europe/Stockholm; $1075 + $62.72 EIS; ~14100 SEK landed w/ 25% VAT; under 30k; ENDED 2026-11-10 02:44, last seen $2,850/17 bids (~35k landed, over); item page now redirects to product page, final price not visible",
+   "bid_count": 5,
+   "last_checked": "2026-11-10T09:08+01:00",
+   "ended": true
+  },
+  "ebay.com:287580328098": {
+   "first_seen": "2026-11-06",
+   "price_eur": 2970,
+   "qualified": false,
+   "note": "Unlimited Pearl MP France Playin; ~32.7k free ship; signed=Oui in specs; over threshold"
+  },
+  "ebay.com:256063518395": {
+   "first_seen": "2026-11-06",
+   "price_cad_approx_sek": 27634,
+   "qualified": false,
+   "note": "Unlimited Pearl binder damage Canada; ~28.8k+25% VAT ≈36k landed; 2026-11-11 C$3,950 OBO + C$160 ship, Poor, tolarianorth 3842/100%, front+back photos, no returns; ~36k landed, over"
+  },
+  "threeforonetrading:mox-ruby-unlimited-2180": {
+   "first_seen": "2026-11-06",
+   "price_eur": 2180,
+   "qualified": false,
+   "note": "Would be ~24.1k SEK but sold out"
+  },
+  "ebay.com:kidicarus2000-unl-mox-jet-indents-2026-11-10": {
+   "first_seen": "2026-11-10",
+   "price_usd_approx": 560,
+   "qualified": "auction_under_now_likely_over",
+   "note": "Seen only in WebFetch search snippet; not found in browser; 2026-11-11 seller search empty, not found",
+   "current_bid_usd": 2225,
+   "bids": 25,
+   "reported": "2026-11-12",
+   "ends_approx": "2026-11-17T02:15+01:00",
+   "shipping_usd": 70,
+   "last_checked": "2026-11-16T09:25+01:00",
+   "final_price_usd": 3350,
+   "ended": true
+  },
+  "ebay.com:kidicarus2000-unl-mox-ruby-roller-lines-2026-11-10": {
+   "first_seen": "2026-11-10",
+   "price_usd_approx": 130,
+   "qualified": "auction_under_now_likely_over",
+   "note": "Seen only in WebFetch search snippet; not found in browser; 2026-11-11 seller search empty, not found",
+   "current_bid_usd": 2275,
+   "bids": 17,
+   "reported": "2026-11-12",
+   "ends_approx": "2026-11-17T02:15+01:00",
+   "shipping_usd": 70,
+   "last_checked": "2026-11-16T09:25+01:00",
+   "final_price_usd": 3158,
+   "ended": true
+  },
+  "ebay.de:mox-jet-unl-cgc35-inked-japan-2903": {
+   "first_seen": "2026-11-16",
+   "price_eur": 2903.01,
+   "shipping_eur": 58.97,
+   "qualified": false,
+   "note": "CGC 3.5 hand-signed/inked RL Jet from Japan; ~41k kr landed incl 25% VAT, over; 2026-11-18 now EUR 2,942.33 + 39.01, still over"
+  },
+  "ebay.de:mox-jet-pl-private-4444": {
+   "first_seen": "2026-11-16",
+   "price_eur": 4444,
+   "qualified": false,
+   "note": "Unl Jet PL private, free ship, ~49k, over"
+  },
+  "ebay.com:mox-jet-unl-good-mp-auction-2900": {
+   "first_seen": "2026-11-17",
+   "price_usd": 2900,
+   "qualified": false,
+   "note": "US auction, start $2,900 0 bids, ~37k landed w/ VAT, over"
+  },
+  "ebay:eric-klug-altered-ghibli-moxen": {
+   "first_seen": "2026-11-17",
+   "qualified": false,
+   "note": "altered art, excluded"
+  },
+  "ebay.com:mox-sapphire-v2-bgs95-austria-341trading": {
+   "first_seen": "2026-11-18",
+   "price_usd": 2706.61,
+   "qualified": false,
+   "note": "'Mox Sapphire (V.2) BGS 9.5' from Austria 341 Trading; price far below Unlimited BGS 9.5 (~$8.5k) -> not Unlimited (CE/30th Anniversary), excluded"
+  },
+  "ebay.com:mox-pearl-unl-psa4-us": {
+   "first_seen": "2026-11-18",
+   "price_usd_approx": 3950,
+   "qualified": false,
+   "note": "US PSA 4 Pearl BIN/OBO listed Aug 27, ~50k landed w/ VAT, over"
+  },
+  "ebay.com:mox-ruby-unl-psa3-us": {
+   "first_seen": "2026-11-18",
+   "price_usd_approx": 3600,
+   "qualified": false,
+   "note": "US PSA 3 Ruby BIN/OBO listed Aug 27, ~45k landed w/ VAT, over"
+  },
+  "ebay.de:mox-sapphire-unl-signed-graded-8-85-12500": {
+   "first_seen": "2026-11-19",
+   "price_eur": 12500,
+   "qualified": false,
+   "note": "Signed, graded 8-8.5, BIN/OBO free ship; far over"
+  },
+  "ebay.com:mox-sapphire-unl-bgs85-sweden": {
+   "first_seen": "2026-11-19",
+   "price_usd_approx": 7170,
+   "qualified": false,
+   "note": "BGS 8.5 Unlimited Sapphire located in Sweden, listed May 6; ~71k kr, over"
+  },
+  "ebay.com:mox-unl-playtest-cards": {
+   "first_seen": "2026-11-19",
+   "qualified": false,
+   "note": "Playtest/proxy Moxen ~$8-9, excluded"
+  },
+  "ebay.de:japan-unl-ruby-pearl-emerald-rl-nm-2026-11-20": {
+   "first_seen": "2026-11-20",
+   "qualified": false,
+   "note": "Japan seller BINs Ruby RL signed NM-EX EUR 4,495.57, Emerald RL NM EUR 4,860-4,992, Pearl RL NM; far over with 25% VAT"
+  }
+ },
+ "kidicarus_24h_2026-11-16": {
+  "ruby_roller_lines": {
+   "item": "366797847881",
+   "url": "https://www.ebay.co.uk/itm/366797847881",
+   "end": "2026-11-17 ~02:13 Europe/Stockholm (eBay UK showed 01:13, UK time)",
+   "bid_usd": 2275,
+   "bids": 17,
+   "ship_usd": 70,
+   "photos": "clear front+back"
+  },
+  "jet_indents": {
+   "item": "198784261684",
+   "url": "https://www.ebay.co.uk/itm/198784261684",
+   "end": "2026-11-17 ~02:17 Europe/Stockholm (eBay UK showed 01:17)",
+   "bid_usd": 2225,
+   "bids": 25,
+   "ship_usd": 70,
+   "photos": "clear front+back"
+  },
+  "fx": 9.9
+ }
+}
