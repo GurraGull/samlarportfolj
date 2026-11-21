@@ -1,5 +1,5 @@
 {
-  "last_checked": "2026-11-20T18:10+01:00",
+  "last_checked": "2026-11-21T05:10+01:00",
   "note": "18 nov 13:48: Veckokoll. Hobbit amazon.de B0GWSDDFFJ nu med featured offer: Robo294 USD 822,35+4,41 (lev. 26 nov–4 dec, 1 kvar); New (3) från samma pris. Landat ≈ 8 309 kr vs trend €572,22 ≈ 6 356 kr (+31 %), redan i lager 11 nov, inget larm. Nytt: Star Trek Collectible Booster Display amazon.de B0H6KL85R3 i lager, säljs och skickas av Amazon, USD 555,66+7,47 (lev. fre 27 nov, antal upp till 30), landat ≈ 5 660 kr vs trend €413,27 ≈ 4 590 kr (+23 %). Larm skickat (ny i lager). amazon.de CBB-sök: engelska Spider-Man 451,22+7,42 USD, MSH 512,18+7,44 USD, TMNT 468,55+16,99 USD (1 kvar), Avatar 518,16 USD (4 kvar) — säljare ej visad i sök, inga ≥10 % under trend; Reality Fracture See options. amazon.se CBB-sök: Spider-Man 4 999 kr oförändrad (skickas av Amazon, lev. 26 nov); MSH 5 321,27 kr (upp från 4 876,54); Avatar och TMNT ej synliga på sida 1. amazon.se 30th ETB-sök ej körd (4-lastgräns).",
   "listings": {
     "amazon.se/B0996W4YC6": {
@@ -35,16 +35,14 @@
       "item": "mtg-marvel-super-heroes-cbb",
       "in_stock": true,
       "lang": "okänt (ser engelsk ut; ingen German Version-märkning)",
-      "seen": "2026-11-20T18:10+01:00",
+      "seen": "2026-11-21T05:10+01:00",
       "keepa_alert": {
-        "at": "2026-11-20T18:06+01:00",
-        "amazon_eur": 418.1,
-        "new_eur": 418.1,
-        "amazon_desired_eur": 453.6,
-        "new_desired_eur": 436.72,
-        "cause": "Desired price reached again",
+        "at": "2026-11-21T05:07+01:00",
+        "buybox_eur": 439.29,
+        "buybox_desired_eur": 478.8,
+        "cause": "Desired price reached again (Buy Box)",
         "verified": true,
-        "verify_note": "Sidladdning 20 nov ~18:10: 418,10 €, In stock, Shipper/Seller Amazon, FREE delivery ons 25 nov (standardadress). Cardmarket-trend 315,27 € (20 nov) -> ca +33 %, över köpsignal 380 €. Ingen affär, Gustaf ej notifierad."
+        "verify_note": "Sidladdning 21 nov ~05:10: 439,29 € totalt (artikel 357,50 € + beräknade importavgifter 81,79 €), In stock, Shipper/Seller Amazon UK (Amazon Global Store), FREE delivery lör 28 nov (standardadress). Dyrare än 20 nov (418,10 € från Amazon). Cardmarket-trend 315,27 € (20 nov) -> ca +39 %, över köpsignal 380 €. Inget larm."
       },
       "price_sek": 4336.47,
       "shipping_sek": 91.22,
