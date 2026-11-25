@@ -1,5 +1,5 @@
 {
-  "last_checked": "2026-11-25T13:50+01:00",
+  "last_checked": "2026-11-25T21:55+01:00",
   "note": "25 nov 13:50: Veckokoll (4 sidladdningar). Hobbit amazon.de B0GWSDDFFJ produktsida: ingen featured offer (See All Buying Options; listan öppnades inte), föregående Robo294 USD 822,35+4,41 borta. Inget larm (redan ägd, inte köpbar just nu). amazon.de CBB-sök: engelska/ospecificerade köpbara — Star Trek B0H6KL85R3 USD 491,95+14,04 (1 kvar, lev. 3–9 dec, landat ≈ 5 162 kr vs trend €394,12 ≈ 4 419 kr, +17 %, ned från 555,66+7,47 18 nov, redan i lager); Spider-Man 470,73+7,39 USD (lev. 5 dec, ≈ 4 878 kr, +27 %); TMNT 466,68+16,92 USD (1 kvar, ≈ 4 934 kr, +50 %); Avatar 516,10 USD (4 kvar, frakt ej visad). Säljare ej visade i sök. MSH engelsk B0G881RW2S ej på sida 1. Reality Fracture See options. amazon.se CBB-sök: Spider-Man 4 999 kr oförändrad (skickas av Amazon, lev. 11 dec); MSH 5 318,98 kr (skickas av Amazon, lev. 3 dec). Avatar och TMNT ej synliga på sida 1. amazon.se 30th ETB-sök: B0H8SV3WJ8 From 2 111,14 kr (6 erbjudanden) och ny på .se B0H78BB9TY From 3 246,31 kr (3 erbjudanden), båda bara See options, inte köpbara. Inga larm.",
   "listings": {
     "amazon.se/B0996W4YC6": {
@@ -458,16 +458,26 @@
     },
     "amazon.de/B0FHJHP2DK": {
       "item": "mtg-avatar-the-last-airbender-cbb",
-      "title": "Avatar - Lord of the Elements Collector's Booster Display",
+      "title": "Avatar – Der Herr der Elemente Sammler-Booster-Display (Englische Version)",
       "in_stock": true,
       "price_usd": 516.1,
       "stock": "Only 4 left in stock (sökresultat, Add to basket)",
-      "lang": "okänt (ser engelsk ut; ingen German Version-märkning)",
+      "lang": "English (titel: Englische Version)",
       "note": "Sök 25 nov: USD 516,10 (frakt/leverans ej visade i sök), 4 kvar. Landat minst 5 266 kr exkl. ev. frakt vs trend €380,22 ≈ 4 263 kr (minst +24 %). Oförändrat mot 18 nov (USD 518,16, 4 kvar). Ej nytt i lager, ingen affär.",
-      "seen": "2026-11-25T13:50+01:00",
+      "seen": "2026-11-25T21:55+01:00",
       "shipping_usd": null,
       "seller": "ej visad i sök 25 nov",
-      "delivery": null
+      "delivery": null,
+      "keepa_alert": {
+        "at": "2026-11-25T21:52+01:00",
+        "buybox_eur": 375.68,
+        "buybox_desired_eur": 451.24,
+        "new_eur": 375.68,
+        "new_desired_eur": 427.49,
+        "cause": "Desired price reached (Buy Box + New)",
+        "verified": false,
+        "verify_note": "Sidladdning 25 nov ~21:55 gav HTTP 503 (Amazon-blockering av automatisk hämtning); pris/säljare/leverans ej verifierade."
+      }
     },
     "amazon.de/B0GXC667JV": {
       "item": "mtg-reality-fracture-cbb",
