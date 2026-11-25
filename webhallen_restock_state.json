@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-24T21:26+01:00",
+  "checked_at": "2026-11-25T08:24+01:00",
   "source": "Webhallen API /api/product/<id> + /api/productdiscovery/search/<query> (collector, collector display, collector booster, magic display)",
   "watched_products": [
     {
@@ -87,10 +87,144 @@
       "notes": "7 nov 08:25: Förbeställning 4999.0 kr, webb 0, butiker 0; minimumRankLevel 9 | 7 nov 12:25: Förbeställning 4999.0 kr, webb 0, butiker 0; minimumRankLevel 9 | 7 nov 17:19: Förbeställning 4999.0 kr, webb 0, butiker 0; minimumRankLevel 9 | 7 nov 21:23: Förbeställning 4999.0 kr, webb 0, butiker 0; minimumRankLevel 9 | 8 nov 08:21: Förbeställning 4999.0 kr, webb 0, butiker 0; minimumRankLevel 9 | 8 nov 12:22: Förbeställning 4999.0 kr, webb 0, butiker 0; minimumRankLevel 9 | 8 nov 17:20: Förbeställning 4999.0 kr, webb 0, butiker 0; minimumRankLevel 9 | 8 nov 21:24: Förbeställning 4999.0 kr, webb 0, butiker 0; minimumRankLevel 9 | 9 nov 08:24: Förbeställning 4999.0 kr, webb 0, butiker 0; minimumRankLevel 9 | 9 nov 12:20: Förbeställning 4999.0 kr, webb 0, butiker 0; minimumRankLevel 9 | 9 nov 17:21: Förbeställning 4999.0 kr, webb 0, butiker 0; minimumRankLevel 9 | 9 nov 21:21: Förbeställning 4999.0 kr, webb 0, butiker 0; minimumRankLevel 9 | 10 nov 08:25: Förbeställning 4999.0 kr, webb 0, butiker 0; minimumRankLevel 9 | 10 nov 12:23: Förbeställning 4999.0 kr, webb 0, butiker 0; minimumRankLevel 9 | 10 nov 17:25: Förbeställning 4999.0 kr, webb 0, butiker 0; minimumRankLevel 9 | 10 nov 21:23: Förbeställning 4999.0 kr, webb 0, butiker 0; minimumRankLevel 9 | 11 nov 08:27: Förbeställning 4999.0 kr, webb 0, butiker 0; minimumRankLevel 9 | 11 nov 12:28: Förbeställning 4999.0 kr, webb 0, butiker 0; minimumRankLevel 9 | 11 nov 17:23: Förbeställning 4999.0 kr, webb 0, butiker 0; minimumRankLevel 9 | 11 nov 21:28: Förbeställning 4999.0 kr, webb 0, butiker 0; minimumRankLevel 9 | 12 nov 08:20: Förbeställning 4999.0 kr, webb 0, butiker 0; minimumRankLevel 9 | 12 nov 12:21: Förbeställning 4999.0 kr, webb 0, butiker 0; minimumRankLevel 9 | 12 nov 17:28: Förbeställning 4999.0 kr, webb 0, butiker 0; minimumRankLevel 9 | 12 nov 21:26: Förbeställning 4999.0 kr, webb 0, butiker 0; minimumRankLevel 9 | 13 nov 08:25: Förbeställning 4999.0 kr, webb 0, butiker 0; minimumRankLevel 9 | 13 nov 12:20: Förbeställning 4999.0 kr, webb 0, butiker 0; minimumRankLevel 9 | 13 nov 17:25: Förbeställning 4999.0 kr, webb 0, butiker 0; minimumRankLevel 9 | 13 nov 21:23: Förbeställning 4999.0 kr, webb 0, butiker 0; minimumRankLevel 9 | 14 nov 08:25: 4999.0 kr, webb 0, butiker 0; minimumRankLevel 9 (dagen efter release; undertitel nu bara 'Boosters', releasedatum borta) | 14 nov 12:23: oförändrat, 4999.0 kr, webb 0, butiker 0; minimumRankLevel 9 | 14 nov 17:24: oförändrat, 4999.0 kr, webb 0, butiker 0; minimumRankLevel 9 | 14 nov 21:26: oförändrat, 4999.0 kr, webb 0, butiker 0; minimumRankLevel 9 | 15 nov 08:25: oförändrat, 4999.0 kr, webb 0, butiker 0; minimumRankLevel 9 | 15 nov 12:23: oförändrat, 4999.0 kr, webb 0, butiker 0; minimumRankLevel 9 | 15 nov 17:26: oförändrat, 4999.0 kr, webb 0, butiker 0; minimumRankLevel 9 | 15 nov 21:22: oförändrat, 4999.0 kr, webb 0, butiker 0; minimumRankLevel 9 | 16 nov 08:23: oförändrat, 4999.0 kr, webb 0, butiker 0; minimumRankLevel 9 | 16 nov 12:18: oförändrat, 4999.0 kr, webb 0, butiker 0; minimumRankLevel 9 | 16 nov 17:21: oförändrat, 4999.0 kr, webb 0, butiker 0; minimumRankLevel 9 | 16 nov 21:26: oförändrat, 4999.0 kr, webb 0, butiker 0; minimumRankLevel 9 | 17 nov 08:23: oförändrat, 4999.0 kr, webb 0, butiker 0; minimumRankLevel 9 | 17 nov 12:20: oförändrat, 4999.0 kr, webb 0, butiker 0; minimumRankLevel 9 | 17 nov 17:21: oförändrat lager, 4999.0 kr, webb 0, butiker 0; minimumRankLevel nu 0 (tidigare 9); saleLimit max 2/kund, totalt 90, modifiedAt 2026-11-17 13:47:50 | 17 nov 21:28: oförändrat, 4999.0 kr, webb 0, butiker 0; minimumRankLevel 0 | 18 nov 08:23: oförändrat, 4999.0 kr, webb 0, butiker 0; minimumRankLevel 0 | 18 nov 12:23: oförändrat, 4999.0 kr, webb 0, butiker 0; minimumRankLevel 0 | 18 nov 17:25: oförändrat, 4999.0 kr, webb 0, butiker 0; minimumRankLevel 0 | 18 nov 21:26: oförändrat, 4999.0 kr, webb 0, butiker 0; minimumRankLevel 0 | 19 nov 08:20: oförändrat, 4999.0 kr, webb 0, butiker 0; minimumRankLevel 0 | 19 nov 12:24: oförändrat, 4999.0 kr, webb 0, butiker 0; minimumRankLevel 0 | 19 nov 17:20: oförändrat, 4999.0 kr, webb 0, butiker 0; minimumRankLevel 0 | 19 nov 21:20: oförändrat, 4999.0 kr, webb 0, butiker 0; minimumRankLevel 0 | 20 nov 08:23: oförändrat, 4999.0 kr, webb 0, butiker 0; minimumRankLevel 0 | 20 nov 12:26: oförändrat, 4999.0 kr, webb 0, butiker 0; minimumRankLevel 0 | 20 nov 17:22: oförändrat, 4999.0 kr, webb 0, butiker 0; minimumRankLevel 0 | 21 nov 08:24: oförändrat, 4999.0 kr, webb 0, butiker 0; minimumRankLevel 0 | 21 nov 12:26: oförändrat, 4999.0 kr, webb 0, butiker 0; minimumRankLevel 0 | 21 nov 17:19: oförändrat, 4999.0 kr, webb 0, butiker 0; minimumRankLevel 0 | 21 nov 21:25: oförändrat, 4999.0 kr, webb 0, butiker 0; minimumRankLevel 0 | 22 nov 08:25: oförändrat, 4999.0 kr, webb 0, butiker 0; minimumRankLevel 0 | 22 nov 12:27: oförändrat, 4999.0 kr, webb 0, butiker 0; minimumRankLevel 0 | 22 nov 17:19: oförändrat, 4999.0 kr, webb 0, butiker 0; minimumRankLevel 0 | 22 nov 21:26: oförändrat, 4999.0 kr, webb 0, butiker 0; minimumRankLevel 0 | 23 nov 08:21: oförändrat, 4999.0 kr, webb 0, butiker 0; minimumRankLevel 0 | 23 nov 12:22: oförändrat, 4999.0 kr, webb 0, butiker 0; minimumRankLevel 0 | 23 nov 17:19: oförändrat, 4999.0 kr, webb 0, butiker 0; minimumRankLevel 0 | 23 nov 21:31: oförändrat, slut (webb 0, butiker 0), 4999.0 kr; minimumRankLevel 0 | 24 nov 08:25: oförändrat, slut (webb 0, butiker 0), 4999.0 kr; minimumRankLevel 0 | 24 nov 12:26: oförändrat, slut (webb 0, butiker 0), 4999.0 kr; minimumRankLevel 0 | 24 nov 17:24: oförändrat, slut (webb 0, butiker 0), 4999.0 kr; minimumRankLevel 0 | 24 nov 21:26: oförändrat, slut (webb 0, butiker 0), 4999.0 kr; minimumRankLevel 0"
     }
   ],
-  "notes": "2026-11-24T21:26+01:00: Ingen lagerförändring. Pokémon 30th ETB slut, Hobbit CD slut, Reality Fracture CB slut, Marvel Super Heroes CD slut. Spider-Man CD fortfarande i lager (4999 kr, webb 0, butiker 1 (id 15 antal 1)). Star Trek CD 4999 kr, webb 0, butiker 0. Ingen ny Collector Display. Alla produkter kontrollerade.",
+  "notes": "2026-11-25T08:24+01:00: Ingen lagerförändring. Pokémon 30th ETB ej kontrollerad, Hobbit CD ej kontrollerad, Reality Fracture CB ej kontrollerad, Marvel Super Heroes CD ej kontrollerad. Ingen ny Collector Display. Ej kontrollerade: Magic the Gathering: Spider-Man Collectors Display (12 booster) (HTTP 526); Magic the Gathering: Marvel Super Heroes Collector Display (12 boosters) (HTTP 503); Magic the Gathering: The Hobbit Collector Display (12 boosters) (HTTP 503); Magic the Gathering: Star Trek Collector Display (12 boosters) (HTTP 526); Magic: The Gathering Reality Fracture Collector Booster (HTTP 503); Pokemon 30th Celebration Elite Trainer Box (HTTP 503); search:collector (HTTP 526); search:collector_page2 (HTTP 526); search:collector_display (HTTP 526); search:collector_booster (HTTP 526); search:magic_display (HTTP 526); search:magic_display_page2 (HTTP 526); search:30th_celebration (HTTP 526); search:hobbit_collector (HTTP 526); search:marvel_collector (HTTP 526); search:reality_fracture (HTTP 526); search:spider-man_collector (HTTP 526); search:spider-man_collectors (HTTP 526); search:star_trek_collector (HTTP 526).",
   "appeared_since_prior": [],
   "restocked_since_prior": [],
   "went_oos_since_prior": [],
   "browser_confirmed": false,
-  "unchecked": []
+  "unchecked": [
+    {
+      "id": 383774,
+      "name": "Magic the Gathering: Spider-Man Collectors Display (12 booster)",
+      "reason": "HTTP 526",
+      "attempts": 3,
+      "kind": "product"
+    },
+    {
+      "id": 395310,
+      "name": "Magic the Gathering: Marvel Super Heroes Collector Display (12 boosters)",
+      "reason": "HTTP 503",
+      "attempts": 3,
+      "kind": "product"
+    },
+    {
+      "id": 400151,
+      "name": "Magic the Gathering: The Hobbit Collector Display (12 boosters)",
+      "reason": "HTTP 503",
+      "attempts": 3,
+      "kind": "product"
+    },
+    {
+      "id": 401321,
+      "name": "Magic the Gathering: Star Trek Collector Display (12 boosters)",
+      "reason": "HTTP 526",
+      "attempts": 3,
+      "kind": "product"
+    },
+    {
+      "id": 401344,
+      "name": "Magic: The Gathering Reality Fracture Collector Booster",
+      "reason": "HTTP 503",
+      "attempts": 3,
+      "kind": "product"
+    },
+    {
+      "id": 402000,
+      "name": "Pokemon 30th Celebration Elite Trainer Box",
+      "reason": "HTTP 503",
+      "attempts": 3,
+      "kind": "product"
+    },
+    {
+      "id": null,
+      "name": "search:collector",
+      "reason": "HTTP 526",
+      "attempts": 3,
+      "kind": "search"
+    },
+    {
+      "id": null,
+      "name": "search:collector_page2",
+      "reason": "HTTP 526",
+      "attempts": 3,
+      "kind": "search"
+    },
+    {
+      "id": null,
+      "name": "search:collector_display",
+      "reason": "HTTP 526",
+      "attempts": 3,
+      "kind": "search"
+    },
+    {
+      "id": null,
+      "name": "search:collector_booster",
+      "reason": "HTTP 526",
+      "attempts": 3,
+      "kind": "search"
+    },
+    {
+      "id": null,
+      "name": "search:magic_display",
+      "reason": "HTTP 526",
+      "attempts": 3,
+      "kind": "search"
+    },
+    {
+      "id": null,
+      "name": "search:magic_display_page2",
+      "reason": "HTTP 526",
+      "attempts": 3,
+      "kind": "search"
+    },
+    {
+      "id": null,
+      "name": "search:30th_celebration",
+      "reason": "HTTP 526",
+      "attempts": 3,
+      "kind": "search"
+    },
+    {
+      "id": null,
+      "name": "search:hobbit_collector",
+      "reason": "HTTP 526",
+      "attempts": 3,
+      "kind": "search"
+    },
+    {
+      "id": null,
+      "name": "search:marvel_collector",
+      "reason": "HTTP 526",
+      "attempts": 3,
+      "kind": "search"
+    },
+    {
+      "id": null,
+      "name": "search:reality_fracture",
+      "reason": "HTTP 526",
+      "attempts": 3,
+      "kind": "search"
+    },
+    {
+      "id": null,
+      "name": "search:spider-man_collector",
+      "reason": "HTTP 526",
+      "attempts": 3,
+      "kind": "search"
+    },
+    {
+      "id": null,
+      "name": "search:spider-man_collectors",
+      "reason": "HTTP 526",
+      "attempts": 3,
+      "kind": "search"
+    },
+    {
+      "id": null,
+      "name": "search:star_trek_collector",
+      "reason": "HTTP 526",
+      "attempts": 3,
+      "kind": "search"
+    }
+  ]
 }
